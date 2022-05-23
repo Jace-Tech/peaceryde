@@ -1,0 +1,2839 @@
+@media(min-width:900px) and (max-width: 2560px) {
+  /*UPLOAD*/ 
+  .drop-zone {
+    width: 527px;
+    height: 360px;
+    margin-top: 82px;
+    margin-left: 23px;
+    display: flex;
+    font-family: Rubik;
+    font-weight: 500;
+    font-size: 20px;
+    cursor: pointer;
+    color: #cccccc;
+    background-color: #ffffff;
+    border: 1px dashed #0A0E69;
+    border-radius: 10px;
+}                            
+.left-sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.left-sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+.drop-zone {
+  width: 827px;
+  height: 360px;
+  margin-top: 82px;
+  margin-left:23px;
+  display: flex;
+  font-family: Rubik;
+  font-weight: 500;
+  font-size: 20px;
+  cursor: pointer;
+  color: #cccccc;
+  background-color: #ffffff;
+  border: 1px dashed #0A0E69;
+  border-radius: 10px;
+}
+
+.drop-zone--over {
+  border-style: solid;
+}
+
+.drop-zone__input {
+  display: none;
+}
+
+.drop-zone__thumb {
+    width: 50%;
+    margin-top: 70px;
+    margin-left: -200px;
+    height: 50%;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #cccccc;
+    background-size: contain;
+    position: relative;
+}
+
+.drop-zone__thumb::after {
+  content: attr(data-label);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 5px 0;
+  color: #ffffff;
+  background: rgba(0, 0, 0, 0.75);
+  font-size: 14px;
+  text-align: center;
+}
+.documentext
+{
+  font-family: Rubik;
+  font-size: 30px;
+  font-style: normal;
+  color:#000000;
+  padding-top:0px;padding-left:51px;
+}
+.uploadtext
+{
+  font-family: Rubik;
+  font-size: 19px;
+  font-style: normal;
+  font-weight: 400;
+  padding-top:10px;
+  padding-left: 128px;color:#0A0E69;
+}
+.pleaseupload
+{
+  font-family: Rubik;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  padding-top:2px;
+  padding-left: 128px;color:#000000;
+               
+}
+.drop-zonep
+{
+  margin-left: 370px; margin-top:94px
+}
+.dropfilep
+{
+  margin-top: 210px; margin-left: -104px;font-family: Rubik;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  color:#000000;
+}
+.dropfilep2
+{
+  margin-top: 251px; margin-left: -134px;font-family: Rubik;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 400;
+  color:#000000;
+                 
+}
+.h3doc
+{
+  font-family: Rubik;color: #251D1D;
+  font-size: 20px;
+  margin-top: 97px;
+  font-style: normal;
+  font-weight: 400;
+                      
+}
+.h3p
+{
+  font-family: Rubik;color:#5A5A5A;margin-top: 16px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;           
+}
+.h3div
+{
+  margin-left: 98px;
+}
+.tablecard
+{
+  width:835px;height:440px;background-color: #f7f7f7; margin-top: 68px;margin-bottom: 200px; margin-left: 17px;
+}
+  /*Track progress*/
+  .progresscard
+  {
+    width:925px;height:440px;background-color: #f7f7f7; margin-top: 68px; margin-left: 17px;
+    overflow-x:auto;
+  }
+  .progressservice
+  {
+    color:#A0BD1C;font-family: Ubuntu;padding-left:36px;font-size: 18px;font-style: normal;font-weight: 700;
+  }
+  .progressstatus
+  {
+    color:#A0BD1C;font-family: Ubuntu;font-size: 18px;font-style: normal;font-weight: 700;
+    
+  }
+  .progressth
+  {
+    padding-top:48px;padding-left:36px;color:#080C58;font-family: Ubuntu;font-size: 16px;font-style: normal;font-weight: 700;
+    
+  }
+  .progressapprove
+  {
+    padding-top:48px;color:#080C58;font-family: Ubuntu;font-size: 16px;font-style: normal;font-weight: 500;
+  }
+  
+  /*SERVICES*/
+  .question {
+    font-family: Ubuntu;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  padding: 20px 80px 20px 20px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  }
+  
+  .question::after {
+  content: "\002B";
+  font-size: 2.2rem;
+  position: absolute;
+  right: 20px;
+  transition: 0.2s;
+  }
+  
+  .question.active::after {
+  transform: rotate(45deg);
+  }
+  
+  .answercont {
+  max-height: 0;
+  overflow: hidden;
+  transition: 0.3s;
+  }
+  
+  .answer {
+  padding: 0 20px 20px;
+  line-height: 1.5rem;
+  }
+  .containerques {
+  background-color: white;
+  color: #0A0E69;
+  border-radius: 10px;
+  width: 622px;
+  margin: 20px 0;
+  
+  box-shadow: 0 5px 10px 0 rgb(0,0,0,0.25);
+  }
+  .servicesh3
+  {
+    font-family: Ubuntu;
+    font-size: 30px;
+    font-style: normal;
+    color:#0F1377;
+    padding-top:20px;padding-left:51px
+                                  
+  }
+  
+  /*Bank SETTINGS*/
+  .image-upload-two{
+    grid-area: img-u-two;
+    display: flex;
+    
+  }
+  .center2 {
+    display:inline;
+    margin: 3px;
+  }
+  
+  .form-input2 {
+    width:100px;
+    padding:3px;
+    background:#fff;
+    
+  }
+  .form-input2 input {
+    display:none;
+  }
+  .form-input2 label {
+    display:block;
+    width:100px;
+    height: auto;
+    max-height: 100px;
+    border-radius:10px;
+    cursor:pointer;
+  }
+  
+  .form-input2 img {
+    width:166px;
+    height: 166px;
+    margin: 2px;
+    
+  }
+  
+  .imgRemove{
+    position: relative;
+    bottom: 114px;
+    left: 68%;
+    background-color: transparent;
+    border: none;
+    font-size: 30px;
+    outline: none;
+  }
+  .imgRemove::after{
+    content: ' \21BA';
+    color: #fff;
+    font-weight: 900;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  .bankh3
+  {
+    font-family: Ubuntu;
+    font-size: 30px;
+    font-style: normal;
+    color:#0F1377;
+    padding-top:20px;padding-left:395px
+                                  
+  }
+  .manage
+  {
+    padding-top: 51px;
+    font-family: Ubuntu;
+    font-size: 16px;
+    padding-left: 251px;
+    font-style: normal;
+    font-weight: 400;
+    color: #1161D9;              
+  }
+  .bankdiv
+  {
+    height: 206px;
+    width: 626px;
+    margin-left: 133px;
+    margin-top: 68px;
+    border-radius: 20px;
+    background: #0E5FDA;
+  }
+  .bankdivp
+  {
+    padding-left: 170px;
+    padding-top: 74px;
+    border-radius: 0px;
+    
+  }
+  
+  .debitcard
+  {
+    height: 60px;margin-left:212px;
+      width: 480px;                            
+      border-radius: 10px;
+      padding: 20px;
+      color: #fff;
+      background-color: #ADC92E;
+  }
+  .cancelbutton
+  {
+    height: 60px;margin-left:212px;
+      width: 480px;                            
+      border-radius: 10px;
+      border:1px solid #ADC92E;
+      padding: 20px;
+      color: #ADC92E;
+      margin-bottom:347px;
+      background-color: #ffffff;
+  }
+  
+  /*ACCOUNT PAGE*/
+  .left-sidebar a:hover {
+      color: #f1f1f1;
+    }
+    
+    .left-sidebar .closebtn {
+      position: absolute;
+      top: 0;
+      right: 25px;
+      font-size: 36px;
+      margin-left: 50px;
+    }
+    
+    #main {
+      transition: margin-left .5s;
+      padding: 16px;
+    }
+    .image-upload-two{
+        grid-area: img-u-two;
+        display: flex;
+        
+      }
+      .center {
+        display:inline;
+        margin: 3px;
+      }
+    
+      .form-input {
+        width:100px;
+        padding:3px;
+        background:#fff;
+        
+      }
+      .form-input input {
+        display:none;
+      }
+      .form-input label {
+        display:block;
+        width:100px;
+        height: auto;
+        max-height: 100px;
+        border-radius:10px;
+        cursor:pointer;
+      }
+      
+      .form-input img {
+        width:166px;
+        height: 166px;
+        margin: 2px;
+        
+      }
+    
+      .imgRemove{
+        position: relative;
+        bottom: 114px;
+        left: 68%;
+        background-color: transparent;
+        border: none;
+        font-size: 30px;
+        outline: none;
+      }
+      .imgRemove::after{
+        content: ' \21BA';
+        color: #fff;
+        font-weight: 900;
+        border-radius: 8px;
+        cursor: pointer;
+      }
+      .profile{
+          font-family: Ubuntu;
+          font-size: 30px;
+          font-style: normal;
+          color:#0F1377;
+          padding-top:20px;padding-left:51px;
+      }
+      .customise
+      {
+          margin-left: 317px;margin-top: -40px;
+      }
+      .click
+      {
+          padding-top:66px;font-family: Ubuntu;
+          font-size: 13px;
+          padding-left: 10px;
+          font-style: normal;
+          font-weight: 400;
+          color:#1161D9;
+                              
+      }
+      .accountrow
+      {
+        margin-left: 60px;
+        margin-top: 46px;
+        width: 300px;
+      }
+      .accountfirst
+      {
+          font-family: Rubik;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          color:#000000;
+                          
+      }
+      .accountinput
+      {
+          border:1px solid #E9EDF0; font-family: ubuntu; margin-top: 21px; height: 59px;
+          width: 630px;                    
+          background: #E9EDF0;
+          color: #444649;
+          border-radius: 6px;
+          padding: 20px;
+                          
+      }
+    .accountbutton
+    {
+      height: 60px;
+      width: 587px;                            
+      border-radius: 10px;
+      padding: 20px;
+      color: #fff;
+      margin-bottom: 347px;
+      background-color: #1161D9;
+    }
+    .breadcrumb {
+      margin-top: -200px;
+      margin-left: 658px;
+  }
+  .example {
+    height: 84px;
+    margin-left: 73px;
+    width: 523px;
+    margin-top: 25px;
+    border-radius: 15px;
+    padding: 12px;
+    border: 1px solid #f1f5f6;
+  }
+    
+                                  
+  
+  }
+@media(min-width:720px) and (max-width: 853px) {
+  /*UPLOAD*/                            
+.left-sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.left-sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+.drop-zone {
+  width: 657px;
+  height: 360px;
+  margin-top: 82px;
+  margin-left:23px;
+  display: flex;
+  font-family: Rubik;
+  font-weight: 500;
+  font-size: 20px;
+  cursor: pointer;
+  color: #cccccc;
+  background-color: #ffffff;
+  border: 1px dashed #0A0E69;
+  border-radius: 10px;
+}
+
+.drop-zone--over {
+  border-style: solid;
+}
+
+.drop-zone__input {
+  display: none;
+}
+
+.drop-zone__thumb {
+    width: 50%;
+    margin-top: 70px;
+    margin-left: -200px;
+    height: 50%;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #cccccc;
+    background-size: contain;
+    position: relative;
+}
+
+.drop-zone__thumb::after {
+  content: attr(data-label);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 5px 0;
+  color: #ffffff;
+  background: rgba(0, 0, 0, 0.75);
+  font-size: 14px;
+  text-align: center;
+}
+.documentext
+{
+  font-family: Rubik;
+  font-size: 30px;
+  font-style: normal;
+  color:#000000;
+  padding-top:0px;padding-left:91px;
+}
+.uploadtext
+{
+  font-family: Rubik;
+  font-size: 19px;
+  font-style: normal;
+  font-weight: 400;
+  padding-top:10px;
+  padding-left: 91px;color:#0A0E69;
+}
+.pleaseupload
+{
+  font-family: Rubik;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  padding-top:2px;
+  padding-left: 91px;color:#000000;
+               
+}
+.drop-zonep
+{
+  margin-left: 270px; margin-top:94px
+}
+.dropfilep
+{
+  margin-top: 210px; margin-left: -104px;font-family: Rubik;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  color:#000000;
+}
+.dropfilep2
+{
+  margin-top: 251px; margin-left: -134px;font-family: Rubik;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 400;
+  color:#000000;
+                 
+}
+.h3doc
+{
+  font-family: Rubik;color: #251D1D;
+  font-size: 20px;
+  margin-top: 97px;
+  font-style: normal;
+  font-weight: 400;
+                      
+}
+.h3p
+{
+  font-family: Rubik;color:#5A5A5A;margin-top: 16px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;           
+}
+.h3div
+{
+  margin-left: 91px;
+}
+.tablecard
+{
+  width:670px;height:440px;background-color: #f7f7f7; margin-top: 68px;margin-bottom: 200px; margin-left: 17px;
+}
+  /*Track progress*/
+  .progresscard
+  {
+    width:925px;height:440px;background-color: #f7f7f7; margin-top: 68px; margin-left: 17px;
+    overflow-x:auto;
+  }
+  .progressservice
+  {
+    color:#A0BD1C;font-family: Ubuntu;padding-left:36px;font-size: 18px;font-style: normal;font-weight: 700;
+  }
+  .progressstatus
+  {
+    color:#A0BD1C;font-family: Ubuntu;font-size: 18px;font-style: normal;font-weight: 700;
+    
+  }
+  .progressth
+  {
+    padding-top:48px;padding-left:36px;color:#080C58;font-family: Ubuntu;font-size: 16px;font-style: normal;font-weight: 700;
+    
+  }
+  .progressapprove
+  {
+    padding-top:48px;color:#080C58;font-family: Ubuntu;font-size: 16px;font-style: normal;font-weight: 500;
+  }
+  
+  /*SERVICES*/
+  .question {
+    font-family: Ubuntu;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  padding: 20px 80px 20px 20px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  }
+  
+  .question::after {
+  content: "\002B";
+  font-size: 2.2rem;
+  position: absolute;
+  right: 20px;
+  transition: 0.2s;
+  }
+  
+  .question.active::after {
+  transform: rotate(45deg);
+  }
+  
+  .answercont {
+  max-height: 0;
+  overflow: hidden;
+  transition: 0.3s;
+  }
+  
+  .answer {
+  padding: 0 20px 20px;
+  line-height: 1.5rem;
+  }
+  .containerques {
+  background-color: white;
+  color: #0A0E69;
+  border-radius: 10px;
+  width: 100%;
+  margin: 20px 0;
+ 
+  box-shadow: 0 5px 10px 0 rgb(0,0,0,0.25);
+  }
+  .servicesh3
+  {
+    font-family: Ubuntu;
+    font-size: 30px;
+    font-style: normal;
+    color:#0F1377;
+    padding-top:20px;padding-left:51px
+                                  
+  }
+  
+  /*Bank SETTINGS*/
+  .image-upload-two{
+    grid-area: img-u-two;
+    display: flex;
+    
+  }
+  .center2 {
+    display:inline;
+    margin: 3px;
+  }
+  
+  .form-input2 {
+    width:100px;
+    padding:3px;
+    background:#fff;
+    
+  }
+  .form-input2 input {
+    display:none;
+  }
+  .form-input2 label {
+    display:block;
+    width:100px;
+    height: auto;
+    max-height: 100px;
+    border-radius:10px;
+    cursor:pointer;
+  }
+  
+  .form-input2 img {
+    width:166px;
+    height: 166px;
+    margin: 2px;
+    
+  }
+  
+  .imgRemove{
+    position: relative;
+    bottom: 114px;
+    left: 68%;
+    background-color: transparent;
+    border: none;
+    font-size: 30px;
+    outline: none;
+  }
+  .imgRemove::after{
+    content: ' \21BA';
+    color: #fff;
+    font-weight: 900;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  .bankh3
+  {
+    font-family: Ubuntu;
+    font-size: 30px;
+    font-style: normal;
+    color: #0F1377;
+    padding: 20px 280px 20px;
+                                  
+  }
+  .manage
+  {
+    padding-top: 51px;
+    font-family: Ubuntu;
+    font-size: 16px;
+    padding-left: 171px;
+    font-style: normal;
+    font-weight: 400;
+    color: #1161D9;              
+  }
+  .bankdiv
+  {
+    height: 206px;
+    width: 626px;
+
+    margin: 68px auto;
+    border-radius: 20px;
+    background: #0E5FDA;
+  }
+  .bankdivp
+  {
+    padding-left: 170px;
+    padding-top: 74px;
+    border-radius: 0px;
+    
+  }
+  
+  .debitcard
+  {
+    height: 60px;margin-left:140px;
+      width: 480px;                            
+      border-radius: 10px;
+      padding: 20px;
+      color: #fff;
+      background-color: #ADC92E;
+  }
+  .cancelbutton
+  {
+    height: 60px;margin-left:140px;
+      width: 480px;                            
+      border-radius: 10px;
+      border:1px solid #ADC92E;
+      padding: 20px;
+      color: #ADC92E;
+      margin-bottom:347px;
+      background-color: #ffffff;
+  }
+  
+  /*ACCOUNT PAGE*/
+  .left-sidebar a:hover {
+      color: #f1f1f1;
+    }
+    
+    .left-sidebar .closebtn {
+      position: absolute;
+      top: 0;
+      right: 25px;
+      font-size: 36px;
+      margin-left: 50px;
+    }
+    
+    #main {
+      transition: margin-left .5s;
+      padding: 16px;
+    }
+    .image-upload-two{
+        grid-area: img-u-two;
+        display: flex;
+        
+      }
+      .center {
+        display:inline;
+        margin: 3px;
+      }
+    
+      .form-input {
+        width:100px;
+        padding:3px;
+        background:#fff;
+        
+      }
+      .form-input input {
+        display:none;
+      }
+      .form-input label {
+        display:block;
+        width:100px;
+        height: auto;
+        max-height: 100px;
+        border-radius:10px;
+        cursor:pointer;
+      }
+      
+      .form-input img {
+        width:166px;
+        height: 166px;
+        margin: 2px;
+        
+      }
+    
+      .imgRemove{
+        position: relative;
+        bottom: 114px;
+        left: 68%;
+        background-color: transparent;
+        border: none;
+        font-size: 30px;
+        outline: none;
+      }
+      .imgRemove::after{
+        content: ' \21BA';
+        color: #fff;
+        font-weight: 900;
+        border-radius: 8px;
+        cursor: pointer;
+      }
+      .profile{
+          font-family: Ubuntu;
+          font-size: 30px;
+          font-style: normal;
+          color:#0F1377;
+          padding-top:20px;padding-left:51px;
+      }
+      .customise
+      {
+          margin-left: 317px;margin-top: -40px;
+      }
+      .click
+      {
+          padding-top:66px;font-family: Ubuntu;
+          font-size: 13px;
+          padding-left: 10px;
+          font-style: normal;
+          font-weight: 400;
+          color:#1161D9;
+                              
+      }
+      .accountrow
+      {
+          margin-left: 0px; margin-top:46px
+      }
+      .accountfirst
+      {
+          font-family: Rubik;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          color:#000000;
+                          
+      }
+      .accountinput
+      {
+          border:1px solid #E9EDF0; font-family: ubuntu; margin-top: 21px; height: 59px;
+          width: 630px;                    
+          background: #E9EDF0;
+          color: #444649;
+          border-radius: 6px;
+          padding: 20px;
+                          
+      }
+    .accountbutton
+    {
+      height: 60px;
+      width: 587px;                            
+      border-radius: 10px;
+      padding: 20px;
+      color: #fff;
+      margin-bottom: 347px;
+      background-color: #1161D9;
+    }
+    .breadcrumb {
+      margin-top: -200px;
+      margin-left: 658px;
+  }
+  .example {
+    height: 84px;
+    margin-left: 73px;
+    width: 523px;
+    margin-top: 25px;
+    border-radius: 15px;
+    padding: 12px;
+    border: 1px solid #f1f5f6;
+  }
+    
+                                  
+  
+  }
+@media(min-width:600px) and (max-width: 640px) {
+  /*Track progress*/
+  .progresscard
+  {
+    width:525px;height:440px;background-color: #f7f7f7; margin-top: 68px; margin-left: 27px;
+    overflow-x:auto;
+  }
+  .progressservice
+  {
+    color:#A0BD1C;font-family: Ubuntu;padding-left:36px;font-size: 18px;font-style: normal;font-weight: 700;
+  }
+  .progressstatus
+  {
+    color:#A0BD1C;font-family: Ubuntu;font-size: 18px;font-style: normal;font-weight: 700;
+    
+  }
+  .progressth
+  {
+    padding-top:48px;padding-left:36px;color:#080C58;font-family: Ubuntu;font-size: 16px;font-style: normal;font-weight: 700;
+    
+  }
+  .progressapprove
+  {
+    padding-top:48px;color:#080C58;font-family: Ubuntu;font-size: 16px;font-style: normal;font-weight: 500;
+  }
+  
+  /*SERVICES*/
+  .question {
+    font-family: Ubuntu;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  padding: 20px 80px 20px 20px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  }
+  
+  .question::after {
+  content: "\002B";
+  font-size: 2.2rem;
+  position: absolute;
+  right: 20px;
+  transition: 0.2s;
+  }
+  
+  .question.active::after {
+  transform: rotate(45deg);
+  }
+  
+  .answercont {
+  max-height: 0;
+  overflow: hidden;
+  transition: 0.3s;
+  }
+  
+  .answer {
+  padding: 0 20px 20px;
+  line-height: 1.5rem;
+  }
+  .containerques {
+    background-color: white;
+    color: #0A0E69;
+    border-radius: 10px;
+    width: 100%;
+    margin: 20px 0;
+    
+    box-shadow: 0 5px 10px 0 rgb(0 0 0 / 25%);
+}
+  .servicesh3
+  {
+    font-family: Ubuntu;
+    font-size: 30px;
+    font-style: normal;
+    color:#0F1377;
+    padding-top:20px;padding-left:51px
+                                  
+  }
+  
+  /*Bank SETTINGS*/
+  .image-upload-two{
+    grid-area: img-u-two;
+    display: flex;
+    
+  }
+  .center2 {
+    display:inline;
+    margin: 3px;
+  }
+  
+  .form-input2 {
+    width:100px;
+    padding:3px;
+    background:#fff;
+    
+  }
+  .form-input2 input {
+    display:none;
+  }
+  .form-input2 label {
+    display:block;
+    width:100px;
+    height: auto;
+    max-height: 100px;
+    border-radius:10px;
+    cursor:pointer;
+  }
+  
+  .form-input2 img {
+    width:166px;
+    height: 166px;
+    margin: 2px;
+    
+  }
+  
+  .imgRemove{
+    position: relative;
+    bottom: 114px;
+    left: 68%;
+    background-color: transparent;
+    border: none;
+    font-size: 30px;
+    outline: none;
+  }
+  .imgRemove::after{
+    content: ' \21BA';
+    color: #fff;
+    font-weight: 900;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  .bankh3
+  {
+    font-family: Ubuntu;
+    font-size: 30px;
+    font-style: normal;
+    color: #0F1377;
+    padding-top: 20px;
+    padding-left: 195px;                              
+  }
+  .manage
+  {
+    padding-top: 51px;
+    font-family: Ubuntu;
+    font-size: 16px;
+    padding-left: 111px;
+    font-style: normal;
+    font-weight: 400;
+    color: #1161D9;             
+  }
+  .bankdiv
+  {
+    height: 206px;
+    width: 556px;
+    margin: 68px auto;
+    border-radius: 20px;
+    background: #0E5FDA;
+  }
+  .bankdivp
+  {
+    padding-left: 170px;
+    padding-top: 74px;
+    border-radius: 0px;
+    
+  }
+  
+  .debitcard
+  {
+    height: 60px;margin-left:51px;
+      width: 480px;                            
+      border-radius: 10px;
+      padding: 20px;
+      color: #fff;
+      background-color: #ADC92E;
+  }
+  .cancelbutton
+  {
+    height: 60px;margin-left:51px;
+      width: 480px;                            
+      border-radius: 10px;
+      border:1px solid #ADC92E;
+      padding: 20px;
+      color: #ADC92E;
+      margin-bottom:347px;
+      background-color: #ffffff;
+  }
+  
+  /*ACCOUNT PAGE*/
+  .left-sidebar a:hover {
+      color: #f1f1f1;
+    }
+    
+    .left-sidebar .closebtn {
+      position: absolute;
+      top: 0;
+      right: 25px;
+      font-size: 36px;
+      margin-left: 50px;
+    }
+    
+    #main {
+      transition: margin-left .5s;
+      padding: 16px;
+    }
+    .image-upload-two{
+        grid-area: img-u-two;
+        display: flex;
+        
+      }
+      .center {
+        display:inline;
+        margin: 3px;
+      }
+    
+      .form-input {
+        width:100px;
+        padding:3px;
+        background:#fff;
+        
+      }
+      .form-input input {
+        display:none;
+      }
+      .form-input label {
+        display:block;
+        width:100px;
+        height: auto;
+        max-height: 100px;
+        border-radius:10px;
+        cursor:pointer;
+      }
+      
+      .form-input img {
+        width:166px;
+        height: 166px;
+        margin: 2px;
+        
+      }
+    
+      .imgRemove{
+        position: relative;
+        bottom: 114px;
+        left: 68%;
+        background-color: transparent;
+        border: none;
+        font-size: 30px;
+        outline: none;
+      }
+      .imgRemove::after{
+        content: ' \21BA';
+        color: #fff;
+        font-weight: 900;
+        border-radius: 8px;
+        cursor: pointer;
+      }
+      .profile {
+        font-family: Ubuntu;
+        font-size: 30px;
+        font-style: normal;
+        color: #0F1377;
+        padding-top: 10px;
+        padding-bottom: 20px;
+        padding-left: 191px;
+    }
+      .customise {
+        margin-left: 167px;
+        margin-top: 0px;
+    }
+      .click
+      {
+          padding-top:66px;font-family: Ubuntu;
+          font-size: 13px;
+          padding-left: 10px;
+          font-style: normal;
+          font-weight: 400;
+          color:#1161D9;
+                              
+      }
+      .accountrow
+      {
+          margin-left: 0px; margin-top:46px
+      }
+      .accountfirst
+      {
+          font-family: Rubik;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          color:#000000;
+                          
+      }
+      .accountinput {
+        border: 1px solid #E9EDF0;
+        font-family: ubuntu;
+        margin-top: 21px;
+        height: 59px;
+        width: 500px;
+        background: #E9EDF0;
+        color: #444649;
+        border-radius: 6px;
+        padding: 20px;
+    }
+    .accountbutton
+    {
+      height: 60px;
+      width: 500px;                            
+      border-radius: 10px;
+      padding: 20px;
+      color: #fff;
+      margin-bottom: 347px;
+      background-color: #1161D9;
+    }
+    .breadcrumb {
+      margin-top: -200px;
+      margin-left: 658px;
+  }
+  .example {
+    height: 84px;
+    margin-left: 73px;
+    width: 523px;
+    margin-top: 25px;
+    border-radius: 15px;
+    padding: 12px;
+    border: 1px solid #f1f5f6;
+  }
+    
+    /*UPLOAD*/                           
+  .left-sidebar a:hover {
+    color: #f1f1f1;
+  }
+  
+  .left-sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  #main {
+    transition: margin-left .5s;
+    padding: 16px;
+  }
+  .drop-zone {
+    width: 100%;
+    height: 100%;
+    margin: 82px auto;
+    display: flex;
+    font-family: Rubik;
+    font-weight: 500;
+    font-size: 20px;
+    cursor: pointer;
+    color: #cccccc;
+    background-color: #ffffff;
+    border: 1px dashed #0A0E69;
+    border-radius: 10px;
+  }
+  
+  .drop-zone--over {
+    border-style: solid;
+  }
+  
+  .drop-zone__input {
+    display: none;
+  }
+  
+  .drop-zone__thumb {
+      width: 50%;
+      margin-top: 70px;
+      margin-left: -200px;
+      height: 50%;
+      background-repeat: no-repeat;
+      border-radius: 10px;
+      overflow: hidden;
+      background-color: #cccccc;
+      background-size: contain;
+      position: relative;
+  }
+  
+  .drop-zone__thumb::after {
+    content: attr(data-label);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 5px 0;
+    color: #ffffff;
+    background: rgba(0, 0, 0, 0.75);
+    font-size: 14px;
+    text-align: center;
+  }
+  .documentext
+  {
+    font-family: Rubik;
+    font-size: 30px;
+    font-style: normal;
+    color:#000000;
+    padding-top:0px;padding-left:51px;
+  }
+  .uploadtext
+  {
+    font-family: Rubik;
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 400;
+    padding-top:10px;
+    padding-left: 48px;color:#0A0E69;
+  }
+  .pleaseupload
+  {
+    font-family: Rubik;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    padding-top:2px;
+    padding-left: 48px;color:#000000;
+                 
+  }
+  .drop-zonep
+  {
+    margin-left: 230px;
+    margin-top: 94px;
+  }
+  .dropfilep
+  {
+    margin-top: 210px; margin-left: -104px;font-family: Rubik;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    color:#000000;
+  }
+  .dropfilep2
+  {
+    margin-top: 251px; margin-left: -134px;font-family: Rubik;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 400;
+    color:#000000;
+                   
+  }
+  .h3doc
+  {
+    font-family: Rubik;color: #251D1D;
+    font-size: 20px;
+    margin-top: 97px;
+    font-style: normal;
+    font-weight: 400;
+                        
+  }
+  .h3p
+  {
+    font-family: Rubik;color:#5A5A5A;margin-top: 16px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;           
+  }
+  .h3div
+  {
+    margin-left: 48px;
+  }
+  .tablecard
+  {
+    width:545px;height:440px;background-color: #f7f7f7; margin-top: 68px;margin-bottom: 200px; margin-left: 17px;
+  }
+  }
+@media(min-width:480px) and (max-width: 540px) {
+  /*Track progress*/
+  .progresscard
+  {
+    width:525px;height:440px;background-color: #f7f7f7; margin-top: 68px; margin-left: 27px;
+    overflow-x:auto;
+  }
+  .progressservice
+  {
+    color:#A0BD1C;font-family: Ubuntu;padding-left:36px;font-size: 18px;font-style: normal;font-weight: 700;
+  }
+  .progressstatus
+  {
+    color:#A0BD1C;font-family: Ubuntu;font-size: 18px;font-style: normal;font-weight: 700;
+    
+  }
+  .progressth
+  {
+    padding-top:48px;padding-left:36px;color:#080C58;font-family: Ubuntu;font-size: 16px;font-style: normal;font-weight: 700;
+    
+  }
+  .progressapprove
+  {
+    padding-top:48px;color:#080C58;font-family: Ubuntu;font-size: 16px;font-style: normal;font-weight: 500;
+  }
+  
+  /*SERVICES*/
+  .question {
+    font-family: Ubuntu;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  padding: 20px 80px 20px 20px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  }
+  
+  .question::after {
+  content: "\002B";
+  font-size: 2.2rem;
+  position: absolute;
+  right: 20px;
+  transition: 0.2s;
+  }
+  
+  .question.active::after {
+  transform: rotate(45deg);
+  }
+  
+  .answercont {
+  max-height: 0;
+  overflow: hidden;
+  transition: 0.3s;
+  }
+  
+  .answer {
+  padding: 0 20px 20px;
+  line-height: 1.5rem;
+  }
+  .containerques {
+    background-color: white;
+    color: #0A0E69;
+    border-radius: 10px;
+    width: 100%;
+    margin: 20px 0;
+    /* margin-left: 23px; */
+    box-shadow: 0 5px 10px 0 rgb(0 0 0 / 25%);
+}
+  .servicesh3
+  {
+    font-family: Ubuntu;
+    font-size: 30px;
+    font-style: normal;
+    color:#0F1377;
+    padding-top:20px;padding-left:51px
+                                  
+  }
+  
+  /*Bank SETTINGS*/
+  .image-upload-two{
+    grid-area: img-u-two;
+    display: flex;
+    
+  }
+  .center2 {
+    display:inline;
+    margin: 3px;
+  }
+  
+  .form-input2 {
+    width:100px;
+    padding:3px;
+    background:#fff;
+    
+  }
+  .form-input2 input {
+    display:none;
+  }
+  .form-input2 label {
+    display:block;
+    width:100px;
+    height: auto;
+    max-height: 100px;
+    border-radius:10px;
+    cursor:pointer;
+  }
+  
+  .form-input2 img {
+    width:166px;
+    height: 166px;
+    margin: 2px;
+    
+  }
+  
+  .imgRemove{
+    position: relative;
+    bottom: 114px;
+    left: 68%;
+    background-color: transparent;
+    border: none;
+    font-size: 30px;
+    outline: none;
+  }
+  .imgRemove::after{
+    content: ' \21BA';
+    color: #fff;
+    font-weight: 900;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  .bankh3
+  {
+    font-family: Ubuntu;
+    font-size: 30px;
+    font-style: normal;
+    color: #0F1377;
+    padding-top: 20px;
+    padding-left: 51px;                              
+  }
+  .manage
+  {
+    padding-top: 51px;
+    font-family: Ubuntu;
+    font-size: 16px;
+    padding-left: 51px;
+    font-style: normal;
+    font-weight: 400;
+    color: #1161D9;             
+  }
+  .bankdiv
+  {
+    height: 206px;
+    width: 440px;
+    margin: 68px auto;
+    border-radius: 20px;
+    background: #0E5FDA;
+  }
+  .bankdivp
+  {
+    padding-left: 80px;
+    padding-top: 74px;
+    border-radius: 0px;
+    
+  }
+  
+  .debitcard
+  {
+    height: 60px;
+    margin-left: 25px;
+    width: 400px;
+    border-radius: 10px;
+    padding: 20px;
+    color: #fff;
+    background-color: #ADC92E;
+  }
+  .cancelbutton
+  {
+    height: 60px;margin-left:25px;
+      width: 400px;                            
+      border-radius: 10px;
+      border:1px solid #ADC92E;
+      padding: 20px;
+      color: #ADC92E;
+      margin-bottom:347px;
+      background-color: #ffffff;
+  }
+  
+  /*ACCOUNT PAGE*/
+  .left-sidebar a:hover {
+      color: #f1f1f1;
+    }
+    
+    .left-sidebar .closebtn {
+      position: absolute;
+      top: 0;
+      right: 25px;
+      font-size: 36px;
+      margin-left: 50px;
+    }
+    
+    #main {
+      transition: margin-left .5s;
+      padding: 16px;
+    }
+    .image-upload-two{
+        grid-area: img-u-two;
+        display: flex;
+        
+      }
+      .center {
+        display:inline;
+        margin: 3px;
+      }
+    
+      .form-input {
+        width:100px;
+        padding:3px;
+        background:#fff;
+        
+      }
+      .form-input input {
+        display:none;
+      }
+      .form-input label {
+        display:block;
+        width:100px;
+        height: auto;
+        max-height: 100px;
+        border-radius:10px;
+        cursor:pointer;
+      }
+      
+      .form-input img {
+        width:166px;
+        height: 166px;
+        margin: 2px;
+        
+      }
+    
+      .imgRemove{
+        position: relative;
+        bottom: 114px;
+        left: 68%;
+        background-color: transparent;
+        border: none;
+        font-size: 30px;
+        outline: none;
+      }
+      .imgRemove::after{
+        content: ' \21BA';
+        color: #fff;
+        font-weight: 900;
+        border-radius: 8px;
+        cursor: pointer;
+      }
+      .profile {
+        font-family: Ubuntu;
+        font-size: 30px;
+        font-style: normal;
+        color: #0F1377;
+        padding-top: 10px;
+        padding-bottom: 20px;
+        padding-left: 141px;
+    }
+      .customise {
+        margin-left: 107px;
+        margin-top: 0px;
+    }
+      .click
+      {
+          padding-top:66px;font-family: Ubuntu;
+          font-size: 13px;
+          padding-left: 10px;
+          font-style: normal;
+          font-weight: 400;
+          color:#1161D9;
+                              
+      }
+      .accountrow
+      {
+          margin-left: 0px; margin-top:46px
+      }
+      .accountfirst
+      {
+          font-family: Rubik;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          color:#000000;
+                          
+      }
+      .accountinput {
+        border: 1px solid #E9EDF0;
+    font-family: ubuntu;
+    margin-top: 21px;
+    height: 59px;
+    width: 390px;
+    background: #E9EDF0;
+    color: #444649;
+    border-radius: 6px;
+    padding: 20px;
+    }
+    .accountbutton
+    {
+      height: 60px;
+      width: 390px;                            
+      border-radius: 10px;
+      padding: 20px;
+      color: #fff;
+      margin-bottom: 347px;
+      background-color: #1161D9;
+    }
+    .breadcrumb {
+      margin-top: -200px;
+      margin-left: 658px;
+  }
+  .example {
+    height: 84px;
+    margin-left: 73px;
+    width: 523px;
+    margin-top: 25px;
+    border-radius: 15px;
+    padding: 12px;
+    border: 1px solid #f1f5f6;
+  }
+    
+    /*UPLOAD*/ 
+                              
+  .left-sidebar a:hover {
+    color: #f1f1f1;
+  }
+  
+  .left-sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  #main {
+    transition: margin-left .5s;
+    padding: 16px;
+  }
+  .drop-zone {
+    width: 100%;
+    height: 100%;
+    margin: 82px auto;
+    display: flex;
+    font-family: Rubik;
+    font-weight: 500;
+    font-size: 20px;
+    cursor: pointer;
+    color: #cccccc;
+    background-color: #ffffff;
+    border: 1px dashed #0A0E69;
+    border-radius: 10px;
+  }
+  
+  .drop-zone--over {
+    border-style: solid;
+  }
+  
+  .drop-zone__input {
+    display: none;
+  }
+  
+  .drop-zone__thumb {
+      width: 50%;
+      margin-top: 70px;
+      margin-left: -200px;
+      height: 50%;
+      background-repeat: no-repeat;
+      border-radius: 10px;
+      overflow: hidden;
+      background-color: #cccccc;
+      background-size: contain;
+      position: relative;
+  }
+  
+  .drop-zone__thumb::after {
+    content: attr(data-label);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 5px 0;
+    color: #ffffff;
+    background: rgba(0, 0, 0, 0.75);
+    font-size: 14px;
+    text-align: center;
+  }
+  .documentext
+  {
+    font-family: Rubik;
+    font-size: 30px;
+    font-style: normal;
+    color:#000000;
+    padding-top:0px;padding-left:51px;
+  }
+  .uploadtext
+  {
+    font-family: Rubik;
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 400;
+    padding-top:10px;
+    padding-left: 18px;color:#0A0E69;
+  }
+  .pleaseupload
+  {
+    font-family: Rubik;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    padding-top:2px;
+    padding-left: 18px;color:#000000;
+                  
+  }
+  .drop-zonep
+  {
+    margin-left: 170px;
+    margin-top: 54px;
+  }
+  .dropfilep
+  {
+    margin-top: 160px; margin-left: -104px;font-family: Rubik;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    color:#000000;
+  }
+  .dropfilep2
+  {
+    margin-top: 251px; margin-left: -134px;font-family: Rubik;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 400;
+    color:#000000;
+                    
+  }
+  .h3doc
+  {
+    font-family: Rubik;color: #251D1D;
+    font-size: 20px;
+    margin-top: 97px;
+    font-style: normal;
+    font-weight: 400;
+                        
+  }
+  .h3p
+  {
+    font-family: Rubik;color:#5A5A5A;margin-top: 16px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;           
+  }
+  .h3div
+  {
+    margin-left: 18px;
+  }
+  .tablecard
+  {
+    width: 445px;
+    height: 440px;
+    margin: auto;
+    background-color: #f7f7f7;
+  }
+  }
+@media(min-width:375px) and (max-width: 475px) {
+  /*Track progress*/
+  .progresscard
+  {
+    width: 100%;
+    height: 440px;
+    background-color: #f7f7f7;
+    margin-top: 68px;
+    margin-left: 7px;
+    overflow-x: auto;
+  }
+  .progressservice
+  {
+    color:#A0BD1C;font-family: Ubuntu;padding-left:36px;font-size: 18px;font-style: normal;font-weight: 700;
+  }
+  .progressstatus
+  {
+    color:#A0BD1C;font-family: Ubuntu;font-size: 18px;font-style: normal;font-weight: 700;
+    
+  }
+  .progressth
+  {
+    padding-top:48px;padding-left:36px;color:#080C58;font-family: Ubuntu;font-size: 16px;font-style: normal;font-weight: 700;
+    
+  }
+  .progressapprove
+  {
+    padding-top:48px;color:#080C58;font-family: Ubuntu;font-size: 16px;font-style: normal;font-weight: 500;
+  }
+  
+  /*SERVICES*/
+  .question {
+    font-family: Ubuntu;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  padding: 20px 80px 20px 20px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  }
+  
+  .question::after {
+  content: "\002B";
+  font-size: 2.2rem;
+  position: absolute;
+  right: 20px;
+  transition: 0.2s;
+  }
+  
+  .question.active::after {
+  transform: rotate(45deg);
+  }
+  
+  .answercont {
+  max-height: 0;
+  overflow: hidden;
+  transition: 0.3s;
+  }
+  
+  .answer {
+  padding: 0 20px 20px;
+  line-height: 1.5rem;
+  }
+  .containerques {
+    background-color: white;
+    color: #0A0E69;
+    border-radius: 10px;
+    width: 100%;
+    margin: 20px 0;
+    /* margin-left: 23px; */
+    box-shadow: 0 5px 10px 0 rgb(0 0 0 / 25%);
+}
+  .servicesh3
+  {
+    font-family: Ubuntu;
+    font-size: 30px;
+    font-style: normal;
+    color:#0F1377;
+    padding-top:20px;padding-left:51px
+                                  
+  }
+  
+  /*Bank SETTINGS*/
+  .image-upload-two{
+    grid-area: img-u-two;
+    display: flex;
+    
+  }
+  .center2 {
+    display:inline;
+    margin: 3px;
+  }
+  
+  .form-input2 {
+    width:100px;
+    padding:3px;
+    background:#fff;
+    
+  }
+  .form-input2 input {
+    display:none;
+  }
+  .form-input2 label {
+    display:block;
+    width:100px;
+    height: auto;
+    max-height: 100px;
+    border-radius:10px;
+    cursor:pointer;
+  }
+  
+  .form-input2 img {
+    width:166px;
+    height: 166px;
+    margin: 2px;
+    
+  }
+  
+  .imgRemove{
+    position: relative;
+    bottom: 114px;
+    left: 68%;
+    background-color: transparent;
+    border: none;
+    font-size: 30px;
+    outline: none;
+  }
+  .imgRemove::after{
+    content: ' \21BA';
+    color: #fff;
+    font-weight: 900;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  .bankh3
+  {
+    font-family: Ubuntu;
+    font-size: 30px;
+    font-style: normal;
+    color: #0F1377;
+    padding-top: 20px;
+    padding-left: 51px;                              
+  }
+  .manage
+  {
+    padding-top: 51px;
+    font-family: Ubuntu;
+    font-size: 16px;
+    padding-left: 51px;
+    font-style: normal;
+    font-weight: 400;
+    color: #1161D9;             
+  }
+  .bankdiv
+  {
+    height: 206px;
+    width: 440px;
+    margin: 68px auto;
+    border-radius: 20px;
+    background: #0E5FDA;
+  }
+  .bankdivp
+  {
+    padding-left: 80px;
+    padding-top: 74px;
+    border-radius: 0px;
+    
+  }
+  
+  .debitcard
+  {
+    height: 60px;
+    margin-left: 25px;
+    width: 400px;
+    border-radius: 10px;
+    padding: 20px;
+    color: #fff;
+    background-color: #ADC92E;
+  }
+  .cancelbutton
+  {
+    height: 60px;margin-left:25px;
+      width: 400px;                            
+      border-radius: 10px;
+      border:1px solid #ADC92E;
+      padding: 20px;
+      color: #ADC92E;
+      margin-bottom:347px;
+      background-color: #ffffff;
+  }
+  
+  /*ACCOUNT PAGE*/
+  .left-sidebar a:hover {
+      color: #f1f1f1;
+    }
+    
+    .left-sidebar .closebtn {
+      position: absolute;
+      top: 0;
+      right: 25px;
+      font-size: 36px;
+      margin-left: 50px;
+    }
+    
+    #main {
+      transition: margin-left .5s;
+      padding: 16px;
+    }
+    .image-upload-two{
+        grid-area: img-u-two;
+        display: flex;
+        
+      }
+      .center {
+        display:inline;
+        margin: 3px;
+      }
+    
+      .form-input {
+        width:100px;
+        padding:3px;
+        background:#fff;
+        
+      }
+      .form-input input {
+        display:none;
+      }
+      .form-input label {
+        display:block;
+        width:100px;
+        height: auto;
+        max-height: 100px;
+        border-radius:10px;
+        cursor:pointer;
+      }
+      
+      .form-input img {
+        width:166px;
+        height: 166px;
+        margin: 2px;
+        
+      }
+    
+      .imgRemove{
+        position: relative;
+        bottom: 114px;
+        left: 68%;
+        background-color: transparent;
+        border: none;
+        font-size: 30px;
+        outline: none;
+      }
+      .imgRemove::after{
+        content: ' \21BA';
+        color: #fff;
+        font-weight: 900;
+        border-radius: 8px;
+        cursor: pointer;
+      }
+      .profile {
+        font-family: Ubuntu;
+        font-size: 30px;
+        font-style: normal;
+        color: #0F1377;
+        padding-top: 10px;
+        padding-bottom: 20px;
+        padding-left: 141px;
+    }
+      .customise {
+        margin-left: 107px;
+        margin-top: 0px;
+    }
+      .click
+      {
+          padding-top:66px;font-family: Ubuntu;
+          font-size: 13px;
+          padding-left: 10px;
+          font-style: normal;
+          font-weight: 400;
+          color:#1161D9;
+                              
+      }
+      .accountrow
+      {
+          margin-left: 0px; margin-top:46px
+      }
+      .accountfirst
+      {
+          font-family: Rubik;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          color:#000000;
+                          
+      }
+      .accountinput {
+        border: 1px solid #E9EDF0;
+    font-family: ubuntu;
+    margin-top: 21px;
+    height: 59px;
+    width: 390px;
+    background: #E9EDF0;
+    color: #444649;
+    border-radius: 6px;
+    padding: 20px;
+    }
+    .accountbutton
+    {
+      height: 60px;
+      width: 390px;                            
+      border-radius: 10px;
+      padding: 20px;
+      color: #fff;
+      margin-bottom: 347px;
+      background-color: #1161D9;
+    }
+    .breadcrumb {
+      margin-top: -200px;
+      margin-left: 658px;
+  }
+  .example {
+    height: 84px;
+    margin-left: 73px;
+    width: 523px;
+    margin-top: 25px;
+    border-radius: 15px;
+    padding: 12px;
+    border: 1px solid #f1f5f6;
+  }
+    
+    /*UPLOAD*/ 
+                              
+  .left-sidebar a:hover {
+    color: #f1f1f1;
+  }
+  
+  .left-sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  #main {
+    transition: margin-left .5s;
+    padding: 16px;
+  }
+  .drop-zone {
+    width: 100%;
+    height: 100%;
+    margin: 82px auto;
+    display: flex;
+    font-family: Rubik;
+    font-weight: 500;
+    font-size: 20px;
+    cursor: pointer;
+    color: #cccccc;
+    background-color: #ffffff;
+    border: 1px dashed #0A0E69;
+    border-radius: 10px;
+  }
+  
+  .drop-zone--over {
+    border-style: solid;
+  }
+  
+  .drop-zone__input {
+    display: none;
+  }
+  
+  .drop-zone__thumb {
+      width: 50%;
+      margin-top: 70px;
+      margin-left: -200px;
+      height: 50%;
+      background-repeat: no-repeat;
+      border-radius: 10px;
+      overflow: hidden;
+      background-color: #cccccc;
+      background-size: contain;
+      position: relative;
+  }
+  
+  .drop-zone__thumb::after {
+    content: attr(data-label);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 5px 0;
+    color: #ffffff;
+    background: rgba(0, 0, 0, 0.75);
+    font-size: 14px;
+    text-align: center;
+  }
+  .documentext
+  {
+    font-family: Rubik;
+    font-size: 30px;
+    font-style: normal;
+    color:#000000;
+    padding-top:0px;padding-left:51px;
+  }
+  .uploadtext
+  {
+    font-family: Rubik;
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 400;
+    padding-top:10px;
+    padding-left: 18px;color:#0A0E69;
+  }
+  .pleaseupload
+  {
+    font-family: Rubik;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    padding-top:2px;
+    padding-left: 18px;color:#000000;
+                  
+  }
+  .drop-zonep
+  {
+    margin-left: 120px;
+    margin-top: 54px;
+  }
+  .dropfilep
+  {
+    margin-top: 160px; margin-left: -104px;font-family: Rubik;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    color:#000000;
+  }
+  .dropfilep2
+  {
+    margin-top: 251px; margin-left: -134px;font-family: Rubik;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 400;
+    color:#000000;
+                    
+  }
+  .h3doc
+  {
+    font-family: Rubik;color: #251D1D;
+    font-size: 20px;
+    margin-top: 97px;
+    font-style: normal;
+    font-weight: 400;
+                        
+  }
+  .h3p
+  {
+    font-family: Rubik;color:#5A5A5A;margin-top: 16px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;           
+  }
+  .h3div
+  {
+    margin-left: 18px;
+  }
+  .tablecard
+  {
+    width: 345px;
+    height: 440px;
+    margin: auto;
+    background-color: #f7f7f7;
+  }
+}
+@media(min-width:280px) and (max-width: 374px) {
+  /*Track progress*/
+  .progresscard
+  {
+    width: 100%;
+    height: 440px;
+    background-color: #f7f7f7;
+    margin-top: 68px;
+    margin-left: 7px;
+    overflow-x: auto;
+  }
+  .progressservice
+  {
+    color:#A0BD1C;font-family: Ubuntu;padding-left:36px;font-size: 18px;font-style: normal;font-weight: 700;
+  }
+  .progressstatus
+  {
+    color:#A0BD1C;font-family: Ubuntu;font-size: 18px;font-style: normal;font-weight: 700;
+    
+  }
+  .progressth
+  {
+    padding-top:48px;padding-left:36px;color:#080C58;font-family: Ubuntu;font-size: 12px;font-style: normal;font-weight: 700;
+    
+  }
+  .progressapprove
+  {
+    padding-top:48px;color:#080C58;font-family: Ubuntu;font-size: 12px;font-style: normal;font-weight: 500;
+  }
+  
+  /*SERVICES*/
+  .question {
+    font-family: Ubuntu;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  padding: 20px 80px 20px 20px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  }
+  
+  .question::after {
+  content: "\002B";
+  font-size: 2.2rem;
+  position: absolute;
+  right: 20px;
+  transition: 0.2s;
+  }
+  
+  .question.active::after {
+  transform: rotate(45deg);
+  }
+  
+  .answercont {
+  max-height: 0;
+  overflow: hidden;
+  transition: 0.3s;
+  }
+  
+  .answer {
+  padding: 0 20px 20px;
+  line-height: 1.5rem;
+  }
+  .containerques {
+    background-color: white;
+    color: #0A0E69;
+    border-radius: 10px;
+    width: 100%;
+    margin: 20px 0;
+    /* margin-left: 23px; */
+    box-shadow: 0 5px 10px 0 rgb(0 0 0 / 25%);
+}
+  .servicesh3
+  {
+    font-family: Ubuntu;
+    font-size: 25px;
+    font-style: normal;
+    color: #0F1377;
+    padding-top: 20px;
+    padding-left: 21px;
+                                  
+  }
+  
+  /*Bank SETTINGS*/
+  .image-upload-two{
+    grid-area: img-u-two;
+    display: flex;
+    
+  }
+  .center2 {
+    display:inline;
+    margin: 3px;
+  }
+  
+  .form-input2 {
+    width:100px;
+    padding:3px;
+    background:#fff;
+    
+  }
+  .form-input2 input {
+    display:none;
+  }
+  .form-input2 label {
+    display:block;
+    width:100px;
+    height: auto;
+    max-height: 100px;
+    border-radius:10px;
+    cursor:pointer;
+  }
+  
+  .form-input2 img {
+    width:166px;
+    height: 166px;
+    margin: 2px;
+    
+  }
+  
+  .imgRemove{
+    position: relative;
+    bottom: 114px;
+    left: 68%;
+    background-color: transparent;
+    border: none;
+    font-size: 30px;
+    outline: none;
+  }
+  .imgRemove::after{
+    content: ' \21BA';
+    color: #fff;
+    font-weight: 900;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  .bankh3
+  {
+    font-family: Ubuntu;
+    font-size: 30px;
+    font-style: normal;
+    color: #0F1377;
+    padding-top: 20px;
+    padding-left: 51px;                              
+  }
+  .manage
+  {
+    padding-top: 51px;
+    font-family: Ubuntu;
+    font-size: 12px;
+    padding-left: 1px;
+    font-style: normal;
+    font-weight: 400;
+    color: #1161D9;             
+  }
+  .bankdiv
+  {
+    height: 206px;
+    width: 100%;
+    margin: 68px auto;
+    border-radius: 20px;
+    background: #0E5FDA;
+  }
+  .bankdivp
+  {
+    padding-left: 40px;
+    padding-top: 74px;
+    border-radius: 0px;
+    
+  }
+  
+  .debitcard
+  {
+    height: 60px;
+    margin-left: 0px;
+    width: 100%;
+    border-radius: 10px;
+    padding: 20px;
+    color: #fff;
+    background-color: #ADC92E;
+  }
+  .cancelbutton
+  {
+    height: 60px;margin-left:0px;
+      width: 100%;                            
+      border-radius: 10px;
+      border:1px solid #ADC92E;
+      padding: 20px;
+      color: #ADC92E;
+      margin-bottom:347px;
+      background-color: #ffffff;
+  }
+  
+  /*ACCOUNT PAGE*/
+  .left-sidebar a:hover {
+      color: #f1f1f1;
+    }
+    
+    .left-sidebar .closebtn {
+      position: absolute;
+      top: 0;
+      right: 25px;
+      font-size: 36px;
+      margin-left: 50px;
+    }
+    
+    #main {
+      transition: margin-left .5s;
+      padding: 16px;
+    }
+    .image-upload-two{
+        grid-area: img-u-two;
+        display: flex;
+        
+      }
+      .center {
+        display:inline;
+        margin: 3px;
+      }
+    
+      .form-input {
+        width:100px;
+        padding:3px;
+        background:#fff;
+        
+      }
+      .form-input input {
+        display:none;
+      }
+      .form-input label {
+        display:block;
+        width:100px;
+        height: auto;
+        max-height: 100px;
+        border-radius:10px;
+        cursor:pointer;
+      }
+      
+      .form-input img {
+        width:166px;
+        height: 166px;
+        margin: 2px;
+        
+      }
+    
+      .imgRemove{
+        position: relative;
+        bottom: 114px;
+        left: 68%;
+        background-color: transparent;
+        border: none;
+        font-size: 30px;
+        outline: none;
+      }
+      .imgRemove::after{
+        content: ' \21BA';
+        color: #fff;
+        font-weight: 900;
+        border-radius: 8px;
+        cursor: pointer;
+      }
+      .profile {
+        font-family: Ubuntu;
+    font-size: 20px;
+    font-style: normal;
+    color: #0F1377;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-left: 51px;
+    }
+      .customise {
+        margin-left: 7px;
+        margin-top: 0px;
+    }
+      .click
+      {
+          padding-top:66px;font-family: Ubuntu;
+          font-size: 13px;
+          padding-left: 10px;
+          font-style: normal;
+          font-weight: 400;
+          color:#1161D9;
+                              
+      }
+      .accountrow
+      {
+        margin-left: -35px;
+        margin-top: 46px;
+      }
+      .accountfirst
+      {
+          font-family: Rubik;
+          font-size: 12px;
+          font-style: normal;
+          font-weight: 400;
+          color:#000000;
+                          
+      }
+      .accountinput {
+        border: 1px solid #E9EDF0;
+    font-family: ubuntu;
+    margin-top: 21px;
+    height: 59px;
+    width: 250px;
+    background: #E9EDF0;
+    color: #444649;
+    border-radius: 6px;
+    padding: 20px;
+    }
+    .accountbutton
+    {
+      height: 60px;
+      width: 250px;                            
+      border-radius: 10px;
+      padding: 20px;
+      color: #fff;
+      margin-bottom: 347px;
+      background-color: #1161D9;
+    }
+    .breadcrumb {
+      margin-top: -200px;
+      margin-left: 658px;
+  }
+  .example {
+    height: 84px;
+    margin-left: 73px;
+    width: 523px;
+    margin-top: 25px;
+    border-radius: 15px;
+    padding: 12px;
+    border: 1px solid #f1f5f6;
+  }
+    
+    /*UPLOAD*/ 
+                              
+  .left-sidebar a:hover {
+    color: #f1f1f1;
+  }
+  
+  .left-sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  #main {
+    transition: margin-left .5s;
+    padding: 16px;
+  }
+  .drop-zone {
+    width: 100%;
+    height: 100%;
+    margin: 82px auto;
+    display: flex;
+    font-family: Rubik;
+    font-weight: 500;
+    font-size: 20px;
+    cursor: pointer;
+    color: #cccccc;
+    background-color: #ffffff;
+    border: 1px dashed #0A0E69;
+    border-radius: 10px;
+  }
+  
+  .drop-zone--over {
+    border-style: solid;
+  }
+  
+  .drop-zone__input {
+    display: none;
+  }
+  
+  .drop-zone__thumb {
+      width: 50%;
+      margin-top: 70px;
+      margin-left: -200px;
+      height: 50%;
+      background-repeat: no-repeat;
+      border-radius: 10px;
+      overflow: hidden;
+      background-color: #cccccc;
+      background-size: contain;
+      position: relative;
+  }
+  
+  .drop-zone__thumb::after {
+    content: attr(data-label);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 5px 0;
+    color: #ffffff;
+    background: rgba(0, 0, 0, 0.75);
+    font-size: 14px;
+    text-align: center;
+  }
+  .documentext
+  {
+    font-family: Rubik;
+    font-size: 30px;
+    font-style: normal;
+    color:#000000;
+    padding-top:0px;padding-left:51px;
+  }
+  .uploadtext
+  {
+    font-family: Rubik;
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 400;
+    padding-top:10px;
+    padding-left: 18px;color:#0A0E69;
+  }
+  .pleaseupload
+  {
+    font-family: Rubik;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    padding-top:2px;
+    padding-left: 18px;color:#000000;
+                  
+  }
+  .drop-zonep
+  {
+    margin-left: 80px;
+    margin-top: 54px;
+  }
+  .dropfilep
+  {
+    margin-top: 160px; margin-left: -104px;font-family: Rubik;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    color:#000000;
+  }
+  .dropfilep2
+  {
+    margin-top: 251px; margin-left: -134px;font-family: Rubik;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 400;
+    color:#000000;
+                    
+  }
+  .h3doc
+  {
+    font-family: Rubik;color: #251D1D;
+    font-size: 20px;
+    margin-top: 97px;
+    font-style: normal;
+    font-weight: 400;
+                        
+  }
+  .h3p
+  {
+    font-family: Rubik;color:#5A5A5A;margin-top: 16px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;           
+  }
+  .h3div
+  {
+    margin-left: 18px;
+  }
+  .tablecard
+  {
+    width: 245px;
+    height: 440px;
+    margin: auto;
+    background-color: #f7f7f7;
+  }
+}
+

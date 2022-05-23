@@ -1,0 +1,8376 @@
+.proceeds
+{
+   background-color: #ffffff;
+    font-family: Ubuntu;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    color: #000000;
+    border:1px solid #000000;
+    margin-left: 40px;
+    margin-bottom: 58px;
+}
+/* .successcard
+{
+    width: 502px; height: 553px; margin-top: 52px; background-color: #ffffff; margin-left: 200px;
+} */
+.successh2
+{
+    font-family: Ubuntu;
+    font-size: 30px;
+    font-weight: 500;
+    text-align: center;
+    color:#080C58; margin-left: 78px; margin-right: 78px;                                                 
+}
+.congp1
+{
+    font-family: Ubuntu;
+    font-size: 18px;
+    font-weight: 500;
+    padding-left: 78px;
+    text-align: left;
+    color: #555555;            
+}
+.congp2
+{
+    font-family: Ubuntu;
+    font-size: 16px;
+    font-weight: 400;
+    color:#555555;
+    padding-left:48px;
+    padding-top:13px;                     
+}
+.congp3
+{
+    font-family: Ubuntu;
+    font-size: 16px;
+    font-weight: 400;
+    padding-left: 48px;
+    padding-top: 12px;
+    color:#555555;                        
+}
+.amountpaid
+{
+    font-family: Rubik;
+    font-size: 16px;
+    font-weight: 400;
+    color:#000000;
+    padding-top:16px; padding-left:85px;                            
+}
+.paidby
+{
+    font-family: Rubik;
+    font-size: 16px;
+    font-weight: 400;
+    color:#000000;
+    padding-top:14px; padding-left:85px;                              
+}
+.transdate
+{
+    font-family: Rubik;
+    font-size: 16px;
+    font-weight: 400;
+    color:#000000;
+    padding-top:14px; padding-left:85px;                                
+}
+.money
+{
+    font-family: Rubik;
+    font-size: 16px;
+    font-weight: 400;
+    color:#000000;
+    padding-top:16px; padding-left:85px;                            
+}
+.successname
+{
+    font-family: Rubik;
+    font-size: 16px;
+    font-weight: 400;
+    color:#000000;
+    padding-top:14px; padding-left:85px;                              
+}
+.successdate
+{
+    font-family: Rubik;
+    font-size: 16px;
+    font-weight: 400;
+    color:#000000;
+    padding-top:14px; padding-left:85px;                                
+}
+.successbutton
+{
+    margin-left: 116px; margin-top:26px;margin-bottom:85px ;
+}
+@media (max-width: 900px)
+{
+  .collapsebtn
+{
+  margin-top: -5px;
+  margin-right: 40px;
+}
+  .hiddenbutton
+{
+  display: none;
+}
+  .mobile
+{
+  display: none;
+}
+  .mobilelang {
+    display: block;
+}
+  .english{
+    margin-left: 520px;
+  }
+  .successcard
+  {
+      width: 502px; height: 553px; margin-top: 152px; background-color: #ffffff; margin-left: 40px;
+  }
+  .applyh2
+{
+  padding-left: 264px;font-family: 'Ubuntu';font-style: normal;font-weight: 500;font-size: 24px;color: #0A0E69;
+}
+.applyh2p
+{
+  padding: 28px 100px 0px 100px;font-family: Ubuntu;font-size: 16px;font-style: normal;font-weight: 400;color: #0A0E69;                      
+}
+.applyformp{
+  padding-top:48px; padding-left: 101px; color:  #000000;font-family: Ubuntu;font-size: 14px;font-style: normal;font-weight: 400;
+}
+.formrowdiv
+{
+  margin-left: 101px;
+}
+.formgroupdiv
+{
+  margin-right: 102px;
+}
+.applyselect
+{
+  border: 1px solid #555555; width:502px;font-family:ubuntu;height: 44px; margin-top:27px
+}
+.makereviewcard
+{
+  width: 393px;
+  margin-left: -100px;
+}
+  .collapse
+  {
+    background-color: white;
+  }
+    .ml-80 {
+        margin-left: 0px;
+    }
+    .blue {
+        background-color: #1161d9;
+        color: white;
+        height: 87px;
+        margin-left: -150px;
+        width: 350px;
+    }
+    .hide
+    {
+        margin-left: -90px;
+    }
+  .applycard
+  {
+    border-radius: 10px;
+    border-color: transparent;
+    width: 738px;
+    margin: 32px auto;
+  }
+  .cf {
+    margin-left: 0px;
+}
+
+.cont{
+    margin-top: 139px;
+    padding-left: 206px;
+}
+    /*INDEX PAGE*/
+    .new-section1__flex1.layout {
+        width: 100%;
+    }
+    .new-section1__text-body8 {
+        margin-top: 14px;
+    }
+    .free {
+        font-weight: 500;
+        margin-left: 185px;
+        margin-top: 18px;
+        font-family: Ubuntu;
+        font-style: normal;
+        color: #ffffff;
+    }
+    .text {
+        width: 249px;
+        height: 16px;
+        margin-top: 18px;
+        font-family: Ubuntu;
+        font-style: normal;
+        
+        font-size: 14px;
+        line-height: 16px;
+    }
+    .hands
+     {
+      margin: 94px auto 0px;
+      font-family: Rubik;font-style: normal;font-weight: normal;font-size: 32px;
+     }
+     .adp {
+      margin-top: -2px;
+  }
+    .form {
+        width: 215px;
+        height: 28px;
+        left: 874px;
+        margin-top: 5px;
+        background: #F1F5F6;
+        text-align: center;
+        border-radius: 6px;
+        font-family: Ubuntu;
+        font-size: 14px;
+        line-height: 16px;
+        text-transform: lowercase;
+        color: rgba(21, 4, 35, 0.21);
+    }
+    .buttons {
+        width: 63px;
+        height: 28px;
+        padding-top: 3px;
+        margin-top: 5px;
+        background: #a0bd1c;
+        border-radius: 6px;
+        font-size: 13px;
+        font-weight: 300;
+        font-style: normal;
+        color: #FBFCFB;
+        font-family: Ubuntu;
+        padding-left: 10px;
+    }
+    .phone {
+        /* color: white; */
+        padding-top: 15px;
+        width: 120px;
+        height: 16px;
+        left: 1208px;
+        font-family: 'Ubuntu';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 16px;
+        text-decoration-line: none;
+        color: #FFFFFF;
+    }
+    a {
+        color: #0d6efd;
+        text-decoration: underline;
+    }
+    .shop
+    {
+        margin-left:-17.5%;
+        font-family: rubik;
+    }
+    .bannertext {
+
+      font-size: 37px;
+      color: #0A0E69;
+  }
+  .made {
+
+    font-size: 20px;
+  }
+  .applybtn {
+    padding-top: 9px;
+    padding-bottom: 9px;
+    font-size: 14px;
+  }
+    .logoimg
+    {
+     margin-left: 27px; margin-top: 10px;
+    }
+    .home
+      {
+          color: #000000; 
+          margin-left:60px; 
+          margin-top: 15px;
+          font-family: Ubuntu;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 16px;
+      }
+      .visa
+      {
+          color: #000000; 
+          margin-left:60px; 
+          margin-top: 5px;
+          font-family: Ubuntu;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 16px;
+      }
+      .services
+      {
+          color: #000000; 
+          margin-left:60px; 
+          margin-top: 5px;
+          font-family: Ubuntu;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 16px;
+      }
+      .contact
+      {
+          width: 100%; 
+          color: #000000;
+          margin-left:60px; 
+          margin-top: 5px;
+          font-family: Ubuntu;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 16px;
+      }
+      .navbar-light .navbar-nav .nav-link
+      {
+        color: #000000;
+      }
+      .about{
+          width: 100%;
+          color: #000000;
+          margin-left:60px; 
+          margin-top: 5px;
+          font-family: Ubuntu;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 16px;
+      }
+      .ml-118
+      {
+          margin-left: 60px;
+      }
+      .button {
+          width: 63px;
+          margin-top: 20px;
+          margin-bottom:30px;
+          background: #a0bd1c;
+          border-radius: 6px;
+          font-size: 14px;;
+          font-weight: 300;
+          font-style: normal;
+          color: #FBFCFB;
+          font-family: Ubuntu;
+          text-align: center;
+          padding-right: 64px;
+    
+        }
+        
+        .buttons2 {
+         
+          background: #a0bd1c;
+          border-radius: 6px;
+          font-size: 14px;;
+          font-weight: 300;
+          font-style: normal;
+          color: #FBFCFB;
+          font-family: Ubuntu;
+          text-align: center;
+          margin-top: 23px;
+          margin-left: 32px;
+          width: 117px;
+          height: 43px;
+          padding: 10px 23px;
+        }
+
+        .lang
+        {
+          display:none;
+        }
+        .button2 {
+            background-color: #FBFCFB;
+            width: 89px;
+            height: 36px;
+            left: 1042px;
+            margin-top: 20px;
+            margin-bottom:30px;
+            border: 1px solid #a0bd1c;
+            padding-top: 10px;
+            font-family: 'Ubuntu';
+            font-style: normal;
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 16px;
+            margin-left: -52.5px;
+            color: #a0bd1c;
+        }
+        .lang {
+            margin-left: 20px;
+            margin-top: 0px;
+        }
+        .buttons3 {
+          background: #a0bd1c;
+          border-radius: 6px;
+          font-size: 14.5px;
+          font-weight: 300;
+          font-style: normal;
+          color: #FBFCFB;
+          font-family: Ubuntu;
+          text-align: center;
+          margin-top: 43px;
+          margin-left: 30px;
+          width: 117px;
+          height: 43px;
+          padding: 10px 23px;
+         }
+         .width
+         {
+             width: 709px; height: 87px;margin-left: 0px;
+         }
+         .reviews{
+            width:1320px;
+            margin-left: 120px;
+         }
+         .btn-review {
+          margin: 100px 370px 10px;
+          
+      }
+         .mt-5
+         {
+           width: 250px;
+         }
+     .img2h1
+     {
+      font-size: 16px;
+      text-align: justify;
+      color: #F1F5F6;
+      margin-left:86px ;
+      font-family: Ubuntu;
+      margin-top: 10px;
+      font-family: Rubik;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 23px;
+      line-height: 20px;
+     }
+     .img2h4
+     {
+      text-align: justify; color: #F1F5F6; margin-left: 35px; font-family:Ubuntu
+     }
+     .img3h1
+     {
+      font-size: 16px;
+      text-align: justify;
+      color: #F1F5F6;
+      margin-left: 86px;
+      font-family: Ubuntu;
+      margin-top: 10px;
+      font-family: Rubik;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 23px;
+      line-height: 20px;
+     }
+   
+     .img4h1
+     {
+      text-align: justify;
+      color: #F1F5F6;
+      margin-left: 86px;
+      margin-top: 10px;
+      font-family: Rubik;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 23px;
+      line-height: 20px;
+     }
+     .img4h4
+     {
+      text-align: justify; color: #F1F5F6; margin-left: 36px; font-family:Ubuntu
+     }
+  
+     .img5h1
+     {
+      text-align: justify;
+      color: #F1F5F6;
+      margin-left: 50px;
+      margin-top: 10px;
+      font-family: Rubik;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 23px;
+      line-height: 20px;
+     }
+  
+     .img5h4
+     {
+      text-align: justify; color: #F1F5F6; margin-left: 10px; font-family:Ubuntu
+     }
+     .list-group-horizontal {
+
+      margin-left: 10px;
+  }
+         .img1 {
+            height: 110px;
+            width: 113px;
+            margin-left: 35px;
+            top: 252px;
+            border-radius: 0px;
+        }
+        .img2
+        {
+             margin-left: 35px;
+        }
+     
+        .img3{
+             margin-left: 35px;
+        }
+        .img4
+        {
+         margin-left: 35px;
+        }
+        .img5
+        {
+         margin-left: 35px; 
+       
+        }
+        .img1h1 {
+            font-size: 23px;
+            color: #F1F5F6;
+            font-family: Ubuntu;
+            margin-top: 10px;
+            height: 20px;
+            width: 11px;
+            padding-left: 82px;
+        }
+        .img1h4 {
+          color: #F1F5F6;
+          font-family: Ubuntu;
+          height: 20px;
+          margin-left: -150px;
+          margin-top: 10px;
+          display: grid;
+      }
+        #content1 {
+          margin-left: 200px;
+          margin-top: 2px;
+      }
+      #content2 {
+        margin-left: 200px;
+    }
+
+         .img3h4
+         {
+          color: #F1F5F6; margin-left: 66px; font-family:Ubuntu;
+         }
+         .cardwidth
+     {
+      width: 281px;
+     }
+     .cardh1
+     {
+      letter-spacing: 0.04em;
+     }
+     .cardh5
+     {
+      font-weight: 300;
+     }
+     .customers
+     {
+      width: 671px;
+      height: 41px;
+      font-family: Rubik;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 32px;
+      line-height: 41px;
+      color: #060a5c;
+     }
+     .mt-99
+     {
+      margin-top: 79px;
+     }
+     .subscribe
+     {
+        background: #0C65EB;
+        color: white;
+        text-align: center;
+        font-family: 'Ubuntu';
+        padding: 0px;
+        height: 41px;
+        width: 100px;
+        margin-left: -50px;
+     }
+     .footerlogo
+     {
+        margin-left: 0px;
+        margin-top: 20px;
+     }
+     .div2
+     {
+      padding-left: 30px;
+     }
+     .div3
+     {
+      padding-left: 0px;
+      
+     }
+     .div4
+     {
+      padding-left: 5px;
+      
+     }
+     .fs-13
+     {
+      font-size: 11px;
+       color: #0A0E69;
+     }
+     .lg-li
+     {
+  
+      margin-left: 10px;
+      margin-top: 21px;
+     }
+     .lastfooter
+     {
+        padding-left: 14px;
+        padding-right: 0px;
+     }
+     .adtc {
+      margin-top: -1px;
+  }
+     .lastfooterrow
+     {
+      padding-top: 18px;
+      padding-bottom: 18px;
+      width: 100%;
+      margin-left: 20px;
+     }
+     .locaddress
+     {
+      font-size: 10px;
+       color: #0A0E69;
+        text-decoration: none;
+         margin-top: -2px;
+     }
+     .shorttest
+     {
+      font-size: 10px; color: #0A0E69; margin-left: -57px; margin-top:6px;
+     }
+     .policy {
+      margin-top: -1px;
+  }
+     .privacy
+     {
+      font-size: 10px; color: #0A0E69; text-decoration: none;padding:0px 0px ;margin-left: -17px;
+     }
+     .tc
+     {
+      font-size: 10px; margin-left: -27px; color: #0A0E69;text-decoration: none;
+     }
+     .aboutpageheight
+     {
+         height: 2100px;
+     }
+
+     input[type=radio],
+     input.radio {
+       float: left;
+       clear: none;
+       margin: 2px 0 0 2px;
+     }
+     .form-row {
+   display: flex;
+  }
+  input[type=radio],
+     input.radio {
+       float: left;
+       clear: none;
+       margin: 6px 0 0 2px;
+       border-color: #A0BD1C;
+     }
+  
+  .form-group {
+   padding: 5px;
+  
+  }
+  
+  /* .form-group input {
+   width: 100%;
+  } */
+  .proceed
+  {
+    
+     background-color: #A0BD1C;
+     font-family: Ubuntu;
+     font-size: 14px;
+     font-style: normal;
+     font-weight: 400;
+     color: #ffffff;
+  
+  }
+  .form-select
+  {
+   color: #555555;
+  }
+  
+  /* NBV FORM STYLE */
+  .nbvformheight {
+      position: relative;
+      height: 1600px;
+  }
+  .nbiformheight {
+      position: relative;
+      height: 1300px;
+  }
+  label {
+      float: left;
+      clear: none;
+      display: block;
+      padding: 0px 0.5rem 0px 8px;
+    }
+    .welcome
+    {
+      font-family: Rubik;
+      font-size: 35px;
+      font-style: normal;
+      font-weight: 500;                 
+      padding-left: 350px;
+      padding-top: 62px;
+      color:#0A0E69;
+    }
+    .formtext
+    {
+      height: 113px;
+      color:#0A0E69;
+      padding-left: 39px;
+      padding-top: 52px;
+      font-family: ubuntu;
+      font-size: 18px;
+      font-weight: 300;
+    }
+    .topdiv
+    {
+      margin:74px auto 166px;       
+      width: 738px;
+    }
+    .cardform
+    {
+      border:1px solid #ffffff; height: 900px;
+    }
+    .formh1
+    {
+      padding-left: 254px;font-family: 'Ubuntu';font-style: normal;font-weight: 500;font-size: 24px;color: #0A0E69;
+    }
+    .formp
+    {
+      padding: 28px 273px 0px 273px;font-family: Ubuntu;font-size: 16px;font-style: normal;font-weight: 400;color: #0A0E69;                      
+    }
+    .title
+    {
+      border: 1px solid #555555; width:352px; margin-left:66px; margin-top:72px;
+    }
+    .yourname
+    {
+      padding-top:19px; padding-left: 116px; color: #C8730F;font-family: Ubuntu;
+      font-size: 13px;
+      font-style: normal;
+      font-weight: 400;
+    }
+    .formml
+    {
+      margin-left: 66px;
+    }
+    .firstname
+    {
+      border:1px solid #555555;
+      font-family: ubuntu; 
+      margin-top: 27px;
+      height: 44px; width:200px;
+    }
+    .firstname2
+    {
+      border:1px solid #555555;
+      font-family: ubuntu; 
+      margin-top: 27px;
+      height: 44px; width:250px;
+      margin-right: 82px;
+    }
+    .middlename
+    {
+      border:1px solid #555555;
+      font-family: ubuntu; 
+      margin-top: 27px;
+      height: 44px; width:200px;
+      margin-left: 40px;
+    }
+    .lastname
+    {
+      border:1px solid #555555;
+      font-family: ubuntu; 
+      margin-top: 27px;
+      height: 44px; width:200px;
+      margin-left: 80px;
+    }
+    .gender
+    {
+      padding-left: 78px;
+    }
+    .male
+    {
+      margin-left: 48px;
+    }
+    .please
+    {
+      padding-top: 27px;
+      font-family: Ubuntu;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+    }
+    .select
+    {
+      border: 1px solid #555555; height: 44px;margin-top: 17px; width:502px;font-family: ubuntu;
+    }
+  
+    .vsbheight
+    {
+      position: relative;
+      height: 1084px;
+    }
+  
+    .vsbh2
+    {
+      height: 28px;padding-left: 245px;font-family: 'Ubuntu';font-style: normal;font-weight: 500;font-size: 24px;line-height: 28px;color: #000000;
+    }
+  
+    .vsbp
+    {
+      padding: 28px 90px 0px 90px;font-family: Ubuntu;font-size: 16px;font-style: normal;font-weight: 400;line-height: 23px;letter-spacing: 0em;text-align: left;color: #000000;
+    }
+  
+    .vsbform
+    {
+      border:1px solid #555555; font-family: ubuntu; margin: 26px auto; width:416px;
+    }
+    .vsbmt
+    {
+        margin-top:27px;
+    }
+    .vsbformp
+    {
+      font-family: Ubuntu;font-size: 14px;
+      font-style: normal;font-weight: 400;
+      line-height: 16px;letter-spacing: 0em;
+      text-align: left;padding-left:160px; padding-top:27px;
+    }
+    .vsbformselect
+    {
+      border: 1px solid #555555; width: 450px; margin-left:160px;
+    }
+    .vsbformtextarea
+    {
+      width: 450px; height: 116px;margin-bottom: 65px;
+      margin-left: 169px;margin-top:27px;
+    }
+  
+    /*RESET PASSWORD*/
+    .resetpassword
+    {
+      position: relative;
+      height: 800px;
+    }
+    .resetform
+    {
+      border-radius: 10px;
+      border-color: transparent;
+      width: 608px; background-color: #1161D9;
+      margin: 32px auto;
+    }
+    .sibutton {
+      width: 73px;
+      margin-top: 0px;
+      margin-left: 45px;
+  }
+   .rph2
+   {
+      padding-top:68px;padding-left: 360px;font-family: 'Ubuntu';
+      font-style: normal;font-weight: 500;font-size: 24px;color: #0A0E69;
+   }
+    .rpml
+    {
+      margin-left: 69px;
+    }
+    .inputdiv
+    {
+      margin-right: 202px; margin-top:72px;
+    }
+    .rpinput
+    {
+      border: 1px solid #ffffff; width:470px;font-family:ubuntu;height: 44px; margin-top:27px; background-color: #1161D9; color: #ffffff;
+    }
+  
+    .buttonrow
+    {
+      margin-left: 69px; margin-top: 42px;
+    }
+    .rpmb
+    {
+      margin-bottom:80px ;
+      /*margin-top: 27px;*/
+    }
+    .rpbutton
+    {
+      width: 90px;
+      margin-left: 20px;
+    }
+  
+    /*SIGN IN*/
+    .sih2
+    {
+      padding-top:68px;padding-left: 218px;font-family: 'Ubuntu';font-style: normal;font-weight: 500;font-size: 24px;color: #0A0E69;
+    }
+  
+    /*FORGOT PASSWORD*/
+    .fpp
+    {
+      font-family: Rubik;
+      font-size: 14px;
+      font-weight: 500;
+      color: #ffffff;
+    }
+  
+    /*Review*/
+    .reviewheight
+    {
+        height: 1800px;
+    }
+    .reviewh2
+    {
+      padding-top:68px;
+      padding-left: 600px;
+      font-family: 'Ubuntu';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 24px;
+      color: #0A0E69;
+    }
+    .reviewcard
+    {
+        border-radius: 10px;
+        border-color: transparent;
+        width: 670px;
+        background-color: #ffffff;
+        margin: 32px 85px;
+    }
+    .reviewml
+    {
+      margin-left: 57px;
+    }
+    .reviewmt
+    {
+      margin-top:45px
+    }
+    .reviewname
+    {
+      font-family: Rubik; color:#080C58;
+      font-size: 16px;
+      font-weight: 500;
+    }
+    .reviewservice
+    {
+      font-family: Ubuntu;
+      font-size: 16px;
+      font-weight: 500;
+      margin-top:21px;
+      color:#000000;
+      
+    }
+    .reviewtext
+    {
+      font-family: Ubuntu; width: 559px; margin-top: 14px;
+      font-size: 14px;
+      font-weight: 400;
+      color:#000000
+      
+    }
+  
+    /*Payment*/
+    .paymentlogoimg
+    {
+      border-radius: 50%; margin-left: 36px; margin-top: 28px;
+    }
+    .paymenth2
+    {
+      font-family: Rubik;
+      font-size: 30px;
+      font-weight: 700;
+      color:#F1F5F6;
+      text-align: left;
+      padding-left: 100px;
+      padding-top: 86px;
+    }
+    .paymentdiv
+    {
+      margin-left: 100px; margin-top: 14px;
+    }
+    .paymentservices
+    {
+      font-family: Ubuntu;
+      font-size: 18px;
+      font-weight: 700;
+      color:#F1F5F6;
+    }
+    .paymentprice
+    {
+      font-family: Ubuntu;
+      font-size: 18px;
+      font-weight: 700;
+      padding-left: 200px;
+      color:#F1F5F6;
+    }
+    .reviewline
+    {
+      margin-left: 100px; 
+      margin-top: 26px; 
+      color: #F1F5F6; 
+      border: 1px solid #F1F5F6; 
+      width: 690px;
+    }
+    .form-group2 {
+      padding: 5px;
+      width: 100%;
+    }
+    .form-control::placeholder { 
+      color: #555555;
+    }
+    .form-group2 input {
+      width: 100%;
+    }
+      .payment
+    {
+       background-color: #A0BD1C;
+        font-family: Ubuntu;
+        font-size: 16px;
+        width: 384px;
+        font-style: normal;
+        font-weight: 400;
+        color: #ffffff;
+        border:1px solid #A0BD1C;
+        
+        margin-bottom: 58px;
+    }
+  
+    .leftcard
+    {
+      width: 502px; height: 653px; margin-top: 52px; background-color: #ffffff; margin-left: 200px;
+    }
+    .leftcardh2
+    {
+      font-family: Ubuntu;
+      font-size: 30px;
+      font-weight: 500;
+      text-align: center;
+      color:#000000; margin-left: 57px; margin-right: 78px; 
+    }
+    .paymentopt
+    {
+      font-family: Ubuntu;
+      font-size: 14px;
+      font-weight: 500;
+      color:#000000;margin-left: 95px;
+    }
+    .radioo
+    {
+      width: 21px; height: 21px; margin-top: 8px;
+    }
+    .radiodiv
+    {
+      margin-top: 20px; margin-left: 57px;
+    }
+    .cardname
+    {
+      font-family: Ubuntu;
+      padding-top: 26px;
+      font-size: 14px;
+      font-weight: 400; color: #000000;                         
+    }
+    .cardinput
+    {
+      border: 1px solid #555555;height: 44px; width:384px; margin-top:7px
+    }
+    .cardnumber
+    {
+      font-family: Ubuntu;
+      padding-top: 6px;
+      font-size: 14px;
+      font-weight: 400; color: #000000;                      
+    }
+    .expiry
+    {
+      font-family: Ubuntu;
+      font-size: 14px;
+      font-weight: 400; color: #000000;   
+    }
+    .expiryinput
+    {
+      width:185px;
+      margin-top: 3px;
+      color: #5A5A5A; 
+      height:43px;
+      border:1px solid #555555;
+      font-size: 14px; 
+      font-family: ubuntu; 
+      font-weight: 400;
+    }
+    .divbutton
+    {
+      margin-left: 57px; 
+      margin-top:26px;
+      margin-bottom:85px ;
+    }
+    .movement1
+  {
+    margin-left: 40px;
+  }
+ 
+  .new-section1__text-body8 {
+    margin-top: 14px;
+    margin-left: 0px;
+}
+    .contactheight
+    {
+        position: relative;
+        height: 1500px;
+    }
+    .faqheight
+    {
+        position: relative;
+            height: 1500px;
+    }
+    .faqtext
+    {
+        padding-left: 136px; font-size: 16px; padding-top: 50px;
+    }
+    .helptext
+    {
+        padding-left: 136px;
+        font-size: 35px; 
+        color: white; 
+        font-family: ubuntu;
+    }
+    .everythingtext
+    {
+        padding-left: 136px;font-size: 14px; color: #F1F5F6;
+    }
+    .everythingtext2
+    {
+      font-weight: 400;
+      padding-left: 136px;
+      font-size: 20px;
+      font-family: ubuntu;
+      margin-top: 86px;
+      margin-bottom: 72px;
+      margin-right: 109px;
+      color: #0A0E69;
+    }
+    .question {
+        font-family: Ubuntu;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+      padding: 20px 80px 20px 20px;
+      position: relative;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+    }
+    
+    .question::after {
+      content: "\002B";
+      font-size: 2.2rem;
+      position: absolute;
+      right: 20px;
+      transition: 0.2s;
+    }
+    
+    .question.active::after {
+      transform: rotate(45deg);
+    }
+    
+    .answercont {
+      max-height: 0;
+      overflow: hidden;
+      transition: 0.3s;
+    }
+    
+    .answer {
+      padding: 0 20px 20px;
+      line-height: 1.5rem;
+    }
+    .containerques {
+      background-color: white;
+      color: #0A0E69;
+      border-radius: 10px;
+      width: 622px;
+      margin: 20px auto;
+      box-shadow: 0 5px 10px 0 rgb(0,0,0,0.25);
+    }
+    .ppheight
+    {
+        position: relative;
+        height: 1100px;
+    }
+    .pptop
+    {
+        width: 100%; height: 200px; background-color: #ADC92E;
+    }
+    .pptext
+    {
+        padding-left: 164px;padding-top: 70px; font-size: 40px; color: white; font-family: ubuntu;
+    }
+    .ppcard
+    {
+        border-radius: 10px;
+        border-color: transparent;
+        width: 778px;
+        margin: 87px auto;
+    }
+    .pptext2
+    {
+        font-family: ubuntu;
+        font-size: 16px;
+        font-weight: 300;
+        padding: 78px 86px 133px;
+    }
+    .nbiheight {
+        position: relative;
+        height: 1030px;
+    }
+    .nbiimage
+    {
+        margin-left: 88px;
+    }
+    .imagebn
+    {
+      width: 353px;
+      height: 304px;
+      margin-left: -50px;
+    }
+.hide{
+  display: none;
+}
+    .imagebn2
+    {
+      margin-left: 50px;
+      width: 383px;
+      height: 304px;
+    }
+    .nbitext
+    {
+      padding-left:50px; 
+      width: 450px;
+    }
+
+    .nbitext2
+    {
+      margin-left: -75px;
+      width: 403px;
+    }
+    .col-md-1
+    {
+      display: none;
+    }
+    .cont{
+        margin-top: 139px; padding-left: 56px;
+    }
+    .contactcard
+    {
+        border: transparent;
+                            border-radius: 25px; margin-left: -20px;
+                            width: 400px;
+    }
+    .contactform
+    {
+        padding-left: 70px;
+        padding-right: 78px;
+        padding-bottom: 142px;
+        padding-top: 49px;
+    }
+    .forgot
+    {
+      
+      margin-left: 150px;                   
+    }
+}
+@media (max-width: 853px)
+{
+  .collapsebtn
+{
+  margin-top: -5px;
+  margin-right: 40px;
+}
+  .hiddenbutton
+{
+  display: none;
+}
+  .mobile
+{
+  display: none;
+}
+  .english{
+    margin-left: 470px;
+  }
+  .successcard
+  {
+      width: 502px; height: 553px; margin-top: 152px; background-color: #ffffff; margin-left: 40px;
+  }
+  .applyh2
+{
+  padding-left: 224px;font-family: 'Ubuntu';font-style: normal;font-weight: 500;font-size: 24px;color: #0A0E69;
+}
+.applyh2p {
+  padding: 28px 40px 0px 40px;
+  font-family: Ubuntu;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  color: #0A0E69;
+}
+.applyformp{
+  padding-top:48px; padding-left: 101px; color:  #000000;font-family: Ubuntu;font-size: 14px;font-style: normal;font-weight: 400;
+}
+.formrowdiv
+{
+  margin-left: 101px;
+}
+.formgroupdiv
+{
+  margin-right: 102px;
+}
+.applyselect
+{
+  border: 1px solid #555555; width:502px;font-family:ubuntu;height: 44px; margin-top:27px
+}
+.makereviewcard
+{
+  width: 393px;
+  margin-left: -100px;
+}
+  .collapse
+  {
+    background-color: white;
+  }
+    .ml-80 {
+        margin-left: 0px;
+    }
+    .blue {
+        background-color: #1161d9;
+        color: white;
+        height: 87px;
+        margin-left: -150px;
+        width: 350px;
+    }
+    .hide
+    {
+        margin-left: -90px;
+    }
+  .applycard
+  {
+    border-radius: 10px;
+    border-color: transparent;
+    width: 738px;
+    margin: 32px auto;
+  }
+  .cf {
+    margin-left: 0px;
+}
+
+.cont{
+    margin-top: 139px;
+    padding-left: 206px;
+}
+    /*INDEX PAGE*/
+    .new-section1__flex1.layout {
+        width: 100%;
+    }
+    .new-section1__text-body8 {
+        margin-top: 14px;
+    }
+    .free {
+        font-weight: 500;
+        margin-left: 135px;
+        margin-top: 18px;
+        font-family: Ubuntu;
+        font-style: normal;
+        color: #ffffff;
+    }
+    .text {
+        width: 249px;
+        height: 16px;
+        margin-top: 18px;
+        font-family: Ubuntu;
+        font-style: normal;
+        
+        font-size: 14px;
+        line-height: 16px;
+    }
+    .hands
+     {
+      margin: 94px auto 0px;
+      font-family: Rubik;font-style: normal;font-weight: normal;font-size: 35px;
+     }
+    .form {
+        width: 215px;
+        height: 28px;
+        left: 874px;
+        margin-top: 5px;
+        background: #F1F5F6;
+        text-align: center;
+        border-radius: 6px;
+        font-family: Ubuntu;
+        font-size: 14px;
+        line-height: 16px;
+        text-transform: lowercase;
+        color: rgba(21, 4, 35, 0.21);
+    }
+    .buttons {
+        width: 63px;
+        height: 28px;
+        padding-top: 3px;
+        margin-top: 5px;
+        background: #a0bd1c;
+        border-radius: 6px;
+        font-size: 13px;
+        font-weight: 300;
+        font-style: normal;
+        color: #FBFCFB;
+        font-family: Ubuntu;
+        padding-left: 10px;
+    }
+    .phone {
+        /* color: white; */
+        padding-top: 15px;
+        width: 120px;
+        height: 16px;
+        left: 1208px;
+        font-family: 'Ubuntu';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 16px;
+        text-decoration-line: none;
+        color: #FFFFFF;
+    }
+    a {
+        color: #0d6efd;
+        text-decoration: underline;
+    }
+    .shop
+    {
+        margin-left:-12.5%;
+        font-family: rubik;
+    }
+    .bannertext {
+      font-size: 38px;
+      color: #0A0E69;
+  }
+    .made {
+
+      font-size: 19px;
+    }
+    .applybtn {
+      padding-top: 9px;
+      padding-bottom: 9px;
+      font-size: 14px;
+    }
+    .logoimg
+    {
+     margin-left: 27px; margin-top: 13px;
+    }
+    .home
+      {
+          color: #000000; 
+          margin-left:5px; 
+          margin-top: 5px;
+          font-family: Ubuntu;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 16px;
+      }
+      .visa
+      {
+          color: #000000; 
+          margin-left:5px; 
+          margin-top: 5px;
+          font-family: Ubuntu;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 16px;
+      }
+      .services
+      {
+          color: #000000; 
+          margin-left:5px; 
+          margin-top: 5px;
+          font-family: Ubuntu;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 16px;
+      }
+      .contact
+      {
+          width: 100%; 
+          color: #000000;
+          margin-left:5px; 
+          margin-top: 5px;
+          font-family: Ubuntu;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 16px;
+      }
+      .navbar-light .navbar-nav .nav-link
+      {
+        color: #000000;
+      }
+      .about{
+          width: 100%;
+          color: #000000;
+          margin-left:5px; 
+          margin-top: 5px;
+          font-family: Ubuntu;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 16px;
+      }
+      .ml-118
+      {
+          margin-left: 60px;
+      }
+      .button {
+          width: 63px;
+          margin-top: 0px;
+          background: #a0bd1c;
+          border-radius: 6px;
+          font-size: 14px;;
+          font-weight: 300;
+          font-style: normal;
+          color: #FBFCFB;
+          font-family: Ubuntu;
+          text-align: center;
+          padding-right: 54px;
+    
+        }
+        .buttons2 {
+         
+          background: #a0bd1c;
+          border-radius: 6px;
+          font-size: 14px;;
+          font-weight: 300;
+          font-style: normal;
+          color: #FBFCFB;
+          font-family: Ubuntu;
+          text-align: center;
+          margin-top: 23px;
+          margin-left: 32px;
+          width: 117px;
+          height: 43px;
+          padding: 10px 23px;
+        }
+        .button2 {
+            background-color: #FBFCFB;
+            width: 89px;
+            height: 36px;
+            left: 1042px;
+            margin-top: 2px;
+            border: 1px solid #a0bd1c;
+            padding-top: 10px;
+            font-family: 'Ubuntu';
+            font-style: normal;
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 16px;
+            margin-left: -52.5px;
+            color: #a0bd1c;
+        }
+        .lang {
+            margin-left: 20px;
+            margin-top: 0px;
+        }
+        .buttons3 {
+          background: #a0bd1c;
+          border-radius: 6px;
+          font-size: 14.5px;
+          font-weight: 300;
+          font-style: normal;
+          color: #FBFCFB;
+          font-family: Ubuntu;
+          text-align: center;
+          margin-top: 43px;
+          margin-left: 30px;
+          width: 117px;
+          height: 43px;
+          padding: 10px 23px;
+         }
+         .width
+         {
+             width: 709px; height: 87px;margin-left: 0px;
+         }
+         .reviews{
+          width: 1550px;
+          margin-left: 75px;
+         }
+         .mt-5
+         {
+           width: 250px;
+         }
+     .img2h1
+     {
+      font-size: 16px;
+      text-align: justify;
+      color: #F1F5F6;
+      margin-left:86px ;
+      font-family: Ubuntu;
+      margin-top: 10px;
+      font-family: Rubik;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 23px;
+      line-height: 20px;
+     }
+     .img2h4
+     {
+      text-align: justify; color: #F1F5F6; margin-left: 35px; font-family:Ubuntu
+     }
+     .img3h1
+     {
+      font-size: 16px;
+      text-align: justify;
+      color: #F1F5F6;
+      margin-left: 86px;
+      font-family: Ubuntu;
+      margin-top: 10px;
+      font-family: Rubik;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 23px;
+      line-height: 20px;
+     }
+   
+     .img4h1
+     {
+      text-align: justify;
+      color: #F1F5F6;
+      margin-left: 86px;
+      margin-top: 10px;
+      font-family: Rubik;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 23px;
+      line-height: 20px;
+     }
+     .img4h4
+     {
+      text-align: justify; color: #F1F5F6; margin-left: 36px; font-family:Ubuntu
+     }
+  
+     .img5h1
+     {
+      text-align: justify;
+      color: #F1F5F6;
+      margin-left: 50px;
+      margin-top: 10px;
+      font-family: Rubik;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 23px;
+      line-height: 20px;
+     }
+  
+     .img5h4
+     {
+      text-align: justify; color: #F1F5F6; margin-left: 10px; font-family:Ubuntu
+     }
+     .list-group-horizontal {
+
+      margin-left: 20px;
+  }
+         .img1 {
+            height: 110px;
+            width: 113px;
+            margin-left: 40px;
+            top: 252px;
+            border-radius: 0px;
+        }
+        .img2
+        {
+             margin-left: 35px;
+        }
+     
+        .img3{
+             margin-left: 35px;
+        }
+        .img4
+        {
+         margin-left: 35px;
+        }
+        .img5
+        {
+         margin-left: 35px; 
+       
+        }
+        .img1h1 {
+            font-size: 23px;
+            color: #F1F5F6;
+            font-family: Ubuntu;
+            margin-top: 10px;
+            height: 20px;
+            width: 11px;
+            padding-left: 82px;
+        }
+        .img1h4 {
+          color: #F1F5F6;
+          font-family: Ubuntu;
+          height: 20px;
+          margin-left: -60px;
+          margin-top: 10px;
+          white-space: nowrap;
+      }
+      #content1 {
+        margin-left: 100px;
+        margin-top: 1px;
+    }
+    #content2 {
+      margin-left: 100px;
+  }
+         .img3h4
+         {
+          color: #F1F5F6; margin-left: 66px; font-family:Ubuntu;
+         }
+         .cardwidth
+     {
+      width: 281px;
+     }
+     .cardh1
+     {
+      letter-spacing: 0.04em;
+     }
+     .cardh5
+     {
+      font-weight: 300;
+     }
+     .customers
+     {
+      width: 671px;
+      height: 41px;
+      font-family: Rubik;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 35px;
+      line-height: 41px;
+      color: #060a5c;
+     }
+     .btn-review {
+      margin: 100px 350px 0px;
+  }
+     .subscribe
+     {
+        background: #0C65EB;
+        color: white;
+        text-align: center;
+        font-family: 'Ubuntu';
+        padding: 0px;
+        height: 41px;
+        width: 100px;
+        margin-left: -50px;
+     }
+     .footerlogo
+     {
+        margin-left: 0px;
+        margin-top: 20px;
+     }
+     .div2
+     {
+      padding-left: 30px;
+     }
+     .div3
+     {
+      padding-left: 0px;
+      
+     }
+     .div4
+     {
+      padding-left: 5px;
+      
+     }
+     .fs-13
+     {
+      font-size: 11px;
+       color: #0A0E69;
+     }
+     .lg-li
+     {
+  
+      margin-left: 10px;
+      margin-top: 21px;
+     }
+     .lastfooter
+     {
+        padding-left: 0px;
+        padding-right: 0px;
+     }
+     .lastfooterrow
+     {
+      padding-top: 18px; padding-bottom: 18px;margin-left: 10px;
+      width: 100%;
+     }
+     .locaddress
+     {
+      font-size: 10px;
+       color: #0A0E69;
+        text-decoration: none;
+         margin-top: -2px;
+     }
+     .shorttest
+     {
+      font-size: 10px; color: #0A0E69; margin-left: -47px;
+     }
+     .privacy
+     {
+      font-size: 10px; color: #0A0E69; text-decoration: none;padding:0px 0px ;margin-left: -17px;
+     }
+     .adtc {
+      margin-top: -1px;
+  }
+     .tc
+     {
+      font-size: 10px; margin-left: -20px; color: #0A0E69;text-decoration: none;
+     }
+     .aboutpageheight
+     {
+         height: 1800px;
+     }
+
+     input[type=radio],
+     input.radio {
+       float: left;
+       clear: none;
+       margin: 2px 0 0 2px;
+     }
+     .form-row {
+   display: flex;
+  }
+  input[type=radio],
+     input.radio {
+       float: left;
+       clear: none;
+       margin: 6px 0 0 2px;
+       border-color: #A0BD1C;
+     }
+  
+  .form-group {
+   padding: 5px;
+  
+  }
+  
+  /* .form-group input {
+   width: 100%;
+  } */
+  .proceed
+  {
+    
+     background-color: #A0BD1C;
+     font-family: Ubuntu;
+     font-size: 14px;
+     font-style: normal;
+     font-weight: 400;
+     color: #ffffff;
+  
+  }
+  .form-select
+  {
+   color: #555555;
+  }
+  
+  /* NBV FORM STYLE */
+  .nbvformheight {
+      position: relative;
+      height: 1600px;
+  }
+  .nbiformheight {
+      position: relative;
+      height: 1300px;
+  }
+  label {
+      float: left;
+      clear: none;
+      display: block;
+      padding: 0px 0.5rem 0px 8px;
+    }
+    .welcome
+    {
+      font-family: Rubik;
+      font-size: 35px;
+      font-style: normal;
+      font-weight: 500;                 
+      padding-left: 350px;
+      padding-top: 62px;
+      color:#0A0E69;
+    }
+    .formtext
+    {
+      height: 113px;
+      color:#0A0E69;
+      padding-left: 39px;
+      padding-top: 52px;
+      font-family: ubuntu;
+      font-size: 18px;
+      font-weight: 300;
+    }
+    .topdiv
+    {
+      margin:74px auto 166px;       
+      width: 738px;
+    }
+    .cardform
+    {
+      border:1px solid #ffffff; height: 900px;
+    }
+    .formh1
+    {
+      padding-left: 254px;font-family: 'Ubuntu';font-style: normal;font-weight: 500;font-size: 24px;color: #0A0E69;
+    }
+    .formp
+    {
+      padding: 28px 273px 0px 273px;font-family: Ubuntu;font-size: 16px;font-style: normal;font-weight: 400;color: #0A0E69;                      
+    }
+    .title
+    {
+      border: 1px solid #555555; width:352px; margin-left:66px; margin-top:72px;
+    }
+    .yourname
+    {
+      padding-top:19px; padding-left: 116px; color: #C8730F;font-family: Ubuntu;
+      font-size: 13px;
+      font-style: normal;
+      font-weight: 400;
+    }
+    .formml
+    {
+      margin-left: 66px;
+    }
+    .firstname
+    {
+      border:1px solid #555555;
+      font-family: ubuntu; 
+      margin-top: 27px;
+      height: 44px; width:200px;
+    }
+    .firstname2
+    {
+      border:1px solid #555555;
+      font-family: ubuntu; 
+      margin-top: 27px;
+      height: 44px; width:250px;
+      margin-right: 82px;
+    }
+    .middlename
+    {
+      border:1px solid #555555;
+      font-family: ubuntu; 
+      margin-top: 27px;
+      height: 44px; width:200px;
+      margin-left: 40px;
+    }
+    .lastname
+    {
+      border:1px solid #555555;
+      font-family: ubuntu; 
+      margin-top: 27px;
+      height: 44px; width:200px;
+      margin-left: 80px;
+    }
+    .gender
+    {
+      padding-left: 78px;
+    }
+    .male
+    {
+      margin-left: 48px;
+    }
+    .please
+    {
+      padding-top: 27px;
+      font-family: Ubuntu;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+    }
+    .select
+    {
+      border: 1px solid #555555; height: 44px;margin-top: 17px; width:502px;font-family: ubuntu;
+    }
+  
+    .vsbheight
+    {
+      position: relative;
+      height: 1084px;
+    }
+  
+    .vsbh2
+    {
+      height: 28px;padding-left: 245px;font-family: 'Ubuntu';font-style: normal;font-weight: 500;font-size: 24px;line-height: 28px;color: #000000;
+    }
+  
+    .vsbp
+    {
+      padding: 28px 90px 0px 90px;font-family: Ubuntu;font-size: 16px;font-style: normal;font-weight: 400;line-height: 23px;letter-spacing: 0em;text-align: left;color: #000000;
+    }
+  
+    .vsbform
+    {
+      border:1px solid #555555; font-family: ubuntu; margin: 26px auto; width:416px;
+    }
+    .vsbmt
+    {
+        margin-top:27px;
+    }
+    .vsbformp
+    {
+      font-family: Ubuntu;font-size: 14px;font-style: normal;font-weight: 400;
+      line-height: 16px;letter-spacing: 0em;text-align: left;padding-left:160px; padding-top:27px;
+    }
+    .vsbformselect
+    {
+      border: 1px solid #555555; width:416px; margin-left:160px;
+    }
+    .vsbformtextarea
+    {
+      width: 416px; height: 116px;margin-bottom: 65px;margin-left: 160px;margin-top:27px;
+    }
+    .servicebtn {
+      background: #a0bd1c;
+      padding: 10px 25px;
+      margin-top: 86px;
+      margin-left: -410px;
+      margin-bottom: 50px;
+  }
+  
+    /*RESET PASSWORD*/
+    .resetpassword
+    {
+      position: relative;
+      height: 800px;
+    }
+    .sibutton {
+      width: 73px;
+      margin-top: 0px;
+      margin-left: 45px;
+  }
+    .resetform
+    {
+      border-radius: 10px;
+      border-color: transparent;
+      width: 608px; background-color: #1161D9;
+      margin: 32px auto;
+    }
+   .rph2
+   {
+      padding-top:68px;padding-left: 340px;font-family: 'Ubuntu';
+      font-style: normal;font-weight: 500;font-size: 24px;color: #0A0E69;
+   }
+    .rpml
+    {
+      margin-left: 69px;
+    }
+    .inputdiv
+    {
+      margin-right: 202px; margin-top:72px;
+    }
+    .rpinput
+    {
+      border: 1px solid #ffffff; width:470px;font-family:ubuntu;height: 44px; margin-top:27px; background-color: #1161D9; color: #ffffff;
+    }
+  
+    .buttonrow
+    {
+      margin-left: 69px; margin-top: 42px;
+    }
+    .rpmb
+    {
+      margin-bottom:80px ;
+      /*margin-top: 27px;*/
+    }
+    .rpbutton
+    {
+      width: 90px;
+      margin-left: 20px;
+    }
+  
+    /*SIGN IN*/
+    .sih2
+    {
+      padding-top:68px;padding-left: 190px;font-family: 'Ubuntu';font-style: normal;font-weight: 500;font-size: 24px;color: #0A0E69;
+    }
+  
+    /*FORGOT PASSWORD*/
+    .fpp
+    {
+      font-family: Rubik;
+      font-size: 14px;
+      font-weight: 500;
+      color: #ffffff;
+    }
+  
+    /*Review*/
+    .reviewheight
+    {
+        height: 1800px;
+    }
+    .reviewh2
+    {
+      padding-top:68px;
+      padding-left: 600px;
+      font-family: 'Ubuntu';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 24px;
+      color: #0A0E69;
+    }
+    .reviewcard
+    {
+        border-radius: 10px;
+        border-color: transparent;
+        width: 670px;
+        background-color: #ffffff;
+        margin: 32px 85px;
+    }
+    .reviewml
+    {
+      margin-left: 57px;
+    }
+    .reviewmt
+    {
+      margin-top:45px
+    }
+    .reviewname
+    {
+      font-family: Rubik; color:#080C58;
+      font-size: 16px;
+      font-weight: 500;
+    }
+    .reviewservice
+    {
+      font-family: Ubuntu;
+      font-size: 16px;
+      font-weight: 500;
+      margin-top:21px;
+      color:#000000;
+      
+    }
+    .reviewtext
+    {
+      font-family: Ubuntu; width: 559px; margin-top: 14px;
+      font-size: 14px;
+      font-weight: 400;
+      color:#000000
+      
+    }
+  
+    /*Payment*/
+    .paymentlogoimg
+    {
+      border-radius: 50%; margin-left: 36px; margin-top: 28px;
+    }
+    .paymenth2
+    {
+      font-family: Rubik;
+      font-size: 30px;
+      font-weight: 700;
+      color:#F1F5F6;
+      text-align: left;
+      padding-left: 100px;
+      padding-top: 86px;
+    }
+    .paymentdiv
+    {
+      margin-left: 100px; margin-top: 14px;
+    }
+    .paymentservices
+    {
+      font-family: Ubuntu;
+      font-size: 18px;
+      font-weight: 700;
+      color:#F1F5F6;
+    }
+    .paymentprice
+    {
+      font-family: Ubuntu;
+      font-size: 18px;
+      font-weight: 700;
+      padding-left: 200px;
+      color:#F1F5F6;
+    }
+    .reviewline
+    {
+      margin-left: 100px; 
+      margin-top: 26px; 
+      color: #F1F5F6; 
+      border: 1px solid #F1F5F6; 
+      width: 690px;
+    }
+    .form-group2 {
+      padding: 5px;
+      width: 100%;
+    }
+    .form-control::placeholder { 
+      color: #555555;
+    }
+    .form-group2 input {
+      width: 100%;
+    }
+      .payment
+    {
+       background-color: #A0BD1C;
+        font-family: Ubuntu;
+        font-size: 16px;
+        width: 384px;
+        font-style: normal;
+        font-weight: 400;
+        color: #ffffff;
+        border:1px solid #A0BD1C;
+        
+        margin-bottom: 58px;
+    }
+  
+    .leftcard
+    {
+      width: 502px; height: 653px; margin-top: 52px; background-color: #ffffff; margin-left: 200px;
+    }
+    .leftcardh2
+    {
+      font-family: Ubuntu;
+      font-size: 30px;
+      font-weight: 500;
+      text-align: center;
+      color:#000000; margin-left: 57px; margin-right: 78px; 
+    }
+    .paymentopt
+    {
+      font-family: Ubuntu;
+      font-size: 14px;
+      font-weight: 500;
+      color:#000000;margin-left: 95px;
+    }
+    .radioo
+    {
+      width: 21px; height: 21px; margin-top: 8px;
+    }
+    .radiodiv
+    {
+      margin-top: 20px; margin-left: 57px;
+    }
+    .cardname
+    {
+      font-family: Ubuntu;
+      padding-top: 26px;
+      font-size: 14px;
+      font-weight: 400; color: #000000;                         
+    }
+    .cardinput
+    {
+      border: 1px solid #555555;height: 44px; width:384px; margin-top:7px
+    }
+    .cardnumber
+    {
+      font-family: Ubuntu;
+      padding-top: 6px;
+      font-size: 14px;
+      font-weight: 400; color: #000000;                      
+    }
+    .expiry
+    {
+      font-family: Ubuntu;
+      font-size: 14px;
+      font-weight: 400; color: #000000;   
+    }
+    .expiryinput
+    {
+      width:185px;
+      margin-top: 3px;
+      color: #5A5A5A; 
+      height:43px;
+      border:1px solid #555555;
+      font-size: 14px; 
+      font-family: ubuntu; 
+      font-weight: 400;
+    }
+    .divbutton
+    {
+      margin-left: 57px; 
+      margin-top:26px;
+      margin-bottom:85px ;
+    }
+    .movement1
+  {
+    margin-left: 40px;
+  }
+ 
+  .new-section1__text-body8 {
+    margin-top: 14px;
+    margin-left: 0px;
+}
+    .contactheight
+    {
+        position: relative;
+        height: 1500px;
+    }
+    .faqheight
+    {
+        position: relative;
+        height: 1500px;
+    }
+    .faqtext
+    {
+        padding-left: 109px; font-size: 16px; padding-top: 50px;
+    }
+    .helptext
+    {
+        padding-left: 109px;
+        font-size: 35px; 
+        color: white; 
+        font-family: ubuntu;
+    }
+    .everythingtext
+    {
+        padding-left: 109px;font-size: 14px; color: #F1F5F6;
+    }
+    .everythingtext2
+    {
+      font-weight: 400;
+      padding-left: 109px;
+      font-size: 20px;
+      font-family: ubuntu;
+      margin-top: 86px;
+      margin-bottom: 72px;
+      margin-right: 109px;
+      color: #0A0E69;
+    }
+    .question {
+        font-family: Ubuntu;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+      padding: 20px 80px 20px 20px;
+      position: relative;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+    }
+    
+    .question::after {
+      content: "\002B";
+      font-size: 2.2rem;
+      position: absolute;
+      right: 20px;
+      transition: 0.2s;
+    }
+    
+    .question.active::after {
+      transform: rotate(45deg);
+    }
+    
+    .answercont {
+      max-height: 0;
+      overflow: hidden;
+      transition: 0.3s;
+    }
+    
+    .answer {
+      padding: 0 20px 20px;
+      line-height: 1.5rem;
+    }
+    .containerques {
+      background-color: white;
+      color: #0A0E69;
+      border-radius: 10px;
+      width: 622px;
+      margin:20px auto;
+      box-shadow: 0 5px 10px 0 rgb(0,0,0,0.25);
+    }
+    .ppheight
+    {
+        position: relative;
+        height: 1100px;
+    }
+    .pptop
+    {
+        width: 100%; height: 200px; background-color: #ADC92E;
+    }
+    .pptext
+    {
+        padding-left: 164px;padding-top: 70px; font-size: 40px; color: white; font-family: ubuntu;
+    }
+    .ppcard
+    {
+        border-radius: 10px;
+        border-color: transparent;
+        width: 778px;
+        margin: 87px auto;
+    }
+    .pptext2
+    {
+        font-family: ubuntu;
+        font-size: 16px;
+        font-weight: 300;
+        padding: 78px 86px 133px;
+    }
+    .nbiheight {
+        position: relative;
+        height: 830px;
+    }
+    .nbiimage
+    {
+        margin-left: 88px;
+    }
+    .imagebn
+    {
+      width: 333px;
+      height: 244px;
+      
+    }
+    .nbitext
+    {
+      font-family: 'Ubuntu';
+      color: #0A0E69;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 35px;
+      letter-spacing: 0.04em;
+      padding-left: 55px;
+      width: 420px;
+    }
+    .imagebn2
+    {
+      width: 353px;
+      height: 244px;
+      margin-left: 80px;
+    }
+
+    .nbitext2
+    {       
+      font-family: 'Ubuntu';
+      color: #0A0E69;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 35px;
+      letter-spacing: 0.04em;
+      padding-left: 30px;
+      width: 400px;
+    }
+    .col-md-1
+    {
+      display: none;
+    }
+    .cont{
+        margin-top: 139px; padding-left: 56px;
+    }
+    .contactcard
+    {
+        border: transparent;
+                            border-radius: 25px; margin-left: -20px;
+                            width: 400px;
+    }
+    .contactform
+    {
+        padding-left: 70px;
+        padding-right: 78px;
+        padding-bottom: 142px;
+        padding-top: 49px;
+    }
+    .forgot
+    {
+      
+      margin-left: 120px;                   
+    }
+}
+@media (max-width: 800px)
+{
+  .collapsebtn
+{
+  margin-top: -5px;
+  margin-right: 40px;
+}
+  .hiddenbutton
+{
+  display: none;
+}
+  .mobile
+{
+  display: none;
+}
+  .english{
+    margin-left: 420px;
+  }
+  .successcard
+  {
+      width: 502px; height: 553px; margin-top: 152px; background-color: #ffffff; margin-left: 20px;
+  }
+  .forgot
+{
+  
+  margin-left: 82px;                   
+}
+  .applyh2
+{
+  padding-left: 264px;font-family: 'Ubuntu';font-style: normal;font-weight: 500;font-size: 24px;color: #0A0E69;
+}
+.applyh2p
+{
+  padding: 28px 220px 0px 240px;font-family: Ubuntu;font-size: 16px;font-style: normal;font-weight: 400;color: #0A0E69;                      
+}
+.applyformp{
+  padding-top:48px; padding-left: 101px; color:  #000000;font-family: Ubuntu;font-size: 14px;font-style: normal;font-weight: 400;
+}
+.formrowdiv
+{
+  margin-left: 101px;
+}
+.formgroupdiv
+{
+  margin-right: 102px;
+}
+.applyselect
+{
+  border: 1px solid #555555; width:502px;font-family:ubuntu;height: 44px; margin-top:27px
+}
+.makereviewcard
+{
+  width: 393px;
+  margin-left: -100px;
+}
+    .ml-80 {
+        margin-left: 0px;
+    }
+    .blue {
+        background-color: #1161d9;
+        color: white;
+        height: 87px;
+        margin-left: -150px;
+        width: 350px;
+    }
+    .hide
+    {
+        margin-left: -120px;
+    }
+  .applycard
+  {
+    border-radius: 10px;
+    border-color: transparent;
+    width: 735px;
+    margin: 32px auto;
+  }
+  .cf {
+    margin-left: 0px;
+}
+
+.cont{
+    margin-top: 139px;
+    padding-left: 206px;
+}
+    /*INDEX PAGE*/
+    .new-section1__flex1.layout {
+        width: 100%;
+    }
+    .new-section1__text-body8 {
+        margin-top: 14px;
+    }
+    .free {
+        font-weight: 500;
+        margin-left: 80px;
+        margin-top: 18px;
+        font-family: Ubuntu;
+        font-style: normal;
+        color: #ffffff;
+    }
+    .text {
+        width: 249px;
+        height: 16px;
+        margin-top: 18px;
+        font-family: Ubuntu;
+        font-style: normal;
+        
+        font-size: 14px;
+        line-height: 16px;
+    }
+    .hands
+     {
+      margin: 94px auto 0px;
+      font-family: Rubik;font-style: normal;font-weight: normal;font-size: 35px;
+     }
+    .form {
+        width: 215px;
+        height: 28px;
+        left: 874px;
+        margin-top: 5px;
+        background: #F1F5F6;
+        text-align: center;
+        border-radius: 6px;
+        font-family: Ubuntu;
+        font-size: 14px;
+        line-height: 16px;
+        text-transform: lowercase;
+        color: rgba(21, 4, 35, 0.21);
+    }
+    .buttons {
+        width: 63px;
+        height: 28px;
+        padding-top: 3px;
+        margin-top: 5px;
+        background: #a0bd1c;
+        border-radius: 6px;
+        font-size: 13px;
+        font-weight: 300;
+        font-style: normal;
+        color: #FBFCFB;
+        font-family: Ubuntu;
+        padding-left: 10px;
+    }
+    .phone {
+        /* color: white; */
+        padding-top: 15px;
+        width: 120px;
+        height: 16px;
+        left: 1208px;
+        font-family: 'Ubuntu';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 16px;
+        text-decoration-line: none;
+        color: #FFFFFF;
+    }
+    a {
+        color: #0d6efd;
+        text-decoration: underline;
+    }
+    .shop
+    {
+        margin-left:-12.5%;
+        font-family: rubik;
+    }
+    .bannertext {
+
+      font-size: 34.5px; 
+  }
+  .made {
+
+    font-size: 17px;
+  }
+  .applybtn {
+    padding-top: 9px;
+    padding-bottom: 9px;
+    font-size: 14px;
+  }
+    .logoimg
+    {
+     margin-left: 27px; margin-top: 12px;
+    }
+    .home
+      {
+          color: #000000; 
+          margin-left:50px; 
+          margin-top: 5px;
+          font-family: Ubuntu;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 16px;
+      }
+      .visa
+      {
+          color: #000000; 
+          margin-left:50px; 
+          margin-top: 5px;
+          font-family: Ubuntu;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 16px;
+      }
+      .services
+      {
+          color: #000000; 
+          margin-left:50px; 
+          margin-top: 5px;
+          font-family: Ubuntu;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 16px;
+      }
+      .contact
+      {
+          width: 100%; 
+          color: #000000;
+          margin-left:50px; 
+          margin-top: 5px;
+          font-family: Ubuntu;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 16px;
+      }
+      .navbar-light .navbar-nav .nav-link
+      {
+        color: #000000;
+      }
+      .about{
+          width: 100%;
+          color: #000000;
+          margin-left:50px; 
+          margin-top: 5px;
+          font-family: Ubuntu;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 16px;
+          margin-bottom:15px;
+      }
+      .ml-118
+      {
+          margin-left: 50px;
+      }
+      .button {
+          width: 63px;
+          margin-top: 0px;
+          background: #a0bd1c;
+          border-radius: 6px;
+          font-size: 14px;;
+          font-weight: 300;
+          font-style: normal;
+          color: #FBFCFB;
+          font-family: Ubuntu;
+          text-align: center;
+          padding-right: 64px;
+    
+        }
+        .buttons2 {
+         
+          background: #a0bd1c;
+          border-radius: 6px;
+          font-size: 14px;;
+          font-weight: 300;
+          font-style: normal;
+          color: #FBFCFB;
+          font-family: Ubuntu;
+          text-align: center;
+          margin-top: 23px;
+          margin-left: 32px;
+          width: 117px;
+          height: 43px;
+          padding: 10px 23px;
+        }
+        .button2 {
+            background-color: #FBFCFB;
+            width: 89px;
+            height: 36px;
+            left: 1042px;
+            margin-top: 2px;
+            border: 1px solid #a0bd1c;
+            padding-top: 10px;
+            font-family: 'Ubuntu';
+            font-style: normal;
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 16px;
+            margin-left: -52.5px;
+            color: #a0bd1c;
+        }
+        .lang {
+            margin-left: 20px;
+            margin-top: 0px;
+        }
+        .buttons3 {
+          background: #a0bd1c;
+          border-radius: 6px;
+          font-size: 14.5px;
+          font-weight: 300;
+          font-style: normal;
+          color: #FBFCFB;
+          font-family: Ubuntu;
+          text-align: center;
+          margin-top: 43px;
+          margin-left: 30px;
+          width: 117px;
+          height: 43px;
+          padding: 10px 23px;
+         }
+         .width
+         {
+             width: 709px; height: 87px;margin-left: -50px;
+         }
+         .reviews{
+          width: 1520px;
+          margin-left: 50px;
+         }
+         .mt-5
+         {
+           width: 250px;
+         }
+     .img2h1
+     {
+      font-size: 16px;
+      text-align: justify;
+      color: #F1F5F6;
+      margin-left:86px ;
+      font-family: Ubuntu;
+      margin-top: 10px;
+      font-family: Rubik;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 23px;
+      line-height: 20px;
+     }
+     .img2h4
+     {
+      text-align: justify; color: #F1F5F6; margin-left: 35px; font-family:Ubuntu
+     }
+     .img3h1
+     {
+      font-size: 16px;
+      text-align: justify;
+      color: #F1F5F6;
+      margin-left: 86px;
+      font-family: Ubuntu;
+      margin-top: 10px;
+      font-family: Rubik;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 23px;
+      line-height: 20px;
+     }
+   
+     .img4h1
+     {
+      text-align: justify;
+      color: #F1F5F6;
+      margin-left: 86px;
+      margin-top: 10px;
+      font-family: Rubik;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 23px;
+      line-height: 20px;
+     }
+     .img4h4
+     {
+      text-align: justify; color: #F1F5F6; margin-left: 36px; font-family:Ubuntu
+     }
+  
+     .img5h1
+     {
+      text-align: justify;
+      color: #F1F5F6;
+      margin-left: 50px;
+      margin-top: 10px;
+      font-family: Rubik;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 23px;
+      line-height: 20px;
+     }
+  
+     .img5h4
+     {
+      text-align: justify; color: #F1F5F6; margin-left: 10px; font-family:Ubuntu
+     }
+   
+        .img2
+        {
+             margin-left: 35px;
+        }
+     
+        .img3{
+             margin-left: 35px;
+        }
+        .img4
+        {
+         margin-left: 35px;
+        }
+        .img5
+        {
+         margin-left: 35px; 
+       
+        }
+        .list-group-horizontal {
+
+          margin-left: -45px;
+      }
+             .img1 {
+                height: 110px;
+                width: 113px;
+                margin-left: 55px;
+                top: 252px;
+                border-radius: 0px;
+            }
+        .img1h1 {
+            font-size: 23px;
+            color: #F1F5F6;
+            font-family: Ubuntu;
+            margin-top: 10px;
+            height: 20px;
+            width: 11px;
+            padding-left: 102px;
+        }
+        .img1h4 {
+            color: #F1F5F6;
+            font-family: Ubuntu;
+            height: 20px;
+            margin-left: -50px;
+            margin-top: 16px;
+            white-space: nowrap;
+        }
+        #content1 {
+          margin-left: 120px;
+          margin-top: -5px;
+      }
+      #content2 {
+        margin-left: 120px;
+    }
+         .img3h4
+         {
+          color: #F1F5F6; margin-left: 66px; font-family:Ubuntu;
+         }
+         .cardwidth
+     {
+      width: 281px;
+     }
+     .cardh1
+     {
+      letter-spacing: 0.04em;
+     }
+     .cardh5
+     {
+      font-weight: 300;
+     }
+     .customers
+     {
+      width: 671px;
+      height: 41px;
+      font-family: Rubik;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 35px;
+      line-height: 41px;
+      color: #060a5c;
+     }
+     .btn-review {
+      margin: 100px 325px 10px;
+  }
+     .subscribe
+     {
+        background: #0C65EB;
+        color: white;
+        text-align: center;
+        font-family: 'Ubuntu';
+        padding: 0px;
+        height: 41px;
+        width: 100px;
+        margin-left: -50px;
+     }
+     .footerlogo
+     {
+        margin-left: 0px;
+        margin-top: 20px;
+     }
+     .div2
+     {
+      padding-left: 30px;
+     }
+     .div3
+     {
+      padding-left: 0px;
+      
+     }
+     .div4
+     {
+      padding-left: 5px;
+      
+     }
+     .fs-13
+     {
+      font-size: 10px;
+       color: #0A0E69;
+     }
+     .lg-li
+     {
+  
+      margin-left: 10px;
+      margin-top: 21px;
+     }
+     .lastfooter
+     {
+        padding-left: 14px;
+        padding-right: 0px;
+     }
+     .lastfooterrow
+     {
+      padding-top: 18px; padding-bottom: 18px;
+      width: 100%; margin-left: 10px;
+     }
+     .locaddress
+     {
+      font-size: 10px;
+       color: #0A0E69;
+        text-decoration: none;
+         margin-top: -2px;
+     }
+     .shorttest
+     {
+      font-size: 10px; color: #0A0E69; margin-left: -47px;
+     }
+     .privacy
+     {
+      font-size: 10px; color: #0A0E69; text-decoration: none;padding:0px 0px ;margin-left: -37px;
+     }
+     .tc
+     {
+      font-size: 10px; margin-left: -27px; color: #0A0E69;text-decoration: none;
+     }
+     .aboutpageheight
+     {
+         height: 1900px;
+     }
+     input[type=radio],
+     input.radio {
+       float: left;
+       clear: none;
+       margin: 2px 0 0 2px;
+     }
+     .form-row {
+   display: flex;
+  }
+  input[type=radio],
+     input.radio {
+       float: left;
+       clear: none;
+       margin: 6px 0 0 2px;
+       border-color: #A0BD1C;
+     }
+  
+  .form-group {
+   padding: 5px;
+  
+  }
+  
+  /* .form-group input {
+   width: 100%;
+  } */
+  .proceed
+  {
+    
+     background-color: #A0BD1C;
+     font-family: Ubuntu;
+     font-size: 14px;
+     font-style: normal;
+     font-weight: 400;
+     color: #ffffff;
+  
+  }
+  .form-select
+  {
+   color: #555555;
+  }
+  
+  /* NBV FORM STYLE */
+  .nbvformheight {
+      position: relative;
+      height: 1600px;
+  }
+  .nbiformheight {
+      position: relative;
+      height: 1300px;
+  }
+  label {
+      float: left;
+      clear: none;
+      display: block;
+      padding: 0px 0.5rem 0px 8px;
+    }
+    .welcome
+    {
+      font-family: Rubik;
+      font-size: 35px;
+      font-style: normal;
+      font-weight: 500;                 
+      padding-left: 310px;
+      padding-top: 62px;
+      color:#0A0E69;
+    }
+    .formtext
+    {
+      height: 113px;
+      color:#0A0E69;
+      padding-left: 39px;
+      padding-top: 52px;
+      font-family: ubuntu;
+      font-size: 18px;
+      font-weight: 300;
+    }
+    .topdiv
+    {
+      margin:74px auto 166px;       
+      width: 638px;
+    }
+    .cardform
+    {
+      border:1px solid #ffffff; height: 999px;
+    }
+    .formh1
+    {
+      padding-left: 240px;font-family: 'Ubuntu';font-style: normal;font-weight: 500;font-size: 24px;color: #0A0E69;
+    }
+    .formp
+    {
+      padding: 28px 73px 0px 270px;font-family: Ubuntu;font-size: 16px;font-style: normal;font-weight: 400;color: #0A0E69;                      
+    }
+    .title
+    {
+      border: 1px solid #555555; width:352px; margin-left:46px; margin-top:72px;
+    }
+    .yourname
+    {
+      padding-top:19px; padding-left: 46px; color: #C8730F;font-family: Ubuntu;
+      font-size: 13px;
+      font-style: normal;
+      font-weight: 400;
+    }
+    .formml
+    {
+      margin-left: 46px;
+    }
+    .firstname
+    {
+      border:1px solid #555555;
+      font-family: ubuntu; 
+      margin-top: 27px;
+      height: 44px; width:227px;
+    }
+    .firstname2
+    {
+      border:1px solid #555555;
+      font-family: ubuntu; 
+      margin-top: 27px;
+      height: 44px; width:243px;
+      margin-right: 82px;
+    }
+    .middlename
+    {
+      border:1px solid #555555;
+      font-family: ubuntu; 
+      margin-top: 27px;
+      height: 44px; width:227px;
+      margin-left: 40px;
+    }
+    .lastname
+    {
+      border:1px solid #555555;
+      font-family: ubuntu; 
+      margin-top: 27px;
+      height: 44px; width:227px;
+      margin-left: 80px;
+    }
+    .gender
+    {
+      padding-left: 78px;
+    }
+    .male
+    {
+      margin-left: 48px;
+    }
+    .please
+    {
+      padding-top: 27px;
+      font-family: Ubuntu;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+    }
+    .select
+    {
+      border: 1px solid #555555; height: 44px;margin-top: 17px; width:502px;font-family: ubuntu;
+    }
+  
+    .vsbheight
+    {
+      position: relative;
+      height: 1284px;
+    }
+  
+    .vsbh2
+    {
+      height: 28px;padding-left: 215px;font-family: 'Ubuntu';font-style: normal;font-weight: 500;font-size: 24px;line-height: 28px;color: #000000;
+    }
+  
+    .vsbp
+    {
+      padding: 28px 68px 0px 68px;font-family: Ubuntu;font-size: 16px;font-style: normal;font-weight: 400;line-height: 23px;letter-spacing: 0em;text-align: left;color: #000000;
+    }
+  
+    .vsbform
+    {
+      border:1px solid #555555; font-family: ubuntu; margin: 26px auto; width:416px;
+    }
+    .vsbmt
+    {
+        margin-top:27px;
+    }
+    .vsbformp
+    {
+      font-family: Ubuntu;font-size: 14px;
+      font-style: normal;font-weight: 400;
+      line-height: 16px;letter-spacing: 0em;
+      text-align: left;padding-left:160px; padding-top:27px;
+    }
+    .vsbformselect
+    {
+      border: 1px solid #555555; width:416px; margin-left:160px;
+    }
+    .vsbformtextarea
+    {
+      width: 416px; height: 116px;margin-bottom: 65px;margin-left: 160px;margin-top:27px;
+    }
+    .servicebtn {
+      background: #a0bd1c;
+      padding: 10px 25px;
+      margin-top: 86px;
+      margin-left: -420px;
+      margin-bottom: 50px;
+  }
+  
+    /*RESET PASSWORD*/
+    .resetpassword
+    {
+      position: relative;
+      height: 800px;
+    }
+    .resetform
+    {
+      border-radius: 10px;
+      border-color: transparent;
+      width: 608px; background-color: #1161D9;
+      margin: 32px auto;
+    }
+   .rph2
+   {
+      padding-top:68px;padding-left: 320px;font-family: 'Ubuntu';
+      font-style: normal;font-weight: 500;font-size: 24px;color: #0A0E69;
+   }
+    .rpml
+    {
+      margin-left: 59px;
+    }
+    .inputdiv
+    {
+      margin-right: 202px; margin-top:72px;
+    }
+    .sibutton {
+      width: 73px;
+      margin-top: 0px;
+      margin-left: 40px;
+  }
+    .rpinput
+    {
+      border: 1px solid #ffffff; width:470px;font-family:ubuntu;height: 44px; margin-top:27px; background-color: #1161D9; color: #ffffff;
+    }
+  
+    .buttonrow
+    {
+      margin-left: 69px; margin-top: 42px;
+    }
+    .rpmb
+    {
+      margin-bottom:80px ;
+      /*margin-top: 27px;*/
+    }
+    .rpbutton
+    {
+      width: 90px;
+      margin-left: 10px;
+    }
+  
+    /*SIGN IN*/
+    .sih2
+    {
+      padding-top:68px;padding-left: 165px;font-family: 'Ubuntu';font-style: normal;font-weight: 500;font-size: 24px;color: #0A0E69;
+    }
+  
+    /*FORGOT PASSWORD*/
+    .fpp
+    {
+      font-family: Rubik;
+      font-size: 14px;
+      font-weight: 500;
+      color: #ffffff;
+    }
+  
+    /*Review*/
+    .reviewheight
+    {
+        height: 1800px;
+    }
+    .reviewh2
+    {
+      padding-top:68px;
+      padding-left: 380px;
+      font-family: 'Ubuntu';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 24px;
+      color: #0A0E69;
+    }
+    .reviewcard
+    {
+        border-radius: 10px;
+        border-color: transparent;
+        width: 670px;
+        background-color: #ffffff;
+        margin: 32px 85px;
+    }
+    .reviewml
+    {
+      margin-left: 57px;
+    }
+    .reviewmt
+    {
+      margin-top:45px
+    }
+    .reviewname
+    {
+      font-family: Rubik; color:#080C58;
+      font-size: 16px;
+      font-weight: 500;
+    }
+    .reviewservice
+    {
+      font-family: Ubuntu;
+      font-size: 16px;
+      font-weight: 500;
+      margin-top:21px;
+      color:#000000;
+      
+    }
+    .reviewtext
+    {
+      font-family: Ubuntu; width: 559px; margin-top: 14px;
+      font-size: 14px;
+      font-weight: 400;
+      color:#000000
+      
+    }
+  
+    /*Payment*/
+    .paymentlogoimg
+    {
+      border-radius: 50%; margin-left: 36px; margin-top: 28px;
+    }
+    .paymenth2
+    {
+      font-family: Rubik;
+      font-size: 30px;
+      font-weight: 700;
+      color:#F1F5F6;
+      text-align: left;
+      padding-left: 86px;
+      padding-top: 56px;
+    }
+    .paymentdiv
+    {
+      margin-left: 56px; margin-top: 14px;
+    }
+    .paymentservices
+    {
+      font-family: Ubuntu;
+      font-size: 18px;
+      font-weight: 700;
+      color:#F1F5F6;
+    }
+    .paymentprice
+    {
+      font-family: Ubuntu;
+      font-size: 18px;
+      font-weight: 700;
+      padding-left: 200px;
+      color:#F1F5F6;
+    }
+    .reviewline
+    {
+      margin-left: 56px; 
+      margin-top: 26px; 
+      color: #F1F5F6; 
+      border: 1px solid #F1F5F6; 
+      width: 700px;
+    }
+    .form-group2 {
+      padding: 5px;
+      width: 100%;
+    }
+    .form-control::placeholder { 
+      color: #555555;
+    }
+    .form-group2 input {
+      width: 100%;
+    }
+      .payment
+    {
+       background-color: #A0BD1C;
+        font-family: Ubuntu;
+        font-size: 16px;
+        width: 384px;
+        font-style: normal;
+        font-weight: 400;
+        color: #ffffff;
+        border:1px solid #A0BD1C;
+        
+        margin-bottom: 58px;
+    }
+  
+    .leftcard
+    {
+      width: 502px; height: 653px; margin-top: 52px; background-color: #ffffff; margin-left: 150px;
+    }
+    .leftcardh2
+    {
+      font-family: Ubuntu;
+      font-size: 30px;
+      font-weight: 500;
+      text-align: center;
+      color:#000000; margin-left: 57px; margin-right: 78px; 
+    }
+    .paymentopt
+    {
+      font-family: Ubuntu;
+      font-size: 14px;
+      font-weight: 500;
+      color:#000000;margin-left: 95px;
+    }
+    .radioo
+    {
+      width: 21px; height: 21px; margin-top: 8px;
+    }
+    .radiodiv
+    {
+      margin-top: 20px; margin-left: 57px;
+    }
+    .cardname
+    {
+      font-family: Ubuntu;
+      padding-top: 26px;
+      font-size: 14px;
+      font-weight: 400; color: #000000;                         
+    }
+    .cardinput
+    {
+      border: 1px solid #555555;height: 44px; width:384px; margin-top:7px
+    }
+    .cardnumber
+    {
+      font-family: Ubuntu;
+      padding-top: 6px;
+      font-size: 14px;
+      font-weight: 400; color: #000000;                      
+    }
+    .expiry
+    {
+      font-family: Ubuntu;
+      font-size: 14px;
+      font-weight: 400; color: #000000;   
+    }
+    .expiryinput
+    {
+      width:185px;
+      margin-top: 3px;
+      color: #5A5A5A; 
+      height:43px;
+      border:1px solid #555555;
+      font-size: 14px; 
+      font-family: ubuntu; 
+      font-weight: 400;
+    }
+    .divbutton
+    {
+      margin-left: 57px; 
+      margin-top:26px;
+      margin-bottom:85px ;
+    }
+    .movement1
+  {
+    margin-left: 40px;
+  }
+ 
+  .new-section1__text-body8 {
+    margin-top: 13px;
+    margin-left: 0px;
+}
+    .contactheight
+    {
+        position: relative;
+        height: 1500px;
+    }
+    .faqheight
+    {
+        position: relative;
+            height: 1500px;
+    }
+    .faqtext
+    {
+        padding-left: 80px; font-size: 16px; padding-top: 50px;
+    }
+    .helptext
+    {
+        padding-left: 80px;
+        font-size: 35px; 
+        color: white; 
+        font-family: ubuntu;
+    }
+    .everythingtext
+    {
+        padding-left: 80px;font-size: 14px; color: #F1F5F6;
+    }
+    .everythingtext2
+    {
+        font-weight: 400; padding-left: 80px; font-size: 20px; font-family: ubuntu; margin-top: 86px; margin-bottom: 72px; color: #0A0E69;
+    }
+    .question {
+        font-family: Ubuntu;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+      padding: 20px 80px 20px 20px;
+      position: relative;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+    }
+    
+    .question::after {
+      content: "\002B";
+      font-size: 2.2rem;
+      position: absolute;
+      right: 20px;
+      transition: 0.2s;
+    }
+    
+    .question.active::after {
+      transform: rotate(45deg);
+    }
+    
+    .answercont {
+      max-height: 0;
+      overflow: hidden;
+      transition: 0.3s;
+    }
+    
+    .answer {
+      padding: 0 20px 20px;
+      line-height: 1.5rem;
+    }
+    .containerques {
+      background-color: white;
+      color: #0A0E69;
+      border-radius: 10px;
+      width: 622px;
+      margin:20px auto;
+      box-shadow: 0 5px 10px 0 rgb(0,0,0,0.25);
+    }
+    .ppheight
+    {
+        position: relative;
+        height: 1100px;
+    }
+    .pptop
+    {
+        width: 100%; height: 200px; background-color: #ADC92E;
+    }
+    .pptext
+    {
+        padding-left: 164px;padding-top: 70px; font-size: 40px; color: white; font-family: ubuntu;
+    }
+    .ppcard
+    {
+        border-radius: 10px;
+        border-color: transparent;
+        width: 700px;
+        margin: 87px auto;
+    }
+    .pptext2
+    {
+        font-family: ubuntu;
+        font-size: 16px;
+        font-weight: 300;
+        padding: 78px 86px 133px;
+    }
+    .nbiheight {
+        position: relative;
+        height: 830px;
+    }
+    .nbiimage
+    {
+        margin-left: 18px;
+    }
+    .imagebn
+    {
+      width: 303px;
+      margin-left: 1px;
+      height: 244px;
+    }
+    .nbitext
+    {
+      font-family: 'Ubuntu';
+      color: #0A0E69;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 35px;
+      letter-spacing: 0.04em;
+      padding-left: 55px;
+      width: 390px;
+    }
+    .imagebn2
+    {
+      width: 353px;
+      height: 244px;
+      margin-left: 50px;
+    }
+
+    .nbitext2
+    {      
+      padding-left: 82px;
+      width: 400px;
+    }
+    
+    .col-md-1
+    {
+      display: none;
+    }
+    .cont{
+        margin-top: 139px; padding-left: 36px;
+    }
+    .contactcard
+    {
+        border: transparent;
+                            border-radius: 25px; margin-left: -10px;
+                            width: 366px;
+    }
+    .contactform
+    {
+        padding-left: 70px;
+        padding-right: 78px;
+        padding-bottom: 142px;
+        padding-top: 49px;
+    }
+}
+@media (max-width: 768px)
+{
+  .collapsebtn
+{
+  margin-top: -5px;
+  margin-right: 40px;
+}
+  .hiddenbutton
+{
+  display: none;
+}
+  .mobile
+{
+  display: none;
+}
+  .mobilelang
+{
+  display: block;
+}
+.lang{
+  display:none;
+}
+  .english{
+    margin-left: 350px;
+  }
+
+  .successcard
+  {
+      width: 502px; height: 553px; margin-top: 152px; background-color: #ffffff; margin-left: 1px;
+  }
+  
+  .genderwidth
+  {
+    width: 300px;
+  }
+  .forgot
+  {
+    
+    margin-left: 70px;                   
+  }
+  .applyh2
+{
+  padding-left: 264px;font-size: 24px;
+}
+.applyh2p
+{
+  padding: 28px 120px 50px 120px;font-family: Ubuntu;font-size: 16px;font-style: normal;font-weight: 400;color: #0A0E69;                      
+}
+.applyformp{
+  padding-top:48px; padding-left: 101px; color:  #000000;font-family: Ubuntu;font-size: 14px;font-style: normal;font-weight: 400;
+}
+.formrowdiv
+{
+  margin-left: 101px;
+}
+.formgroupdiv
+{
+  margin-right: 102px;
+}
+.applyselect
+{
+   margin-top:27px
+}
+.makereviewcard
+{
+  width: 393px;
+  margin-left: -100px;
+}
+    .ml-80 {
+        margin-left: 0px;
+    }
+    .blue {
+       
+        height: 87px;
+        margin-left: -150px;
+        width: 350px;
+    }
+    .hide
+    {
+        margin-left: -120px;
+    }
+  .applycard
+  {
+    border-radius: 10px;
+    border-color: transparent;
+    width: 735px;
+    margin: 32px auto;
+  }
+  .cf {
+    margin-left: 0px;
+}
+
+.cont{
+    margin-top: 139px;
+    padding-left: 206px;
+}
+    /*INDEX PAGE*/
+    .new-section1__flex1.layout {
+        width: 100%;
+    }
+    .new-section1__text-body8 {
+        margin-top: 14px;
+    }
+    .free {
+        
+        margin-left: 50px;
+        margin-top: 18px;
+        
+    }
+    .text {
+        width: 249px;
+        height: 16px;
+        margin-top: 18px;
+        font-family: Ubuntu;
+        font-style: normal;
+        
+        font-size: 14px;
+        line-height: 16px;
+    }
+    .hands
+     {
+      margin: 94px auto 0px;
+      font-family: Rubik;font-style: normal;font-weight: normal;font-size: 35px;
+     }
+    .form {
+        width: 215px;
+        height: 28px;
+        left: 874px;
+        margin-top: 5px;
+        background: #F1F5F6;
+        text-align: center;
+        border-radius: 6px;
+        font-family: Ubuntu;
+        font-size: 14px;
+        line-height: 16px;
+        text-transform: lowercase;
+        color: rgba(21, 4, 35, 0.21);
+    }
+    .buttons {
+        width: 63px;
+        height: 28px;
+        padding-top: 3px;
+        margin-top: 5px;
+        background: #a0bd1c;
+        border-radius: 6px;
+        font-size: 13px;
+        font-weight: 300;
+        font-style: normal;
+        color: #FBFCFB;
+        font-family: Ubuntu;
+        padding-left: 10px;
+    }
+    .phone {
+        /* color: white; */
+        padding-top: 15px;
+        width: 120px;
+        height: 16px;
+        left: 1208px;
+        font-family: 'Ubuntu';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 16px;
+        text-decoration-line: none;
+        color: #FFFFFF;
+    }
+    a {
+        color: #0d6efd;
+        text-decoration: underline;
+    }
+    .shop
+    {
+        margin-left:-13%;
+        font-family: rubik;
+    }
+    .bannertext {
+
+      font-size: 32.5px;
+    
+  }
+  .made {
+    font-size: 16.5px;
+}
+.applybtn {
+  padding-top: 9px;
+  padding-bottom: 9px;
+  font-size: 14px;
+}
+    .logoimg
+    {
+     margin-left: 27px; margin-top: 14px;
+    }
+    .home
+      {
+          color: #000000; 
+          margin-left:60px; 
+          margin-top: 5px;
+          font-family: Ubuntu;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 16px;
+      }
+      .visa
+      {
+          color: #000000; 
+          margin-left:60px; 
+          margin-top: 5px;
+          font-family: Ubuntu;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 16px;
+      }
+      .services
+      {
+          color: #000000; 
+          margin-left:60px; 
+          margin-top: 5px;
+          font-family: Ubuntu;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 16px;
+      }
+      .contact
+      {
+          width: 100%; 
+          color: #000000;
+          margin-left:60px; 
+          margin-top: 5px;
+          font-family: Ubuntu;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 16px;
+      }
+      .navbar-light .navbar-nav .nav-link
+      {
+        color: #000000;
+      }
+      .about{
+          width: 100%;
+          color: #000000;
+          margin-left:60px; 
+          margin-top: 5px;
+          font-family: Ubuntu;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 16px;
+      }
+      .ml-118
+      {
+          margin-left: 60px;
+      }
+      .button {
+          width: 63px;
+          margin-top: 0px;
+          background: #a0bd1c;
+          border-radius: 6px;
+          font-size: 14px;;
+          font-weight: 300;
+          font-style: normal;
+          color: #FBFCFB;
+          font-family: Ubuntu;
+          text-align: center;
+          padding-right: 64px;
+    
+        }
+        .buttons2 {
+         
+          background: #a0bd1c;
+          border-radius: 6px;
+          font-size: 14px;;
+          font-weight: 300;
+          font-style: normal;
+          color: #FBFCFB;
+          font-family: Ubuntu;
+          text-align: center;
+          margin-top: 23px;
+          margin-left: 32px;
+          width: 117px;
+          height: 43px;
+          padding: 10px 23px;
+        }
+        .button2 {
+            background-color: #ffffff;
+            width: 89px;
+            height: 36px;
+            left: 1042px;
+            margin-top: 2px;
+            border: 1px solid #a0bd1c;
+            padding-top: 10px;
+            font-family: 'Ubuntu';
+            font-style: normal;
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 16px;
+            margin-left: -52.5px;
+            color: #a0bd1c;
+        }
+        .lang {
+            margin-left: 20px;
+            margin-top: 0px;
+        }
+  .buttons3 {
+    background: #a0bd1c;
+    border-radius: 6px;
+    font-size: 14.5px;
+    font-weight: 300;
+    font-style: normal;
+    color: #FBFCFB;
+    font-family: Ubuntu;
+    text-align: center;
+    margin-top: 13px;
+    margin-left: 100px;
+    width: 107px;
+    height: 43px;
+    padding: 10px 10px;
+    }
+         .width
+         {
+             width: 709px; height: 87px;margin-left: -50px;
+         }
+         .reviews{
+            width:1300px;
+            margin-left: 60px;
+         }
+
+         .mt-5
+         {
+           width: 250px;
+         }
+     .img2h1
+     {
+      font-size: 16px;
+      text-align: justify;
+      color: #F1F5F6;
+      margin-left:86px ;
+      font-family: Ubuntu;
+      margin-top: 10px;
+      font-family: Rubik;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 23px;
+      line-height: 20px;
+     }
+     .img2h4
+     {
+      text-align: justify; color: #F1F5F6; margin-left: 35px; font-family:Ubuntu
+     }
+     .img3h1
+     {
+      font-size: 16px;
+      text-align: justify;
+      color: #F1F5F6;
+      margin-left: 86px;
+      font-family: Ubuntu;
+      margin-top: 10px;
+      font-family: Rubik;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 23px;
+      line-height: 20px;
+     }
+   
+     .img4h1
+     {
+      text-align: justify;
+      color: #F1F5F6;
+      margin-left: 86px;
+      margin-top: 10px;
+      font-family: Rubik;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 23px;
+      line-height: 20px;
+     }
+     .img4h4
+     {
+      text-align: justify; color: #F1F5F6; margin-left: 36px; font-family:Ubuntu
+     }
+  
+     .img5h1
+     {
+      text-align: justify;
+      color: #F1F5F6;
+      margin-left: 50px;
+      margin-top: 10px;
+      font-family: Rubik;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 23px;
+      line-height: 20px;
+     }
+  
+     .img5h4
+     {
+      text-align: justify; color: #F1F5F6; margin-left: 10px; font-family:Ubuntu
+     }
+
+        .img2
+        {
+             margin-left: 35px;
+        }
+     
+        .img3{
+             margin-left: 35px;
+        }
+        .img4
+        {
+         margin-left: 35px;
+        }
+        .img5
+        {
+         margin-left: 35px; 
+       
+        }
+        .list-group-horizontal {
+
+          margin-left: -75px;
+      }
+             .img1 {
+                height: 110px;
+                width: 113px;
+                margin-left: 75px;
+                top: 252px;
+                border-radius: 0px;
+            }
+        .img1h1 {
+            font-size: 23px;
+            color: #F1F5F6;
+            font-family: Ubuntu;
+            margin-top: 10px;
+            height: 20px;
+            width: 11px;
+            padding-left: 122px;
+        }
+        .img1h4 {
+            color: #F1F5F6;
+            font-family: Ubuntu;
+            height: 20px;
+            margin-left: -70px;
+            margin-top: 16px;
+            white-space: nowrap;
+        }
+        #content1 {
+          margin-left: 160px;
+      }
+      #content2 {
+        margin-left: 160px;
+    }
+         .img3h4
+         {
+          color: #F1F5F6; margin-left: 66px; font-family:Ubuntu;
+         }
+         .cardwidth
+     {
+      width: 281px;
+     }
+     .cardh1
+     {
+      letter-spacing: 0.04em;
+     }
+     .cardh5
+     {
+      font-weight: 300;
+     }
+     .customers
+     {
+      width: 671px;
+      height: 41px;
+      font-family: Rubik;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 35px;
+      line-height: 41px;
+      color: #060a5c;
+     }
+     .btn-review {
+      margin: 100px 309px 10px;
+  }
+     .subscribe
+     {
+        background: #0C65EB;
+        color: white;
+        text-align: center;
+        font-family: 'Ubuntu';
+        padding: 0px;
+        height: 41px;
+        width: 100px;
+        margin-left: -50px;
+     }
+     .footerlogo
+     {
+        margin-left: 0px;
+        margin-top: 20px;
+     }
+     .div2
+     {
+      padding-left: 30px;
+     }
+     .div3
+     {
+      padding-left: 0px;
+      
+     }
+     .div4
+     {
+      padding-left: 5px;
+      
+     }
+     .fs-13
+     {
+      font-size: 10px;
+       color: #0A0E69;
+     }
+     .lg-li
+     {
+  
+      margin-left: 10px;
+      margin-top: 21px;
+     }
+     .lastfooter
+     {
+        padding-left: 14px;
+        padding-right: 0px;
+     }
+     .lastfooterrow
+     {
+      padding-top: 18px; padding-bottom: 18px;
+      width: 100%; margin-left: -10px;
+     }
+     .locaddress
+     {
+      font-size: 10px;
+       color: #0A0E69;
+        text-decoration: none;
+         margin-top: -2px;
+     }
+     .adp {
+      margin-top: -1px;
+  }
+     .shorttest
+     {
+      font-size: 10px; color: #0A0E69; margin-left: -17px;
+     }
+     .privacy
+     {
+      font-size: 10px; color: #0A0E69; text-decoration: none;padding:0px 0px ;margin-left: -17px;
+     }
+     .tc
+     {
+      font-size: 10px; margin-left: -7px; color: #0A0E69;text-decoration: none;
+     }
+     .aboutpageheight
+     {
+         height: 1500px;
+     }
+     input[type=radio],
+     input.radio {
+       float: left;
+       clear: none;
+       margin: 2px 0 0 2px;
+     }
+     .form-row {
+   display: flex;
+  }
+  input[type=radio],
+     input.radio {
+       float: left;
+       clear: none;
+       margin: 6px 0 0 2px;
+       border-color: #A0BD1C;
+     }
+  
+  .form-group {
+   padding: 5px;
+  
+  }
+  
+  /* .form-group input {
+   width: 100%;
+  } */
+  .proceed
+  {        
+     font-size: 14px;
+  }
+  .form-select
+  {
+   color: #555555;
+  }
+  
+  /* NBV FORM STYLE */
+  .nbvformheight {
+      position: relative;
+      height: 1600px;
+  }
+  .nbiformheight {
+      position: relative;
+      height: 1300px;
+  }
+  label {
+      float: left;
+      clear: none;
+      display: block;
+      padding: 0px 0.5rem 0px 8px;
+    }
+    .welcome
+    {
+      
+      font-size: 35px;                  
+      padding-left: 310px;
+     
+    }
+    .formtext
+    {
+      height: 213px;
+      color:#0A0E69;
+      padding-left: 39px;
+      
+    }
+    .topdiv
+    {
+      margin:74px auto 166px;       
+      width: 638px;
+    }
+    .cardform
+    {
+      border:1px solid #ffffff; height: 999px;
+    }
+    .formh1
+    {
+      padding-left: 240px;font-family: 'Ubuntu';font-style: normal;font-weight: 500;font-size: 24px;color: #0A0E69;
+    }
+    .formp
+    {
+      padding: 28px 73px 0px 270px;font-family: Ubuntu;font-size: 16px;font-style: normal;font-weight: 400;color: #0A0E69;                      
+    }
+    .title
+    {
+      border: 1px solid #555555; width:352px; margin-left:46px; margin-top:72px;
+    }
+    .yourname
+    {
+      padding-top:19px; padding-left: 46px; color: #C8730F;font-family: Ubuntu;
+      font-size: 13px;
+      font-style: normal;
+      font-weight: 400;
+    }
+    .formml
+    {
+      margin-left: 46px;
+    }
+    .firstname
+    {
+      font-size: 12px;
+      height: 44px; width:170px;
+    }
+    .firstname2
+    {
+      font-size: 12px;
+      height: 44px; width:243px;
+      margin-right: 82px;
+    }
+    .middlename
+    {
+      font-size: 12px;
+      height: 44px; width:170px;
+      margin-left: 40px;
+    }
+    .lastname
+    {
+      font-size: 12px;
+      height: 44px; width:170px;
+      margin-left: 80px;
+    }
+    .gender
+    {
+      padding-left: 78px;
+    }
+    .male
+    {
+      margin-left: 48px;
+    }
+    .please
+    {
+      padding-top: 27px;
+      font-family: Ubuntu;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+    }
+    .select
+    {
+      border: 1px solid #555555; height: 44px;margin-top: 17px; width:502px;font-family: ubuntu;
+    }
+  
+    .vsbheight
+    {
+      position: relative;
+      height: 1284px;
+    }
+  
+    .vsbh2
+    {
+      height: 28px;padding-left: 200px;font-family: 'Ubuntu';font-style: normal;font-weight: 500;font-size: 24px;line-height: 28px;color: #000000;
+    }
+  
+    .vsbp
+    {
+      padding: 28px 68px 0px 68px;font-family: Ubuntu;font-size: 16px;font-style: normal;font-weight: 400;line-height: 23px;letter-spacing: 0em;text-align: left;color: #000000;
+    }
+  
+    .vsbform
+    {
+      border:1px solid #555555; font-family: ubuntu; margin:26px auto; width:416px;
+    }
+    .vsbmt
+    {
+        margin-top:27px;
+    }
+    .vsbformp
+    {
+      font-family: Ubuntu;font-size: 14px;
+      font-style: normal;font-weight: 400;line-height: 16px;
+      letter-spacing: 0em;text-align: left;padding-left:155px; padding-top:27px;
+    }
+    .vsbformselect
+    {
+      border: 1px solid #555555; width:416px; margin:10px auto;
+    }
+    .vsbformtextarea
+    {
+      width: 416px; height: 116px;margin-bottom: 65px;margin-left: 155px;margin-top:27px;
+    }
+  
+    /*RESET PASSWORD*/
+    .resetpassword
+    {
+      position: relative;
+      height: 800px;
+    }
+    .resetform
+    {
+      border-radius: 10px;
+      border-color: transparent;
+      width: 608px; background-color: #1161D9;
+      margin: 32px auto;
+    }
+    .sibutton {
+      width: 73px;
+      margin-top: 0px;
+      margin-left: 55px;
+  }
+   .rph2
+   {
+      padding-top:68px;padding-left: 300px;font-family: 'Ubuntu';
+      font-style: normal;font-weight: 500;font-size: 24px;color: #0A0E69;
+   }
+    .rpml
+    {
+      margin-left: 59px;
+    }
+    .inputdiv
+    {
+      margin-right: 202px; margin-top:72px;
+    }
+    .rpinput
+    {
+      border: 1px solid #ffffff; width:470px;font-family:ubuntu;height: 44px; margin-top:27px; background-color: #1161D9; color: #ffffff;
+    }
+  
+    .buttonrow
+    {
+      margin-left: 69px; margin-top: 42px;
+    }
+    .rpmb
+    {
+      margin-bottom:80px ;
+      /*margin-top: 27px;*/
+    }
+    .rpbutton
+    {
+      width: 90px;
+      margin-left: 10px;
+    }
+  
+    /*SIGN IN*/
+    .sih2
+    {
+      padding-left: 158px;
+      
+    }
+  
+    /*FORGOT PASSWORD*/
+    .fpp
+    {
+      font-family: Rubik;
+      font-size: 14px;
+      font-weight: 500;
+      color: #ffffff;
+    }
+  
+    /*Review*/
+    .reviewheight
+    {
+        height: 1800px;
+    }
+    .reviewh2
+    {
+      padding-top:68px;
+      padding-left: 600px;
+      font-family: 'Ubuntu';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 24px;
+      color: #0A0E69;
+    }
+    .reviewcard
+    {
+      border-radius: 10px;
+      border-color: transparent;
+      width: 590px;
+      background-color: #ffffff;
+      margin: 32px 85px;
+    }
+    .reviewml
+    {
+      margin-left: 57px;
+    }
+    .reviewmt
+    {
+      margin-top:45px
+    }
+    .reviewname
+    {
+      font-family: Rubik; color:#080C58;
+      font-size: 16px;
+      font-weight: 500;
+    }
+    .reviewservice
+    {
+      font-family: Ubuntu;
+      font-size: 16px;
+      font-weight: 500;
+      margin-top:21px;
+      color:#000000;
+      
+    }
+    .reviewtext
+    {
+      font-family: Ubuntu; width: 499px; margin-top: 14px;
+      font-size: 14px;
+      font-weight: 400;
+      color:#000000
+      
+    }
+  
+    /*Payment*/
+      /*Payment*/
+      .paymentlogoimg
+      {
+        border-radius: 50%; margin-left: 36px; margin-top: 28px;
+      }
+      .paymenth2
+      {
+        font-family: Rubik;
+        font-size: 30px;
+        font-weight: 700;
+        color:#F1F5F6;
+        text-align: left;
+        padding-left: 86px;
+        padding-top: 56px;
+      }
+      .paymentdiv
+      {
+        margin-left: 56px; margin-top: 14px;
+      }
+      .paymentservices
+      {
+        font-family: Ubuntu;
+        font-size: 18px;
+        font-weight: 700;
+        color:#F1F5F6;
+      }
+      .paymentprice
+      {
+        font-family: Ubuntu;
+        font-size: 18px;
+        font-weight: 700;
+        padding-left: 200px;
+        color:#F1F5F6;
+      }
+      .reviewline
+      {
+        margin-left: 56px; 
+        margin-top: 26px; 
+        color: #F1F5F6; 
+        border: 1px solid #F1F5F6; 
+        width: 700px;
+      }
+      .form-group2 {
+        padding: 5px;
+        width: 100%;
+      }
+      .form-control::placeholder { 
+        color: #555555;
+      }
+      .form-group2 input {
+        width: 100%;
+      }
+        .payment
+      {
+         background-color: #A0BD1C;
+          font-family: Ubuntu;
+          font-size: 16px;
+          width: 384px;
+          font-style: normal;
+          font-weight: 400;
+          color: #ffffff;
+          border:1px solid #A0BD1C;
+          
+          margin-bottom: 58px;
+      }
+    
+      .leftcard
+      {
+        width: 502px; height: 653px; margin-top: 52px; background-color: #ffffff; margin-left: 150px;
+      }
+      .leftcardh2
+      {
+        font-family: Ubuntu;
+        font-size: 30px;
+        font-weight: 500;
+        text-align: center;
+        color:#000000; margin-left: 57px; margin-right: 78px; 
+      }
+      .paymentopt
+      {
+        font-family: Ubuntu;
+        font-size: 14px;
+        font-weight: 500;
+        color:#000000;margin-left: 95px;
+      }
+      .radioo
+      {
+        width: 21px; height: 21px; margin-top: 8px;
+      }
+      .radiodiv
+      {
+        margin-top: 20px; margin-left: 57px;
+      }
+      .cardname
+      {
+        font-family: Ubuntu;
+        padding-top: 26px;
+        font-size: 14px;
+        font-weight: 400; color: #000000;                         
+      }
+      .cardinput
+      {
+        border: 1px solid #555555;height: 44px; width:384px; margin-top:7px
+      }
+      .cardnumber
+      {
+        font-family: Ubuntu;
+        padding-top: 6px;
+        font-size: 14px;
+        font-weight: 400; color: #000000;                      
+      }
+      .expiry
+      {
+        font-family: Ubuntu;
+        font-size: 14px;
+        font-weight: 400; color: #000000;   
+      }
+      .expiryinput
+      {
+        width:185px;
+        margin-top: 3px;
+        color: #5A5A5A; 
+        height:43px;
+        border:1px solid #555555;
+        font-size: 14px; 
+        font-family: ubuntu; 
+        font-weight: 400;
+      }
+      .divbutton
+      {
+        margin-left: 57px; 
+        margin-top:26px;
+        margin-bottom:85px ;
+      }
+    .movement1
+  {
+    margin-left: 40px;
+  }
+ 
+  .new-section1__text-body8 {
+    margin-top: 12px;
+    margin-left: 0px;
+}
+    .contactheight
+    {
+        position: relative;
+        height: 1500px;
+    }
+    .faqheight
+    {
+        position: relative;
+            height: 1500px;
+    }
+    .faqtext
+    {
+        padding-left: 70px; font-size: 16px; padding-top: 50px;
+    }
+    .helptext
+    {
+        padding-left: 70px;
+        font-size: 35px; 
+        color: white; 
+        font-family: ubuntu;
+    }
+    .everythingtext
+    {
+        padding-left: 70px;font-size: 14px; color: #F1F5F6;
+    }
+    .everythingtext2
+    {
+        font-weight: 400; padding-left: 70px; font-size: 20px; font-family: ubuntu; margin-top: 86px; margin-bottom: 72px; color: #0A0E69;
+    }
+    .question {
+        font-family: Ubuntu;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+      padding: 20px 80px 20px 20px;
+      position: relative;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+    }
+    
+    .question::after {
+      content: "\002B";
+      font-size: 2.2rem;
+      position: absolute;
+      right: 20px;
+      transition: 0.2s;
+    }
+    
+    .question.active::after {
+      transform: rotate(45deg);
+    }
+    
+    .answercont {
+      max-height: 0;
+      overflow: hidden;
+      transition: 0.3s;
+    }
+    
+    .answer {
+      padding: 0 20px 20px;
+      line-height: 1.5rem;
+    }
+    .containerques {
+      background-color: white;
+      color: #0A0E69;
+      border-radius: 10px;
+      width: 622px;
+      margin:20px auto;
+      box-shadow: 0 5px 10px 0 rgb(0,0,0,0.25);
+    }
+    .ppheight
+    {
+        position: relative;
+        height: 1100px;
+    }
+    .pptop
+    {
+        width: 100%; height: 200px; background-color: #ADC92E;
+    }
+    .pptext
+    {
+        padding-left: 164px;padding-top: 70px; font-size: 40px; color: white; font-family: ubuntu;
+    }
+    .ppcard
+    {
+        border-radius: 10px;
+        border-color: transparent;
+        width: 700px;
+        margin: 87px auto;
+    }
+    .pptext2
+    {
+        font-family: ubuntu;
+        font-size: 16px;
+        font-weight: 300;
+        padding: 78px 86px 133px;
+    }
+    .nbiheight {
+        position: relative;
+        height: 830px;
+    }
+    .nbiimage
+    {
+        margin-left: 30px;
+    }
+    .imagebn
+    {
+      width: 313px;
+      height: 244px;
+      
+    }
+    .nbitext
+    {
+      padding-left: 50px;
+      width: 400px;
+    }
+    .imagebn2
+    {
+      display: none;
+      /* width: 313px;
+      height: 244px;
+      margin-left: 100px; */
+    }
+    .nbitext2
+    {
+      padding-left: 105px;
+      width: 730px;
+    }
+    .col-md-1
+    {
+      display: none;
+    }
+    .cont{
+        margin-top: 139px; padding-left: 36px;
+    }
+    .contactcard
+    {
+        border: transparent;
+                            border-radius: 25px; margin-left: -10px;
+                            width: 350px;
+    }
+    .contactform
+    {
+        padding-left: 70px;
+        padding-right: 78px;
+        padding-bottom: 142px;
+        padding-top: 49px;
+    }
+}
+@media (max-width: 720px)
+{
+  .bannertext {
+    font-size: 30px;
+}
+  .collapsebtn
+{
+  margin-top: -5px;
+  margin-right: 40px;
+}
+  .hiddenbutton
+{
+  display: none;
+}
+  .mobile
+{
+  display: none;
+}
+  .mobilelang
+{
+  display: block;
+}
+.lang{
+  display:none;
+}
+  .english{
+    margin-left: 300px;
+  }
+  .get{
+    margin-left: 220px;
+  }
+  .successcard
+  {
+      width: 502px; height: 653px; margin-top: 52px; background-color: #ffffff; margin-left: 110px;
+  }
+  .genderwidth
+  {
+    width: 300px;
+  }
+  .forgot
+  {
+    
+    margin-left: 70px;                   
+  }
+  .applyh2
+{
+  padding-left: 264px;font-size: 24px;
+}
+.applyh2p
+{
+  padding: 28px 220px 0px 240px;font-family: Ubuntu;font-size: 16px;font-style: normal;font-weight: 400;color: #0A0E69;                      
+}
+.applyformp{
+  padding-top:48px; padding-left: 101px; color:  #000000;font-family: Ubuntu;font-size: 14px;font-style: normal;font-weight: 400;
+}
+.formrowdiv
+{
+  margin-left: 101px;
+}
+.formgroupdiv
+{
+  margin-right: 102px;
+}
+.applyselect
+{
+   margin-top:27px
+}
+.applys {
+  width: 150px;
+
+}
+.makereviewcard
+{
+  width: 393px;
+  margin-left: 60px;
+}
+    .ml-80 {
+        margin-left: 0px;
+    }
+    .blue {
+       
+        height: 87px;
+        margin-left: -150px;
+        width: 350px;
+    }
+    .hide
+    {
+        margin-left: -120px;
+    }
+  .applycard
+  {
+    border-radius: 10px;
+    border-color: transparent;
+    width: 735px;
+    margin: 32px auto;
+  }
+  .cf {
+    margin-left: 0px;
+}
+
+.cont{
+    margin-top: 139px;
+    padding-left: 206px;
+}
+    /*INDEX PAGE*/
+    .new-section1__flex1.layout {
+        width: 100%;
+    }
+    .new-section1__text-body8 {
+        margin-top: 14px;
+    }
+    .free {
+        
+        margin-left: 30px;
+        margin-top: 18px;
+        
+    }
+    .text {
+        width: 249px;
+        height: 16px;
+        margin-top: 18px;
+        font-family: Ubuntu;
+        font-style: normal;
+        
+        font-size: 14px;
+        line-height: 16px;
+    }
+    .hands
+     {
+      margin: 94px auto 0px;
+      font-family: Rubik;font-style: normal;font-weight: normal;font-size: 35px;
+     }
+    .form {
+        width: 215px;
+        height: 28px;
+        left: 874px;
+        margin-top: 5px;
+        background: #F1F5F6;
+        text-align: center;
+        border-radius: 6px;
+        font-family: Ubuntu;
+        font-size: 14px;
+        line-height: 16px;
+        text-transform: lowercase;
+        color: rgba(21, 4, 35, 0.21);
+    }
+    .buttons {
+        width: 63px;
+        height: 28px;
+        padding-top: 3px;
+        margin-top: 5px;
+        background: #a0bd1c;
+        border-radius: 6px;
+        font-size: 13px;
+        font-weight: 300;
+        font-style: normal;
+        color: #FBFCFB;
+        font-family: Ubuntu;
+        padding-left: 10px;
+    }
+    .phone {
+        /* color: white; */
+        padding-top: 15px;
+        width: 120px;
+        height: 16px;
+        left: 1208px;
+        font-family: 'Ubuntu';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 16px;
+        text-decoration-line: none;
+        color: #FFFFFF;
+    }
+    a {
+        color: #0d6efd;
+        text-decoration: underline;
+    }
+    .shop
+    {
+        margin-left:-12.5%;
+        font-family: rubik;
+    }
+    .logoimg
+    {
+     margin-left: 27px; margin-top: 18px;
+    }
+    .home
+      {
+          color: #000000; 
+          margin-left:60px; 
+          margin-top: 5px;
+          font-family: Ubuntu;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 16px;
+      }
+      .visa
+      {
+          color: #000000; 
+          margin-left:60px; 
+          margin-top: 5px;
+          font-family: Ubuntu;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 16px;
+      }
+      .services
+      {
+          color: #000000; 
+          margin-left:60px; 
+          margin-top: 5px;
+          font-family: Ubuntu;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 16px;
+      }
+      .contact
+      {
+          width: 100%; 
+          color: #000000;
+          margin-left:60px; 
+          margin-top: 5px;
+          font-family: Ubuntu;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 16px;
+      }
+      .navbar-light .navbar-nav .nav-link
+      {
+        color: #000000;
+      }
+      .about{
+          width: 100%;
+          color: #000000;
+          margin-left:60px; 
+          margin-top: 5px;
+          font-family: Ubuntu;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 16px;
+      }
+      .ml-118
+      {
+          margin-left: 60px;
+      }
+      .button {
+          width: 63px;
+          margin-top: 0px;
+          background: #a0bd1c;
+          border-radius: 6px;
+          font-size: 14px;;
+          font-weight: 300;
+          font-style: normal;
+          color: #FBFCFB;
+          font-family: Ubuntu;
+          text-align: center;
+          padding-right: 64px;
+    
+        }
+        .buttons2 {
+         
+          background: #a0bd1c;
+          border-radius: 6px;
+          font-size: 14px;;
+          font-weight: 300;
+          font-style: normal;
+          color: #FBFCFB;
+          font-family: Ubuntu;
+          text-align: center;
+          margin-top: 23px;
+          margin-left: 32px;
+          width: 117px;
+          height: 43px;
+          padding: 10px 23px;
+        }
+        .button2 {
+            background-color: #ffffff;
+            width: 89px;
+            height: 36px;
+            left: 1042px;
+            margin-top: 2px;
+            border: 1px solid #a0bd1c;
+            padding-top: 10px;
+            font-family: 'Ubuntu';
+            font-style: normal;
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 16px;
+            margin-left: -52.5px;
+            color: #a0bd1c;
+        }
+        .lang {
+            margin-left: 20px;
+            margin-top: 0px;
+        }
+  .buttons3 {
+    background: #a0bd1c;
+    border-radius: 6px;
+    font-size: 14.5px;
+    font-weight: 300;
+    font-style: normal;
+    color: #FBFCFB;
+    font-family: Ubuntu;
+    text-align: center;
+    margin-top: 13px;
+    margin-left: 100px;
+    width: 107px;
+    height: 43px;
+    padding: 10px 10px;
+    }
+         .width
+         {
+             width: 709px; height: 87px;margin-left: -50px;
+         }
+         .reviews{
+            width:1300px;
+            margin-left: 250px;
+         }
+         .btn-review {
+          margin: 100px 285px 10px;
+      }
+         .mag{
+           margin-bottom: 50px;
+         }
+
+         .mt-5
+         {
+           width: 250px;
+         }
+     .img2h1
+     {
+      font-size: 16px;
+      text-align: justify;
+      color: #F1F5F6;
+      margin-left:76px ;
+      font-family: Ubuntu;
+      margin-top: 10px;
+      font-family: Rubik;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 23px;
+      line-height: 20px;
+     }
+     .img2h4
+     {
+      text-align: justify; color: #F1F5F6; margin-left: 55px; font-family:Ubuntu
+     }
+     .img3h1
+     {
+      font-size: 16px;
+      text-align: justify;
+      color: #F1F5F6;
+      margin-left: 76px;
+  
+     }
+   
+     .img4h1
+     {
+      text-align: justify;
+      color: #F1F5F6;
+      margin-left: 76px;
+
+     }
+     .img4h4
+     {
+      text-align: justify; color: #F1F5F6; margin-left: 60px; font-family:Ubuntu
+     }
+  
+     .img5h1
+     {
+      text-align: justify;
+      color: #F1F5F6;
+      margin-left: 50px;
+      margin-top: 10px;
+      font-family: Rubik;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 23px;
+      line-height: 20px;
+     }
+  
+     .img5h4
+     {
+      text-align: justify; color: #F1F5F6; margin-left: 10px; font-family:Ubuntu
+     }
+
+        .img2
+        {
+             margin-left: 20px;
+        }
+     
+        .img3{
+             margin-left: 25px;
+        }
+        .img4
+        {
+         margin-left: 25px;
+        }
+        .img5
+        {
+         margin-left: 25px; 
+       
+        }
+        .list-group-horizontal {
+
+          margin-left: -75px;
+      }
+             .img1 {
+                height: 110px;
+                width: 113px;
+                margin-left: 75px;
+                top: 252px;
+                border-radius: 0px;
+            }
+        .img1h1 {
+            font-size: 23px;
+            color: #F1F5F6;
+            font-family: Ubuntu;
+            margin-top: 10px;
+            height: 20px;
+            width: 11px;
+            padding-left: 122px;
+        }
+        .img1h4 {
+            color: #F1F5F6;
+            font-family: Ubuntu;
+            height: 20px;
+            margin-left: -70px;
+            margin-top: 16px;
+            white-space: nowrap;
+        }
+        #content1 {
+          margin-left: 160px;
+      }
+      #content2 {
+        margin-left: 160px;
+    }
+         .img3h4
+         {
+          color: #F1F5F6; margin-left: 56px; font-family:Ubuntu;
+         }
+         .cardwidth
+     {
+      width: 281px;
+     }
+     .cardh1
+     {
+      letter-spacing: 0.04em;
+     }
+     .cardh5
+     {
+      font-weight: 300;
+     }
+     .customers
+     {
+      width: 671px;
+      height: 41px;
+      font-family: Rubik;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 35px;
+      line-height: 41px;
+      color: #060a5c;
+     }
+     .subscribe
+     {
+        background: #0C65EB;
+        color: white;
+        text-align: center;
+        font-family: 'Ubuntu';
+        padding: 0px;
+        height: 41px;
+        width: 100px;
+        margin-left: -50px;
+     }
+     .footerlogo
+     {
+        margin-left: 0px;
+        margin-top: 20px;
+     }
+     .div2
+     {
+      padding-top: 20px;
+      padding-left: 30px;
+     }
+     .div3
+     {
+        padding-left: 50px;
+        padding-top: 70px;   
+     }
+     .div4
+     {
+      padding-left: 5px;
+      padding-top: 70px;
+      
+     }
+     .fs-13
+     {
+      font-size: 11px;
+       color: #0A0E69;
+     }
+     .lg-li
+     {
+  
+      margin-left: 50px;
+      margin-top: 21px;
+     }
+     .lastfooter
+     {
+        padding-left: 11px;
+        padding-right: 0px;
+     }
+     .lastfooterrow
+     {
+      padding-top: 18px; padding-bottom: 18px;
+      width: 800px;
+     }
+     .locaddress
+     {
+      font-size: 11px;
+       color: #0A0E69;
+        text-decoration: none;
+         margin-top: -2px;
+     }
+     .shorttest
+     {
+      font-size: 11px; color: #0A0E69;
+      padding-top: 8px;
+      padding-bottom: 8px; margin-left: 0px;
+     }
+     .privacy
+     {
+      font-size: 11px; color: #0A0E69; text-decoration: none; margin-left: 0px;
+     }
+     .tc
+     {
+      font-size: 11px; margin-left: 0px; color: #0A0E69;text-decoration: none;
+     }
+     .aboutpageheight
+     {
+         height: 1700px;
+     }
+     input[type=radio],
+     input.radio {
+       float: left;
+       clear: none;
+       margin: 2px 0 0 2px;
+     }
+     .form-row {
+   display: flex;
+  }
+  input[type=radio],
+     input.radio {
+       float: left;
+       clear: none;
+       margin: 6px 0 0 2px;
+       border-color: #A0BD1C;
+     }
+  
+  .form-group {
+   padding: 5px;
+  
+  }
+  
+  /* .form-group input {
+   width: 100%;
+  } */
+  .proceed
+  {        
+     font-size: 14px;
+  }
+  .form-select
+  {
+   color: #555555;
+  }
+  
+  /* NBV FORM STYLE */
+  .nbvformheight {
+      position: relative;
+      height: 1950px;
+  }
+  .nbiformheight {
+      position: relative;
+      height: 1300px;
+  }
+  label {
+      float: left;
+      clear: none;
+      display: block;
+      padding: 0px 0.5rem 0px 8px;
+    }
+    .welcome
+    {
+      
+      font-size: 35px;                  
+      padding-left: 310px;
+     
+    }
+    .formtext
+    {
+      height: 213px;
+      color:#0A0E69;
+      padding-left: 39px;
+      
+    }
+    .topdiv
+    {
+      margin:74px auto 166px;       
+      width: 638px;
+    }
+    .cardform
+    {
+      border:1px solid #ffffff; height: 1399px;
+    }
+    .formh1
+    {
+      padding-left: 240px;font-family: 'Ubuntu';font-style: normal;font-weight: 500;font-size: 24px;color: #0A0E69;
+    }
+    .formp
+    {
+      padding: 28px 73px 0px 270px;font-family: Ubuntu;font-size: 16px;font-style: normal;font-weight: 400;color: #0A0E69;                      
+    }
+    .title
+    {
+      border: 1px solid #555555; width:352px; margin-left:46px; margin-top:72px;
+    }
+    .yourname
+    {
+      padding-top:19px; padding-left: 46px; color: #C8730F;font-family: Ubuntu;
+      font-size: 13px;
+      font-style: normal;
+      font-weight: 400;
+    }
+    .formml
+    {
+      margin-left: 46px;
+    }
+    .firstname
+    {
+      font-size: 12px;
+      height: 44px; width:300px;
+    }
+    .firstname2
+    {
+      font-size: 12px;
+      height: 44px; width:300px;
+      margin-right: 82px;
+    }
+    .middlename
+    {
+      font-size: 12px;
+      height: 44px; width:300px;
+      margin-left: 0px;
+    }
+    .lastname
+    {
+      font-size: 12px;
+      height: 44px; width:300px;
+      margin-left: 0px;
+    }
+    .gender
+    {
+      padding-left: 30px;
+    }
+    .male
+    {
+      margin-left: 0px;
+    }
+    .please
+    {
+      padding-top: 27px;
+      font-family: Ubuntu;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+    }
+    .select
+    {
+      border: 1px solid #555555; height: 44px;margin-top: 17px; width:502px;font-family: ubuntu;
+    }
+  
+    .vsbheight
+    {
+      position: relative;
+      height: 1284px;
+    }
+  
+    .vsbh2
+    {
+      height: 28px;padding-left: 200px;font-family: 'Ubuntu';font-style: normal;font-weight: 500;font-size: 24px;line-height: 28px;color: #000000;
+    }
+  
+    .vsbp
+    {
+      padding: 28px 68px 0px 68px;font-family: Ubuntu;font-size: 16px;font-style: normal;font-weight: 400;line-height: 23px;letter-spacing: 0em;text-align: left;color: #000000;
+    }
+  
+    .vsbform
+    {
+      border:1px solid #555555; font-family: ubuntu; margin: 26px auto; width:416px;
+    }
+    .vsbmt
+    {
+        margin-top:27px;
+    }
+    .vsbformp
+    {
+      font-family: Ubuntu;font-size: 14px;font-style: normal;font-weight: 400;line-height: 16px;letter-spacing: 0em;text-align: left;padding-left:68px; padding-top:27px;
+    }
+    .vsbformselect
+    {
+      border: 1px solid #555555; width:502px; margin-left:68px;
+    }
+    .vsbformtextarea
+    {
+      width: 508px; height: 116px;margin-bottom: 65px;margin-left: 68px;margin-top:27px;
+    }
+  
+    /*RESET PASSWORD*/
+    .resetpassword
+    {
+      position: relative;
+      height: 800px;
+    }
+    .resetform
+    {
+      border-radius: 10px;
+      border-color: transparent;
+      width: 608px; background-color: #1161D9;
+      margin: 32px auto;
+    }
+    .sibutton {
+      width: 73px;
+      margin-top: 0px;
+      margin-left: 50px;
+  }
+   .rph2
+   {
+      padding-top:68px;padding-left: 250px;font-family: 'Ubuntu';
+      font-style: normal;font-weight: 500;font-size: 24px;color: #0A0E69;
+   }
+    .rpml
+    {
+      margin-left: 59px;
+    }
+    .inputdiv
+    {
+      margin-right: 202px; margin-top:72px;
+    }
+    .rpinput
+    {
+      border: 1px solid #ffffff; width:470px;font-family:ubuntu;height: 44px; margin-top:27px; background-color: #1161D9; color: #ffffff;
+    }
+  
+    .buttonrow
+    {
+      margin-left: 350px; margin-top: 42px;
+    }
+    .rpmb
+    {
+      margin-bottom:80px ;
+      /*margin-top: 27px;*/
+    }
+    .rpbutton
+    {
+      width: 90px;
+      margin-left: 0px;
+    }
+  
+    /*SIGN IN*/
+    .sih2
+    {
+      padding-left: 158px;
+      
+    }
+  
+    /*FORGOT PASSWORD*/
+    .fpp
+    {
+      font-family: Rubik;
+      font-size: 14px;
+      font-weight: 500;
+      color: #ffffff;
+    }
+  
+    /*Review*/
+    .reviewheight
+    {
+        height: 1800px;
+    }
+    .reviewh2
+    {
+      padding-top:68px;
+      padding-left: 600px;
+      font-family: 'Ubuntu';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 24px;
+      color: #0A0E69;
+    }
+    .reviewcard
+    {
+      border-radius: 10px;
+      border-color: transparent;
+      width: 630px;
+      background-color: #ffffff;
+      margin: 32px 45px;
+    }
+    .reviewml
+    {
+      margin-left: 57px;
+    }
+    .reviewmt
+    {
+      margin-top:45px
+    }
+    .reviewname
+    {
+      font-family: Rubik; color:#080C58;
+      font-size: 16px;
+      font-weight: 500;
+    }
+    .reviewservice
+    {
+      font-family: Ubuntu;
+      font-size: 16px;
+      font-weight: 500;
+      margin-top:21px;
+      color:#000000;
+      
+    }
+    .reviewtext
+    {
+      font-family: Ubuntu; width: 539px; margin-top: 14px;
+      font-size: 14px;
+      font-weight: 400;
+      color:#000000
+      
+    }
+  
+    /*Payment*/
+      /*Payment*/
+      .paymentlogoimg
+      {
+        border-radius: 50%; margin-left: 36px; margin-top: 28px;
+      }
+      .paymenth2
+      {
+        font-family: Rubik;
+        font-size: 30px;
+        font-weight: 700;
+        color:#F1F5F6;
+        text-align: left;
+        padding-left: 86px;
+        padding-top: 56px;
+      }
+      .paymentdiv
+      {
+        margin-left: 56px; margin-top: 14px;
+      }
+      .paymentservices
+      {
+        font-family: Ubuntu;
+        font-size: 18px;
+        font-weight: 700;
+        color:#F1F5F6;
+      }
+      .paymentprice
+      {
+        font-family: Ubuntu;
+        font-size: 18px;
+        font-weight: 700;
+        padding-left: 200px;
+        color:#F1F5F6;
+      }
+      .reviewline
+      {
+        margin-left: 56px; 
+        margin-top: 26px; 
+        color: #F1F5F6; 
+        border: 1px solid #F1F5F6; 
+        width: 630px;
+      }
+      .form-group2 {
+        padding: 5px;
+        width: 88%;
+      }
+      .form-control::placeholder { 
+        color: #555555;
+      }
+      .form-group2 input {
+        width: 100%;
+      }
+        .payment
+      {
+         background-color: #A0BD1C;
+          font-family: Ubuntu;
+          font-size: 16px;
+          width: 384px;
+          font-style: normal;
+          font-weight: 400;
+          color: #ffffff;
+          border:1px solid #A0BD1C;
+          
+          margin-bottom: 58px;
+      }
+    
+      .leftcard
+      {
+        width: 502px; height: 653px; margin-top: 52px; background-color: #ffffff; margin-left: 110px;
+      }
+      .leftcardh2
+      {
+        font-family: Ubuntu;
+        font-size: 30px;
+        font-weight: 500;
+        text-align: center;
+        color:#000000; margin-left: 57px; margin-right: 78px; 
+      }
+      .paymentopt
+      {
+        font-family: Ubuntu;
+        font-size: 14px;
+        font-weight: 500;
+        color:#000000;margin-left: 95px;
+      }
+      .radioo
+      {
+        width: 21px; height: 21px; margin-top: 8px;
+      }
+      .radiodiv
+      {
+        margin-top: 20px; margin-left: 57px;
+      }
+      .cardname
+      {
+        font-family: Ubuntu;
+        padding-top: 26px;
+        font-size: 14px;
+        font-weight: 400; color: #000000;                         
+      }
+      .cardinput
+      {
+        border: 1px solid #555555;height: 44px; width:384px; margin-top:7px
+      }
+      .cardnumber
+      {
+        font-family: Ubuntu;
+        padding-top: 6px;
+        font-size: 14px;
+        font-weight: 400; color: #000000;                      
+      }
+      .expiry
+      {
+        font-family: Ubuntu;
+        font-size: 14px;
+        font-weight: 400; color: #000000;   
+      }
+      .expiryinput
+      {
+        width:185px;
+        margin-top: 3px;
+        color: #5A5A5A; 
+        height:43px;
+        border:1px solid #555555;
+        font-size: 14px; 
+        font-family: ubuntu; 
+        font-weight: 400;
+      }
+      .divbutton
+      {
+        margin-left: 57px; 
+        margin-top:26px;
+        margin-bottom:85px ;
+      }
+    .movement1
+  {
+    margin-left: 40px;
+  }
+ 
+  .new-section1__text-body8 {
+    margin-top: 12px;
+    margin-left: 0px;
+}
+    .contactheight
+    {
+        position: relative;
+        height: 1700px;
+    }
+    .faqheight
+    {
+        position: relative;
+            height: 1500px;
+    }
+    .faqtext
+    {
+        padding-left: 56px; font-size: 16px; padding-top: 50px;
+    }
+    .helptext
+    {
+        padding-left: 56px;
+        font-size: 35px; 
+        color: white; 
+        font-family: ubuntu;
+    }
+    .everythingtext
+    {
+        padding-left: 56px;font-size: 14px; color: #F1F5F6;
+    }
+    .everythingtext2
+    {
+        font-weight: 400; padding-left: 56px; font-size: 20px; font-family: ubuntu; margin-top: 86px; margin-bottom: 72px; color: #0A0E69;
+    }
+    .question {
+        font-family: Ubuntu;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+      padding: 20px 80px 20px 20px;
+      position: relative;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+    }
+    
+    .question::after {
+      content: "\002B";
+      font-size: 2.2rem;
+      position: absolute;
+      right: 20px;
+      transition: 0.2s;
+    }
+    
+    .question.active::after {
+      transform: rotate(45deg);
+    }
+    
+    .answercont {
+      max-height: 0;
+      overflow: hidden;
+      transition: 0.3s;
+    }
+    
+    .answer {
+      padding: 0 20px 20px;
+      line-height: 1.5rem;
+    }
+    .containerques {
+      background-color: white;
+      color: #0A0E69;
+      border-radius: 10px;
+      width: 622px;
+      margin:20px auto;
+      box-shadow: 0 5px 10px 0 rgb(0,0,0,0.25);
+    }
+    .ppheight
+    {
+        position: relative;
+        height: 1100px;
+    }
+    .pptop
+    {
+        width: 100%; height: 200px; background-color: #ADC92E;
+    }
+    .pptext
+    {
+        padding-left: 164px;padding-top: 70px; font-size: 40px; color: white; font-family: ubuntu;
+    }
+    .ppcard
+    {
+        border-radius: 10px;
+        border-color: transparent;
+        width: 700px;
+        margin: 87px auto;
+    }
+    .pptext2
+    {
+        font-family: ubuntu;
+        font-size: 16px;
+        font-weight: 300;
+        padding: 78px 86px 133px;
+    }
+    .nbiheight {
+        position: relative;
+        height: 990px;
+    }
+    .nbiimage
+    {
+        margin-left: 190px;
+    }
+    .imagebn
+    {
+      width: 420px;
+      height: 300px;
+      margin-left: 50px;
+      
+    }
+    .nbitext
+    {
+      padding-left: 0px;
+      width: 530px;
+      margin-top: 27px;
+    }
+    .imagebn2
+    {
+      width: 313px;
+      height: 244px;
+      margin-left: 100px;
+    }
+    .nbitext2
+    {
+      padding-left: 0px;
+    width: 530px;
+    }
+    .col-md-1
+    {
+      display: none;
+    }
+    .cont{
+        margin-top: 139px; padding-left: 136px;
+    }
+    .contactcard
+    {
+      border: transparent;
+    border-radius: 25px;
+    margin-left: 50px;
+    width: 616px;
+    margin-top: 50px;
+    }
+    .contactform
+    {
+        padding-left: 70px;
+        padding-right: 78px;
+        padding-bottom: 142px;
+        padding-top: 49px;
+    }
+}
+@media (max-width: 640px)
+{
+  .collapsebtn
+{
+  margin-top: -5px;
+  margin-right: 40px;
+}
+  .hiddenbutton
+{
+  display: none;
+}
+  .mobile
+{
+  display: none;
+}
+  .mobilelang
+  {
+    display: block;
+  }
+  .lang{
+    display:none;
+  }
+  .english{
+    margin-left: 220px;
+  }
+    .ml-80 {
+        margin-left: 0px;
+    }
+    .blue {
+        background-color: #1161d9;
+        color: white;
+        height: 87px;
+        margin-left: -450px;
+        width: 650px;
+    }
+    .list-group-horizontal {
+      flex-direction: column;
+      margin-left: 200px;
+  }
+    .hide
+    {
+        margin-left: -120px;
+    }
+    .applyh2 {
+      padding-left: 164px;
+      font-size: 24px;
+  }
+  .applyh2p {
+    padding: 28px 120px 0px 140px;
+}
+.applyformp {
+  padding-top: 48px;
+  padding-left: 40px;
+
+}
+.formrowdiv {
+  margin-left: 40px;
+}
+.applyselect {
+
+  width: 452px;
+ 
+}
+.applybtndiv {
+  margin-left: 433px;
+  margin-top: 89px;
+  margin-bottom: 80px;
+}
+    .applycard {
+      border-radius: 10px;
+      border-color: transparent;
+      width: 538px;
+      margin: 32px auto;
+  }
+  .cf {
+    margin-left: 0px;
+}
+
+.cont{
+    margin-top: 139px;
+    padding-left: 206px;
+}
+    /*INDEX PAGE*/
+    .new-section1__flex1.layout {
+        width: 100%;
+    }
+    .new-section1__text-body8 {
+        margin-top: 14px;
+    }
+    .free {
+        font-weight: 600;
+        margin-left: 5px;
+        margin-top: 18px;
+        font-family: Ubuntu;
+        font-style: normal;
+        color: #ffffff;
+    }
+    .text {
+        width: 249px;
+        height: 16px;
+        margin-top: 18px;
+        font-family: Ubuntu;
+        font-style: normal;
+        
+        font-size: 13px;
+        line-height: 16px;
+    }
+    .hands
+     {
+      margin: 94px auto 0px;
+      font-family: Rubik;font-style: normal;font-weight: normal;font-size: 25px;
+     }
+    .form {
+        width: 150px;
+        height: 28px;
+        left: 874px;
+        margin-top: 5px;
+        background: #F1F5F6;
+        text-align: center;
+        border-radius: 6px;
+        font-family: Ubuntu;
+        font-size: 12px;
+        line-height: 16px;
+        text-transform: lowercase;
+        color: rgba(21, 4, 35, 0.21);
+    }
+    .buttons {
+        width: 63px;
+        height: 28px;
+        padding-top: 3px;
+        margin-top: 5px;
+        background: #a0bd1c;
+        border-radius: 6px;
+        font-size: 13px;
+        font-weight: 300;
+        font-style: normal;
+        color: #FBFCFB;
+        font-family: Ubuntu;
+        padding-left: 10px;
+    }
+    .phone {
+        /* color: white; */
+        padding-top: 15px;
+        width: 120px;
+        height: 16px;
+        left: 1208px;
+        font-family: 'Ubuntu';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 16px;
+        text-decoration-line: none;
+        color: #FFFFFF;
+    }
+    a {
+        color: #0d6efd;
+        text-decoration: underline;
+    }
+    .shop
+    {
+        margin-left:-15%;
+        font-family: rubik;
+    }
+    .bannertext {
+
+      font-size: 35.5px; 
+  }
+  .made {
+
+    font-size: 19px;
+  }
+  .applybtn {
+    padding-top: 9px;
+    padding-bottom: 9px;
+    font-size: 14px;
+  }
+    .logoimg
+    {
+     margin-left: 27px; margin-top: 18px;
+    }
+    .home
+      {
+          color: #000000; 
+          margin-left:60px; 
+          margin-top: 5px;
+          font-family: Ubuntu;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 16px;
+      }
+      .visa
+      {
+          color: #000000; 
+          margin-left:60px; 
+          margin-top: 5px;
+          font-family: Ubuntu;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 16px;
+      }
+      .services
+      {
+          color: #000000; 
+          margin-left:60px; 
+          margin-top: 5px;
+          font-family: Ubuntu;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 16px;
+      }
+      .contact
+      {
+          width: 100%; 
+          color: #000000;
+          margin-left:60px; 
+          margin-top: 5px;
+          font-family: Ubuntu;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 16px;
+      }
+      .navbar-light .navbar-nav .nav-link
+      {
+        color: #000000;
+      }
+      .about{
+          width: 100%;
+          color: #000000;
+          margin-left:60px; 
+          margin-top: 5px;
+          font-family: Ubuntu;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 16px;
+      }
+      .ml-118
+      {
+          margin-left: 60px;
+      }
+      .button {
+          width: 63px;
+          margin-top: 0px;
+          background: #a0bd1c;
+          border-radius: 6px;
+          font-size: 14px;;
+          font-weight: 300;
+          font-style: normal;
+          color: #FBFCFB;
+          font-family: Ubuntu;
+          text-align: center;
+          padding-right: 64px;
+    
+        }
+        .buttons2 {
+         
+          background: #a0bd1c;
+          border-radius: 6px;
+          font-size: 14px;;
+          font-weight: 300;
+          font-style: normal;
+          color: #FBFCFB;
+          font-family: Ubuntu;
+          text-align: center;
+          margin-top: 23px;
+          margin-left: 32px;
+          width: 117px;
+          height: 43px;
+          padding: 10px 23px;
+        }
+        .button2 {
+            background-color: #ffffff;
+            width: 89px;
+            height: 36px;
+            left: 1042px;
+            margin-top: 2px;
+            border: 1px solid #a0bd1c;
+            padding-top: 10px;
+            font-family: 'Ubuntu';
+            font-style: normal;
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 16px;
+            margin-left: -52.5px;
+            color: #a0bd1c;
+        }
+        .lang {
+            margin-left: 20px;
+            margin-top: 0px;
+        }
+        .buttons3 {
+          background: #a0bd1c;
+          border-radius: 6px;
+          font-size: 14.5px;
+          font-weight: 300;
+          font-style: normal;
+          color: #FBFCFB;
+          font-family: Ubuntu;
+          text-align: center;
+          margin-top: 43px;
+          margin-left: 30px;
+          width: 117px;
+          height: 43px;
+          padding: 10px 23px;
+         }
+         .width
+         {
+          width: 709px;
+          height: 87px;
+          margin-left: 30px;
+         }
+         .indexdivrow
+  {
+    flex-direction: column;
+  }
+         .reviews{
+            width:1020px;
+            margin-left: 220px;
+         }
+         .btn-review {
+          margin: 100px 245px 10px;
+      }
+         .mag
+         {
+           margin-bottom: 50px;
+         }
+
+         .mt-5
+         {
+           width: 250px;
+         }
+     .img2h1
+     {
+      font-size: 16px;
+      text-align: justify;
+      color: #F1F5F6;
+      margin-left:86px ;
+      font-family: Ubuntu;
+      margin-top: 10px;
+      font-family: Rubik;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 23px;
+      line-height: 20px;
+     }
+     .img2h4
+     {
+      text-align: justify; color: #F1F5F6; margin-left: 35px; font-family:Ubuntu
+     }
+     .img3h1
+     {
+      font-size: 16px;
+      text-align: justify;
+      color: #F1F5F6;
+      margin-left: 86px;
+      font-family: Ubuntu;
+      margin-top: 10px;
+      font-family: Rubik;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 23px;
+      line-height: 20px;
+     }
+   
+     .img4h1
+     {
+      text-align: justify;
+      color: #F1F5F6;
+      margin-left: 86px;
+      margin-top: 10px;
+      font-family: Rubik;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 23px;
+      line-height: 20px;
+     }
+     .img4h4
+     {
+      text-align: justify; color: #F1F5F6; margin-left: 36px; font-family:Ubuntu
+     }
+     #content1 {
+      margin-left: 100px;
+  }
+  #content2 {
+    margin-left: 100px;
+}
+     .img5h1
+     {
+      text-align: justify;
+      color: #F1F5F6;
+      margin-left: 40px;
+      margin-top: 10px;
+      font-family: Rubik;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 23px;
+      line-height: 20px;
+     }
+  
+     .img5h4
+     {
+      text-align: justify; color: #F1F5F6; margin-left: 10px; font-family:Ubuntu
+     }
+     .list-group-horizontal {
+
+      margin-left: 220px;
+  }
+         .img1 {
+            height: 110px;
+            width: 113px;
+            margin-left: 30px;
+            top: 252px;
+            border-radius: 0px;
+        }
+        .img2
+        {
+             margin-left: 35px;
+        }
+     
+        .img3{
+             margin-left: 35px;
+        }
+        .img4
+        {
+         margin-left: 35px;
+        }
+        .img5
+        {
+         margin-left: 35px; 
+       
+        }
+        .img1h1 {
+            font-size: 23px;
+            color: #F1F5F6;
+            font-family: Ubuntu;
+            margin-top: 10px;
+            height: 20px;
+            width: 11px;
+            padding-left: 82px;
+        }
+        .img1h4 {
+            color: #F1F5F6;
+            font-family: Ubuntu;
+            height: 20px;
+            margin-left: -50px;
+            margin-top: 16px;
+            white-space: nowrap;
+        }
+         .img3h4
+         {
+          color: #F1F5F6; margin-left: 6px; font-family:Ubuntu;
+         }
+         .cardwidth
+     {
+      width: 281px;
+     }
+     .cardh1
+     {
+      letter-spacing: 0.04em;
+     }
+     .cardh5
+     {
+      font-weight: 300;
+     }
+     .get
+     {
+       margin: 10px 180px;
+     }
+     .customers
+     {
+      width: 480px;
+      height: 41px;
+      font-family: Rubik;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 25px;
+      line-height: 41px;
+      color: #060a5c;
+     }
+     .subscribe
+     {
+        background: #0C65EB;
+        color: white;
+        text-align: center;
+        font-family: 'Ubuntu';
+        padding: 0px;
+        height: 41px;
+        width: 100px;
+        margin-left: -30px;
+     }
+     .footerlogo
+     {
+        margin-left: 0px;
+        margin-top: 20px;
+     }
+     .div2
+     {
+      padding-left: 30px;
+     }
+     .div3
+     {
+      padding-left: 20px;
+      
+     }
+     .div4
+     {
+      padding-left: 5px;
+      
+     }
+     .fs-13
+     {
+      font-size: 11px;
+       color: #0A0E69;
+     }
+     .lg-li
+     {
+      font-size: 11px;
+      color: #0A0E69;
+      margin-left: 20px;
+      margin-top: 21px;
+     }
+     .lastfooter
+     {
+        padding-left: 14px;
+        padding-right: 0px;
+     }
+     .lastfooterrow
+     {
+      padding-top: 18px; padding-bottom: 18px;
+      width: 800px;
+     }
+     .locaddress
+     {
+      font-size: 11px;
+       color: #0A0E69;
+        text-decoration: none;
+         margin-top: -2px;
+     }
+     .shorttest
+     {
+      font-size: 11px; color: #0A0E69;
+     }
+     .privacy
+     {
+      font-size: 11px; color: #0A0E69; text-decoration: none;
+     }
+     .tc
+     {
+      font-size: 11px; margin-left: 7px; color: #0A0E69;text-decoration: none;
+     }
+     .aboutpageheight
+     {
+         height: 2300px;
+     }
+     input[type=radio],
+     input.radio {
+       float: left;
+       clear: none;
+       margin: 2px 0 0 2px;
+     }
+     .form-row {
+   display: flex;
+  }
+  input[type=radio],
+     input.radio {
+       float: left;
+       clear: none;
+       margin: 6px 0 0 2px;
+       border-color: #A0BD1C;
+     }
+  
+  .form-group {
+   padding: 5px;
+  
+  }
+  
+  /* .form-group input {
+   width: 100%;
+  } */
+  .proceed
+  {
+    
+     background-color: #A0BD1C;
+     font-family: Ubuntu;
+     font-size: 14px;
+     font-style: normal;
+     font-weight: 400;
+     color: #ffffff;
+  
+  }
+  .form-select
+  {
+   color: #555555;
+  }
+  
+  /* NBV FORM STYLE */
+  .nbvformheight {
+      position: relative;
+      height: 2000px;
+  }
+  .nbiformheight {
+      position: relative;
+      height: 1300px;
+  }
+  label {
+      
+      padding: 0px 0.5rem 0px 8px;
+    }
+    .welcome
+    {                      
+      padding-left: 250px;      
+    }
+    .formtext
+    {
+      padding-left: 39px;
+      padding-top: 52px;   
+    }
+    .topdiv
+    {
+      margin:74px auto 166px;       
+      width: 538px;
+    }
+    .cardform
+    {
+      border:1px solid #ffffff; height: 1399px;
+    }
+    .formh1
+    {
+      padding-left: 180px;
+      font-family: 'Ubuntu';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 24px;
+      color: #0A0E69;
+    }
+    .formp
+    {
+      padding: 28px 180px 0px;
+      font-family: Ubuntu;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;color: #0A0E69;                      
+    }
+    .title
+    {
+      border: 1px solid #555555; width:352px; margin-left:36px; margin-top:72px;
+    }
+    .yourname
+    {
+      padding-top:19px; padding-left: 36px; color: #C8730F;font-family: Ubuntu;
+      font-size: 13px;
+      font-style: normal;
+      font-weight: 400;
+    }
+    .formml
+    {
+      margin-left: 36px;
+    }
+    .checkoutdiv
+    {
+      width: 502px; height: 700px; margin-top: 52px; background-color: #ffffff; margin-left: 50px;
+    }
+    .firstname
+    {
+      border:1px solid #555555;
+      font-family: ubuntu; 
+      margin-top: 27px;
+      height: 44px; width:303px;
+    }
+    .firstname2
+    {
+      border:1px solid #555555;
+      font-family: ubuntu; 
+      margin-top: 27px;
+      height: 44px; width:303px;
+      margin-right: 82px;
+    }
+    .middlename
+    {
+      border:1px solid #555555;
+      font-family: ubuntu; 
+      margin-top: 27px;
+      height: 44px; width:303px;
+      margin-left: 0px;
+    }
+    .lastname
+    {
+      border:1px solid #555555;
+      font-family: ubuntu; 
+      margin-top: 27px;
+      height: 44px; width:303px;
+      margin-left: 0px;
+    }
+    .gender
+    {
+      padding-left: 78px;
+    }
+    .male
+    {
+      margin-left: 48px;
+    }
+    .please
+    {
+      padding-top: 27px;
+      font-family: Ubuntu;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+    }
+    .select
+    {
+      border: 1px solid #555555; height: 44px;margin-top: 17px; width:303px;font-family: ubuntu;
+    }
+  
+    .vsbheight
+    {
+      position: relative;
+      height: 1384px;
+    }
+  
+    .vsbh2
+    {
+      height: 28px;padding-left: 145px;font-family: 'Ubuntu';font-style: normal;font-weight: 500;font-size: 24px;line-height: 28px;color: #000000;
+    }
+  
+    .vsbp
+    {
+      padding: 28px 68px 0px 68px;font-family: Ubuntu;font-size: 16px;font-style: normal;font-weight: 400;line-height: 23px;letter-spacing: 0em;text-align: left;color: #000000;
+    }
+  
+    .vsbform
+    {
+      border:1px solid #555555; font-family: ubuntu; margin: 26px auto; width:416px;
+    }
+    .vsbmt
+    {
+        margin-top:27px;
+    }
+    .vsbformp
+    {
+      font-family: Ubuntu;font-size: 14px;font-style: normal;font-weight: 400;line-height: 16px;letter-spacing: 0em;text-align: left;padding-left:21px; padding-top:27px;
+    }
+    .vsbformselect
+    {
+      border: 1px solid #555555; width:402px; margin-left:21px;
+    }
+    .vsbformtextarea
+    {
+      width: 470px; height: 116px;margin-bottom: 65px;margin-left: 21px;margin-top:27px;
+    }
+  
+    /*RESET PASSWORD*/
+    .resetpassword
+    {
+      position: relative;
+      height: 800px;
+    }
+    .resetform
+    {
+      border-radius: 10px;
+      border-color: transparent;
+      width: 508px; background-color: #1161D9;
+      margin: 32px auto;
+    }
+    .sibutton {
+      width: 73px;
+      margin-top: 0px;
+      margin-left: 20px;
+  }
+   .rph2
+   {
+      padding-top:68px;padding-left: 220px;font-family: 'Ubuntu';
+      font-style: normal;font-weight: 500;font-size: 24px;color: #0A0E69;
+   }
+    .rpml
+    {
+      margin-left: 49px;
+    }
+    .textcheck
+    {
+      margin-left: 49px;
+    }
+    .inputdiv
+    {
+      margin-right: 202px; margin-top:72px;
+    }
+    .rpinput
+    { 
+      width:400px;
+      height: 44px;
+       margin-top:27px; 
+    }
+  
+    .buttonrow
+    {
+      margin-left: 270px; margin-top: 42px;
+    }
+    .rpmb
+    {
+      margin-bottom:80px ;
+      /*margin-top: 27px;*/
+    }
+    .rpbutton
+    {
+      width: 90px;
+      margin-left: 0px;
+    }
+  
+    /*SIGN IN*/
+    .sih2
+    {
+      padding-top:68px;padding-left: 68px;font-family: 'Ubuntu';font-style: normal;font-weight: 500;font-size: 24px;color: #0A0E69;
+    }
+  
+    /*FORGOT PASSWORD*/
+    .fpp
+    {
+      font-family: Rubik;
+      font-size: 14px;
+      font-weight: 500;
+      color: #ffffff;
+    }
+  
+    /*Review*/
+    .reviewheight
+    {
+        height: 1800px;
+    }
+    .reviewh2
+    {
+      padding-top:68px;
+      padding-left: 280px;
+      
+    }
+    .reviewcard
+    {
+      width: 500px;
+      margin: 32px auto;
+    }
+    .reviewml
+    {
+      margin-left: 57px;
+    }
+
+    .reviewtext
+    {
+      font-family: Ubuntu; width: 359px; margin-top: 14px;
+      font-size: 14px;
+      
+      
+    }
+  
+    /*Payment*/
+      /*Payment*/
+      .paymentlogoimg
+      {
+        border-radius: 50%; margin-left: 36px; margin-top: 28px;
+      }
+      .paymenth2
+      {
+        font-family: Rubik;
+        font-size: 30px;
+        font-weight: 700;
+        color:#F1F5F6;
+        text-align: left;
+        padding-left: 86px;
+        padding-top: 56px;
+      }
+      .paymentdiv
+      {
+        margin-left: 56px; margin-top: 14px;
+      }
+      .paymentservices
+      {
+        font-family: Ubuntu;
+        font-size: 18px;
+        font-weight: 700;
+        color:#F1F5F6;
+      }
+      .paymentprice
+      {
+        font-family: Ubuntu;
+        font-size: 18px;
+        font-weight: 700;
+        padding-left: 100px;
+        color:#F1F5F6;
+      }
+      .reviewline
+      {
+        margin-left: 56px; 
+        margin-top: 26px; 
+        color: #F1F5F6; 
+        border: 1px solid #F1F5F6; 
+        width: 500px;
+      }
+      .form-group2 {
+        padding: 5px;
+        width: 100%;
+      }
+      .form-control::placeholder { 
+        color: #555555;
+      }
+      .form-group2 input {
+        width: 88%;
+      }
+        .payment
+      {
+         background-color: #A0BD1C;
+          font-family: Ubuntu;
+          font-size: 16px;
+          width: 384px;
+          font-style: normal;
+          font-weight: 400;
+          color: #ffffff;
+          border:1px solid #A0BD1C;
+          
+          margin-bottom: 58px;
+      }
+    
+      .leftcard
+      {
+        width: 502px; height: 693px; margin-top: 52px; background-color: #ffffff; margin-left: 50px;
+      }
+      .leftcardh2
+      {
+        font-family: Ubuntu;
+        font-size: 30px;
+        font-weight: 500;
+        text-align: center;
+        color:#000000; margin-left: 57px; margin-right: 78px; 
+      }
+      .paymentopt
+      {
+        font-family: Ubuntu;
+        font-size: 14px;
+        font-weight: 500;
+        color:#000000;margin-left: 95px;
+      }
+      .radioo
+      {
+        width: 21px; height: 21px; margin-top: 8px;
+      }
+      .radiodiv
+      {
+        margin-top: 20px; margin-left: 57px;
+      }
+      .cardname
+      {
+        font-family: Ubuntu;
+        padding-top: 26px;
+        font-size: 14px;
+        font-weight: 400; color: #000000;                         
+      }
+      .cardinput
+      {
+        border: 1px solid #555555;height: 44px; width:384px; margin-top:7px
+      }
+      .cardnumber
+      {
+        font-family: Ubuntu;
+        padding-top: 6px;
+        font-size: 14px;
+        font-weight: 400; color: #000000;                      
+      }
+      .expiry
+      {
+        font-family: Ubuntu;
+        font-size: 14px;
+        font-weight: 400; color: #000000;   
+      }
+      .expiryinput
+      {
+        width:185px;
+        margin-top: 3px;
+        color: #5A5A5A; 
+        height:43px;
+        border:1px solid #555555;
+        font-size: 14px; 
+        font-family: ubuntu; 
+        font-weight: 400;
+      }
+      .divbutton
+      {
+        margin-left: 57px; 
+        margin-top:26px;
+        margin-bottom:85px ;
+      }
+    .movement1
+  {
+    margin-left: 40px;
+  }
+ 
+  .new-section1__text-body8 {
+    margin-top: 15px;
+    margin-left: 0px;
+}
+.bannertext {
+    width: 649px;
+    /* height: 125px; */
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    color: #0A0E69;
+}
+.applybtn {
+    padding-left: 30.5px;
+    font-weight: 300;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    padding-right: 30.5px;
+    color: #ffffff;
+    font-family: ubuntu;
+    font-size: 13px;
+}
+    .contactheight
+    {
+        position: relative;
+        height: 1500px;
+    }
+    .faqheight
+    {
+        position: relative;
+            height: 1500px;
+    }
+    .faqtext
+    {
+        padding-left: 76px; font-size: 16px; padding-top: 50px;
+    }
+    .helptext
+    {
+        padding-left: 76px;
+        font-size: 35px; 
+        color: white; 
+        font-family: ubuntu;
+    }
+    .everythingtext
+    {
+        padding-left: 76px;font-size: 14px; color: #F1F5F6;
+    }
+    .everythingtext2
+    {
+        font-weight: 400; padding-left: 76px; font-size: 20px; font-family: ubuntu; margin-top: 86px; margin-bottom: 72px; color: #0A0E69;
+    }
+    .question {
+        font-family: Ubuntu;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+      padding: 20px 80px 20px 20px;
+      position: relative;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+    }
+    
+    .question::after {
+      content: "\002B";
+      font-size: 2.2rem;
+      position: absolute;
+      right: 20px;
+      transition: 0.2s;
+    }
+    
+    .question.active::after {
+      transform: rotate(45deg);
+    }
+    
+    .answercont {
+      max-height: 0;
+      overflow: hidden;
+      transition: 0.3s;
+    }
+    
+    .answer {
+      padding: 0 20px 20px;
+      line-height: 1.5rem;
+    }
+    .containerques {
+      
+      width: 500px;
+      margin:10px auto;
+      
+      box-shadow: 0 5px 10px 0 rgb(0,0,0,0.25);
+    }
+    .ppheight
+    {
+        position: relative;
+        height: 1250px;
+    }
+    .pptop
+    {
+        width: 100%; height: 200px; background-color: #ADC92E;
+    }
+    .pptext
+    {
+        padding-left: 64px;padding-top: 70px; font-size: 40px; color: white; font-family: ubuntu;
+    }
+    .ppcard
+    {
+      border-radius: 10px;
+      border-color: transparent;
+      width: 558px;
+      margin: 87px auto;
+    }
+    .pptext2
+    {
+        font-family: ubuntu;
+        font-size: 16px;
+        font-weight: 300;
+        padding: 78px 50px 86px;
+    }
+    .nbiheight {
+        position: relative;
+        height: 1290px;
+    }
+    .nbiimage
+    {
+        margin-left: 46px;
+    }
+    .imagebn
+    {
+        width:413px;
+        height:344px;
+    }
+    .nbitext
+    {
+        font-size: 18px;
+        padding-left: 35px; 
+        width: 500px;
+    }
+    .cont{
+      margin-top: 9px;
+      padding-left: 106px;
+    }
+    .contactcard
+    {
+      border: transparent;
+      border-radius: 25px; margin-left: 20px;
+      width: 506px;
+    }
+
+    .contactform
+    {
+        padding-left: 70px;
+        padding-right: 78px;
+        padding-bottom: 142px;
+        padding-top: 49px;
+    }
+    .congp1 {
+      
+      font-size: 18px;      
+      padding-left: 28px;      
+  }
+  .congp2 {
+
+    font-size: 16px;
+    padding-left: 28px;
+    padding-top: 13px;
+}
+.congp3 {
+
+  font-size: 16px;
+  padding-left: 28px;
+
+}
+.amountpaid {
+  padding-left: 45px;
+}
+.paidby {
+  padding-left: 45px;
+}
+.transdate {
+
+  padding-left: 45px;
+}
+.money {
+  padding-left: 45px;
+}
+.successname {
+  padding-left: 45px;
+}
+.successdate {
+
+  padding-left: 45px;
+}
+    .svgcheck {
+      margin-left: 160px;
+      margin-top: 20px;
+  }
+    .successcard {
+      width: 452px;
+      height: 753px;
+      margin: 50px auto;
+  }
+}
+@media (max-width: 603px)
+{
+  .collapsebtn
+{
+  margin-top: -5px;
+  margin-right: 40px;
+}
+  .hiddenbutton
+{
+  display: none;
+}
+  .mobile
+{
+  display: none;
+}
+  .mobilelang
+  {
+    display: block;
+  }
+  .lang{
+    display:none;
+  }
+  .english{
+    margin-left: 220px;
+  }
+  .new-section1__block21.layout {
+    height: 50px;
+}
+    .ml-80 {
+        margin-left: 0px;
+    }
+    .blue {
+        background-color: #1161d9;
+        color: white;
+        height: 87px;
+        margin-left: -450px;
+        width: 650px;
+    }
+    .list-group-horizontal {
+      flex-direction: column;
+      margin-left: 200px;
+  }
+    .hide
+    {
+        margin-left: -120px;
+    }
+    .applyh2 {
+      padding-left: 144px;
+      font-size: 24px;
+  }
+  .applyh2p {
+    padding: 28px 50px 0px 50px;
+}
+.servicebtn {
+  background: #a0bd1c;
+  padding: 10px 25px;
+  margin-top: 86px;
+  margin-left: -470px;
+  margin-bottom: 50px;
+}
+.applyformp {
+  padding-top: 48px;
+  padding-left: 40px;
+
+}
+.formrowdiv {
+  margin-left: 40px;
+}
+.applyselect {
+
+  width: 452px;
+ 
+}
+    .applycard {
+      border-radius: 10px;
+      border-color: transparent;
+      width: 538px;
+      margin: 32px auto;
+  }
+  .cf {
+    margin-left: 0px;
+}
+
+.cont{
+    margin-top: 139px;
+    padding-left: 206px;
+}
+    /*INDEX PAGE*/
+    .new-section1__flex1.layout {
+        width: 100%;
+    }
+    .new-section1__text-body8 {
+        margin-top: 14px;
+    }
+    .free {
+        font-weight: 600;
+        margin-left: 35px;
+        margin-top: 18px;
+        font-family: Ubuntu;
+        font-style: normal;
+        font-size: 13px;
+        color: #ffffff;
+    }
+    .text {
+        width: 249px;
+        height: 16px;
+        margin-top: 18px;
+        font-family: Ubuntu;
+        font-style: normal;        
+        font-size: 12px;
+        line-height: 16px;
+    }
+    .hands
+     {
+      margin: 80px auto 0px;
+      font-family: Rubik;font-style: normal;font-weight: normal;font-size: 25px;
+     }
+    .form {
+        width: 150px;
+        height: 28px;
+        left: 874px;
+        margin-top: 5px;
+        background: #F1F5F6;
+        text-align: center;
+        border-radius: 6px;
+        font-family: Ubuntu;
+        font-size: 12px;
+        line-height: 16px;
+        text-transform: lowercase;
+        color: rgba(21, 4, 35, 0.21);
+    }
+    .buttons {
+        width: 63px;
+        height: 28px;
+        padding-top: 3px;
+        margin-top: 5px;
+        background: #a0bd1c;
+        border-radius: 6px;
+        font-size: 12px;
+        font-weight: 300;
+        font-style: normal;
+        color: #FBFCFB;
+        font-family: Ubuntu;
+        padding-left: 10px;
+    }
+
+    .btnsearch {
+      width: 63px;
+      height: 28px;
+      padding-top: 3px;
+      margin-top: 5px;
+      background: #a0bd1c;
+      border-radius: 6px;
+      font-size: 12px;
+      font-weight: 300;
+      font-style: normal;
+      color: #FBFCFB;
+      font-family: Ubuntu;
+      padding-left: 10px;
+  }
+    .phone {
+        /* color: white; */
+        padding-top: 15px;
+        width: 120px;
+        height: 16px;
+        left: 1208px;
+        font-family: 'Ubuntu';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 16px;
+        text-decoration-line: none;
+        color: #FFFFFF;
+    }
+    a {
+        color: #0d6efd;
+        text-decoration: underline;
+    }
+    .shop
+    {
+        margin-left:-12%;
+        font-family: rubik;
+    }
+    .bannertext {
+
+      font-size: 24px; 
+  }
+  .made {
+
+    font-size: 13.5px;
+  }
+  .applybtn {
+    padding-top: 9px;
+    padding-bottom: 9px;
+    font-size: 14px;
+  }
+    .logoimg
+    {
+     margin-left: 27px; margin-top: 10px;
+    }
+    .home
+      {
+          color: #000000; 
+          margin-left:60px; 
+          margin-top: 5px;
+          font-family: Ubuntu;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 16px;
+      }
+      .visa
+      {
+          color: #000000; 
+          margin-left:60px; 
+          margin-top: 5px;
+          font-family: Ubuntu;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 16px;
+      }
+      .services
+      {
+          color: #000000; 
+          margin-left:60px; 
+          margin-top: 5px;
+          font-family: Ubuntu;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 16px;
+      }
+      .contact
+      {
+          width: 100%; 
+          color: #000000;
+          margin-left:60px; 
+          margin-top: 5px;
+          font-family: Ubuntu;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 16px;
+      }
+      .navbar-light .navbar-nav .nav-link
+      {
+        color: #000000;
+      }
+      .about{
+          width: 100%;
+          color: #000000;
+          margin-left:60px; 
+          margin-top: 5px;
+          font-family: Ubuntu;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 16px;
+          margin-bottom:15px;
+      }
+      .ml-118
+      {
+          margin-left: 60px;
+      }
+      .btn-review {
+        margin: 100px 220px 10px;
+    }
+      .button {
+          width: 63px;
+          margin-top: 0px;
+          background: #a0bd1c;
+          border-radius: 6px;
+          font-size: 14px;;
+          font-weight: 300;
+          font-style: normal;
+          color: #FBFCFB;
+          font-family: Ubuntu;
+          text-align: center;
+          padding-right: 64px;
+    
+        }
+        .buttons2 {
+         
+          background: #a0bd1c;
+          border-radius: 6px;
+          font-size: 14px;;
+          font-weight: 300;
+          font-style: normal;
+          color: #FBFCFB;
+          font-family: Ubuntu;
+          text-align: center;
+          margin-top: 23px;
+          margin-left: 32px;
+          width: 117px;
+          height: 43px;
+          padding: 10px 23px;
+        }
+        .button2 {
+            background-color: #ffffff;
+            width: 89px;
+            height: 36px;
+            left: 1042px;
+            margin-top: 2px;
+            border: 1px solid #a0bd1c;
+            padding-top: 10px;
+            font-family: 'Ubuntu';
+            font-style: normal;
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 16px;
+            margin-left: -52.5px;
+            color: #a0bd1c;
+        }
+        .lang {
+            margin-left: 20px;
+            margin-top: 0px;
+        }
+        .buttons3 {
+          background: #a0bd1c;
+          border-radius: 6px;
+          font-size: 14.5px;
+          font-weight: 300;
+          font-style: normal;
+          color: #FBFCFB;
+          font-family: Ubuntu;
+          text-align: center;
+          margin-top: 43px;
+          margin-left: 30px;
+          width: 117px;
+          height: 43px;
+          padding: 10px 23px;
+         }
+         .width
+         {
+          width: 709px;
+          height: 87px;
+          margin-left: 30px;
+         }
+         .indexdivrow
+  {
+    flex-direction: column;
+  }
+         .reviews{
+            width:1020px;
+            margin:0px 200px 100px;
+         }
+         .btn-review {
+          margin: 0px 220px 100px;
+      }
+         .mag
+         {
+           margin-bottom: 50px;
+         }
+
+     .img2h1
+     {
+      font-size: 16px;
+      text-align: justify;
+      color: #F1F5F6;
+      margin-left:86px ;
+
+     }
+     .img2h4
+     {
+      text-align: justify; color: #F1F5F6; margin-left: 35px; font-family:Ubuntu
+     }
+     .img3h1
+     {
+      font-size: 16px;
+      text-align: justify;
+      color: #F1F5F6;
+      margin-left: 90px;
+   
+     }
+   
+     .img4h1
+     {
+      text-align: justify;
+      color: #F1F5F6;
+      margin-left: 86px;
+  
+     }
+     .img4h4
+     {
+      text-align: justify; color: #F1F5F6; margin-left: 40px; font-family:Ubuntu
+     }
+  
+     .img5h1
+     {
+      text-align: justify;
+      color: #F1F5F6;
+      margin-left: 50px;
+      margin-top: 10px;
+    
+     }
+  
+     .img5h4
+     {
+      text-align: justify; color: #F1F5F6; margin-left: 10px; font-family:Ubuntu
+     }
+         .img1 {
+            height: 110px;
+            width: 113px;
+            margin-left: 35px;
+            top: 252px;
+            border-radius: 0px;
+        }
+        .img2
+        {
+             margin-left: 35px;
+        }
+     
+        .img3{
+             margin-left: 35px;
+        }
+        .img4
+        {
+         margin-left: 35px;
+        }
+        .img5
+        {
+         margin-left: 35px; 
+         margin-right: 46px;
+        }
+        .img1h1 {
+            font-size: 23px;
+            color: #F1F5F6;
+            font-family: Ubuntu;
+            margin-top: 10px;
+            height: 20px;
+            width: 11px;
+            padding-left: 82px;
+        }
+        .img1h4 {
+            color: #F1F5F6;
+            font-family: Ubuntu;
+            height: 20px;
+            margin-left: -50px;
+            margin-top: 16px;
+            display: block;
+        }
+        #content1 {
+          margin-left: 50px;
+      }
+        #content2 {
+          margin-left: 5px;
+      }
+         .img3h4
+         {
+          color: #F1F5F6; margin-left: 0px; font-family:Ubuntu;display: block;
+         }
+         .cardwidth
+     {
+      width: 281px;
+     }
+     .cardh1
+     {
+      letter-spacing: 0.04em;
+     }
+     .cardh5
+     {
+      font-weight: 300;
+     }
+     .get
+     {
+       margin-left: 10px 185px;
+     }
+     .customers
+     {
+    
+      height: 41px;
+      font-family: Rubik;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 25px;
+      line-height: 41px;
+      color: #060a5c;
+     }
+     .subscribe
+     {
+        background: #0C65EB;
+        color: white;
+        text-align: center;
+        font-family: 'Ubuntu';
+        padding: 0px;
+        height: 41px;
+        width: 100px;
+        margin-left:-20px
+     }
+     .footerlogo
+     {
+        margin-left: 0px;
+        margin-top: 20px;
+     }
+     .div2
+     {
+      padding-left: 30px;
+     }
+     .div3
+     {
+      padding-left: 20px;
+      
+     }
+     .div4
+     {
+      padding-left: 5px;
+      
+     }
+     .fs-13
+     {
+      font-size: 13px;
+       color: #0A0E69;
+     }
+     .lg-li
+     {
+      font-size: 13px;
+      color: #0A0E69;
+      margin-left: 20px;
+      margin-top: 21px;
+     }
+     .lastfooter
+     {
+        padding-left: 14px;
+        padding-right: 0px;
+     }
+     .lastfooterrow
+     {
+      padding-top: 18px; padding-bottom: 18px;
+      width: 800px;
+     }
+     .locaddress
+     {
+      font-size: 14px;
+       color: #0A0E69;
+        text-decoration: none;
+         margin-top: -2px;
+         margin-left: 0px;
+     }
+     .shorttest
+     {
+      font-size: 14px; color: #0A0E69;
+     }
+     .privacy
+     {
+      font-size: 14px; color: #0A0E69; text-decoration: none;
+     }
+     .tc
+     {
+      font-size: 14px; margin-left: 0px; color: #0A0E69;text-decoration: none;
+     }
+     .aboutpageheight
+     {
+         height: 2300px;
+     }
+     input[type=radio],
+     input.radio {
+       float: left;
+       clear: none;
+       margin: 2px 0 0 2px;
+     }
+     .form-row {
+   display: flex;
+  }
+  input[type=radio],
+     input.radio {
+       float: left;
+       clear: none;
+       margin: 6px 0 0 2px;
+       border-color: #A0BD1C;
+     }
+  
+  .form-group {
+   padding: 5px;
+  
+  }
+  
+  /* .form-group input {
+   width: 100%;
+  } */
+  .proceed
+  {
+    
+     background-color: #A0BD1C;
+     font-family: Ubuntu;
+     font-size: 14px;
+     font-style: normal;
+     font-weight: 400;
+     color: #ffffff;
+  
+  }
+  .form-select
+  {
+   color: #555555;
+  }
+  
+  /* NBV FORM STYLE */
+  .nbvformheight {
+      position: relative;
+      height: 2000px;
+  }
+  .nbiformheight {
+      position: relative;
+      height: 1300px;
+      top: 45px;
+  }
+  label {
+      
+      padding: 0px 0.5rem 0px 8px;
+    }
+    .welcome
+    {                      
+      padding-left: 210px;      
+    }
+    .formtext
+    {
+      padding-left: 25px;
+      padding-top: 52px;   
+      width: 552px;
+    }
+    .topdiv
+    {
+      margin:74px auto 166px;       
+      width: 538px;
+    }
+    .cardform
+    {
+      border:1px solid #ffffff; height: 1399px;
+    }
+    .formh1
+    {
+      padding-left: 180px;
+      font-family: 'Ubuntu';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 24px;
+      color: #0A0E69;
+    }
+    .formp
+    {
+      padding: 28px 150px 0px 200px;
+      font-family: Ubuntu;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;color: #0A0E69;                      
+    }
+    .title
+    {
+      border: 1px solid #555555; width:352px; margin-left:36px; margin-top:72px;
+    }
+    .yourname
+    {
+      padding-top:19px; padding-left: 36px; color: #C8730F;font-family: Ubuntu;
+      font-size: 13px;
+      font-style: normal;
+      font-weight: 400;
+    }
+    .formml
+    {
+      margin-left: 36px;
+    }
+    .checkoutdiv
+    {
+      width: 502px; height: 700px; margin-top: 52px; background-color: #ffffff; margin-left: 50px;
+    }
+    .firstname
+    {
+      border:1px solid #555555;
+      font-family: ubuntu; 
+      margin-top: 27px;
+      height: 44px; width:303px;
+    }
+    .firstname2
+    {
+      border:1px solid #555555;
+      font-family: ubuntu; 
+      margin-top: 27px;
+      height: 44px; width:453px;
+      margin-right: 82px;
+    }
+    .middlename
+    {
+      border:1px solid #555555;
+      font-family: ubuntu; 
+      margin-top: 27px;
+      height: 44px; width:303px;
+      margin-left: 0px;
+    }
+    .lastname
+    {
+      border:1px solid #555555;
+      font-family: ubuntu; 
+      margin-top: 27px;
+      height: 44px; width:303px;
+      margin-left: 0px;
+    }
+    .gender
+    {
+      padding-left: 78px;
+    }
+    .male
+    {
+      margin-left: 48px;
+    }
+    .please
+    {
+      padding-top: 27px;
+      font-family: Ubuntu;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+    }
+    .select
+    {
+      border: 1px solid #555555; height: 44px;margin-top: 17px; width:303px;font-family: ubuntu;
+    }
+  
+    .vsbheight
+    {
+      position: relative;
+      height: 1384px;
+    }
+  
+    .vsbh2
+    {
+      height: 28px;padding-left: 145px;font-family: 'Ubuntu';font-style: normal;font-weight: 500;font-size: 24px;line-height: 28px;color: #000000;
+    }
+  
+    .vsbp
+    {
+      padding: 28px 68px 0px 68px;font-family: Ubuntu;font-size: 16px;font-style: normal;font-weight: 400;line-height: 23px;letter-spacing: 0em;text-align: left;color: #000000;
+    }
+  
+    .vsbform
+    {
+      border:1px solid #555555; font-family: ubuntu; margin: 26px auto; width:416px;
+    }
+    .vsbmt
+    {
+        margin-top:27px;
+    }
+    .vsbformp
+    {
+      font-family: Ubuntu;font-size: 14px;font-style: normal;font-weight: 400;line-height: 16px;letter-spacing: 0em;text-align: left;padding-left:56px; padding-top:27px;
+    }
+    .vsbformselect
+    {
+      border: 1px solid #555555; width:416px; margin: 26px auto;
+    }
+    .vsbformtextarea
+    {
+      width: 416px; height: 116px; margin:27px 56px 65px;
+    }
+  
+    /*RESET PASSWORD*/
+    .resetpassword
+    {
+      position: relative;
+      height: 800px;
+    }
+    .forgot {
+      margin-left: 40px;
+  }
+  .sibutton {
+    width: 73px;
+    margin-top: 0px;
+    margin-left: 20px;
+}
+    .resetform
+    {
+      border-radius: 10px;
+      border-color: transparent;
+      width: 508px; background-color: #1161D9;
+      margin: 32px auto;
+    }
+   .rph2
+   {
+      padding-top:68px;padding-left: 190px;font-family: 'Ubuntu';
+      font-style: normal;font-weight: 500;font-size: 24px;color: #0A0E69;
+   }
+    .rpml
+    {
+      margin-left: 49px;
+    }
+    .textcheck
+    {
+      margin-left: 49px;
+    }
+    .inputdiv
+    {
+      margin-right: 202px; margin-top:72px;
+    }
+    .rpinput
+    { 
+      width:400px;
+      height: 44px;
+       margin-top:27px; 
+    }
+  
+    .buttonrow
+    {
+      margin-left: 265px; margin-top: 42px;
+    }
+    .rpmb
+    {
+      margin-bottom:80px ;
+      /*margin-top: 27px;*/
+    }
+    .rpbutton
+    {
+      width: 90px;
+      margin-left: 0px;
+    }
+  
+    /*SIGN IN*/
+    .sih2
+    {
+      padding-top:68px;padding-left: 68px;font-family: 'Ubuntu';font-style: normal;font-weight: 500;font-size: 24px;color: #0A0E69;
+    }
+  
+    /*FORGOT PASSWORD*/
+    .fpp
+    {
+      font-family: Rubik;
+      font-size: 14px;
+      font-weight: 500;
+      color: #ffffff;
+    }
+  
+    /*Review*/
+    .reviewheight
+    {
+        height: 1800px;
+    }
+    .reviewh2
+    {
+      padding-top:68px;
+      padding-left: 280px;
+      
+    }
+    .reviewcard
+    {
+      width: 500px;
+      margin: 32px auto;
+    }
+    .reviewml
+    {
+      margin-left: 57px;
+    }
+
+    .reviewtext
+    {
+      font-family: Ubuntu; width: 359px; margin-top: 14px;
+      font-size: 14px;
+      
+      
+    }
+  
+    /*Payment*/
+      /*Payment*/
+      .paymentlogoimg
+      {
+        border-radius: 50%; margin-left: 36px; margin-top: 28px;
+      }
+      .paymenth2
+      {
+        font-family: Rubik;
+        font-size: 30px;
+        font-weight: 700;
+        color:#F1F5F6;
+        text-align: left;
+        padding-left: 86px;
+        padding-top: 56px;
+      }
+      .paymentdiv
+      {
+        margin-left: 56px; margin-top: 14px;
+      }
+      .paymentservices
+      {
+        font-family: Ubuntu;
+        font-size: 18px;
+        font-weight: 700;
+        color:#F1F5F6;
+      }
+      .paymentprice
+      {
+        font-family: Ubuntu;
+        font-size: 18px;
+        font-weight: 700;
+        padding-left: 100px;
+        color:#F1F5F6;
+      }
+      .reviewline
+      {
+        margin-left: 56px; 
+        margin-top: 26px; 
+        color: #F1F5F6; 
+        border: 1px solid #F1F5F6; 
+        width: 500px;
+      }
+      .form-group2 {
+        padding: 5px;
+        width: 100%;
+      }
+      .form-control::placeholder { 
+        color: #555555;
+      }
+      .form-group2 input {
+        width: 88%;
+      }
+        .payment
+      {
+         background-color: #A0BD1C;
+          font-family: Ubuntu;
+          font-size: 16px;
+          width: 384px;
+          font-style: normal;
+          font-weight: 400;
+          color: #ffffff;
+          border:1px solid #A0BD1C;
+          
+          margin-bottom: 58px;
+      }
+    
+      .leftcard
+      {
+        width: 502px; height: 693px; margin-top: 52px; background-color: #ffffff; margin-left: 50px;
+      }
+      .leftcardh2
+      {
+        font-family: Ubuntu;
+        font-size: 30px;
+        font-weight: 500;
+        text-align: center;
+        color:#000000; margin-left: 57px; margin-right: 78px; 
+      }
+      .paymentopt
+      {
+        font-family: Ubuntu;
+        font-size: 14px;
+        font-weight: 500;
+        color:#000000;margin-left: 95px;
+      }
+      .radioo
+      {
+        width: 21px; height: 21px; margin-top: 8px;
+      }
+      .radiodiv
+      {
+        margin-top: 20px; margin-left: 57px;
+      }
+      .cardname
+      {
+        font-family: Ubuntu;
+        padding-top: 26px;
+        font-size: 14px;
+        font-weight: 400; color: #000000;                         
+      }
+      .cardinput
+      {
+        border: 1px solid #555555;height: 44px; width:384px; margin-top:7px
+      }
+      .cardnumber
+      {
+        font-family: Ubuntu;
+        padding-top: 6px;
+        font-size: 14px;
+        font-weight: 400; color: #000000;                      
+      }
+      .expiry
+      {
+        font-family: Ubuntu;
+        font-size: 14px;
+        font-weight: 400; color: #000000;   
+      }
+      .expiryinput
+      {
+        width:185px;
+        margin-top: 3px;
+        color: #5A5A5A; 
+        height:43px;
+        border:1px solid #555555;
+        font-size: 14px; 
+        font-family: ubuntu; 
+        font-weight: 400;
+      }
+      .divbutton
+      {
+        margin-left: 57px; 
+        margin-top:26px;
+        margin-bottom:85px ;
+      }
+    .movement1
+  {
+    margin-left: 40px;
+  }
+ 
+  .new-section1__text-body8 {
+    margin-top: 14px;
+    margin-left: 0px;
+}
+
+.applybtn {
+  padding-top: 9px;
+  padding-bottom: 9px;
+  font-size: 14px;
+}
+    .contactheight
+    {
+        position: relative;
+        height: 1500px;
+    }
+    .faqheight
+    {
+        position: relative;
+            height: 1500px;
+    }
+    .faqtext
+    {
+        padding-left: 50px; font-size: 16px; padding-top: 50px;
+    }
+    .helptext
+    {
+        padding-left: 50px;
+        font-size: 35px; 
+        color: white; 
+        font-family: ubuntu;
+    }
+    .everythingtext
+    {
+        padding-left: 50px;font-size: 14px; color: #F1F5F6;
+    }
+    .everythingtext2
+    {
+        font-weight: 400; padding-left: 50px; font-size: 20px; font-family: ubuntu; margin-top: 86px; margin-bottom: 72px; color: #0A0E69;
+    }
+    .question {
+        font-family: Ubuntu;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+      padding: 20px 80px 20px 20px;
+      position: relative;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+    }
+    
+    .question::after {
+      content: "\002B";
+      font-size: 2.2rem;
+      position: absolute;
+      right: 20px;
+      transition: 0.2s;
+    }
+    
+    .question.active::after {
+      transform: rotate(45deg);
+    }
+    
+    .answercont {
+      max-height: 0;
+      overflow: hidden;
+      transition: 0.3s;
+    }
+    
+    .answer {
+      padding: 0 20px 20px;
+      line-height: 1.5rem;
+    }
+    .containerques {
+      
+      width: 500px;
+      margin:10px auto;
+      box-shadow: 0 5px 10px 0 rgb(0,0,0,0.25);
+    }
+    .ppheight
+    {
+        position: relative;
+        height: 1250px;
+    }
+    .pptop
+    {
+        width: 100%; height: 200px; background-color: #ADC92E;
+    }
+    .pptext
+    {
+        padding-left: 64px;padding-top: 70px; font-size: 40px; color: white; font-family: ubuntu;
+    }
+    .ppcard
+    {
+      border-radius: 10px;
+      border-color: transparent;
+      width: 558px;
+      margin: 87px auto;
+    }
+    .applybtndiv {
+      margin-left: 433px;
+      margin-top: 89px;
+      margin-bottom: 80px;
+  }
+    .pptext2
+    {
+        font-family: ubuntu;
+        font-size: 16px;
+        font-weight: 300;
+        padding: 78px 50px 86px;
+    }
+    .nbiheight {
+        position: relative;
+        height: 1290px;
+    }
+    .nbiimage
+    {
+        margin-left: 46px;
+    }
+    .imagebn
+    {
+        width:413px;
+        height:344px;
+    }
+    .nbitext
+    {
+        font-size: 18px;
+        padding-left: 35px; 
+        width: 500px;
+    }
+    .nbitext2 {
+      padding-left: 100px;
+      width: 530px;
+  }
+    .cont{
+      margin-top: 9px;
+      padding-left: 106px;
+    }
+    .contactcard
+    {
+      border: transparent;
+      border-radius: 25px; margin-left: 20px;
+      width: 550px;
+    }
+    .congp1 {
+      
+      font-size: 18px;      
+      padding-left: 28px;      
+  }
+  .congp2 {
+
+    font-size: 16px;
+    padding-left: 28px;
+    padding-top: 13px;
+}
+.congp3 {
+
+  font-size: 16px;
+  padding-left: 28px;
+
+}
+.amountpaid {
+  padding-left: 45px;
+}
+.paidby {
+  padding-left: 45px;
+}
+.transdate {
+
+  padding-left: 45px;
+}
+.money {
+  padding-left: 45px;
+}
+.successname {
+  padding-left: 45px;
+}
+.successdate {
+
+  padding-left: 45px;
+}
+    .svgcheck {
+      margin-left: 160px;
+      margin-top: 20px;
+  }
+    .successcard {
+      width: 452px;
+      height: 753px;
+      margin: 50px auto;
+  }
+    .contactform
+    {
+        padding-left: 70px;
+        padding-right: 78px;
+        padding-bottom: 142px;
+        padding-top: 49px;
+    }
+}

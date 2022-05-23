@@ -1,0 +1,21 @@
+/* This source code is exported from pxCode, you can get more document from https://www.pxcode.io */
+.img-cover-block6 {
+  display: flex;
+  flex-direction: column;
+  background: var(--src) center center/cover no-repeat; }
+
+.img-cover-block6.layout {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px; }
+
+.img-image27 {
+  display: flex;
+  flex-direction: column; }
+
+.img-image27.layout {
+  position: relative;
+  height: 38px;
+  margin: 37px 36px 37px 35px; }
