@@ -68,8 +68,6 @@
                           <div class="form-group inputdiv">
                             <p class="fpp">Email Address</p>
                             <input type="email" name="email" class="form-control rpinput" placeholder="" style="margin-top: 6px;"/>
-
-
                             <p class="fpp" style="padding-top: 27px;">Password</p>
                             <input type="password" name="password" class="form-control rpinput" style="margin-top: 6px;" placeholder=""/>                            
                             </div>
