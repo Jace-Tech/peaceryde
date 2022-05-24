@@ -42,7 +42,7 @@ if(isset($_POST['pay'])){
     
     // If successful
     if($result) {
-        $url = $_SERVER['HTTP_ORIGIN'] . "/ryde/handlers/payment.php";
+        $url = $_SERVER['HTTP_ORIGIN'] . "/handlers/payment.php";
         $service = $userServices->getService($id)['service_id'];
         $total_price = 0;
 
@@ -88,7 +88,6 @@ if(isset($_POST['pay'])){
     }
 
 }
-
 
 if(isset($_GET["reference"])) {
     $ref = $_GET["reference"];
