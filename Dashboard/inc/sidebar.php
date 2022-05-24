@@ -7,8 +7,11 @@
         <img src="./dist/image/logo.png" class="sidebar-image" style="border-radius: 50%; margin-left: 85px;">
         <!-- Sidebar navigation-->
         <div class="sidebarAccount">
-            <h2>John Peter</h2>
-            <p>Id: 123456789</p>
+            <h2>
+                <?= $USER['firstname'] . " " . $USER['lastname'] ?>
+            </h2>
+            <p>Id: <?= $USER_ID; ?></p>
+            
         </div>
         <nav class="sidebar-nav">
             <ul id="sidebarnav">

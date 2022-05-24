@@ -1,5 +1,10 @@
 <?php include("./inc/check_session.php"); ?>
+<?php 
+    $messages = new Message($connect);
 
+    $USER_MESSAGES = $messages->get_conversation($USER_ID, "MAIN_ADMIN");
+    $isUnread = count($messages->get_user_unread_messages($USER_ID));
+?>
 
 <!DOCTYPE html>
 <html dir="ltr" lang="en">
@@ -400,6 +405,19 @@
 .direct-chat-primary .right>.direct-chat-text:after, .direct-chat-primary .right>.direct-chat-text:before {
     border-left-color: #3c8dbc;
 }
+
+.avatar {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 80px;
+		height: 80px;
+		border-radius: 50%;
+		font-size: 1.5rem;
+		background-color: #fff !important;
+		color: #555;
+	}
+
                                     
     </style>
 </head>
@@ -461,37 +479,41 @@
                       <!-- Conversations are loaded here -->
                       <div class="direct-chat-messages">
                         <!-- Message. Default to the left -->
-                        <div class="direct-chat-msg">
-                          <div class="direct-chat-info clearfix">
-                            <span class="direct-chat-name pull-left">Alexander Pierce</span>
-                            <span class="direct-chat-timestamp pull-right">23 Jan 2:00 pm</span>
-                          </div>
-                          <!-- /.direct-chat-info -->
-                          <img class="direct-chat-img" src="https://bootdey.com/img/Content/user_1.jpg" alt="Message User Image"><!-- /.direct-chat-img -->
-                          <div class="direct-chat-text">
-                            Is this template really for free? That's unbelievable!
-                          </div>
-                          <!-- /.direct-chat-text -->
-                        </div>
-                        <!-- /.direct-chat-msg -->
-                
-                        <!-- Message to the right -->
-                        <div class="direct-chat-msg right">
-                          <div class="direct-chat-info clearfix">
-                            <span class="direct-chat-name pull-right">Sarah Bullock</span>
-                            <span class="direct-chat-timestamp pull-left">23 Jan 2:05 pm</span>
-                          </div>
-                          <!-- /.direct-chat-info -->
-                          <img class="direct-chat-img" src="https://bootdey.com/img/Content/user_2.jpg" alt="Message User Image"><!-- /.direct-chat-img -->
-                          <div class="direct-chat-text">
-                            You better believe it!
-                          </div>
-                          <!-- /.direct-chat-text -->
-                        </div>
-                        <!-- /.direct-chat-msg -->
-                      </div>
-                      <!--/.direct-chat-messages-->
-                
+                        <?php if(count($USER_MESSAGES)): ?>
+                        <?php foreach($USER_MESSAGES as $message): ?>
+							<?php $messages->mark_read($message['message_id']); ?>
+                            <!--   SENDER  -->
+							<?php if($message['sender_id'] == $USER_ID): ?>
+                                <div class="direct-chat-msg">
+                                    <div class="direct-chat-info clearfix">
+                                        <span class="direct-chat-name pull-left"><?= $USER['firstname'] . ' ' . $USER['lastname']; ?></span>
+                                        <span class="direct-chat-timestamp pull-right"><?= date("j M g:i a", strtotime($message["date"])); ?></span>
+                                    </div>
+                                    <div class="direct-chat-img avater">
+                                        <?= getSubName($USER['firstname'] . ' ' . $USER['lastname']); ?>
+                                    </div>
+                                    <div class="direct-chat-text">
+                                        <?= $message['message']; ?>
+                                    </div>
+                                </div>
+							<?php else: ?>
+                                <div class="direct-chat-msg right">
+                                    <div class="direct-chat-info clearfix">
+                                        <span class="direct-chat-name pull-right">Admin</span>
+                                        <span class="direct-chat-timestamp pull-left"><?= date("j M g:i a", strtotime($message["date"])); ?></span>
+                                    </div>
+                                    <div class="avater direct-chat-img">
+                                        <?= "A"; ?>
+                                    </div>
+                                    <div class="direct-chat-text">
+                                        <?= $message['message'] ?>.
+                                    </div>
+                                </div>
+							<?php endif; ?>
+                        <?php endforeach; ?>
+                    <?php else: ?>
+                        <p class="text-muted text-center">No messages yet</p>
+                    <?php endif; ?>
                       <!-- Contacts are loaded here -->
                       <div class="direct-chat-contacts">
                         <ul class="contacts-list">
