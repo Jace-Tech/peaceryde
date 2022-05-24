@@ -64,7 +64,7 @@
                     
 
                     <div class="align-self-center">
-                        <div class="customize-input customise" style="">
+                        <div class="customize-input customise">
                             <div class="image-upload-two">
                                 <div class="center">
                                     <div class="form-input">
