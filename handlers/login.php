@@ -12,10 +12,6 @@ if(isset($_POST["login"])) {
     
     $result = $userLogins->login($email, $password);
 
-    print_r($result);
-    echo "HELLLLLOO";
-    die();
-
     if(!$result) {
         $alert = [
             "status" => "error",
