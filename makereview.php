@@ -1,5 +1,7 @@
 <?php include("./inc/check_session.php") ?>
 
+<?php if(!isset($_SESSION["LOGGED_USER"])) header("Location: ./signin.php"); ?>
+
 
 <!DOCTYPE html>
 <html>

@@ -84,5 +84,20 @@ class Upload {
         if($result) return $result->fetchAll();
         else return false;
     }
+
+    public function getUsersProfile($userId)
+    {
+        $query = "SELECT * FROM `uploads` WHERE `user_id` = :userid AND `service_id` = :kind";
+        $result = $this->connection->prepare($query);
+        $result->execute([
+            'userid' => $userId,
+            'kind' => 'PROFILE'
+        ]);
+
+        if($result) return $result->fetchAll();
+        else return false;
+    }
+
+
     
 }

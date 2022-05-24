@@ -1,7 +1,9 @@
 <?php include("./inc/check_session.php") ?>
 
 <?php
-$reviews = new Review($connect);
+    $reviews = new Review($connect);
+    $users = new User($connect);
+    $uploads = new Upload($connect);
 ?>
 
 <!DOCTYPE html>
@@ -36,6 +38,19 @@ $reviews = new Review($connect);
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
+    <style>
+        .avater {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: #eee;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            font-weight: 500;
+        }
+    </style>
 </head>
 
 
@@ -284,9 +299,6 @@ $reviews = new Review($connect);
               </div>
             </div>
           </div>
-      
-        
-
       </section> -->
         <comment content="======= End section3 =======" break="true"></comment><!-- ======= section4 ======= -->
 
@@ -478,123 +490,60 @@ $reviews = new Review($connect);
 
         </section>
         <comment content="======= End section5 =======" break="true"></comment><!-- ======= section6 ======= -->
-        <section class="new-section6__section6 layout">
-            <div class="new-section6__flex4 layout">
-                <h1 class="new-section6__hero-title1 layout customers">
-                    What our customers have to say about us
-                </h1>
-                <div class="row reviews mt-99">
-                    <div class="col-md-2 hide"></div>
-                    <div class="col-md-2 mag">
-                        <div>
-                            <img src="assets/567e56d659b95feb61c2ad9900beb3a7.png" width="50" class="rounded-circle" style="margin-left: 65px; margin-bottom: 13px;">
-                            <div class="new-section6__flex18-item">
+        <?php if (count($reviews->getAllFeaturedReviews()) >= 3) : ?>
+            <section class="new-section6__section6 layout">
+                <div class="new-section6__flex4 layout">
+                    <h1 class="new-section6__hero-title1 layout customers">
+                        What our customers have to say about us
+                    </h1>
+                    <div class="row reviews mt-99">
+                        <div class="col-md-2 hide"></div>
+                        <?php foreach($reviews->getAllFeaturedReviews() as $review): ?>
+                            <div class="col-md-2 mag">
+                                <div>
+                                    <?php if(isset($uploads->getUsersProfile($review["user_id"])["files"])): ?>
+                                        <img src="./Dashboard/upload/<?= $uploads->getUsersProfile($review["user_id"])["files"] ?>" width="50" class="rounded-circle" style="margin-left: 65px; margin-bottom: 13px;">
+                                    <?php else: ?>
+                                        <h2 class="avater">
+                                            <?= getSubName($users->get_user($review["user_id"])['firstname'] . " " . $users->get_user($review["user_id"])["lastname"]); ?>
+                                        </h2>
+                                    <?php endif; ?>
+                                    <div class="new-section6__flex18-item">
 
-                                <div class="new-section6__text-body layout">
-                                    <p style="font-family: Ubuntu; font-style: normal; font-weight: 500; font-size: 13px; line-height: 16px; letter-spacing: 0.0015em; margin-left: 60px; margin-bottom: 9px; color: #000080;">Mary James</p>
+                                        <div class="new-section6__text-body layout">
+                                            <p style="font-family: Ubuntu; font-style: normal; font-weight: 500; font-size: 13px; line-height: 16px; letter-spacing: 0.0015em; margin-left: 60px; margin-bottom: 9px; color: #000080;">
+                                                <?= $users->get_user($review["user_id"])['firstname'] . " " . $users->get_user($review["user_id"])["lastname"] ?>
+                                            </p>
+                                        </div>
+                                        <div class="star-rating">
+                                            <?php for ($i = 0; $i < intval($review); $i++): ?>
+                                                <span class="fa fa-star checked" data-rating="<?= $i + 1 ?>"></span>
+                                            <?php endfor; ?>
+
+                                            <?php for ($i = 0; $i < (5 - intval($review)); $i++): ?>
+                                                <span class="fa fa-star-o" data-rating="<?= intval($review) + ($i + 1) ?>"></span>
+                                            <?php endfor; ?>
+
+                                            <!-- <input type="hidden" name="whatever1" class="rating-value" value="2.56"> -->
+                                        </div>
+                                    </div>  
+                                 </div>
+                                <div class="new-section6__paragraph-body-box layout">
+                                    <pre class="new-section6__paragraph-body" style="width: 181px; height: 32px; top: 3178px; font-family: Ubuntu; font-style: normal; font-weight: normal; font-size: 14px; line-height: 16px; letter-spacing: 0.0015em; color: #000080;">
+                                        <?= $review['review']  ?>
+                                    </pre>
                                 </div>
-                                <div class="star-rating">
-                                    <span class="fa fa-star checked" data-rating="1"></span>
-                                    <span class="fa fa-star checked" data-rating="2"></span>
-                                    <span class="fa fa-star checked" data-rating="3"></span>
-                                    <span class="fa fa-star-o" data-rating="4"></span>
-                                    <span class="fa fa-star-o" data-rating="5"></span>
-                                    <input type="hidden" name="whatever1" class="rating-value" value="2.56">
-                                </div>
+
                             </div>
-                        </div>
-                        <div class="new-section6__paragraph-body-box layout">
-                            <pre class="new-section6__paragraph-body" style="width: 181px; height: 32px; top: 3178px; font-family: Ubuntu; font-style: normal; font-weight: normal; font-size: 14px; line-height: 16px; letter-spacing: 0.0015em; color: #000080;">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.  
-                            </pre>
-                        </div>
-
+                            <div class="col-md-1"></div>
+                        <?php endforeach; ?>
                     </div>
-                    <div class="col-md-1"></div>
-                    <div class="col-md-2 mag">
-
-                        <div>
-                            <img src="assets/567e56d659b95feb61c2ad9900beb3a7.png" width="50" class="rounded-circle" style="margin-left: 65px; margin-bottom: 13px;">
-                            <div class="new-section6__flex18-item">
-
-                                <div class="new-section6__text-body layout">
-                                    <p style="font-family: Ubuntu;
-                  font-style: normal;
-                  font-weight: 500;
-                  font-size: 13px;
-                  line-height: 16px;              
-                  letter-spacing: 0.0015em;  
-                  margin-left: 60px;
-                  margin-bottom: 9px;
-                  color: #000080;">Mary James</p>
-                                </div>
-                                <div class="star-rating">
-                                    <span class="fa fa-star checked" data-rating="1"></span>
-                                    <span class="fa fa-star checked" data-rating="2"></span>
-                                    <span class="fa fa-star checked" data-rating="3"></span>
-                                    <span class="fa fa-star-o" data-rating="4"></span>
-                                    <span class="fa fa-star-o" data-rating="5"></span>
-                                    <input type="hidden" name="whatever1" class="rating-value" value="2.56">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="new-section6__paragraph-body-box layout">
-                            <pre class="new-section6__paragraph-body" style="width: 181px;
-              height: 32px;
-              top: 3178px;
-              font-family: Ubuntu;
-              font-style: normal;
-              font-weight: normal;
-              font-size: 14px;
-              line-height: 16px;
-              letter-spacing: 0.0015em;
-              
-              color: #000080;">
-Lorem ipsum dolor sit amet, consectetur adipiscing elit.  </pre>
-                        </div>
-
-                    </div>
-                    <div class="col-md-1"></div>
-                    <div class="col-md-2">
-                        <div>
-                            <img src="assets/567e56d659b95feb61c2ad9900beb3a7.png" width="50" class="rounded-circle" style="margin-left: 65px; margin-bottom: 13px;">
-                            <div class="new-section6__flex18-item">
-
-                                <div class="new-section6__text-body layout">
-                                    <p style="font-family: Ubuntu; font-style: normal; font-weight: 500; font-size: 13px; line-height: 16px; letter-spacing: 0.0015em; margin-left: 60px; margin-bottom: 9px; color: #000080;">Mary James</p>
-                                </div>
-                                <div class="star-rating">
-                                    <span class="fa fa-star checked" data-rating="1"></span>
-                                    <span class="fa fa-star checked" data-rating="2"></span>
-                                    <span class="fa fa-star checked" data-rating="3"></span>
-                                    <span class="fa fa-star-o" data-rating="4"></span>
-                                    <span class="fa fa-star-o" data-rating="5"></span>
-                                    <input type="hidden" name="whatever1" class="rating-value" value="2.56">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="new-section6__paragraph-body-box layout">
-                            <pre class="new-section6__paragraph-body" style="width: 181px;
-              height: 32px;
-              top: 3178px;
-              font-family: Ubuntu;
-              font-style: normal;
-              font-weight: normal;
-              font-size: 14px;
-              line-height: 16px;
-              letter-spacing: 0.0015em;
-              
-              color: #000080;">
-Lorem ipsum dolor sit amet, consectetur adipiscing elit.  </pre>
-                        </div>
-                    </div>
-
+                    <button class="btn btn-review" style="border: 1px solid #a0bd1c;  background-color: transparent; color: #a0bd1c;">See More
+                        Reviews
+                    </button>
                 </div>
-                <button class="btn btn-review" style="border: 1px solid #a0bd1c;  background-color: transparent; color: #a0bd1c;">See More
-                    Reviews</button>
-
-            </div>
-        </section>
+            </section>
+        <?php endif; ?>
         <comment content="======= End section6 =======" break="true"></comment><!-- ======= section7 ======= -->
         <section class="new-section7__section7 layout">
             <div class="new-section7__group layout">
