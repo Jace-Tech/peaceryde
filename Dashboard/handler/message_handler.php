@@ -18,7 +18,7 @@ if(isset($_POST['send'])) {
         ];
         $_SESSION['ALERT'] = json_encode($alert);
 
-        header("Location: ../index.php");
+        header("Location: ../chat.php");
     }
     else {
         $alert = [
@@ -27,9 +27,9 @@ if(isset($_POST['send'])) {
         ];
         $_SESSION['ALERT'] = json_encode($alert);
 
-        header("Location: ../index.php");
+        header("Location: ../chat.php");
     }
 }
 else {
-    header("Location: ../index.php");
+    header("Location: ../chat.php");
 }
