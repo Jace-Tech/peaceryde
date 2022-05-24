@@ -515,7 +515,7 @@
                         <p class="text-muted text-center">No messages yet</p>
                     <?php endif; ?>
                       <!-- Contacts are loaded here -->
-                      <div class="direct-chat-contacts">
+                      <!-- <div class="direct-chat-contacts">
                         <ul class="contacts-list">
                           <li>
                             <a href="#">
@@ -527,16 +527,16 @@
                                       <small class="contacts-list-date pull-right">2/28/2015</small>
                                     </span>
                                 <span class="contacts-list-msg">How have you been? I was...</span>
-                              </div>
+                              </div> -->
                               <!-- /.contacts-list-info -->
-                            </a>
-                          </li>
+                            <!-- </a>
+                          </li> -->
                           <!-- End Contact Item -->
-                        </ul>
+                        <!-- </ul> -->
                         <!-- /.contatcts-list -->
-                      </div>
+                      <!-- </div> -->
                       <!-- /.direct-chat-pane -->
-                    </div>
+                    <!-- </div> -->
                     <!-- /.box-body -->
                     <div class="box-footer">
                       <form action="./handler/message_handler.php" method="post">
