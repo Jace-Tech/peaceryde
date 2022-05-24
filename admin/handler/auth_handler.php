@@ -29,7 +29,7 @@ if(isset($_POST['register'])){
         ];
 
         session_start();
-        $_SESSION['alert'] = json_encode($alert);
+        $_SESSION['ADMIN_ALERT'] = json_encode($alert);
         header('location: ../index.php');
     }
     else{
@@ -38,7 +38,7 @@ if(isset($_POST['register'])){
             'alert_type' => 'error'
         ];
         session_start();
-        $_SESSION['alert'] = json_encode($alert);
+        $_SESSION['ADMIN_ALERT'] = json_encode($alert);
         header('location: ../signup.php');
     }
 }
@@ -62,7 +62,7 @@ if(isset($_POST['login'])) {
         ];
 
         session_start();
-        $_SESSION['alert'] = json_encode($alert);
+        $_SESSION['ADMIN_ALERT'] = json_encode($alert);
         
         header('Location: ../index.php');
         exit();
@@ -80,6 +80,6 @@ if(isset($_POST['login'])) {
     setcookie("CRSF_TOKEN", $token, $time, '/');
 
     session_start();
-    $_SESSION['alert'] = json_encode($alert);
+    $_SESSION['ADMIN_ALERT'] = json_encode($alert);
     header('Location: ../dashboard.php');
 }

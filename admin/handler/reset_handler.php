@@ -39,7 +39,7 @@ if(isset($_POST['reset'])) {
         ];
 
         session_start();
-        $_SESSION['alert'] = json_encode($alert);
+        $_SESSION['ADMIN_ALERT'] = json_encode($alert);
 
         header("location: ../verify.php");
 
@@ -52,7 +52,7 @@ if(isset($_POST['reset'])) {
         ];
 
         session_start();
-        $_SESSION['alert'] = json_encode($alert);
+        $_SESSION['ADMIN_ALERT'] = json_encode($alert);
 
         header("Location: ../reset-password.php");
     }

@@ -1,3 +1,7 @@
+<?php include("./inc/check_session.php"); ?>
+
+
+
 <!DOCTYPE html>
 <html dir="ltr" lang="en">
 

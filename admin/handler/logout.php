@@ -12,6 +12,6 @@ if(isset($_POST['logout'])){
         'alert_type' => 'success'
     ];
 
-    $_SESSION['alert'] = json_encode($alert);
+    $_SESSION['ADMIN_ALERT'] = json_encode($alert);
     header('location: ../index.php');
 }

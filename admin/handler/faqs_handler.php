@@ -21,7 +21,7 @@ if(isset($_POST['add'])) {
         ];
 
         session_start();
-        $_SESSION['alert'] = json_encode($alert);
+        $_SESSION['ADMIN_ALERT'] = json_encode($alert);
 
         header('location: ../faqs.php');
     }
@@ -33,7 +33,7 @@ if(isset($_POST['add'])) {
         ];
 
         session_start();
-        $_SESSION['alert'] = json_encode($alert);
+        $_SESSION['ADMIN_ALERT'] = json_encode($alert);
 
         header('location: ../faqs.php');
     }
@@ -50,7 +50,7 @@ if(isset($_POST['delete'])){
         ];
 
         session_start();
-        $_SESSION['alert'] = json_encode($alert);
+        $_SESSION['ADMIN_ALERT'] = json_encode($alert);
         header('Location: ../faqs.php');
     }
     else {
@@ -60,7 +60,7 @@ if(isset($_POST['delete'])){
         ];
 
         session_start();
-        $_SESSION['alert'] = json_encode($alert);
+        $_SESSION['ADMIN_ALERT'] = json_encode($alert);
         header('Location: ../faqs.php');
     }
 }
@@ -79,7 +79,7 @@ if(isset($_POST['edit'])){
         ];
 
         session_start();
-        $_SESSION['alert'] = json_encode($alert);
+        $_SESSION['ADMIN_ALERT'] = json_encode($alert);
         header('Location: ../faqs.php');
     }
     else {
@@ -89,7 +89,7 @@ if(isset($_POST['edit'])){
         ];
 
         session_start();
-        $_SESSION['alert'] = json_encode($alert);
+        $_SESSION['ADMIN_ALERT'] = json_encode($alert);
         header('Location: ../faqs.php');
     }
 }

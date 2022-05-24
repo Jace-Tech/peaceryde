@@ -47,7 +47,7 @@ if(isset($_POST['addAdmin'])){
             sendMail($subject, $message, $EMAIL_ADDRESS, $email);
 
             session_start();
-            $_SESSION['alert'] = json_encode($alert);
+            $_SESSION['ADMIN_ALERT'] = json_encode($alert);
             header('Location: ../subadmins.php');
         }
     }
@@ -82,7 +82,7 @@ if(isset($_POST['editAdmin'])){
             ];
 
             session_start();
-            $_SESSION['alert'] = json_encode($alert);
+            $_SESSION['ADMIN_ALERT'] = json_encode($alert);
             header('Location: ../subadmins.php');
         }
     }
@@ -100,7 +100,7 @@ if(isset($_POST['deleteAdmin'])){
         ];
 
         session_start();
-        $_SESSION['alert'] = json_encode($alert);
+        $_SESSION['ADMIN_ALERT'] = json_encode($alert);
 
         header('Location: ../subadmins.php');
     }
@@ -111,7 +111,7 @@ if(isset($_POST['deleteAdmin'])){
     ];
 
     session_start();
-    $_SESSION['alert'] = json_encode($alert);
+    $_SESSION['ADMIN_ALERT'] = json_encode($alert);
 
     header('Location: ../subadmins.php');
 }
@@ -127,7 +127,7 @@ if(isset($_POST['suspendAdmin'])){
         ];
 
         session_start();
-        $_SESSION['alert'] = json_encode($alert);
+        $_SESSION['ADMIN_ALERT'] = json_encode($alert);
 
         header('Location: ../subadmins.php');
         exit();
@@ -139,7 +139,7 @@ if(isset($_POST['suspendAdmin'])){
     ];
 
     session_start();
-    $_SESSION['alert'] = json_encode($alert);
+    $_SESSION['ADMIN_ALERT'] = json_encode($alert);
 
     header('Location: ../subadmins.php');
 }
@@ -155,7 +155,7 @@ if(isset($_POST['unSuspendAdmin'])){
         ];
 
         session_start();
-        $_SESSION['alert'] = json_encode($alert);
+        $_SESSION['ADMIN_ALERT'] = json_encode($alert);
 
         header('Location: ../subadmins.php');
         exit();
@@ -167,7 +167,7 @@ if(isset($_POST['unSuspendAdmin'])){
     ];
 
     session_start();
-    $_SESSION['alert'] = json_encode($alert);
+    $_SESSION['ADMIN_ALERT'] = json_encode($alert);
 
     header('Location: ../subadmins.php');
 }

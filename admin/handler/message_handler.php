@@ -26,7 +26,7 @@ if(isset($_POST['send'])){
             'alert_type' => 'error'
         ];
 
-        $_SESSION['alert'] = json_encode($alert);
+        $_SESSION['ADMIN_ALERT'] = json_encode($alert);
         header("Location: ../message.php");
     }
 
@@ -55,7 +55,7 @@ if (isset($_POST['broadcast'])) {
             'alert_type' => 'success'
         ];
 
-        $_SESSION['alert'] = json_encode($alert);
+        $_SESSION['ADMIN_ALERT'] = json_encode($alert);
         header("Location: ../message.php");
     }
 }

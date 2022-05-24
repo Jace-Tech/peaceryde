@@ -20,7 +20,7 @@ if(isset($_POST['tracking'])) {
             "alert_message" => "Track Updated successfully"
         ];
 
-        $_SESSION['alert'] = json_encode($alert);
+        $_SESSION['ADMIN_ALERT'] = json_encode($alert);
 
         header("Location: ../users.php");
     } 
@@ -30,7 +30,7 @@ if(isset($_POST['tracking'])) {
             "alert_message" => "Something went wrong"
         ];
 
-        $_SESSION['alert'] = json_encode($alert);
+        $_SESSION['ADMIN_ALERT'] = json_encode($alert);
 
         header("Location: ../users.php");
     }

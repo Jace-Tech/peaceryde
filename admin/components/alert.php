@@ -8,7 +8,7 @@
     }
 </style>
 
-<?php if(isset($_SESSION['alert'])): extract(json_decode($_SESSION['alert'], true))?>
+<?php if(isset($_SESSION['ADMIN_ALERT'])): extract(json_decode($_SESSION['ADMIN_ALERT'], true))?>
     <?php if($alert_type == 'success'): ?>
     <div x-show="open" x-data="{ open: true }" class="my-alert">
         <div class="px-4 py-2 rounded-sm text-sm bg-green-100 border border-green-200 text-green-600">

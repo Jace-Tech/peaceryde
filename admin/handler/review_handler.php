@@ -16,7 +16,7 @@ if(isset($_POST['feature'])) {
         ];
 
         session_start();
-        $_SESSION['alert'] = json_encode($alert);
+        $_SESSION['ADMIN_ALERT'] = json_encode($alert);
 
         header("Location: ../reviews.php");
     }
@@ -33,7 +33,7 @@ if(isset($_POST['unfeature'])) {
         ];
 
         session_start();
-        $_SESSION['alert'] = json_encode($alert);
+        $_SESSION['ADMIN_ALERT'] = json_encode($alert);
 
         header("Location: ../reviews.php");
     }
