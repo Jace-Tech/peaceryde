@@ -4,7 +4,7 @@ session_start();
 
 include("./utils/country_fee.php");
 include("./functions/index.php");
-include("./db/conf.php");
+include("./db/config.php");
 include("./models/User.php");
 include("./models/Service.php");
 include("./models/UserService.php");
