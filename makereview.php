@@ -106,7 +106,7 @@
                 <div class="row">
                     <div class="col-md-4"></div>
                     <div class="col-md-4">
-                        <div class="card makereviewcard">
+                        <form action="./handlers/review_handler.php" method="post" class="card makereviewcard">
                             <p class="makereviewp">Rate Your Experience</p>
                             <fieldset class="rating">
                                 <input type="radio" id="star5" name="rating" value="5" /><label class="full" for="star5" title="Awesome - 5 stars" style="margin-right: 110px;"></label>
@@ -126,7 +126,7 @@
                             <div class="mt-4 p-4 text-right">
                                 <button name="add" type="submit" class="btn btn-block border-0" style="background-color: #a0bd1c;">Post review</button>
                             </div>
-                        </div>
+                        </form>
                     </div>
                     <div class="col-md-4"></div>
                 </div>
