@@ -86,10 +86,10 @@
                 <div class="collapse navbar-collapse" id="collapsibleNavbar">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link nav link home" href="Index.php">Home</a>
+                            <a class="nav-link nav link home" href="index.php">Home</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link link services" href="sbform.php"> Services</a>
+                            <a class="nav-link link services" href="SBForm.php"> Services</a>
                         </li>
                         <!-- <li class=" nav-item dropdown">
                   <a class="nav-link link dropdown-toggle nav link visa" href="#" role="button" data-bs-toggle="dropdown"
@@ -191,7 +191,7 @@
 
 
                         <li class="nav-item apply ml-118">
-                            <a href="SBForm.php" class="btn button btn-outline-light appbtn" type="button">Apply</a>
+                            <a href="apply.php" class="btn button btn-outline-light appbtn" type="button">Apply</a>
                             <a href="signin.php" class="btn button2 sign" type="button">Sign In</a>
                         </li>
 
