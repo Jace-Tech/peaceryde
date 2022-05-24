@@ -1,4 +1,46 @@
 <?php include("./inc/check_session.php") ?>
+
+<?php if(!isset($_SESSION["REF"])) header("Location: ./index.php"); ?>
+
+<?php 
+    include("./db/config.php");
+    include("./models/User.php");
+    include("./models/UserService.php");
+    include("./models/Payment.php");
+    include("./payment/Paystack.php");
+
+    $users = new User($connect);
+    $userServices = new UserService($connect);
+    $payments = new Payment($connect);
+    $paystackPayment = new PaystackPayment($connect);
+
+    $REF = $_SESSION["REF"];
+    $ID = $_SESSION["REG_NO"];
+
+    $PRICE = json_decode($_SESSION["PRICE"], true);
+
+    $service = $userServices->getService($ID)['service_id'];
+    $total_price = 0;
+
+    if($service == "srvs-002") {    
+        $price = json_decode($_SESSION["PRICE"], true);
+        $total_price = $price['total_price'];
+    }
+
+    if($service == "srvs-001") {
+        $price = json_decode($_SESSION["PRICE"], true);
+        $total_price = $price['total'];
+    }
+
+    if($service == "srvs-003") {
+        $price = json_decode($_SESSION["PRICE"], true);
+        $total_price = $price['total'];
+    }
+        
+    $payment = $payments->getPayment($REF);
+    $user = $users->get_user($ID);
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -53,12 +95,16 @@
                                 <p class="transdate">Transaction date</p>
                         </div>
                         <div class="col-md-6 col-sm-6 col-xs-6">
-                            <p class="money">$ 1000.20</p>
-                              <p class="successname">John</p>
-                                <p class="successdate">22 January 2022</p>
+                            <p class="money"><?php round($total_price, 2); ?> (NGN <?= number_format(round($paystackPayment->convertToNaira($total_price), 2)); ?>) ?></p>
+                              <p class="successname"><?= $user["firstname"]; ?></p>
+                                <p class="successdate"><?= date("d F Y", strtotime($payment["date"]));  ?></p>
                         </div>
                         <div class="successbutton">
-                            <button type="submit" class="btn proceeds">Return to Account</button>
+                            <?php if(isset($_SESSION['LOGGED_USER'])): ?>
+                                <a href="./Dashboard/index.php" class="btn proceed">Return to Account</a>
+                            <?php else: ?>
+                                <a href="signin.php" class="btn proceed">Return to Account</a>
+                            <?php endif; ?>
                         </div>
                     </div>
                     
@@ -67,6 +113,11 @@
             </div>
         </div>
         <div class="col-md-2"></div>
+        <?php 
+            unset($_SESSION['REF']);
+            unset($_SESSION['REG_NO']);
+            unset($_SESSION['PRICE']);
+        ?>
     </div>
 </body>
 </html>
