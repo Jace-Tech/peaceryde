@@ -134,7 +134,7 @@ if(isset($_GET["reference"])) {
             $_SESSION["REF"] = $ref;
 
             // Redirect to Success Page
-            header("Location: ../success.php");
+            header("Location: ../dashboardsuccess.php");
         }
 
     }
