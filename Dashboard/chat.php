@@ -539,12 +539,14 @@
                     </div>
                     <!-- /.box-body -->
                     <div class="box-footer">
-                      <form action="#" method="post">
+                      <form action="./handler/message_handler.php" method="post">
                         <div class="input-group">
-                          <input type="text" name="message" placeholder="Type Message ..." class="form-control">
-                              <span class="input-group-btn">
-                                <button type="submit" class="btn btn-primary btn-flat">Send</button>
-                              </span>
+                            <input type="hidden" name="sender" value="<?= $USER_ID ?>">
+                            <input type="hidden" name="reciever" value="<?= "MAIN_ADMIN" ?>">
+                            <input type="text" name="message" placeholder="Type Message ..." class="form-control">
+                            <span class="input-group-btn">
+                                <button name="send" type="submit" class="btn btn-primary btn-flat">Send</button>
+                            </span>
                         </div>
                       </form>
                     </div>
