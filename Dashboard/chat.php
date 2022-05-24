@@ -484,10 +484,10 @@
 							<?php $messages->mark_read($message['message_id']); ?>
                             <!--   SENDER  -->
 							<?php if($message['sender_id'] == $USER_ID): ?>
-                                <div class="direct-chat-msg">
+                                <div class="direct-chat-msg right">
                                     <div class="direct-chat-info clearfix">
-                                        <span class="direct-chat-name pull-left"><?= $USER['firstname'] . ' ' . $USER['lastname']; ?></span>
-                                        <span class="direct-chat-timestamp pull-right"><?= date("j M g:i a", strtotime($message["date"])); ?></span>
+                                        <span class="direct-chat-name  pull-right"><?= $USER['firstname'] . ' ' . $USER['lastname']; ?></span>
+                                        <span class="direct-chat-timestamp pull-left"><?= date("j M g:i a", strtotime($message["date"])); ?></span>
                                     </div>
                                     <div class="direct-chat-img avater">
                                         <?= getSubName($USER['firstname'] . ' ' . $USER['lastname']); ?>
@@ -497,10 +497,10 @@
                                     </div>
                                 </div>
 							<?php else: ?>
-                                <div class="direct-chat-msg right">
+                                <div class="direct-chat-msg">
                                     <div class="direct-chat-info clearfix">
-                                        <span class="direct-chat-name pull-right">Admin</span>
-                                        <span class="direct-chat-timestamp pull-left"><?= date("j M g:i a", strtotime($message["date"])); ?></span>
+                                        <span class="direct-chat-name pull-left">Admin</span>
+                                        <span class="direct-chat-timestamp pull-right"><?= date("j M g:i a", strtotime($message["date"])); ?></span>
                                     </div>
                                     <div class="avater direct-chat-img">
                                         <?= "A"; ?>
