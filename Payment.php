@@ -1,10 +1,13 @@
 <?php include("./inc/check_session.php") ?>
+
 <?php
 if (!isset($_SESSION["PRICE"])) header("Location: ./index.php");
 $userServices = new UserService($connect);
 $services = new Service($connect);
 
 $userId = $_SESSION["REG_NO"];
+
+echo "$userId";
 $service = $userServices->getService($userId);
 
 $service_name = $services->getUserService($service['service_id'])['service'];
@@ -290,9 +293,6 @@ $PRICE = json_decode($_SESSION["PRICE"], true);
                     <div class="divbutton">
                         <button type="submit" name="pay" class="btn proceed">Pay</button>
                     </div>
-
-
-
                 </form>
             </div>
         </div>
