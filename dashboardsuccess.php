@@ -1,14 +1,7 @@
 <?php include("./inc/check_session.php") ?>
 
 <?php if(!isset($_SESSION["REF"])) header("Location: ./index.php"); ?>
-
 <?php 
-    include("./db/config.php");
-    include("./models/User.php");
-    include("./models/UserService.php");
-    include("./models/Payment.php");
-    include("./payment/Paystack.php");
-
     $users = new User($connect);
     $userServices = new UserService($connect);
     $payments = new Payment($connect);
