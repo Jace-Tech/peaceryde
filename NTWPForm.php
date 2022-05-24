@@ -129,7 +129,7 @@
                     </div>
                     <div class="col-md-5">
                       <div class="form-group">
-                        <inpu required type="text" name="passport" class="form-control firstname2" placeholder="Passport No">
+                        <input required type="text" name="passport" class="form-control firstname2" placeholder="Passport No">
                       </div>
                     </div>
                   </div>
