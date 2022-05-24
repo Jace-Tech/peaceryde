@@ -106,7 +106,7 @@
                             </div>
                           </div>
                               <div class="bibtn">
-                                  <button type="submit" class="btn proceed">Proceed to payment</button>
+                                  <button type="submit" name="bi" class="btn proceed">Proceed to payment</button>
                               </div>
                             </form>
                         </div>

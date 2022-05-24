@@ -396,7 +396,7 @@
                   </div>
                 </div>
                 <div class="formml" style=" margin-top:52px">
-                  <button type="submit" class="btn proceed">Proceed to payment</button>
+                  <button type="submit" name="twp" class="btn proceed">Proceed to payment</button>
                 </div>
 
               </form>
