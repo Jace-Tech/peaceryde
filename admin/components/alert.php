@@ -85,5 +85,5 @@
                 </div>
             </div>
         <?php endif; ?>
-        <?php unset($_SESSION['alert']); ?>
+        <?php unset($_SESSION['ADMIN_ALERT']); ?>
 <?php endif; ?>
