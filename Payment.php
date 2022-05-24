@@ -43,6 +43,7 @@ $PRICE = json_decode($_SESSION["PRICE"], true);
 
 <body style="background-color: #1161D9; overflow-x: hidden;">
     <div class="row">
+        <!-- NBV -->
         <?php if ($service['service_id'] === "srvs-002") : ?>
             <div class="col-lg-5 col-md-12 col-sm-12">
                 <img src="Dashboard/dist/image/logo.png" class="paymentlogoimg">
@@ -130,6 +131,8 @@ $PRICE = json_decode($_SESSION["PRICE"], true);
                 <div class="reviewline"></div>
                 <div class="reviewline"></div>
             </div>
+        
+        <!-- TWP -->
         <?php elseif($service['service_id'] === "srvs-001"): ?>
             <div class="col-lg-5 col-md-12 col-sm-12">
                 <img src="Dashboard/dist/image/logo.png" class="paymentlogoimg">
@@ -189,7 +192,8 @@ $PRICE = json_decode($_SESSION["PRICE"], true);
                 <div class="reviewline"></div>
                 <div class="reviewline"></div>
             </div>
-
+        
+        <!-- BI  -->
         <?php else: ?>
             <div class="col-lg-5 col-md-12 col-sm-12">
                 <img src="Dashboard/dist/image/logo.png" class="paymentlogoimg">
@@ -250,7 +254,7 @@ $PRICE = json_decode($_SESSION["PRICE"], true);
                 <div class="reviewline"></div>
             </div>
         <?php endif; ?>
-
+        
         <div class="col-lg-6 col-md-12 col-sm-12">
             <div class="card leftcard">
                 <form method="post" action="./handlers/payment.php" style="margin-top: 31px;">
