@@ -75,7 +75,7 @@ class Review {
 
     public function getAllFeaturedReviews () 
     {
-        $query = "SELECT * FROM `review` WHERE `is_featured` != ?";
+        $query = "SELECT * FROM `review` WHERE `is_featured` != ? ORDER BY `date` DESC LIMIT 3";
         $result = $this->connection->prepare($query);
         $result->execute([true]);
 
