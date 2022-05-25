@@ -72,7 +72,7 @@
         </div>
       </div>
       <hr>
-      <form action="./handler/upload_handler.php" method="post">
+      <form action="./handler/upload_handler.php" method="post" enctype="multipart/form-data">
         <div>
           <p class="uploadtext">Upload your necessary documents</p>
           <p class="pleaseupload">Please upload images of documents below. see more info about required files</p>
