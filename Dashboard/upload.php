@@ -92,7 +92,7 @@
           <input type="file" name="myFile" class="drop-zone__input">
         </div>
         <div class="mt-4 p-4 text-right">
-          <button name="upload" type="submit" class="btn btn-block border-0" style="background-color: #a0bd1c;">Upload file</button>
+          <button name="upload" type="submit" class="btn border-0" style="background-color: #a0bd1c;">Upload file</button>
         </div>
       </form>
 

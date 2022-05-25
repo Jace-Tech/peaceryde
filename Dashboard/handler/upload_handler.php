@@ -8,9 +8,9 @@ include("../../models/Upload.php");
 
 $uploads = new Upload($connect);
 
-if(isset($_POST['service'])) {
+if(isset($_POST['upload'])) {
     $id = $_POST['id'];
-    $service = $_POST['service'];
+    $service = "NULL";
     $name = $_POST['name'];
 
     $fileUpload = $uploads->uploadFile($_FILES["myFile"], "../upload/");
