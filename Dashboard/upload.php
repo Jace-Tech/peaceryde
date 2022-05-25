@@ -78,6 +78,7 @@
           <p class="pleaseupload">Please upload images of documents below. see more info about required files</p>
         </div>
         <div class="form-group">
+          <input type="hidden" name="id" value="<?= $USER_ID ?>">
           <input name="name" type="text" style="width:307px;height:43px;border:1px solid #555555;font-size: 13px;" class="form-control" placeholder="Document Name">
         </div>
         <div class="drop-zone">
