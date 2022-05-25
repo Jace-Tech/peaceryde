@@ -1,3 +1,4 @@
+<script src="./js/sweetalert.js"></script>
 <?php 
 
 if(isset($_SESSION['ALERT'])) {

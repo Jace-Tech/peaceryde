@@ -189,11 +189,16 @@
                             <a class="nav-link link about" href="about.php">About Us</a>
                         </li>
 
-
-                        <li class="nav-item apply ml-118">
-                            <a href="apply.php" class="btn button btn-outline-light appbtn" type="button">Apply</a>
-                            <a href="signin.php" class="btn button2 sign" type="button">Sign In</a>
-                        </li>
+                        <?php if(isset($_SESSION["LOGGED_USER"])): ?>
+                            <li class="nav-item apply ml-118">
+                                <a href="./Dashboard/index.php" class="btn button2 sign">Back to dashboard</a>
+                            </li>
+                        <?php else: ?>
+                            <li class="nav-item apply ml-118">
+                                <a href="apply.php" class="btn button btn-outline-light appbtn">Apply</a>
+                                <a href="signin.php" class="btn button2 sign">Sign In</a>
+                            </li>
+                        <?php endif; ?>
 
                         <li class=" nav-item dropdown lang">
                             <a class="nav-link dropdown-toggle nav english" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">

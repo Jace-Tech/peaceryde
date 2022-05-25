@@ -1,6 +1,5 @@
 <aside class="left-sidebar" data-sidebarbg="skin6" id="sidebar">
 
-
     <!-- Sidebar scroll-->
     <div class="scroll-sidebar" data-sidebarbg="skin6">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
@@ -125,3 +124,4 @@
     </div>
     <!-- End Sidebar scroll-->
 </aside>
+<?php include("../inc/alert.php"); ?>

@@ -11,10 +11,11 @@ $uploads = new Upload($connect);
 if(isset($_POST['service'])) {
     $id = $_POST['id'];
     $service = $_POST['service'];
+    $name = $_POST['name'];
 
     $fileUpload = $uploads->uploadFile($_FILES["myFile"], "../upload/");
     if($fileUpload['status'] == "success") {
-        $uploaded = $uploads->uploadToDB($id, $fileUpload['file_name'], $service);
+        $uploaded = $uploads->uploadToDB($id, $fileUpload['file_name'], $name, $service);
 
         if($uploaded) {
             $alert = [

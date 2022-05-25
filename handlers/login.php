@@ -18,7 +18,7 @@ if(isset($_POST["login"])) {
             "message" => "Invalid login credentials"
         ];
 
-        $_SESSION["alert"] = json_encode($alert);
+        $_SESSION["ALERT"] = json_encode($alert);
         header("Location: ../index.php");
     }
     else {
@@ -26,7 +26,7 @@ if(isset($_POST["login"])) {
             "status" => "success",
             "message" => "Logged In successfully"
         ];
-        $_SESSION["alert"] = json_encode($alert);
+        $_SESSION["ALERT"] = json_encode($alert);
 
         $data = [
             "email" => $result["email"],

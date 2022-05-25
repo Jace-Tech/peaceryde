@@ -1,4 +1,5 @@
 <?php include("./inc/check_session.php") ?>
+<?php if(isset($_SESSION['LOGGED_USER'])) header("location: ./Dashboard/index.php"); ?>
 
 
 <!DOCTYPE html>

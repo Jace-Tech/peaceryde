@@ -175,6 +175,9 @@
 												<div class="origin-top-right z-10 absolute top-full right-0 min-w-36 bg-white border border-gray-200 py-1.5 rounded shadow-lg overflow-hidden mt-1" @click.outside="open = false" @keydown.escape.window="open = false" x-show="open" x-transition:enter="transition ease-out duration-200 transform" x-transition:enter-start="opacity-0 -translate-y-2" x-transition:enter-end="opacity-100 translate-y-0" x-transition:leave="transition ease-out duration-200" x-transition:leave-start="opacity-100" x-transition:leave-end="opacity-0" style="display: none;">
 													<ul>
 														<li>
+															<a href="./uploads.php?id=<?= $user["user_id"];  ?>" class="block px-2 text-gray-600 text-sm border-0 bg-white">Documents</a>
+														</li>
+														<li>
                                                             <div x-data="{ modalOpen: false }">
                                                                 <button @click.prevent="modalOpen = true" aria-controls="feedback-modal-<?= $user['user_id'] ?>" class="block px-2 text-gray-600 text-sm border-0 bg-white">Update Track</button>
                                                                 <div class="fixed inset-0 bg-gray-900 bg-opacity-30 z-50 transition-opacity" x-show="modalOpen" x-transition:enter="transition ease-out duration-200" x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100" x-transition:leave="transition ease-out duration-100" x-transition:leave-start="opacity-100" x-transition:leave-end="opacity-0" aria-hidden="true"></div>
