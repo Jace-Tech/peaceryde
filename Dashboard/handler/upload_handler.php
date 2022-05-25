@@ -14,6 +14,9 @@ if(isset($_POST['upload'])) {
     $name = $_POST['name'];
 
     $fileUpload = $uploads->uploadFile($_FILES["myFile"], "../upload/");
+
+    print_r($fileUpload);
+    die();
     if($fileUpload['status'] == "success") {
         $uploaded = $uploads->uploadToDB($id, $fileUpload['file_name'], $name, $service);
 
