@@ -65,13 +65,14 @@ class Upload {
         //     $files = json_encode([$filename]);
         // }
 
-        $query = "INSERT INTO `uploads`(`user_id`, `name`, `service_id`, `files`) VALUES (:userid, :name, :kind, :filename)";
+        $query = "INSERT INTO `uploads`(`user_id`, `name`, `service_id`, `files`, `status`) VALUES (:userid, :name, :kind, :filename, :status)";
         $result = $this->connection->prepare($query);
         $result->execute([
             'userid' => $userid,
             'name' => $name,
             'kind' => $kind,
-            'filename' => $files
+            'filename' => $files,
+            'status' => "Awaiting approval"
         ]);
 
         if($result) {
