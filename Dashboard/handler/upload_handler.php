@@ -13,10 +13,11 @@ if(isset($_POST['upload'])) {
     $service = "NULL";
     $name = $_POST['name'];
 
+    print_r($_FILES);
+    die();
     $fileUpload = $uploads->uploadFile($_FILES["myFile"], "../upload/");
 
     print_r($fileUpload);
-    die();
     if($fileUpload['status'] == "success") {
         $uploaded = $uploads->uploadToDB($id, $fileUpload['file_name'], $name, $service);
 
