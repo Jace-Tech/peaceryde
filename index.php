@@ -304,7 +304,7 @@
 
         <section class="">
             <div class="p-2" style="background-color: #1161D9;">
-                <h1 style="font-size: 2rem; text-align: center; color: white; padding-top:90px; font:400 53px/1.16 Rubik, Helvetica, Arial, serif">
+                <h1 style="font-size: 2rem; text-align: center; color: white; padding-top:90px; font-weight:400; font-family: Rubik, Helvetica, Arial, serif;">
                     How does the Visa Process work?
                 </h1>
 

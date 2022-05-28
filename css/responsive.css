@@ -96,7 +96,7 @@
         height: 1500px;
     }
     .cont{
-        margin-top: 19px; padding-left: 116px;
+        margin-top: 0px; padding-left: 116px;
     }
     .contactcard
     {
@@ -770,7 +770,7 @@ margin: 94px 80px 0px 140px;
 font-family: Rubik;
 font-style: normal;
 font-weight: normal;
-font-size: 22px;
+font-size: 32px;
 margin-bottom: 50px;
 }
 .get {
@@ -1544,7 +1544,7 @@ label {
         height: 1500px;
     }
     .cont{
-        margin-top: 9px; padding-left: 86px;
+        margin-top: 0px; padding-left: 86px;
     }
     .contactcard
     {
@@ -1681,7 +1681,7 @@ label {
         letter-spacing: 0.04em;
         padding-left: 48px; 
         padding-top: 61px;
-        width: 350px;
+        width: 370px;
     }
    
     .buttons2 {
@@ -2229,8 +2229,9 @@ margin-left: 90px;
 font-family: Rubik;
 font-style: normal;
 font-weight: normal;
-font-size: 25px;
+font-size: 28px;
 margin-bottom: 50px;
+text-align: center;
 }
 .get {
   margin-left: 100px;
@@ -2292,7 +2293,7 @@ font-family: Ubuntu;
   text-align: center;
   font-style: normal;
   font-weight: normal;
-  font-size: 20px;
+  font-size: 28px;
   line-height: 30px;
   color: #060a5c;
 }
@@ -3117,7 +3118,7 @@ padding-left: 35px;
       height: 1500px;
   }
   .cont{
-      margin-top: 19px; padding-left: 56px;
+      margin-top: 0px; padding-left: 56px;
   }
   .contactcard
   {
@@ -3803,8 +3804,9 @@ padding-left: 35px;
   font-family: Rubik;
   font-style: normal;
   font-weight: normal;
-  font-size: 25px;
+  font-size: 28px;
   margin-bottom: 20px;
+  text-align: center;
  }
  .flexd
  {
@@ -3843,7 +3845,7 @@ padding-left: 35px;
   text-align: center;
   font-style: normal;
   font-weight: normal;
-  font-size: 20px;
+  font-size: 28px;
   line-height: 30px;
   color: #060a5c;
  }
@@ -4039,7 +4041,7 @@ label {
   clear: none;
   display: block;
   padding: 0px 0.5rem 0px 8px;
-  font-size: 12px;
+  font-size: 16px;
 }
 .welcome
 {
@@ -5360,8 +5362,9 @@ padding-left: 35px;
   font-family: Rubik;
   font-style: normal;
   font-weight: normal;
-  font-size: 25px;
+  font-size: 28px;
   margin-bottom: 30px;
+  text-align: center;
  }
  .nbvformheight {
   position: relative;
@@ -5405,7 +5408,7 @@ padding-left: 35px;
   text-align: center;
   font-style: normal;
   font-weight: normal;
-  font-size: 20px;
+  font-size: 28px;
   line-height: 30px;
   color: #060a5c;
  }
@@ -5498,7 +5501,7 @@ padding-left: 35px;
 
  .fs-13
  {
-  font-size: 11px;
+  font-size: 13px;
    color: #080C58;
    font-weight: 400;
  }
@@ -5604,7 +5607,7 @@ label {
   clear: none;
   display: block;
   padding: 0px 0.5rem 0px 8px;
-  font-size: 12px;
+  font-size: 16px;
 }
 .welcome
 {
@@ -6262,6 +6265,7 @@ padding-left: 35px;
   .contactheight
   {        
       height: 1600px;
+      top:145px;
   }
   .faqheight
   {
@@ -6890,13 +6894,14 @@ padding-left: 35px;
  .hands
  {
   margin-top: 104px;
-    margin-left: 35px;
-    font-family: Rubik;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 25px;
-    margin-bottom: 50px;
-    width: 375px;
+  margin-left: 5px;
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 32px;
+  margin-bottom: 50px;
+  width: 375px;
+  text-align: center;
  }
  .flexd
  {
@@ -6935,7 +6940,7 @@ padding-left: 35px;
   text-align: center;
   font-style: normal;
   font-weight: normal;
-  font-size: 20px;
+  font-size: 32px;
   line-height: 30px;
   color: #060a5c;
  }
@@ -7028,7 +7033,7 @@ padding-left: 35px;
 
  .fs-13
  {
-  font-size: 11px;
+  font-size: 13px;
    color: #080C58;
    font-weight: 400;
  }
@@ -7134,7 +7139,7 @@ label {
   clear: none;
   display: block;
   padding: 0px 0.5rem 0px 8px;
-  font-size: 12px;
+  font-size: 16px;
 }
 .welcome
 {
@@ -7791,6 +7796,7 @@ padding-left: 35px;
   .contactheight
   {        
       height: 1600px;
+      top:145px;
   }
   .faqheight
   {
@@ -8323,7 +8329,7 @@ padding-left: 35px;
      
  }
  .get {
-  margin-left: 30px;
+  margin-left: 40px;
 }
 .reviews {
   width: 1020px;
@@ -8380,7 +8386,7 @@ padding-left: 35px;
  }
  .img3h4
  {
-  color: #F1F5F6; margin-left: 50px; font-family:Ubuntu;
+  color: #F1F5F6; margin-left: 60px; font-family:Ubuntu;
  }
  .img4h1
  {
@@ -8414,20 +8420,21 @@ padding-left: 35px;
 
  .img5h4
  {
-  text-align: justify; color: #F1F5F6; margin-left: 110px; font-family:Ubuntu
+  text-align: justify; color: #F1F5F6; margin-left: 120px; font-family:Ubuntu
  }
  .hands
  {
   margin-top: 104px;
-  margin-left: 80px;
-  font-family: Rubik;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 25px;
-  margin-bottom: 50px;
-  text-align: center;
-  width: 200px;
- }
+    margin-left: 0px;
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    margin-bottom: 50px;
+    text-align: center;
+    width: 360px;
+}
+ 
  .flexd
  {
      flex-direction: column;
@@ -8464,7 +8471,7 @@ padding-left: 35px;
   text-align: center;
   font-style: normal;
   font-weight: normal;
-  font-size: 20px;
+  font-size: 32px;
   line-height: 30px;
   color: #060a5c;
 }
@@ -8558,7 +8565,7 @@ padding-left: 35px;
 
  .fs-13
  {
-  font-size: 11px;
+  font-size: 13px;
    color: #080C58;
    font-weight: 400;
  }
@@ -8668,7 +8675,7 @@ label {
   clear: none;
   display: block;
   padding: 0px 0.5rem 0px 8px;
-  font-size: 12px;
+  font-size: 16px;
 }
 .welcome
 {
@@ -9280,6 +9287,7 @@ label {
   .contactheight
   {        
       height: 1600px;
+      top:145px;
   }
   .faqheight
   {
@@ -9788,7 +9796,7 @@ label {
  }
  #content1
  {
-     margin-left: 30px;
+     margin-left: 40px;
  }
  #content2
  {
@@ -9840,7 +9848,7 @@ label {
  }
  .img3h4
  {
-  color: #F1F5F6; margin-left: 50px; font-family:Ubuntu;
+  color: #F1F5F6; margin-left: 60px; font-family:Ubuntu;
  }
  .img4h1
  {
@@ -9925,7 +9933,7 @@ label {
   text-align: center;
   font-style: normal;
   font-weight: normal;
-  font-size: 20px;
+  font-size: 25px;
   line-height: 30px;
   color: #060a5c;
  }
@@ -9983,25 +9991,25 @@ label {
   font-size: 11px;
   color: #080C58;
   font-weight: 500;
-  margin-left: 40px;
+  margin-left: 30px;
   margin-top: 21px;
  }
  .div2
  {
   font-size: 11px;
-  padding-left: 40px;
+  padding-left: 30px;
   margin-top:230px;
  }
  .div3
  {
   font-size: 11px;
-  padding-left: 40px;
+  padding-left: 30px;
   margin-top: 0px;
  }
  .div4
  {
   font-size: 11px;
-  padding-left: 40px;
+  padding-left: 30px;
   margin-top: 0px;
  }
  .footh3
@@ -10013,7 +10021,7 @@ label {
 
  .fs-13
  {
-  font-size: 10px;
+  font-size: 13px;
    color: #080C58;
    font-weight: 400;
  }
@@ -10110,7 +10118,7 @@ label {
   clear: none;
   display: block;
   padding: 0px 0.5rem 0px 8px;
-  font-size: 12px;
+  font-size: 16px;
 }
 .welcome
 {
@@ -10758,6 +10766,7 @@ text-decoration: none;
     .contactheight
     {        
         height: 1600px;
+        top:145px;
     }
     .faqheight
     {
@@ -11305,7 +11314,7 @@ text-decoration: none;
    }
    .img3h4
    {
-    color: #F1F5F6; margin-left: 20px; font-family:Ubuntu;
+    color: #F1F5F6; margin-left: 30px; font-family:Ubuntu;
    }
    .img4h1
    {
@@ -11393,7 +11402,7 @@ text-decoration: none;
   text-align: center;
   font-style: normal;
   font-weight: normal;
-  font-size: 20px;
+  font-size: 25px;
   line-height: 30px;
   color: #060a5c;
    }
@@ -11451,22 +11460,22 @@ text-decoration: none;
     font-size: 10px;
     color: #080C58;
     font-weight: 500;
-    margin-left: 30px;
+    margin-left: 20px;
     margin-top: 21px;
    }
    .div2
    {
-    padding-left: 30px;
+    padding-left: 20px;
     margin-top:230px;
    }
    .div3
    {
-    padding-left: 30px;
+    padding-left: 20px;
     margin-top: 0px;
    }
    .div4
    {
-    padding-left: 30px;
+    padding-left: 20px;
     margin-top: 0px;
    }
    .footh3
@@ -11478,7 +11487,7 @@ text-decoration: none;
 
    .fs-13
    {
-    font-size: 9px;
+    font-size: 13px;
      color: #080C58;
      font-weight: 400;
    }

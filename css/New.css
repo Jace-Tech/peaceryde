@@ -630,7 +630,7 @@
     }
     .new-section1__group.layout2 {
       position: relative;
-      height: 500px;
+      height: 400px;
       margin-top: 130px;
   }
  
@@ -872,7 +872,7 @@
   @media (max-width: 320px){
     .new-section1__medium-title.layout {
         width: 88.69%;
-        margin: 5px 10px 0px;
+        margin: 5px 13px 0px;
     }}
 @media (max-width: 280px){
   .new-section1__medium-title.layout {
@@ -937,7 +937,7 @@
       margin: 32px 2.28% 23px 30px; } }
   @media (max-width: 320px) {
     .new-section1__block11.layout {
-      margin: 32px 2.28% 23px 30px; } }
+      margin: 32px 2.28% 23px 13px; } }
   @media (max-width: 280px) {
     .new-section1__block11.layout {
       margin: 32px 2.28% 23px 10px; } }
@@ -2113,9 +2113,9 @@
   @media (max-width: 575px) {
     .new-section2__block12.layout {
       margin: 0px 0px 58px; width:250px; height: 380px; } }
-  @media (max-width: 479px) {
+  @media (max-width: 480px) {
     .new-section2__block12.layout {
-      margin: 0px 0px 40px; width:270px } }
+      margin: 0px 0px 40px; width:270px;height: 420px; } }
   @media (max-width: 384px) {
     .new-section2__block12.layout {
       margin: 0px 40px 40px;
@@ -2127,12 +2127,12 @@
     } }
     @media (max-width: 320px) {
       .new-section2__block12.layout {
-        margin: 0px auto 40px;
+        margin: 0px auto 80px;
         width:230px
       } }
   @media (max-width: 280px) {
     .new-section2__block12.layout {
-      margin: 0px auto 40px;
+      margin: 0px auto 80px;
       width:230px
     } }
 
@@ -2182,9 +2182,9 @@
   @media (max-width: 767px) {
     .new-section2__highlights6 {
       font-size: 13px; } }
-  @media (max-width: 479px) {
+  @media (max-width: 540px) {
     .new-section2__highlights6 {
-      font-size: 12px; } }
+      font-size: 17px; } }
 
 .new-section2__highlights6.layout {
   position: relative;
@@ -2316,6 +2316,9 @@
   @media (max-width: 575px) {
     .new-section2__paragraph-body1 {
       font-size: 12px; } }
+      @media (max-width: 480px) {
+        .new-section2__paragraph-body1 {
+          font-size: 14px; } }
 
 .new-section2__block13a {
   display: flex;
@@ -5592,30 +5595,30 @@
           margin: 100px 177px 0px; } }
   @media (max-width: 991px) {
     .new-section6__hero-title1.layout {
-      margin: 14px 114px 0px 84px } }
+      margin: 44px 114px 0px 84px } }
   @media (max-width: 853px) {
     .new-section6__hero-title1.layout {
-      margin: 14px auto 0px; } }
+      margin: 34px 60px 0px; } }
   @media (max-width: 800px) {
     .new-section6__hero-title1.layout {
       
-      margin: 12px auto 0px; } }
+      margin: 32px 40px 0px; } }
       @media (max-width: 768px) {
         .new-section6__hero-title1.layout {
           
-          margin: 12px 49px 0px; } }
+          margin: 32px 29px 0px } }
           @media (max-width: 720px) {
             .new-section6__hero-title1.layout {
               
-              margin: 12px 25px 0px; } }
+              margin: 32px 25px 0px; } }
               @media (max-width: 640px) {
                 .new-section6__hero-title1.layout {
                   
-                  margin: 12px 85px 0px; } }
+                  margin: 32px 85px 0px; } }
                   @media (max-width: 603px) {
                     .new-section6__hero-title1.layout {
                       
-                      margin: 12px 60px 0px; } }
+                      margin: 32px 60px 0px; } }
           
   @media (max-width: 575px) {
     .new-section6__hero-title1.layout {
@@ -5624,16 +5627,16 @@
   @media (max-width: 480px) {
     .new-section6__hero-title1.layout {
       width: 100%;
-      margin: 10px -55px 0px; } }
+      margin: 10px 1px 0px; } }
       @media (max-width: 428px) {
         .new-section6__hero-title1.layout {
           width: 100%;
-          margin: 10px -35px 0px; } }
+          margin: 10px 1px 0px; } }
   
   @media (max-width: 414px) {
     .new-section6__hero-title1.layout {
       width: 100%;
-      margin: 10px -15px 0px; } }
+      margin: 10px 1px 0px; } }
   @media (max-width: 383px) {
     .new-section6__hero-title1.layout {
       width: 100%;
