@@ -14,6 +14,11 @@
 {
   width: 513px;
   height: 344px;
+  margin-left:35px;
+}
+.nbitext2
+{
+  margin-left: 35px;
 }
 .mt-99
 {
@@ -590,10 +595,10 @@ button:focus:not(:focus-visible) {
         font-size: 18px;
         line-height: 35px;
        
-        width: 600px;
+        width: 500px;
     }
     .cont{
-        margin-top: 139px; padding-left: 806px;
+        margin-top: 79px; padding-left: 806px;
     }
     .contactcard
     {
@@ -1792,12 +1797,12 @@ label {
       width: 513px;
   }
     .cont{
-        margin-top: 139px; padding-left: 406px;
+        margin-top: 79px; padding-left: 506px;
     }
     .contactcard
     {
         border: transparent;
-        border-radius: 25px; margin-left: 50px;
+        border-radius: 25px; margin-left: -50px;
         width: 566px;
     }
     .contactform
@@ -2998,7 +3003,7 @@ label {
         width: 600px;
     }
     .cont{
-        margin-top: 139px; padding-left: 306px;
+        margin-top: 79px; padding-left: 306px;
     }
     .contactcard
     {
@@ -4187,7 +4192,7 @@ label {
       width: 600px;
   }
     .cont{
-        margin-top: 139px; padding-left: 306px;
+        margin-top: 79px; padding-left: 306px;
     }
     .contactcard
     {
@@ -5350,6 +5355,9 @@ label {
       width: 513px;
       height: 344px;
     }
+    .nbitext2 {
+      width: 513px;
+  }
     .nbitext
     {
         font-size: 18px;
@@ -5364,7 +5372,7 @@ label {
         width: 600px;
     }
     .cont{
-        margin-top: 139px; padding-left: 306px;
+        margin-top: 79px; padding-left: 306px;
     }
     .contactcard
     {
@@ -6535,7 +6543,7 @@ label {
     }
     
     .cont{
-        margin-top: 139px; padding-left: 206px;
+        margin-top: 79px; padding-left: 206px;
     }
     .contactcard
     {
@@ -7717,10 +7725,10 @@ label {
     .nbitext2
     {
       padding-left: 25px;
-        width: 600px;
+        width: 700px;
     }
     .cont{
-        margin-top: 139px; padding-left: 206px;
+        margin-top: 79px; padding-left: 206px;
     }
     .contactcard
     {
@@ -8916,10 +8924,10 @@ label {
       .nbitext2
       {
         padding-left: 25px;
-          width: 513px;
+          width: 600px;
       }
       .cont{
-          margin-top: 139px; padding-left: 186px;
+          margin-top: 79px; padding-left: 186px;
       }
       .contactcard
       {
@@ -11015,10 +11023,10 @@ label {
       .nbitext2
       {
         padding-left: 25px;
-          width: 513px;
+          width: 600px;
       }
     .cont{
-        margin-top: 139px; padding-left: 156px;
+        margin-top: 79px; padding-left: 156px;
     }
     .contactcard
     {
@@ -12149,16 +12157,16 @@ label {
     .nbitext2
     {
       padding-left: 25px;
-        width: 443px;
+        width: 500px;
     }
     .cont{
-        margin-top: 139px; padding-left: 126px;
+        margin-top: 79px; padding-left: 116px;
     }
     .contactcard
     {
         border: transparent;
-                            border-radius: 25px; margin-left: 0px;
-                            width: 366px;
+                            border-radius: 25px; margin-left: -30px;
+                            width: 446px;
     }
     .contactform
     {

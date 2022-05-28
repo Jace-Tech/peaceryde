@@ -96,7 +96,7 @@
         height: 1500px;
     }
     .cont{
-        margin-top: 19px; padding-left: 116px;
+        margin-top: 0px; padding-left: 116px;
     }
     .contactcard
     {
@@ -1544,7 +1544,7 @@ label {
         height: 1500px;
     }
     .cont{
-        margin-top: 9px; padding-left: 86px;
+        margin-top: 0px; padding-left: 86px;
     }
     .contactcard
     {
@@ -1681,7 +1681,7 @@ label {
         letter-spacing: 0.04em;
         padding-left: 48px; 
         padding-top: 61px;
-        width: 350px;
+        width: 370px;
     }
    
     .buttons2 {
@@ -3118,7 +3118,7 @@ padding-left: 35px;
       height: 1500px;
   }
   .cont{
-      margin-top: 19px; padding-left: 56px;
+      margin-top: 0px; padding-left: 56px;
   }
   .contactcard
   {
@@ -4041,7 +4041,7 @@ label {
   clear: none;
   display: block;
   padding: 0px 0.5rem 0px 8px;
-  font-size: 12px;
+  font-size: 16px;
 }
 .welcome
 {
@@ -5607,7 +5607,7 @@ label {
   clear: none;
   display: block;
   padding: 0px 0.5rem 0px 8px;
-  font-size: 12px;
+  font-size: 16px;
 }
 .welcome
 {
@@ -6265,6 +6265,7 @@ padding-left: 35px;
   .contactheight
   {        
       height: 1600px;
+      top:145px;
   }
   .faqheight
   {
@@ -7138,7 +7139,7 @@ label {
   clear: none;
   display: block;
   padding: 0px 0.5rem 0px 8px;
-  font-size: 12px;
+  font-size: 16px;
 }
 .welcome
 {
@@ -7795,6 +7796,7 @@ padding-left: 35px;
   .contactheight
   {        
       height: 1600px;
+      top:145px;
   }
   .faqheight
   {
@@ -8673,7 +8675,7 @@ label {
   clear: none;
   display: block;
   padding: 0px 0.5rem 0px 8px;
-  font-size: 12px;
+  font-size: 16px;
 }
 .welcome
 {
@@ -9285,6 +9287,7 @@ label {
   .contactheight
   {        
       height: 1600px;
+      top:145px;
   }
   .faqheight
   {
@@ -10115,7 +10118,7 @@ label {
   clear: none;
   display: block;
   padding: 0px 0.5rem 0px 8px;
-  font-size: 12px;
+  font-size: 16px;
 }
 .welcome
 {
@@ -10763,6 +10766,7 @@ text-decoration: none;
     .contactheight
     {        
         height: 1600px;
+        top:145px;
     }
     .faqheight
     {

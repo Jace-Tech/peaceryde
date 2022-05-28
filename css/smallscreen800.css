@@ -1281,7 +1281,7 @@
     .nbitext2
     {
       margin-left: -75px;
-      width: 403px;
+      width: 353px;
     }
     .col-md-1
     {
@@ -4938,10 +4938,7 @@
     margin-left: 0px;
 }
 
-.cont{
-    margin-top: 139px;
-    padding-left: 206px;
-}
+
     /*INDEX PAGE*/
     .new-section1__flex1.layout {
         width: 100%;
@@ -5964,7 +5961,7 @@
       display: none;
     }
     .cont{
-        margin-top: 139px; padding-left: 136px;
+        margin-top: 20px; padding-left: 136px;
     }
     .contactcard
     {
