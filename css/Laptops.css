@@ -412,7 +412,7 @@ button:focus:not(:focus-visible) {
 @media (max-width: 2560px) {
   .btn-review
 {
-  margin: 100px 1180px;
+  margin: 10px 1180px;
   width:200px;
 }
   .mobilelang {
@@ -1067,7 +1067,7 @@ margin-left: 550px;
    }
    .reviews
    {
-     margin: 0px 600px;
+     margin: 120px 600px;
    }
    .cardwidth
    {
@@ -1627,7 +1627,7 @@ label {
   .btn-review
 {
   margin-left: 900px;
-  margin-top:100px;
+  margin-top:10px;
 }
   .mobilelang {
     display: none;
@@ -2831,7 +2831,7 @@ label {
   .btn-review
 {
   margin-left: 760px;
-  margin-top:100px;
+  margin-top:10px;
 }
   .mobilelang {
     display: none;
@@ -4017,7 +4017,7 @@ label {
   .btn-review
 {
   margin-left: 700px;
-  margin-top:100px;
+  margin-top:10px;
 }
   .mobilelang {
     display: none;
@@ -5202,7 +5202,7 @@ label {
   .btn-review
 {
   margin-left: 600px;
-  margin-top:100px;
+  margin-top:10px;
 }
   .mobilelang {
     display: none;
@@ -6192,7 +6192,7 @@ label {
     margin: 0px 200px;
   }
   .btn-review {
-    margin: 100px 720px;
+    margin: 10px 720px;
     width: 160px;
 }
   /*Review*/
@@ -6389,7 +6389,7 @@ label {
 @media (max-width: 1536px) {
   .btn-review
 {
-  margin: 100px 680px;
+  margin: 10px 680px;
   width: 160px;
 }
   .mobilelang {
@@ -8561,7 +8561,7 @@ label {
     margin: 0px 85px 0px 310px;
   }
   .btn-review {
-    margin: 100px 640px;
+    margin: 10px 640px;
     width: 160px;
 }
   /*Review*/
@@ -9782,7 +9782,7 @@ label {
       margin: 0px 85px 0px 280px;
   }
     .btn-review {
-      margin: 100px 605px;
+      margin: 10px 605px;
       width: 160px;
   }
     .reviewtext
@@ -10252,7 +10252,7 @@ label {
        color: #0A0E69;
      }
      .btn-review {
-      margin: 100px 565px;
+      margin: 10px 565px;
       width: 160px;
   }
      .lg-li
@@ -11331,7 +11331,7 @@ label {
             margin: 0px 150px;
          }
          .btn-review {
-          margin: 100px 435px;
+          margin: 10px 435px;
           width: 160px;
       }
 

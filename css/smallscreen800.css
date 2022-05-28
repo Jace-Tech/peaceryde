@@ -219,6 +219,7 @@
      }
      .adp {
       margin-top: -2px;
+      margin-left: -10px;
   }
     .form {
         width: 215px;
@@ -268,8 +269,9 @@
     }
     .shop
     {
-        margin-left:-17.5%;
+        margin-left:-18.5%;
         font-family: rubik;
+        font-size: 14px;
     }
     .bannertext {
 
@@ -588,6 +590,7 @@
       font-size: 32px;
       line-height: 41px;
       color: #060a5c;
+      margin-top: 20px;
      }
      .mt-99
      {
@@ -647,29 +650,29 @@
       padding-top: 18px;
       padding-bottom: 18px;
       width: 100%;
-      margin-left: 20px;
+      margin-left: 10px;
      }
      .locaddress
      {
-      font-size: 10px;
+      font-size: 11px;
        color: #0A0E69;
         text-decoration: none;
          margin-top: -2px;
      }
      .shorttest
      {
-      font-size: 10px; color: #0A0E69; margin-left: -57px; margin-top:6px;
+      font-size: 11px; color: #0A0E69; margin-left: -57px; margin-top:6px;
      }
      .policy {
       margin-top: -1px;
   }
      .privacy
      {
-      font-size: 10px; color: #0A0E69; text-decoration: none;padding:0px 0px ;margin-left: -17px;
+      font-size: 11px; color: #0A0E69; text-decoration: none;padding:0px 0px ;margin-left: -17px;
      }
      .tc
      {
-      font-size: 10px; margin-left: -27px; color: #0A0E69;text-decoration: none;
+      font-size: 11px; margin-left: -27px; color: #0A0E69;text-decoration: none;
      }
      .aboutpageheight
      {
@@ -1421,7 +1424,7 @@
     .hands
      {
       margin: 94px auto 0px;
-      font-family: Rubik;font-style: normal;font-weight: normal;font-size: 35px;
+      font-family: Rubik;font-style: normal;font-weight: normal;font-size: 32px;
      }
     .form {
         width: 215px;
@@ -1471,7 +1474,7 @@
     }
     .shop
     {
-        margin-left:-12.5%;
+        margin-left:-13.5%;
         font-family: rubik;
     }
     .bannertext {
@@ -1494,7 +1497,7 @@
     .home
       {
           color: #000000; 
-          margin-left:5px; 
+          margin-left:60px; 
           margin-top: 5px;
           font-family: Ubuntu;
           font-style: normal;
@@ -1505,7 +1508,7 @@
       .visa
       {
           color: #000000; 
-          margin-left:5px; 
+          margin-left:60px; 
           margin-top: 5px;
           font-family: Ubuntu;
           font-style: normal;
@@ -1516,7 +1519,7 @@
       .services
       {
           color: #000000; 
-          margin-left:5px; 
+          margin-left:60px; 
           margin-top: 5px;
           font-family: Ubuntu;
           font-style: normal;
@@ -1528,7 +1531,7 @@
       {
           width: 100%; 
           color: #000000;
-          margin-left:5px; 
+          margin-left:60px; 
           margin-top: 5px;
           font-family: Ubuntu;
           font-style: normal;
@@ -1543,7 +1546,7 @@
       .about{
           width: 100%;
           color: #000000;
-          margin-left:5px; 
+          margin-left:60px; 
           margin-top: 5px;
           font-family: Ubuntu;
           font-style: normal;
@@ -1586,7 +1589,7 @@
           padding: 10px 23px;
         }
         .button2 {
-            background-color: #FBFCFB;
+            background-color: #ffffff;
             width: 89px;
             height: 36px;
             left: 1042px;
@@ -1774,7 +1777,7 @@
       font-family: Rubik;
       font-style: normal;
       font-weight: normal;
-      font-size: 35px;
+      font-size: 32px;
       line-height: 41px;
       color: #060a5c;
      }
@@ -2616,7 +2619,7 @@
     .hands
      {
       margin: 94px auto 0px;
-      font-family: Rubik;font-style: normal;font-weight: normal;font-size: 35px;
+      font-family: Rubik;font-style: normal;font-weight: normal;font-size: 32px;
      }
     .form {
         width: 215px;
@@ -2666,7 +2669,7 @@
     }
     .shop
     {
-        margin-left:-12.5%;
+        margin-left:-13.5%;
         font-family: rubik;
     }
     .bannertext {
@@ -2782,7 +2785,7 @@
           padding: 10px 23px;
         }
         .button2 {
-            background-color: #FBFCFB;
+            background-color: #ffffff;
             width: 89px;
             height: 36px;
             left: 1042px;
@@ -2971,7 +2974,7 @@
       font-family: Rubik;
       font-style: normal;
       font-weight: normal;
-      font-size: 35px;
+      font-size: 32px;
       line-height: 41px;
       color: #060a5c;
      }
@@ -3021,13 +3024,13 @@
      }
      .lastfooter
      {
-        padding-left: 14px;
+        padding-left: 0px;
         padding-right: 0px;
      }
      .lastfooterrow
      {
       padding-top: 18px; padding-bottom: 18px;
-      width: 100%; margin-left: 10px;
+      width: 100%; margin-left: 0px;
      }
      .locaddress
      {
@@ -3038,15 +3041,15 @@
      }
      .shorttest
      {
-      font-size: 10px; color: #0A0E69; margin-left: -47px;
+      font-size: 10px; color: #0A0E69; margin-left: -37px;
      }
      .privacy
      {
-      font-size: 10px; color: #0A0E69; text-decoration: none;padding:0px 0px ;margin-left: -37px;
+      font-size: 10px; color: #0A0E69; text-decoration: none;padding:0px 0px ;margin-left: -7px;
      }
      .tc
      {
-      font-size: 10px; margin-left: -27px; color: #0A0E69;text-decoration: none;
+      font-size: 10px; margin-left: -7px; color: #0A0E69;text-decoration: none;
      }
      .aboutpageheight
      {
@@ -3803,7 +3806,7 @@
     .hands
      {
       margin: 94px auto 0px;
-      font-family: Rubik;font-style: normal;font-weight: normal;font-size: 35px;
+      font-family: Rubik;font-style: normal;font-weight: normal;font-size: 32px;
      }
     .form {
         width: 215px;
@@ -3853,7 +3856,7 @@
     }
     .shop
     {
-        margin-left:-13%;
+        margin-left:-13.5%;
         font-family: rubik;
     }
     .bannertext {
@@ -4157,7 +4160,7 @@
       font-family: Rubik;
       font-style: normal;
       font-weight: normal;
-      font-size: 35px;
+      font-size: 32px;
       line-height: 41px;
       color: #060a5c;
      }
@@ -4965,7 +4968,7 @@
     .hands
      {
       margin: 94px auto 0px;
-      font-family: Rubik;font-style: normal;font-weight: normal;font-size: 35px;
+      font-family: Rubik;font-style: normal;font-weight: normal;font-size: 32px;
      }
     .form {
         width: 215px;
@@ -5015,7 +5018,7 @@
     }
     .shop
     {
-        margin-left:-12.5%;
+        margin-left:-14%;
         font-family: rubik;
     }
     .logoimg
@@ -5172,16 +5175,15 @@
          }
      .img2h1
      {
-      font-size: 16px;
+      font-size: 32px;
       text-align: justify;
       color: #F1F5F6;
-      margin-left:76px ;
+      margin-left:66px ;
       font-family: Ubuntu;
       margin-top: 10px;
       font-family: Rubik;
       font-style: normal;
-      font-weight: 500;
-      font-size: 23px;
+      font-weight: 200;
       line-height: 20px;
      }
      .img2h4
@@ -5190,7 +5192,7 @@
      }
      .img3h1
      {
-      font-size: 16px;
+      font-size: 32px;
       text-align: justify;
       color: #F1F5F6;
       margin-left: 76px;
@@ -5201,7 +5203,8 @@
      {
       text-align: justify;
       color: #F1F5F6;
-      margin-left: 76px;
+      margin-left: 66px;
+      font-size: 32px;
 
      }
      .img4h4
@@ -5217,8 +5220,8 @@
       margin-top: 10px;
       font-family: Rubik;
       font-style: normal;
-      font-weight: 500;
-      font-size: 23px;
+      font-weight: 200;
+      font-size: 32px;
       line-height: 20px;
      }
   
@@ -5256,10 +5259,10 @@
                 border-radius: 0px;
             }
         .img1h1 {
-            font-size: 23px;
+            font-size: 32px;
             color: #F1F5F6;
             font-family: Ubuntu;
-            margin-top: 10px;
+            margin-top: 1px;
             height: 20px;
             width: 11px;
             padding-left: 122px;
@@ -5269,7 +5272,7 @@
             font-family: Ubuntu;
             height: 20px;
             margin-left: -70px;
-            margin-top: 16px;
+            margin-top: 26px;
             white-space: nowrap;
         }
         #content1 {
@@ -5301,7 +5304,7 @@
       font-family: Rubik;
       font-style: normal;
       font-weight: normal;
-      font-size: 35px;
+      font-size: 32px;
       line-height: 41px;
       color: #060a5c;
      }
@@ -5364,20 +5367,21 @@
        color: #0A0E69;
         text-decoration: none;
          margin-top: -2px;
+         margin-left: 50px;
      }
      .shorttest
      {
       font-size: 11px; color: #0A0E69;
       padding-top: 8px;
-      padding-bottom: 8px; margin-left: 0px;
+      padding-bottom: 8px; margin-left: 38px;
      }
      .privacy
      {
-      font-size: 11px; color: #0A0E69; text-decoration: none; margin-left: 0px;
+      font-size: 11px; color: #0A0E69; text-decoration: none; margin-left: 38px;
      }
      .tc
      {
-      font-size: 11px; margin-left: 0px; color: #0A0E69;text-decoration: none;
+      font-size: 11px; margin-left: 38px; color: #0A0E69;text-decoration: none;
      }
      .aboutpageheight
      {
@@ -6088,7 +6092,7 @@
     .hands
      {
       margin: 94px auto 0px;
-      font-family: Rubik;font-style: normal;font-weight: normal;font-size: 25px;
+      font-family: Rubik;font-style: normal;font-weight: normal;font-size: 32px;
      }
     .form {
         width: 150px;
@@ -6138,7 +6142,7 @@
     }
     .shop
     {
-        margin-left:-15%;
+        margin-left:-14%;
         font-family: rubik;
     }
     .bannertext {
@@ -6457,7 +6461,7 @@
       font-family: Rubik;
       font-style: normal;
       font-weight: normal;
-      font-size: 25px;
+      font-size: 32px;
       line-height: 41px;
       color: #060a5c;
      }
@@ -7293,7 +7297,7 @@
     .hands
      {
       margin: 80px auto 0px;
-      font-family: Rubik;font-style: normal;font-weight: normal;font-size: 25px;
+      font-family: Rubik;font-style: normal;font-weight: normal;font-size: 32px;
      }
     .form {
         width: 150px;
@@ -7358,7 +7362,7 @@
     }
     .shop
     {
-        margin-left:-12%;
+        margin-left:-14%;
         font-family: rubik;
     }
     .bannertext {
@@ -7523,7 +7527,7 @@
   }
          .reviews{
             width:1020px;
-            margin:0px 200px 100px;
+            margin:100px 200px 100px;
          }
          .btn-review {
           margin: 0px 220px 100px;
@@ -7535,10 +7539,10 @@
 
      .img2h1
      {
-      font-size: 16px;
+      font-size: 32px;
       text-align: justify;
       color: #F1F5F6;
-      margin-left:86px ;
+      margin-left:80px ;
 
      }
      .img2h4
@@ -7547,18 +7551,19 @@
      }
      .img3h1
      {
-      font-size: 16px;
+      font-size: 32px;
       text-align: justify;
       color: #F1F5F6;
-      margin-left: 90px;
+      margin-left: 83px;
    
      }
    
      .img4h1
      {
+      font-size: 32px;
       text-align: justify;
       color: #F1F5F6;
-      margin-left: 86px;
+      margin-left: 80px;
   
      }
      .img4h4
@@ -7568,6 +7573,7 @@
   
      .img5h1
      {
+       font-size: 32px;
       text-align: justify;
       color: #F1F5F6;
       margin-left: 50px;
@@ -7604,7 +7610,7 @@
          margin-right: 46px;
         }
         .img1h1 {
-            font-size: 23px;
+            font-size: 32px;
             color: #F1F5F6;
             font-family: Ubuntu;
             margin-top: 10px;
@@ -7648,14 +7654,14 @@
      }
      .customers
      {
-    
       height: 41px;
       font-family: Rubik;
       font-style: normal;
       font-weight: normal;
-      font-size: 25px;
+      font-size: 32px;
       line-height: 41px;
       color: #060a5c;
+      text-align: center;
      }
      .subscribe
      {
@@ -7719,11 +7725,12 @@
      }
      .shorttest
      {
-      font-size: 14px; color: #0A0E69;
+      font-size: 14px; color: #0A0E69;margin-left: 0px;
+      white-space: pre-line;
      }
      .privacy
      {
-      font-size: 14px; color: #0A0E69; text-decoration: none;
+      font-size: 14px; color: #0A0E69; text-decoration: none;margin-left: 0px;
      }
      .tc
      {
