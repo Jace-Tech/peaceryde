@@ -495,6 +495,8 @@
                 <div class="new-section6__flex4 layout">
                     <h1 class="new-section6__hero-title1 layout customers">
                         What our customers have to say about us
+
+                        
                     </h1>
                     <div class="row reviews mt-99">
                         <div class="col-md-2 hide"></div>
