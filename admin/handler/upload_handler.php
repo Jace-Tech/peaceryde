@@ -29,7 +29,6 @@ if(isset($_POST['approve'])) {
             "alert_type" => "error",
             "alert_message" => "Something went wrong"
         ];
-
         $_SESSION['ADMIN_ALERT'] = json_encode($alert);
 
         header("Location: ../uploads.php?id=$user");
