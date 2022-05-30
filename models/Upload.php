@@ -18,7 +18,7 @@ class Upload {
         $file = $file['tmp_name'];
         $file_ext = explode('.', $file['name'])[count(explode('.', $file['name'])) - 1];
 
-        $extensions = array("jpeg", "jpg", "png", "pdf");
+        $extensions = array("image/jpeg", "image/jpg", "image/png", "application/pdf");
 
         if(!in_array($file_ext, $extensions)){
             return [
@@ -111,6 +111,27 @@ class Upload {
         else return false;
     }
 
+    public function approveFile($file_id)
+    {
+        $query = "UPDATE `uploads` SET `status` = 'approved' WHERE `id` = :id";
+        $result = $this->connection->prepare($query);
+        $result->execute([
+            'id' => $file_id,
+        ]);
 
-    
+        if($result) return 1;
+        else return 0;
+    }
+
+    public function disapproveFile($file_id)
+    {
+        $query = "UPDATE `uploads` SET `status` = 'disapproved' WHERE `id` = :id";
+        $result = $this->connection->prepare($query);
+        $result->execute([
+            'id' => $file_id,
+        ]);
+
+        if($result) return 1;
+        else return 0;
+    }
 }
