@@ -309,9 +309,19 @@ $PRICE = json_decode($_SESSION["PRICE"], true);
     </div>
 
     <script>
-        const radioBtn = document.querySelector('[name=payment_option]')
+        const radioBtns = document.querySelectorAll('[name=payment_option]')
 
-        console.log(radioBtn)
+        radioBtns.forEach(btn => {
+            btn.addEventListener("click", () => {
+                if(btn.value === "card") {
+                    document.querySelector(".hidden-box").style.display = "block"
+                }
+                else {
+                    document.querySelector(".hidden-box").style.display = "none"
+                }
+            })
+        })
+
     </script>
 </body>
 
