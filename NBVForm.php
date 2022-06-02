@@ -31,11 +31,9 @@
   <script type="text/javascript" src="https://unpkg.com/headroom.js@0.12.0/dist/headroom.min.js"></script>
   <script src="https://cdn.jsdelivr.net/gh/px2code/posize/build/v1.00.3.js"></script>
   <style>
-
-
-
-
-
+    .error {
+      border-color: #f00;
+    }
   </style>
 </head>
 
@@ -372,7 +370,7 @@
                   </div>
                 </div>
                 <p class="formml please">Please select below your Nationality (as on passport)</p>
-                <select id="country" name="country" class="form-select formml select" aria-label="Default select example">
+                <select required id="country" name="country" class="form-select formml select" aria-label="Default select example">
                   <option value="Afganistan">Afghanistan</option>
                   <option value="Albania">Albania</option>
                   <option value="Algeria">Algeria</option>
@@ -684,6 +682,21 @@
       </div>
     </div>
   </div>
+
+  <script>
+    const passportInput = document.querySelector('[name=passport]');
+
+    passportInput.addEventListener('blur', () => {
+      if(passportInput.value.length < 9) {
+        passportInput.classList.add('error')
+      }
+      else {
+       if(passportInput.classList.contains('error')) {
+         passportInput.classList.remove('error')
+       }
+      }
+    })
+  </script>
 
   <script>
     function onYes() {
