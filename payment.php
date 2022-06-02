@@ -11,7 +11,6 @@ $service = $userServices->getService($userId);
 $service_name = $services->getUserService($service['service_id'])['service'];
 
 $PRICE = json_decode($_SESSION["PRICE"], true);
-print_r($PRICE);
 ?>
 
 
@@ -38,6 +37,12 @@ print_r($PRICE);
     <script src="https://cdn.jsdelivr.net/gh/px2code/posize/build/v1.00.3.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
+
+    <style>
+        .hidden-box {
+            display: none;
+        }
+    </style>
 </head>
 
 <body style="background-color: #1161D9; overflow-x: hidden;">
@@ -130,9 +135,9 @@ print_r($PRICE);
                 <div class="reviewline"></div>
                 <div class="reviewline"></div>
             </div>
-        
-        <!-- TWP -->
-        <?php elseif($service['service_id'] === "srvs-001"): ?>
+
+            <!-- TWP -->
+        <?php elseif ($service['service_id'] === "srvs-001") : ?>
             <div class="col-lg-5 col-md-12 col-sm-12">
                 <img src="Dashboard/dist/image/logo.png" class="paymentlogoimg">
 
@@ -185,15 +190,15 @@ print_r($PRICE);
                         <p class="paymentservices">Total</p>
                     </div>
                     <div class="col-lg-4 col-md-4 col-sm-4">
-                        <p class="paymentprice"><?=  round($PRICE['total'], 2); ?></p>
+                        <p class="paymentprice"><?= round($PRICE['total'], 2); ?></p>
                     </div>
                 </div>
                 <div class="reviewline"></div>
                 <div class="reviewline"></div>
             </div>
-        
-        <!-- BI  -->
-        <?php else: ?>
+
+            <!-- BI  -->
+        <?php else : ?>
             <div class="col-lg-5 col-md-12 col-sm-12">
                 <img src="Dashboard/dist/image/logo.png" class="paymentlogoimg">
 
@@ -246,14 +251,14 @@ print_r($PRICE);
                         <p class="paymentservices">Total</p>
                     </div>
                     <div class="col-lg-4 col-md-4 col-sm-4">
-                        <p class="paymentprice"><?=  round($PRICE['total'], 2); ?></p>
+                        <p class="paymentprice"><?= round($PRICE['total'], 2); ?></p>
                     </div>
                 </div>
                 <div class="reviewline"></div>
                 <div class="reviewline"></div>
             </div>
         <?php endif; ?>
-        
+
         <div class="col-lg-6 col-md-12 col-sm-12">
             <div class="card leftcard">
                 <form method="post" action="./handlers/payment.php" style="margin-top: 31px;">
@@ -268,10 +273,10 @@ print_r($PRICE);
                         <input type="radio" name="payment_option" value="paystack" checked="checked" class="radioo">&nbsp; Paystack <br>
                         <input type="radio" name="payment_option" value="flutter" class="radioo"> &nbsp; Flutter Wave <br>
                         <div class="hidden-box">
-                        <p class="cardname">Name of card</p>
-                        <input type="text" name="card_name" class="form-control cardinput" placeholder="John Doe">
+                            <p class="cardname">Name of card</p>
+                            <input type="text" name="card_name" class="form-control cardinput" placeholder="John Doe">
 
-                        <p class="cardnumber">Card Number</p>
+                            <p class="cardnumber">Card Number</p>
                             <input type="text" name="card_no" class="form-control cardinput" placeholder="000 000 000 000 000">
 
                             <div class="row">
