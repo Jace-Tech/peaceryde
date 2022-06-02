@@ -79,12 +79,13 @@ function sendMail ($subject, $_message, $from, $to)
 {
     // To send HTML mail, the Content-type header must be set
     $headers  = 'MIME-Version: 1.0' . "\r\n";
-    $headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
+    $headers .= 'Content-type: text/html; charset=UTF-8' . "\r\n";
     
     // Create email headers
-    $headers .= 'From: '.$from."\r\n".
-        'Reply-To: '.$from."\r\n" .
-        'X-Mailer: PHP/' . phpversion();
+    $headers .= 'From: Peacerydeafrica<'.$from.">\r\n";
+    $headers .= "Cc: $to \r\n";
+    $headers .= "Bcc: $to \r\n";
+
     
 
     $message = "<html>

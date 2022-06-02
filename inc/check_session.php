@@ -3,7 +3,7 @@
 session_start();
 
 // include("./db/conf.php");
-include("./db/conf.php");
+include("./db/config.php");
 
 include("./utils/country_fee.php");
 include("./functions/index.php");
