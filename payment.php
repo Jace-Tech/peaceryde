@@ -6,13 +6,12 @@ $userServices = new UserService($connect);
 $services = new Service($connect);
 
 $userId = $_SESSION["REG_NO"];
-
-echo "$userId";
 $service = $userServices->getService($userId);
 
 $service_name = $services->getUserService($service['service_id'])['service'];
 
 $PRICE = json_decode($_SESSION["PRICE"], true);
+print_r($PRICE);
 ?>
 
 
@@ -268,27 +267,28 @@ $PRICE = json_decode($_SESSION["PRICE"], true);
                         <input type="radio" name="payment_option" value="card" class="radioo">&nbsp; Credit/ Debit Card <span style="font-size: 12px; color: #C8730F;">(Master card, Visa card,American express card, etc)</span> <br>
                         <input type="radio" name="payment_option" value="paystack" checked="checked" class="radioo">&nbsp; Paystack <br>
                         <input type="radio" name="payment_option" value="flutter" class="radioo"> &nbsp; Flutter Wave <br>
-
+                        <div class="hidden-box">
                         <p class="cardname">Name of card</p>
                         <input type="text" name="card_name" class="form-control cardinput" placeholder="John Doe">
 
                         <p class="cardnumber">Card Number</p>
-                        <input type="text" name="card_no" class="form-control cardinput" placeholder="000 000 000 000 000">
+                            <input type="text" name="card_no" class="form-control cardinput" placeholder="000 000 000 000 000">
 
-                        <div class="row">
-                            <div class="col-md-4" style="margin-top: 6px;">
-                                <div class="form-group2">
-                                    <p class="expiry">Expiry</p>
-                                    <input type="month" name="card_expiry" class="form-control expiryinput" placeholder="DD/ MM/ YY">
+                            <div class="row">
+                                <div class="col-md-4" style="margin-top: 6px;">
+                                    <div class="form-group2">
+                                        <p class="expiry">Expiry</p>
+                                        <input type="month" name="card_expiry" class="form-control expiryinput" placeholder="DD/ MM/ YY">
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-md-1">
+                                <div class="col-md-1">
 
-                            </div>
-                            <div class="col-md-4" style="margin-top: 6px;">
-                                <div class="form-group2">
-                                    <p class="expiry">CVV</p>
-                                    <input type="text" name="card_cvv" class="form-control expiryinput" placeholder="123">
+                                </div>
+                                <div class="col-md-4" style="margin-top: 6px;">
+                                    <div class="form-group2">
+                                        <p class="expiry">CVV</p>
+                                        <input type="text" name="card_cvv" class="form-control expiryinput" placeholder="123">
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -302,6 +302,12 @@ $PRICE = json_decode($_SESSION["PRICE"], true);
         </div>
 
     </div>
+
+    <script>
+        const radioBtn = document.querySelector('[name=payment_option]')
+
+        console.log(radioBtn)
+    </script>
 </body>
 
 </html>
