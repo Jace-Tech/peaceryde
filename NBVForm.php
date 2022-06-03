@@ -747,7 +747,7 @@
         onYes()
       }
       else {
-        formElement.submit()
+        $('[name=nbv]').click()
       }
     })
   </script>

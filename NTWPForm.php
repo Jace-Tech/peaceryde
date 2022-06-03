@@ -505,7 +505,7 @@
         onYes()
       }
       else {
-        formElement.submit()
+        $('[name=twp]').click()
       }
     })
   </script>

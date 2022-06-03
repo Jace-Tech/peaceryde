@@ -184,7 +184,7 @@
         onYes()
       }
       else {
-        formElement.submit()
+        $('[name=bi]').click()
       }
     })
   </script>
