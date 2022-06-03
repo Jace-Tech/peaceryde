@@ -629,8 +629,8 @@
                   </div>
                   <div class="form-check form-check-inline">
                     <div class="custom-control custom-radio">
-                      <label class="custom-control-label" for="customControlValidation3">Yes</label>
-                      <input type="radio" class="custom-control-input" value="1" onclick="onYes()" id="customControlValidation3" name="radio-stacked">
+                      <label class="custom-control-label" for="modal-yes">Yes</label>
+                      <input type="radio" class="custom-control-input" value="1" onclick="onYes()" id="modal-yes" name="radio-stacked">
                     </div>
                   </div>
                 </div>
@@ -739,11 +739,11 @@
   </script>
 
   <script>
-    const formElement = document.querySelector('form')
+    const formElement = document.querySelector('[data-form]')
 
     formElement.addEventListener('submit', (e) => {
       e.preventDefault();
-      if(document.querySelector("#customControlValidation3").checked) {
+      if(document.querySelector("#modal-yes").checked) {
         onYes()
       }
       else {

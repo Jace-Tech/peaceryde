@@ -55,7 +55,7 @@
               <p class="formp">Your personal details</p>
             </div>
             <div>
-              <form action="./handlers/form_handler.php" method="post">
+              <form id="main-form" action="./handlers/form_handler.php" method="post">
                 <select class="form-select title" aria-label="Default select example" required class="form-select" name="title">
                   <option selected>Title</option>
                   <?php foreach ($titles as $title) : ?>
@@ -388,8 +388,8 @@
                   </div>
                   <div class="form-check form-check-inline">
                     <div class="custom-control custom-radio">
-                      <label class="custom-control-label" for="customControlValidation3">Yes</label>
-                      <input type="radio" class="custom-control-input" value="1" onclick="onYes()" id="customControlValidation3" name="radio-stacked">
+                      <label class="custom-control-label" for="modal-yes">Yes</label>
+                      <input type="radio" class="custom-control-input" value="1" onclick="onYes()" id="modal-yes" name="radio-stacked">
                     </div>
                   </div>
                 </div>
@@ -497,11 +497,11 @@
     }
   </script>
    <script>
-    const formElement = document.querySelector('form')
+    const formElement = document.querySelector('[data-form]')
 
     formElement.addEventListener('submit', (e) => {
       e.preventDefault();
-      if(document.querySelector("#customControlValidation3").checked) {
+      if(document.querySelector("#modal-yes").checked) {
         onYes()
       }
       else {
