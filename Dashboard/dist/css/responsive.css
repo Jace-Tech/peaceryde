@@ -1,4 +1,5 @@
 @media(min-width:900px) and (max-width: 2560px) {
+
   /*UPLOAD*/ 
   .drop-zone {
     width: 527px;
@@ -14,7 +15,15 @@
     background-color: #ffffff;
     border: 1px dashed #0A0E69;
     border-radius: 10px;
-}                            
+}       
+.add
+{
+  font-family: Ubuntu;padding-left:255px;color:#ffffff;font-size: 13px;font-style: normal;font-weight: 400;
+}  
+.debittext
+{
+  font-family: Ubuntu;padding-left:32px;color:#ffffff;font-size: 18px;font-style: normal;font-weight: 400;
+}                   
 .left-sidebar a:hover {
   color: #f1f1f1;
 }
@@ -155,7 +164,7 @@
   /*Track progress*/
   .progresscard
   {
-    width:925px;height:440px;background-color: #f7f7f7; margin-top: 68px; margin-left: 17px;
+    width:890px;height:440px;background-color: #f7f7f7; margin-top: 68px; margin-left: 17px;
     overflow-x:auto;
   }
   .progressservice
@@ -486,7 +495,14 @@
 .left-sidebar a:hover {
   color: #f1f1f1;
 }
-
+.add
+{
+  font-family: Ubuntu;padding-left:255px;color:#ffffff;font-size: 13px;font-style: normal;font-weight: 400;
+} 
+.debittext
+{
+  font-family: Ubuntu;padding-left:32px;color:#ffffff;font-size: 18px;font-style: normal;font-weight: 400;
+}  
 .left-sidebar .closebtn {
   position: absolute;
   top: 0;
@@ -623,7 +639,7 @@
   /*Track progress*/
   .progresscard
   {
-    width:925px;height:440px;background-color: #f7f7f7; margin-top: 68px; margin-left: 17px;
+    width:700px;height:440px;background-color: #f7f7f7; margin-top: 68px; margin-left: 17px;
     overflow-x:auto;
   }
   .progressservice
@@ -885,16 +901,18 @@
       }
       .customise
       {
-          margin-left: 317px;margin-top: -40px;
+        margin-top: -40px; display: flex;
+        justify-content: center;
       }
       .click
       {
-          padding-top:66px;font-family: Ubuntu;
-          font-size: 13px;
-          padding-left: 10px;
-          font-style: normal;
-          font-weight: 400;
-          color:#1161D9;
+        padding-top: 180px;
+        font-family: Ubuntu;
+        font-size: 13px;
+        margin-left: -100px;
+        font-style: normal;
+        font-weight: 400;
+        color: #1161D9;
                               
       }
       .accountrow
@@ -949,6 +967,14 @@
   }
 @media(min-width:600px) and (max-width: 640px) {
   /*Track progress*/
+  .add
+{
+  font-family: Ubuntu;padding-left:255px;color:#ffffff;font-size: 13px;font-style: normal;font-weight: 400;
+}  
+.debittext
+{
+  font-family: Ubuntu;padding-left:32px;color:#ffffff;font-size: 18px;font-style: normal;font-weight: 400;
+} 
   .progresscard
   {
     width:525px;height:440px;background-color: #f7f7f7; margin-top: 68px; margin-left: 27px;
@@ -1101,7 +1127,7 @@
   .bankdiv
   {
     height: 206px;
-    width: 556px;
+    width: 100%;
     margin: 68px auto;
     border-radius: 20px;
     background: #0E5FDA;
@@ -1415,6 +1441,14 @@
   }
 @media(min-width:480px) and (max-width: 540px) {
   /*Track progress*/
+  .add
+{
+  font-family: Ubuntu;padding-left:255px;color:#ffffff;font-size: 13px;font-style: normal;font-weight: 400;
+}  
+.debittext
+{
+  font-family: Ubuntu;padding-left:32px;color:#ffffff;font-size: 18px;font-style: normal;font-weight: 400;
+} 
   .progresscard
   {
     width:525px;height:440px;background-color: #f7f7f7; margin-top: 68px; margin-left: 27px;
@@ -1567,7 +1601,7 @@
   .bankdiv
   {
     height: 206px;
-    width: 440px;
+    width: 100%;
     margin: 68px auto;
     border-radius: 20px;
     background: #0E5FDA;
@@ -1734,7 +1768,7 @@
   .example {
     height: 84px;
     margin-left: 73px;
-    width: 523px;
+    width: 100%;
     margin-top: 25px;
     border-radius: 15px;
     padding: 12px;
@@ -1886,6 +1920,18 @@
   }
 @media(min-width:375px) and (max-width: 475px) {
   /*Track progress*/
+  #sidebar
+  {
+    width:100%;
+  }
+  .add
+{
+  font-family: Ubuntu;padding-left:255px;color:#ffffff;font-size: 13px;font-style: normal;font-weight: 400;
+}  
+.debittext
+{
+  font-family: Ubuntu;padding-left:32px;color:#ffffff;font-size: 18px;font-style: normal;font-weight: 400;
+} 
   .progresscard
   {
     width: 100%;
@@ -1964,7 +2010,8 @@
     font-size: 30px;
     font-style: normal;
     color:#0F1377;
-    padding-top:20px;padding-left:51px
+    padding-top:20px;
+    text-align: center;
                                   
   }
   
@@ -2034,7 +2081,7 @@
     padding-top: 51px;
     font-family: Ubuntu;
     font-size: 16px;
-    padding-left: 51px;
+    padding-left: 4%;
     font-style: normal;
     font-weight: 400;
     color: #1161D9;             
@@ -2042,14 +2089,14 @@
   .bankdiv
   {
     height: 206px;
-    width: 440px;
+    width: 100%;
     margin: 68px auto;
     border-radius: 20px;
     background: #0E5FDA;
   }
   .bankdivp
   {
-    padding-left: 80px;
+    padding-left: 7%;
     padding-top: 74px;
     border-radius: 0px;
     
@@ -2058,8 +2105,8 @@
   .debitcard
   {
     height: 60px;
-    margin-left: 25px;
-    width: 400px;
+    margin-left: 5px;
+    width: 100%;
     border-radius: 10px;
     padding: 20px;
     color: #fff;
@@ -2067,8 +2114,8 @@
   }
   .cancelbutton
   {
-    height: 60px;margin-left:25px;
-      width: 400px;                            
+    height: 60px;margin-left:5px;
+      width: 100%;                            
       border-radius: 10px;
       border:1px solid #ADC92E;
       padding: 20px;
@@ -2152,11 +2199,12 @@
         color: #0F1377;
         padding-top: 10px;
         padding-bottom: 20px;
-        padding-left: 141px;
+        text-align: center;
     }
       .customise {
-        margin-left: 107px;
+        margin-left: 57px;
         margin-top: 0px;
+        
     }
       .click
       {
@@ -2186,7 +2234,7 @@
     font-family: ubuntu;
     margin-top: 21px;
     height: 59px;
-    width: 390px;
+    width: 110%;
     background: #E9EDF0;
     color: #444649;
     border-radius: 6px;
@@ -2209,7 +2257,7 @@
   .example {
     height: 84px;
     margin-left: 73px;
-    width: 523px;
+    width: 100%;
     margin-top: 25px;
     border-radius: 15px;
     padding: 12px;
@@ -2360,7 +2408,19 @@
   }
 }
 @media(min-width:280px) and (max-width: 374px) {
+  .add
+{
+  font-family: Ubuntu;padding-left:55px;color:#ffffff;font-size: 13px;font-style: normal;font-weight: 400;
+} 
+.debittext
+{
+  font-family: Ubuntu;padding-left:12px;color:#ffffff;font-size: 18px;font-style: normal;font-weight: 400;
+} 
   /*Track progress*/
+  #sidebar
+  {
+    width:100%;
+  }
   .progresscard
   {
     width: 100%;
@@ -2440,7 +2500,7 @@
     font-style: normal;
     color: #0F1377;
     padding-top: 20px;
-    padding-left: 21px;
+    text-align: center;
                                   
   }
   
@@ -2509,7 +2569,7 @@
   {
     padding-top: 51px;
     font-family: Ubuntu;
-    font-size: 12px;
+    font-size: 14px;
     padding-left: 1px;
     font-style: normal;
     font-weight: 400;
@@ -2525,7 +2585,7 @@
   }
   .bankdivp
   {
-    padding-left: 40px;
+    padding-left: 10px;
     padding-top: 74px;
     border-radius: 0px;
     
@@ -2663,7 +2723,7 @@
     font-family: ubuntu;
     margin-top: 21px;
     height: 59px;
-    width: 250px;
+    width: 110%;
     background: #E9EDF0;
     color: #444649;
     border-radius: 6px;
@@ -2686,7 +2746,7 @@
   .example {
     height: 84px;
     margin-left: 73px;
-    width: 523px;
+    width: 100%;
     margin-top: 25px;
     border-radius: 15px;
     padding: 12px;

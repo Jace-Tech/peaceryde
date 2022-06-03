@@ -57,7 +57,13 @@
     <!-- Sidebar -->
 
     <div class="page-wrapper" id="main" style="background-color: #e5e5e5;">
-      <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()"> <svg width="19" height="15" viewBox="0 0 19 15" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-bottom: 10px;
+                margin-top: 50px;">
+                  <rect y="6" width="19" height="3" fill="#A0BD1C"/>
+                  <rect y="12" width="19" height="3" fill="#A0BD1C"/>
+                  <rect width="19" height="3" fill="#A0BD1C"/>
+                  </svg>
+                  </span>
       <div class="">
         <div class="row">
           <div class="align-self-center">
@@ -196,17 +202,29 @@
 
   </div>
   <script>
-    function openNav() {
-      document.getElementById("sidebar").style.width = "260px";
-      document.getElementById("main").style.marginLeft = "260px";
-    }
-
-    function closeNav() {
-      document.getElementById("sidebar").style.width = "0";
-      document.getElementById("main").style.marginLeft = "0";
-
-    }
-  </script>
+  function openNav() {
+    		
+            if  (screen.width >= 800) {
+                document.getElementById("sidebar").style.width = "260px";
+                document.getElementById("main").style.marginLeft = "260px";
+            } else {
+                document.getElementById("sidebar").style.width = "100%";
+                document.getElementById("main").style.marginLeft = "100%";
+            }
+        }
+            
+        /* Close Nav */
+        function closeNav() {
+                
+            if (screen.width >= 768) {
+                document.getElementById("sidebar").style.width = "0";
+                document.getElementById("main").style.marginLeft= "0";;
+            } else {
+                document.getElementById("sidebar").style.width = "0";
+                document.getElementById("main").style.marginLeft= "0";;
+            }
+        }
+        </script>
   <script>
     document.querySelectorAll(".drop-zone__input").forEach((inputElement) => {
       const dropZoneElement = inputElement.closest(".drop-zone");

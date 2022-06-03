@@ -68,7 +68,13 @@
         <!-- Sidebar -->
 
         <div class="page-wrapper" id="main">
-            <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()"> <svg width="19" height="15" viewBox="0 0 19 15" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-bottom: 10px;
+                margin-top: 50px;">
+                  <rect y="6" width="19" height="3" fill="#A0BD1C"/>
+                  <rect y="12" width="19" height="3" fill="#A0BD1C"/>
+                  <rect width="19" height="3" fill="#A0BD1C"/>
+                  </svg>
+                  </span>
             <div class="align-self-center">
                 <h3 class="page-title" style="font-family: Ubuntu;font-size: 30px;font-style: normal;font-family: Ubuntu;font-weight: 500;color:#0A0E69;padding-left:200px;"> Nigeria Business Visa on Arrival </h3>
                 <p style="padding-top: 30px;padding-left:304px;font-family: Ubuntu;font-size: 24px;font-style: normal;font-weight: 500; color:#0A0E69;">Fill the Form Below</p>
@@ -440,18 +446,30 @@
                 form.submit()
             })
     </script>
-    <script>
-        function openNav() {
-            document.getElementById("sidebar").style.width = "260px";
-            document.getElementById("main").style.marginLeft = "260px";
+   <script>
+  function openNav() {
+    		
+            if  (screen.width >= 800) {
+                document.getElementById("sidebar").style.width = "260px";
+                document.getElementById("main").style.marginLeft = "260px";
+            } else {
+                document.getElementById("sidebar").style.width = "100%";
+                document.getElementById("main").style.marginLeft = "100%";
+            }
         }
-
+            
+        /* Close Nav */
         function closeNav() {
-            document.getElementById("sidebar").style.width = "0";
-            document.getElementById("main").style.marginLeft = "0";
-
+                
+            if (screen.width >= 768) {
+                document.getElementById("sidebar").style.width = "0";
+                document.getElementById("main").style.marginLeft= "0";;
+            } else {
+                document.getElementById("sidebar").style.width = "0";
+                document.getElementById("main").style.marginLeft= "0";;
+            }
         }
-    </script>
+        </script>
     <script src="./assets/libs/jquery/dist/jquery.min.js"></script>
     <script src="./assets/libs/popper.js/dist/umd/popper.min.js"></script>
     <script src="./assets/libs/bootstrap/dist/js/bootstrap.min.js"></script>

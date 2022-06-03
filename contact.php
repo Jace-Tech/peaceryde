@@ -41,58 +41,58 @@
     <main class="new new-main layout">
         <!-- ======= section1 ======= -->
         <?php include("./inc/header.php"); ?>
-            <section class=" new-section2__group layout2 contactheight" style="background-color: #f8f6f6;">
+        <section class=" new-section2__group layout2 contactheight" style="background-color: #f8f6f6;">
                 <div class="new-section1__cover-block layout">
-                    <h1 style="font-size: 40px; text-align: center; color: #0A0E69; font-family:Rubik; margin-bottom: 78px; padding-top: 91px;"
-                       >
+                    <h1 class="contactus">
                         Contact Us
                     </h1>
                     <div class="row">
                         
                         <div class="col-md-6 col-sm-12 cont">
-                            <h2 style="font-size: 19px; color: #080C58; font-weight: 500;">Office Address</h2>
-                            <p style="font-size: 16px; color: #080C58; padding-top: 21px;">441 Grandville Avenenue Hillside Illinois 60162
+                            <h2 style="font-size: 20px; color: #080C58; font-weight: 500;">Office Address</h2>
+                            <p style="font-size: 18px; color: #080C58; padding-top: 21px;">441 Grandville Avenenue Hillside Illinois 60162
                             </p>
                             
-                            <h2 style="font-size: 19px; color: #080C58; font-weight: 500; padding-top: 39px;">Phone Number</h2>
-                            <p style="padding-top: 21px;"><a href="" style="font-size: 16px; color: #080C58; ">+1 (708) 318-0273</a>
+                            <h2 style="font-size: 20px; color: #080C58; font-weight: 500; padding-top: 39px;">Phone Number</h2>
+                            <p style="padding-top: 21px;"><a href="" style="font-size: 18px; color: #080C58; ">+1 (708) 318-0273</a>
                             </p>
                             
-                            <h2 style="font-size: 19px; color: #080C58; font-weight: 500; padding-top: 34px;">e-Mail Address</h2>
-                            <p style="font-size: 16px; color: #080C58; padding-top: 21px;">info@peacerydeafrica.com</p>
+                            <h2 style="font-size: 20px; color: #080C58; font-weight: 500; padding-top: 34px;">e-Mail Address</h2>
+                            <p style="font-size: 18px; color: #080C58; padding-top: 21px;">info@peacerydeafrica.com</p>
 
                         </div>
 
                         <div class="col-md-6 col-sm-12">
                             <div class="card contactcard">
                                 <h2
-                                    style="padding-top:53px; font-size: 18px; text-align: center; color: #000000; font-weight: 500;">
+                                    style="padding-top:53px; font-size: 20px; text-align: center; color: #000000; font-weight: 500;">
                                     Contact Us Form</h2>
                                 <form
                                     class="contactform">
-                                    <label>Name</label>
+                                    <label style="font-size: 18px;">Name</label>
                                     <br>
                                     <input type="text" class="form-control"
                                         style="border-top:transparent;border-left: transparent;border-right: transparent; border-bottom:1px solid #000000;margin-top: -10px;">
                                     <br>
-                                    <label>Phone Number</label>
+                                    <label style="font-size: 18px;">Phone Number</label>
 
                                     <input type="text" class="form-control"
                                         style="border-top:transparent;border-left: transparent;border-right: transparent; border-bottom:1px solid #000000; margin-top: -10px;">
                                     <br>
-                                    <label>Please Enter Your Message</label>
+                                    <label style="font-size: 18px;">Email Address</label>
                                     <br>
                                     <input type="text" class="form-control"
                                         style="border-top:transparent;border-left: transparent;border-right: transparent; border-bottom:1px solid #000000;margin-top: -10px;">
                                     <br>
-                                    <label>Email Address</label>
+                                    <label style="font-size: 18px;">Please Enter Your Message</label>
                                     <br>
                                     <input type="text" class="form-control"
                                         style="border-top:transparent;border-left: transparent;border-right: transparent; border-bottom:1px solid #000000;margin-top: -10px;">
                                     <br>
+                                    
                                     <br>
                                     <button class="btn btn-primary"
-                                        style="width: 100%; border-radius: 10px; margin-top: 30px; height: 50px;">
+                                        style="width: 100%; border-radius: 10px; margin-top: 30px; height: 50px;font-size: 18px;">
                                         Submit</button>
                                 </form>
                             </div>
@@ -216,13 +216,13 @@
                                   COMPANY
                                 </h3>
                                 <ul>
-                                  <li class="new-section8__text-body5 layout fs-13"><a class="fs-13" href="about.php"
+                                  <li class="new-section8__text-body5 layout fs-13"><a class="fs-13" href="about.html"
                                       style=" text-decoration: none;">About us</a>
                                   </li>
-                                  <li class="new-section8__text-body5 layout fs-13"><a class="fs-13" href="pp.php"
-                                      style=" text-decoration: none;">Privacy &Cookie Policy</a>
+                                  <li class="new-section8__text-body5 layout fs-13"><a class="fs-13" href="pp.html"
+                                      style=" text-decoration: none;">Privacy & Cookie Policy</a>
                                   </li>
-                                  <li class="new-section8__text-body5 layout fs-13" 0><a href="t&c.php"
+                                  <li class="new-section8__text-body5 layout fs-13" 0><a href="t&c.html"
                                       class="fs-13"style=" text-decoration: none;">Terms And
                                       Condition</a></li>
                                   <li class="new-section8__text-body5 layout fs-13">Refund
@@ -321,19 +321,19 @@
                   <div class="lastfooter">
                     <div class="row lastfooterrow">
                       <div class="col-md-3 col-sm-12 col-xs-12">
-                        <p class="adp"><a class="locaddress" href="Index.php"> &copy; &nbsp;
-                            2022 PeaceRydeAfrica LLC</a></p>
+                        <p class="adp"><a class="locaddress" href="Index.html"> &copy; &nbsp;
+                            2022 PeaceRyde Africa LLC</a></p>
                       </div>
                       <div class="col-md-5 col-sm-12 col-xs-12">
-                        <p class="shorttest">PeaceRyde LLC is Registered with the state of Delaware USA
-                          under the File Number 654846</p>
+                        <p class="shorttest">PeaceRyde Afica LLC is Registered with the state of Delaware USA
+                          under the File Number 6549846</p>
                       </div>
                       <div class="col-md-2">
-                        <p class="policy"><a class="privacy" href="pp.php">Privacy and Cookie
+                        <p class="policy"><a class="privacy" href="pp.html">Privacy and Cookie
                             Policy</a></p>
                       </div>
                       <div class="col-md-2">
-                        <p class="adtc"><a class="tc" href="t&c.php">Terms & Conditions</a></p>
+                        <p class="adtc"><a class="tc" href="t&c.html">Terms & Conditions</a></p>
                       </div>
                     </div>
                   </div>

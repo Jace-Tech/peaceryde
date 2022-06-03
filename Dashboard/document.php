@@ -31,277 +31,439 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <link href="./dist/css/style.min.css" rel="stylesheet">
+    <link href="../dist/css/responsive.css" rel="stylesheet">
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <style>
-        @media only screen and (max-width: 1680px) {
-            .breadcrumb {
-                margin-top: -100px;
-                margin-left: 758px;
-            }
-
-            .mobile {
-                margin-left: 0px;
-            }
-        }
-
-        @media only screen and (max-width: 1600px) {
-            .breadcrumb {
-                margin-top: -200px;
-                margin-left: 758px;
-            }
-
-            .mobile {
-                margin-left: 0px;
-            }
-        }
-
-        @media only screen and (max-width: 1440px) {
-            .breadcrumb {
-                margin-top: -70px;
-                margin-left: 658px;
-            }
-
-            .mobile {
-                margin-left: 0px;
-            }
-        }
-
-        @media only screen and (max-width: 1366px) {
-            .breadcrumb {
-                margin-top: -200px;
-                margin-left: 558px;
-            }
-
-            .mobile {
-                margin-left: 0px;
-            }
-        }
-
-        @media only screen and (max-width: 1280px) {
-            .breadcrumb {
-                margin-top: -200px;
-                margin-left: 458px;
-            }
-
-            .mobile {
-                margin-left: 0px;
-            }
-        }
-
-        @media only screen and (max-width: 820px) {
-            .breadcrumb {
-                margin-top: -200px;
-                margin-left: 358px;
-            }
-
-            .mobile {
-                margin-left: 0px;
-            }
-        }
-
-        @media only screen and (max-width: 768px) {
-            .breadcrumb {
-                margin-top: -220px;
-                margin-left: 214px;
-            }
-
-            .mobile {
-                margin-left: 0px;
-            }
-        }
-
-        @media only screen and (max-width: 540px) {
-            .breadcrumb {
-                margin-top: -220px;
-                margin-left: 214px;
-            }
-
-            .account {
-                padding-top: 0px;
-            }
-
-            .account-img {
-                margin-left: 19px;
-            }
-
-            .page-breadcrumb {
-                padding: 70px 35px 0;
-            }
-
-            .breadcrumb {
-                margin-top: -160px;
-                margin-left: 14px;
-            }
-
-            .example {
-                margin-left: 7px;
-            }
-
-        }
-
-        @media only screen and (max-width: 412px) {
-            .breadcrumb {
-                margin-top: -160px;
-                margin-left: 14px;
-            }
-
-            .account {
-                padding-top: 0px;
-            }
-
-            .page-breadcrumb .breadcrumb {
-                font-size: .6rem;
-            }
-
-            .example {
-                margin-left: 3px;
-            }
-
-            .page-breadcrumb {
-                padding: 70px 35px 0;
-            }
-
-            .account-img {
-                margin-left: 9px;
-            }
-        }
-
-        @media only screen and (max-width: 390px) {
-            .breadcrumb {
-                margin-top: -120px;
-                margin-left: 1px;
-            }
-
-            .account {
-                padding-top: 0px;
-            }
-
-            .page-breadcrumb .breadcrumb {
-                font-size: .55rem;
-            }
-
-            .example {
-                margin-left: 3px;
-            }
-
-            .mobile {
-                margin-left: 30px;
-            }
-
-            .sidebarAccount h2 {
-                margin-left: -25px;
-            }
-
-            .sidebarAccount p {
-                margin-left: -30px;
-            }
-        }
-
-        @media only screen and (max-width: 360px) {
-            .breadcrumb {
-                margin-top: -170px;
-                margin-left: 14px;
-            }
-
-            .page-breadcrumb .breadcrumb {
-                font-size: .5rem;
-            }
-
-        }
-
-        @media only screen and (max-width: 320px) {
-            .breadcrumb {
-                margin-top: -220px;
-                margin-left: 214px;
-            }
-
-            .mobile {
-                margin-left: 0px;
-            }
-        }
-
-        @media only screen and (max-width: 280px) {
-            .breadcrumb {
-                margin-top: -250px;
-                margin-left: 14px;
-            }
-
-            .mobile {
-                margin-left: 0px;
-            }
-
-            .account {
-                padding-left: 0px;
-            }
-
-            .account-img {
-                margin-left: 49px;
-            }
-        }
-
         .left-sidebar a:hover {
-            color: #f1f1f1;
-        }
+  color: #f1f1f1;
+}
 
-        .left-sidebar .closebtn {
-            position: absolute;
-            top: 0;
-            right: 25px;
-            font-size: 36px;
-            margin-left: 50px;
-        }
+.left-sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
 
-        #main {
-            transition: margin-left .5s;
-            padding: 16px;
-        }
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+.question {
+    font-family: Ubuntu;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+  padding: 20px 80px 20px 20px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
 
-        .question {
+.question::after {
+  content: "\002B";
+  font-size: 2.2rem;
+  position: absolute;
+  right: 20px;
+  transition: 0.2s;
+}
+
+.question.active::after {
+  transform: rotate(45deg);
+}
+
+.answercont {
+  max-height: 0;
+  overflow: hidden;
+  transition: 0.3s;
+}
+
+.answer {
+  padding: 0 20px 20px;
+  line-height: 1.5rem;
+}
+.containerques {
+  background-color: white;
+  color: #0A0E69;
+  border-radius: 10px;
+  width: 622px;
+  margin: 20px 0;
+  margin-left: 43px;
+  
+}
+           @media only screen and (max-width: 2560px)
+      {
+          .doc
+          {
             font-family: Ubuntu;
-            font-size: 16px;
+            font-size: 30px;
             font-style: normal;
-            font-weight: 400;
-            padding: 20px 80px 20px 20px;
-            position: relative;
-            display: flex;
-            align-items: center;
-            cursor: pointer;
-        }
+            color:#0F1377;
+            padding-top:20px;padding-left:51px;
+                                
+          }
+          .breadcrumb
+          {
+              margin-top: -130px;
+              margin-left: 758px;
+          }
+          .mobile
+          {
+              margin-left: 0px;
+          }
+      }
+           @media only screen and (max-width: 1920px)
+      {
+          .doc
+          {
+            font-family: Ubuntu;
+            font-size: 30px;
+            font-style: normal;
+            color:#0F1377;
+            padding-top:20px;padding-left:51px;
+                                
+          }
+          .breadcrumb
+          {
+              margin-top: -130px;
+              margin-left: 758px;
+          }
+          .mobile
+          {
+              margin-left: 0px;
+          }
+      }
+         @media only screen and (max-width: 1680px)
+      {
+          .doc
+          {
+            font-family: Ubuntu;
+            font-size: 30px;
+            font-style: normal;
+            color:#0F1377;
+            padding-top:20px;padding-left:51px;
+                                
+          }
+          .breadcrumb
+          {
+              margin-top: -130px;
+              margin-left: 758px;
+          }
+          .mobile
+          {
+              margin-left: 0px;
+          }
+      }
+      @media only screen and (max-width: 1620px)
+      {
+          .breadcrumb
+          {
+              margin-top: -130px;
+              margin-left: 58px;
+          }
+          .mobile
+          {
+              margin-left: 0px;
+          }
+      }
+      @media only screen and (max-width: 1440px)
+      {
+          .breadcrumb
+          {
+              margin-top: -130px;
+              margin-left: 658px;
+          }
+          .mobile
+          {
+              margin-left: 0px;
+          }
+      }
+      @media only screen and (max-width: 1366px)
+      {
+          .breadcrumb
+          {
+              margin-top: -130px;
+              margin-left: 558px;
+          }
+          .mobile
+          {
+              margin-left: 0px;
+          }
+      }
+      @media only screen and (max-width: 1280px)
+      {
+          .breadcrumb
+          {
+              margin-top: -130px;
+              margin-left: 458px;
+          }
+          .mobile
+          {
+              margin-left: 0px;
+          }
+      }
+      @media only screen and (max-width: 1024px)
+      {
+          .breadcrumb
+          {
+            margin-top: -125px;
+            margin-left: 308px;
+          }
+          .mobile
+          {
+              margin-left: 0px;
+          }
+      }
+      @media only screen and (max-width: 900px)
+      {
+          .breadcrumb
+          {
+            margin-top: -125px;
+            margin-left: 188px;
+          }
+          .mobile
+          {
+              margin-left: 0px;
+          }
+      }
+      @media only screen and (max-width: 853px)
+      {
+          .breadcrumb
+          {
+            margin-top: -120px;
+            margin-left: 128px;
+          }
+          .mobile
+          {
+              margin-left: 0px;
+          }
+      }
 
-        .question::after {
-            content: "\002B";
-            font-size: 2.2rem;
-            position: absolute;
-            right: 20px;
-            transition: 0.2s;
+      @media only screen and (max-width: 800px)
+      {
+          .breadcrumb
+          {
+            margin-top: -125px;
+            margin-left: 88px;
+          }
+          .mobile
+          {
+              margin-left: 0px;
+          }
+      }
+      @media only screen and (max-width: 768px)
+      {
+          .breadcrumb
+          {
+            margin-top: -130px;
+            margin-left: 44px;
+          }
+          .mobile
+          {
+              margin-left: 0px;
+          }
+      }
+      @media only screen and (max-width: 649px)
+      {
+          .breadcrumb
+          {
+              margin-top: -220px;
+              margin-left: 214px;
+          }
+          .mobile
+          {
+              margin-left: 0px;
+          }
+      }
+      @media only screen and (max-width: 603px)
+      {
+          .breadcrumb
+          {
+            margin-top: -130px;
+            margin-left: 114px;
+          }
+          .mobile
+          {
+              margin-left: 0px;
+          }
+      }
+      @media only screen and (max-width: 540px)
+      {
+          .breadcrumb
+          {
+              margin-top: -220px;
+              margin-left: 214px;
+          }
+          .account
+          {
+              padding-top: 0px;
+          }
+          .account-img {
+              margin-left: 19px;
+          }
+          .page-breadcrumb {
+              padding: 70px 35px 0;
+          }
+          .breadcrumb {
+              margin-top: -160px;
+              margin-left: 14px;
+          }
+          .example {
+              margin-left: 7px;
+          }
+  
+      }
+      @media only screen and (max-width: 414px)
+      {
+          .breadcrumb
+          {
+            margin-top: -170px;
+            margin-left: 14px;
+            width: 400px;
+          }
+          .account{
+              padding-top: 0px;
+          }
+          .page-breadcrumb .breadcrumb
+          {
+              font-size: .6rem;
+          }
+          .example
+          {
+              margin-left: 3px;
+          }
+          .page-breadcrumb
+          {
+             padding: 70px 35px 0;
+          }
+          .account-img
+          {
+              margin-left: 9px;
+          }
+      }
+      @media only screen and (max-width: 390px)
+      {
+          .breadcrumb
+          {
+            margin-top: -170px;
+            margin-left: 1px;
+            width: 350px;
+          }
+          .account{
+              padding-top: 0px;
+          }
+          .page-breadcrumb .breadcrumb
+          {
+              font-size: .7rem;
+          }
+          .example
+          {
+              margin-left: 3px;
+          }
+          .mobile
+          {
+              margin-left: 30px;
+          }
+          .sidebarAccount h2
+          {
+              margin-left: -25px;
+          }
+          .sidebarAccount p
+          {
+              margin-left: -30px;
+          }
+      }
+      @media only screen and (max-width: 360px)
+      {
+          .breadcrumb
+          {
+              margin-top: -170px;
+              margin-left: 14px;
+              width: 300px;
+          }
+          .page-breadcrumb .breadcrumb
+          {
+              font-size: .6rem;
+          }
+          .containerques {
+          
+          margin: 10px 0;
+          margin-left: 3px;
+      }
+          
+      }
+      @media only screen and (max-width: 320px)
+      {
+        .breadcrumb {
+            margin-top: -165px;
+            margin-left: 4px;
+            width: 290px;
         }
-
-        .question.active::after {
-            transform: rotate(45deg);
+          .page-breadcrumb .breadcrumb {
+            font-size: .6rem;
         }
-
-        .answercont {
-            max-height: 0;
-            overflow: hidden;
-            transition: 0.3s;
+        .doc {
+            font-family: Ubuntu;
+            font-size: 25px;
+            font-style: normal;
+            color: #0F1377;
+            padding-top: 20px;
+            padding-left: 0px;
+            text-align: center;
         }
-
-        .answer {
-            padding: 0 20px 20px;
-            line-height: 1.5rem;
+        .containerques {
+          
+            margin: 10px 0;
+            margin-left: 3px;
         }
-
+          .mobile
+          {
+              margin-left: 0px;
+          }
+      }
+      @media only screen and (max-width: 280px)
+      {
+        .breadcrumb {
+            margin-top: -165px;
+            margin-left: 14px;
+            width: 250px;
+        }
+        .page-breadcrumb .breadcrumb {
+            font-size: .7rem;
+        }
+        .doc {
+            font-family: Ubuntu;
+            font-size: 25px;
+            font-style: normal;
+            color: #0F1377;
+            padding-top: 20px;
+            padding-left: 0px;
+            text-align: center;
+        }
         .containerques {
             background-color: white;
             color: #0A0E69;
             border-radius: 10px;
             width: 622px;
-            margin: 20px 0;
-            margin-left: 43px;
-
+            margin: 10px 0;
+            margin-left: 3px;
         }
-    </style>
+          .mobile
+          {
+              margin-left: 0px;
+          }
+          .account
+          {
+              padding-left: 0px;
+          }
+      }
+  
+
+  </style>
+
 
 </head>
 
@@ -326,7 +488,13 @@
 
 
         <div class="page-wrapper" id="main">
-            <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+            <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span><span style="font-size:30px;cursor:pointer" onclick="openNav()"> <svg width="19" height="15" viewBox="0 0 19 15" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-bottom: 10px;
+                margin-top: 50px;">
+                  <rect y="6" width="19" height="3" fill="#A0BD1C"/>
+                  <rect y="12" width="19" height="3" fill="#A0BD1C"/>
+                  <rect width="19" height="3" fill="#A0BD1C"/>
+                  </svg>
+                  </span>
             <div class="page-breadcrumb">
                 <div class="row">
                     <div class="align-self-center">
@@ -491,18 +659,30 @@
             document.getElementById("myForm").style.display = "none";
         }
     </script>
-    <script>
-        function openNav() {
-            document.getElementById("sidebar").style.width = "260px";
-            document.getElementById("main").style.marginLeft = "260px";
+     <script>
+  function openNav() {
+    		
+            if  (screen.width >= 800) {
+                document.getElementById("sidebar").style.width = "260px";
+                document.getElementById("main").style.marginLeft = "260px";
+            } else {
+                document.getElementById("sidebar").style.width = "100%";
+                document.getElementById("main").style.marginLeft = "100%";
+            }
         }
-
+            
+        /* Close Nav */
         function closeNav() {
-            document.getElementById("sidebar").style.width = "0";
-            document.getElementById("main").style.marginLeft = "0";
-
+                
+            if (screen.width >= 768) {
+                document.getElementById("sidebar").style.width = "0";
+                document.getElementById("main").style.marginLeft= "0";;
+            } else {
+                document.getElementById("sidebar").style.width = "0";
+                document.getElementById("main").style.marginLeft= "0";;
+            }
         }
-    </script>
+        </script>
     <script>
         let question = document.querySelectorAll(".question");
 
