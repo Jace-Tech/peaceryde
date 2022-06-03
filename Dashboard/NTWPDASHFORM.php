@@ -397,6 +397,51 @@
  
     </div>
     <script>
+        console.clear();
+        const storedUser = localStorage.getItem("USER_REG");
+        const form = document.querySelector("[data-form]")
+        console.log({
+            storedUser
+        });
+
+        if (storedUser) {
+            const {
+                email,
+                dob,
+                title,
+                passport,
+                gender,
+                country,
+                countryCode,
+                firstname,
+                middlename,
+                lastname,
+                service,
+                phone
+            } = JSON.parse(storedUser)
+
+            form.elements.email.value = email
+            form.elements.dob.value = dob
+            form.elements.firstname.value = firstname
+            form.elements.lastname.value = lastname
+            form.elements.middlename.value = middlename
+            form.elements.lastname.value = lastname
+            form.elements.service.value = service
+            form.elements.phone.value = phone
+            form.elements.passport.value = passport
+            Array.from(form.elements.title.children).filter(item => item.value == title)[0].selected = true
+            Array.from(form.elements.country.children).filter(item => item.value == country)[0].selected = true
+            Array.from(form.elements.country_code.children).filter(item => item.value == countryCode)[0].selected = true
+            Array.from(form.elements.gender).filter(item => item.value == gender)[0].checked = true
+        }
+
+        document.querySelector("[data-btn]")
+            .addEventListener("click", () => {
+                localStorage.removeItem("USER_REG")
+                form.submit()
+            })
+    </script>
+    <script>
         function openNav() {
           document.getElementById("sidebar").style.width = "260px";
           document.getElementById("main").style.marginLeft = "260px";

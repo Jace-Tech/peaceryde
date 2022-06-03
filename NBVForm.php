@@ -365,6 +365,7 @@
                       <div class="form-group">
                         <input type="text" class="form-control firstname2" placeholder="country code (Mobile number)">
                         <input required type="hidden" name="service" value="srvs-002">
+                        <input required type="hidden" name="nbv" value="">
                       </div>
                     </div>
                   </div>
@@ -747,7 +748,7 @@
         onYes()
       }
       else {
-        $('[name=nbv]').click()
+        formElement.submit()
       }
     })
   </script>

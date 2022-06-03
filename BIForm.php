@@ -77,6 +77,7 @@
                                     <div class="form-group">                                 
                                       <input required type="text" name="coperateAddress" class="form-control firstname2" placeholder="Coporate Address" >
                                       <input required type="hidden" name="service" value="srvs-003">
+                                      <input required type="hidden" name="bi" value="">
                                   </div>
                                   </div>
                                   <div class="col-md-5">
@@ -184,7 +185,7 @@
         onYes()
       }
       else {
-        $('[name=bi]').click()
+        formElement.submit()
       }
     })
   </script>
