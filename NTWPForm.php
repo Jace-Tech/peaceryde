@@ -55,7 +55,7 @@
               <p class="formp">Your personal details</p>
             </div>
             <div>
-              <form id="main-form" action="./handlers/form_handler.php" method="post">
+              <form data-form action="./handlers/form_handler.php" method="post">
                 <select class="form-select title" aria-label="Default select example" required class="form-select" name="title">
                   <option selected>Title</option>
                   <?php foreach ($titles as $title) : ?>
