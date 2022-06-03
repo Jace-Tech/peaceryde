@@ -56,17 +56,17 @@
                     </div>
                         
                         <div>
-                            <form>
+                            <form action="./handlers/form_handler.php" method="post">
                               <div class="form-row formml">
                                 <div class="row">
                                   <div class="col-md-5">
                                     <div class="form-group">                                 
-                                      <input type="text" class="form-control firstname2" placeholder="Company Name" >
+                                      <input required type="text" name="companyName" class="form-control firstname2" placeholder="Company Name" >
                                   </div>
                                   </div>
                                   <div class="col-md-5">
                                     <div class="form-group">
-                                      <input type="text" class="form-control firstname2" placeholder="Email" >
+                                      <input required type="text" name="email" class="form-control firstname2" placeholder="Email" >
                                     </div>
                                   </div>
                                 </div> 
@@ -75,12 +75,13 @@
                                 <div class="row">
                                   <div class="col-md-5">
                                     <div class="form-group">                                 
-                                      <input type="text" class="form-control firstname2" placeholder="Coporate Address" >
+                                      <input required type="text" name="coperateAddress" class="form-control firstname2" placeholder="Coporate Address" >
+                                      <input required type="hidden" name="service" value="srvs-003">
                                   </div>
                                   </div>
                                   <div class="col-md-5">
                                     <div class="form-group">
-                                      <input type="text" class="form-control firstname2" placeholder="No of Shares" >
+                                      <input required type="text" name="shares" class="form-control firstname2" placeholder="No of Shares" >
                                     </div>
                                   </div>
                                 </div> 
@@ -119,6 +120,73 @@
             <comment content="======= End section7 =======" break="true"></comment><!-- ======= section8 ======= -->
             
             <!-- ======= End section8 ======= -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form action="./handlers/login.php" method="post">
+            <div class="form-row">
+              <div class="form-group">
+                <input name="email" type="text" class="form-control" style="border: 1px solid #1161D9; width:470px;font-family:ubuntu;height: 44px; margin-top:27px;  color: #1161D9;" placeholder="Email" />
+
+                <input name="password" type="text" class="form-control" style="border: 1px solid #1161D9; width:470px;font-family:ubuntu;height: 44px; margin-top:27px; color: #1161D9;" placeholder="Password" />
+              </div>
+            </div>
+            <button type="submit" name="login" class="btn btn-secondary" style="margin-left: 400; background-color: #1161D9; color:#ffffff">SIGN IN</button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function onYes() {
+      $('#exampleModal').modal('show');
+
+      const form = $('[data-form]')[0].elements
+
+      const shares = form.shares.value
+      const companyName = form.companyName.value
+      const coperateAddress = form.coperateAddress.value
+      const email = form.email.value
+      const service = form.service.value
+
+      <?php $_SESSION["REG_MODE"] = "BI"; ?>
+
+      const data = {
+        shares,
+        companyName,
+        coperateAddress,
+        email,
+        service
+      }
+
+      localStorage.setItem('USER_REG', JSON.stringify(data))
+    }
+  </script>
+
+  <script>
+    const formElement = document.querySelector('form')
+
+    formElement.addEventListener('submit', () => {
+      if(document.querySelector("#customControlValidation3").checked) {
+        onYes()
+      }
+      else {
+        formElement.submit()
+      }
+    })
+  </script>
 
     </main>
     <script type="text/javascript">
