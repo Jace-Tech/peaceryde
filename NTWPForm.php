@@ -499,7 +499,8 @@
    <script>
     const formElement = document.querySelector('form')
 
-    formElement.addEventListener('submit', () => {
+    formElement.addEventListener('submit', (e) => {
+      e.preventDefault();
       if(document.querySelector("#customControlValidation3").checked) {
         onYes()
       }
