@@ -132,10 +132,6 @@ if(isset($_GET["reference"])) {
             // Send Login Details
             sendMail($subject, $message, $from, $to);
 
-            // if ($service == "srvs-003") {
-            //     $price = json_decode($_SESSION["PRICE"], true);
-            // }
-
             // Send Reciept
             $subject = "Payment Receipt";
             $name = $user['firstname'];
