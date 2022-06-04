@@ -103,13 +103,13 @@
                           <div class="form-check form-check-inline male">
                             <div class="custom-control custom-radio">
                               <label class="custom-control-label" for="customControlValidation2">Male</label>
-                              <input type="radio" class="custom-control-input" id="customControlValidation2" name="gender">
+                              <input type="radio" class="custom-control-input" id="customControlValidation2" value="male" name="gender">
                             </div>
                           </div>
                           <div class="form-check form-check-inline" style="margin-left: -20px;">
                             <div class="custom-control custom-radio">
                               <label class="custom-control-label" for="customControlValidation3">Female</label>
-                              <input type="radio" class="custom-control-input" id="customControlValidation3" name="gender">
+                              <input type="radio" class="custom-control-input" id="customControlValidation3" value="female" name="gender">
                             </div>
                           </div>
                         </div>
