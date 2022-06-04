@@ -200,10 +200,14 @@ function get_bi_price ($shares = 10000000) {
 
 function get_twp () {
     $taxes = IMMIGRATION_FEE * ((VAT + TAX_US) / 100);
+    $vat = (IMMIGRATION_FEE * VAT) / 100;
+    $gross = (IMMIGRATION_FEE * TAX_US) / 100;
     $total = IMMIGRATION_FEE + $taxes;
 
     return [
         "approval" => IMMIGRATION_FEE,
+        "vat" => $vat,
+        "gross" => $gross,
         "tax" => $taxes,
         "total" => $total
     ];
@@ -224,13 +228,16 @@ function get_total_price($country) {
     
     $taxes = $fees_total * ((VAT + TAX_US) / 100);
     $total_price = $fees_total + $taxes;
+    $vat = ($fees_total * VAT) / 100;
+    $gross = ($fees_total * TAX_US) / 100;
 
     $bio = in_array($country, $FREE_BIOMETRIC) ? 0 : BIOMETRICS_FEE;
     
     return [
         'bio' => $bio,
         'visa' => $visa_price,
-        'vat' => VAT,
+        'vat' => $vat,
+        'gross' => $gross,
         'Immgration' => IMMIGRATION_FEE,
         'admin' => ADMIN_PORTAL_FEE,
         'total_price' => $total_price,

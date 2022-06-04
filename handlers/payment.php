@@ -118,7 +118,7 @@ if(isset($_GET["reference"])) {
         $result = $userLogins->register($newUser);
 
         // If successful
-        if($result) {
+        if($result) {            
             // Mail User
             $subject = "Registration successful";
 
@@ -129,7 +129,28 @@ if(isset($_GET["reference"])) {
             $from = "billing@peacerydeafrica.com";
             $to = $user['email'];
 
+            // Send Login Details
             sendMail($subject, $message, $from, $to);
+
+            // if ($service == "srvs-003") {
+            //     $price = json_decode($_SESSION["PRICE"], true);
+            // }
+
+            // Send Reciept
+            $subject = "Payment Receipt";
+            $name = $user['firstname'];
+
+            // Send Receipt
+            $service = $userServices->getService($id)['service_id'];
+            $PRICE = json_decode($_SESSION['PRICE'], true);
+
+            if ($service == "srvs-002") {
+                sendNBVReceipt($PRICE, $name, $subject, $to, $from);
+            }
+
+            if ($service == "srvs-001") {
+                sendTWPReceipt($PRICE, $name, $subject, $to, $from);
+            }
 
             $_SESSION["REF"] = $ref;
 

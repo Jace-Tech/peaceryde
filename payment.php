@@ -117,12 +117,22 @@ $PRICE = json_decode($_SESSION["PRICE"], true);
 
                 <div class="row paymentdiv">
                     <div class="col-lg-8 col-md-8 col-sm-8">
-                        <p class="paymentservices">VAT</p>
+                        <p class="paymentservices">VAT [7.5%]</p>
                     </div>
                     <div class="col-lg-4 col-md-4 col-sm-4">
                         <p class="paymentprice"><?= round($PRICE['vat'], 2); ?></p>
                     </div>
                 </div>
+
+                <div class="row paymentdiv">
+                    <div class="col-lg-8 col-md-8 col-sm-8">
+                        <p class="paymentservices">GROSS [1.9914%]</p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4">
+                        <p class="paymentprice"><?= round($PRICE['gross'], 2); ?></p>
+                    </div>
+                </div>
+
                 <div class="reviewline"></div>
                 <div class="row paymentdiv">
                     <div class="col-lg-8 col-md-8 col-sm-8">
