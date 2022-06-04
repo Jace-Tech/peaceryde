@@ -179,7 +179,6 @@ function get_visa_price($country) {
     return null;
 }
 
-
 function get_share_price($shares) {
     $def_price = 800;
     $price = ($shares * $def_price) / 10000000;
@@ -211,10 +210,8 @@ function get_twp () {
 }
 
 function get_total_price($country) {
-    $FREE_BIOMETRIC = ['usa'];
-    $visa_price = get_visa_price($country);
-    
-    if(!$visa_price) return;
+    $FREE_BIOMETRIC = ['united states'];
+    $visa_price = get_visa_price($country) ?? 0;
     
     $fees_total = 0;
     
