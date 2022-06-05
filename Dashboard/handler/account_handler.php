@@ -23,7 +23,7 @@ if(isset($_POST['update'])) {
         extract($POST);
     
         if($upload_res['status'] == 'success') {
-            $upload_res = $uploads->uploadToDB($USER_ID, $upload_res['file_name'], 'PROFILE');
+            $upload_res = $uploads->uploadToDB($USER_ID, "PROFILE PIC", $upload_res['file_name'], 'PROFILE');
             if($upload_res['status'] == 'success') {
                 $query = "UPDATE `users` SET `firstname` = '$firstname', `lastname` = '$lastname', `email` = '$email' WHERE `user_id` = '$USER_ID'";
                 $result = $connect->prepare($query);
