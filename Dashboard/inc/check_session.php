@@ -2,8 +2,8 @@
 
 session_start(); 
 
-// include("../db/config.php");
-include("../db/conf.php");
+include("../db/config.php");
+// include("../db/conf.php");
 
 include("../utils/country_fee.php");
 include("../functions/index.php");
