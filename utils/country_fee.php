@@ -187,12 +187,17 @@ function get_share_price($shares) {
 
 
 function get_bi_price ($shares = 10000000) {
-    $price = get_share_price($shares);
+    // $price = get_share_price($shares);
+    $price = 200;
     $taxes =  $price * ((VAT + TAX_US) / 100);
+    $vat =  ($price * VAT) / 100;
+    $gross = ($price * TAX_US) / 100;
     $total = $price + $taxes;
 
     return [
         'tax' => $taxes,
+        'vat' => $vat,
+        'gross' => $gross,
         'total' => $total,
         'price' => $price
     ];
