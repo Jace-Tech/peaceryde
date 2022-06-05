@@ -1,26 +1,3 @@
-<script>
-    const isOld = localStorage.getItem("USER_REG")
-    if(isOld) {
-        const { mode } = JSON.parse(isOld)
-
-        switch(mode) {
-            case "NBV":
-                location.href = "./NBVADASHFORM.php"
-                break;
-
-            case "BI":
-                location.href = "./NBIDASHFORM.php"
-                break;
-
-            case "TWP":
-                location.href = "./NTWPDASHFORM.php"
-                break;
-                
-            default:
-                break;
-        }
-    }
-</script>
 <aside class="left-sidebar" data-sidebarbg="skin6" id="sidebar">
 
     <!-- Sidebar scroll-->

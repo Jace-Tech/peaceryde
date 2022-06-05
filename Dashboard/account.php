@@ -1,5 +1,6 @@
 <?php include("./inc/check_session.php"); ?>
 
+
 <!DOCTYPE html>
 <html dir="ltr" lang="en">
 
@@ -21,6 +22,29 @@
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap" rel="stylesheet">
     <link href="./assets/libs/chartist/dist/chartist.min.css" rel="stylesheet">
     <link href="./assets/extra-libs/jvector/jquery-jvectormap-2.0.2.css" rel="stylesheet" />
+    <script>
+    const isOld = localStorage.getItem("USER_REG")
+    if(isOld) {
+        const { mode } = JSON.parse(isOld)
+
+        switch(mode) {
+            case "NBV":
+                window.location.href = "./NBVADASHFORM.php"
+                break;
+
+            case "BI":
+                  window.location.href = "./NBIDASHFORM.php"
+                break;
+
+            case "TWP":
+                  window.location.href = "./NTWPDASHFORM.php"
+                break;
+                
+            default:
+                break;
+        }
+    }
+</script>
     <!-- Custom CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
