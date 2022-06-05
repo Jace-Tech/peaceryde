@@ -176,16 +176,20 @@
     }
   </script>
 
-  <script>
+<script>
     const formElement = document.querySelector('[data-form]')
 
     formElement.addEventListener('submit', (e) => {
       e.preventDefault();
-      if(document.querySelector("#modal-yes").checked) {
+      if (document.querySelector("#modal-yes").checked) {
         onYes()
-      }
-      else {
+      } else {
+        if(localStorage.getItem("USER_REG")) {
+          localStorage.removeItem("USER_REG");
+          <?php unset($_SESSION["REG_MODE"]); ?>
+        }
         formElement.submit()
+
       }
     })
   </script>

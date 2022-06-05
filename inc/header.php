@@ -1,3 +1,5 @@
+
+<?php include("./inc/alert.php"); ?>
 <section class="new-section1__section1 layout">
       <div class="fixed-top">
         <div class="new-section1__block21 layout">
