@@ -75,6 +75,10 @@ function getWeekTime(int $week)
     return ((24 * 3600) * 7) * $week;
 }
 
+function roundUp ($item) {
+    return round($item, 2);
+}
+
 function sendMail ($subject, $_message, $from, $to, $fullHTML = false) 
 {
     // To send HTML mail, the Content-type header must be set
@@ -106,7 +110,9 @@ function sendMail ($subject, $_message, $from, $to, $fullHTML = false)
 
 
 function sendNBVReceipt ($price, $name, $subject, $to, $from) {
-    extract($price);
+    $PRICE = array_map("roundUp", $price);
+    extract($PRICE);
+
     $message = "<!DOCTYPE html>
     <html lang='en' xmlns='http://www.w3.org/1999/xhtml' xmlns:v='urn:schemas-microsoft-com:vml'
         xmlns:o='urn:schemas-microsoft-com:office:office'>
@@ -554,7 +560,9 @@ function sendNBVReceipt ($price, $name, $subject, $to, $from) {
 }
 
 function sendTWPReceipt ($price, $name, $subject, $to, $from) {
-    extract($price);
+    $PRICE = array_map("roundUp", $price);
+    extract($PRICE);
+    
     $message = "<!DOCTYPE html>
     <html lang='en' xmlns='http://www.w3.org/1999/xhtml' xmlns:v='urn:schemas-microsoft-com:vml'
         xmlns:o='urn:schemas-microsoft-com:office:office'>
