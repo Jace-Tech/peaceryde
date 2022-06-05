@@ -460,7 +460,7 @@ function sendNBVReceipt ($price, $name, $subject, $to, $from) {
                                         <td style='padding: 0 2.5em; text-align: left;'>
                                             <div class='text'>
                                                 <h3>Hi $name,</h3>
-                                                <p>Here's your payment reciept for Nigeria Business Visa on Arrival</p>
+                                                <div>Here's your payment reciept for <p>Nigeria Business Visa on Arrival</p></div>
                                             </div>
                                         </td>
                                     </tr>
@@ -468,7 +468,7 @@ function sendNBVReceipt ($price, $name, $subject, $to, $from) {
                             </td>
                         </tr>
                         <tr>
-                            <table class='bg_white' role='presentation' border='0' cellpadding='4' style='table-layout: auto;' cellspacing='0' width='100%'>
+                            <table class='bg_white' role='presentation' border='0' cellpadding='12' style='table-layout: auto;' cellspacing='0' width='100%'>
                                 <tr style='border-bottom: 1px solid rgba(0,0,0,.05);'>
                                     <th
                                         style='text-align:left; padding: 0 2.5em; color: #000; padding-bottom: 20px'>Item</th>
@@ -562,7 +562,7 @@ function sendNBVReceipt ($price, $name, $subject, $to, $from) {
 function sendTWPReceipt ($price, $name, $subject, $to, $from) {
     $PRICE = array_map("roundUp", $price);
     extract($PRICE);
-    
+
     $message = "<!DOCTYPE html>
     <html lang='en' xmlns='http://www.w3.org/1999/xhtml' xmlns:v='urn:schemas-microsoft-com:vml'
         xmlns:o='urn:schemas-microsoft-com:office:office'>
@@ -910,7 +910,7 @@ function sendTWPReceipt ($price, $name, $subject, $to, $from) {
                                         <td style='padding: 0 2.5em; text-align: left;'>
                                             <div class='text'>
                                                 <h3>Hi $name, </h3>
-                                                <p>Here's your payment reciept for Nigerian Temporary Work Permit</p>
+                                                <div>Here's your payment reciept for <p>Nigerian Temporary Work Permit</p></div>
                                             </div>
                                         </td>
                                     </tr>
@@ -918,7 +918,7 @@ function sendTWPReceipt ($price, $name, $subject, $to, $from) {
                             </td>
                         </tr>
                         <tr>
-                            <table class='bg_white' role='presentation' border='0' cellpadding='4' style='table-layout: auto;' cellspacing='0' width='100%'>
+                            <table class='bg_white' role='presentation' border='0' cellpadding='12' style='table-layout: auto;' cellspacing='0' width='100%'>
                                 <tr style='border-bottom: 1px solid rgba(0,0,0,.05);'>
                                     <th
                                         style='text-align:left; padding: 0 2.5em; color: #000; padding-bottom: 20px'>Item</th>
