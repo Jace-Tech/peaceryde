@@ -107,7 +107,7 @@
 
             
                 <li class="nav-item apply ml-118">
-                  <a href="SBForm.php" class="btn button btn-outline-light appbtn" type="button">Apply</a>
+                  <a href="apply.php" class="btn button btn-outline-light appbtn" type="button">Apply</a>
                   <a href="signin.php" class="btn button2 sign" type="button">Sign In</a>
                 </li>
               
