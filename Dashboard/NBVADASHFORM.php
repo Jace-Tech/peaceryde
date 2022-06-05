@@ -468,6 +468,11 @@
             }
         }
         </script>
+        <script>
+        if(localStorage.getItem('USER_REG')){
+            localStorage.removeItem("USER_REG")
+        }
+    </script>
     <script src="./assets/libs/jquery/dist/jquery.min.js"></script>
     <script src="./assets/libs/popper.js/dist/umd/popper.min.js"></script>
     <script src="./assets/libs/bootstrap/dist/js/bootstrap.min.js"></script>

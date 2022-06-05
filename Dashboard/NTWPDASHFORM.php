@@ -446,6 +446,11 @@
                 form.submit()
             })
     </script>
+    <script>
+        if(localStorage.getItem('USER_REG')){
+            localStorage.removeItem("USER_REG")
+        }
+    </script>
      <script>
   function openNav() {
     		
