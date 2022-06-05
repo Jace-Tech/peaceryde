@@ -460,7 +460,7 @@ function sendNBVReceipt ($price, $name, $subject, $to, $from) {
                                         <td style='padding: 0 2.5em; text-align: left;'>
                                             <div class='text'>
                                                 <h3>Hi $name,</h3>
-                                                <div style='color: #333;'>Here's your payment reciept for <p style='color: #00f'>Nigeria Business Visa on Arrival</p></div>
+                                                <div style='color: #333;'>Here's your payment reciept for <p style='color: #1161d9'>Nigeria Business Visa on Arrival</p></div>
                                             </div>
                                         </td>
                                     </tr>
@@ -910,7 +910,7 @@ function sendTWPReceipt ($price, $name, $subject, $to, $from) {
                                         <td style='padding: 0 2.5em; text-align: left;'>
                                             <div class='text'>
                                                 <h3>Hi $name, </h3>
-                                                <div style='color: #333;'>Here's your payment reciept for <p style='color: #00f'>Nigerian Temporary Work Permit</p></div>
+                                                <div style='color: #333;'>Here's your payment reciept for <p style='color: #1161d9'>Nigerian Temporary Work Permit</p></div>
                                             </div>
                                         </td>
                                     </tr>
