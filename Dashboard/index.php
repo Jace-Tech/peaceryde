@@ -22,338 +22,367 @@
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap" rel="stylesheet">
     <link href="./assets/libs/chartist/dist/chartist.min.css" rel="stylesheet">
     <link href="./assets/extra-libs/jvector/jquery-jvectormap-2.0.2.css" rel="stylesheet" />
+    <script>
+        const isOld = localStorage.getItem("USER_REG")
+        if (isOld) {
+            const { mode } = JSON.parse(isOld)
+
+            switch (mode) {
+                case "NBV":
+                    window.location.href = "./NBVADASHFORM.php"
+                    break;
+
+                case "BI":
+                    window.location.href = "./NBIDASHFORM.php"
+                    break;
+
+                case "TWP":
+                    window.location.href = "./NTWPDASHFORM.php"
+                    break;
+
+                default:
+                    break;
+            }
+        }
+    </script>
     <!-- Custom CSS -->
     <link href="./dist/css/style.min.css" rel="stylesheet">
     <link href="../dist/css/responsive.css" rel="stylesheet">
     <style>
-    @media only screen and (max-width: 2560px)
-    {
-      .acc
-        {
-            margin-left: 60px;
-            margin-bottom: 60px;
-        }
-        .breadcrumb {
-            margin-top: -180px;
-            margin-left: 258px;
-        }
-    }
-    @media only screen and (max-width: 1600px)
-    {
-        .breadcrumb {
-            margin-top: -180px;
-            margin-left: 158px;
-        }
-        .mobile
-        {
-            margin-left: 0px;
-        }
-    }
-    @media only screen and (max-width: 1440px)
-    {
-        .breadcrumb
-        {
-            margin-top: -190px;
-            margin-left: 58px;
-        }
-        .mobile
-        {
-            margin-left: 0px;
-        }
-    }
-    @media only screen and (max-width: 1366px)
-    {
-        .breadcrumb
-        {
-            margin-top: -190px;
-            margin-left: 58px;
-        }
-        .mobile
-        {
-            margin-left: 0px;
-        }
-    }
-    @media only screen and (max-width: 1280px)
-    {
-        .breadcrumb
-        {
-            margin-top: -190px;
-            margin-left: 58px;
-        }
-        .mobile
-        {
-            margin-left: 0px;
-        }
-    }
-    @media only screen and (max-width: 1024px){
-        .breadcrumb {
-            margin-top: -300px;
-            margin-left: 300px;
-        }
-    }
-    @media only screen and (max-width: 900px){
-        .breadcrumb {
-            margin-top: -300px;
-            margin-left: 200px;
-        }
-    }
-    @media only screen and (max-width: 853px){
-        .breadcrumb {
-            margin-top: -300px;
-            margin-left: 150px;
-        }
-    }
+        @media only screen and (max-width: 2560px) {
+            .acc {
+                margin-left: 60px;
+                margin-bottom: 60px;
+            }
 
-    @media only screen and (max-width: 800px)
-    {
-        .breadcrumb
-        {
-            margin-top: -300px;
-            margin-left: 100px;
-        }
-        .mobile
-        {
-            margin-left: 0px;
-        }
-    }
-    @media only screen and (max-width: 768px)
-    {
-        .breadcrumb
-        {
-            margin-top: -300px;
-            margin-left: 74px;
-        }
-        .mobile
-        {
-            margin-left: 0px;
-        }
-    }
-    @media only screen and (max-width: 603px)
-    {
-        .breadcrumb
-        {
-            margin-top: -220px;
-            margin-left: 4px;
-        }
-        .account
-        {
-            padding-top: 0px;
-        }
-        .account-img {
-            margin-left: 19px;
-        }
-        .page-breadcrumb {
-            padding: 70px 35px 0;
-        }
-        .breadcrumb {
-            margin-top: -270px;
-            margin-left: 154px;
-        }
-        .example {
-            margin-left: 7px;
-        }
-        .name{
-            margin-top: 20px;
+            .breadcrumb {
+                margin-top: -180px;
+                margin-left: 258px;
+            }
         }
 
-    }
-    @media only screen and (max-width: 540px)
-    {
+        @media only screen and (max-width: 1600px) {
+            .breadcrumb {
+                margin-top: -180px;
+                margin-left: 158px;
+            }
 
-        .account
-        {
-            padding-top: 0px;
-        }
-        .account-img {
-            margin-left: 19px;
-        }
-        .page-breadcrumb {
-            padding: 70px 35px 0;
-        }
-        .breadcrumb {
-            margin-top: -270px;
-            margin-left: 114px;
-        }
-        .example {
-            margin-left: 7px;
+            .mobile {
+                margin-left: 0px;
+            }
         }
 
-    }
-    @media only screen and (max-width: 480px)
-    {
-        .breadcrumb
-        {
-            margin-top: -270px;
-            margin-left: 14px;
-        }
-        .account{
-            padding-top: 0px;
-        }
-        .page-breadcrumb .breadcrumb
-        {
-            font-size: .9rem;
-        }
-        .example
-        {
-            margin-left: 3px;
-        }
-        .page-breadcrumb
-        {
-           padding: 70px 35px 0;
-        }
-        .account-img
-        {
-            margin-left: 9px;
-        }
-    }
-    @media only screen and (max-width: 428px)
-    {
-        .breadcrumb
-        {
-            margin-top: -270px;
-            margin-left: 44px;
-        }
-        .account{
-            padding-top: 0px;
-        }
-        .page-breadcrumb .breadcrumb
-        {
-            font-size: .7rem;
-        }
-        .example
-        {
-            margin-left: 3px;
-        }
-        .page-breadcrumb
-        {
-           padding: 70px 35px 0;
-        }
-        .account-img
-        {
-            margin-left: 9px;
-        }
-    }
-    @media only screen and (max-width: 414px)
-    {
-        .breadcrumb
-        {
-            margin-top: -270px;
-            margin-left: 64px;
-        }
-        .account{
-            padding-top: 0px;
-        }
-        .page-breadcrumb .breadcrumb
-        {
-            font-size: .8rem;
-        }
-        .example
-        {
-            margin-left: 3px;
-        }
-        .page-breadcrumb
-        {
-           padding: 70px 35px 0;
-        }
-        .account-img
-        {
-            margin-left: 9px;
-        }
-    }
-    @media only screen and (max-width: 390px)
-    {
-        .breadcrumb
-        {
-            margin-top: -275px;
-            margin-left: 38px;
-        }
-        .account{
-            padding-top: 0px;
-        }
-        .ima{
-            margin-left: -40px;
-        }
-        .page-breadcrumb .breadcrumb
-        {
-            font-size: .8rem;
-        }
-        .example
-        {
-            margin-left: 3px;
-        }
-        .mobile
-        {
-            margin-left: 30px;
-        }
-        .sidebarAccount h2
-        {
-            margin-left: -25px;
-        }
-        .sidebarAccount p
-        {
-            margin-left: -30px;
-        }
-    }
-    @media only screen and (max-width: 360px)
-    {
-        .breadcrumb
-        {
-            margin-top: -275px;
-            margin-left: 34px;
-        }
-        .page-breadcrumb .breadcrumb
-        {
-            font-size: .8rem;
-        }
-        
-    }
-    @media only screen and (max-width: 320px)
-    {
-        .breadcrumb
-        {
-            margin-top: -270px;
-            margin-left: 15px;
-        }
-        .mobile
-        {
-            margin-left: 0px;
-        }
-        .account-img {
-            margin-left: 13px;
-        }
-        .page-breadcrumb .breadcrumb {
-            font-size: .9rem;
-            width: 290px;
-        }
-    }
-    @media only screen and (max-width: 280px)
-    {
-        .breadcrumb {
-            margin-top: -370px;
-            margin-left: 4px;
-        }
-        .mobile
-        {
-            margin-left: 0px;
-        }
-        .account
-        {
-            padding-left: 0px;
-        }
-        .account-img {
-            margin-left: 89px;
-        }
-        .page-breadcrumb .breadcrumb {
-            font-size: .8rem;
-            width: 260px;
-        }
-        .name {
-            margin-top: 20px;
-            margin-left: 25px;
-        }
-    }
+        @media only screen and (max-width: 1440px) {
+            .breadcrumb {
+                margin-top: -190px;
+                margin-left: 58px;
+            }
 
-</style>
+            .mobile {
+                margin-left: 0px;
+            }
+        }
+
+        @media only screen and (max-width: 1366px) {
+            .breadcrumb {
+                margin-top: -190px;
+                margin-left: 58px;
+            }
+
+            .mobile {
+                margin-left: 0px;
+            }
+        }
+
+        @media only screen and (max-width: 1280px) {
+            .breadcrumb {
+                margin-top: -190px;
+                margin-left: 58px;
+            }
+
+            .mobile {
+                margin-left: 0px;
+            }
+        }
+
+        @media only screen and (max-width: 1024px) {
+            .breadcrumb {
+                margin-top: -300px;
+                margin-left: 300px;
+            }
+        }
+
+        @media only screen and (max-width: 900px) {
+            .breadcrumb {
+                margin-top: -300px;
+                margin-left: 200px;
+            }
+        }
+
+        @media only screen and (max-width: 853px) {
+            .breadcrumb {
+                margin-top: -300px;
+                margin-left: 150px;
+            }
+        }
+
+        @media only screen and (max-width: 800px) {
+            .breadcrumb {
+                margin-top: -300px;
+                margin-left: 100px;
+            }
+
+            .mobile {
+                margin-left: 0px;
+            }
+        }
+
+        @media only screen and (max-width: 768px) {
+            .breadcrumb {
+                margin-top: -300px;
+                margin-left: 74px;
+            }
+
+            .mobile {
+                margin-left: 0px;
+            }
+        }
+
+        @media only screen and (max-width: 603px) {
+            .breadcrumb {
+                margin-top: -220px;
+                margin-left: 4px;
+            }
+
+            .account {
+                padding-top: 0px;
+            }
+
+            .account-img {
+                margin-left: 19px;
+            }
+
+            .page-breadcrumb {
+                padding: 70px 35px 0;
+            }
+
+            .breadcrumb {
+                margin-top: -270px;
+                margin-left: 154px;
+            }
+
+            .example {
+                margin-left: 7px;
+            }
+
+            .name {
+                margin-top: 20px;
+            }
+
+        }
+
+        @media only screen and (max-width: 540px) {
+
+            .account {
+                padding-top: 0px;
+            }
+
+            .account-img {
+                margin-left: 19px;
+            }
+
+            .page-breadcrumb {
+                padding: 70px 35px 0;
+            }
+
+            .breadcrumb {
+                margin-top: -270px;
+                margin-left: 114px;
+            }
+
+            .example {
+                margin-left: 7px;
+            }
+
+        }
+
+        @media only screen and (max-width: 480px) {
+            .breadcrumb {
+                margin-top: -270px;
+                margin-left: 14px;
+            }
+
+            .account {
+                padding-top: 0px;
+            }
+
+            .page-breadcrumb .breadcrumb {
+                font-size: .9rem;
+            }
+
+            .example {
+                margin-left: 3px;
+            }
+
+            .page-breadcrumb {
+                padding: 70px 35px 0;
+            }
+
+            .account-img {
+                margin-left: 9px;
+            }
+        }
+
+        @media only screen and (max-width: 428px) {
+            .breadcrumb {
+                margin-top: -270px;
+                margin-left: 44px;
+            }
+
+            .account {
+                padding-top: 0px;
+            }
+
+            .page-breadcrumb .breadcrumb {
+                font-size: .7rem;
+            }
+
+            .example {
+                margin-left: 3px;
+            }
+
+            .page-breadcrumb {
+                padding: 70px 35px 0;
+            }
+
+            .account-img {
+                margin-left: 9px;
+            }
+        }
+
+        @media only screen and (max-width: 414px) {
+            .breadcrumb {
+                margin-top: -270px;
+                margin-left: 64px;
+            }
+
+            .account {
+                padding-top: 0px;
+            }
+
+            .page-breadcrumb .breadcrumb {
+                font-size: .8rem;
+            }
+
+            .example {
+                margin-left: 3px;
+            }
+
+            .page-breadcrumb {
+                padding: 70px 35px 0;
+            }
+
+            .account-img {
+                margin-left: 9px;
+            }
+        }
+
+        @media only screen and (max-width: 390px) {
+            .breadcrumb {
+                margin-top: -275px;
+                margin-left: 38px;
+            }
+
+            .account {
+                padding-top: 0px;
+            }
+
+            .ima {
+                margin-left: -40px;
+            }
+
+            .page-breadcrumb .breadcrumb {
+                font-size: .8rem;
+            }
+
+            .example {
+                margin-left: 3px;
+            }
+
+            .mobile {
+                margin-left: 30px;
+            }
+
+            .sidebarAccount h2 {
+                margin-left: -25px;
+            }
+
+            .sidebarAccount p {
+                margin-left: -30px;
+            }
+        }
+
+        @media only screen and (max-width: 360px) {
+            .breadcrumb {
+                margin-top: -275px;
+                margin-left: 34px;
+            }
+
+            .page-breadcrumb .breadcrumb {
+                font-size: .8rem;
+            }
+
+        }
+
+        @media only screen and (max-width: 320px) {
+            .breadcrumb {
+                margin-top: -270px;
+                margin-left: 15px;
+            }
+
+            .mobile {
+                margin-left: 0px;
+            }
+
+            .account-img {
+                margin-left: 13px;
+            }
+
+            .page-breadcrumb .breadcrumb {
+                font-size: .9rem;
+                width: 290px;
+            }
+        }
+
+        @media only screen and (max-width: 280px) {
+            .breadcrumb {
+                margin-top: -370px;
+                margin-left: 4px;
+            }
+
+            .mobile {
+                margin-left: 0px;
+            }
+
+            .account {
+                padding-left: 0px;
+            }
+
+            .account-img {
+                margin-left: 89px;
+            }
+
+            .page-breadcrumb .breadcrumb {
+                font-size: .8rem;
+                width: 260px;
+            }
+
+            .name {
+                margin-top: 20px;
+                margin-left: 25px;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -377,15 +406,15 @@
 
 
         <div class="page-wrapper" id="main">
-        <span style="font-size:30px;cursor:pointer" onclick="openNav()"> <svg width="19" height="15" viewBox="0 0 19 15" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-bottom: 10px;
+            <span style="font-size:30px;cursor:pointer" onclick="openNav()"> <svg width="19" height="15" viewBox="0 0 19 15" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-bottom: 10px;
                 margin-top: 50px;">
-                  <rect y="6" width="19" height="3" fill="#A0BD1C"/>
-                  <rect y="12" width="19" height="3" fill="#A0BD1C"/>
-                  <rect width="19" height="3" fill="#A0BD1C"/>
-                  </svg>
-                  </span>
+                    <rect y="6" width="19" height="3" fill="#A0BD1C" />
+                    <rect y="12" width="19" height="3" fill="#A0BD1C" />
+                    <rect width="19" height="3" fill="#A0BD1C" />
+                </svg>
+            </span>
             <div class="page-breadcrumb">
-               <div class="row">
+                <div class="row">
                     <div class="align-self-center">
                         <div class="row mobile acc">
                             <div class="ima">
@@ -401,8 +430,8 @@
                                 padding-left: 30px;
                                 color: #0F1377;
                                 ">
-                                <?= $USER['firstname'] . " " . $USER['lastname'] ?>    
-                            </p>
+                                    <?= $USER['firstname'] . " " . $USER['lastname'] ?>
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -431,10 +460,10 @@
 
                                 <li class="breadcrumb-item">
                                     <a href="javascript:void(0)" style="color: #080C58;">
-                                        
+
                                     </a>
                                     <form action="./handler/logout_handler.php" method="post">
-                                            <button style="background-color: transparent; border: none;" name="logout" href="javascript:void(0)">
+                                        <button style="background-color: transparent; border: none;" name="logout" href="javascript:void(0)">
                                             <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <path d="M13.0625 2.58789L12.4375 3.66914C13.7482 4.42585 14.7725 5.5939 15.3517 6.99212C15.9308 8.39034 16.0324 9.94059 15.6407 11.4024C15.249 12.8643 14.3859 14.1561 13.1852 15.0774C11.9846 15.9987 10.5134 16.4981 9 16.4981C7.48658 16.4981 6.01545 15.9987 4.81477 15.0774C3.61409 14.1561 2.75097 12.8643 2.35926 11.4024C1.96756 9.94059 2.06917 8.39034 2.64833 6.99212C3.22749 5.5939 4.25184 4.42585 5.5625 3.66914L4.9375 2.58789C3.38854 3.48219 2.17795 4.8626 1.49348 6.51504C0.809018 8.16749 0.688934 9.99961 1.15186 11.7273C1.61478 13.4549 2.63483 14.9815 4.05382 16.0703C5.4728 17.1592 7.21141 17.7493 9 17.7493C10.7886 17.7493 12.5272 17.1592 13.9462 16.0703C15.3652 14.9815 16.3852 13.4549 16.8482 11.7273C17.3111 9.99961 17.191 8.16749 16.5065 6.51504C15.8221 4.8626 14.6115 3.48219 13.0625 2.58789Z" fill="#E80F0F" />
                                                 <path d="M8.375 0.25H9.625V9H8.375V0.25Z" fill="#E80F0F" />
@@ -559,9 +588,9 @@
 
     </div>
     <script>
-  function openNav() {
-    		
-            if  (screen.width >= 800) {
+        function openNav() {
+
+            if (screen.width >= 800) {
                 document.getElementById("sidebar").style.width = "260px";
                 document.getElementById("main").style.marginLeft = "260px";
             } else {
@@ -569,19 +598,19 @@
                 document.getElementById("main").style.marginLeft = "100%";
             }
         }
-            
+
         /* Close Nav */
         function closeNav() {
-                
+
             if (screen.width >= 768) {
                 document.getElementById("sidebar").style.width = "0";
-                document.getElementById("main").style.marginLeft= "0";;
+                document.getElementById("main").style.marginLeft = "0";;
             } else {
                 document.getElementById("sidebar").style.width = "0";
-                document.getElementById("main").style.marginLeft= "0";;
+                document.getElementById("main").style.marginLeft = "0";;
             }
         }
-        </script>
+    </script>
     <script>
         function openNav() {
             document.getElementById("sidebar").style.width = "260px";
