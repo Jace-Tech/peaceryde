@@ -462,73 +462,73 @@ function sendNBVReceipt ($price, $name, $subject, $to, $from) {
                             </td>
                         </tr>
                         <tr>
-                            <table class='bg_white' role='presentation' border='0' cellpadding='0' cellspacing='0' width='100%'>
+                            <table class='bg_white' role='presentation' border='0' cellpadding='4' style='table-layout: auto;' cellspacing='0' width='100%'>
                                 <tr style='border-bottom: 1px solid rgba(0,0,0,.05);'>
-                                    <th width='80%'
+                                    <th
                                         style='text-align:left; padding: 0 2.5em; color: #000; padding-bottom: 20px'>Item</th>
-                                    <th width='20%'
+                                    <th
                                         style='text-align:right; padding: 0 2.5em; color: #000; padding-bottom: 20px'>Price</th>
                                 </tr>
         
                                 <tr style='border-bottom: 1px solid rgba(0,0,0,.05);'>
-                                    <td valign='middle' width='80%' style='text-align:left; padding: 0 2.5em;'>
+                                    <td valign='middle' style='text-align:left; padding: 0 2.5em;'>
                                         VISA Fee
                                     </td>
-                                    <td valign='middle' width='20%' style='text-align:right; padding: 0 2.5em;'>
+                                    <td valign='middle' style='text-align:right; padding: 0 2.5em;'>
                                         <span class='price' style='color: #000; font-size: 16px;'>\$$visa</span>
                                     </td>
                                 </tr>
         
                                 <tr style='border-bottom: 1px solid rgba(0,0,0,.05);'>
-                                    <td valign='middle' width='80%' style='text-align:left; padding: 0 2.5em;'>
+                                    <td valign='middle' style='text-align:left; padding: 0 2.5em;'>
                                         Biometric Fee
                                     </td>
-                                    <td valign='middle' width='20%' style='text-align:right; padding: 0 2.5em;'>
+                                    <td valign='middle' style='text-align:right; padding: 0 2.5em;'>
                                         <span class='price' style='color: #000; font-size: 16px;'>\$$bio</span>
                                     </td>
                                 </tr>
         
                                 <tr style='border-bottom: 1px solid rgba(0,0,0,.05);'>
-                                    <td valign='middle' width='80%' style='text-align:left; padding: 0 2.5em;'>
+                                    <td valign='middle' style='text-align:left; padding: 0 2.5em;'>
                                         Immigration Fee
                                     </td>
-                                    <td valign='middle' width='20%' style='text-align:right; padding: 0 2.5em;'>
+                                    <td valign='middle' style='text-align:right; padding: 0 2.5em;'>
                                         <span class='price' style='color: #000; font-size: 16px;'>\$$Immgration</span>
                                     </td>
                                 </tr>
         
                                 <tr style='border-bottom: 1px solid rgba(0,0,0,.05);'>
-                                    <td valign='middle' width='80%' style='text-align:left; padding: 0 2.5em;'>
+                                    <td valign='middle' style='text-align:left; padding: 0 2.5em;'>
                                         Admin Portal Fee
                                     </td>
-                                    <td valign='middle' width='20%' style='text-align:right; padding: 0 2.5em;'>
+                                    <td valign='middle' style='text-align:right; padding: 0 2.5em;'>
                                         <span class='price' style='color: #000; font-size: 16px;'>\$$admin</span>
                                     </td>
                                 </tr>
         
                                 <tr style='border-bottom: 1px solid rgba(0,0,0,.05);'>
-                                    <td valign='middle' width='80%' style='text-align:left; padding: 0 2.5em;'>
+                                    <td valign='middle' style='text-align:left; padding: 0 2.5em;'>
                                         VAT [7.5%]
                                     </td>
-                                    <td valign='middle' width='20%' style='text-align:right; padding: 0 2.5em;'>
+                                    <td valign='middle' style='text-align:right; padding: 0 2.5em;'>
                                         <span class='price' style='color: #000; font-size: 16px;'>\$$vat</span>
                                     </td>
                                 </tr>
         
                                 <tr style='border-bottom: 1px solid rgba(0,0,0,.05);'>
-                                    <td valign='middle' width='80%' style='text-align:left; padding: 0 2.5em;'>
+                                    <td valign='middle' style='text-align:left; padding: 0 2.5em;'>
                                         Gross Receipt Tax [1.9914%]
                                     </td>
-                                    <td valign='middle' width='20%' style='text-align:right; padding: 0 2.5em;'>
+                                    <td valign='middle' style='text-align:right; padding: 0 2.5em;'>
                                         <span class='price' style='color: #000; font-size: 16px;'>\$$gross</span>
                                     </td>
                                 </tr>
         
                                 <tr style='border-bottom: 1px solid rgba(0,0,0,.05);'>
-                                    <td valign='middle' width='80%' style='text-align:left; padding: 0 2.5em;'>
+                                    <td valign='middle' style='text-align:left; padding: 0 2.5em;'>
                                         <strong>Total</strong>
                                     </td>
-                                    <td valign='middle' width='20%' style='text-align:right; padding: 0 2.5em;'>
+                                    <td valign='middle' style='text-align:right; padding: 0 2.5em;'>
                                         <span class='price' style='color: #000; font-size: 16px; font-weight: bold;'>\$$total_price</span>
                                     </td>
                                 </tr>
@@ -910,46 +910,46 @@ function sendTWPReceipt ($price, $name, $subject, $to, $from) {
                             </td>
                         </tr>
                         <tr>
-                            <table class='bg_white' role='presentation' border='0' cellpadding='0' cellspacing='0' width='100%'>
+                            <table class='bg_white' role='presentation' border='0' cellpadding='4' style='table-layout: auto;' cellspacing='0' width='100%'>
                                 <tr style='border-bottom: 1px solid rgba(0,0,0,.05);'>
-                                    <th width='80%'
+                                    <th
                                         style='text-align:left; padding: 0 2.5em; color: #000; padding-bottom: 20px'>Item</th>
-                                    <th width='20%'
+                                    <th
                                         style='text-align:right; padding: 0 2.5em; color: #000; padding-bottom: 20px'>Price</th>
                                 </tr>
         
                                 <tr style='border-bottom: 1px solid rgba(0,0,0,.05);'>
-                                    <td valign='middle' width='80%' style='text-align:left; padding: 0 2.5em;'>
+                                    <td valign='middle' style='text-align:left; padding: 0 2.5em;'>
                                         Approval Fee
                                     </td>
-                                    <td valign='middle' width='20%' style='text-align:right; padding: 0 2.5em;'>
+                                    <td valign='middle' style='text-align:right; padding: 0 2.5em;'>
                                         <span class='price' style='color: #000; font-size: 16px;'>\$$approval</span>
                                     </td>
                                 </tr>
         
                                 <tr style='border-bottom: 1px solid rgba(0,0,0,.05);'>
-                                    <td valign='middle' width='80%' style='text-align:left; padding: 0 2.5em;'>
+                                    <td valign='middle' style='text-align:left; padding: 0 2.5em;'>
                                         VAT [7.5%]
                                     </td>
-                                    <td valign='middle' width='20%' style='text-align:right; padding: 0 2.5em;'>
+                                    <td valign='middle' style='text-align:right; padding: 0 2.5em;'>
                                         <span class='price' style='color: #000; font-size: 16px;'>\$$vat</span>
                                     </td>
                                 </tr>
         
                                 <tr style='border-bottom: 1px solid rgba(0,0,0,.05);'>
-                                    <td valign='middle' width='80%' style='text-align:left; padding: 0 2.5em;'>
+                                    <td valign='middle' style='text-align:left; padding: 0 2.5em;'>
                                         Gross Receipt Tax [1.9914%]
                                     </td>
-                                    <td valign='middle' width='20%' style='text-align:right; padding: 0 2.5em;'>
+                                    <td valign='middle' style='text-align:right; padding: 0 2.5em;'>
                                         <span class='price' style='color: #000; font-size: 16px;'>\$$gross</span>
                                     </td>
                                 </tr>
         
                                 <tr style='border-bottom: 1px solid rgba(0,0,0,.05);'>
-                                    <td valign='middle' width='80%' style='text-align:left; padding: 0 2.5em;'>
+                                    <td valign='middle' style='text-align:left; padding: 0 2.5em;'>
                                         <strong>Total</strong>
                                     </td>
-                                    <td valign='middle' width='20%' style='text-align:right; padding: 0 2.5em;'>
+                                    <td valign='middle' style='text-align:right; padding: 0 2.5em;'>
                                         <span class='price' style='color: #000; font-size: 16px; font-weight: bold;'>\$$total</span>
                                     </td>
                                 </tr>
