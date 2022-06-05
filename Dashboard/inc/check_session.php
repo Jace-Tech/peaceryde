@@ -25,16 +25,6 @@ include("../models/ResetUserPassword.php");
 include("../payment/Paystack.php");
 
 if(!isset($_SESSION["LOGGED_USER"])) header("Location: ../signin.php");
-
-if(isset($_SESSION["REG_MODE"])) {
-    if($_SESSION["REG_MODE"] == "TWP") {
-        header("Location: ./NTWPDASHFORM.php");
-    }
-
-    if($_SESSION["REG_MODE"] == "BVA") {
-        header("Location: ./NBVADASHFORM.php");
-    }
-}
 ?>
 
 

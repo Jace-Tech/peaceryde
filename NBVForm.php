@@ -474,8 +474,7 @@
       const service = form.service.value
       const passport = form.passport.value
       const gender = Array.from(form.gender).filter(item => item.checked == true)[0].value
-
-      <?php $_SESSION["REG_MODE"] = "BVA"; ?>
+      const mode = "NBV"
 
       const data = {
         country,
@@ -489,7 +488,8 @@
         title,
         service,
         passport,
-        gender
+        gender,
+        mode
       }
 
       localStorage.setItem('USER_REG', JSON.stringify(data))
@@ -506,7 +506,6 @@
       } else {
         if(localStorage.getItem("USER_REG")) {
           localStorage.removeItem("USER_REG");
-          <?php unset($_SESSION["REG_MODE"]); ?>
         }
         formElement.submit()
 

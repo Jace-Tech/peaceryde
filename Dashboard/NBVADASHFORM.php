@@ -397,8 +397,6 @@
 
             </form>
         </div>
-        <?php unset($_SESSION['REG_MODE']); ?>
-
     </div>
 
     <script>

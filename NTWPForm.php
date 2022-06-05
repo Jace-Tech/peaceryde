@@ -476,8 +476,7 @@
       const service = form.service.value
       const passport = form.passport.value
       const gender = Array.from(form.gender).filter(item => item.checked == true)[0].value
-
-      <?php $_SESSION["REG_MODE"] = "TWP"; ?>
+      const mode = "TWP"
 
       const data = {
         country,
@@ -491,7 +490,8 @@
         title,
         service,
         passport,
-        gender
+        gender,
+        mode
       }
 
       localStorage.setItem('USER_REG', JSON.stringify(data))

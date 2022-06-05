@@ -162,14 +162,15 @@
       const email = form.email.value
       const service = form.service.value
 
-      <?php $_SESSION["REG_MODE"] = "BI"; ?>
+      const mode = "BI"
 
       const data = {
         shares,
         companyName,
         coperateAddress,
         email,
-        service
+        service,
+        mode
       }
 
       localStorage.setItem('USER_REG', JSON.stringify(data))
