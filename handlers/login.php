@@ -19,7 +19,12 @@ if(isset($_POST["login"])) {
         ];
 
         $_SESSION["ALERT"] = json_encode($alert);
-        header("Location: ../index.php");
+        if(isset($_POST["redirect"])) {
+            header("Location: $redirect");
+        }
+        else {
+            header("Location: ../signin.php");
+        }
     }
     else {
         $alert = [

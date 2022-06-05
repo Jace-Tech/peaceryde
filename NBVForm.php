@@ -427,7 +427,7 @@
             <div class="form-row">
               <div class="form-group">
                 <input type="text" name="email" class="form-control" style="border: 1px solid #1161D9; width:470px;font-family:ubuntu;height: 44px; margin-top:27px;  color: #1161D9;" placeholder="Email" />
-
+                <input type="hidden" name="redirect" value="../NBVForm.php">
                 <input type="text" name="password" class="form-control" style="border: 1px solid #1161D9; width:470px;font-family:ubuntu;height: 44px; margin-top:27px; color: #1161D9;" placeholder="Password" />
               </div>
             </div>
