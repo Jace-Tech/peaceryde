@@ -25,7 +25,7 @@ class Admin {
 
     public function checkEmail($email)
     {
-        $query = "SELECT * FROM `admin` WHERE `email` = :email";
+        $query = "SELECT * FROM `admin` WHERE `email` = ?";
         $result = $this->connection->prepare($query);
         $result->execute([$email]);
 
