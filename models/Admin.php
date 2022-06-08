@@ -23,6 +23,20 @@ class Admin {
         return $id;
     }
 
+    public function checkEmail($email)
+    {
+        $query = "SELECT * FROM `admin` WHERE `email` = :email";
+        $result = $this->connection->prepare($query);
+        $result->execute([$email]);
+
+        if($result->rowCount()) {
+            return true;
+        }
+        else {
+            return false;
+        }
+    }
+
     public function loginAdmin (array $credientials) 
     {
         extract($credientials);

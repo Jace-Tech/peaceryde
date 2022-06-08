@@ -19,6 +19,16 @@ if(isset($_POST['addAdmin'])){
     $services = filter_field($_POST['service']);
     $admin_id = $admin->generate_id();
 
+    if($admin->checkEmail($email)) {
+        $alert = [
+            'alert_type' => 'success',
+            'alert_message' => "Email already exists"
+        ];
+        $_SESSION['ADMIN_ALERT'] = json_encode($alert);
+        header('Location: ../subadmins.php');
+        exit();
+    }
+
     $user = [
         'name' => $name,
         'countries' => $country,
