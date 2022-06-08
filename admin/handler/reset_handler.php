@@ -1,4 +1,5 @@
 <?php 
+session_start();
 
 include("../../db/config.php");
 include("../../functions/index.php");
@@ -19,9 +20,6 @@ if(isset($_POST['reset'])) {
         $admin = $result->fetch();
         $response = $reset_password->initializeReset($email);
 
-        print_r($response);
-        die();
-
         if($response) {
             $time = strtotime("10 mins");
             setcookie("RESET", $response['reset_id'], $time, '/');
@@ -29,11 +27,11 @@ if(isset($_POST['reset'])) {
             // send mail
             $subject = "Password Reset";
             $pin = $response['pin'];
-            $message = "<p>Hi {$admin['name']}</p>";
+            $name = $admin['name'];
+            $message = "<p>Hi $name</p>";
             $message .= "<p>Your reset pin is <strong>$pin</strong></p>";
-            $to = $email;
 
-            sendMail($subject, $message, FROM, $to);
+            sendMail($subject, $message, "billing@peacerydeafrica.com", $email);
 
             // Generate a file
             $file_handler = fopen("pin.txt", "a+");
@@ -45,7 +43,6 @@ if(isset($_POST['reset'])) {
                 "alert_message" => "Message sent to your inbox",
             ];
 
-            session_start();
             $_SESSION['ADMIN_ALERT'] = json_encode($alert);
 
             header("location: ../verify.php");
@@ -95,8 +92,7 @@ if(isset($_POST['change'])) {
                 "alert_type" => "success",
                 "alert_message" => "Password Changed"
             ];
-    
-            session_start();
+
             $_SESSION["alert"] = json_encode($alert);
             
             header("Location: ../index.php");
