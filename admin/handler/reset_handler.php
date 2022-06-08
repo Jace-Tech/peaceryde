@@ -2,6 +2,7 @@
 
 include("../../db/config.php");
 include("../../functions/index.php");
+include("../../setup.php");
 include("../../models/ResetPassword.php");
 
 
@@ -21,12 +22,11 @@ if(isset($_POST['reset'])) {
         setcookie("RESET", $response['reset_id'], $time, '/');
          
         // send mail
-        $from = "alexjace151@gmail.com";
         $subject = "Password Reset";
         $message = "Hi {$email}, <br> your reset pin is <strong>${$response['pin']}</strong>";
         $to = $email;
 
-        sendMail($subject, $message, $from, $to);
+        sendMail($subject, $message, FROM, $to);
 
         // Generate a file
         $file_handler = fopen("pin.txt", "a+");

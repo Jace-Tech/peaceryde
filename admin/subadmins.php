@@ -63,9 +63,14 @@
 
                                                 <div>
                                                     <label class="block text-sm font-medium mb-1" for="feedback">Password <span class="text-red-500">*</span></label> 
-                                                    <div class="relative">
+                                                    <div class="relative flex">
                                                         <input id="form-search" data-password-input class="form-input w-full pl-3" type="password"> 
-                                                        <button type="button" data-password-btn class="absolute inset-0 left-auto group btn hover:bg-gray-200 text-xs px-3" type="submit" aria-label="Search">
+
+                                                        <button type="button" data-show-btn class="btn btn-sm hover:bg-gray-200 text-xs px-3">
+                                                            Show
+                                                        </button>
+
+                                                        <button type="button" data-password-btn class="absolute inset-0 left-auto group btn hover:bg-gray-200 text-xs px-3" aria-label="Search">
                                                             Auto generate
                                                         </button>
                                                     </div>
@@ -383,7 +388,23 @@
     <script>
         const btns = document.querySelectorAll('[data-password-btn]')
         const inputs = document.querySelectorAll('[data-password-input]')
+        const btn = document.querySelector('[data-show-btn]')
+        let isShown = false;
 
+        btn.addEventListener('click', (e) => {
+            e.preventDefault();
+
+            isShown = !isShown;
+            if(isShown) {
+                document.querySelector('[data-password-input]').type = "text"
+                e.target.innerHTML = "Hide"
+            }
+            else {
+                document.querySelector('[data-password-input]').type = "password"
+                e.target.innerHTML = "Show"
+            }
+
+        })
         const generatePin = (length = 15) => {
             let password = "",
                 prefix = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890"

@@ -4,7 +4,7 @@ require("../addons/crsf_auth.php");
 require_once("../../db/config.php");
 require_once("../../functions/index.php");
 require_once("../../models/Admin.php");
-require("../../setup.php");
+require_once("../../setup.php");
 
 $admin = new Admin($connect);
 
@@ -41,10 +41,10 @@ if(isset($_POST['addAdmin'])){
 
             $subject = "REGISTRATION";
             $message = "<h2>Hi $name,</h2>";
-            $message .= "<p>You've been successfully added as a sub admin at $APP_NAME</p>";
+            $message .= "<p>You've been successfully added as a sub admin at ". APP_NAME . "</p>";
             $message .= "<p>Your default password is $password </p>";
     
-            sendMail($subject, $message, $EMAIL_ADDRESS, $email);
+            sendMail($subject, $message, FROM, $email);
 
             session_start();
             $_SESSION['ADMIN_ALERT'] = json_encode($alert);
