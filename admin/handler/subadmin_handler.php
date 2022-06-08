@@ -1,5 +1,7 @@
 <?php 
 
+session_start();
+
 require("../addons/crsf_auth.php");
 require_once("../../db/config.php");
 require_once("../../functions/index.php");
@@ -41,12 +43,11 @@ if(isset($_POST['addAdmin'])){
 
             $subject = "REGISTRATION";
             $message = "<h2>Hi $name,</h2>";
-            $message .= "<p>You've been successfully added as a sub admin at ". APP_NAME . "</p>";
+            $message .= "<p>You've been successfully added as a sub admin at Peacerydeafrica </p>";
             $message .= "<p>Your default password is $password </p>";
     
-            sendMail($subject, $message, FROM, $email);
+            sendMail($subject, $message, "billing@peacerydeafrica.com", $email);
 
-            session_start();
             $_SESSION['ADMIN_ALERT'] = json_encode($alert);
             header('Location: ../subadmins.php');
         }
