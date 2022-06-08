@@ -16,34 +16,41 @@ if(isset($_POST['reset'])) {
     $result->execute([$email]);
 
     if($result->rowCount()) {
+        $admin = $result->fetch();
         $response = $reset_password->initializeReset($email);
+
+        print_r($response);
+        die();
+
+        if($response) {
+            $time = strtotime("10 mins");
+            setcookie("RESET", $response['reset_id'], $time, '/');
+
+            // send mail
+            $subject = "Password Reset";
+            $pin = $response['pin'];
+            $message = "<p>Hi {$admin['name']}</p>";
+            $message .= "<p>Your reset pin is <strong>$pin</strong></p>";
+            $to = $email;
+
+            sendMail($subject, $message, FROM, $to);
+
+            // Generate a file
+            $file_handler = fopen("pin.txt", "a+");
+            fwrite($file_handler, "{$response['pin']} \n");
+            fclose($file_handler);
+
+            $alert = [
+                "alert_type" => "success",
+                "alert_message" => "Message sent to your inbox",
+            ];
+
+            session_start();
+            $_SESSION['ADMIN_ALERT'] = json_encode($alert);
+
+            header("location: ../verify.php");
+        }
         
-        $time = strtotime("10 mins");
-        setcookie("RESET", $response['reset_id'], $time, '/');
-         
-        // send mail
-        $subject = "Password Reset";
-        $message = "Hi {$email}, <br> your reset pin is <strong>${$response['pin']}</strong>";
-        $to = $email;
-
-        sendMail($subject, $message, FROM, $to);
-
-        // Generate a file
-        $file_handler = fopen("pin.txt", "a+");
-        fwrite($file_handler, "{$response['pin']} \n");
-        fclose($file_handler);
-
-        $alert = [
-            "alert_type" => "success",
-            "alert_message" => "Message sent to your inbox",
-        ];
-
-        session_start();
-        $_SESSION['ADMIN_ALERT'] = json_encode($alert);
-
-        header("location: ../verify.php");
-
-
     }
     else {
         $alert = [
