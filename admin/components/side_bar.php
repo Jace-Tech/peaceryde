@@ -29,7 +29,7 @@
                 </h3>
                 <ul class="mt-3">
                     <?php if(strtolower($active) === 'dashboard'): ?>
-                        <li class="px-3 py-2 rounded-sm mb-0.5 last:mb-0 bg-gray-900">
+                        <li class="px-3 py-2 rounded-sm mb-0.5 last:mb-0 bg-gray-900" style="background-color: #a0bd1c;">
                             <a class="block text-gray-200 hover:text-white truncate transition duration-150" href="dashboard.php">
                                 <div class="flex items-center">
                                     <svg class="shrink-0 h-6 w-6" viewBox="0 0 24 24">
@@ -54,7 +54,7 @@
     
                     <?php if($LOGGED_USER['type'] == "HIGH"): ?>
                         <?php if(strtolower($active) === "manage"): ?>
-                            <li class="px-3 py-2 rounded-sm mb-0.5 last:mb-0 bg-gray-900">
+                            <li class="px-3 py-2 rounded-sm mb-0.5 last:mb-0 bg-gray-900" style="background-color: #a0bd1c;">
                                 <a class="block text-gray-200 hover:text-white truncate transition duration-150" href="subadmins.php">
                                     <div class="flex items-center">
                                         <svg class="shrink-0 h-6 w-6" viewBox="0 0 24 24">
@@ -81,7 +81,7 @@
                     <?php endif;  ?>
 
                     <?php if(strtolower($active) === "users"): ?>
-                        <li class="px-3 py-2 rounded-sm mb-0.5 last:mb-0 bg-gray-900">
+                        <li class="px-3 py-2 rounded-sm mb-0.5 last:mb-0 bg-gray-900" style="background-color: #a0bd1c;">
                             <a class="block text-gray-200 hover:text-white truncate transition duration-150" href="users.php">
                                 <div class="flex items-center">
                                     <svg class="shrink-0 h-6 w-6" viewBox="0 0 24 24">
@@ -107,7 +107,7 @@
                     <?php endif; ?>
     
                     <?php if(strtolower($active) === "message"): ?>
-                        <li class="px-3 py-2 rounded-sm mb-0.5 last:mb-0 bg-gray-900">
+                        <li class="px-3 py-2 rounded-sm mb-0.5 last:mb-0 bg-gray-900" style="background-color: #a0bd1c;">
                             <a class="block text-gray-200 hover:text-white truncate transition duration-150" href="message.php">
                                 <div class="flex items-center">
                                     <svg class="shrink-0 h-6 w-6" viewBox="0 0 24 24"><path class="fill-current text-gray-600 text-indigo-500" d="M16 13v4H8v-4H0l3-9h18l3 9h-8Z"></path><path class="fill-current text-gray-400 text-indigo-300" :class="page === 'inbox' &amp;&amp; 'text-indigo-300'" d="m23.72 12 .229.686A.984.984 0 0 1 24 13v8a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1v-8c0-.107.017-.213.051-.314L.28 12H8v4h8v-4H23.72ZM13 0v7h3l-4 5-4-5h3V0h2Z"></path></svg>
@@ -134,7 +134,7 @@
                         <span class="hidden lg:block lg:sidebar-expanded:hidden 2xl:hidden text-center w-6" aria-hidden="true">•••</span> <span class="lg:hidden lg:sidebar-expanded:block 2xl:block">More</span></h3>
                     <ul class="mt-3">
                         <?php if(strtolower($active) === "faq"): ?>
-                            <li class="px-3 py-2 rounded-sm mb-0.5 last:mb-0 bg-gray-900">
+                            <li class="px-3 py-2 rounded-sm mb-0.5 last:mb-0 bg-gray-900" style="background-color: #a0bd1c;">
                                 <a class="block text-gray-200 hover:text-white truncate transition duration-150" href="faqs.php">
                                     <div class="flex items-center">
                                         <svg class="shrink-0 h-6 w-6" viewBox="0 0 24 24"><path class="fill-current text-gray-600 text-indigo-500" d="M14.5 7c4.695 0 8.5 3.184 8.5 7.111 0 1.597-.638 3.067-1.7 4.253V23l-4.108-2.148a10 10 0 01-2.692.37c-4.695 0-8.5-3.184-8.5-7.11C6 10.183 9.805 7 14.5 7z"></path><path class="fill-current text-gray-400 text-indigo-300" d="M11 1C5.477 1 1 4.582 1 9c0 1.797.75 3.45 2 4.785V19l4.833-2.416C8.829 16.85 9.892 17 11 17c5.523 0 10-3.582 10-8s-4.477-8-10-8z"></path></svg>
@@ -155,7 +155,7 @@
                         
     
                         <?php if(strtolower($active) === "review"): ?>
-                            <li class="px-3 py-2 rounded-sm mb-0.5 last:mb-0 bg-gray-900">
+                            <li class="px-3 py-2 rounded-sm mb-0.5 last:mb-0 bg-gray-900" style="background-color: #a0bd1c;">
                                 <a class="block text-gray-200 hover:text-white truncate transition duration-150" href="reviews.php">
                                     <div class="flex items-center">
                                         <svg class="shrink-0 h-6 w-6" viewBox="0 0 24 24"><path class="fill-current text-gray-600 text-indigo-500" d="M8 1v2H3v19h18V3h-5V1h7v23H1V1z"></path><path class="fill-current text-gray-600 text-indigo-500" d="M1 1h22v23H1z"></path><path class="fill-current text-gray-400 text-indigo-300" :class="page === 'tasks' &amp;&amp; 'text-indigo-300'" d="M15 10.586L16.414 12 11 17.414 7.586 14 9 12.586l2 2zM5 0h14v4H5z"></path></svg>
@@ -213,7 +213,7 @@
                                 </ul>
                             </div>
                         </li>
-                        <li class="px-3 py-2 rounded-sm mb-0.5 last:mb-0" :class="{ 'bg-gray-900': page.startsWith('component-') }" x-data="{ open: false }" x-init="$nextTick(() => open = page.startsWith('component-'))"><a class="sidebar-expander-link block text-gray-200 hover:text-white transition duration-150" :class="open && 'hover:text-gray-200'" href="#0" @click.prevent="sidebarExpanded ? open = !open : sidebarExpanded = true">
+                        <li class="px-3 py-2 rounded-sm mb-0.5 last:mb-0" :class="{ 'bg-gray-900' style="background-color: #a0bd1c;": page.startsWith('component-') }" x-data="{ open: false }" x-init="$nextTick(() => open = page.startsWith('component-'))"><a class="sidebar-expander-link block text-gray-200 hover:text-white transition duration-150" :class="open && 'hover:text-gray-200'" href="#0" @click.prevent="sidebarExpanded ? open = !open : sidebarExpanded = true">
                                 <div class="flex items-center justify-between">
                                     <div class="flex items-center"><svg class="shrink-0 h-6 w-6" viewBox="0 0 24 24">
                                             <circle class="fill-current text-gray-600" :class="page.startsWith('component-') && 'text-indigo-500'" cx="16" cy="8" r="8" />
