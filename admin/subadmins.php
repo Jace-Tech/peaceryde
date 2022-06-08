@@ -64,7 +64,7 @@
                                                 <div>
                                                     <label class="block text-sm font-medium mb-1" for="feedback">Password <span class="text-red-500">*</span></label> 
                                                     <div class="relative flex">
-                                                        <input id="form-search" data-password-input class="form-input w-full pl-3" type="password"> 
+                                                        <input id="form-search" name="password" data-password-input class="form-input w-full pl-3" type="password"> 
                                                         <button type="button" data-password-btn class="btn hover:bg-gray-200 text-xs px-3" aria-label="Search">
                                                             Auto&nbsp;generate
                                                         </button>
