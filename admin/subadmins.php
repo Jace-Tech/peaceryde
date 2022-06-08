@@ -71,7 +71,7 @@
                                                         </button>
 
                                                         <button type="button" data-password-btn class="btn hover:bg-gray-200 text-xs px-3" aria-label="Search">
-                                                            Auto generate
+                                                            Auto&nbsp;generate
                                                         </button>
                                                     </div>
                                                 </div>
