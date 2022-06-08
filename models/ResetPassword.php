@@ -51,6 +51,9 @@ class ResetPassword {
             $response = $this->getResetInfo($reset_id);
             return $response;
         }
+        else {
+            return false;
+        }
     }
 
     public function changePassword($reset_id, $password) 
@@ -91,9 +94,9 @@ class ResetPassword {
 
     public function verifyPin($reset_id, $pin)
     {
-        $query = "SELECT * FROM `reset_password` WHERE `reset_id` = ? AND `pin` = ?";
+        $query = "SELECT * FROM `reset_password` WHERE `reset_id` = '$reset_id' AND `pin` = '$pin'";
         $result = $this->connection->prepare($query);
-        $result->execute([$reset_id, $pin]);
+        $result->execute();
 
         return $result;
     }

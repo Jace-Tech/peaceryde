@@ -80,6 +80,15 @@ class User {
         return $result->fetch();
     }
 
+    public function get_user_by_email($email)
+    {
+        $query = "SELECT * FROM `users` WHERE `email` = ?";
+        $result = $this->connection->prepare($query);
+        $result->execute([$email]);
+
+        return $result->fetch();
+    }
+
     public function get_all_users()
     {
         $query = "SELECT * FROM `users`";
