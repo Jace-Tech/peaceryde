@@ -70,7 +70,7 @@
                                                             Show
                                                         </button>
 
-                                                        <button type="button" data-password-btn class="absolute inset-0 left-auto group btn hover:bg-gray-200 text-xs px-3" aria-label="Search">
+                                                        <button type="button" data-password-btn class="btn hover:bg-gray-200 text-xs px-3" aria-label="Search">
                                                             Auto generate
                                                         </button>
                                                     </div>
