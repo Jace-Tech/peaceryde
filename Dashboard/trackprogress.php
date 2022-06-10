@@ -31,302 +31,303 @@ $userServices = $services->getUserServices($USER_ID);
     <link href="./dist/css/style.min.css" rel="stylesheet">
     <link href="./dist/css/responsive.css" rel="stylesheet">
     <style>
-        @media only screen and (max-width: 2560px) {
-            .breadcrumb {
+         @media only screen and (max-width: 2560px)
+        {
+            .breadcrumb
+            {
                 margin-top: -100px;
-
+                
             }
-
-            .mobile {
+            .mobile
+            {
                 margin-left: 0px;
             }
         }
-
-        @media only screen and (max-width: 1600px) {
-            .breadcrumb {
+        @media only screen and (max-width: 1600px)
+        {
+            .breadcrumb
+            {
                 margin-top: -120px;
                 margin-left: 758px;
             }
-
-            .mobile {
+            .mobile
+            {
                 margin-left: 0px;
             }
         }
-
-        @media only screen and (max-width: 1440px) {
-            .breadcrumb {
+        @media only screen and (max-width: 1440px)
+        {
+            .breadcrumb
+            {
                 margin-top: -120px;
                 margin-left: 658px;
             }
-
-            .mobile {
+            .mobile
+            {
                 margin-left: 0px;
             }
         }
-
-        @media only screen and (max-width: 1366px) {
-            .breadcrumb {
+        @media only screen and (max-width: 1366px)
+        {
+            .breadcrumb
+            {
                 margin-top: -130px;
                 margin-left: 558px;
             }
-
-            .mobile {
+            .mobile
+            {
                 margin-left: 0px;
             }
         }
-
-        @media only screen and (max-width: 1280px) {
-            .breadcrumb {
+        @media only screen and (max-width: 1280px)
+        {
+            .breadcrumb
+            {
                 margin-top: -130px;
                 margin-left: 458px;
             }
-
-            .mobile {
+            .mobile
+            {
                 margin-left: 0px;
             }
         }
-
-        @media only screen and (max-width: 1024px) {
+        @media only screen and (max-width: 1024px){
             .breadcrumb {
                 margin-top: -130px;
                 margin-left: 338px;
             }
         }
-
-        @media only screen and (max-width: 900px) {
+        @media only screen and (max-width: 900px){
             .breadcrumb {
                 margin-top: -130px;
                 margin-left: 200px;
             }
         }
-
-        @media only screen and (max-width: 853px) {
+        @media only screen and (max-width: 853px){
             .breadcrumb {
                 margin-top: -130px;
                 margin-left: 150px;
             }
         }
-
-
-        @media only screen and (max-width: 800px) {
-            .breadcrumb {
+    
+    
+        @media only screen and (max-width: 800px)
+        {
+            .breadcrumb
+            {
                 margin-top: -130px;
                 margin-left: 98px;
             }
-
-            .mobile {
+            .mobile
+            {
                 margin-left: 0px;
             }
         }
-
-        @media only screen and (max-width: 768px) {
-            .breadcrumb {
+        @media only screen and (max-width: 768px)
+        {
+            .breadcrumb
+            {
                 margin-top: -130px;
                 margin-left: 74px;
             }
-
-            .mobile {
+            .mobile
+            {
                 margin-left: 0px;
             }
         }
-
-        @media only screen and (max-width: 640px) {
+        @media only screen and (max-width: 640px)
+        {
             .left-sidebar {
                 width: 100%;
             }
-
-            .breadcrumb {
+            .breadcrumb
+            {
                 margin-top: -130px;
                 margin-left: 74px;
             }
-
-            .mobile {
+            .mobile
+            {
                 margin-left: 0px;
             }
         }
-
-        @media only screen and (max-width: 603px) {
-
-            .account {
+        @media only screen and (max-width: 603px)
+        {
+           
+            .account
+            {
                 padding-top: 0px;
             }
-
             .account-img {
                 margin-left: 19px;
             }
-
             .page-breadcrumb {
                 padding: 70px 35px 0;
             }
-
             .breadcrumb {
                 margin-top: -170px;
                 margin-left: 114px;
             }
-
             .example {
                 margin-left: 7px;
             }
-
+    
         }
-
-        @media only screen and (max-width: 540px) {
-
-            .account {
+        @media only screen and (max-width: 540px)
+        {
+           
+            .account
+            {
                 padding-top: 0px;
             }
-
             .account-img {
                 margin-left: 19px;
             }
-
             .page-breadcrumb {
                 padding: 70px 35px 0;
             }
-
             .breadcrumb {
                 margin-top: -170px;
                 margin-left: 54px;
             }
-
             .example {
                 margin-left: 7px;
             }
-
+    
         }
-
-        @media only screen and (max-width: 428px) {
-            .breadcrumb {
+        @media only screen and (max-width: 428px)
+        {
+            .breadcrumb
+            {
                 margin-top: -170px;
                 margin-left: 14px;
             }
-
-            .account {
+            .account{
                 padding-top: 0px;
             }
-
-            .page-breadcrumb .breadcrumb {
+            .page-breadcrumb .breadcrumb
+            {
                 font-size: .6rem;
             }
-
-            .example {
+            .example
+            {
                 margin-left: 3px;
             }
-
-            .page-breadcrumb {
-                padding: 70px 35px 0;
+            .page-breadcrumb
+            {
+               padding: 70px 35px 0;
             }
-
-            .account-img {
+            .account-img
+            {
                 margin-left: 9px;
             }
         }
-
-        @media only screen and (max-width: 414px) {
-            .breadcrumb {
+        @media only screen and (max-width: 414px)
+        {
+            .breadcrumb
+            {
                 margin-top: -170px;
                 margin-left: 14px;
             }
-
-            .account {
+            .account{
                 padding-top: 0px;
             }
-
-            .page-breadcrumb .breadcrumb {
+            .page-breadcrumb .breadcrumb
+            {
                 font-size: .6rem;
             }
-
-            .example {
+            .example
+            {
                 margin-left: 3px;
             }
-
-            .page-breadcrumb {
-                padding: 70px 35px 0;
+            .page-breadcrumb
+            {
+               padding: 70px 35px 0;
             }
-
-            .account-img {
+            .account-img
+            {
                 margin-left: 9px;
             }
         }
-
-        @media only screen and (max-width: 390px) {
-            .breadcrumb {
+        @media only screen and (max-width: 390px)
+        {
+            .breadcrumb
+            {
                 margin-top: -170px;
                 margin-left: 14px;
             }
-
-            .account {
+            .account{
                 padding-top: 0px;
             }
-
-            .page-breadcrumb .breadcrumb {
+            .page-breadcrumb .breadcrumb
+            {
                 font-size: .6rem;
             }
-
-            .example {
+            .example
+            {
                 margin-left: 3px;
             }
-
-            .mobile {
+            .mobile
+            {
                 margin-left: 30px;
             }
-
-            .sidebarAccount h2 {
+            .sidebarAccount h2
+            {
                 margin-left: -25px;
             }
-
-            .sidebarAccount p {
+            .sidebarAccount p
+            {
                 margin-left: -30px;
             }
         }
-
-        @media only screen and (max-width: 360px) {
-            .breadcrumb {
+        @media only screen and (max-width: 360px)
+        {
+            .breadcrumb
+            {
                 margin-top: -170px;
                 margin-left: 14px;
             }
-
-            .page-breadcrumb .breadcrumb {
+            .page-breadcrumb .breadcrumb
+            {
                 font-size: .5rem;
             }
-
+            
         }
-
-        @media only screen and (max-width: 320px) {
-            .breadcrumb {
+        @media only screen and (max-width: 320px)
+        {
+            .breadcrumb
+            {
                 margin-top: -170px;
                 margin-left: 4px;
                 width: 280px;
             }
-
-            .mobile {
+            .mobile
+            {
                 margin-left: 0px;
             }
         }
-
-        @media only screen and (max-width: 280px) {
+        @media only screen and (max-width: 280px)
+        {
             .breadcrumb {
                 margin-top: -100px;
                 margin-left: 4px;
                 width: 270px;
             }
-
-            .mobile {
+            .mobile
+            {
                 margin-left: 0px;
             }
-
-            .account {
+            .account
+            {
                 padding-left: 0px;
             }
-
             .page-breadcrumb {
                 padding: 0px 20px 0;
             }
-
             .account-img {
                 margin-left: 49px;
             }
         }
+    
     </style>
 </head>
 

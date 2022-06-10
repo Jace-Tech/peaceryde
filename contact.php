@@ -139,21 +139,27 @@
                               VISA SERVICES
                             </h3>
                             <ul>
-                              <li class="new-section8__text-body5 layout fs-13">Nigeria Business Visa on
-                                Arrival</li>
-                              <li class="new-section8__text-body5 layout fs-13">Nigeria
+                              <li class="new-section8__text-body5 layout fs-13"><a class="fs-13" href="NBVForm.html"
+                                style=" text-decoration: none;">Nigeria Business Visa on
+                                Arrival</a></li>
+                              <li class="new-section8__text-body5 layout fs-13"><a class="fs-13" href="NTWPForm.html"
+                                style=" text-decoration: none;">Nigeria
                                 Temporary Work Permit
-                                Approval</li>
-                              <li class="new-section8__text-body5 layout fs-13">Nigeria
-                                Tourist Visa</li>
-                              <li class="new-section8__text-body5 layout fs-13">Nigeria
+                                Approval</a></li>
+                              <li class="new-section8__text-body5 layout fs-13"><a class="fs-13" href="SBForm.html"
+                                style=" text-decoration: none;">Nigeria
+                                Tourist Visa</a></li>
+                              <li class="new-section8__text-body5 layout fs-13"><a class="fs-13" href="SBForm.html"
+                                style=" text-decoration: none;">Nigeria
                                 Business Visa
-                                Extension</li>
-                              <li class="new-section8__text-body5 layout fs-13">Nigeria
+                                Extension</a></li>
+                              <li class="new-section8__text-body5 layout fs-13"><a class="fs-13" href="SBForm.html"
+                                style=" text-decoration: none;">Nigeria
                                 Subject To
-                                Regularization (STR)</li>
-                              <li class="new-section8__text-body5 layout fs-13">Permit to Land
-                                Immgration Approval For Marine Vessels Foreign Crew</li>
+                                Regularization (STR)</a></li>
+                              <li class="new-section8__text-body5 layout fs-13"><a class="fs-13" href="SBForm.html"
+                                style=" text-decoration: none;">Permit to Land
+                                Immgration Approval For Marine Vessels Foreign Crew</a></li>
           
                             </ul>
                           </div>
@@ -162,40 +168,61 @@
                               OTHER SERVICES
                             </h3>
                             <ul>
-                              <li class="new-section8__text-body5 layout fs-13">Nigeria
-                                Business Incorporation
+                              <li class="new-section8__text-body5 layout fs-13"><a class="fs-13" href="BIForm.html"
+                                style=" text-decoration: none;">Nigeria
+                                Business Incorporation</a>
                               </li>
-                              <li class="new-section8__text-body5 layout fs-13">Hotel Bookings
+                              <li class="new-section8__text-body5 layout fs-13"><a class="fs-13" href="SBForm.html"
+                                style=" text-decoration: none;">Hotel Bookings</a>
                               </li>
-                              <li class="new-section8__text-body5 layout fs-13">Real Estate
+                              <li class="new-section8__text-body5 layout fs-13"><a class="fs-13" href="SBForm.html"
+                                style=" text-decoration: none;">Real Estate
                                 Cosultancy and
-                                Advisory</li>
-                              <li class="new-section8__text-body5 layout fs-13">Legal Advisory
-                                and Consultation
+                                Advisory</a></li>
+                              <li class="new-section8__text-body5 layout fs-13"><a class="fs-13" href="SBForm.html"
+                                style=" text-decoration: none;">Legal Advisory
+                                and Consultation</a>
                               </li>
-                              <li class="new-section8__text-body5 layout fs-13">Africa travels
-                                & tours</li>
-                              <li class="new-section8__text-body5 layout fs-13">Nigerian
+                              <li class="new-section8__text-body5 layout fs-13"><a class="fs-13" href="SBForm.html"
+                                style=" text-decoration: none;">Africa travels
+                                & tours</a></li>
+                              <li class="new-section8__text-body5 layout fs-13"><a class="fs-13" href="SBForm.html"
+                                style=" text-decoration: none;">Nigerian
                                 Immigration
-                                Consultancy</li>
-                              <li class="new-section8__text-body5 layout fs-13">Nigeria Custom
-                                Consultancy
+                                Consultancy</a></li>
+                              <li class="new-section8__text-body5 layout fs-13"><a class="fs-13" href="SBForm.html"
+                                style=" text-decoration: none;">Nigeria Custom
+                                Brokerage Services</a>
                               </li>
-                              <li class="new-section8__text-body5 layout fs-13">Airport
+                              <li class="new-section8__text-body5 layout fs-13"><a class="fs-13" href="SBForm.html"
+                                style=" text-decoration: none;">Nigeria Department of Petroleum Resources (DPR) Permits Consultancy Services</a>
+                              </li>
+                              <li class="new-section8__text-body5 layout fs-13"><a class="fs-13" href="SBForm.html"
+                                style=" text-decoration: none;">Nigeria Maritime and Safety Agency Cabotage Consultancy Services</a>
+                              </li>
+                              <li class="new-section8__text-body5 layout fs-13"><a class="fs-13" href="SBForm.html"
+                                style=" text-decoration: none;">Nigeria Ports Authority Consultancy Services</a></li>
+                                <li class="new-section8__text-body5 layout fs-13"><a class="fs-13" href="SBForm.html"
+                                  style=" text-decoration: none;">Other Nigerian Government Agencies Consultancy Support Services</a></li>
+                              <li class="new-section8__text-body5 layout fs-13"><a class="fs-13" href="SBForm.html"
+                                style=" text-decoration: none;">Nigeria COVID 19 Payment Services</a>Airport
                                 Immigration Meet and
                                 Greet</li>
-                              <li class="new-section8__text-body5 layout fs-13">Airport
+                              <li class="new-section8__text-body5 layout fs-13"><a class="fs-13" href="SBForm.html"
+                                style=" text-decoration: none;">Nigeria COVID 19 Payment Services</a>Airport
                                 Protocol Services</li>
-                              <li class="new-section8__text-body5 layout fs-13">Airport
+                              <li class="new-section8__text-body5 layout fs-13"><a class="fs-13" href="SBForm.html"
+                                style=" text-decoration: none;">Nigeria COVID 19 Payment Services</a>Airport
                                 Transfers</li>
-                              <li class="new-section8__text-body5 layout fs-13">Vehicle Rentals
+                              <li class="new-section8__text-body5 layout fs-13"><a class="fs-13" href="SBForm.html"
+                                style=" text-decoration: none;">Nigeria COVID 19 Payment Services</a>Vehicle Rentals
                               </li>
-                              <li class="new-section8__text-body5 layout fs-13">Armed Security
+                              <li class="new-section8__text-body5 layout fs-13"><a class="fs-13" href="SBForm.html"
+                                style=" text-decoration: none;">Nigeria COVID 19 Payment Services</a>Armed Security
                                 Escort Services
                               </li>
-                              <li class="new-section8__text-body5 layout fs-13">Nigeria COVID
-                                19 Payment
-                                Services</li>
+                              <li class="new-section8__text-body5 layout fs-13"><a class="fs-13" href="SBForm.html"
+                                style=" text-decoration: none;">Nigeria COVID 19 Payment Services</a></li>
                             </ul>
                           </div>
                           <div class="col-md-4 col-sm-6 col-xs-6 div4">
@@ -205,9 +232,12 @@
                                   SUPPORT
                                 </h3>
                                 <ul>
-                                  <li class="new-section8__text-body5 layout fs-13">Apply</li>
-                                  <li class="new-section8__text-body5 layout fs-13">Help</li>
-                                  <li class="new-section8__text-body5 layout fs-13">Contact Us
+                                  <li class="new-section8__text-body5 layout fs-13"><a class="fs-13" href="SBForm.html"
+                                    style=" text-decoration: none;">Apply</a></li>
+                                  <li class="new-section8__text-body5 layout fs-13"><a class="fs-13" href="faq.html"
+                                    style=" text-decoration: none;">Help</a></li>
+                                  <li class="new-section8__text-body5 layout fs-13"><a class="fs-13" href="contact.html"
+                                    style=" text-decoration: none;">Contact Us</a>
                                   </li>
                                 </ul>
                               </div>
@@ -224,7 +254,7 @@
                                   </li>
                                   <li class="new-section8__text-body5 layout fs-13" 0><a href="t&c.html"
                                       class="fs-13"style=" text-decoration: none;">Terms And
-                                      Condition</a></li>
+                                      Conditions</a></li>
                                   <li class="new-section8__text-body5 layout fs-13">Refund
                                     Policy</li>
                                 </ul>

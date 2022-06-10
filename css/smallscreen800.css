@@ -111,7 +111,22 @@
   margin-bottom: 85px;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 900px){
+  
+.leaderpageheight {
+    height: 5200px;
+}
+  .laptopflag
+  {
+    display:none;
+  }
+  .flag{
+    display:block;
+    width: 25px;
+    height: 25px;
+    margin-left: 5px;
+    margin-top: -8px;
+  }
   .collapsebtn {
     margin-top: -5px;
     margin-right: 40px;
@@ -130,7 +145,7 @@
   }
 
   .english {
-    margin-left: 520px;
+    margin-left: 450px;
   }
 
   .successcard {
@@ -142,7 +157,7 @@
   }
 
   .applyh2 {
-    padding-left: 264px;
+    text-align: center;
     font-family: 'Ubuntu';
     font-style: normal;
     font-weight: 500;
@@ -151,7 +166,7 @@
   }
 
   .applyh22 {
-    padding-left: 264px;
+    text-align: center;
   }
 
   .applyh2p {
@@ -218,7 +233,11 @@
     border-radius: 10px;
     border-color: transparent;
     width: 738px;
-    margin: 32px auto;
+    margin: 80px auto;
+  }
+  .new-section2__group.layout2 {
+    position: relative;
+    
   }
 
   .cf {
@@ -780,17 +799,12 @@
     margin: 2px 0 0 2px;
   }
 
+
   .form-row {
     display: flex;
   }
 
-  input[type=radio],
-  input.radio {
-    float: left;
-    clear: none;
-    margin: 6px 0 0 2px;
-    border-color: #A0BD1C;
-  }
+ 
 
   .form-group {
     padding: 5px;
@@ -964,7 +978,7 @@
 
   .vsbheight {
     position: relative;
-    height: 1084px;
+    height: 1384px;
   }
 
   .vsbh2 {
@@ -996,6 +1010,10 @@
     margin: 26px auto;
     width: 416px;
   }
+  .vsbform2 {
+    margin: 26px auto;
+    width: 416px; 
+  }
 
   .vsbmt {
     margin-top: 27px;
@@ -1018,7 +1036,10 @@
     width: 450px;
     margin-left: 160px;
   }
-
+  .servicebtn {
+ 
+    margin-left: -120px;
+}
   .vsbformtextarea {
     width: 450px;
     height: 116px;
@@ -1117,14 +1138,19 @@
 
   .reviewh2 {
     padding-top: 68px;
-    padding-left: 600px;
+    padding-left: 400px;
     font-family: 'Ubuntu';
     font-style: normal;
     font-weight: 500;
     font-size: 24px;
     color: #0A0E69;
   }
-
+  .reviewvideo {
+    width: 500px;
+    height: 200px;
+    margin-left: -20px;
+    margin-top: 80px;
+}
   .reviewcard {
     border-radius: 10px;
     border-color: transparent;
@@ -1191,21 +1217,21 @@
   .paymentservices {
     font-family: Ubuntu;
     font-size: 18px;
-    font-weight: 700;
+    font-weight: 400;
     color: #F1F5F6;
   }
 
   .paymentprice {
     font-family: Ubuntu;
     font-size: 18px;
-    font-weight: 700;
-    padding-left: 200px;
+    font-weight: 400;
+    padding-left: 50px;
     color: #F1F5F6;
   }
 
   .reviewline {
     margin-left: 100px;
-    margin-top: 26px;
+    margin-top: 6px;
     color: #F1F5F6;
     border: 1px solid #F1F5F6;
     width: 690px;
@@ -1238,11 +1264,11 @@
   }
 
   .leftcard {
-    width: 502px;
+    width: 702px;
     height: 653px;
     margin-top: 52px;
     background-color: #ffffff;
-    margin-left: 200px;
+    margin-left: 100px;
   }
 
   .leftcardh2 {
@@ -1260,7 +1286,7 @@
     font-size: 14px;
     font-weight: 500;
     color: #000000;
-    margin-left: 95px;
+    margin-left: 57px;
   }
 
   .radioo {
@@ -1285,8 +1311,8 @@
   .cardinput {
     border: 1px solid #555555;
     height: 44px;
-    width: 384px;
-    margin-top: 7px
+    width: 470px;
+    margin-top: 7px;
   }
 
   .cardnumber {
@@ -1416,7 +1442,7 @@
 
   .ppheight {
     position: relative;
-    height: 1100px;
+    height: 1300px;
   }
 
   .pptop {
@@ -1426,7 +1452,7 @@
   }
 
   .pptext {
-    padding-left: 164px;
+    padding-left: 50px;
     padding-top: 90px;
     padding-bottom: 90px;
     font-size: 40px;
@@ -1520,7 +1546,7 @@
   }
 }
 
-@media (max-width: 853px) {
+@media (max-width: 853px){
   .collapsebtn {
     margin-top: -5px;
     margin-right: 40px;
@@ -1535,7 +1561,7 @@
   }
 
   .english {
-    margin-left: 470px;
+    margin-left: 410px;
   }
 
   .successcard {
@@ -1547,7 +1573,7 @@
   }
 
   .applyh2 {
-    padding-left: 224px;
+    text-align: center;
     font-family: 'Ubuntu';
     font-style: normal;
     font-weight: 500;
@@ -1556,7 +1582,7 @@
   }
 
   .applyh22 {
-    padding-left: 224px;
+    text-align: center;
   }
 
   .applyh2p {
@@ -1623,7 +1649,7 @@
     border-radius: 10px;
     border-color: transparent;
     width: 738px;
-    margin: 32px auto;
+    margin: 80px auto;
   }
 
   .cf {
@@ -2170,7 +2196,7 @@
   input.radio {
     float: left;
     clear: none;
-    margin: 6px 0 0 2px;
+    /* margin: 6px 0 0 2px; */
     border-color: #A0BD1C;
   }
 
@@ -2346,7 +2372,7 @@
 
   .vsbheight {
     position: relative;
-    height: 1084px;
+    height: 1384px;
   }
 
   .vsbh2 {
@@ -2377,6 +2403,10 @@
     font-family: ubuntu;
     margin: 26px auto;
     width: 416px;
+  }
+  .vsbform2 {
+    margin: 26px auto;
+    width: 416px; 
   }
 
   .vsbmt {
@@ -2507,7 +2537,7 @@
 
   .reviewh2 {
     padding-top: 68px;
-    padding-left: 600px;
+    padding-left: 400px;
     font-family: 'Ubuntu';
     font-style: normal;
     font-weight: 500;
@@ -2581,24 +2611,24 @@
   .paymentservices {
     font-family: Ubuntu;
     font-size: 18px;
-    font-weight: 700;
+    font-weight: 400;
     color: #F1F5F6;
   }
 
   .paymentprice {
     font-family: Ubuntu;
     font-size: 18px;
-    font-weight: 700;
-    padding-left: 200px;
+    font-weight: 400;
+    padding-left: 50px;
     color: #F1F5F6;
   }
 
   .reviewline {
     margin-left: 100px;
-    margin-top: 26px;
+    margin-top: 6px;
     color: #F1F5F6;
     border: 1px solid #F1F5F6;
-    width: 690px;
+    width: 653px;
   }
 
   .form-group2 {
@@ -2628,11 +2658,11 @@
   }
 
   .leftcard {
-    width: 502px;
+    width: 653px;
     height: 653px;
     margin-top: 52px;
     background-color: #ffffff;
-    margin-left: 200px;
+    margin-left: 100px;
   }
 
   .leftcardh2 {
@@ -2650,7 +2680,7 @@
     font-size: 14px;
     font-weight: 500;
     color: #000000;
-    margin-left: 95px;
+    margin-left: 57px;
   }
 
   .radioo {
@@ -2675,7 +2705,7 @@
   .cardinput {
     border: 1px solid #555555;
     height: 44px;
-    width: 384px;
+    width: 434px;
     margin-top: 7px
   }
 
@@ -2806,7 +2836,7 @@
 
   .ppheight {
     position: relative;
-    height: 1100px;
+    height: 1300px;
   }
 
   .pptop {
@@ -2816,7 +2846,7 @@
   }
 
   .pptext {
-    padding-left: 164px;
+    padding-left: 30px;
     padding-top: 90px;
     padding-bottom: 90px;
     font-size: 40px;
@@ -2925,7 +2955,7 @@
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 800px){
   .collapsebtn {
     margin-top: -5px;
     margin-right: 40px;
@@ -2940,7 +2970,7 @@
   }
 
   .english {
-    margin-left: 420px;
+    margin-left: 380px;
   }
 
   .successcard {
@@ -2957,7 +2987,7 @@
   }
 
   .applyh2 {
-    padding-left: 264px;
+    text-align: center;
     font-family: 'Ubuntu';
     font-style: normal;
     font-weight: 500;
@@ -2966,11 +2996,11 @@
   }
 
   .applyh22 {
-    padding-left: 264px;
+    text-align: center;
   }
 
   .applyh2p {
-    padding: 28px 220px 0px 240px;
+    padding: 28px 90px 0px 90px;
     font-family: Ubuntu;
     font-size: 16px;
     font-style: normal;
@@ -3029,7 +3059,7 @@
     border-radius: 10px;
     border-color: transparent;
     width: 735px;
-    margin: 32px auto;
+    margin: 80px auto;
   }
 
   .cf {
@@ -3573,7 +3603,7 @@
   input.radio {
     float: left;
     clear: none;
-    margin: 6px 0 0 2px;
+    /* margin: 6px 0 0 2px; */
     border-color: #A0BD1C;
   }
 
@@ -3752,7 +3782,7 @@
 
   .vsbheight {
     position: relative;
-    height: 1284px;
+    height: 1384px;
   }
 
   .vsbh2 {
@@ -3784,7 +3814,10 @@
     margin: 26px auto;
     width: 416px;
   }
-
+.vsbform2 {
+    margin: 26px auto;
+    width: 416px; 
+  }
   .vsbmt {
     margin-top: 27px;
   }
@@ -3975,36 +4008,36 @@
     font-weight: 700;
     color: #F1F5F6;
     text-align: left;
-    padding-left: 86px;
+    padding-left: 100px;
     padding-top: 56px;
   }
 
   .paymentdiv {
-    margin-left: 56px;
+    margin-left: 100px;
     margin-top: 14px;
   }
 
   .paymentservices {
     font-family: Ubuntu;
     font-size: 18px;
-    font-weight: 700;
+    font-weight: 400;
     color: #F1F5F6;
   }
 
   .paymentprice {
     font-family: Ubuntu;
     font-size: 18px;
-    font-weight: 700;
-    padding-left: 200px;
+    font-weight: 400;
+    padding-left: 50px;
     color: #F1F5F6;
   }
 
   .reviewline {
-    margin-left: 56px;
-    margin-top: 26px;
+    margin-left: 100px;
+    margin-top: 6px;
     color: #F1F5F6;
     border: 1px solid #F1F5F6;
-    width: 700px;
+    width: 600px;
   }
 
   .form-group2 {
@@ -4034,11 +4067,11 @@
   }
 
   .leftcard {
-    width: 502px;
+    width: 600px;
     height: 653px;
     margin-top: 52px;
     background-color: #ffffff;
-    margin-left: 150px;
+    margin-left: 100px;
   }
 
   .leftcardh2 {
@@ -4056,7 +4089,7 @@
     font-size: 14px;
     font-weight: 500;
     color: #000000;
-    margin-left: 95px;
+    margin-left: 57px;
   }
 
   .radioo {
@@ -4081,7 +4114,7 @@
   .cardinput {
     border: 1px solid #555555;
     height: 44px;
-    width: 384px;
+    width: 394px;
     margin-top: 7px
   }
 
@@ -4211,7 +4244,7 @@
 
   .ppheight {
     position: relative;
-    height: 1100px;
+    height: 1300px;
   }
 
   .pptop {
@@ -4221,7 +4254,7 @@
   }
 
   .pptext {
-    padding-left: 164px;
+    padding-left: 40px;
     padding-top: 90px;
     padding-bottom: 90px;
     font-size: 40px;
@@ -4305,7 +4338,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 768px){
   .collapsebtn {
     margin-top: -5px;
     margin-right: 40px;
@@ -4349,12 +4382,12 @@
   }
 
   .applyh2 {
-    padding-left: 264px;
+    text-align: center;
     font-size: 24px;
   }
 
   .applyh22 {
-    padding-left: 264px;
+    text-align: center;
   }
 
   .applyh2p {
@@ -4412,7 +4445,11 @@
     border-radius: 10px;
     border-color: transparent;
     width: 735px;
-    margin: 32px auto;
+    margin: 80px auto;
+  }
+  .new-section2__group.layout2 {
+    position: relative;
+    
   }
 
   .cf {
@@ -4959,7 +4996,7 @@
   input.radio {
     float: left;
     clear: none;
-    margin: 6px 0 0 2px;
+    /* margin: 6px 0 0 2px; */
     border-color: #A0BD1C;
   }
 
@@ -5115,7 +5152,7 @@
 
   .vsbheight {
     position: relative;
-    height: 1284px;
+    height: 1384px;
   }
 
   .vsbh2 {
@@ -5147,7 +5184,10 @@
     margin: 26px auto;
     width: 416px;
   }
-
+  .vsbform2 {
+    margin: 26px auto;
+    width: 416px; 
+  }
   .vsbmt {
     margin-top: 27px;
   }
@@ -5263,7 +5303,7 @@
 
   .reviewh2 {
     padding-top: 68px;
-    padding-left: 600px;
+    padding-left: 340px;
     font-family: 'Ubuntu';
     font-style: normal;
     font-weight: 500;
@@ -5326,36 +5366,36 @@
     font-weight: 700;
     color: #F1F5F6;
     text-align: left;
-    padding-left: 86px;
+    padding-left: 100px;
     padding-top: 56px;
   }
 
   .paymentdiv {
-    margin-left: 56px;
+    margin-left: 100px;
     margin-top: 14px;
   }
 
   .paymentservices {
     font-family: Ubuntu;
     font-size: 18px;
-    font-weight: 700;
+    font-weight: 400;
     color: #F1F5F6;
   }
 
   .paymentprice {
     font-family: Ubuntu;
     font-size: 18px;
-    font-weight: 700;
-    padding-left: 200px;
+    font-weight: 400;
+    padding-left: 20px;
     color: #F1F5F6;
   }
 
   .reviewline {
-    margin-left: 56px;
-    margin-top: 26px;
+    margin-left: 100px;
+    margin-top: 6px;
     color: #F1F5F6;
     border: 1px solid #F1F5F6;
-    width: 700px;
+    width: 568px;
   }
 
   .form-group2 {
@@ -5385,11 +5425,11 @@
   }
 
   .leftcard {
-    width: 502px;
+    width: 568px;
     height: 653px;
     margin-top: 52px;
     background-color: #ffffff;
-    margin-left: 150px;
+    margin-left: 100px;
   }
 
   .leftcardh2 {
@@ -5407,7 +5447,7 @@
     font-size: 14px;
     font-weight: 500;
     color: #000000;
-    margin-left: 95px;
+    margin-left: 57px;
   }
 
   .radioo {
@@ -5562,7 +5602,7 @@
 
   .ppheight {
     position: relative;
-    height: 1100px;
+    height: 1400px;
   }
 
   .pptop {
@@ -5572,7 +5612,7 @@
   }
 
   .pptext {
-    padding-left: 164px;
+    padding-left: 24px;
     padding-top: 90px;
     padding-bottom: 90px;
     font-size: 40px;
@@ -5652,7 +5692,7 @@
   }
 }
 
-@media (max-width: 720px) {
+@media (max-width: 720px){
   .bannertext {
     font-size: 30px;
   }
@@ -5704,16 +5744,16 @@
   }
 
   .applyh2 {
-    padding-left: 264px;
+    text-align: center;
     font-size: 24px;
   }
 
   .applyh22 {
-    padding-left: 264px;
+    text-align: center;
   }
 
   .applyh2p {
-    padding: 28px 220px 0px 240px;
+    padding: 28px 90px 0px 80px;
     font-family: Ubuntu;
     font-size: 16px;
     font-style: normal;
@@ -5772,7 +5812,7 @@
     border-radius: 10px;
     border-color: transparent;
     width: 735px;
-    margin: 32px auto;
+    margin: 80px auto;
   }
 
   .cf {
@@ -6286,7 +6326,7 @@
   input.radio {
     float: left;
     clear: none;
-    margin: 6px 0 0 2px;
+    /* margin: 6px 0 0 2px; */
     border-color: #A0BD1C;
   }
 
@@ -6442,7 +6482,7 @@
 
   .vsbheight {
     position: relative;
-    height: 1284px;
+    height: 1384px;
   }
 
   .vsbh2 {
@@ -6474,6 +6514,10 @@
     margin: 26px auto;
     width: 416px;
   }
+  .vsbform2 {
+    margin: 26px auto;
+    width: 416px; 
+  }
 
   .vsbmt {
     margin-top: 27px;
@@ -6487,21 +6531,21 @@
     line-height: 16px;
     letter-spacing: 0em;
     text-align: left;
-    padding-left: 68px;
+    padding-left: 160px;
     padding-top: 27px;
   }
 
   .vsbformselect {
     border: 1px solid #555555;
-    width: 502px;
-    margin-left: 68px;
+    width: 416px;
+    margin-left: 160px;
   }
 
   .vsbformtextarea {
-    width: 508px;
+    width: 416px;
     height: 116px;
     margin-bottom: 65px;
-    margin-left: 68px;
+    margin-left: 160px;
     margin-top: 27px;
   }
 
@@ -6587,10 +6631,16 @@
   .reviewheight {
     height: 1800px;
   }
-
+  .laptopvideo{
+    display: none;
+  }
+.mobilevideo
+{
+  display: block;
+}
   .reviewh2 {
     padding-top: 68px;
-    padding-left: 600px;
+    padding-left: 350px;
     font-family: 'Ubuntu';
     font-style: normal;
     font-weight: 500;
@@ -6653,36 +6703,36 @@
     font-weight: 700;
     color: #F1F5F6;
     text-align: left;
-    padding-left: 86px;
+    padding-left: 100px;
     padding-top: 56px;
   }
 
   .paymentdiv {
-    margin-left: 56px;
+    margin-left: 100px;
     margin-top: 14px;
   }
 
   .paymentservices {
     font-family: Ubuntu;
     font-size: 18px;
-    font-weight: 700;
+    font-weight: 400;
     color: #F1F5F6;
   }
 
   .paymentprice {
     font-family: Ubuntu;
     font-size: 18px;
-    font-weight: 700;
-    padding-left: 200px;
+    font-weight: 400;
+    padding-left: 0px;
     color: #F1F5F6;
   }
 
   .reviewline {
-    margin-left: 56px;
-    margin-top: 26px;
+    margin-left: 100px;
+    margin-top: 6px;
     color: #F1F5F6;
     border: 1px solid #F1F5F6;
-    width: 630px;
+    width: 520px;
   }
 
   .form-group2 {
@@ -6712,11 +6762,11 @@
   }
 
   .leftcard {
-    width: 502px;
-    height: 653px;
+    width: 520px;
+    height: 690px;
     margin-top: 52px;
     background-color: #ffffff;
-    margin-left: 110px;
+    margin-left: 100px;
   }
 
   .leftcardh2 {
@@ -6734,7 +6784,7 @@
     font-size: 14px;
     font-weight: 500;
     color: #000000;
-    margin-left: 95px;
+    margin-left: 57px;
   }
 
   .radioo {
@@ -6759,8 +6809,8 @@
   .cardinput {
     border: 1px solid #555555;
     height: 44px;
-    width: 384px;
-    margin-top: 7px
+    width: 400px;
+    margin-top: 7px;
   }
 
   .cardnumber {
@@ -6889,7 +6939,7 @@
 
   .ppheight {
     position: relative;
-    height: 1100px;
+    height: 1400px;
   }
 
   .pptop {
@@ -6899,7 +6949,7 @@
   }
 
   .pptext {
-    padding-left: 164px;
+    padding-left: 30px;
     padding-top: 90px;
     padding-bottom: 90px;
     font-size: 40px;
@@ -6910,7 +6960,7 @@
   .ppcard {
     border-radius: 10px;
     border-color: transparent;
-    width: 700px;
+    width: 650px;
     margin: 87px auto;
   }
 
@@ -7002,7 +7052,7 @@
   }
 }
 
-@media (max-width: 640px) {
+@media (max-width: 640px){
   .collapsebtn {
     margin-top: -5px;
     margin-right: 40px;
@@ -7050,12 +7100,12 @@
   }
 
   .applyh2 {
-    padding-left: 164px;
+    text-align: center;
     font-size: 24px;
   }
 
   .applyh22 {
-    padding-left: 164px;
+    text-align: center;
   }
 
   .applyh2p {
@@ -7088,7 +7138,7 @@
     border-radius: 10px;
     border-color: transparent;
     width: 538px;
-    margin: 32px auto;
+    margin: 80px auto;
   }
 
   .cf {
@@ -7637,7 +7687,7 @@
   input.radio {
     float: left;
     clear: none;
-    margin: 6px 0 0 2px;
+    /* margin: 6px 0 0 2px; */
     border-color: #A0BD1C;
   }
 
@@ -7840,7 +7890,10 @@
     margin: 26px auto;
     width: 416px;
   }
-
+.vsbform2 {
+    margin: 26px auto;
+    width: 416px; 
+  }
   .vsbmt {
     margin-top: 27px;
   }
@@ -7853,21 +7906,21 @@
     line-height: 16px;
     letter-spacing: 0em;
     text-align: left;
-    padding-left: 21px;
+    padding-left: 60px;
     padding-top: 27px;
   }
 
   .vsbformselect {
     border: 1px solid #555555;
-    width: 402px;
-    margin-left: 21px;
+    width: 416px;
+    margin-left: 60px;
   }
 
   .vsbformtextarea {
-    width: 470px;
+    width: 416px;
     height: 116px;
     margin-bottom: 65px;
-    margin-left: 21px;
+    margin-left: 60px;
     margin-top: 27px;
   }
 
@@ -7997,36 +8050,36 @@
     font-weight: 700;
     color: #F1F5F6;
     text-align: left;
-    padding-left: 86px;
+    padding-left: 100px;
     padding-top: 56px;
   }
 
   .paymentdiv {
-    margin-left: 56px;
+    margin-left: 100px;
     margin-top: 14px;
   }
 
   .paymentservices {
     font-family: Ubuntu;
     font-size: 18px;
-    font-weight: 700;
+    font-weight: 400;
     color: #F1F5F6;
   }
 
   .paymentprice {
     font-family: Ubuntu;
     font-size: 18px;
-    font-weight: 700;
-    padding-left: 100px;
+    font-weight: 400;
+    padding-left: 10px;
     color: #F1F5F6;
   }
 
   .reviewline {
-    margin-left: 56px;
-    margin-top: 26px;
+    margin-left: 100px;
+    margin-top: 6px;
     color: #F1F5F6;
     border: 1px solid #F1F5F6;
-    width: 500px;
+    width: 440px;
   }
 
   .form-group2 {
@@ -8056,11 +8109,11 @@
   }
 
   .leftcard {
-    width: 502px;
+    width: 440px;
     height: 693px;
     margin-top: 52px;
     background-color: #ffffff;
-    margin-left: 50px;
+    margin-left: 100px;
   }
 
   .leftcardh2 {
@@ -8078,7 +8131,7 @@
     font-size: 14px;
     font-weight: 500;
     color: #000000;
-    margin-left: 95px;
+    margin-left: 57px;
   }
 
   .radioo {
@@ -8253,7 +8306,7 @@
 
   .ppheight {
     position: relative;
-    height: 1250px;
+    height: 1350px;
   }
 
   .pptop {
@@ -8263,7 +8316,7 @@
   }
 
   .pptext {
-    padding-left: 64px;
+    padding-left: 35px;
     padding-top: 90px;
     padding-bottom: 90px;
     font-size: 40px;
@@ -8420,6 +8473,14 @@
 }
 
 @media (max-width: 603px) {
+  .section-team .single-person {
+    margin-top: 40px;
+    padding: 10px;
+    border-radius: 5px;
+}
+  .leaderpageheight {
+    height: 6800px;
+}
   .collapsebtn {
     margin-top: -5px;
     margin-right: 40px;
@@ -8442,7 +8503,7 @@
   }
 
   .english {
-    margin-left: 220px;
+    margin-left: 170px;
   }
 
   .new-section1__block21.layout {
@@ -8471,12 +8532,12 @@
   }
 
   .applyh2 {
-    padding-left: 144px;
+    text-align: center;
     font-size: 24px;
   }
 
   .applyh22 {
-    padding-left: 144px;
+    text-align: center;
   }
 
   .applyh2p {
@@ -8511,7 +8572,7 @@
     border-radius: 10px;
     border-color: transparent;
     width: 538px;
-    margin: 32px auto;
+    margin: 80px auto;
   }
 
   .cf {
@@ -8805,7 +8866,7 @@
 
   .reviews {
     width: 1020px;
-    margin: 100px 200px 100px;
+    margin: 100px 210px 100px;
   }
 
   .btn-review {
@@ -9058,7 +9119,7 @@
   input.radio {
     float: left;
     clear: none;
-    margin: 6px 0 0 2px;
+    /* margin: 6px 0 0 2px; */
     border-color: #A0BD1C;
   }
 
@@ -9094,7 +9155,7 @@
   .nbiformheight {
     position: relative;
     height: 1300px;
-    top: 45px;
+    top: 145px;
   }
 
   label {
@@ -9113,7 +9174,7 @@
   }
 
   .topdiv {
-    margin: 4px auto 166px;
+    margin: 30px auto 166px;
     width: 538px;
   }
 
@@ -9262,7 +9323,10 @@
     margin: 26px auto;
     width: 416px;
   }
-
+  .vsbform2 {
+    margin: 26px auto;
+    width: 416px; 
+  }
   .vsbmt {
     margin-top: 27px;
   }
@@ -9388,6 +9452,12 @@
     padding-left: 280px;
 
   }
+  .reviewvideo {
+    width: 400px;
+    height: 200px;
+    margin-left: -20px;
+    margin-top: 80px;
+}
 
   .reviewcard {
     width: 500px;
@@ -9433,21 +9503,21 @@
   .paymentservices {
     font-family: Ubuntu;
     font-size: 18px;
-    font-weight: 700;
+    font-weight: 400;
     color: #F1F5F6;
   }
 
   .paymentprice {
     font-family: Ubuntu;
     font-size: 18px;
-    font-weight: 700;
-    padding-left: 100px;
+    font-weight: 400;
+    padding-left: 40px;
     color: #F1F5F6;
   }
 
   .reviewline {
     margin-left: 56px;
-    margin-top: 26px;
+    margin-top: 6px;
     color: #F1F5F6;
     border: 1px solid #F1F5F6;
     width: 500px;
@@ -9502,7 +9572,7 @@
     font-size: 14px;
     font-weight: 500;
     color: #000000;
-    margin-left: 95px;
+    margin-left: 57px;
   }
 
   .radioo {
@@ -9661,7 +9731,7 @@
 
   .ppheight {
     position: relative;
-    height: 1250px;
+    height: 1350px;
   }
   .contactus {
     font-size: 40px;
@@ -9678,7 +9748,7 @@
   }
 
   .pptext {
-    padding-left: 64px;
+    padding-left: 15px;
     padding-top: 90px;
     padding-bottom: 90px;
     font-size: 40px;
@@ -9740,9 +9810,9 @@
   }
 
   .imagebn2 {
-    width: 420px;
-    height: 420px;
-    margin-left: 15%;
+    width: 320px;
+    height: 320px;
+    margin-left: 25%;
     margin-top: -1030px;
   }
 

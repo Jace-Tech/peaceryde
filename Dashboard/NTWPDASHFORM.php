@@ -77,53 +77,53 @@
                   <rect width="19" height="3" fill="#A0BD1C"/>
                   </svg>
                   </span>
-            <div class="align-self-center">
-                <h3 class="page-title" style="font-family: Ubuntu;font-size: 30px;font-style: normal;font-family: Ubuntu;font-weight: 500;color:#0A0E69;padding-left:200px;">Nigeria Temporary Work Permit  </h3>
-                <p style="padding-top: 30px;padding-left:304px;font-family: Ubuntu;font-size: 24px;font-style: normal;font-weight: 500; color:#0A0E69;">Fill the Form Below</p>
-                <p style="font-family: Ubuntu;font-size: 18px;font-style: normal;font-weight: 400;padding-top:12px;padding-left:323px;color:#0A0E69;">Your personal details</p>
+                  <div class="align-self-center">                       
+                <h3 class="page-title title">Nigeria Business Visa on Arrival </h3>  
+                <p class="fill">Fill the Form Below</p>   
+                <p class="personal">Your personal details</p>                                          
             </div>
-            <form action="../handlers/form_handler.php" method="post" data-form style="padding-left: 121px;">
+            <form action="../handlers/form_handler.php" method="post" class="formml" data-form >
                 <div class="form-body">
-                    <select class="form-select" name="title" style="color: #5A5A5A;border: 1px solid #555555; width:586px; height: 44px; margin-top:47px" aria-label="Default select example">
-                        <option selected>Title</option>
-                        <?php foreach ($titles as $title) : ?>
-                            <option value="<?= $title ?>"><?= $title ?></option>
-                        <?php endforeach; ?>
-                    </select>
-                    <p style="padding-top:19px; color: #C8730F;font-family: Ubuntu;
-                  font-size: 13px;
-                  font-style: normal;
-                  font-weight: 400;
-                 
-                  ">Your name must be entered in English as it appears on your passport.</p>
-                    <div class="row" style="margin-top: 25px;">
-                        <div class="col-md-3">
-                            <div class="form-group">
-                                <input name="firstname" type="text" style="width:227px; height:43px;border:1px solid #555555;font-size: 13px;" class="form-control" placeholder="First Name (as on passport)">
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="form-group">
-                                <input name="middlename" type="text" style="width:227px;height:43px;border:1px solid #555555;font-size: 13px;" class="form-control" placeholder="Middle Name (as on passport)">
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="form-group">
-                                <input type="hidden" name="service" value="srvs-001">
-                                <input name="lastname" type="text" style="width:227px;height:43px;border:1px solid #555555;font-size: 13px;" class="form-control" placeholder="Last Name (as on passport)">
-                            </div>
+                <div class="row">
+                        <div class="col-md-4 col-lg-3 col-xl-3">
+                            <select class="form-select fmselect" name="title" aria-label="Default select example">
+                                <option selected>Title</option>
+                                <?php foreach ($titles as $title) : ?>
+                                    <option value="<?= $title ?>"><?= $title ?></option>
+                                <?php endforeach; ?>
+                            </select>
                         </div>
                     </div>
+                    
+                    <p class="nameappears">Your name must be entered in English as it appears on your passport.</p>
+
                     <div class="row" style="margin-top: 25px;">
-                        <div class="col-md-3">
+                        <div class="col-md-4 col-lg-3 col-xl-2">
                             <div class="form-group">
-                                <input type="date" name="dob" style="width:227px; height:43px;border:1px solid #555555;font-size: 13px;" class="form-control" placeholder="Date of birth">
+                                <input name="firstname" type="text" class="form-control firstname" placeholder="First Name (as on passport)">
                             </div>
                         </div>
-                        <div class="col-md-1">
-
+                        <div class="col-md-4 col-lg-3 col-xl-2">
+                            <div class="form-group">
+                                <input name="middlename" type="text" class="form-control middlename" placeholder="Middle Name (as on passport)">
+                            </div>
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-md-4 col-lg-3 col-xl-2">
+                            <div class="form-group">
+                            <input type="hidden" name="service" value="srvs-002">
+                                <input name="lastname" type="text" class="form-control lastname" placeholder="Last Name (as on passport)">
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="row" style="margin-top: 25px;">
+                        <div class="col-md-4 col-lg-3 col-xl-2">
+                            <div class="form-group">
+                                <input type="date" name="dob class="form-control dob" placeholder="Date of birth">
+                            </div>
+                        </div>
+  
+                        <div class="col-md-6 col-lg-6 col-xl-3">
                             <label>Gender</label>
                             <br>
                             <div class="form-check form-check-inline">
@@ -142,20 +142,21 @@
 
                     </div>
                     <div class="row" style="margin-top: 25px;">
-                        <div class="col-md-4">
+                    <div class="col-md-4 col-xl-2">
                             <div class="form-group">
-                                <input name="email" value="<?= $LOGGED_USER['email']; ?>" type="text" style="width:307px; height:43px;border:1px solid #555555;font-size: 13px;" class="form-control" placeholder="Email address">
+                                <input type="email" class="form-control email" name="email" value="<?= $LOGGED_USER['email']; ?>" placeholder="Email address">
                             </div>
                         </div>
-                        <div class="col-md-4">
+
+                        <div class="col-md-4 col-xl-2">
                             <div class="form-group">
-                                <input name="passport" type="text" style="width:307px;height:43px;border:1px solid #555555;font-size: 13px;" class="form-control" placeholder="Passport No">
+                                <input type="text" name="passport" class="form-control passno" placeholder="Passport No">
                             </div>
-                        </div>
+                        </div>  
                     </div>
                     <div class="row" style="margin-top: 25px;">
-                        <div class="col-md-4">
-                            <select class="form-select firstname2" required name="country_code" aria-label="Default select example">
+                        <div class="col-md-4 col-xl-2"">
+                            <select class="form-select code" required name="country_code" aria-label="Default select example">
                                 <option selected>Please Select</option>
                                 <option data-countryCode="NG" value="234">Nigeria (+234)</option>
                                 <option data-countryCode="GB" value="44">UK (+44)</option>
@@ -380,21 +381,26 @@
                         </div>
                         <div class="col-md-4">
                             <div class="form-group">
-                                <input type="hidden" name="twp" value="">
+                                <input type="hidden" name="nbv" value="">
                                 <input name="phone" type="text" style="width:307px;height:43px;border:1px solid #555555;font-size: 13px;" class="form-control" placeholder="Mobile number">
                             </div>
                         </div>
                     </div>
-                    <p style="height: 16px;padding-top: 27px;font-family: Ubuntu;font-size: 14px;font-style: normal;font-weight: 400;">Please select below your Nationality (as on passport)</p>
-                    <select name="country" class="form-select" style="border: 1px solid #555555; width:502px; height: 44px; margin-top:27px;color: #5A5A5A;" aria-label="Default select example">
+                    <p class="please">Please select below your Nationality (as on passport)</p>
+                    <div class="row">
+                        <div class="col-md-4 col-xl-3">
+                        <select name="country" class="form-select nationality" aria-label="Default select example">
                         <option selected>Select Country</option>
                         <?php foreach ($country_fee as $key => $value) : ?>
                             <option value="<?= $key ?>"><?= $key ?></option>
                         <?php endforeach; ?>
                     </select>
+                        </div>
+                    </div>
+                   
                 </div>
-                <div style="margin-top: 62px; margin-bottom: 204px;">
-                    <button data-btn type="button" class="btn" style="background-color: #A0BD1C; width: 157px; height: 44px;font-family: Ubuntu;color:#ffffff;font-size: 14px;font-style: normal;font-weight: 400;">Proceed to Payment</button>
+                <div class="divbtn">
+                    <button data-btn type="submit" class="btn btnproceed" >Proceed to Payment</button>
                 </div>
 
             </form>

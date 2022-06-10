@@ -234,6 +234,14 @@
   /* Large devices (laptops/desktops, 992px and up) */
   @media only screen and (min-width: 992px) {
     .example {height: 84px;margin-left: 73px;width:523px;margin-top: 15px;border-radius: 15px;padding: 12px;border:1px solid #f1f5f6}
+    .example span {
+        font-family: Ubuntu;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        padding-left: 22px;
+        color: #080C58;
+    }
     .account{
         padding-top:80px;font-family: Ubuntu;font-size: 30px;font-style: normal;font-weight: 500;padding-left: 30px; text-align: left;color: #0F1377;
     }
@@ -279,6 +287,14 @@
         margin-top: -10px;
         margin-left: 758px;
     }
+    .example span {
+        font-family: Ubuntu;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        padding-left: 22px;
+        color: #080C58;
+    }
   }
   /* Extra large devices (large laptops and desktops, 1200px and up) */
   @media only screen and (max-width: 1366px) {
@@ -289,18 +305,18 @@
     .example span
     {
         font-family: Ubuntu;
-                            font-size: 16px;
-                            font-style: normal;
-                            font-weight: 400;
-                            padding-left: 22px;
-                            color:#080C58;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        padding-left: 22px;
+        color:#080C58;
     }
     .account
     {
     padding-top:80px;font-family: Ubuntu;font-size: 30px;font-style: normal;font-weight: 500;padding-left: 30px; text-align: left;color: #0F1377;
     }
     .account-img{
-        margin-left: 89px;
+        margin-left: 60px;
     }
     .breadcrumb
     {

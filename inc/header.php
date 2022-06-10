@@ -48,7 +48,7 @@
 
         <nav class="navbar navbar-expand-lg bg-nav shadow navbar-light height" style="padding-bottom: 0px;">
           <div class="container-fluid cf cfheight">
-            <a class="navbar-brand brand" href="Index.html"><img src="assets/logo.png" class="logoimg" width="164"></a>
+            <a class="navbar-brand brand" href="index.php"><img src="assets/logo.png" class="logoimg" width="164"></a>
             <div class=" nav-item dropdown mobilelang">
               <a class="nav-link dropdown-toggle nav english" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false"
                 >
@@ -82,6 +82,9 @@
 
               </ul>
             </div>
+            <li>
+              <img src="assets/flag2.png" class="flag">
+            </li>
             <button class="navbar-toggler collapsebtn" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
             <svg width="19" height="15" viewBox="0 0 19 15" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-bottom: 10px;
             margin-top: 10px;">
@@ -95,22 +98,23 @@
             <div class="collapse navbar-collapse" id="collapsibleNavbar">
               <ul class="navbar-nav">
                 <li class="nav-item">
-                  <a class="nav-link nav link home" href="Index.php">Home</a>
+                  <a class="nav-link nav link home" href="index.php">Home</a>
                 </li>
                 <li class="nav-item dropdown">
                   <a class="nav-link link services" href="sbform.php"> Services</a>
                 </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link link contact" href="contact.php">Contact Us</a>
-                </li>
                 <li class=" nav-item">
-                  <a class="nav-link link about" href="about.php">About Us</a>
+                  <a class="nav-link link home" href="leaders.php">Leadership</a>
                 </li>
 
+                <li class=" nav-item">
+                  <a class="nav-link link contact" href="about.php">About Us</a>
+                </li>
+                
             
                 <li class="nav-item apply ml-118">
-                  <a href="apply.php" class="btn button btn-outline-light appbtn" type="button">Apply</a>
-                  <a href="signin.php" class="btn button2 sign" type="button">Sign In</a>
+                  <a href="SBForm.html" class="btn button btn-outline-light appbtn" type="button">Apply</a>
+                  <a href="signin.html" class="btn button2 sign" type="button">Sign In</a>
                 </li>
               
               <li class=" nav-item dropdown lang">
@@ -140,7 +144,7 @@
                 </ul>
               </li>
               <li>
-                <img src="assets/flag2.png" style="width: 50px; height:50px; margin-left:20px;">
+                <img src="assets/flag2.png" class="laptopflag">
               </li>
             </ul>
             </div>

@@ -5,15 +5,30 @@
 .body {
   overflow-x: hidden;
 }
-
+.paybtn
+{
+  width:200px;
+  height: 200px;
+}
 .movements {
   margin-left: 500px;
 }
-
+.new-section2__group.layout2 {
+  position: relative;
+ 
+}
+.reviewvideo
+{
+  width: 500px;height: 200px; margin-left: -20px; margin-top: 20px;
+}
 .bg-nav {
   background-color: #FBFCFB;
 }
-
+.custom-control-label {
+   
+  margin-top: -4px;
+ 
+}
 .whoweare {
   font-size: 40px;
   text-align: center;
@@ -33,9 +48,10 @@
 .applyh22 {
   font-family: 'Ubuntu';
   font-style: normal;
-  font-weight: 500;
+  font-weight: 700;
   font-size: 24px;
   color: #0A0E69;
+  text-align: center;
 }
 
 .modalemail {
@@ -433,17 +449,16 @@ button:focus:not(:focus-visible) {
 }
 
 .applyh2 {
-  /* //padding-left: 264px; */
+  text-align: center;
   font-family: 'Ubuntu';
   font-style: normal;
   font-weight: 500;
   font-size: 24px;
   color: #0A0E69;
-  text-align: center;
 }
 
 .applyh22 {
-  padding-left: 264px;
+  text-align: center;
 
 }
 
@@ -536,9 +551,128 @@ button:focus:not(:focus-visible) {
 .policy {
   margin-top: -2px;
 }
+.flag
+{
+  width: 50px; height:50px; margin-left:20px;
+}
+.laptopflag
+{
+  width: 50px; height:50px; margin-left:20px;
+}
+p,a,h1,h2,h3,h4 {
+	margin: 0;
+	padding: 0;
+}
 
+.section-team {
+	font-family: "Poppins", sans-serif;
+	padding: 100px 0;
+}
+
+.section-team .header-section {
+	margin-bottom: 50px;
+}
+
+.section-team .header-section .small-title {
+    margin-bottom: 25px;
+	font-size: 16px;
+    font-weight: 500;
+    color: #3e64ff;
+}
+
+.section-team .header-section .title {
+    font-weight: 700;
+    font-size: 45px;
+}
+
+.section-team .single-person {
+	margin-top: 0px;
+	padding: 30px;
+	
+	border-radius: 5px;
+}
+
+.section-team .single-person .person-image {
+    position: relative;
+    margin-bottom: 50px;
+    border-radius: 50%;
+   
+    transition: padding .3s;
+}
+
+.section-team .single-person:hover .person-image {
+	padding: 12px;
+    
+}
+
+.section-team .single-person .person-image img {
+  width: 100%;
+    border-radius: 5%;
+   
+}
+
+.section-team .single-person .person-image .icon {
+	position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%,50%);
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    
+    color: #fff;
+    border-radius: 50%;
+    font-size: 24px;
+}
+
+.section-team .single-person:hover .person-image .icon {
+	background: none;
+
+	color: #016cec;
+}
+
+.section-team .single-person .person-info .full-name {
+	margin-bottom: 10px;
+	font-size: 28px;
+    font-weight: 700;
+    
+}
+
+.section-team .single-person .person-info .speciality {
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #016cec;
+    
+}
 
 @media (max-width: 2560px) {
+  .mobileshow{
+    display: none;
+  }
+  .laptopshow{
+    display:block;
+  }
+  .mobilevideo
+  {
+    display:none;
+  }
+  .flag
+{
+  display:none;
+}
+.leadtext {
+  font-size: 18px;
+  font-family: 'Ubuntu';
+  color: #0A0E69;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 35px;
+  letter-spacing: 0.04em;
+  width: 100%;
+}
   .btn-review {
     margin: 11px 1180px;
     width: 200px;
@@ -573,7 +707,8 @@ button:focus:not(:focus-visible) {
     border-radius: 10px;
     border-color: transparent;
     width: 938px;
-    margin: 32px auto;
+    margin: 80px auto;
+    height:1000px;
   }
 
   .movement1 {
@@ -687,7 +822,7 @@ button:focus:not(:focus-visible) {
   }
 
   .pptext {
-    padding-left: 344px;
+    padding-left: 800px;
     padding-top: 70px;
     font-size: 40px;
     color: white;
@@ -722,7 +857,16 @@ button:focus:not(:focus-visible) {
     height: 513px;
     margin-top: -100px;
   }
-
+  .imagebnld {
+    width: 213px;
+    height: 213px;
+    
+  }
+  .imagebnld2 {
+    width: 213px;
+    height: 213px;
+    
+  }
   .whoweare {
     margin-left: -250px;
   }
@@ -898,7 +1042,7 @@ button:focus:not(:focus-visible) {
   }
 
   .ml-118 {
-    margin-left: 244px;
+    margin-left: 245px;
   }
 
   .button2 {
@@ -1397,7 +1541,7 @@ button:focus:not(:focus-visible) {
   input.radio {
     float: left;
     clear: none;
-    margin: 6px 0 0 2px;
+    /* margin: 6px 0 0 2px; */
     border-color: #A0BD1C;
   }
 
@@ -1588,7 +1732,7 @@ button:focus:not(:focus-visible) {
 
   .vsbheight {
     position: relative;
-    height: 1084px;
+    height: 1384px;
   }
 
   .vsbh2 {
@@ -1621,6 +1765,13 @@ button:focus:not(:focus-visible) {
     width: 416px;
     margin-left: 221px;
   }
+  .vsbform2 {
+
+    font-family: ubuntu;
+    margin-top: 27px;
+    width: 416px;
+    margin-left: 221px;
+  }
 
   .vsbmt {
     margin-top: 27px;
@@ -1643,7 +1794,9 @@ button:focus:not(:focus-visible) {
     width: 502px;
     margin-left: 221px;
   }
-
+  .leaderpageheight {
+    height: 3200px;
+}
   .vsbformtextarea {
     width: 508px;
     height: 116px;
@@ -1809,33 +1962,34 @@ button:focus:not(:focus-visible) {
     font-weight: 700;
     color: #F1F5F6;
     text-align: left;
-    padding-left: 186px;
+    padding-left: 686px;
     padding-top: 86px;
   }
 
   .paymentdiv {
-    margin-left: 186px;
+    margin-left: 686px;
     margin-top: 14px;
   }
+ 
 
   .paymentservices {
     font-family: Ubuntu;
     font-size: 18px;
-    font-weight: 700;
+    font-weight: 400;
     color: #F1F5F6;
   }
 
   .paymentprice {
     font-family: Ubuntu;
     font-size: 18px;
-    font-weight: 700;
-    padding-left: 200px;
+    font-weight: 400;
+    padding-left: 180px;
     color: #F1F5F6;
   }
 
   .reviewline {
-    margin-left: 186px;
-    margin-top: 26px;
+    margin-left: 686px;
+    margin-top: 6px;
     color: #F1F5F6;
     border: 1px solid #F1F5F6;
     width: 526px;
@@ -1843,7 +1997,7 @@ button:focus:not(:focus-visible) {
 
   .form-group2 {
     padding: 5px;
-    width: 50%;
+    width: 100%;
   }
 
   .form-control::placeholder {
@@ -1890,7 +2044,7 @@ button:focus:not(:focus-visible) {
     font-size: 14px;
     font-weight: 500;
     color: #000000;
-    margin-left: 95px;
+    margin-left: 57px;
   }
 
   .radioo {
@@ -1898,7 +2052,26 @@ button:focus:not(:focus-visible) {
     height: 21px;
     margin-top: 8px;
   }
-
+  .radioo1
+  {
+    width: 21px;
+    height: 21px;
+  }
+  .radioo2
+  {
+    width: 21px;
+    height: 21px;
+  }
+  .radioo3
+  {
+    width: 21px;
+    height: 21px;
+  }
+  .radioo4
+  {
+    width: 21px;
+    height: 21px;
+  }
   .radiodiv {
     margin-top: 20px;
     margin-left: 57px;
@@ -1989,7 +2162,7 @@ button:focus:not(:focus-visible) {
     border-radius: 10px;
     border-color: transparent;
     width: 938px;
-    margin: 32px auto;
+    margin: 80px auto;
   }
 
   .movement1 {
@@ -2097,7 +2270,7 @@ button:focus:not(:focus-visible) {
   }
 
   .pptext {
-    padding-left: 344px;
+    padding-left: 470px;
     padding-top: 70px;
     font-size: 40px;
     color: white;
@@ -2801,7 +2974,7 @@ button:focus:not(:focus-visible) {
   input.radio {
     float: left;
     clear: none;
-    margin: 6px 0 0 2px;
+    /* margin: 6px 0 0 2px; */
     border-color: #A0BD1C;
   }
 
@@ -2977,7 +3150,7 @@ button:focus:not(:focus-visible) {
 
   .vsbheight {
     position: relative;
-    height: 1084px;
+    height: 1384px;
   }
 
   .vsbh2 {
@@ -3007,6 +3180,11 @@ button:focus:not(:focus-visible) {
     border: 1px solid #555555;
     font-family: ubuntu;
     margin-top: 86px;
+    width: 416px;
+    margin-left: 221px;
+  }
+  .vsbform2 {
+    margin-top: 27px;
     width: 416px;
     margin-left: 221px;
   }
@@ -3198,33 +3376,33 @@ button:focus:not(:focus-visible) {
     font-weight: 700;
     color: #F1F5F6;
     text-align: left;
-    padding-left: 186px;
+    padding-left: 386px;
     padding-top: 86px;
   }
 
   .paymentdiv {
-    margin-left: 186px;
+    margin-left: 386px;
     margin-top: 14px;
   }
 
   .paymentservices {
     font-family: Ubuntu;
     font-size: 18px;
-    font-weight: 700;
+    font-weight: 400;
     color: #F1F5F6;
   }
 
   .paymentprice {
     font-family: Ubuntu;
     font-size: 18px;
-    font-weight: 700;
-    padding-left: 200px;
+    font-weight: 400;
+    padding-left: 150px;
     color: #F1F5F6;
   }
 
   .reviewline {
-    margin-left: 186px;
-    margin-top: 26px;
+    margin-left: 386px;
+    margin-top: 6px;
     color: #F1F5F6;
     border: 1px solid #F1F5F6;
     width: 526px;
@@ -3279,7 +3457,7 @@ button:focus:not(:focus-visible) {
     font-size: 14px;
     font-weight: 500;
     color: #000000;
-    margin-left: 95px;
+    margin-left: 57px;
   }
 
   .radioo {
@@ -3368,7 +3546,7 @@ button:focus:not(:focus-visible) {
     border-radius: 10px;
     border-color: transparent;
     width: 938px;
-    margin: 32px auto;
+    margin: 80px auto;
   }
 
   .lang {
@@ -3481,7 +3659,7 @@ button:focus:not(:focus-visible) {
   }
 
   .pptext {
-    padding-left: 344px;
+    padding-left: 314px;
     padding-top: 70px;
     font-size: 40px;
     color: white;
@@ -3682,7 +3860,7 @@ button:focus:not(:focus-visible) {
   }
 
   .ml-118 {
-    margin-left: 217px;
+    margin-left: 220px;
   }
 
   .button2 {
@@ -4162,7 +4340,7 @@ button:focus:not(:focus-visible) {
   input.radio {
     float: left;
     clear: none;
-    margin: 6px 0 0 2px;
+    /* margin: 6px 0 0 2px; */
     border-color: #A0BD1C;
   }
 
@@ -4338,7 +4516,7 @@ button:focus:not(:focus-visible) {
 
   .vsbheight {
     position: relative;
-    height: 1084px;
+    height: 1384px;
   }
 
   .vsbh2 {
@@ -4371,7 +4549,11 @@ button:focus:not(:focus-visible) {
     width: 416px;
     margin-left: 221px;
   }
-
+  .vsbform2 {
+    margin-top: 27px;
+    width: 416px;
+    margin-left: 221px;
+  }
   .vsbmt {
     margin-top: 27px;
   }
@@ -4561,33 +4743,33 @@ button:focus:not(:focus-visible) {
     font-weight: 700;
     color: #F1F5F6;
     text-align: left;
-    padding-left: 186px;
+    padding-left: 290px;
     padding-top: 86px;
   }
 
   .paymentdiv {
-    margin-left: 186px;
+    margin-left: 280px;
     margin-top: 14px;
   }
 
   .paymentservices {
     font-family: Ubuntu;
     font-size: 18px;
-    font-weight: 700;
+    font-weight: 400;
     color: #F1F5F6;
   }
 
   .paymentprice {
     font-family: Ubuntu;
     font-size: 18px;
-    font-weight: 700;
-    padding-left: 200px;
+    font-weight: 400;
+    padding-left: 150px;
     color: #F1F5F6;
   }
 
   .reviewline {
-    margin-left: 186px;
-    margin-top: 26px;
+    margin-left: 280px;
+    margin-top: 6px;
     color: #F1F5F6;
     border: 1px solid #F1F5F6;
     width: 526px;
@@ -4595,7 +4777,7 @@ button:focus:not(:focus-visible) {
 
   .form-group2 {
     padding: 5px;
-    width: 50%;
+    width: 100%;
   }
 
   .form-control::placeholder {
@@ -4642,7 +4824,7 @@ button:focus:not(:focus-visible) {
     font-size: 14px;
     font-weight: 500;
     color: #000000;
-    margin-left: 95px;
+    margin-left: 57px;
   }
 
   .radioo {
@@ -4731,7 +4913,7 @@ button:focus:not(:focus-visible) {
     border-radius: 10px;
     border-color: transparent;
     width: 938px;
-    margin: 32px auto;
+    margin: 80px auto;
   }
 
   .lang {
@@ -4844,7 +5026,7 @@ button:focus:not(:focus-visible) {
   }
 
   .pptext {
-    padding-left: 344px;
+    padding-left: 314px;
     padding-top: 70px;
     font-size: 40px;
     color: white;
@@ -5520,7 +5702,7 @@ button:focus:not(:focus-visible) {
   input.radio {
     float: left;
     clear: none;
-    margin: 6px 0 0 2px;
+    /* margin: 6px 0 0 2px; */
     border-color: #A0BD1C;
   }
 
@@ -5696,7 +5878,7 @@ button:focus:not(:focus-visible) {
 
   .vsbheight {
     position: relative;
-    height: 1084px;
+    height: 1384px;
   }
 
   .vsbh2 {
@@ -5726,6 +5908,11 @@ button:focus:not(:focus-visible) {
     border: 1px solid #555555;
     font-family: ubuntu;
     margin-top: 86px;
+    width: 416px;
+    margin-left: 221px;
+  }
+  .vsbform2 {
+    margin-top: 27px;
     width: 416px;
     margin-left: 221px;
   }
@@ -5931,21 +6118,21 @@ button:focus:not(:focus-visible) {
   .paymentservices {
     font-family: Ubuntu;
     font-size: 18px;
-    font-weight: 700;
+    font-weight: 400;
     color: #F1F5F6;
   }
 
   .paymentprice {
     font-family: Ubuntu;
     font-size: 18px;
-    font-weight: 700;
-    padding-left: 200px;
+    font-weight: 400;
+    padding-left: 110px;
     color: #F1F5F6;
   }
 
   .reviewline {
     margin-left: 186px;
-    margin-top: 26px;
+    margin-top: 6px;
     color: #F1F5F6;
     border: 1px solid #F1F5F6;
     width: 526px;
@@ -5953,7 +6140,7 @@ button:focus:not(:focus-visible) {
 
   .form-group2 {
     padding: 5px;
-    width: 50%;
+    width: 100%;
   }
 
   .form-control::placeholder {
@@ -5982,7 +6169,7 @@ button:focus:not(:focus-visible) {
     height: 653px;
     margin-top: 52px;
     background-color: #ffffff;
-    margin-left: 200px;
+    margin-left: 130px;
   }
 
   .leftcardh2 {
@@ -6000,7 +6187,7 @@ button:focus:not(:focus-visible) {
     font-size: 14px;
     font-weight: 500;
     color: #000000;
-    margin-left: 95px;
+    margin-left: 57px;
   }
 
   .radioo {
@@ -6089,7 +6276,7 @@ button:focus:not(:focus-visible) {
     border-radius: 10px;
     border-color: transparent;
     width: 938px;
-    margin: 32px auto;
+    margin: 80px auto;
   }
 
   .lang {
@@ -6202,7 +6389,7 @@ button:focus:not(:focus-visible) {
   }
 
   .pptext {
-    padding-left: 344px;
+    padding-left: 314px;
     padding-top: 70px;
     font-size: 40px;
     color: white;
@@ -6401,7 +6588,7 @@ button:focus:not(:focus-visible) {
   }
 
   .ml-118 {
-    margin-left: 260px;
+    margin-left: 264px;
   }
 
   .button2 {
@@ -6876,7 +7063,7 @@ button:focus:not(:focus-visible) {
   input.radio {
     float: left;
     clear: none;
-    margin: 6px 0 0 2px;
+    /* margin: 6px 0 0 2px; */
     border-color: #A0BD1C;
   }
 
@@ -7052,7 +7239,7 @@ button:focus:not(:focus-visible) {
 
   .vsbheight {
     position: relative;
-    height: 1084px;
+    height: 1384px;
   }
 
   .vsbh2 {
@@ -7082,6 +7269,11 @@ button:focus:not(:focus-visible) {
     border: 1px solid #555555;
     font-family: ubuntu;
     margin-top: 86px;
+    width: 416px;
+    margin-left: 221px;
+  }
+  .vsbform2 {
+    margin-top: 27px;
     width: 416px;
     margin-left: 221px;
   }
@@ -7299,21 +7491,21 @@ button:focus:not(:focus-visible) {
   .paymentservices {
     font-family: Ubuntu;
     font-size: 18px;
-    font-weight: 700;
+    font-weight: 400;
     color: #F1F5F6;
   }
 
   .paymentprice {
     font-family: Ubuntu;
     font-size: 18px;
-    font-weight: 700;
-    padding-left: 200px;
+    font-weight: 400;
+    padding-left: 130px;
     color: #F1F5F6;
   }
 
   .reviewline {
     margin-left: 186px;
-    margin-top: 26px;
+    margin-top: 6px;
     color: #F1F5F6;
     border: 1px solid #F1F5F6;
     width: 526px;
@@ -7321,7 +7513,7 @@ button:focus:not(:focus-visible) {
 
   .form-group2 {
     padding: 5px;
-    width: 50%;
+    width: 100%;
   }
 
   .form-control::placeholder {
@@ -7368,7 +7560,7 @@ button:focus:not(:focus-visible) {
     font-size: 14px;
     font-weight: 500;
     color: #000000;
-    margin-left: 95px;
+    margin-left: 57px;
   }
 
   .radioo {
@@ -7469,7 +7661,7 @@ button:focus:not(:focus-visible) {
     border-radius: 10px;
     border-color: transparent;
     width: 938px;
-    margin: 32px auto;
+    margin: 80px auto;
   }
 
   .lang {
@@ -7582,7 +7774,7 @@ button:focus:not(:focus-visible) {
   }
 
   .pptext {
-    padding-left: 344px;
+    padding-left: 314px;
     padding-top: 70px;
     font-size: 40px;
     color: white;
@@ -8222,7 +8414,7 @@ button:focus:not(:focus-visible) {
   input.radio {
     float: left;
     clear: none;
-    margin: 6px 0 0 2px;
+    /* margin: 6px 0 0 2px; */
     border-color: #A0BD1C;
   }
 
@@ -8398,7 +8590,7 @@ button:focus:not(:focus-visible) {
 
   .vsbheight {
     position: relative;
-    height: 1084px;
+    height: 1384px;
   }
 
   .vsbh2 {
@@ -8431,7 +8623,11 @@ button:focus:not(:focus-visible) {
     width: 416px;
     margin-left: 221px;
   }
-
+  .vsbform2 {
+    margin-top: 27px;
+    width: 416px;
+    margin-left: 221px;
+  }
   .vsbmt {
     margin-top: 27px;
   }
@@ -8640,21 +8836,21 @@ button:focus:not(:focus-visible) {
   .paymentservices {
     font-family: Ubuntu;
     font-size: 18px;
-    font-weight: 700;
+    font-weight: 400;
     color: #F1F5F6;
   }
 
   .paymentprice {
     font-family: Ubuntu;
     font-size: 18px;
-    font-weight: 700;
-    padding-left: 200px;
+    font-weight: 400;
+    padding-left: 140px;
     color: #F1F5F6;
   }
 
   .reviewline {
     margin-left: 186px;
-    margin-top: 26px;
+    margin-top: 6px;
     color: #F1F5F6;
     border: 1px solid #F1F5F6;
     width: 526px;
@@ -8662,7 +8858,7 @@ button:focus:not(:focus-visible) {
 
   .form-group2 {
     padding: 5px;
-    width: 50%;
+    width: 100%;
   }
 
   .form-control::placeholder {
@@ -8709,7 +8905,7 @@ button:focus:not(:focus-visible) {
     font-size: 14px;
     font-weight: 500;
     color: #000000;
-    margin-left: 95px;
+    margin-left: 57px;
   }
 
   .radioo {
@@ -8793,7 +8989,7 @@ button:focus:not(:focus-visible) {
     border-radius: 10px;
     border-color: transparent;
     width: 938px;
-    margin: 32px auto;
+    margin: 80px auto;
   }
 
   .lang {
@@ -8906,7 +9102,7 @@ button:focus:not(:focus-visible) {
   }
 
   .pptext {
-    padding-left: 344px;
+    padding-left: 314px;
     padding-top: 70px;
     font-size: 40px;
     color: white;
@@ -9109,7 +9305,7 @@ button:focus:not(:focus-visible) {
   }
 
   .ml-118 {
-    margin-left: 294px;
+    margin-left: 297px;
   }
 
   .button2 {
@@ -9204,7 +9400,7 @@ button:focus:not(:focus-visible) {
   }
 
   .applyh2 {
-    /* padding-left: 314px; */
+    text-align: center;
     font-family: 'Ubuntu';
     font-style: normal;
     font-weight: 500;
@@ -9213,7 +9409,7 @@ button:focus:not(:focus-visible) {
   }
 
   .applyh22 {
-    padding-left: 314px;
+    text-align: center;
   }
 
   .applyh2p {
@@ -9610,7 +9806,7 @@ button:focus:not(:focus-visible) {
   input.radio {
     float: left;
     clear: none;
-    margin: 6px 0 0 2px;
+    /* margin: 6px 0 0 2px; */
     border-color: #A0BD1C;
   }
 
@@ -9786,7 +9982,7 @@ button:focus:not(:focus-visible) {
 
   .vsbheight {
     position: relative;
-    height: 1084px;
+    height: 1384px;
   }
 
   .vsbh2 {
@@ -9816,6 +10012,11 @@ button:focus:not(:focus-visible) {
     border: 1px solid #555555;
     font-family: ubuntu;
     margin-top: 86px;
+    width: 416px;
+    margin-left: 221px;
+  }
+  .vsbform2 {
+    margin-top: 27px;
     width: 416px;
     margin-left: 221px;
   }
@@ -10026,21 +10227,21 @@ button:focus:not(:focus-visible) {
   .paymentservices {
     font-family: Ubuntu;
     font-size: 18px;
-    font-weight: 700;
+    font-weight: 400;
     color: #F1F5F6;
   }
 
   .paymentprice {
     font-family: Ubuntu;
     font-size: 18px;
-    font-weight: 700;
-    padding-left: 200px;
+    font-weight: 400;
+    padding-left: 150px;
     color: #F1F5F6;
   }
 
   .reviewline {
     margin-left: 186px;
-    margin-top: 26px;
+    margin-top: 6px;
     color: #F1F5F6;
     border: 1px solid #F1F5F6;
     width: 526px;
@@ -10048,7 +10249,7 @@ button:focus:not(:focus-visible) {
 
   .form-group2 {
     padding: 5px;
-    width: 50%;
+    width: 100%;
   }
 
   .form-control::placeholder {
@@ -10095,7 +10296,7 @@ button:focus:not(:focus-visible) {
     font-size: 14px;
     font-weight: 500;
     color: #000000;
-    margin-left: 95px;
+    margin-left: 57px;
   }
 
   .radioo {
@@ -10180,7 +10381,7 @@ button:focus:not(:focus-visible) {
     border-radius: 10px;
     border-color: transparent;
     width: 938px;
-    margin: 32px auto;
+    margin: 80px auto;
   }
 
   .cf {
@@ -10288,7 +10489,7 @@ button:focus:not(:focus-visible) {
   }
 
   .pptext {
-    padding-left: 164px;
+    padding-left: 204px;
     padding-top: 70px;
     font-size: 40px;
     color: white;
@@ -10486,7 +10687,7 @@ button:focus:not(:focus-visible) {
   }
 
   .ml-118 {
-    margin-left: 310px;
+    margin-left: 290px;
   }
 
   .button2 {
@@ -10586,7 +10787,7 @@ button:focus:not(:focus-visible) {
 
   .free {
     font-weight: 500;
-    margin-left: 587px;
+    margin-left: 565px;
     margin-top: 12px;
     font-family: Ubuntu;
     font-style: normal;
@@ -10961,7 +11162,7 @@ button:focus:not(:focus-visible) {
   input.radio {
     float: left;
     clear: none;
-    margin: 6px 0 0 2px;
+    /* margin: 6px 0 0 2px; */
     border-color: #A0BD1C;
   }
 
@@ -11137,7 +11338,7 @@ button:focus:not(:focus-visible) {
 
   .vsbheight {
     position: relative;
-    height: 1084px;
+    height: 1384px;
   }
 
   .vsbh2 {
@@ -11170,7 +11371,11 @@ button:focus:not(:focus-visible) {
     width: 416px;
     margin-left: 221px;
   }
-
+  .vsbform2 {
+    margin-top: 27px;
+    width: 416px;
+    margin-left: 221px;
+  }
   .vsbmt {
     margin-top: 27px;
   }
@@ -11192,6 +11397,10 @@ button:focus:not(:focus-visible) {
     width: 502px;
     margin-left: 221px;
   }
+  .section-team {
+    font-family: "Poppins", sans-serif;
+    padding: 10px 0;
+}
 
   .vsbformtextarea {
     width: 508px;
@@ -11377,21 +11586,21 @@ button:focus:not(:focus-visible) {
   .paymentservices {
     font-family: Ubuntu;
     font-size: 18px;
-    font-weight: 700;
+    font-weight: 400;
     color: #F1F5F6;
   }
 
   .paymentprice {
     font-family: Ubuntu;
     font-size: 18px;
-    font-weight: 700;
-    padding-left: 200px;
+    font-weight: 400;
+    padding-left: 180px;
     color: #F1F5F6;
   }
 
   .reviewline {
     margin-left: 186px;
-    margin-top: 26px;
+    margin-top: 6px;
     color: #F1F5F6;
     border: 1px solid #F1F5F6;
     width: 526px;
@@ -11399,7 +11608,7 @@ button:focus:not(:focus-visible) {
 
   .form-group2 {
     padding: 5px;
-    width: 50%;
+    width: 100%;
   }
 
   .form-control::placeholder {
@@ -11446,7 +11655,7 @@ button:focus:not(:focus-visible) {
     font-size: 14px;
     font-weight: 500;
     color: #000000;
-    margin-left: 95px;
+    margin-left: 57px;
   }
 
   .radioo {
@@ -11526,18 +11735,18 @@ button:focus:not(:focus-visible) {
     border-radius: 10px;
     border-color: transparent;
     width: 938px;
-    margin: 32px auto;
+    margin: 80px auto;
   }
 
   .applycard {
     border-radius: 10px;
     border-color: transparent;
     width: 738px;
-    margin: 32px auto;
+    margin: 80px auto;
   }
 
   .applyh2 {
-    /* padding-left: 264px; */
+    text-align: center;
     font-family: 'Ubuntu';
     font-style: normal;
     font-weight: 500;
@@ -11546,11 +11755,11 @@ button:focus:not(:focus-visible) {
   }
 
   .applyh22 {
-    padding-left: 264px;
+    text-align: center;
   }
 
   .applyh2p {
-    padding: 28px 224px 0px 234px;
+    padding: 28px 54px 0px 54px;
     font-family: Ubuntu;
     font-size: 16px;
     font-style: normal;
@@ -11593,7 +11802,7 @@ button:focus:not(:focus-visible) {
 
   .free {
     font-weight: 500;
-    margin-left: 495px;
+    margin-left: 475px;
     margin-top: 18px;
     font-family: Ubuntu;
     font-style: normal;
@@ -11741,7 +11950,7 @@ button:focus:not(:focus-visible) {
   }
 
   .ml-118 {
-    margin-left: 220px;
+    margin-left: 200px;
   }
 
   .lang {
@@ -11912,7 +12121,9 @@ button:focus:not(:focus-visible) {
   .aboutpageheight {
     height: 1800px;
   }
-
+  .leaderpageheight {
+    height: 3200px;
+}
   input[type=radio],
   input.radio {
     float: left;
@@ -11928,7 +12139,7 @@ button:focus:not(:focus-visible) {
   input.radio {
     float: left;
     clear: none;
-    margin: 6px 0 0 2px;
+    /* margin: 6px 0 0 2px; */
     border-color: #A0BD1C;
   }
 
@@ -12104,7 +12315,7 @@ button:focus:not(:focus-visible) {
 
   .vsbheight {
     position: relative;
-    height: 1084px;
+    height: 1384px;
   }
 
   .vsbh2 {
@@ -12135,7 +12346,13 @@ button:focus:not(:focus-visible) {
     font-family: ubuntu;
     margin-top: 86px;
     width: 416px;
-    margin-left: 221px;
+    margin-left: 150px;
+  }
+  .vsbform2 {
+    
+    margin-top: 27px;
+    width: 416px;
+    margin-left: 150px;
   }
 
   .vsbmt {
@@ -12150,21 +12367,21 @@ button:focus:not(:focus-visible) {
     line-height: 16px;
     letter-spacing: 0em;
     text-align: left;
-    padding-left: 221px;
+    padding-left: 150px;
     padding-top: 27px;
   }
 
   .vsbformselect {
     border: 1px solid #555555;
     width: 502px;
-    margin-left: 221px;
+    margin-left: 150px;
   }
 
   .vsbformtextarea {
     width: 508px;
     height: 116px;
     margin-bottom: 65px;
-    margin-left: 221px;
+    margin-left: 150px;
     margin-top: 27px;
   }
 
@@ -12482,21 +12699,21 @@ button:focus:not(:focus-visible) {
   .paymentservices {
     font-family: Ubuntu;
     font-size: 18px;
-    font-weight: 700;
+    font-weight: 400;
     color: #F1F5F6;
   }
 
   .paymentprice {
     font-family: Ubuntu;
     font-size: 18px;
-    font-weight: 700;
+    font-weight: 400;
     padding-left: 200px;
     color: #F1F5F6;
   }
 
   .reviewline {
     margin-left: 186px;
-    margin-top: 26px;
+    margin-top: 6px;
     color: #F1F5F6;
     border: 1px solid #F1F5F6;
     width: 526px;
@@ -12504,7 +12721,7 @@ button:focus:not(:focus-visible) {
 
   .form-group2 {
     padding: 5px;
-    width: 50%;
+    width: 100%;
   }
 
   .form-control::placeholder {
@@ -12551,7 +12768,7 @@ button:focus:not(:focus-visible) {
     font-size: 14px;
     font-weight: 500;
     color: #000000;
-    margin-left: 95px;
+    margin-left: 57px;
   }
 
   .radioo {
@@ -12717,7 +12934,7 @@ button:focus:not(:focus-visible) {
   }
 
   .pptext {
-    padding-left: 164px;
+    padding-left: 154px;
     padding-top: 70px;
     font-size: 40px;
     color: white;
@@ -12818,11 +13035,11 @@ button:focus:not(:focus-visible) {
     border-radius: 10px;
     border-color: transparent;
     width: 738px;
-    margin: 32px auto;
+    margin: 80px auto;
   }
 
   .applyh2 {
-    /* padding-left: 264px; */
+    text-align: center;
     font-family: 'Ubuntu';
     font-style: normal;
     font-weight: 500;
@@ -12831,11 +13048,11 @@ button:focus:not(:focus-visible) {
   }
 
   .applyh22 {
-    padding-left: 264px;
+    text-align: center;
   }
 
   .applyh2p {
-    padding: 28px 224px 0px 234px;
+    padding: 28px 64px 0px 54px;
     font-family: Ubuntu;
     font-size: 16px;
     font-style: normal;
@@ -12878,7 +13095,7 @@ button:focus:not(:focus-visible) {
 
   .free {
     font-weight: 500;
-    margin-left: 300px;
+    margin-left: 285px;
     margin-top: 18px;
     font-family: Ubuntu;
     font-style: normal;
@@ -13038,7 +13255,7 @@ button:focus:not(:focus-visible) {
   }
 
   .ml-118 {
-    margin-left: 205px;
+    margin-left: 180px;
   }
 
   .button {
@@ -13390,7 +13607,7 @@ button:focus:not(:focus-visible) {
   input.radio {
     float: left;
     clear: none;
-    margin: 6px 0 0 2px;
+    /* margin: 6px 0 0 2px; */
     border-color: #A0BD1C;
   }
 
@@ -13566,7 +13783,7 @@ button:focus:not(:focus-visible) {
 
   .vsbheight {
     position: relative;
-    height: 1184px;
+    height: 1484px;
   }
 
   .vsbh2 {
@@ -13596,6 +13813,12 @@ button:focus:not(:focus-visible) {
     border: 1px solid #555555;
     font-family: ubuntu;
     margin-top: 86px;
+    width: 416px;
+    margin-left: 121px;
+  }
+  .vsbform2 {
+    
+    margin-top: 27px;
     width: 416px;
     margin-left: 121px;
   }
@@ -13799,21 +14022,21 @@ button:focus:not(:focus-visible) {
   .paymentservices {
     font-family: Ubuntu;
     font-size: 18px;
-    font-weight: 700;
+    font-weight: 400;
     color: #F1F5F6;
   }
 
   .paymentprice {
     font-family: Ubuntu;
     font-size: 18px;
-    font-weight: 700;
+    font-weight: 400;
     padding-left: 50px;
     color: #F1F5F6;
   }
 
   .reviewline {
     margin-left: 86px;
-    margin-top: 26px;
+    margin-top: 6px;
     color: #F1F5F6;
     border: 1px solid #F1F5F6;
     width: 360px;
@@ -13868,7 +14091,7 @@ button:focus:not(:focus-visible) {
     font-size: 14px;
     font-weight: 500;
     color: #000000;
-    margin-left: 95px;
+    margin-left: 57px;
   }
 
   .radioo {
@@ -13966,7 +14189,9 @@ button:focus:not(:focus-visible) {
     font-size: 14px;
     color: #F1F5F6;
   }
-
+  .leaderpageheight {
+    height: 4400px;
+}
   .everythingtext2 {
     font-weight: 400;
     padding-left: 166px;
@@ -14034,7 +14259,7 @@ button:focus:not(:focus-visible) {
   }
 
   .pptext {
-    padding-left: 164px;
+    padding-left: 104px;
     padding-top: 70px;
     font-size: 40px;
     color: white;

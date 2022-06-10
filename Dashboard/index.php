@@ -49,340 +49,334 @@
     <link href="./dist/css/style.min.css" rel="stylesheet">
     <link href="../dist/css/responsive.css" rel="stylesheet">
     <style>
-        @media only screen and (max-width: 2560px) {
-            .acc {
-                margin-left: 60px;
-                margin-bottom: 60px;
-            }
+    @media only screen and (max-width: 2560px)
+    {
+      .acc
+        {
+            margin-left: 60px;
+            margin-bottom: 60px;
+        }
+        .breadcrumb {
+            margin-top: -180px;
+            margin-left: 58px;
+        }
+    }
+    @media only screen and (max-width: 1600px)
+    {
+        .breadcrumb {
+            margin-top: -180px;
+            margin-left: 158px;
+        }
+        .mobile
+        {
+            margin-left: 60px;
+        }
+    }
+    @media only screen and (max-width: 1440px)
+    {
+        .breadcrumb
+        {
+            margin-top: -190px;
+            margin-left: 58px;
+        }
+        .mobile
+        {
+            margin-left: 60px;
+        }
+    }
+    @media only screen and (max-width: 1366px)
+    {
+        .breadcrumb
+        {
+            margin-top: -190px;
+            margin-left: 58px;
+        }
+        .mobile
+        {
+            margin-left: 0px;
+        }
+    }
+    @media only screen and (max-width: 1280px)
+    {
+        .breadcrumb
+        {
+            margin-top: -190px;
+            margin-left: 58px;
+        }
+        .mobile
+        {
+            margin-left: 0px;
+        }
+    }
+    @media only screen and (max-width: 1024px){
+        .breadcrumb {
+            margin-top: -300px;
+            margin-left: 300px;
+        }
+    }
+    @media only screen and (max-width: 900px){
+        .breadcrumb {
+            margin-top: -300px;
+            margin-left: 200px;
+        }
+    }
+    @media only screen and (max-width: 853px){
+        .breadcrumb {
+            margin-top: -300px;
+            margin-left: 150px;
+        }
+    }
 
-            .breadcrumb {
-                margin-top: -180px;
-                margin-left: 258px;
-            }
+    @media only screen and (max-width: 800px)
+    {
+        .breadcrumb
+        {
+            margin-top: -300px;
+            margin-left: 100px;
+        }
+        .mobile
+        {
+            margin-left: 0px;
+        }
+    }
+    @media only screen and (max-width: 768px)
+    {
+        .breadcrumb
+        {
+            margin-top: -300px;
+            margin-left: 74px;
+        }
+        .mobile
+        {
+            margin-left: 0px;
+        }
+    }
+    @media only screen and (max-width: 603px)
+    {
+        .breadcrumb
+        {
+            margin-top: -220px;
+            margin-left: 4px;
+        }
+        .account
+        {
+            padding-top: 0px;
+        }
+        .account-img {
+            margin-left: 19px;
+        }
+        .page-breadcrumb {
+            padding: 70px 35px 0;
+        }
+        .breadcrumb {
+            margin-top: -270px;
+            margin-left: 154px;
+        }
+        .example {
+            margin-left: 7px;
+        }
+        .name{
+            margin-top: 20px;
         }
 
-        @media only screen and (max-width: 1600px) {
-            .breadcrumb {
-                margin-top: -180px;
-                margin-left: 158px;
-            }
+    }
+    @media only screen and (max-width: 540px)
+    {
 
-            .mobile {
-                margin-left: 0px;
-            }
+        .account
+        {
+            padding-top: 0px;
+        }
+        .account-img {
+            margin-left: 19px;
+        }
+        .page-breadcrumb {
+            padding: 70px 35px 0;
+        }
+        .breadcrumb {
+            margin-top: -270px;
+            margin-left: 114px;
+        }
+        .example {
+            margin-left: 7px;
         }
 
-        @media only screen and (max-width: 1440px) {
-            .breadcrumb {
-                margin-top: -190px;
-                margin-left: 58px;
-            }
-
-            .mobile {
-                margin-left: 0px;
-            }
+    }
+    @media only screen and (max-width: 480px)
+    {
+        .breadcrumb
+        {
+            margin-top: -270px;
+            margin-left: 14px;
         }
-
-        @media only screen and (max-width: 1366px) {
-            .breadcrumb {
-                margin-top: -190px;
-                margin-left: 58px;
-            }
-
-            .mobile {
-                margin-left: 0px;
-            }
+        .account{
+            padding-top: 0px;
         }
-
-        @media only screen and (max-width: 1280px) {
-            .breadcrumb {
-                margin-top: -190px;
-                margin-left: 58px;
-            }
-
-            .mobile {
-                margin-left: 0px;
-            }
+        .page-breadcrumb .breadcrumb
+        {
+            font-size: .9rem;
         }
-
-        @media only screen and (max-width: 1024px) {
-            .breadcrumb {
-                margin-top: -300px;
-                margin-left: 300px;
-            }
+        .example
+        {
+            margin-left: 3px;
         }
-
-        @media only screen and (max-width: 900px) {
-            .breadcrumb {
-                margin-top: -300px;
-                margin-left: 200px;
-            }
+        .page-breadcrumb
+        {
+           padding: 70px 35px 0;
         }
-
-        @media only screen and (max-width: 853px) {
-            .breadcrumb {
-                margin-top: -300px;
-                margin-left: 150px;
-            }
+        .account-img
+        {
+            margin-left: 9px;
         }
-
-        @media only screen and (max-width: 800px) {
-            .breadcrumb {
-                margin-top: -300px;
-                margin-left: 100px;
-            }
-
-            .mobile {
-                margin-left: 0px;
-            }
+    }
+    @media only screen and (max-width: 428px)
+    {
+        .breadcrumb
+        {
+            margin-top: -270px;
+            margin-left: 44px;
         }
-
-        @media only screen and (max-width: 768px) {
-            .breadcrumb {
-                margin-top: -300px;
-                margin-left: 74px;
-            }
-
-            .mobile {
-                margin-left: 0px;
-            }
+        .account{
+            padding-top: 0px;
         }
-
-        @media only screen and (max-width: 603px) {
-            .breadcrumb {
-                margin-top: -220px;
-                margin-left: 4px;
-            }
-
-            .account {
-                padding-top: 0px;
-            }
-
-            .account-img {
-                margin-left: 19px;
-            }
-
-            .page-breadcrumb {
-                padding: 70px 35px 0;
-            }
-
-            .breadcrumb {
-                margin-top: -270px;
-                margin-left: 154px;
-            }
-
-            .example {
-                margin-left: 7px;
-            }
-
-            .name {
-                margin-top: 20px;
-            }
-
+        .page-breadcrumb .breadcrumb
+        {
+            font-size: .7rem;
         }
-
-        @media only screen and (max-width: 540px) {
-
-            .account {
-                padding-top: 0px;
-            }
-
-            .account-img {
-                margin-left: 19px;
-            }
-
-            .page-breadcrumb {
-                padding: 70px 35px 0;
-            }
-
-            .breadcrumb {
-                margin-top: -270px;
-                margin-left: 114px;
-            }
-
-            .example {
-                margin-left: 7px;
-            }
-
+        .example
+        {
+            margin-left: 3px;
         }
-
-        @media only screen and (max-width: 480px) {
-            .breadcrumb {
-                margin-top: -270px;
-                margin-left: 14px;
-            }
-
-            .account {
-                padding-top: 0px;
-            }
-
-            .page-breadcrumb .breadcrumb {
-                font-size: .9rem;
-            }
-
-            .example {
-                margin-left: 3px;
-            }
-
-            .page-breadcrumb {
-                padding: 70px 35px 0;
-            }
-
-            .account-img {
-                margin-left: 9px;
-            }
+        .page-breadcrumb
+        {
+           padding: 70px 35px 0;
         }
-
-        @media only screen and (max-width: 428px) {
-            .breadcrumb {
-                margin-top: -270px;
-                margin-left: 44px;
-            }
-
-            .account {
-                padding-top: 0px;
-            }
-
-            .page-breadcrumb .breadcrumb {
-                font-size: .7rem;
-            }
-
-            .example {
-                margin-left: 3px;
-            }
-
-            .page-breadcrumb {
-                padding: 70px 35px 0;
-            }
-
-            .account-img {
-                margin-left: 9px;
-            }
+        .account-img
+        {
+            margin-left: 9px;
         }
-
-        @media only screen and (max-width: 414px) {
-            .breadcrumb {
-                margin-top: -270px;
-                margin-left: 64px;
-            }
-
-            .account {
-                padding-top: 0px;
-            }
-
-            .page-breadcrumb .breadcrumb {
-                font-size: .8rem;
-            }
-
-            .example {
-                margin-left: 3px;
-            }
-
-            .page-breadcrumb {
-                padding: 70px 35px 0;
-            }
-
-            .account-img {
-                margin-left: 9px;
-            }
+    }
+    @media only screen and (max-width: 414px)
+    {
+        .breadcrumb
+        {
+            margin-top: -270px;
+            margin-left: 6px;
         }
-
-        @media only screen and (max-width: 390px) {
-            .breadcrumb {
-                margin-top: -275px;
-                margin-left: 38px;
-            }
-
-            .account {
-                padding-top: 0px;
-            }
-
-            .ima {
-                margin-left: -40px;
-            }
-
-            .page-breadcrumb .breadcrumb {
-                font-size: .8rem;
-            }
-
-            .example {
-                margin-left: 3px;
-            }
-
-            .mobile {
-                margin-left: 30px;
-            }
-
-            .sidebarAccount h2 {
-                margin-left: -25px;
-            }
-
-            .sidebarAccount p {
-                margin-left: -30px;
-            }
+        .account{
+            padding-top: 0px;
         }
-
-        @media only screen and (max-width: 360px) {
-            .breadcrumb {
-                margin-top: -275px;
-                margin-left: 34px;
-            }
-
-            .page-breadcrumb .breadcrumb {
-                font-size: .8rem;
-            }
-
+        .page-breadcrumb .breadcrumb
+        {
+            font-size: .8rem;
         }
-
-        @media only screen and (max-width: 320px) {
-            .breadcrumb {
-                margin-top: -270px;
-                margin-left: 15px;
-            }
-
-            .mobile {
-                margin-left: 0px;
-            }
-
-            .account-img {
-                margin-left: 13px;
-            }
-
-            .page-breadcrumb .breadcrumb {
-                font-size: .9rem;
-                width: 290px;
-            }
+        .example
+        {
+            margin-left: 3px;
         }
-
-        @media only screen and (max-width: 280px) {
-            .breadcrumb {
-                margin-top: -370px;
-                margin-left: 4px;
-            }
-
-            .mobile {
-                margin-left: 0px;
-            }
-
-            .account {
-                padding-left: 0px;
-            }
-
-            .account-img {
-                margin-left: 89px;
-            }
-
-            .page-breadcrumb .breadcrumb {
-                font-size: .8rem;
-                width: 260px;
-            }
-
-            .name {
-                margin-top: 20px;
-                margin-left: 25px;
-            }
+        .page-breadcrumb
+        {
+           padding: 70px 35px 0;
         }
-    </style>
+        .account-img
+        {
+            margin-left: 9px;
+        }
+    }
+    @media only screen and (max-width: 390px)
+    {
+        .breadcrumb
+        {
+            margin-top: -275px;
+            margin-left: 38px;
+        }
+        .account{
+            padding-top: 0px;
+        }
+        .ima{
+            margin-left: -40px;
+        }
+        .page-breadcrumb .breadcrumb
+        {
+            font-size: .8rem;
+        }
+        .example
+        {
+            margin-left: 3px;
+        }
+        .mobile
+        {
+            margin-left: 30px;
+        }
+        .sidebarAccount h2
+        {
+            margin-left: -25px;
+        }
+        .sidebarAccount p
+        {
+            margin-left: -30px;
+        }
+    }
+    @media only screen and (max-width: 360px)
+    {
+        .breadcrumb
+        {
+            margin-top: -275px;
+            margin-left: 34px;
+        }
+        .page-breadcrumb .breadcrumb
+        {
+            font-size: .8rem;
+        }
+        
+    }
+    @media only screen and (max-width: 320px)
+    {
+        .breadcrumb
+        {
+            margin-top: -270px;
+            margin-left: 15px;
+        }
+        .mobile
+        {
+            margin-left: 0px;
+        }
+        .account-img {
+            margin-left: 13px;
+        }
+        .page-breadcrumb .breadcrumb {
+            font-size: .9rem;
+            width: 290px;
+        }
+    }
+    @media only screen and (max-width: 280px)
+    {
+        .breadcrumb {
+            margin-top: -370px;
+            margin-left: 4px;
+        }
+        .mobile
+        {
+            margin-left: 0px;
+        }
+        .account
+        {
+            padding-left: 0px;
+        }
+        .account-img {
+            margin-left: 89px;
+        }
+        .page-breadcrumb .breadcrumb {
+            font-size: .8rem;
+            width: 260px;
+        }
+        .name {
+            margin-top: 20px;
+            margin-left: 25px;
+        }
+    }
+
+</style>
 </head>
 
 <body>

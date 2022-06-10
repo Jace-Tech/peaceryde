@@ -41,92 +41,96 @@
         <!-- ======= section1 ======= -->
        <?php include("./inc/header.php"); ?>
        <section class=" new-section2__group layout2 faqheight" style="background-color: #f8f6f6;">
-            <div class="new-section1__cover-block layout signinpage">                    
-                <div style="width: 100%; height: 200px; background-color: #ADC92E;">                      
-                  <p class="faqtext">FAQs</p>
-                  <h2 class="helptext"><b>Help
-                    Center</b></h2>
-            <p class="everythingtext">Everything you need to know
-                about your Visa</p>
-              </div>
-                <div >
-                    <p
-                        class="everythingtext2">
-                        Everything you need to know
+                <div class="new-section1__cover-block layout signinpage">
+                    <div style="width: 100%; height: 200px; background-color: #ADC92E;">
+                        <p class="faqtext">FAQs</p>
+                        <h2 class="helptext">
+                            <b>
+                                Help
+                    Center
+                            </b>
+                        </h2>
+                        <p class="everythingtext">
+                            Everything you need to know
+                about your Visa
+                        </p>
+                    </div>
+                    <div>
+                        <p class="everythingtext2">
+                            Everything you need to know
                         about processing your
-                        Nigerian Visas and payment.</p>
-
+                        Nigerian Visas and payment.
+                        </p>
                         <div class="containerques" style="margin-top: 83px;">
-                          <div class="question">
-                            How do I verify my email?
-                          </div>
-                          <div class="answercont">
-                            <div class="answer">
-                              Click the link in the verification email from verify@codepen.io (be sure to check your spam folder or other email tabs if it's not in your inbox).
-                      
-                      Or, send an email with the subject "Verify" to verify@codepen.io from the email address you use for your CodePen account.<br><br>
-                      
-                      <a href="https://blog.codepen.io/documentation/features/email-verification/#how-do-i-verify-my-email-2">How to Verify Email Docs</a>
+                            <div class="question">
+                                How do I verify my email?
                             </div>
-                          </div>
-                        </div>
-                        
-                          <div class="containerques">
-                          <div class="question">
-                            My Pen loads infinitely or crashes the browser.
-                          </div>
-                          <div class="answercont">
-                            <div class="answer">
-                              It's likely an infinite loop in JavaScript that we could not catch. To fix, add ?turn_off_js=true to the end of the URL (on any page, like the Pen or Project editor, your Profile page, or the Dashboard) to temporarily turn off JavaScript. When you're ready to run the JavaScript again, remove ?turn_off_js=true and refresh the page.<br><br>
+                            <div class="answercont">
+                                <div class="answer">
+                                    Click the link in the verification email from verify@codepen.io (be sure to check your spam folder or other email tabs if it's not in your inbox).
                       
-                      <a href="https://blog.codepen.io/documentation/features/turn-off-javascript-in-previews/">How to Disable JavaScript Docs</a>
+                      Or, send an email with the subject "Verify" to verify@codepen.io from the email address you use for your CodePen account.
+                                    <br>
+                                    <br>
+                                    <a href="https://blog.codepen.io/documentation/features/email-verification/#how-do-i-verify-my-email-2">How to Verify Email Docs</a>
+                                </div>
                             </div>
-                          </div>
                         </div>
-                        
-                            <div class="containerques">
-                          <div class="question">
-                            How do I contact the creator of a Pen?
-                          </div>
-                          <div class="answercont">
-                            <div class="answer">
-                              You can leave a comment on any public Pen. Click the "Comments" link in the Pen editor view, or visit the Details page.<br><br>
-                      
-                      <a href="https://blog.codepen.io/documentation/faq/how-do-i-contact-the-creator-of-a-pen/">How to Contact Creator of a Pen Docs</a>
-                            </div>
-                          </div>
-                        </div>
-                        
                         <div class="containerques">
-                          <div class="question">
-                            What version of [library] does CodePen use?
-                          </div>
-                          <div class="answercont">
-                            <div class="answer">
-                              We have our current list of library versions <a href="https://codepen.io/versions">here</a>
-                          
+                            <div class="question">
+                                My Pen loads infinitely or crashes the browser.
                             </div>
-                          </div>
+                            <div class="answercont">
+                                <div class="answer">
+                                    It's likely an infinite loop in JavaScript that we could not catch. To fix, add ?turn_off_js=true to the end of the URL (on any page, like the Pen or Project editor, your Profile page, or the Dashboard) to temporarily turn off JavaScript. When you're ready to run the JavaScript again, remove ?turn_off_js=true and refresh the page.
+                                    <br>
+                                    <br>
+                                    <a href="https://blog.codepen.io/documentation/features/turn-off-javascript-in-previews/">How to Disable JavaScript Docs</a>
+                                </div>
+                            </div>
                         </div>
-                        
                         <div class="containerques">
-                          <div class="question">
-                            What are forks?
-                          </div>
-                          <div class="answercont">
-                            <div class="answer">
-                              A fork is a complete copy of a Pen or Project that you can save to your own account and modify. Your forked copy comes with everything the original author wrote, including all of the code and any dependencies.<br><br>
-                      
-                      <a href="https://blog.codepen.io/documentation/features/forks/">Learn More About Forks</a>
+                            <div class="question">
+                                How do I contact the creator of a Pen?
                             </div>
-                          </div>
+                            <div class="answercont">
+                                <div class="answer">
+                                    You can leave a comment on any public Pen. Click the "Comments" link in the Pen editor view, or visit the Details page.
+                                    <br>
+                                    <br>
+                                    <a href="https://blog.codepen.io/documentation/faq/how-do-i-contact-the-creator-of-a-pen/">How to Contact Creator of a Pen Docs</a>
+                                </div>
+                            </div>
                         </div>
+                        <div class="containerques">
+                            <div class="question">
+                                What version of [library] does CodePen use?
+                            </div>
+                            <div class="answercont">
+                                <div class="answer">
+                                    We have our current list of library versions
+                                    <a href="https://codepen.io/versions">here</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="containerques">
+                            <div class="question">
+                                What are forks?
+                            </div>
+                            <div class="answercont">
+                                <div class="answer">
+                                    A fork is a complete copy of a Pen or Project that you can save to your own account and modify. Your forked copy comes with everything the original author wrote, including all of the code and any dependencies.
+                                    <br>
+                                    <br>
+                                    <a href="https://blog.codepen.io/documentation/features/forks/">Learn More About Forks</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-
-            </div>
-        </section>
-
-            <comment content="======= End section7 =======" break="true"></comment><!-- ======= section8 ======= -->
+            </section>
+            <comment content="======= End section7 =======" break="true"></comment>
+            <!-- ======= section8 ======= -->
             <section class="new-section8__section8 layout">
               <div class="new-section8__block19 layout">
                 <div class="movements">
@@ -163,21 +167,27 @@
                               VISA SERVICES
                             </h3>
                             <ul>
-                              <li class="new-section8__text-body5 layout fs-13">Nigeria Business Visa on
-                                Arrival</li>
-                              <li class="new-section8__text-body5 layout fs-13">Nigeria
+                              <li class="new-section8__text-body5 layout fs-13"><a class="fs-13" href="NBVForm.html"
+                                style=" text-decoration: none;">Nigeria Business Visa on
+                                Arrival</a></li>
+                              <li class="new-section8__text-body5 layout fs-13"><a class="fs-13" href="NTWPForm.html"
+                                style=" text-decoration: none;">Nigeria
                                 Temporary Work Permit
-                                Approval</li>
-                              <li class="new-section8__text-body5 layout fs-13">Nigeria
-                                Tourist Visa</li>
-                              <li class="new-section8__text-body5 layout fs-13">Nigeria
+                                Approval</a></li>
+                              <li class="new-section8__text-body5 layout fs-13"><a class="fs-13" href="SBForm.html"
+                                style=" text-decoration: none;">Nigeria
+                                Tourist Visa</a></li>
+                              <li class="new-section8__text-body5 layout fs-13"><a class="fs-13" href="SBForm.html"
+                                style=" text-decoration: none;">Nigeria
                                 Business Visa
-                                Extension</li>
-                              <li class="new-section8__text-body5 layout fs-13">Nigeria
+                                Extension</a></li>
+                              <li class="new-section8__text-body5 layout fs-13"><a class="fs-13" href="SBForm.html"
+                                style=" text-decoration: none;">Nigeria
                                 Subject To
-                                Regularization (STR)</li>
-                              <li class="new-section8__text-body5 layout fs-13">Permit to Land
-                                Immgration Approval For Marine Vessels Foreign Crew</li>
+                                Regularization (STR)</a></li>
+                              <li class="new-section8__text-body5 layout fs-13"><a class="fs-13" href="SBForm.html"
+                                style=" text-decoration: none;">Permit to Land
+                                Immgration Approval For Marine Vessels Foreign Crew</a></li>
           
                             </ul>
                           </div>
@@ -186,40 +196,61 @@
                               OTHER SERVICES
                             </h3>
                             <ul>
-                              <li class="new-section8__text-body5 layout fs-13">Nigeria
-                                Business Incorporation
+                              <li class="new-section8__text-body5 layout fs-13"><a class="fs-13" href="BIForm.html"
+                                style=" text-decoration: none;">Nigeria
+                                Business Incorporation</a>
                               </li>
-                              <li class="new-section8__text-body5 layout fs-13">Hotel Bookings
+                              <li class="new-section8__text-body5 layout fs-13"><a class="fs-13" href="SBForm.html"
+                                style=" text-decoration: none;">Hotel Bookings</a>
                               </li>
-                              <li class="new-section8__text-body5 layout fs-13">Real Estate
+                              <li class="new-section8__text-body5 layout fs-13"><a class="fs-13" href="SBForm.html"
+                                style=" text-decoration: none;">Real Estate
                                 Cosultancy and
-                                Advisory</li>
-                              <li class="new-section8__text-body5 layout fs-13">Legal Advisory
-                                and Consultation
+                                Advisory</a></li>
+                              <li class="new-section8__text-body5 layout fs-13"><a class="fs-13" href="SBForm.html"
+                                style=" text-decoration: none;">Legal Advisory
+                                and Consultation</a>
                               </li>
-                              <li class="new-section8__text-body5 layout fs-13">Africa travels
-                                & tours</li>
-                              <li class="new-section8__text-body5 layout fs-13">Nigerian
+                              <li class="new-section8__text-body5 layout fs-13"><a class="fs-13" href="SBForm.html"
+                                style=" text-decoration: none;">Africa travels
+                                & tours</a></li>
+                              <li class="new-section8__text-body5 layout fs-13"><a class="fs-13" href="SBForm.html"
+                                style=" text-decoration: none;">Nigerian
                                 Immigration
-                                Consultancy</li>
-                              <li class="new-section8__text-body5 layout fs-13">Nigeria Custom
-                                Consultancy
+                                Consultancy</a></li>
+                              <li class="new-section8__text-body5 layout fs-13"><a class="fs-13" href="SBForm.html"
+                                style=" text-decoration: none;">Nigeria Custom
+                                Brokerage Services</a>
                               </li>
-                              <li class="new-section8__text-body5 layout fs-13">Airport
+                              <li class="new-section8__text-body5 layout fs-13"><a class="fs-13" href="SBForm.html"
+                                style=" text-decoration: none;">Nigeria Department of Petroleum Resources (DPR) Permits Consultancy Services</a>
+                              </li>
+                              <li class="new-section8__text-body5 layout fs-13"><a class="fs-13" href="SBForm.html"
+                                style=" text-decoration: none;">Nigeria Maritime and Safety Agency Cabotage Consultancy Services</a>
+                              </li>
+                              <li class="new-section8__text-body5 layout fs-13"><a class="fs-13" href="SBForm.html"
+                                style=" text-decoration: none;">Nigeria Ports Authority Consultancy Services</a></li>
+                                <li class="new-section8__text-body5 layout fs-13"><a class="fs-13" href="SBForm.html"
+                                  style=" text-decoration: none;">Other Nigerian Government Agencies Consultancy Support Services</a></li>
+                              <li class="new-section8__text-body5 layout fs-13"><a class="fs-13" href="SBForm.html"
+                                style=" text-decoration: none;">Nigeria COVID 19 Payment Services</a>Airport
                                 Immigration Meet and
                                 Greet</li>
-                              <li class="new-section8__text-body5 layout fs-13">Airport
+                              <li class="new-section8__text-body5 layout fs-13"><a class="fs-13" href="SBForm.html"
+                                style=" text-decoration: none;">Nigeria COVID 19 Payment Services</a>Airport
                                 Protocol Services</li>
-                              <li class="new-section8__text-body5 layout fs-13">Airport
+                              <li class="new-section8__text-body5 layout fs-13"><a class="fs-13" href="SBForm.html"
+                                style=" text-decoration: none;">Nigeria COVID 19 Payment Services</a>Airport
                                 Transfers</li>
-                              <li class="new-section8__text-body5 layout fs-13">Vehicle Rentals
+                              <li class="new-section8__text-body5 layout fs-13"><a class="fs-13" href="SBForm.html"
+                                style=" text-decoration: none;">Nigeria COVID 19 Payment Services</a>Vehicle Rentals
                               </li>
-                              <li class="new-section8__text-body5 layout fs-13">Armed Security
+                              <li class="new-section8__text-body5 layout fs-13"><a class="fs-13" href="SBForm.html"
+                                style=" text-decoration: none;">Nigeria COVID 19 Payment Services</a>Armed Security
                                 Escort Services
                               </li>
-                              <li class="new-section8__text-body5 layout fs-13">Nigeria COVID
-                                19 Payment
-                                Services</li>
+                              <li class="new-section8__text-body5 layout fs-13"><a class="fs-13" href="SBForm.html"
+                                style=" text-decoration: none;">Nigeria COVID 19 Payment Services</a></li>
                             </ul>
                           </div>
                           <div class="col-md-4 col-sm-6 col-xs-6 div4">
@@ -229,9 +260,12 @@
                                   SUPPORT
                                 </h3>
                                 <ul>
-                                  <li class="new-section8__text-body5 layout fs-13">Apply</li>
-                                  <li class="new-section8__text-body5 layout fs-13">Help</li>
-                                  <li class="new-section8__text-body5 layout fs-13">Contact Us
+                                  <li class="new-section8__text-body5 layout fs-13"><a class="fs-13" href="SBForm.html"
+                                    style=" text-decoration: none;">Apply</a></li>
+                                  <li class="new-section8__text-body5 layout fs-13"><a class="fs-13" href="faq.html"
+                                    style=" text-decoration: none;">Help</a></li>
+                                  <li class="new-section8__text-body5 layout fs-13"><a class="fs-13" href="contact.html"
+                                    style=" text-decoration: none;">Contact Us</a>
                                   </li>
                                 </ul>
                               </div>
@@ -248,7 +282,7 @@
                                   </li>
                                   <li class="new-section8__text-body5 layout fs-13" 0><a href="t&c.html"
                                       class="fs-13"style=" text-decoration: none;">Terms And
-                                      Condition</a></li>
+                                      Conditions</a></li>
                                   <li class="new-section8__text-body5 layout fs-13">Refund
                                     Policy</li>
                                 </ul>
