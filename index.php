@@ -552,19 +552,19 @@
          
           <div class="col-md-2 hide"></div>
           <div class="col-md-2 mag">
-            <video  loop="" controls="" class="laptopvideo" style="width: 200px;height: 200px; margin-left: -20px; margin-top: -90px;">
+            <video  loop="" controls="" class="laptopvideo" style="width: 200px;height: 200px; margin-left: -20px; margin-top: -50px;">
               <source type="video/mp4" src="https://endtest-videos.s3-us-west-2.amazonaws.com/documentation/endtest_data_driven_testing_csv.mp4">
               </video>
           </div>
           <div class="col-md-1"></div>
           <div class="col-md-2 mag">
-            <video  loop="" controls="" class="laptopvideo" style="width: 200px;height: 200px; margin-left: -20px; margin-top: -90px;">
+            <video  loop="" controls="" class="laptopvideo" style="width: 200px;height: 200px; margin-left: -20px; margin-top: -50px;">
               <source type="video/mp4" src="https://endtest-videos.s3-us-west-2.amazonaws.com/documentation/endtest_data_driven_testing_csv.mp4">
               </video>
           </div>
           <div class="col-md-1"></div>
           <div class="col-md-2 mag">
-            <video  loop="" controls="" class="laptopvideo" style="width: 200px;height: 200px; margin-left: -20px; margin-top: -90px;">
+            <video  loop="" controls="" class="laptopvideo" style="width: 200px;height: 200px; margin-left: -20px; margin-top: -50px;">
               <source type="video/mp4" src="https://endtest-videos.s3-us-west-2.amazonaws.com/documentation/endtest_data_driven_testing_csv.mp4">
               </video>
           </div>

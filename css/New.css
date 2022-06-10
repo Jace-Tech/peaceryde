@@ -660,7 +660,7 @@
     }
     @media (max-width: 280px){
       .new-section1__cover-block.layout {
-        top: 15px; } 
+        top: 5px; } 
 .new-section1__hero-title2.layout {
     position: relative;
     margin: 6px 6px 0px;
@@ -2123,7 +2123,7 @@
       margin: 0px 0px 40px; width:270px;height: 460px; } }
   @media (max-width: 384px) {
     .new-section2__block12.layout {
-      margin: 0px 40px 40px;
+      margin: 0px 35px 40px;
       width:250px } }
   @media (max-width: 360px) {
     .new-section2__block12.layout {
@@ -2356,7 +2356,7 @@
   margin: 28px auto 21px; }
   @media (max-width: 1199px) {
     .new-section2__block13a.layout {
-      margin: 45px auto 18px; } }
+      margin: 25px auto 18px; } }
   @media (max-width: 991px) {
     .new-section2__block13a.layout {
       margin: 25px auto 16px; } }
@@ -2368,7 +2368,7 @@
       margin: 21px auto 16px; } }
   @media (max-width: 768px) {
     .new-section2__block13a.layout {
-      margin: 41px auto 13px; } }
+      margin: 21px auto 13px; } }
   @media (max-width: 640px) {
     .new-section2__block13a.layout {
       margin: 41px auto 13px; } }
@@ -2395,16 +2395,19 @@
   height: min-content;
   width: 89px;
   min-width: 89px;
-  margin: 28px auto 21px; }
+  margin: 48px auto 21px; }
   @media (max-width: 1199px) {
     .new-section2__block13.layout {
       margin: 26px auto 18px; } }
   @media (max-width: 991px) {
     .new-section2__block13.layout {
-      margin: 22px auto 16px; } }
+      margin: 40px auto 16px; } }
   @media (max-width: 768px) {
     .new-section2__block13.layout {
-      margin: 23px auto 13px; } }
+      margin: 33px auto 13px; } }
+      @media (max-width: 603px) {
+        .new-section2__block13.layout {
+          margin: 55px auto 13px; } }
   @media (max-width: 575px) {
     .new-section2__block13.layout {
       margin: 36px auto 12px; } }
@@ -2428,16 +2431,19 @@
   height: min-content;
   width: 89px;
   min-width: 89px;
-  margin: 107px auto 21px; }
+  margin: 127px auto 21px; }
   @media (max-width: 1199px) {
     .new-section2__block13b.layout {
       margin: 125px auto 18px; } }
   @media (max-width: 991px) {
     .new-section2__block13b.layout {
-      margin: 95px auto 16px; } }
+      margin: 112px auto 16px; } }
   @media (max-width: 768px) {
     .new-section2__block13b.layout {
-      margin: 114px auto 13px; } }
+      margin: 124px auto 13px; } }
+      @media (max-width: 603px) {
+        .new-section2__block13b.layout {
+          margin: 144px auto 13px; } }
   @media (max-width: 575px) {
     .new-section2__block13b.layout {
       margin: 120px auto 12px; } }

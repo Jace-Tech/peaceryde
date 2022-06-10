@@ -84,7 +84,7 @@
                                     <div class="form-row">
                                       <div class="row">
                                         <label style="margin-top:27px">Mobile Number</label>
-                                        <div class="input-group mb-3">
+                                        <div class="input-group mb-3 biwidth">
                                           <div class="input-group-prepend">
                                             <select name="countryCode" id="" class="form-select code"
                                               aria-label="Default select example">

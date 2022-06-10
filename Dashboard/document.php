@@ -53,14 +53,15 @@
 }
 .question {
     font-family: Ubuntu;
-font-size: 16px;
-font-style: normal;
-font-weight: 400;
-  padding: 20px 80px 20px 20px;
-  position: relative;
-  display: flex;
-  align-items: center;
-  cursor: pointer;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    padding: 20px 80px 20px 20px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    border: 1px solid #555555;
 }
 
 .question::after {

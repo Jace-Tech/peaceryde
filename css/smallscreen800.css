@@ -1455,7 +1455,7 @@
     padding-left: 50px;
     padding-top: 90px;
     padding-bottom: 90px;
-    font-size: 40px;
+    font-size: 35px;
     color: white;
     font-family: ubuntu;
   }
@@ -2260,10 +2260,11 @@
     font-size: 18px;
     font-weight: 300;
     width: 720px;
+    text-align: center;
   }
 
   .topdiv {
-    margin: 74px auto 166px;
+    margin: 110px auto 166px;
     width: 738px;
   }
 
@@ -2849,7 +2850,7 @@
     padding-left: 30px;
     padding-top: 90px;
     padding-bottom: 90px;
-    font-size: 40px;
+    font-size: 35px;
     color: white;
     font-family: ubuntu;
   }
@@ -3661,16 +3662,17 @@
   .formtext {
     height: 113px;
     color: #0A0E69;
-    padding-left: 109px;
+    padding-left: 119px;
     padding-top: 52px;
     font-family: ubuntu;
     font-size: 18px;
     font-weight: 300;
-    width: 660px;
+    width: 670px;
+    text-align: center;
   }
 
   .topdiv {
-    margin: 74px auto 166px;
+    margin: 110px auto 166px;
     width: 700px;
   }
 
@@ -4257,7 +4259,7 @@
     padding-left: 40px;
     padding-top: 90px;
     padding-bottom: 90px;
-    font-size: 40px;
+    font-size: 35px;
     color: white;
     font-family: ubuntu;
   }
@@ -5050,7 +5052,7 @@
   }
 
   .topdiv {
-    margin: 4px auto 166px;
+    margin: 100px auto 166px;
     width: 638px;
   }
 
@@ -5615,7 +5617,7 @@
     padding-left: 24px;
     padding-top: 90px;
     padding-bottom: 90px;
-    font-size: 40px;
+    font-size: 35px;
     color: white;
     font-family: ubuntu;
   }
@@ -6952,7 +6954,7 @@
     padding-left: 30px;
     padding-top: 90px;
     padding-bottom: 90px;
-    font-size: 40px;
+    font-size: 35px;
     color: white;
     font-family: ubuntu;
   }
@@ -8319,7 +8321,7 @@
     padding-left: 35px;
     padding-top: 90px;
     padding-bottom: 90px;
-    font-size: 40px;
+    font-size: 35px;
     color: white;
     font-family: ubuntu;
   }
@@ -8866,7 +8868,7 @@
 
   .reviews {
     width: 1020px;
-    margin: 100px 210px 100px;
+    margin: 100px 210px 40px;
   }
 
   .btn-review {
@@ -9177,7 +9179,11 @@
     margin: 30px auto 166px;
     width: 538px;
   }
-
+  .bibtn {
+    margin-left: 36px;
+    margin-top: 56px;
+    margin-bottom: 85px;
+}
   .cardform {
     border: 1px solid #ffffff;
     height: 1399px;
@@ -9751,7 +9757,7 @@
     padding-left: 15px;
     padding-top: 90px;
     padding-bottom: 90px;
-    font-size: 40px;
+    font-size: 35px;
     color: white;
     font-family: ubuntu;
   }
