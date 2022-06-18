@@ -1,7 +1,6 @@
 <?php 
 
-require("../../db/config.php");
-require("../../models/Review.php");
+require_once("./models.php");
 
 $reviews = new Review($connect);
 
@@ -10,14 +9,7 @@ if(isset($_POST['feature'])) {
     $result = $reviews->makeFeatured($review);
 
     if($result) {
-        $alert = [
-            'alert_message' => "Review added to feature",
-            'alert_type' => 'success'
-        ];
-
-        session_start();
-        $_SESSION['ADMIN_ALERT'] = json_encode($alert);
-
+        setAdminAlert("Review added to feature", 'success');
         header("Location: ../reviews.php");
     }
 }
@@ -27,14 +19,7 @@ if(isset($_POST['unfeature'])) {
     $result = $reviews->removeFeature($review);
 
     if($result) {
-        $alert = [
-            'alert_message' => "Review removed from featured",
-            'alert_type' => 'success'
-        ];
-
-        session_start();
-        $_SESSION['ADMIN_ALERT'] = json_encode($alert);
-
+        setAdminAlert("Review removed from featured", 'success');
         header("Location: ../reviews.php");
     }
 }

@@ -1,10 +1,7 @@
 <?php 
-session_start();
 
-include("../../db/config.php");
-include("../../functions/index.php");
-include("../../setup.php");
-include("../../models/ResetPassword.php");
+require_once("./models.php");
+
 
 
 $reset_password = new ResetPassword($connect);
@@ -83,18 +80,10 @@ if(isset($_POST['change'])) {
         $deleted = $reset_password->deleteReset($id);
         
         if($deleted) {
-            
             // destroy cookie
             $time = time() - strtotime("1hr");
             setcookie("RESET", "destroy", $time, '/');
-    
-            $alert = [
-                "alert_type" => "success",
-                "alert_message" => "Password Changed"
-            ];
-
-            $_SESSION["alert"] = json_encode($alert);
-            
+            setAdminAlert("Password Changed", "success");
             header("Location: ../index.php");
         }
     }

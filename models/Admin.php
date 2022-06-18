@@ -59,6 +59,10 @@ class Admin {
                 "user" => $admin
             ];
         }
+        else {
+            return ["status" => "error", "message" => "Wrong Password"];
+            exit();
+        }
     } 
 
     public function deleteAdmin ($id) 
@@ -151,7 +155,7 @@ class Admin {
         $query = "INSERT INTO `sub_admin`(`services`, `countries`, `admin_id`, `status`) VALUES (:service, :country, :admin_id, :status)";
         $result = $this->connection->prepare($query);
         $result->execute([
-            'service' => $services,
+            'service' => json_encode($services),
             'country' => json_encode($countries),
             'admin_id' => $admin_id,
             'status' => $status 
@@ -166,7 +170,7 @@ class Admin {
         $result = $this->connection->prepare($query);
         $result->execute();
 
-        return $result->fetchAll();
+        return $result->fetchAll(); 
     }
 
     public function getAllSubAdmins () 

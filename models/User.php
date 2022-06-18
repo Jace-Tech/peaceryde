@@ -31,15 +31,15 @@ class User {
         $result->execute([
             'userId' => $userId,
             'title' => $title,
-            'firstname' => $firstname ? $firstname : "NULL",
-            'middle_name' => $middle_name ? $middle_name : "NULL",
-            'lastname' => $lastname ? $lastname : "NULL",
-            'date_of_birth' => $dob ? $dob : "NULL",
-            'gender' => $gender ? $gender : "NULL",
-            'email' => $email ? $email : "NULL",
-            'passport' => $passport ? $passport : "NULL",
-            'country' => $country ? $country : "NULL",
-            'phone' => $phone ? $phone : "NULL",
+            'firstname' => $firstname,
+            'middle_name' => $middle_name,
+            'lastname' => $lastname,
+            'date_of_birth' => $dob,
+            'gender' => $gender,
+            'email' => $email,
+            'passport' => $passport,
+            'country' => $country,
+            'phone' => $phone,
         ]);
 
         if($result) {

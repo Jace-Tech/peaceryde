@@ -1,5 +1,12 @@
 <?php include("./inc/check_session.php");  ?>
 
+<?php 
+
+  if(isset($_SESSION['APPLY_FORM_DATA'])) {
+    $FORM_APPY = json_decode($_SESSION['APPLY_FORM_DATA'], true);
+  }
+?>
+
 <!DOCTYPE html>
 <html>
 <!--  This source code is exported from pxCode, you can get more document from https://www.pxcode.io  -->
@@ -70,7 +77,7 @@
                   <div class="row">
                     <div class="col-md-3">
                       <div class="form-group">
-                        <input type="text" required type="text" name="firstname" class="form-control firstname" placeholder="First Name (as on passport)">
+                        <input type="text" required type="text" name="firstname" value="<?= $FORM_APPY['firstname'] ?? "" ?>" class="form-control firstname" placeholder="First Name (as on passport)">
                       </div>
                     </div>
                     <div class="col-md-3">
@@ -80,7 +87,7 @@
                     </div>
                     <div class="col-md-3">
                       <div class="form-group" style="margin-right: 117px;">
-                        <input type="text" required type="text" name="lastname" class="form-control lastname" placeholder="Last Name (as on passport)">
+                        <input type="text" required type="text" name="lastname" value="<?= $FORM_APPY['lastname'] ?? "" ?>" class="form-control lastname" placeholder="Last Name (as on passport)">
                       </div>
                     </div>
                   </div>
@@ -90,7 +97,7 @@
                   <div class="row">
                     <div class="col-md-3">
                       <div class="form-group">
-                        <input type="date" required name="dob" class="form-control firstname" placeholder="Date of Birth">
+                        <input type="date" required name="dob" class="form-control firstname"  placeholder="Date of Birth">
                       </div>
                     </div>
                     <div class="col-md-5 genderwidth">
@@ -121,7 +128,7 @@
                   <div class="row">
                     <div class="col-md-5">
                       <div class="form-group">
-                        <input type="email" required name="email" class="form-control firstname2" placeholder="Email address">
+                        <input type="email" required name="email" value="<?= $FORM_APPY['email'] ?? "" ?>" class="form-control firstname2" placeholder="Email address">
                       </div>
                     </div>
                     <div class="col-md-5">
@@ -359,7 +366,7 @@
                             </optgroup>
                           </select>
                       </div>
-                      <input type="text" class="form-control firstname" placeholder="country code (Mobile number)" >
+                      <input type="text" class="form-control firstname" value="<?= $FORM_APPY['phone'] ?? "" ?>" placeholder="country code (Mobile number)" >
                       <input required type="hidden" name="service" value="srvs-002">
                       <input required type="hidden" name="nbv" value="">
                     </div>

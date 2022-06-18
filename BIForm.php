@@ -1,4 +1,9 @@
 <?php include("./inc/check_session.php") ?>
+<?php 
+  if(isset($_SESSION['APPLY_FORM_DATA'])) {
+    $FORM_APPY = json_decode($_SESSION['APPLY_FORM_DATA'], true);
+  }
+?>
 
 <!DOCTYPE html>
 <html>
@@ -62,12 +67,12 @@
                                 <div class="row">
                                   <div class="col-md-5">
                                     <div class="form-group">                                 
-                                      <input type="text" class="form-control firstname2" placeholder="First Name" >
+                                      <input type="text" name="firstname" value="<?= $FORM_APPY['firstname'] ?? "" ?>" class="form-control firstname2" placeholder="First Name" >
                                   </div>
                                   </div>
                                   <div class="col-md-5">
                                     <div class="form-group">
-                                      <input type="text" class="form-control firstname2" placeholder="Last Name" >
+                                      <input type="text" name="lastname" class="form-control firstname2" value="<?= $FORM_APPY['lastname'] ?? "" ?>" placeholder="Last Name" >
                                     </div>
                                   </div>
                                 </div> 
@@ -76,8 +81,10 @@
                                 <div class="row">
                                   <div class="col-md-5">
                                     <label class="mb-2" style="margin-top:27px">Personal Email</label>
-                                    <div class="form-group">                                 
-                                      <input type="email" class="form-control firstname2" placeholder="Email" >
+                                    <div class="form-group">  
+                                      <input type="hidden" name="bi">                               
+                                      <input type="hidden" name="service" value="srvs-003">                               
+                                      <input type="email" class="form-control firstname2" name="email" value="<?= $FORM_APPY['email'] ?? "" ?>" placeholder="Email" >
                                   </div>
                                   </div>
                                   <div class="col-md-5">
@@ -308,7 +315,7 @@
                                                 </optgroup>
                                               </select>
                                           </div>
-                                          <input type="text" class="form-control firstname" placeholder="070XXXXXXXX" >
+                                          <input type="text" name="phone"  value="<?= $FORM_APPY['phone'] ?? "" ?>" class="form-control firstname" placeholder="070XXXXXXXX" >
                                         </div>
                                       </div> 
                                     </div>
@@ -319,12 +326,12 @@
                                 <div class="row">
                                   <div class="col-md-5">
                                     <div class="form-group">                                 
-                                      <input type="text" class="form-control firstname2" placeholder="Company Name" >
+                                      <input type="text" name="companyName" class="form-control firstname2" placeholder="Company Name" >
                                   </div>
                                   </div>
                                   <div class="col-md-5">
                                     <div class="form-group">                                 
-                                      <input type="text" class="form-control firstname2" placeholder="Coporate Address" >
+                                      <input type="text" name="coperateAddress" class="form-control firstname2" placeholder="Coporate Address" >
                                   </div>
                                   </div>
                                 </div> 
@@ -334,7 +341,7 @@
                                   
                                   <div class="col-md-5">
                                     <div class="form-group">
-                                      <input type="text" class="form-control firstname2" placeholder="No of Shares" >
+                                      <input type="text" name="shares" class="form-control firstname2" placeholder="No of Shares" >
                                     </div>
                                   </div>
                                 </div> 

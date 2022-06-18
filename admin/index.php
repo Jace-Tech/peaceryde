@@ -1,12 +1,13 @@
 <?php session_start(); ?>
-<?php require_once('../db/config.php'); ?>
+
+<?php require_once('../db/conf.php'); ?>
 <?php require_once('../models/Admin.php'); ?>
 
 <?php 
 	$admin = new Admin($connect);
 	if(!count($admin->getAllAdmins())) header('Location: ./signup.php');
 
-	if(isset($_COOKIE['LOGGED_USER'])) header('Location: ./dashboard.php');
+	if(isset($_COOKIE['LOGGED_ADMIN'])) header('Location: ./dashboard.php');
 ?>
 
 <!doctype html>

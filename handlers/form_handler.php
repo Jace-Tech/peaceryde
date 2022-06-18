@@ -25,7 +25,7 @@ if(isset($_POST['twp'])) {
         "country" => $country,
         "serviceId" => $service,
         "passport" => $passport,
-        "phone" => $country_code . $phone
+        "phone" => $countryCode . $phone
     ];
 
     if(isset($_SESSION['LOGGED_USER'])) {
@@ -66,7 +66,7 @@ if(isset($_POST['nbv'])) {
         "country" => $country,
         "serviceId" => $service,
         "passport" => $passport,
-        "phone" => $country_code . $phone
+        "phone" => $countryCode . $phone
     ];
 
 
@@ -98,7 +98,10 @@ if(isset($_POST['bi'])) {
 
     // Generate users option
     $user = [
+        "firstname" => $firstname,
         "email" => $email,
+        "lastname" => $lastname,
+        "phone" => $countryCode . $phone,
         "serviceId" => $service,
     ];
 

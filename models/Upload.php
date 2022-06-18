@@ -16,7 +16,7 @@ class Upload {
         $file_name = $file['name'];
         $file_size = $file['size'];
         $file = $file['tmp_name'];
-        $file_ext = explode('.', $file['name'])[count(explode('.', $file['name'])) - 1];
+        $file_ext = end(explode('.', $file['name']));
 
         $extensions = array("image/jpeg", "image/jpg", "image/png", "application/pdf");
 
@@ -31,7 +31,7 @@ class Upload {
         if($file_size > 2097152){
             return [
                 'status' => 'error',
-                'message' => 'File extension not allowed. Please choose a different file.'
+                'message' => 'Maximum file size exceeded.'
             ];
             exit();
         }
@@ -58,20 +58,20 @@ class Upload {
 
     public function uploadToDB($userid, $filename, $name, $kind)
     {
-        $files = $filename;
+        $file = $filename;
         // if(is_array($filename)) {
         // }
         // else {
         //     $files = json_encode([$filename]);
         // }
 
-        $query = "INSERT INTO `uploads`(`user_id`, `name`, `service_id`, `files`, `status`) VALUES (:userid, :name, :kind, :filename, :status)";
+        $query = "INSERT INTO `uploads`(`user_id`, `name`, `service_id`, `file`, `status`) VALUES (:userid, :name, :kind, :filename, :status)";
         $result = $this->connection->prepare($query);
         $result->execute([
             'userid' => $userid,
             'name' => $name,
             'kind' => $kind,
-            'filename' => $files,
+            'filename' => $file,
             'status' => "Awaiting approval"
         ]);
 

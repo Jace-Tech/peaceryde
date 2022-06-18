@@ -1,14 +1,4 @@
-<?php require_once("./addons/session.php"); ?>
-<?php require_once('../db/config.php'); ?>
-<?php require_once('../models/Review.php'); ?>
-<?php require_once('../models/UserService.php'); ?>
-<?php require_once('../models/Service.php'); ?>
-<?php require_once('../models/Tracking.php'); ?>
-<?php require_once('../models/Upload.php'); ?>
-<?php require_once('../models/User.php'); ?>
-<?php require_once('../utils/country_fee.php'); ?>
-<?php require_once('../functions/index.php'); ?>
-
+<?php require_once("./addons/models.php"); ?>
 
 <?php
 $active = $title = "users";
@@ -35,7 +25,7 @@ if (isset($_GET['id'])) {
 	<div class="px-4 sm:px-6 lg:px-8 py-8 w-full max-w-9xl mx-auto">
 		<div class="sm:flex sm:justify-between sm:items-center mb-8">
 			<div class="mb-4 sm:mb-0">
-				<h1 class="text-2xl md:text-3xl text-gray-800 font-bold">
+				<h1 class="text-2xl md:text-3xl text-gray-700 font-bold">
 					<?= $USER["firstname"] . " " . $USER["lastname"] . " Documents"; ?>
 				</h1>
 			</div>

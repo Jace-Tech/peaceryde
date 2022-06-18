@@ -1,9 +1,5 @@
 <?php
-
-require("../addons/crsf_auth.php");
-require_once("../../models/FAQs.php");
-require_once("../../functions/index.php");
-require_once("../../db/config.php");
+require_once("./models.php");
 
 $faqs = new FAQs($connect);
 
@@ -15,26 +11,12 @@ if(isset($_POST['add'])) {
     $result = $faqs->add_question($question, $answer, $tags);
 
     if($result) {
-        $alert = [
-            'alert_message' => "FAQ added",
-            'alert_type' => 'success'
-        ];
-
-        session_start();
-        $_SESSION['ADMIN_ALERT'] = json_encode($alert);
-
+        setAdminAlert("FAQ added", 'success');
         header('location: ../faqs.php');
     }
 
     else{
-        $alert = [
-            'alert_message' => "Something went wrong, please try again",
-            'alert_type' => 'error'
-        ];
-
-        session_start();
-        $_SESSION['ADMIN_ALERT'] = json_encode($alert);
-
+        setAdminAlert("Something went wrong, please try again", 'error');
         header('location: ../faqs.php');
     }
 }
@@ -44,23 +26,11 @@ if(isset($_POST['delete'])){
 
     $result = $faqs->delete_question($id);
     if($result){
-        $alert = [
-            'alert_message' => "Question deleted successfully",
-            'alert_type' => 'success'
-        ];
-
-        session_start();
-        $_SESSION['ADMIN_ALERT'] = json_encode($alert);
+        setAdminAlert( "Question deleted successfully",'success');
         header('Location: ../faqs.php');
     }
     else {
-        $alert = [
-            'alert_message' => "Something went wrong. Please try again",
-            'alert_type' => 'error'
-        ];
-
-        session_start();
-        $_SESSION['ADMIN_ALERT'] = json_encode($alert);
+        setAdminAlert("Something went wrong. Please try again", 'error');
         header('Location: ../faqs.php');
     }
 }
@@ -73,23 +43,11 @@ if(isset($_POST['edit'])){
 
     $result = $faqs->update_question($question, $answer, $id);
     if($result){
-        $alert = [
-            'alert_message' => "Question updated successfully",
-            'alert_type' => 'success'
-        ];
-
-        session_start();
-        $_SESSION['ADMIN_ALERT'] = json_encode($alert);
+        setAdminAlert("Question updated successfully", 'success');
         header('Location: ../faqs.php');
     }
     else {
-        $alert = [
-            'alert_message' => "Something went wrong. Please try again",
-            'alert_type' => 'error'
-        ];
-
-        session_start();
-        $_SESSION['ADMIN_ALERT'] = json_encode($alert);
+        setAdminAlert( "Something went wrong. Please try again", 'error');
         header('Location: ../faqs.php');
     }
 }

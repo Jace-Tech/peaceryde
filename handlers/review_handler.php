@@ -5,20 +5,44 @@ session_start();
 $LOGGED_USER = json_decode($_SESSION['LOGGED_USER'], true);
 $USER_ID = $LOGGED_USER['user_id'];
 
-include("../db/config.php");
-include("../models/Review.php");
+// require_once("../db/config.php");
+require_once("../db/conf.php");
+require_once("../models/Review.php");
+require_once("../functions/index.php");
+
 
 $reviews = new Review($connect);
 
 if(isset($_POST['add'])) {
     $POST = filter_var_array($_POST, FILTER_SANITIZE_STRING);
+    $file = $_FILES['video'];
+
     extract($POST);
 
-    $reviewArr = [
-        "userId" => $USER_ID,
-        "rating" => $rating,
-        "review" => $review,
-    ];
+    if(isset($file)) {
+        $result = uploadFile("../reviews/", $file);
+
+        if(!$result) {
+            header("Location: ../makereview.php");
+            exit();
+        }
+
+        $reviewArr = [
+            "userId" => $USER_ID,
+            "rating" => $rating,
+            "review" => $review,
+            "type" => "video",
+            "file" => $result
+        ];
+    }
+    else {
+        $reviewArr = [
+            "userId" => $USER_ID,
+            "rating" => $rating,
+            "review" => $review,
+            "type" => "text",
+        ];
+    }
 
     $result = $reviews->addReview($reviewArr);
     if($result) {

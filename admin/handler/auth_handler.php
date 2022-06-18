@@ -1,12 +1,8 @@
 <?php 
-require("../addons/crsf_auth.php");
-
-require("../../functions/index.php");
-require("../../db/config.php");
-require("../../models/Admin.php");
+require_once("./models.php");
 
 $admin_model = new Admin($connect);
-extract($SET_UP);
+// extract($SET_UP);
 
 if(isset($_POST['register'])){
     $email = filter_var($_POST['email'], FILTER_SANITIZE_EMAIL);
@@ -23,28 +19,16 @@ if(isset($_POST['register'])){
     $response = $admin_model->addAdmin($user);
 
     if($response){
-        $alert = [
-            'alert_message' => "Registeration Successful",
-            'alert_type' => 'success'
-        ];
-
-        session_start();
-        $_SESSION['ADMIN_ALERT'] = json_encode($alert);
+        setAdminAlert("Registeration Successful", 'success');
         header('location: ../index.php');
     }
     else{
-        $alert = [
-            'alert_message' => "Something went wrong, please try again.",
-            'alert_type' => 'error'
-        ];
-        session_start();
-        $_SESSION['ADMIN_ALERT'] = json_encode($alert);
+        setAdminAlert("Something went wrong, please try again.", 'error');
         header('location: ../signup.php');
     }
 }
 
 if(isset($_POST['login'])) {
-    // print_r($_POST);
     extract($_POST);
 
     $credientials = [
@@ -53,33 +37,22 @@ if(isset($_POST['login'])) {
     ];
 
     $response = $admin_model->loginAdmin($credientials);
+
     extract($response);
 
     if($status !== 'success'){
-        $alert = [
-            'alert_message' => "Incorrect Login Credientials",
-            'alert_type' => 'error'
-        ];
-
-        session_start();
-        $_SESSION['ADMIN_ALERT'] = json_encode($alert);
-        
+        setAdminAlert($message, 'error');
         header('Location: ../index.php');
         exit();
     }
 
-    $alert = [
-        'alert_message' => $message,
-        'alert_type' => 'success'
-    ];
-
     $time = time() + getWeekTime(1);
     $token = "tok-" . rand(10000000, 1000000000);
-
-    setcookie("LOGGED_USER", json_encode($user), $time, '/');
+    
+    setcookie("LOGGED_ADMIN", json_encode($user), $time, '/');
     setcookie("CRSF_TOKEN", $token, $time, '/');
 
-    session_start();
-    $_SESSION['ADMIN_ALERT'] = json_encode($alert);
+    setAdminAlert($message, "success");
+
     header('Location: ../dashboard.php');
 }

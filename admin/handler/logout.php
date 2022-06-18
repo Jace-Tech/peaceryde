@@ -1,17 +1,12 @@
 <?php
 
-include("../../functions/index.php");
+require_once("./models.php");
 
 if(isset($_POST['logout'])){
     $time = time() - getWeekTime(1);
-    setcookie("LOGGED_USER", "jdhdsdvjdsbv", $time, '/');
+    setcookie("LOGGED_ADMIN", "jdhdsdvjdsbv", $time, '/');
     setcookie("CRSF_TOKEN", "dscvgdscgds", $time, '/');
 
-    $alert = [
-        'alert_message' => "Logged out successfully",
-        'alert_type' => 'success'
-    ];
-
-    $_SESSION['ADMIN_ALERT'] = json_encode($alert);
+    setAdminAlert("Logged out successfully", 'success');
     header('location: ../index.php');
 }

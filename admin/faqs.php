@@ -1,13 +1,8 @@
-<?php require_once("./addons/session.php"); ?>
-<?php require_once('../db/config.php'); ?>
-<?php require_once('../models/FAQs.php'); ?>
-<?php require_once('../utils/country_fee.php'); ?>
-<?php require_once('../functions/index.php'); ?>
-
+<?php $active = $title = "faq"; ?>
+<?php require_once("./addons/models.php"); ?>
 
 <?php 
     $faqs = new FAQs($connect); 
-    $active = $title = "faq";
 ?>
 
 <!doctype html>
@@ -18,7 +13,7 @@
                 <div class="px-4 sm:px-6 lg:px-8 py-8 w-full max-w-9xl mx-auto">
                     <div class=" m-auto">
                         <div class="mb-5 flex justify-between">
-                            <h1 class="text-2xl md:text-3xl text-gray-800 font-bold">Manage FAQs</h1>
+                            <h1 class="text-2xl md:text-3xl text-gray-700 font-bold">Manage FAQs</h1>
 
                             <div x-data="{ modalOpen: false }">
                                 <button class="btn bg-indigo-500 hover:bg-indigo-600 text-white" @click.prevent="modalOpen = true" aria-controls="feedback-modal">

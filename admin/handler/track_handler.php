@@ -1,9 +1,6 @@
 <?php
-session_start();
 
-include("../../functions/index.php");
-include("../../db/config.php");
-include("../../models/Tracking.php");
+require_once("./models.php");
 
 $trackings = new Tracking($connect);
 
@@ -15,23 +12,11 @@ if(isset($_POST['tracking'])) {
     $result = $trackings->addTracking($user_id, $track);
 
     if($result) {
-        $alert = [
-            "alert_type" => "success",
-            "alert_message" => "Track Updated successfully"
-        ];
-
-        $_SESSION['ADMIN_ALERT'] = json_encode($alert);
-
+        setAdminAlert("Track Updated successfully", "success");
         header("Location: ../users.php");
     } 
     else {
-        $alert = [
-            "alert_type" => "error",
-            "alert_message" => "Something went wrong"
-        ];
-
-        $_SESSION['ADMIN_ALERT'] = json_encode($alert);
-
+        setAdminAlert("Something went wrong", "error");
         header("Location: ../users.php");
     }
 }

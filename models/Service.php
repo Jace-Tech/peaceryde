@@ -19,6 +19,62 @@ class Service {
         return $id;
     }
 
+    public function addService($service)
+    {
+        try {
+            $query = "INSERT INTO `services`( `service_id`, `service`, `price`, `addons`)
+            VALUES (:service_id, :service_name, :price, :addons)";
+            $result = $this->connection->prepare($query);
+            $result->execute([
+                'service_id' => $this->generate_id(3),
+                'service_name' => $service['name'],
+                'price' => $service['price'],
+                'addons' => $service['addons'],
+            ]);
+
+            return $result;
+            exit();
+        }
+        catch (PDOException $e) {
+            return false;
+            exit();
+        }
+    }
+
+    public function editService($data, $id)
+    {
+        try {
+            // query to edit service 
+            $query = "UPDATE services SET service = :service, price = :price, addons = :addons WHERE id = :id";
+            $result = $this->connection->prepare($query);
+            $result->execute([
+                "service" => $data['service'],
+                "price" => $data['price'],
+                "addons" => $data['addons'],
+                "id" => $id
+            ]);
+            return $result;
+        }
+        catch (PDOException $e) {
+            return false;
+        }
+    }
+
+
+    public function deleteService($id)
+    {
+        try {
+            $query = "DELETE FROM `services` WHERE id = ?";
+            $result = $this->connection->prepare($query);
+            $result->execute([$id]);
+
+            return $result;
+        }
+        catch (PDOException $e) {
+            return false;
+        }
+
+    }
 
     public function getAllServices()
     {

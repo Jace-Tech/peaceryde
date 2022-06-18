@@ -1,11 +1,7 @@
 <?php $title = "dashboard"; ?>
 
 <?php if(!isset($_GET['msg'])) header("location: ./message.php"); ?>
-
-<?php require_once("./addons/session.php"); ?>
-<?php require_once('../db/config.php'); ?>
-<?php require_once('../functions/index.php'); ?>
-<?php require_once('../models/User.php'); ?>
+<?php require_once("./addons/models.php"); ?>
 
 <?php
     $user = new User($connect);
@@ -70,7 +66,7 @@
 														<div class="px-5 py-4">
 															<div class="space-y-3">
 																<div><label class="block text-sm font-medium mb-1" for="feedback">Message <span class="text-red-500">*</span></label> 
-                                                                <input type="hidden" value="<?= $LOGGED_USER['admin_id']; ?>" name="sender">
+                                                                <input type="hidden" value="<?= $LOGGED_ADMIN['admin_id']; ?>" name="sender">
                                                                 <textarea id="feedback" name="message" class="form-textarea w-full px-2 py-1" rows="4" required=""></textarea></div>
 															</div>
 														</div>
@@ -116,9 +112,9 @@
                                                             </div>
 
                                                             <div class="flex items-center ml-2">
-                                                                <?php if(count($messages->get_unread_messages($user_id, $LOGGED_USER['admin_id']))): ?>
+                                                                <?php if(count($messages->get_unread_messages($user_id, $LOGGED_ADMIN['admin_id']))): ?>
                                                                     <div class="text-xs inline-flex font-medium bg-indigo-400 text-white rounded-full text-center leading-5 px-2">
-                                                                        <?= count($messages->get_unread_messages($user_id, $LOGGED_USER['admin_id'])) ?>
+                                                                        <?= count($messages->get_unread_messages($user_id, $LOGGED_ADMIN['admin_id'])) ?>
                                                                     </div>
                                                                 <?php endif; ?>
                                                             </div>
@@ -152,15 +148,15 @@
                                 </div>
                             </div>
                             <div class="grow px-4 sm:px-6 md:px-5 py-6">
-                                <?php $conversation = $messages->get_conversation($LOGGED_USER['admin_id'], $user_id); ?>
+                                <?php $conversation = $messages->get_conversation($LOGGED_ADMIN['admin_id'], $user_id); ?>
                                 <?php foreach ($conversation as $message): extract($message); ?>
                                     <?php $messages->mark_read($message_id); ?>
-                                    <div class="flex items-start mb-4 last:mb-0" style="flex-direction: <?= $style = $sender_id === $LOGGED_USER['admin_id'] ? "row-reverse" : "row"; ?>">
-                                        <div class="flex shadow-sm <?= $margin = $sender_id === $LOGGED_USER['admin_id'] ? "ml-2" : "mr-2" ?> items-center justify-center bg-gray-200 rounded-full w-10 h-10 text-sm font-semibold uppercase text-gray-500">
-                                            <?= $name = $sender_id === $LOGGED_USER['admin_id'] ? getSubName($LOGGED_USER['name']) : getSubName($user->get_user($_GET['msg'])['firstname'] . " " . $user->get_user($_GET['msg'])['lastname']); ?>
+                                    <div class="flex items-start mb-4 last:mb-0" style="flex-direction: <?= $style = $sender_id === $LOGGED_ADMIN['admin_id'] ? "row-reverse" : "row"; ?>">
+                                        <div class="flex shadow-sm <?= $margin = $sender_id === $LOGGED_ADMIN['admin_id'] ? "ml-2" : "mr-2" ?> items-center justify-center bg-gray-200 rounded-full w-10 h-10 text-sm font-semibold uppercase text-gray-500">
+                                            <?= $name = $sender_id === $LOGGED_ADMIN['admin_id'] ? getSubName($LOGGED_ADMIN['name']) : getSubName($user->get_user($_GET['msg'])['firstname'] . " " . $user->get_user($_GET['msg'])['lastname']); ?>
                                         </div>
                                         <div>
-                                            <div class="text-sm <?= $theme =  $sender_id === $LOGGED_USER['admin_id'] ? "bg-indigo-500 text-white" : "bg-white text-gray-800" ?> p-3 rounded-lg border border-transparent shadow-md mb-1" style="border-top-right-radius: 0;">
+                                            <div class="text-sm <?= $theme =  $sender_id === $LOGGED_ADMIN['admin_id'] ? "bg-indigo-500 text-white" : "bg-white text-gray-800" ?> p-3 rounded-lg border border-transparent shadow-md mb-1" style="border-top-right-radius: 0;">
                                                 <?= $message ?>
                                             </div>
                                             <div class="flex items-center justify-between">
@@ -178,7 +174,7 @@
                                         <div class="grow mr-3">
                                             <label for="message-input" class="sr-only">Type a message</label> 
                                             <input type="hidden" name="reciever" value="<?= $_GET['msg']; ?>">
-                                            <input type="hidden" name="sender" value="<?= $LOGGED_USER['admin_id']; ?>">
+                                            <input type="hidden" name="sender" value="<?= $LOGGED_ADMIN['admin_id']; ?>">
                                             <input id="message-input" name="message" class="form-input w-full bg-gray-100 border-transparent focus:bg-white focus:border-gray-300" placeholder="Aa" />
                                         </div>
                                         <button type="submit" name="send" class="btn bg-indigo-500 hover:bg-indigo-600 text-white whitespace-nowrap">Send -&gt;</button>

@@ -2,10 +2,11 @@
 
 session_start(); 
 
-include("../db/config.php");
-// include("../db/conf.php");
+// include("../db/config.php");
+include("../db/conf.php");
 
 include("../utils/country_fee.php");
+include("../utils/store.php");
 include("../functions/index.php");
 include("../models/User.php");
 include("../models/Service.php");
@@ -34,4 +35,7 @@ if(!isset($_SESSION["LOGGED_USER"])) header("Location: ../signin.php");
     $USER_ID = $LOGGED_USER['user_id'];
 
     $USER = $users->get_user($USER_ID);
+    $USER_PROFILE_PIC = getProfilePic($connect, $USER_ID);
+
+    print_r($USER_PROFILE_PIC ?? "NO PROFILE")
 ?>

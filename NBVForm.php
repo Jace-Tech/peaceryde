@@ -1,5 +1,9 @@
 <?php include("./inc/check_session.php") ?>
-
+<?php 
+  if(isset($_SESSION['APPLY_FORM_DATA'])) {
+    $FORM_APPY = json_decode($_SESSION['APPLY_FORM_DATA'], true);
+  }
+?>
 
 <!DOCTYPE html>
 <html>
@@ -71,7 +75,7 @@
                   <div class="row">
                     <div class="col-md-3">
                       <div class="form-group">
-                        <input name="firstname" required class="form-control firstname" placeholder="First Name (as on passport)">
+                        <input name="firstname" required class="form-control firstname" value="<?= $FORM_APPY["firstname"] ?? "" ?>" placeholder="First Name (as on passport)">
                       </div>
                     </div>
                     <div class="col-md-3">
@@ -81,7 +85,7 @@
                     </div>
                     <div class="col-md-3">
                       <div class="form-group" style="margin-right: 117px;">
-                        <input class="form-control lastname" name="lastname" type="text" required placeholder="Last Name (as on passport)">
+                        <input class="form-control lastname" name="lastname" type="text" value="<?= $FORM_APPY["lastname"] ?? "" ?>" required placeholder="Last Name (as on passport)">
                       </div>
                     </div>
                   </div>
@@ -122,7 +126,7 @@
                   <div class="row">
                     <div class="col-md-5">
                       <div class="form-group">
-                        <input type="email" required name="email" class="form-control firstname2" placeholder="Email address">
+                        <input type="email" required name="email" class="form-control firstname2" placeholder="Email address" value="<?= $FORM_APPY["email"] ?? "" ?>">
                       </div>
                     </div>
                     <div class="col-md-5">
@@ -359,7 +363,7 @@
                             </optgroup>
                           </select>
                       </div>
-                      <input type="text" class="form-control firstname" placeholder="country code (Mobile number)" >
+                      <input type="text" class="form-control firstname" value="<?= $FORM_APPY["phone"] ?? "" ?>" placeholder="country code (Mobile number)" >
                       <input required type="hidden" name="service" value="srvs-002">
                       <input required type="hidden" name="nbv" value="">
                     </div>

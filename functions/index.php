@@ -109,6 +109,15 @@ function sendMail ($subject, $_message, $from, $to, $fullHTML = false)
 }
 
 
+function setAdminAlert ($message, $type) {
+    $alert = [
+        'alert_message' => $message,
+        'alert_type' => $type
+    ];
+
+    $_SESSION['ADMIN_ALERT'] = json_encode($alert);
+}
+
 function sendNBVReceipt ($price, $name, $subject, $to, $from) {
     $PRICE = array_map("roundUp", $price);
     extract($PRICE);
@@ -980,4 +989,32 @@ function sendTWPReceipt ($price, $name, $subject, $to, $from) {
     ";
 
     sendMail($subject, $message, $from, $to, true);
+}
+
+function uploadFile ($des, $file) {
+    $filename = explode(".", $file['name'])[0];
+    $ext = end(explode(".", $file['name']));
+
+    $filename .= time() . "." . $ext;
+
+    $MAX_SIZE = 15 * 1024 * 1024; 
+
+    if($file['size'] > $MAX_SIZE) {
+        $_SESSION['ALERT'] = json_encode([
+            "message" => "File exceeds maximum size",
+            "status" => "error"
+        ]);
+        return false;
+        exit();
+    }
+
+    $tmp = $file['tmp_name'];
+
+    if(move_uploaded_file($tmp, $des.$filename)) {
+        return $filename;
+    }
+    else {
+        return false;
+    }
+    
 }

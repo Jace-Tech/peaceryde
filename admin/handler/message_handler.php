@@ -1,10 +1,6 @@
 <?php 
 
-require("../addons/crsf_auth.php");
-require_once("../../models/Message.php");
-require_once("../../models/User.php");
-require_once("../../functions/index.php");
-require_once("../../db/config.php");
+require_once("./models.php");
 
 $messages = new Message($connect);
 $user = new User($connect);
@@ -20,13 +16,7 @@ if(isset($_POST['send'])){
         header("Location: ../message.php?msg=$reciever");
     }
     else{
-        session_start();
-        $alert = [
-            'alert_message' => "Something went wrong",
-            'alert_type' => 'error'
-        ];
-
-        $_SESSION['ADMIN_ALERT'] = json_encode($alert);
+        setAdminAlert("Something went wrong", 'error');
         header("Location: ../message.php");
     }
 
@@ -48,14 +38,7 @@ if (isset($_POST['broadcast'])) {
     }
 
     if($final_result){
-        session_start();
-
-        $alert = [
-            'alert_message' => "Message Broadcasted!",
-            'alert_type' => 'success'
-        ];
-
-        $_SESSION['ADMIN_ALERT'] = json_encode($alert);
+        setAdminAlert("Message Broadcasted!", 'success');
         header("Location: ../message.php");
     }
 }

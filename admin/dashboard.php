@@ -1,16 +1,13 @@
 <?php $active = $title = "Dashboard"; ?>
-
-<?php require_once('../db/config.php'); ?>
-<?php require_once('../models/User.php'); ?>
-<?php require_once('../models/Admin.php'); ?>
-<?php require_once('../models/Review.php'); ?>
-<?php require_once('../functions/index.php'); ?>
+<?php require_once("./addons/models.php"); ?>
 
 <?php 
 
 	$users = new User($connect);
 	$subadmins = new Admin($connect);
 	$reviews = new Review($connect);
+
+	assignAutomatically($connect);
 
 ?>
 
@@ -61,7 +58,7 @@
 								</g>
 							</svg></div>
 						<div class="relative">
-							<h1 class="text-2xl md:text-3xl text-gray-800 font-bold mb-1">Good <?= getGreeting() ?>, <?= $LOGGED_USER['name'] ?> 👋</h1>
+							<h1 class="text-2xl md:text-3xl text-gray-800 font-bold mb-1">Good <?= getGreeting() ?>, <?= $LOGGED_ADMIN['name'] ?> 👋</h1>
 							<!-- <p>Here is what’s happening with your projects today:</p> -->
 						</div>
 					</div>
