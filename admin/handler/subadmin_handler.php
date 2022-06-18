@@ -134,10 +134,10 @@ if(isset($_POST["remove"])) {
 
     if($result) {
         setAdminAlert("User Removed Successfully", "success");
-        header("Location: ../subadmin-details.php?subamin=$admin");
+        header("Location: ../subadmin-details.php?subadmin=$admin");
     }
     else {
         setAdminAlert("Something went wrong", "error");
-        header("Location: ../subadmin-details.php?subamin=$admin");
+        header("Location: ../subadmin-details.php?subadmin=$admin");
     }
 }

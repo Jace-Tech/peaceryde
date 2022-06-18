@@ -15,7 +15,7 @@ $USER = $users->get_user($_GET['user']);
 $USER_SERVICES = $userServices->getAllUserServices($_GET['user']);
 $USERS_DOCS = getUsersUploads($connect, $_GET['user']);
 $USER_SUB_ADMIN = getUsersSubAdmin($connect, $_GET['user']);
-$USERS_ADMIN = getSubAdmin($connect, $USER_SUB_ADMIN['admin_id']);
+$USERS_ADMIN = getSubAdmin($connect, $USER_SUB_ADMIN['sub_admin']);
 ?>
 
 <!doctype html>
@@ -148,29 +148,28 @@ $USERS_ADMIN = getSubAdmin($connect, $USER_SUB_ADMIN['admin_id']);
                         <?php else : ?>
                             <tr>
                                 <td class="">
-                                    <?php if (isset($_GET['change_admin'])) : ?>
+                                    <?php if (isset($_GET['add_admin'])) : ?>
                                         <form action="./handler/user_handler.php" method="post">
                                             <div class="flex">
                                                 <select name="subadmin" class="form-select text-sm rounded-r-none" id="">
                                                     <option value="" selected disabled>Choose subadmin</option>
                                                     <?php if (count(getAllSubAdmins($connect))) : ?>
                                                         <?php foreach (getAllSubAdmins($connect) as $admin) : ?>
-                                                            <option <?= $admin['admin_id'] === $USERS_ADMIN['admin_id'] ? " selected" : "" ?> value="<?= $admin['admin_id'] ?>">
+                                                            <option value="<?= $admin['admin_id'] ?>">
                                                                 <?= $admin['name']; ?>
                                                             </option>
                                                         <?php endforeach; ?>
                                                     <?php endif; ?>
                                                 </select>
-                                                <input type="hidden" name="id" value="<?= $admin['admin_id'] ?>">
                                                 <input type="hidden" name="user" value="<?= $_GET['user'] ?>">
-                                                <button name="change_admin" class="btn btn-sm bg-indigo-500 hover:bg-indigo-600 text-white">Change</button>
+                                                <button name="assign" class="btn btn-sm bg-indigo-500 hover:bg-indigo-600 text-white">Assign</button>
                                                 <a href="?user=<?= $_GET['user'] ?>" class="btn btn-sm bg-red-500 hover:bg-red-600 text-white">Cancel</a>
                                             </div>
                                         </form>
                                     <?php else : ?>
                                         <div class="py-2 flex align-center ">
                                             <h4 class="text-blue-500 text-sm">No subadmin assigned.</h4>
-                                            <a href="?user=<?= $_GET['user'] ?>&change_admin=<?= $USERS_ADMIN['admin_id'] ?>" class="inline-block ml-2 text-sm font-medium text-indigo-500">Click to assign subadmin</a>
+                                            <a href="?user=<?= $_GET['user'] ?>&add_admin" class="inline-block ml-2 text-sm font-medium text-indigo-500">Click to assign subadmin</a>
                                         </div>
                                     <?php endif; ?>
                                 </td>

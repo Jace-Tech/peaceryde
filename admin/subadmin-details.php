@@ -1,20 +1,20 @@
 <?php require_once("./addons/models.php"); ?>
 
 <?php
-if (!isset($_GET['subadmin'])) header('Location: ../subadmins.php');
+if (!isset($_GET['subadmin'])) header('Location: ./subadmins.php');
 ?>
 
 <?php
-    $active = $title = "manage";
-    $admin = new Admin($connect);
-    $user = new User($connect);
-    $userServices = new UserService($connect);
-    $services = new Service($connect);
-    $trackings = new Tracking($connect);
+$active = $title = "manage";
+$admin = new Admin($connect);
+$user = new User($connect);
+$userServices = new UserService($connect);
+$services = new Service($connect);
+$trackings = new Tracking($connect);
 
-    $ADMIN = getSubAdmin($connect, $_GET['subadmin']);
-    $ADMIN_SERVICES = json_decode(getSubAdminService($connect, $_GET['subadmin'])['services'], true);
-    $ADMIN_USERS = getSubAdminUsers($connect, $_GET['subadmin']);
+$ADMIN = getSubAdmin($connect, $_GET['subadmin']);
+$ADMIN_SERVICES = json_decode(getSubAdminService($connect, $_GET['subadmin'])['services'], true);
+$ADMIN_USERS = getSubAdminUsers($connect, $_GET['subadmin']);
 ?>
 
 <!doctype html>
@@ -76,7 +76,7 @@ if (!isset($_GET['subadmin'])) header('Location: ../subadmins.php');
                 <div class="overflow-x-auto">
                     <table class="table-auto w-full">
                         <?php if (count($ADMIN_SERVICES)) : ?>
-                            <?php foreach ($ADMIN_SERVICES as $role): ?>  
+                            <?php foreach ($ADMIN_SERVICES as $role) : ?>
                                 <div class="px-2 py-2 border-b flex">
                                     <p class="text-gray-600 flex-1 text-sm">
                                         <?= getService($connect, $role)['service']; ?>
@@ -94,21 +94,21 @@ if (!isset($_GET['subadmin'])) header('Location: ../subadmins.php');
             <div class="mt-4">
                 <div class="overflow-x-auto">
                     <table class="table-auto w-full">
-                        <thead class="text-xs font-semibold uppercase text-gray-500 bg-gray-50 border-t border-b border-gray-200">
-                            <tr>
-                                <th class="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap">
-                                    <div class="font-semibold text-left">Admin Name</div>
-                                </th>
 
-                                <th class="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap">
-                                    <span class="sr-only">Menu</span>
-                                </th>
-                            </tr>
-                        </thead>
+                        <?php if (count($ADMIN_USERS)) : ?>
+                            <thead class="text-xs font-semibold uppercase text-gray-500 bg-gray-50 border-t border-b border-gray-200">
+                                <tr>
+                                    <th class="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap">
+                                        <div class="font-semibold text-left">User's Name</div>
+                                    </th>
 
-                        <tbody class="text-sm divide-y divide-gray-200">
-                            <?php if (count($ADMIN_USERS)) : ?>
-                                <?php foreach($ADMIN_USERS as $USER): ?>
+                                    <th class="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap">
+                                        <span class="sr-only">Menu</span>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody class="text-sm divide-y divide-gray-200">
+                                <?php foreach ($ADMIN_USERS as $USER) : ?>
                                     <tr>
                                         <td class="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap">
                                             <div class="flex items-center">
@@ -126,15 +126,23 @@ if (!isset($_GET['subadmin'])) header('Location: ../subadmins.php');
                                                     <form action="./handler/subadmin_handler.php" method="post">
                                                         <input type="hidden" name="user" value="<?= $USER['user'] ?>" />
                                                         <input type="hidden" name="admin" value="<?= $_GET['subadmin'] ?>" />
-                                                        <button type="submit" class="btn btn-sm btn-red-500">Remove user</button>
+                                                        <button type="submit" name="remove" class="btn btn-sm btn-red-500">Remove user</button>
                                                     </form>
                                                 </div>
                                             </div>
                                         </td>
                                     </tr>
                                 <?php endforeach; ?>
+                            <?php else : ?>
+                                <tr>
+                                    <td colspan="2">
+                                        <div class="text-gray-500 text-center text-sm font-medium">
+                                            No user assigned
+                                        </div>
+                                    </td>
+                                </tr>
                             <?php endif; ?>
-                        </tbody>
+                            </tbody>
                     </table>
                 </div>
             </div>

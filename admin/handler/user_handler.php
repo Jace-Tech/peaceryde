@@ -120,3 +120,24 @@ if(isset($_POST['change_admin'])) {
         header("Location: ../user-details.php?user=$user");
     }
 }
+
+if(isset($_POST['assign'])) {
+    // $id = $_POST['id'];
+    $user = $_POST['user'];
+    $subadmin = $_POST['subadmin'];
+
+    $data = [
+        'user' => $user,
+        'subadmin' => $subadmin
+    ];
+
+    $result = $USER_SUBADMIN->addUser($data);
+    if($result) {
+        setAdminAlert("User's subadmin updated successfully", "success");
+        header("Location: ../user-details.php?user=$user");
+    }
+    else {
+        setAdminAlert("Something went wrong", "error");
+        header("Location: ../user-details.php?user=$user");
+    }
+}

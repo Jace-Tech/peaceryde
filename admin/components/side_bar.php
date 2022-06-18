@@ -4,7 +4,8 @@
             <button class="lg:hidden text-gray-500 hover:text-gray-400" @click.stop="sidebarOpen = !sidebarOpen" aria-controls="sidebar" :aria-expanded="sidebarOpen"><span class="sr-only">Close sidebar</span> <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <path d="M10.7 18.7l1.4-1.4L7.8 13H20v-2H7.8l4.3-4.3-1.4-1.4L4 12z" />
                 </svg></button>
-            <a class="block" href=""><svg width="32" height="32" viewBox="0 0 32 32">
+            <a class="block" href="">
+                <svg width="32" height="32" viewBox="0 0 32 32">
                     <defs>
                         <linearGradient x1="28.538%" y1="20.229%" x2="100%" y2="108.156%" id="logo-a">
                             <stop stop-color="#A5B4FC" stop-opacity="0" offset="0%" />

@@ -9,16 +9,16 @@ class SubadminUsers {
 
     public function addUser(array $data)
     {
-        extract($data);
         try {
             $query = "INSERT INTO `sub_admin_users`(`sub_admin`, `user`) 
             VALUES (:admin, :user)";
             $result = $this->connection->prepare($query);
             $result->execute([
-                'admin' => $admin,
-                'user' => $user
+                'admin' => $data["subadmin"],
+                'user' => $data["user"]
             ]);
-            return $result;
+            
+            if($result) return true; 
         }
         catch (PDOException $e) {
             return false;
