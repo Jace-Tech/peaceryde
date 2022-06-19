@@ -2,8 +2,8 @@
 
 session_start();
 
-// include("../../db/config.php");
-include("../../db/conf.php");
+include("../../db/config.php");
+// include("../../db/conf.php");
 include("../../models/Upload.php");
 include("../../models/ResetUserPassword.php");
 
