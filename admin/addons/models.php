@@ -1,7 +1,8 @@
 <?php
 
 require_once("./addons/session.php");
-require_once("../db/conf.php");
+// require_once("../db/conf.php");
+require_once("../db/config.php");
 require_once("../functions/index.php");
 require_once("../utils/store.php");
 require_once("../utils/country_fee.php");
