@@ -1,6 +1,7 @@
 <?php session_start(); ?>
 
-<?php require_once('../db/conf.php'); ?>
+<?php //require_once('../db/conf.php'); ?>
+<?php require_once('../db/config.php'); ?>
 <?php require_once('../models/Admin.php'); ?>
 
 <?php 
