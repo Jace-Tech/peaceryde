@@ -119,7 +119,7 @@
                     <div class="row" style="margin-top: 25px;">
                         <div class="col-md-4 col-lg-3 col-xl-2">
                             <div class="form-group">
-                                <input type="date" name="dob class="form-control dob" placeholder="Date of birth">
+                                <input type="date" name="dob" class="form-control dob" placeholder="Date of birth">
                             </div>
                         </div>
   
@@ -155,12 +155,12 @@
                         </div>  
                     </div>
                     <div class="row" style="margin-top: 25px;">
-                        <div class="col-md-4 col-xl-2"">
+                        <div class="col-md-4 col-xl-2">
                             <select class="form-select code" required name="country_code" aria-label="Default select example">
                                 <option selected>Please Select</option>
                                 <option data-countryCode="NG" value="234">Nigeria (+234)</option>
-                                <option data-countryCode="GB" value="44">UK (+44)</option>
-                                <option data-countryCode="US" value="1">USA (+1)</option>
+                                <option data-countryCode="GB" value="44">United Kingdom (+44)</option>
+                                <option data-countryCode="US" value="1">United States of America (+1)</option>
                                 <optgroup label="Other countries">
                                     <option data-countryCode="DZ" value="213">Algeria (+213)</option>
                                     <option data-countryCode="AD" value="376">Andorra (+376)</option>

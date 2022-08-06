@@ -255,7 +255,7 @@
                       <option data-countryCode="UA" value="380">Ukraine (+380)</option>
                       <option data-countryCode="AE" value="971">United Arab Emirates (+971)</option>
                       <option data-countryCode="UY" value="598">Uruguay (+598)</option>
-                      <option data-countryCode="US" value="1">USA (+1)</option>
+                      <option data-countryCode="US" value="1">United States of America (+1)</option>
                       <option data-countryCode="UZ" value="7">Uzbekistan (+7)</option>
                       <option data-countryCode="VU" value="678">Vanuatu (+678)</option>
                       <option data-countryCode="VA" value="379">Vatican City (+379)</option>
