@@ -111,11 +111,8 @@
                 </li>
                 <li class="nav-item apply ml-118">
                 <a href="SBForm.php" class="btn button btn-outline-light appbtn" type="button" style="">Apply</a>
-                <?php if(!isset($_SESSION['LOGGED_USER'])): ?>
-                  <a href="signin.php" class="btn button2 sign" type="button">Sign In</a>
-                <?php else: ?>
-                  <a href="./Dashboard/index.php" class="btn button2 sign" type="button">Dashboard</a>
-                <?php endif; ?>
+                <a href="signin.php" class="btn button2 sign" type="button">Sign In</a>
+
               </li>
             
                 <!-- <li class="nav-item apply ml-118">
