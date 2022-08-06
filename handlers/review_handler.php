@@ -5,8 +5,8 @@ session_start();
 $LOGGED_USER = json_decode($_SESSION['LOGGED_USER'], true);
 $USER_ID = $LOGGED_USER['user_id'];
 
-// require_once("../db/config.php");
-require_once("../db/conf.php");
+require_once("../db/config.php");
+// require_once("../db/conf.php");
 require_once("../models/Review.php");
 require_once("../functions/index.php");
 

@@ -2,12 +2,12 @@
 
 session_start();
 
-require_once("../db/conf.php");
+// require_once("../db/conf.php");
 require_once("../functions/index.php");
 require_once("../utils/country_fee.php");
 require_once("../utils/store.php");
 require_once("../setup.php");
-// require_once("../db/config.php");
+require_once("../db/config.php");
 
 if(isset($_POST['apply'])) {
     $POST = filter_var_array($_POST, FILTER_SANITIZE_STRING);
