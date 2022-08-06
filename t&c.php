@@ -25,6 +25,8 @@
     <link rel="stylesheet" type="text/css" href="css/Laptops.css">
     <link rel="stylesheet" type="text/css" href="css/smallscreen800.css">
     <link rel="stylesheet" type="text/css" href="css/responsive.css">
+    <link rel="stylesheet" type="text/css" href="css/header.css">
+    <link rel="stylesheet" type="text/css" href="css/t&c.css">
 
     <script type="text/javascript" src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script type="text/javascript" src="https://unpkg.com/headroom.js@0.12.0/dist/headroom.min.js"></script>
@@ -36,232 +38,377 @@
     <main class="new new-main layout">
         <!-- ======= section1 ======= -->
         <?php include("./inc/header.php"); ?>
-        <section class=" new-section2__group layout2 ppheight" style="background-color: #f8f6f6;">
-            <div class="new-section1__cover-block layout signinpage">
-
-              <div style="width: 100%; height: 200px; background-color: #ADC92E;">                      
-                  <h2 class="pptext"><b>Terms and Conditions</b></h2>
-              </div>
-               
-              <div class="card ppcard">
-                  <div class="row">
-
-                      <div class="col-md-12">
-                          <p class="pptext2">
-                              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas arcu sed libero
-                              velit
-                              porttitor et. Blandit in sed donec gravida amet urna. Proin feugiat viverra nec
-                              amet
-                              lectus semper molestie aenean. Enim mattis integer risus amet tellus mauris. Sed
-                              sit
-                              pretium aliquam turpis. Pulvinar et mauris porta risus sed eleifend sed dapibus
-                              sociis.
-                              Sit vel, amet, nec vulputate vel pretium dignissim tincidunt risus. Ac eget dui
-                              lobortis
-                              enim, dui imperdiet consectetur aliquam. Nibh eget etiam mi dictumst. Amet elit
-                              nunc
-                              senectus vel proin quam a mattis. Vitae sit integer nunc id ullamcorper aliquet
-                              euismod.
-                              Nisi nunc morbi parturient quam faucibus eu ullamcorper gravida. Massa, velit
-                              dictumst
-                              cras leo elit venenatis. Commodo, gravida nam neque egestas. Et rhoncus urna
-                              nunc,
-                              egestas ullamcorper purus hac placerat. Fermentum tellus pulvinar gravida ut
-                              eget nisi.
-                              Fermentum cursus aliquam aenean urna luctus et volutpat sit. Commodo tellus
-                              aliquet
-                              donec varius sapien dui tincidunt gravida ullamcorper. Sit sagittis vitae mi hac
-                              adipiscing.
-                              Dictum turpis nunc consequat tincidunt feugiat. Quis a et diam dictum ac. Sapien
-                              nullam
-                              sed nisi, commodo pellentesque nisl dictum. Eget nisl, quis gravida sed aliquam
-                              lorem
-                              sit donec adipiscing. Nec fames odio ultrices amet, consectetur eget urna
-                              dapibus. Lorem
-                              diam duis quam facilisi tortor mauris. Faucibus in ullamcorper nulla maecenas
-                              viverra
-                              quisque. Lorem ultricies morbi in tellus.-
-                          </p>
-                      </div>
-                      
-                  </div>
-
-              </div>
-                
-
-            </div>
-        </section>
-
-        <section class="new-section8__section8 layout">
-          <div class="new-section8__block19 layout">
-            <div class="new-section8__flex23 layout">
-              <div class="new-section8__flex24 layout">
-                <div class="">
-                  <div class="row">
-                    <div class="col-md-2 col-sm-6 col-xs-6">
-                      <div class="new-section8__block20 layout">
-                        <img src="assets/logo.png" width="164" class="footerlogo">                  
-                        <ul>
-                          <li class="lg-li"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M10.7 8C10.7 6.5 9.5 5.3 8 5.3C6.5 5.3 5.3 6.5 5.3 8C5.3 9.5 6.5 10.7 8 10.7C9.5 10.7 10.7 9.5 10.7 8ZM12.1 8C12.1 10.3 10.3 12.1 8 12.1C5.7 12.1 3.9 10.3 3.9 8C3.9 5.7 5.7 3.9 8 3.9C10.3 3.9 12.1 5.7 12.1 8ZM13.2 3.7C13.2 4.3 12.8 4.7 12.2 4.7C11.6 4.7 11.2 4.3 11.2 3.7C11.2 3.1 11.6 2.7 12.2 2.7C12.8 2.7 13.2 3.2 13.2 3.7ZM8 1.4C6.8 1.4 4.3 1.3 3.3 1.7C2.6 2 2 2.6 1.8 3.3C1.4 4.3 1.5 6.8 1.5 8C1.5 9.2 1.4 11.7 1.8 12.7C2 13.4 2.6 14 3.3 14.2C4.3 14.6 6.9 14.5 8 14.5C9.1 14.5 11.7 14.6 12.7 14.2C13.4 13.9 13.9 13.4 14.2 12.7C14.6 11.6 14.5 9.1 14.5 8C14.5 6.9 14.6 4.3 14.2 3.3C14 2.6 13.4 2 12.7 1.8C11.7 1.3 9.2 1.4 8 1.4ZM16 8V11.3C16 12.5 15.6 13.7 14.7 14.7C13.8 15.6 12.6 16 11.3 16H4.7C3.5 16 2.3 15.6 1.3 14.7C0.5 13.8 0 12.6 0 11.3V8V4.7C0 3.4 0.5 2.2 1.3 1.3C2.3 0.5 3.5 0 4.7 0H11.3C12.5 0 13.7 0.4 14.7 1.3C15.5 2.2 16 3.4 16 4.7V8Z" fill="#080C58"/>
-                            </svg>
-                            &nbsp; Instagram
-                          </li>
-                          
-                          <li class="lg-li"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M8 0.5C3.865 0.5 0.5 3.865 0.5 8C0.5 12.135 3.865 15.5 8 15.5C12.135 15.5 15.5 12.135 15.5 8C15.5 3.865 12.135 0.5 8 0.5ZM8 1.75C11.4594 1.75 14.25 4.54063 14.25 8C14.2515 9.49623 13.715 10.9431 12.7383 12.0766C11.7617 13.2101 10.41 13.9547 8.93 14.1744V9.8225H10.71L10.9894 8.01438H8.93V7.02688C8.93 6.27688 9.17688 5.61 9.87875 5.61H11.0069V4.0325C10.8088 4.00563 10.3894 3.9475 9.59688 3.9475C7.94187 3.9475 6.97187 4.82125 6.97187 6.8125V8.01438H5.27063V9.8225H6.97187V14.1588C5.51234 13.9185 4.18577 13.1672 3.22918 12.039C2.27259 10.9108 1.74831 9.47917 1.75 8C1.75 4.54063 4.54063 1.75 8 1.75Z" fill="#080C58"/>
-                            </svg>
-                            &nbsp; Facebook
-                          </li>
-                          
-                          <li class="lg-li"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M9 15.6665C10.7681 15.6665 12.4638 14.9641 13.714 13.7139C14.9643 12.4636 15.6667 10.7679 15.6667 8.99984C15.6667 7.23173 14.9643 5.53604 13.714 4.28579C12.4638 3.03555 10.7681 2.33317 9 2.33317C7.23189 2.33317 5.5362 3.03555 4.28595 4.28579C3.03571 5.53604 2.33333 7.23173 2.33333 8.99984C2.33333 10.7679 3.03571 12.4636 4.28595 13.7139C5.5362 14.9641 7.23189 15.6665 9 15.6665ZM9 17.3332C4.3975 17.3332 0.666664 13.6023 0.666664 8.99984C0.666664 4.39734 4.3975 0.666504 9 0.666504C13.6025 0.666504 17.3333 4.39734 17.3333 8.99984C17.3333 13.6023 13.6025 17.3332 9 17.3332Z" fill="#080C58"/>
-                            <path d="M13.1667 6.45568C12.86 6.58901 12.5308 6.68068 12.185 6.72068C12.5383 6.51235 12.8083 6.18235 12.9367 5.78985C12.6 5.98607 12.2326 6.12411 11.85 6.19818C11.6891 6.02949 11.4954 5.89535 11.281 5.80394C11.0665 5.71254 10.8356 5.66578 10.6025 5.66651C9.65833 5.66651 8.89333 6.42068 8.89333 7.34985C8.89333 7.48151 8.90833 7.60985 8.9375 7.73318C8.26027 7.70102 7.59718 7.52805 6.99054 7.2253C6.38389 6.92255 5.84702 6.49668 5.41416 5.97485C5.26213 6.23076 5.18209 6.52301 5.1825 6.82068C5.1825 7.40401 5.48499 7.92068 5.94333 8.22151C5.67203 8.213 5.40655 8.14078 5.16833 8.01068V8.03151C5.1709 8.42273 5.30899 8.80096 5.55909 9.10181C5.80919 9.40265 6.15583 9.60752 6.54 9.68151C6.28779 9.7482 6.0239 9.75788 5.7675 9.70985C5.87927 10.0464 6.09306 10.3398 6.37918 10.5493C6.66531 10.7588 7.00956 10.8741 7.36416 10.879C6.7558 11.3478 6.00886 11.6011 5.24083 11.599C5.10333 11.599 4.96749 11.5907 4.83333 11.5757C5.61705 12.0718 6.5258 12.3345 7.45333 12.3332C10.5983 12.3332 12.3175 9.76818 12.3175 7.54318L12.3117 7.32485C12.6469 7.08925 12.9366 6.79475 13.1667 6.45568Z" fill="#080C58"/>
-                            </svg>
-                            &nbsp; Twitter</li>
-                        </ul>
-                      </div>
+        <section class=" new-section2__group layout2 tcheight" style="background-color: #f8f6f6;">
+                <div class="new-section1__cover-block layout signinpage">
+                    <div style="width: 100%; height: 200px; background-color: #ADC92E;">
+                        <h2 class="pptext">
+                            <b>Data Protection Policy</b>
+                        </h2>
                     </div>
-                    <div class="col-md-3 col-sm-6 col-xs-6 div2">
-                      <h3 class="new-section8__highlights8 layout footh3">
-                        VISA SERVICES
-                      </h3>
-                      <ul>
-                        <li class="new-section8__text-body5 layout fs-13">Nigeria Business Visa on
-                          Arrival</li>
-                        <li class="new-section8__text-body5 layout fs-13">Nigeria
-                          Temporary Work Permit
-                          Approval</li>
-                        <li class="new-section8__text-body5 layout fs-13">Nigeria
-                          Tourist Visa</li>
-                        <li class="new-section8__text-body5 layout fs-13">Nigeria
-                          Business Visa
-                          Extension</li>
-                        <li class="new-section8__text-body5 layout fs-13">Nigeria
-                          Subject To
-                          Regularization (STR)</li>
-                        <li class="new-section8__text-body5 layout fs-13">Permit to Land
-                          Immgration Approval For Marine Vessels Foreign Crew</li>
-    
-                      </ul>
-                    </div>
-                    <div class="col-md-3 col-sm-6 col-xs-6 div3">
-                      <h3 class="new-section8__highlights8 layout footh3">
-                        OTHER SERVICES
-                      </h3>
-                      <ul>
-                        <li class="new-section8__text-body5 layout fs-13">Nigeria
-                          Business Incorporation
-                        </li>
-                        <li class="new-section8__text-body5 layout fs-13">Hotel Bookings
-                        </li>
-                        <li class="new-section8__text-body5 layout fs-13">Real Estate
-                          Cosultancy and
-                          Advisory</li>
-                        <li class="new-section8__text-body5 layout fs-13">Legal Advisory
-                          and Consultation
-                        </li>
-                        <li class="new-section8__text-body5 layout fs-13">Africa travels
-                          & tours</li>
-                        <li class="new-section8__text-body5 layout fs-13">Nigerian
-                          Immigration
-                          Consultancy</li>
-                        <li class="new-section8__text-body5 layout fs-13">Nigeria Custom
-                          Consultancy
-                        </li>
-                        <li class="new-section8__text-body5 layout fs-13">Airport
-                          Immigration Meet and
-                          Greet</li>
-                        <li class="new-section8__text-body5 layout fs-13">Airport
-                          Protocol Services</li>
-                        <li class="new-section8__text-body5 layout fs-13">Airport
-                          Transfers</li>
-                        <li class="new-section8__text-body5 layout fs-13">Vehicle Rentals
-                        </li>
-                        <li class="new-section8__text-body5 layout fs-13">Armed Security
-                          Escort Services
-                        </li>
-                        <li class="new-section8__text-body5 layout fs-13">Nigeria COVID
-                          19 Payment
-                          Services</li>
-                      </ul>
-                    </div>
-                    <div class="col-md-4 col-sm-6 col-xs-6 div4">
-                      <div class="row">
-                        <div class="col-md-5 col-sm-6 col-xs-6">
-                          <h3 class="new-section8__highlights8 layout footh3">
-                            SUPPORT
-                          </h3>
-                          <ul>
-                            <li class="new-section8__text-body5 layout fs-13">Apply</li>
-                            <li class="new-section8__text-body5 layout fs-13">Help</li>
-                            <li class="new-section8__text-body5 layout fs-13">Contact Us
-                            </li>
-                          </ul>
+                    <div class="card ppcard">
+                        <div class="row">
+                            <div class="col-md-12" style="margin-bottom: 50px;margin-top: 70px;">
+                                <h1 class="policyh1">
+                                    <b>GDPR & Related Data Protection Policy</b>
+                                </h1>
+                                <br>
+                                <br>
+                                <h1 class="policyh1">Introduction</h1>
+                                <p class="pptext2" style="padding-top:8px;padding-bottom:6px;text-align: left;">In its everyday business operations PeaceRyde Africa LLC makes use of a variety of data about identifiable individuals, including data about:</p>
+                                <br>
+                                <ol class="list" type="1">
+                                    <li>* Current, past and prospective employees</li>
+                                    <li>* Customers</li>
+                                    <li>* Users of its websites</li>
+                                    <li>* Subscribers</li>
+                                    <li>* Other stakeholders</li>
+                                </ol>
+                                <br>
+                                <p class="pptext2" style="padding-top:8px;padding-bottom:6px;text-align: left;">
+                                    In collecting and using this data, the organisation is subject to a variety of legislation controlling how such activities may be carried out and the safeguards that must be put in place to protect it.
+                                    <br>
+                                    <p class="pptext2" style="padding-top:8px;padding-bottom:6px;text-align: left;">The purpose of this policy is to set out the relevant legislation and to describe the steps PeaceRyde Africa is taking to ensure that it complies with it.</p>
+                                    <br>
+                                    <p class="pptext2" style="padding-top:8px;padding-bottom:6px;text-align: left;">This control applies to all systems, people and processes that constitute the organisation's information systems, including board members, directors, employees, suppliers and other third parties who have access to PeaceRyde Africa systems</p>
+                                    <p class="pptext2" style="padding-top:8px;padding-bottom:6px;text-align: left;">The following policies and procedures are relevant to this document:</p>
+                                    <br>
+                                    <ol class="list" type="1">
+                                        <li>* Data Protection Impact Assessment Process</li>
+                                        <li>* Personal Data Analysis Procedure</li>
+                                        <li>* Legitimate Interest Assessment Procedure</li>
+                                        <li>* Information Security Incident Response Procedure</li>
+                                        <li>* GDPR Roles and Responsibilities</li>
+                                        <li>* Records Retention and Protection Policy</li>
+                                    </ol>
+                                </p>
+                                <br>
+                                <br>
+                                <h1 class="policyh1">Use of Cryptography</h1>
+                                <p class="pptext2" style="padding-top:8px;padding-bottom:6px;text-align: left;">
+                                    Where appropriate to the classification of information and the storage medium, cryptographic techniques were used to ensure the confidentiality and integrity of records.
+                                </p>
+                                <p class="pptext2" style="padding-top:8px;padding-bottom:6px;text-align: left;">
+                                    Absolute care has been taken to ensure that encryption keys used to encrypt records are securely stored for the life of the relevant records and comply with the organisation's policy on cryptography.
+                                </p>
+                                <br>
+                                <br>
+                                <h1 class="policyh1">The EU General Data Protection Regulation - GDPR</h1>
+                                <p class="pptext2" style="padding-top:8px;padding-bottom:6px;text-align: left;">
+                                    The General Data Protection Regulation 2016 (GDPR) is one of the most significant pieces of legislation affecting the way that PeaceRyde Africa carries out its information processing activities. Significant fines are applicable if a breach is deemed to have occurred under the GDPR, which is designed to protect the personal data of citizens of the European Union. It is PeaceRyde Africa policy to ensure that our compliance with the GDPR and other relevant legislation is clear and demonstrable at all times
+                                </p>
+                                <br>
+                                <br>
+                                <h1 class="policyh1">2.2 Definitions</h1>
+                                <p class="pptext2" style="padding-top:8px;padding-bottom:6px;text-align: left;">
+                                    There is a total of 26 definitions listed within the GDPR and it is not appropriate to reproduce them all here. However, the most fundamental definitions with respect to this policy are as follows:
+                                    <br>
+                                    <br>
+                                    <b>Personal data is defined as:</b>
+                                    any information relating to an identified or identifiable natural person ('data subject'); an identifiable natural person is one who can be identified, directly or indirectly, in particular by reference to an identifier such as a name, an identification number, location data, an online identifier or to one or more factors specific to the physical, physiological, genetic, mental, economic, cultural or social identity of that natural person;
+                                    <br>
+                                    <br>
+                                    <p class="pptext2" style="padding-top:8px;padding-bottom:6px;text-align: left;">
+                                        <b>'processing' means</b>
+                                        any operation or set of operations which is performed on personal data or on sets of personal data, whether or not by automated means, such as collection, recording, organisation, structuring, storage, adaptation or alteration, retrieval, consultation, use, disclosure by transmission, dissemination or otherwise making available, alignment or combination, restriction, erasure or destruction
+                                    </p>
+                                    <br>
+                                    <br>
+                                    <p class="pptext2" style="padding-top:8px;padding-bottom:6px;text-align: left;">
+                                        <b>'controller' means</b>
+                                        the natural or legal person, public authority, agency or other body which, alone or jointly with others, determines the purposes and means of the processing of personal data; where the purposes and means of such processing are determined by Union or Member State law, the controller or the specific criteria for its nomination may be provided for by Union or Member State law
+                                    </p>
+                                </p>
+                                <br>
+                                <br>
+                                <h1 class="policyh1">2.3 Principles Relating to Processing of Personal Data</h1>
+                                <p class="pptext2" style="padding-top:8px;padding-bottom:6px;text-align: left;">
+                                    There are a number of fundamental principles upon which the GDPR is based. 
+                      These are as follows:
+                                </p>
+                                <br>
+                                <p class="pptext2" style="padding-top:8px;padding-bottom:6px;text-align: left;">
+                                    1. Personal data shall be:
+                                </p>
+                                <p class="pptext2" style="padding-top:8px;padding-bottom:6px;text-align: left;">
+                                    (a) processed lawfully, fairly and in a transparent manner in relation to the data subject ('lawfulness, fairness and transparency');
+                                </p>
+                                <p class="pptext2" style="padding-top:8px;padding-bottom:6px;text-align: left;">
+                                    (b) collected for specified, explicit and legitimate purposes and not further processed in a manner that is incompatible with those purposes; further processing for archiving purposes in the public interest, scientific or historical research purposes or statistical purposes shall, in accordance with Article 89(1), not be considered to be incompatible with the initial purposes ('purpose limitation');
+                                </p>
+                                <p class="pptext2" style="padding-top:8px;padding-bottom:6px;text-align: left;">
+                                    (c) adequate, relevant and limited to what is necessary in relation to the purposes for which they are processed ('data minimisation');
+                                </p>
+                                <p class="pptext2" style="padding-top:8px;padding-bottom:6px;text-align: left;">
+                                    (d) accurate and, where necessary, kept up to date; every reasonable step must be taken to ensure that personal data that are inaccurate, having regard to the purposes for which they are processed, are erased or rectified without delay ('accuracy');
+                                </p>
+                                <p class="pptext2" style="padding-top:8px;padding-bottom:6px;text-align: left;">
+                                    (e) kept in a form which permits identification of data subjects for no longer than is necessary for the purposes for which the personal data are processed; personal data may be stored for longer periods insofar as the personal data will be processed solely for archiving purposes in the public interest, scientific or historical research purposes or statistical purposes in accordance with Article 89(1) subject to implementation of the appropriate technical and organisational measures required by this Regulation in order to safeguard the rights and freedoms of the data subject ('storage limitation');
+                                </p>
+                                <p class="pptext2" style="padding-top:8px;padding-bottom:6px;text-align: left;">
+                                    (f) processed in a manner that ensures appropriate security of the personal data, including protection against unauthorised or unlawful processing and against accidental loss, destruction or damage, using appropriate technical or organisational measures ('integrity and confidentiality').
+                                </p>
+                                <p class="pptext2" style="padding-top:8px;padding-bottom:6px;text-align: left;">
+                                    2.The controller shall be responsible for, and be able to demonstrate compliance with, paragraph 1 ('accountability'). 
+                                      PeaceRyde Africa will ensure that it complies with all of these principles both in the processing it currently carries out and as part of the introduction of new methods of processing such as new IT system
+                                </p>
+                                <h1 class="policyh1">2.4 Rights of the Individual</h1>
+                                <p class="pptext2" style="padding-top:8px;padding-bottom:6px;text-align: left;">
+                                    <br>
+                                    <br>
+                                    The data subject also has rights under the GDPR. These consist of:
+                                    <br>
+                                    The right to be informed 
+                                    The right to access 
+                                    The right to rectification 
+                                    The right to erasure 
+                                    The right to restrict processing 
+                                    The right to data portability 
+                                    The right to object 
+                                    Rights in relation to automated decision-making and profiling.
+                                </p>
+                                <br>
+                                <p class="pptext2" style="padding-top:8px;padding-bottom:6px;text-align: left;">
+                                    Each of these rights is supported by appropriate procedures within PeaceRyde Africa that allow the required action to be taken within the timescales stated in the GDPR.
+                                    <br>
+                                    These timescales are shown in Table 1.
+                                </p>
+                                <br>
+                                <table class="table table-bordered table-striped twidth">
+                                    <thead>
+                                        <tr>
+                                            <th>Data Subject Request</th>
+                                            <th>Timescale</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>The right to be informed</td>
+                                            <td>When data is collected (if supplied by data subject) or within one month (if not supplied by data subject)</td>
+                                        </tr>
+                                        <tr>
+                                            <td>The right of access</td>
+                                            <td>One month</td>
+                                        </tr>
+                                        <tr>
+                                            <td>The right to rectification</td>
+                                            <td>One month</td>
+                                        </tr>
+                                        <tr>
+                                            <td>The right to erasure</td>
+                                            <td>Without undue delay</td>
+                                        </tr>
+                                        <tr>
+                                            <td>The right to restrict processing</td>
+                                            <td>Without undue delay</td>
+                                        </tr>
+                                        <tr>
+                                            <td>The right to data portability</td>
+                                            <td>One month</td>
+                                        </tr>
+                                        <tr>
+                                            <td>The right to object</td>
+                                            <td>On receipt of objection</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Rights in relation to automated decision making and profiling.</td>
+                                            <td>Not specified</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <br>
+                                <br>
+                                <h1 class="policyh1">2.5 Lawfulness of Processing</h1>
+                                <p class="pptext2" style="padding-top:8px;padding-bottom:6px;text-align: left;">
+                                    There are six alternative ways in which the lawfulness of a specific case of processing of personal data may be established under the GDPR. It is PeaceRyde Africa policy to identify the appropriate basis for processing and to document it, in accordance with the Regulation. The options are described in brief in the following sections.
+                                </p>
+                                <br>
+                                <br>
+                                <h1 class="policyh1">2.5.1 Consent</h1>
+                                <p class="pptext2" style="padding-top:8px;padding-bottom:6px;text-align: left;">
+                                    Unless it is necessary for a reason allowable in the GDPR, PeaceRyde Africa will always obtain explicit consent from a data subject to collect and process their data. In case of children below the age of 16 (a lower age may be allowable in specific EU member states) parental consent will be obtained. Transparent information about our usage of their personal data will be provided to data subjects at the time that consent is obtained and their rights with regard to their data explained, such as the right to withdraw consent. This information will be provided in an accessible form, written in clear language and free of charge.
+                                </p>
+                                <p class="pptext2" style="padding-top:8px;padding-bottom:6px;text-align: left;">
+                                    If the personal data are not obtained directly from the data subject then this information will be provided to the data subject within a reasonable period after the data are obtained and definitely within one month.
+                                </p>
+                                <br>
+                                <br>
+                                <h1 class="policyh1">2.5.2 Performance of a Contract</h1>
+                                <p class="pptext2" style="padding-top:8px;padding-bottom:6px;text-align: left;">
+                                    There are six alternative ways in which the lawfulness of a specific case of processing of personal data may be established under the GDPR. It is PeaceRyde Africa policy to identify the appropriate basis for processing and to document it, in accordance with the Regulation. The options are described in brief in the following sections.
+                                </p>
+                                <br>
+                                <br>
+                                <h1 class="policyh1">2.5.3 Legal Obligation</h1>
+                                <p class="pptext2" style="padding-top:8px;padding-bottom:6px;text-align: left;">
+                                    If the personal data is required to be collected and processed in order to comply with the law, then explicit consent is not required. This may be the case for some data related to employment and taxation for example, and for many areas addressed by the public sector.
+                                </p>
+                                <br>
+                                <br>
+                                <h1 class="policyh1">2.5.4 Vital Interests of the Data Subject</h1>
+                                <p class="pptext2" style="padding-top:8px;padding-bottom:6px;text-align: left;">
+                                    In a case where the personal data are required to protect the vital interests of the data subject or of another natural person, then this may be used as the lawful basis of the processing. PeaceRyde Africa will retain reasonable, documented evidence that this is the case, whenever this reason is used as the lawful basis of the processing of personal data. As an example, this may be used in aspects of social care, particularly in the public sector.
+                                </p>
+                                <br>
+                                <br>
+                                <h1 class="policyh1">2.5.5 Task Carried Out in the Public Interest</h1>
+                                <p class="pptext2" style="padding-top:8px;padding-bottom:6px;text-align: left;">
+                                    Where PeaceRyde Africa needs to perform a task that it believes is in the public interest or as part of an official duty then the data subjects’ consent will not be requested. The assessment of the public interest or official duty will be documented and made available as evidence where required.
+                                </p>
+                                <br>
+                                <br>
+                                <h1 class="policyh1">2.5.6 Legitimate Interests</h1>
+                                <p class="pptext2" style="padding-top:8px;padding-bottom:6px;text-align: left;">
+                                    If the processing of specific personal data is in the legitimate interests of PeaceRyde Africa and is judged not to affect the rights and freedoms of the data subject in a significant way, then this may be defined as the lawful reason for the processing. Again, the reasoning behind this view will be documented
+                                </p>
+                                <br>
+                                <br>
+                                <h1 class="policyh1">2.6 Privacy by Design</h1>
+                                <p class="pptext2" style="padding-top:8px;padding-bottom:6px;text-align: left;">
+                                    PeaceRyde Africa has adopted the principle of privacy by design and will ensure that the definition and planning of all new or significantly changed systems that collect or process personal data will be subject to due consideration of privacy issues, including the completion of one or more data protection impact assessments.
+                                </p>
+                                <p class="pptext2" style="padding-top: 8px; padding-bottom:6px; text-align:left">
+                                    The data protection impact assessment will include:
+                                    Consideration of how personal data will be processed and for what purposes 
+                                    Assessment of whether the proposed processing of personal data is both necessary and proportionate to the purpose (s) 
+                                    Assessment of the risks to individuals in processing the personal data 
+                                    What controls are necessary to address the identified risks and demonstrate compliance with legislation 
+                                    Use of techniques such as data minimization and pseudonymisation will be considered where applicable and appropriate.
+                                </p>
+                                <br>
+                                <br>
+                                <h1 class="policyh1">
+                                    2.7 Contracts Involving the Processing of Personal Data
+                                </h1>
+                                <p class="pptext2" style="padding-top:8px;padding-bottom:6px;text-align: left;">
+                                    PeaceRyde Africa will ensure that all relationships it enters into that involve the processing of personal data are subject to a documented contract that includes the specific information and terms required by the GDPR. For more information, see the GDPR Controller-Processor Agreement Policy
+                                </p>
+                                <br>
+                                <br>
+                                <h1 class="policyh1">2.8 International Transfers of Personal Data</h1>
+                                <p class="pptext2" style="padding-top:8px;padding-bottom:6px;text-align: left;">
+                                    Transfers of personal data outside the European Union will be carefully reviewed prior to the transfer taking place to ensure that they fall within the limits imposed by the GDPR. This depends partly on the European Commission’s judgement as to the adequacy of the safeguards for personal data applicable in the receiving country and this may change over time
+                                </p>
+                                <p class="pptext2" style="padding-top:8px;padding-bottom:6px;text-align: left;">
+                                    Intra-group international data transfers will be subject to legally binding agreements referred to as Binding Corporate Rules (BCR) which provide enforceable rights for data subjects
+                                </p>
+                                <br>
+                                <br>
+                                <h1 class="policyh1">2.9 Data Protection Officer</h1>
+                                <p class="pptext2" style="padding-top:8px;padding-bottom:6px;text-align: left;">
+                                    A defined role of Data Protection Officer (DPO) is required under the GDPR if an organisation is a public authority, if it performs large scale monitoring or if it processes particularly sensitive types of data on a large scale. The DPO is required to have an appropriate level of knowledge and can either be an in-house resource or outsourced to an appropriate service provider.
+                                </p>
+                                <p class="pptext2" style="padding-top:8px;padding-bottom:6px;text-align: left;">
+                                    Based on these criteria, PeaceRyde Africa appointed Data Protection Officer, below are the contact details:
+                                </p>
+                                <p class="pptext2" style="padding-top:8px;padding-bottom:6px;text-align: left;">
+                                    Name: Eugene Ujukwu 
+                                    Email: eugene@peacerydeafrica.com
+                                    Contact: +234 (803) 340-1937
+                                </p>
+                                <br>
+                                <br>
+                                <h1 class="policyh1">2.10 Breach Notification</h1>
+                                <p class="pptext2" style="padding-top:8px;padding-bottom:6px;text-align: left;">
+                                    It is PeaceRyde Africa policy to be fair and proportionate when considering the actions to be taken to inform affected parties regarding breaches of personal data. In line with the GDPR, where a breach is known to have occurred which is likely to result in a risk to the rights and freedoms of individuals, the relevant supervisory authority will be informed within 72 hours. This will be managed in accordance with our Information Security Incident Response Procedure which sets out the overall process of handling information security incidents.
+                                </p>
+                                <p class="pptext2" style="padding-top:8px;padding-bottom:6px;text-align: left;">
+                                    Under the GDPR the relevant DPA has the authority to impose a range of fines of up to four percent of annual worldwide turnover or twenty million Euros, whichever is the higher, for infringements of the regulations.
+                                </p>
+                                <br>
+                                <br>
+                                <h1 class="policyh1">2.11 Addressing Compliance to the GDPR</h1>
+                                <p class="pptext2" style="padding-top:8px;padding-bottom:6px;text-align: left;">
+                                    The following actions are undertaken to ensure that PeaceRyde Africa complies at all times with the accountability principle of the GDPR
+                                </p>
+                                <br>
+                                <ol class="list" type="1">
+                                    <li>1. The legal basis for processing personal data is clear and unambiguous</li>
+                                    <li>2. A Data Protection Officer is appointed with specific responsibility for data protection in the organisation (if required)</li>
+                                    <li>3. All staff involved in handling personal data understand their responsibilities for following good data protection practice</li>
+                                    <li>4. Training in data protection has been provided to all staff</li>
+                                    <li>5. Rules regarding consent are followed</li>
+                                    <li>6. Routes are available to data subjects wishing to exercise their rights regarding personal data and such enquiries are handled effectively</li>
+                                    <li>7. Regular reviews of procedures involving personal data are carried out</li>
+                                    <li>8. Privacy by design is adopted for all new or changed systems and processes</li>
+                                </ol>
+                                <p class="pptext2" style="padding-top:8px;padding-bottom:6px;text-align: left;">
+                                    The following documentation of processing activities is recorded:
+                                </p>
+                                <ol class="list" type="1">
+                                    <li>1. Organisation name and relevant details</li>
+                                    <li>2. Purposes of the personal data processing</li>
+                                    <li>3. Categories of individuals and personal data processed</li>
+                                    <li>4. Categories of personal data recipients</li>
+                                    <li>5. Agreements and mechanisms for transfers of personal data to non-EU countries including details of controls in place</li>
+                                    <li>6. Personal data retention schedules</li>
+                                    <li>7. Relevant technical and organisational controls in place</li>
+                                </ol>
+                                <p class="pptext2" style="padding-top:8px;padding-bottom:6px;text-align: left;">
+                                    These actions are reviewed on a regular basis as part of the management process concerned with data protection.
+                                </p>
+                                <br>
+                                <br>
+                                <h1 class="policyh1">Data Protection Principles</h1>
+                                <p class="pptext2" style="padding-top:8px;padding-bottom:6px;text-align: left;">
+                                    There are 8 data protection principles which ensure that organisations collect, store and process personal data in a way that protects the confidentiality of customers. These principles are set out in schedule 1 of the Act and are as follows
+                                </p>
+                                <p class="pptext2" style="padding-top:8px;padding-bottom:6px;text-align: left;">
+                                    i. Data must be handled fairly and lawfully. 
+                                    We have legitimate grounds to obtain, store and process customers' data, namely, to assist you obtain a passport, visa and for other purposes authorised by the law and contracts between us and our customers. We ensure that your data will not be used for anything unlawful.
+                                </p>
+                                <p class="pptext2" style="padding-top:8px;padding-bottom:6px;text-align: left;">
+                                    ii. Personal data shall be obtained only for one or more specified and lawful purposes, and shall not be further processed in any manner incompatible with that purpose or those purposes. 
+                                        Due to the nature of our job, the purpose for which you are giving us your personal data is obvious to you and us. We will not use your data for any other purpose incompatible with the original purpose unless you first give us your consent or we are compelled by law to do so.
+                                </p>
+                                <p class="pptext2" style="padding-top:8px;padding-bottom:6px;text-align: left;">
+                                    iii. Personal data shall be adequate, relevant and not excessive in relation to the purpose or purposes for which they are processed. 
+                                      We will only take information we consider relevant and sufficient to deliver our contract with you.
+                                </p>
+                                <p class="pptext2" style="padding-top:8px;padding-bottom:6px;text-align: left;">
+                                    iv. Personal data shall be accurate and, where necessary, kept up to date. 
+                                    We ensure that the personal data you give us is correct and not misleading. We achieve this by giving you the opportunity to confirm the information you give us and also by requesting documentary proof when necessary. If there are relevant changes in your personal data, eg, change of name or nationality, please let us know as soon as possible so that we can update your record.
+                                </p>
+                                <p class="pptext2" style="padding-top:8px;padding-bottom:6px;text-align: left;">
+                                    v. Personal data processed for any purpose or purposes shall not be kept for longer than is necessary for that purpose or those purposes. 
+                                    We will, from time to time, review our data base to see if some personal data are still needed to be stored by us. If the purpose for which they were stored has been achieved and we consider that it is no longer necessary to continue storing them, we will securely delete them.
+                                </p>
+                                <p class="pptext2" style="padding-top:8px;padding-bottom:6px;text-align: left;">
+                                    vi. Personal data shall be processed in accordance with the rights of data subjects under this Act. 
+                                  We will process your personal data in such a way that it will enable you to do any of the following:
+                                </p>
+                                <br>
+                                <ol class="list" type="1">
+                                    <li>1. A right of access to a copy of your personal data, popularly known as 'subject access request'. Subject Access Request should be made to info@peacerydeafrica.com by email or by post to, PeaceRyde Africa LLC, 441 Granville Avenue Hillside Illinois 60162 USA</li>
+                                    <li>2. A right to object to processing your personal data in a way that is likely to cause damage or distress to you</li>
+                                    <li>3. A right to prevent processing your personal data in a way that is incompatible to the original purpose or purposes</li>
+                                    <li>4. A right to object to decisions being taken by automated means;</li>
+                                    <li>5. A right, when appropriate, to have inaccurate personal data rectified, blocked or deleted</li>
+                                    <li>6. A right to claim compensation for damages caused by a breach of the Act</li>
+                                </ol>
+                                <p class="pptext2" style="padding-top:8px;padding-bottom:6px;text-align: left;">
+                                    vii. Personal data security 
+                                    Your personal data are held in a very secure environment both physically and technically. The areas where personal data are kept are out of bounds for all non-authorised persons. Access to these parts of the premises can only be gained by electronic key issued only to authorised persons. Your personal data can only be accessed on the system by authorised persons. Only such authorised persons can alter, disclose or destroy your personal data. Further, such authorised persons can only carry out any of those functions in the course of their lawful duties. Therefore, the chances of your personal data being unlawfully processed or accidentally damaged, destroyed or lost are very minimal. Further, it is our policy to ensure that:
+                                </p>
+                                <br>
+                                <ol class="list" type="1">
+                                    <li>1. Each authorized employee who has access to personal data has his own password which is not shared with other persons,</li>
+                                    <li>2. Approved security software and firewall are used to protect our data,</li>
+                                    <li>3. Printed personal data, not in use are shredded,</li>
+                                    <li>4. We discourage personal data being stored on laptops and other mobile devices and media but if they do, should be locked securely and not taken out of the office.</li>
+                                </ol>
+                                <p class="pptext2" style="padding-top:8px;padding-bottom:6px;text-align: left;">
+                                    viii. Transfer of personal data outside the European Economic Area 
+                                    Your personal data will not be transferred to a country or territory outside the European Economic Area unless that country or territory ensures an adequate level of protection for the rights and freedoms of data subjects in relation to the processing of personal data. There are only few counties outside the EEA that have been accepted as having adequate levels of protection for the processing of personal data comparable to the EEA countries. When we are transferring personal data to the USA, we ensure that the recipient is a signatory to the US Department of Commerce Safe Harbour Scheme. This scheme is recognised by the European Commission as providing adequate protection for data subjects. In relation to other countries outside the EEA that have not been accepted as having equivalent security and safeguards in place for processing personal data, we either sign a separate contract, the terms of which are approved by the European Directives or ensure that there is a clause in the contract that protects the processing of personal data of all our clients.
+                                </p>
+                                <br>
+                                <br>
+                            </div>
                         </div>
-                        <div class="col-md-7 col-sm-6 col-xs-6 company">
-                          <h3 class="new-section8__highlights8 layout footh3">
-                            COMPANY
-                          </h3>
-                          <ul>
-                            <li class="new-section8__text-body5 layout fs-13"><a class="fs-13" href="about.php"
-                                style=" text-decoration: none;">About us</a>
-                            </li>
-                            <li class="new-section8__text-body5 layout fs-13"><a class="fs-13" href="pp.php"
-                                style=" text-decoration: none;">Privacy &Cookie Policy</a>
-                            </li>
-                            <li class="new-section8__text-body5 layout fs-13" 0><a href="t&c.php"
-                                class="fs-13"style=" text-decoration: none;">Terms And
-                                Condition</a></li>
-                            <li class="new-section8__text-body5 layout fs-13">Refund
-                              Policy</li>
-                          </ul>
-                        </div>
-                      </div>
-                      <br>
-                      <br>
-                      <div class="row">
-                        <h3 class="new-section8__highlights8 layout footh3">
-                          CORPORATE CONTACT DETAILS
-                        </h3>
-                        <ul>
-                          <li class="new-section8__text-body5 layout fs-13">441 Granville
-                            Avenenue
-                            Hillside Illinois 60152</li>
-                          <li class="new-section8__text-body5 layout fs-13">+1 (708)
-                            318-0273
-                          </li>
-                          <li class="corp layout fs-13 ">
-                            info@peacerydeafrica.com</li>
-                        </ul>
-                      </div>
                     </div>
-                  </div>
                 </div>
-              </div>
-            </div>
-            <hr>
-            <div class="lastfooter">
-              <div class="row lastfooterrow">
-                <div class="col-md-3 col-sm-12 col-xs-12">
-                  <p><a class="locaddress" href="Index.php"> &copy; &nbsp;
-                      2022 PeaceRydeAfrica LLC</a></p>
-                </div>
-                <div class="col-md-5 col-sm-12 col-xs-12">
-                  <p class="shorttest">PeaceRyde LLC is Registered with the state of Delaware USA
-                    under the File Number 654846</p>
-                </div>
-                <div class="col-md-2">
-                  <p style="margin-top: -2px;"><a class="privacy" href="pp.php">Privacy and Cookie
-                      Policy</a></p>
-                </div>
-                <div class="col-md-2">
-                  <p><a class="tc" href="t&c.php">Terms & Conditions</a></p>
-                </div>
-              </div>
-            </div>
-    
-        </section>
+            </section>
+
+        <?php include("./inc/footer.php"); ?>
             <!-- ======= End section8 ======= -->
 
     </main>

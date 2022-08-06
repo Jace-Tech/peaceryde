@@ -1,0 +1,124 @@
+@media (max-width: 2560px){
+
+    .ppheight {
+        position: relative;
+        height: 3100px;
+    }
+  }
+
+@media (max-width: 900px){
+  .pptext {
+      padding-left: 22px;
+      padding-top: 70px;
+      padding-bottom: 90px;
+      font-size: 35px;
+      color: white;
+      font-family: ubuntu;
+  }
+}
+@media (max-width: 853px){
+
+.ppheight {
+    position: relative;
+    height: 3100px;
+}
+}
+@media (max-width: 800px){
+
+.ppheight {
+    position: relative;
+    height: 3300px;
+}
+}
+@media (max-width: 640px){
+
+.ppheight {
+    position: relative;
+    height: 3500px;
+}
+} 
+@media (max-width: 540px){
+  
+  .pptext {
+      padding-left: 22px;
+      padding-top: 90px;
+      padding-bottom: 90px;
+      font-size: 35px;
+      color: white;
+      font-family: ubuntu;
+  }
+  .ppheight {
+      position: relative;
+      height: 4100px;
+  }
+}
+@media (max-width: 480px){
+
+  .ppheight {
+      position: relative;
+      height: 4600px;
+  }
+}
+@media (max-width: 428px){
+
+    .ppheight {
+        position: relative;
+        height: 4600px;
+    }
+  }
+@media (max-width: 414px){
+
+  .ppheight {
+      position: relative;
+      height: 4600px;
+  }
+}
+@media (max-width: 375px){
+  .pptext {
+      padding-left: 42px;
+      padding-top: 90px;
+      padding-bottom: 90px;
+      font-size: 35px;
+      color: white;
+      font-family: ubuntu;
+  }
+  .ppheight {
+      position: relative;
+      height: 4600px;
+  }
+}
+@media (max-width: 320px){
+  .ppheight {
+      position: relative;
+      height: 4650px;
+  }
+}
+
+@media (max-width: 320px){
+  .pptext {
+      padding-left: 48px;
+      padding-top: 82px;
+      padding-bottom: 90px;
+      font-size: 35px;
+      color: white;
+      font-family: ubuntu;
+  }
+  .ppheight {
+      position: relative;
+      height: 5100px;
+  }
+}
+@media (max-width: 280px){
+.pptext {
+    padding-left: 10px;
+    padding-top: 82px;
+    padding-bottom: 90px;
+    font-size: 35px;
+    color: white;
+    font-family: ubuntu;
+}
+.ppheight {
+      position: relative;
+      height: 5200px;
+  }
+}

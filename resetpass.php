@@ -28,6 +28,7 @@
   <link rel="stylesheet" type="text/css" href="css/Laptops.css">
   <link rel="stylesheet" type="text/css" href="css/smallscreen800.css">
   <link rel="stylesheet" type="text/css" href="css/responsive.css">
+  <link rel="stylesheet" type="text/css" href="css/header.css">
 
 
   <script type="text/javascript" src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -92,8 +93,7 @@
       </div>
     </section>
 
-    <section class="new-section8__section8 layout">
-    </section>
+    <?php include("./inc/footer.php"); ?>
 
     <script>
       const input = document.querySelector("[name=confirm]")

@@ -1,0 +1,246 @@
+@media (max-width: 2560px){
+    .tcheight {
+        height: 10200px;
+    }
+    .twidth
+        {
+        width:700px; margin-left:15%
+        }
+
+        .list {
+            margin-left: 15%;
+            width: 600px;
+            font-size: 15px;
+            color: #0A0E69;
+        }
+    }
+    @media (max-width: 1024px){
+        .tcheight {
+            height: 10800px;
+        }
+        .twidth {
+        width: 650px;
+        margin-left: 10%;
+        }
+        .list {
+            margin-left: 10%;
+            width: 550px;
+           
+        }
+    }
+
+@media (max-width: 900px){
+.pptext {
+    padding-left: 122px;
+    padding-top: 70px;
+    padding-bottom: 90px;
+    font-size: 35px;
+    color: white;
+    font-family: ubuntu;
+}
+.tcheight
+{
+  height: 11000px;
+}
+.twidth {
+    width: 620px;
+    margin-left: 10%;
+}
+.list
+{
+    margin-left: 10%;
+    width: 600px;
+}
+}
+@media (max-width: 800px){
+
+.twidth
+{
+  width:550px; margin-left:12%
+}
+.list {
+    margin-left: 10%;
+    width: 550px;
+}
+.tcheight {
+    height: 11700px;
+}
+}
+@media (max-width: 768px){
+
+.twidth
+{
+width:550px; margin-left:12%
+}
+.list {
+    margin-left: 10%;
+    width: 550px;
+}
+.tcheight {
+    height: 11700px;
+}
+}
+
+@media (max-width: 640px){
+.policyh1 {
+    text-align: left;
+    padding-left: 50px;
+   
+}
+.twidth
+{
+width:500px; margin-left:12%
+}
+.list {
+    margin-left: 5%;
+    width: 450px;
+}
+.tcheight {
+    height: 13100px;
+}
+}
+
+@media (max-width: 600px){
+.pptext {
+    padding-left: 82px;
+    padding-top: 90px;
+   
+}
+.tcheight
+{
+  height: 13100px;
+}
+.twidth
+{
+  width:450px; margin-left:7%
+}
+}
+@media (max-width: 540px){
+.pptext {
+    padding-left: 82px;
+    padding-top: 90px;
+   
+}
+.tcheight
+{
+  height: 16500px;
+}
+.twidth
+{
+  width:350px; margin-left:7%
+}
+.list {
+    margin-left: 5%;
+    width: 350px;
+}
+}
+@media (max-width: 480px){
+.pptext {
+    padding-left: 52px;
+    padding-top: 70px;
+   
+}
+.tcheight
+{
+  height: 18400px;
+}
+.twidth
+{
+  width:300px; margin-left:10%
+}
+.list {
+    margin-left: 5%;
+    width: 300px;
+}
+}
+
+
+@media (max-width: 428px){
+.pptext {
+    padding-left: 22px;
+    padding-top: 70px;
+   
+}
+.policyh1 {
+    text-align: left;
+    padding-left: 28px;
+}
+.tcheight
+{
+  height: 19050px;
+}
+
+.twidth
+{
+  width:300px; margin-left:5%
+}
+.list {
+    margin-left: 5%;
+    width: 80%;
+}
+}
+@media (max-width: 375px){
+.pptext {
+    padding-left: 32px;
+    padding-top: 58px;
+    padding-bottom: 90px;
+    font-size: 35px;
+    color: white;
+    font-family: ubuntu;
+}
+.tcheight
+{
+  height: 18800px;
+}
+.twidth
+{
+  width:300px; margin-left:5%
+}
+.list {
+    margin-left: 1%;
+    width: 90%;
+}
+}
+@media (max-width: 320px){
+
+.tcheight
+{
+  height: 21800px;
+}
+.twidth
+{
+  width:250px; margin-left:5%
+}
+.list {
+    margin-left: 1%;
+    width: 90%;
+}
+}
+@media (max-width: 280px){
+.pptext {
+  padding-left: 22px;
+  padding-top: 0px;
+  padding-bottom: 90px;
+  font-size: 32px;
+  color: white;
+  white-space: break-spaces;
+  font-family: ubuntu;
+}
+.policyh1 {
+    text-align: left;
+    padding-left: 8px;
+}
+.tcheight
+{
+  height: 22200px;
+}
+.twidth
+{
+  width:225px; margin-left:5%
+}
+.list {
+    margin-left: 1%;
+    width: 90%;
+    padding-left: 1rem
+}
+}

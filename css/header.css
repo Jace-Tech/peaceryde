@@ -1,0 +1,2291 @@
+@media(max-width:1024px){
+    .ml-118{
+     margin-left:161px;
+    }
+     .laptopflag
+    {
+      display:block;
+      margin-left:11px;
+      margin-top: -5px;
+    }
+    .button{
+      width:30%;
+    }
+    .button2{
+     width:40%;
+    }
+    .appbtn{
+     margin-right:70px;
+    }
+   
+    .phone{
+    width: 100px;
+    } 
+   
+    .new-section1__flex1-item {
+     flex: 0 1 215px;
+    }
+   
+    .collapsebtn {
+      margin-top: -10px;
+      margin-right: 3.125%;
+    }
+   
+    .hiddenbutton {
+      display: none;
+    }
+   .collapse, .navbar-nav{
+    background-color: #FBFCFB;
+    z-index: 1000;
+    }
+    
+   
+    .hiddenbutton {
+      display: none;
+    }
+   
+   
+    .formobile {
+      display: block;
+      margin-left: 6.25%;
+      width: 56.25%;
+      height: 28px;
+      margin-top: 1.5625%;
+      background: #F1F5F6;
+      text-align: center;
+      border-radius: 6px;
+      color: #15042336;
+      font-family: Ubuntu;
+      font-size: 12px;
+      line-height: 16px;
+      text-transform: lowercase;
+      color: rgba(21, 4, 35, 0.21);
+    }
+    .form{
+      width: 100%;
+    }
+   
+    .hiddenbutton {
+      width: 18.75%;
+      height: 28px;
+      padding-top: 1.5625%;
+      margin-top: 1.5625%;
+      margin-left: 20%;
+      background: #a0bd1c;
+      border-radius: 6px;
+      font-size: 12px;
+      font-weight: 300;
+      font-style: normal;
+      color: #FBFCFB;
+      font-family: Ubuntu;
+      padding-left: 1.5%;
+    }
+   
+    .mobphone {
+      font-size: 12px;
+      padding-top: 3.125%;
+      color: #ffffff;
+      text-decoration: none;
+    }
+    .new-section1__flex1{
+    padding-left: 5%;
+    padding-right:5%;
+    }
+    .new-section1__text-body8 {
+     margin-left: -80px;
+    }
+   
+    .free {
+      font-weight: 500;
+      margin-top: 5.625%;
+      font-family: Ubuntu;
+      font-style: normal;
+      color: #ffffff;
+    }
+    .fsm{
+      display: flex;
+      flex-wrap: nowrap !important;
+    }
+    .fsm1{
+      width: 40%;
+    }
+    .fsm2{
+      width: 23%;
+    }
+    .fsm3{
+      width: 37%;
+    }
+   
+    .formobile{
+      width: 100%;
+    }
+    
+   .text{
+    width: 100%;
+   }
+    .new-section1__block21.layout {
+      height: 54px;
+   }
+   /* .laptopvideoh1{
+    text-align: center;
+    padding-left: 0px;
+   } */
+ 
+   }
+   @media(max-width:991px){
+     .lg-li {
+       font-size: 13px;
+       color: #0A0E69;
+       margin-left: 40px;
+       margin-top: 21px;
+     }
+     .dn{
+       display:none;
+     }
+   
+     .laptopflag
+    {
+      display:none;
+    }
+    .button{
+      width:90%;
+    }
+    .button2{
+     width: 90%;
+     margin-left: 1%;
+   }
+  
+    .mobilelang{
+      display: block;
+      margin-left:10%;
+    }
+   .phone{
+    width: 100px;
+   } 
+   
+   .new-section1__flex1-item {
+     flex: 0 1 215px;
+   }
+   
+   .flag {
+       display: block;
+       width: 25px;
+       height: 25px;
+       margin-left:2em;
+       margin-top: -10px;
+   }
+   
+     .collapsebtn {
+       margin-top: -10px;
+       margin-right: 3.125%;
+       margin-left:1.9em;
+     }
+   
+    .hiddenbutton {
+      display: none;
+    }
+    .ml-118{
+     margin-left: 5px;
+    }
+    .lang .english{
+     display: none;
+    }
+   .collapse, .navbar-nav{
+    background-color: white;
+    z-index: 1000;
+    padding-left: 1%;
+   }
+    .english {
+      font-size: 14px;
+      color: #080C58;
+      margin-left: 25em;
+      margin-top: -10px;
+    }
+   
+    .hiddenbutton {
+      display: none;
+    }
+   
+   /* .shorttest{
+     width:100%;
+   }
+   .lastfooterrow {
+     padding-right: 3%;
+   } */
+   
+    .formobile {
+      display: block;
+      margin-left: 6.25%;
+      width: 56.25%;
+      height: 28px;
+      margin-top: 1.5625%;
+      background: #F1F5F6;
+      text-align: center;
+      border-radius: 6px;
+      color: #15042336;
+      font-family: Ubuntu;
+      font-size: 12px;
+      line-height: 16px;
+      text-transform: lowercase;
+      color: rgba(21, 4, 35, 0.21);
+    }
+    .form{
+      width: 100%;
+    }
+   
+    .hiddenbutton {
+      width: 18.75%;
+      height: 28px;
+      padding-top: 1.5625%;
+      margin-top: 1.5625%;
+      margin-left: 20%;
+      background: #a0bd1c;
+      border-radius: 6px;
+      font-size: 12px;
+      font-weight: 300;
+      font-style: normal;
+      color: #FBFCFB;
+      font-family: Ubuntu;
+      padding-left: 1.5%;
+    }
+   
+    .mobphone {
+      font-size: 12px;
+      padding-top: 3.125%;
+      color: #ffffff;
+      text-decoration: none;
+    }
+    .new-section1__flex1{
+   padding-left: 2%;
+   padding-right:2%;
+    }
+    .new-section1__text-body8 {
+     margin-left: -80px;
+    }
+   
+    .free {
+      font-weight: 500;
+      margin-left:23em;
+      margin-top: 5.625%;
+      font-family: Ubuntu;
+      font-style: normal;
+      color: #ffffff;
+    }
+    .fsm{
+      display: flex;
+      flex-wrap: nowrap !important;
+    }
+    .fsm1{
+      width: 40%;
+    }
+    .fsm2{
+      width: 23%;
+    }
+    .fsm3{
+      width: 37%;
+    }
+   
+    .formobile{
+      width: 100%;
+    }
+    
+   .text{
+    width: 100%;
+   }
+    .new-section1__block21.layout {
+      height: 54px;
+   }
+   /* .laptopvideoh1{
+    text-align: center;
+    padding-left: 0px;
+   } */
+ 
+   .cf{
+       justify-content: initial !important;
+     }
+   }
+ 
+   @media(max-width:938px){
+     .footerlogo{
+       margin-left:-30px;
+     }
+     .lg-li {
+       font-size: 13px;
+       color: #0A0E69;
+       margin-left: 10px;
+       margin-top: 21px;
+     }
+     .laptopflag
+    {
+      display:none;
+    }
+   
+   .phone{
+    width: 100px;
+   } 
+  
+   .mobile {
+      display: none;
+      
+    }
+   
+    .mobilelang {
+      display: block;
+    }
+    /* .leadtext {
+      
+      width: 280px;
+   } */
+   
+   .new-section1__flex1-item {
+     flex: 0 1 215px;
+   }
+   
+   .flag {
+       display: block;
+       width: 25px;
+       height: 25px;
+       margin-left:2em;
+       margin-top: -10px;
+   }
+   
+     .collapsebtn {
+       margin-top: -10px;
+       margin-right: 3.125%;
+       margin-left:1.9em;
+     }
+   
+    .hiddenbutton {
+      display: none;
+    }
+   .collapse, .navbar-nav{
+    background-color: white;
+    z-index: 1000;
+   }
+    .english {
+      font-size: 14px;
+      color: #080C58;
+      margin-left:21em;
+      margin-top: -10px;
+    }
+   
+    .formobile {
+      display: block;
+      margin-left: 6.25%;
+      width: 56.25%;
+      height: 28px;
+      margin-top: 1.5625%;
+      background: #F1F5F6;
+      text-align: center;
+      border-radius: 6px;
+      color: #15042336;
+      font-family: Ubuntu;
+      font-size: 12px;
+      line-height: 16px;
+      text-transform: lowercase;
+      color: rgba(21, 4, 35, 0.21);
+    }
+    .form{
+      width: 100%;
+    }
+   
+    .hiddenbutton {
+      width: 18.75%;
+      height: 28px;
+      padding-top: 1.5625%;
+      margin-top: 1.5625%;
+      margin-left: 20%;
+      background: #a0bd1c;
+      border-radius: 6px;
+      font-size: 12px;
+      font-weight: 300;
+      font-style: normal;
+      color: #FBFCFB;
+      font-family: Ubuntu;
+      padding-left: 1.5%;
+    }
+   
+    .mobphone {
+      font-size: 12px;
+      padding-top: 3.125%;
+      color: #ffffff;
+      text-decoration: none;
+    }
+    .new-section1__flex1{
+   padding-left: 5%;
+   padding-right:5%;
+    }
+    .new-section1__text-body8 {
+     margin-left: -250px;
+    }
+   
+    .free {
+      font-weight: 500;
+      margin-top: 5.625%;
+      font-family: Ubuntu;
+      font-style: normal;
+      color: #ffffff;
+    }
+    .fsm{
+      display: flex;
+      flex-wrap: nowrap !important;
+    }
+    .fsm1{
+      width: 40%;
+    }
+    .fsm2{
+      width: 23%;
+    }
+    .fsm3{
+      width: 37%;
+    }
+   
+    .formobile{
+      width: 100%;
+    }
+    
+   .text{
+    width: 100%;
+   }
+    .new-section1__block21.layout {
+      height: 54px;
+   }
+   /* .laptopvideoh1{
+    text-align: center;
+    padding-left: 0px;
+   } */
+ 
+   }
+   
+   @media(max-width:860px){
+     .footerlogo{
+       margin-left:-30px;
+     }
+     .lg-li {
+       font-size: 13px;
+       color: #0A0E69;
+       margin-left: 10px;
+       margin-top: 21px;
+     }
+     .laptopflag
+    {
+      display:none;
+    }
+
+   .phone{
+    width: 100px;
+   } 
+  
+   .mobile {
+      display: none;
+    }
+   
+    .mobilelang {
+      display: block;
+    }
+    /* .leadtext {
+      
+      width: 280px;
+   } */
+   
+   .new-section1__flex1-item {
+     flex: 0 1 215px;
+   }
+   
+   .flag {
+       display: block;
+       width: 25px;
+       height: 25px;
+       margin-left:2em;
+       margin-top: -10px;
+   }
+   
+     .collapsebtn {
+       margin-top: -10px;
+       margin-right: 3.125%;
+       margin-left:1.9em;
+     }
+   
+    .hiddenbutton {
+      display: none;
+    }
+   .collapse, .navbar-nav{
+    background-color: white;
+    z-index: 1000;
+   }
+    .english {
+      font-size: 14px;
+      color: #080C58;
+      margin-left:18em;
+      margin-top: -10px;
+    }
+   
+    .formobile {
+      display: block;
+      margin-left: 6.25%;
+      width: 56.25%;
+      height: 28px;
+      margin-top: 1.5625%;
+      background: #F1F5F6;
+      text-align: center;
+      border-radius: 6px;
+      color: #15042336;
+      font-family: Ubuntu;
+      font-size: 12px;
+      line-height: 16px;
+      text-transform: lowercase;
+      color: rgba(21, 4, 35, 0.21);
+    }
+    .form{
+      width: 100%;
+    }
+   
+    .hiddenbutton {
+      width: 18.75%;
+      height: 28px;
+      padding-top: 1.5625%;
+      margin-top: 1.5625%;
+      margin-left: 20%;
+      background: #a0bd1c;
+      border-radius: 6px;
+      font-size: 12px;
+      font-weight: 300;
+      font-style: normal;
+      color: #FBFCFB;
+      font-family: Ubuntu;
+      padding-left: 1.5%;
+    }
+   
+    .mobphone {
+      font-size: 12px;
+      padding-top: 3.125%;
+      color: #ffffff;
+      text-decoration: none;
+    }
+    .new-section1__flex1{
+   padding-left: 5%;
+   padding-right:5%;
+    }
+    .new-section1__text-body8 {
+     margin-left: -250px;
+    }
+   
+    .free {
+      font-weight: 500;
+      margin-top: 5.625%;
+      font-family: Ubuntu;
+      font-style: normal;
+      color: #ffffff;
+    }
+    .fsm{
+      display: flex;
+      flex-wrap: nowrap !important;
+    }
+    .fsm1{
+      width: 40%;
+    }
+    .fsm2{
+      width: 23%;
+    }
+    .fsm3{
+      width: 37%;
+    }
+   
+    .formobile{
+      width: 100%;
+    }
+    
+   .text{
+    width: 100%;
+   }
+    .new-section1__block21.layout {
+      height: 54px;
+   }
+   .laptopvideoh1{
+     text-align: justify;
+     padding-left: 260px;
+   }
+ 
+   }
+ 
+   @media(max-width:800px){
+     .divsmall{
+       margin-top:0%;
+     }
+     .new-section1__text-body8 {
+       margin-left: 0px;
+      }
+      .new-section1__flex1-item {
+       flex: 0 1 125px;
+     }
+      .laptopflag
+     {
+       display:none;
+     }
+     .mobileshow{
+       display: none;
+     }
+    .phone{
+     width: 100px;
+    } 
+   
+   .mobile {
+       display: none;
+     }
+   
+     .mobilelang {
+       display: block;
+     }
+     /* .leadtext {
+       
+       width: 280px;
+   } */
+   
+   
+   .flag {
+       display: block;
+       width: 25px;
+       height: 25px;
+       margin-left:2em;
+       margin-top: -10px;
+   }
+   
+     .collapsebtn {
+       margin-top: -10px;
+       margin-right: 3.125%;
+       margin-left:1em;
+     }
+   
+     .hiddenbutton {
+       display: none;
+     }
+   .collapse, .navbar-nav{
+     background-color: white;
+     z-index: 1000;
+   }
+     .english {
+       font-size: 14px;
+       color: #080C58;
+       margin-left:14em;
+       margin-top: -10px;
+     }
+   
+     .formobile {
+       display: block;
+       margin-left: 6.25%;
+       width: 56.25%;
+       height: 28px;
+       margin-top: 1.5625%;
+       background: #F1F5F6;
+       text-align: center;
+       border-radius: 6px;
+       color: #15042336;
+       font-family: Ubuntu;
+       font-size: 12px;
+       line-height: 16px;
+       text-transform: lowercase;
+       color: rgba(21, 4, 35, 0.21);
+     }
+     .form{
+       width: 100%;
+     }
+   
+     .hiddenbutton {
+       width: 18.75%;
+       height: 28px;
+       padding-top: 1.5625%;
+       margin-top: 1.5625%;
+       margin-left: 20%;
+       background: #a0bd1c;
+       border-radius: 6px;
+       font-size: 12px;
+       font-weight: 300;
+       font-style: normal;
+       color: #FBFCFB;
+       font-family: Ubuntu;
+       padding-left: 1.5%;
+     }
+   
+     .mobphone {
+       font-size: 12px;
+       padding-top: 3.125%;
+       color: #ffffff;
+       text-decoration: none;
+     }
+     .new-section1__flex1{
+   padding-left: 5%;
+   padding-right:5%;
+     }
+     .free {
+       font-weight: 500;
+       margin-left: 33px;
+       margin-top: 5.625%;
+       font-family: Ubuntu;
+       font-style: normal;
+       color: #ffffff;
+     }
+     .fsm{
+       display: flex;
+       flex-wrap: nowrap !important;
+     }
+     .fsm1{
+       width: 40%;
+     }
+     .fsm2{
+       width: 23%;
+     }
+     .fsm3{
+       width: 37%;
+     }
+   
+     .formobile{
+       width: 100%;
+     }
+     
+    .text{
+     width: 100%;
+    }
+     .new-section1__block21.layout {
+       height: 54px;
+   }
+   .laptopvideoh1{
+     display: none;
+   }
+   .laptopvideo
+   {
+     display: none;
+   }
+   .mobilevideo
+   {
+     display: block;
+   }
+   }
+   
+   @media(max-width:767px){
+     /* .lastfooterrow {
+       padding-left:3%;
+       padding-right: 3%;
+       text-align:center;
+     } */
+     .lg-li{
+       margin-left:50px
+     }
+     .footerlogo{
+       margin-left:0px;
+     }
+     .new-section1__text-body8 {
+       margin-left: 0px;
+      }
+      .laptopflag
+     {
+       display:none;
+     }
+     
+     .mobileshow{
+       display: none;
+     }
+    .phone{
+     width: 100px;
+    } 
+  
+   .mobile {
+       display: none;
+     }
+   
+     .mobilelang {
+       display: block;
+     }
+     /* .leadtext {
+       
+       width: 280px;
+   } */
+   
+   
+    
+   .flag {
+       display: block;
+       width: 25px;
+       height: 25px;
+       margin-left:170px;
+       margin-top: -10px;
+   }
+   
+     .collapsebtn {
+       margin-top: -10px;
+       margin-right: 3.125%;
+       margin-left:8%;
+     }
+   
+     .hiddenbutton {
+       display: none;
+     }
+   .collapse, .navbar-nav{
+     background-color: white;
+     z-index: 1000;
+   }
+     .english {
+       font-size: 14px;
+       color: #080C58;
+       margin-left:100%;
+       margin-top: -10px;
+     }
+   
+     .formobile {
+       display: block;
+       margin-left: 6.25%;
+       width: 56.25%;
+       height: 28px;
+       margin-top: 1.5625%;
+       background: #F1F5F6;
+       text-align: center;
+       border-radius: 6px;
+       color: #15042336;
+       font-family: Ubuntu;
+       font-size: 12px;
+       line-height: 16px;
+       text-transform: lowercase;
+       color: rgba(21, 4, 35, 0.21);
+     }
+     .form{
+       width: 100%;
+     }
+   
+     .hiddenbutton {
+       width: 18.75%;
+       height: 28px;
+       padding-top: 1.5625%;
+       margin-top: 1.5625%;
+       margin-left: 20%;
+       background: #a0bd1c;
+       border-radius: 6px;
+       font-size: 12px;
+       font-weight: 300;
+       font-style: normal;
+       color: #FBFCFB;
+       font-family: Ubuntu;
+       padding-left: 1.5%;
+     }
+   
+     .mobphone {
+       font-size: 12px;
+       padding-top: 3.125%;
+       color: #ffffff;
+       text-decoration: none;
+     }
+     .new-section1__flex1{
+   padding-left: 5%;
+   padding-right:5%;
+     }
+     .free {
+       font-weight: 500;
+       margin-left: 0px;
+       margin-top: 5.625%;
+       font-family: Ubuntu;
+       font-style: normal;
+       color: #ffffff;
+     }
+     .fsm{
+       display: flex;
+       flex-wrap: nowrap !important;
+     }
+     .fsm1{
+       width: 40%;
+     }
+     .fsm2{
+       width: 23%;
+     }
+     .fsm3{
+       width: 37%;
+     }
+     .container, .container-md, .container-sm {
+      max-width: 100%;
+  }
+   
+     .formobile{
+       width: 100%;
+     }
+     
+    .text{
+     width: 100%;
+    }
+     .new-section1__block21.layout {
+       height: 54px;
+   }
+   .laptopvideoh1{
+     text-align: center;
+     padding-left: 0px;
+   }
+ 
+   }
+   
+   @media(max-width:700px){
+     .new-section1__text-body8 {
+       margin-left: 0px;
+      }
+      .container, .container-md, .container-sm {
+        max-width: 100%;
+    }
+      .laptopflag
+     {
+       display:none;
+     }
+   
+     .mobileshow{
+       display: none;
+     }
+    .phone{
+     width: 100px;
+    } 
+   
+   .mobile {
+       display: none;
+     }
+   
+     .mobilelang {
+       display: block;
+     }
+     /* .leadtext {
+       
+       width: 280px;
+   } */
+   
+   
+    
+   .flag {
+       display: block;
+       width: 25px;
+       height: 25px;
+       margin-left:120px;
+       margin-top: -10px;
+   }
+   
+     .collapsebtn {
+       margin-top: -10px;
+       margin-right: 3.125%;
+       margin-left:12%;
+     }
+   
+     .hiddenbutton {
+       display: none;
+     }
+   .collapse, .navbar-nav{
+     background-color: white;
+     z-index: 1000;
+   }
+     .english {
+       font-size: 14px;
+       color: #080C58;
+       margin-left: 80%;
+       margin-top: -10px;
+     }
+   
+     .formobile {
+       display: block;
+       margin-left: 6.25%;
+       width: 56.25%;
+       height: 28px;
+       margin-top: 1.5625%;
+       background: #F1F5F6;
+       text-align: center;
+       border-radius: 6px;
+       color: #15042336;
+       font-family: Ubuntu;
+       font-size: 12px;
+       line-height: 16px;
+       text-transform: lowercase;
+       color: rgba(21, 4, 35, 0.21);
+     }
+     .form{
+       width: 100%;
+     }
+   
+     .hiddenbutton {
+       width: 18.75%;
+       height: 28px;
+       padding-top: 1.5625%;
+       margin-top: 1.5625%;
+       margin-left: 20%;
+       background: #a0bd1c;
+       border-radius: 6px;
+       font-size: 12px;
+       font-weight: 300;
+       font-style: normal;
+       color: #FBFCFB;
+       font-family: Ubuntu;
+       padding-left: 1.5%;
+     }
+   
+     .mobphone {
+       font-size: 12px;
+       padding-top: 3.125%;
+       color: #ffffff;
+       text-decoration: none;
+     }
+     .new-section1__flex1{
+   padding-left: 5%;
+   padding-right:5%;
+     }
+     .free {
+       font-weight: 500;
+       margin-left: 0px;
+       margin-top: 5.625%;
+       font-family: Ubuntu;
+       font-style: normal;
+       color: #ffffff;
+     }
+     .fsm{
+       display: flex;
+       flex-wrap: nowrap !important;
+     }
+     .fsm1{
+       width: 40%;
+     }
+     .fsm2{
+       width: 23%;
+     }
+     .fsm3{
+       width: 37%;
+     }
+   
+     .formobile{
+       width: 100%;
+     }
+     
+    .text{
+     width: 100%;
+    }
+     .new-section1__block21.layout {
+       height: 54px;
+   }
+   .laptopvideoh1{
+     text-align: center;
+     padding-left: 0px;
+   }
+ 
+   }
+ 
+   @media(max-width:650px){
+    .container, .container-md, .container-sm {
+      max-width: 100%;
+  }
+     .laptopshow{
+       display:block;
+     }
+     .new-section1__text-body8 {
+       margin-left: 0px;
+      }
+     .laptopflag
+   {
+     display:none;
+   }
+     .mobileshow{
+       display: none;
+     }
+     .laptop {
+       display: none;
+     }
+   .flag{
+     display:block;
+     width: 7.8125%;
+     height: 25px;
+     margin-left: 1.5625%;
+     margin-top: 0px;
+   }
+   .mobilelang {
+       display: block;
+     }
+     .mobile {
+       display: block;
+       margin-top: 1%;
+     }
+     /* .leadtext {
+       
+       width: 280px;
+   } */
+   /* .section-team .single-person {
+    
+       width: 280px;
+       margin-left: -10px;
+   } */
+   
+   .flag {
+       display: block;
+       width: 25px;
+       height: 25px;
+       margin-left:75px;
+       margin-top: -10px;
+   }
+   
+     .collapsebtn {
+       margin-top: -10px;
+       margin-right: 3.125%;
+       margin-left:10%;
+     }
+   
+     .hiddenbutton {
+       display: block;
+     }
+   .collapse, .navbar-nav{
+     background-color: white;
+     z-index: 1000;
+   }
+     .english {
+       font-size: 14px;
+       color: #080C58;
+       margin-left: 40%;
+       margin-top: -10px;
+     }
+   
+ 
+     .formobile {
+       display: block;
+       margin-left:18%;
+       width: 56.25%;
+       height: 28px;
+       margin-top: 1.5625%;
+       background: #F1F5F6;
+       text-align: center;
+       border-radius: 6px;
+       color: #15042336;
+       font-family: Ubuntu;
+       font-size: 14px;
+       line-height: 16px;
+       text-transform: lowercase;
+       color: rgba(21, 4, 35, 0.21);
+     }
+   
+     .hiddenbutton {
+       width: 18.75%;
+       height: 28px;
+       padding-top: 3%;
+       margin-top: 3%;
+       margin-left: 28%;
+       background: #a0bd1c;
+       border-radius: 6px;
+       font-size: 14px;
+       font-weight: 300;
+       font-style: normal;
+       color: #FBFCFB;
+       font-family: Ubuntu;
+       padding-left: 1.5%;
+     }
+   
+     .mobphone {
+       font-size: 14px;
+       padding-top: 5%;
+       color: #ffffff;
+       text-decoration: none;
+       margin-left:31%;
+     }
+     .free {
+       font-weight: 500;
+       margin-left: 7.5%;
+       margin-top: 5.625%;
+       font-family: Ubuntu;
+       font-style: normal;
+       color: #ffffff;
+     }
+     .fsm{
+       display: flex;
+       flex-wrap: nowrap !important;
+     }
+     .fsm1{
+       width: 40%;
+     }
+     .fsm2{
+       width: 23%;
+     }
+     .fsm3{
+       width: 37%;
+     }
+   
+     .formobile{
+       width: 100%;
+     }
+     
+     .hiddenbutton{
+       padding-left: 10%;
+       width: 100%;
+     }
+    .new-section1__block21.layout {
+       height: 74px;
+   } 
+   .cf{
+       justify-content: initial !important;
+     }
+   }
+   @media(max-width:603px)
+   {
+     .divsmall {
+     margin-top: 0%;
+ }
+   }
+   @media(max-width:575px){
+     
+     .laptopshow{
+       display:none;
+     }
+     .new-section1__text-body8 {
+       margin-left: 0px;
+      }
+     .laptopflag
+   {
+     display:none;
+   }
+     .mobileshow{
+       display: block;
+     }
+     .laptop {
+       display: none;
+     }
+   .flag{
+     display:block;
+     width: 7.8125%;
+     height: 25px;
+     margin-left: 1.5625%;
+     margin-top: 0px;
+   }
+   .mobilelang {
+       display: block;
+       margin-left: 5.6em;
+     }
+     .mobile {
+       display: block;
+       margin-top: 1%;
+     }
+     /* .leadtext {
+       
+       width: 280px;
+   }
+   .section-team .single-person {
+    
+       width: 280px;
+       margin-left: -10px;
+   }
+    */
+   .flag {
+       display: block;
+       width: 25px;
+       height: 25px;
+       margin-left:3em;
+       margin-top: -10px;
+   }
+   
+     .collapsebtn {
+       margin-top: -10px;
+     margin-right: 0%;
+     margin-left: 1em;
+     }
+   
+     .hiddenbutton {
+       display: block;
+     }
+   .collapse, .navbar-nav{
+     background-color: white;
+     z-index: 1000;
+   }
+     .english {
+       font-size: 14px;
+       color: #080C58;
+       margin-left:35%;
+       margin-top: -10px;
+     }
+   
+     .formobile {
+       display: block;
+       margin-left:18%;
+       width: 56.25%;
+       height: 28px;
+       margin-top: 1.5625%;
+       background: #F1F5F6;
+       text-align: center;
+       border-radius: 6px;
+       color: #15042336;
+       font-family: Ubuntu;
+       font-size: 12px;
+       line-height: 16px;
+       text-transform: lowercase;
+       color: rgba(21, 4, 35, 0.21);
+     }
+   
+     .hiddenbutton {
+       width: 18.75%;
+       height: 28px;
+       padding-top: 5%;
+       margin-top: 3%;
+       margin-left: 20%;
+       background: #a0bd1c;
+       border-radius: 6px;
+       font-size: 12px;
+       font-weight: 300;
+       font-style: normal;
+       color: #FBFCFB;
+       font-family: Ubuntu;
+       padding-left: 1.5%;
+     }
+   
+     .mobphone {
+       font-size: 12px;
+       padding-top: 5%;
+       color: #ffffff;
+       text-decoration: none;
+       margin-left:20%;
+     }
+     .free {
+       font-weight: 500;
+       margin-left: 7.5%;
+       margin-top: 5.625%;
+       font-family: Ubuntu;
+       font-style: normal;
+       color: #ffffff;
+     }
+     .fsm{
+       display: flex;
+       flex-wrap: nowrap !important;
+     }
+     .fsm1{
+       width: 40%;
+     }
+     .fsm2{
+       width: 23%;
+     }
+     .fsm3{
+       width: 37%;
+     }
+   
+     .formobile{
+       width: 100%;
+     }
+     
+     .hiddenbutton{
+       padding-left: 10%;
+       width: 100%;
+     }
+    .new-section1__block21.layout {
+       height: 84px;
+   } 
+   .cf{
+       justify-content: initial !important;
+     }
+   }
+   
+   @media(max-width:520px){
+ 
+     .laptopshow{
+       display:none;
+     }
+     .new-section1__text-body8 {
+       margin-left: 0px;
+      }
+     .laptopflag
+   {
+     display:none;
+   }
+     .mobileshow{
+       display: block;
+     }
+     .laptop {
+       display: none;
+     }
+   .flag{
+     display:block;
+     width: 7.8125%;
+     height: 25px;
+     margin-left: 1.5625%;
+     margin-top: 0px;
+   }
+   .mobilelang {
+       display: block;
+       margin-left: 6.6em;
+     }
+     .mobile {
+       display: block;
+       margin-top: 1%;
+     }
+     /* .leadtext {
+       
+       width: 280px;
+   }
+   .section-team .single-person {
+    
+       width: 280px;
+       margin-left: -10px;
+   } */
+   
+   .flag {
+       display: block;
+       width: 25px;
+       height: 25px;
+       margin-left:20px;
+       margin-top: -10px;
+   }
+   
+     .collapsebtn {
+       margin-top: -10px;
+       margin-right: 3.125%;
+       margin-left:5%;
+     }
+   
+     .hiddenbutton {
+       display: block;
+     }
+   .collapse, .navbar-nav{
+     background-color: white;
+     z-index: 1000;
+   }
+     .english {
+       font-size: 14px;
+       color: #080C58;
+       margin-left:-25px;
+       margin-top: -10px;
+     }
+   
+     .formobile {
+       display: block;
+       margin-left:18%;
+       width: 56.25%;
+       height: 28px;
+       margin-top: 1.5625%;
+       background: #F1F5F6;
+       text-align: center;
+       border-radius: 6px;
+       color: #15042336;
+       font-family: Ubuntu;
+       font-size: 12px;
+       line-height: 16px;
+       text-transform: lowercase;
+       color: rgba(21, 4, 35, 0.21);
+     }
+   
+     .hiddenbutton {
+       width: 18.75%;
+       height: 28px;
+       padding-top: 5%;
+       margin-top: 3%;
+       margin-left: 20%;
+       background: #a0bd1c;
+       border-radius: 6px;
+       font-size: 12px;
+       font-weight: 300;
+       font-style: normal;
+       color: #FBFCFB;
+       font-family: Ubuntu;
+       padding-left: 1.5%;
+     }
+   
+     .mobphone {
+       font-size: 12px;
+       padding-top: 5%;
+       color: #ffffff;
+       text-decoration: none;
+       margin-left:20%;
+     }
+     .free {
+       font-weight: 500;
+       margin-left: 7.5%;
+       margin-top: 5.625%;
+       font-family: Ubuntu;
+       font-style: normal;
+       color: #ffffff;
+     }
+     .fsm{
+       display: flex;
+       flex-wrap: nowrap !important;
+     }
+     .fsm1{
+       width: 40%;
+     }
+     .fsm2{
+       width: 23%;
+     }
+     .fsm3{
+       width: 37%;
+     }
+   
+     .formobile{
+       width: 100%;
+     }
+     
+     .hiddenbutton{
+       padding-left: 10%;
+       width: 100%;
+     }
+    .new-section1__block21.layout {
+       height: 74px;
+   } 
+   .cf{
+       justify-content: initial !important;
+     }
+   }
+ 
+   @media(max-width:480px){
+    
+     .cf{
+       justify-content: initial !important;
+     }
+     .new-section1__text-body8 {
+       margin-left: 0px;
+      }
+     .laptopshow{
+       display:none;
+     }
+     .laptopflag
+   {
+     display:none;
+   }
+     .mobileshow{
+       display: block;
+     }
+     .laptop {
+       display: none;
+     }
+   .flag{
+     display:block;
+     width: 7.8125%;
+     height: 25px;
+     margin-left: 1.5625%;
+     margin-top: 0px;
+   }
+   .mobilelang {
+       display: block;
+       margin-left:2%;
+     }
+     .mobile {
+       display: block;
+       margin-top: 2%;
+     }
+     /* .leadtext {
+       
+       width: 280px;
+   }
+   .section-team .single-person {
+    
+       width: 280px;
+       margin-left: -10px;
+   } */
+   
+   .flag {
+       display: block;
+       width: 25px;
+       height: 25px;
+       margin-left:40px;
+       margin-top: -10px;
+   }
+   
+     .collapsebtn {
+       margin-top: -10px;
+       margin-right: 3.125%;
+       margin-left:10%;
+     }
+   
+     .hiddenbutton {
+       display: block;
+     }
+   .collapse, .navbar-nav{
+     background-color: white;
+     z-index: 1000;
+   }
+     .english {
+       font-size: 14px;
+       color: #080C58;
+       margin-left: 20%;
+       margin-top: -10px;
+     }
+   
+     .formobile {
+       display: block;
+       margin-left: 6.25%;
+       width: 56.25%;
+       height: 28px;
+       margin-top: 1.5625%;
+       background: #F1F5F6;
+       text-align: center;
+       border-radius: 6px;
+       color: #15042336;
+       font-family: Ubuntu;
+       font-size: 12px;
+       line-height: 16px;
+       text-transform: lowercase;
+       color: rgba(21, 4, 35, 0.21);
+     }
+   
+     .hiddenbutton {
+       width: 18.75%;
+       height: 28px;
+       padding-top: 5%;
+       margin-top: 1.5625%;
+       margin-left: 20%;
+       background: #a0bd1c;
+       border-radius: 6px;
+       font-size: 12px;
+       font-weight: 300;
+       font-style: normal;
+       color: #FBFCFB;
+       font-family: Ubuntu;
+       padding-left: 1.5%;
+     }
+   
+     .mobphone {
+       font-size: 12px;
+       padding-top: 3.125%;
+       color: #ffffff;
+       text-decoration: none;
+       margin-left:0px;
+     }
+     .free {
+       font-weight: 500;
+       margin-left: 3.25%;
+       margin-top: 5.625%;
+       font-family: Ubuntu;
+       font-style: normal;
+       color: #ffffff;
+     }
+     .fsm{
+       display: flex;
+       flex-wrap: nowrap !important;
+     }
+     .fsm1{
+       width: 40%;
+     }
+     .fsm2{
+       width: 23%;
+     }
+     .fsm3{
+       width: 37%;
+     }
+   
+     .formobile{
+       width: 100%;
+     }
+     
+     .hiddenbutton{
+       margin-left: 0px;
+       padding-left: 15%;
+       width: 100%;
+     }
+     .new-section1__block21.layout {
+       height: 78px;
+   }
+   
+   .apply{
+     display:flex;
+     flex-direction: column;
+   }
+   .apply a{
+     width: 90%;
+     margin-left: 0;
+     margin-right: 0%;
+     margin-top: 3%;
+   }
+   .sign{
+   margin-bottom:5%;
+   }
+   
+   }
+   @media(max-width:437px){
+ 
+     .cf{
+       justify-content: initial !important;
+     }
+     .new-section1__text-body8 {
+       margin-left: 0px;
+      }
+     .laptopshow{
+       display:none;
+     }
+     .laptopflag
+   {
+     display:none;
+   }
+     .mobileshow{
+       display: block;
+     }
+     .laptop {
+       display: none;
+     }
+   .flag{
+     display:block;
+     width: 7.8125%;
+     height: 25px;
+     margin-left: 1.5625%;
+     margin-top: 0px;
+   }
+   .mobilelang {
+       display: block;
+       margin-left:2%;
+     }
+     .mobile {
+       display: block;
+       margin-top: 2%;
+     }
+     /* .leadtext {
+       
+       width: 280px;
+   }
+   .section-team .single-person {
+    
+       width: 280px;
+       margin-left: -10px;
+   } */
+   
+   .flag {
+       display: block;
+       width: 25px;
+       height: 25px;
+       margin-left:12px;
+       margin-top: -10px;
+   }
+   
+     .collapsebtn {
+       margin-top: -10px;
+       margin-right: 3.125%;
+       margin-left:7%;
+     }
+   
+     .hiddenbutton {
+       display: block;
+     }
+   .collapse, .navbar-nav{
+     background-color: white;
+     z-index: 1000;
+   }
+     .english {
+       font-size: 14px;
+       color: #080C58;
+       margin-left: 2%;
+       margin-top: -10px;
+     }
+   
+     .formobile {
+       display: block;
+       margin-left: 6.25%;
+       width: 56.25%;
+       height: 28px;
+       margin-top: 1.5625%;
+       background: #F1F5F6;
+       text-align: center;
+       border-radius: 6px;
+       color: #15042336;
+       font-family: Ubuntu;
+       font-size: 12px;
+       line-height: 16px;
+       text-transform: lowercase;
+       color: rgba(21, 4, 35, 0.21);
+     }
+   
+     .hiddenbutton {
+       width: 18.75%;
+       height: 28px;
+       padding-top: 5%;
+       margin-top: 1.5625%;
+       margin-left: 20%;
+       background: #a0bd1c;
+       border-radius: 6px;
+       font-size: 12px;
+       font-weight: 300;
+       font-style: normal;
+       color: #FBFCFB;
+       font-family: Ubuntu;
+       padding-left: 1.5%;
+     }
+   
+     .mobphone {
+       font-size: 12px;
+       padding-top: 3.125%;
+       color: #ffffff;
+       text-decoration: none;
+     }
+     .free {
+       font-weight: 500;
+       margin-left: 3.25%;
+       margin-top: 5.625%;
+       font-family: Ubuntu;
+       font-style: normal;
+       color: #ffffff;
+     }
+     .fsm{
+       display: flex;
+       flex-wrap: nowrap !important;
+     }
+     .fsm1{
+       width: 40%;
+     }
+     .fsm2{
+       width: 23%;
+     }
+     .fsm3{
+       width: 37%;
+     }
+   
+     .formobile{
+       width: 100%;
+     }
+     
+     .hiddenbutton{
+       margin-left: 0px;
+       padding-left: 15%;
+       width: 100%;
+     }
+     .new-section1__block21.layout {
+       height: 78px;
+   }
+   
+   .apply{
+     display:flex;
+     flex-direction: column;
+   }
+   .apply a{
+     width:90%;
+     margin-left:0%;
+     margin-right: 0%;
+     margin-top:3%;
+   }
+   .sign{
+   margin-bottom:5%;
+   }
+   
+   }
+ 
+   @media(max-width:390px){
+ 
+     .cf{
+       justify-content: space-between !important;
+     }
+     .new-section1__text-body8 {
+       margin-left: 0px;
+      }
+     .laptopshow{
+       display:none;
+     }
+     .laptopflag
+   {
+     display:none;
+   }
+     .mobileshow{
+       display: block;
+     }
+     .laptop {
+       display: none;
+     }
+   .flag{
+     display:block;
+     width: 7.8125%;
+     height: 25px;
+     margin-left: 1.5625%;
+     margin-top: 0px;
+   }
+   .mobilelang {
+       display: block;
+       margin-left:2%;
+     }
+     .mobile {
+       display: block;
+       margin-top: 2%;
+     }
+     /* .leadtext {
+       
+       width: 280px;
+   }
+   .section-team .single-person {
+    
+       width: 280px;
+       margin-left: -10px;
+   } */
+   
+   .flag {
+       display: block;
+       width: 25px;
+       height: 25px;
+       margin-left: -15px;
+       margin-top: -10px;
+   }
+   
+     .collapsebtn {
+       margin-top: -10px;
+       margin-right: 3.125%;
+       margin-left: 1%;
+     }
+   
+     .hiddenbutton {
+       display: block;
+     }
+   .collapse, .navbar-nav{
+     background-color: white;
+     z-index: 1000;
+   }
+     .english {
+       font-size: 14px;
+       color: #080C58;
+       margin-left: -50px;
+       margin-top: -10px;
+     }
+   
+     .formobile {
+       display: block;
+       margin-left: 15.25%;
+       width: 56.25%;
+       height: 28px;
+       margin-top: 1.5625%;
+       background: #F1F5F6;
+       text-align: center;
+       border-radius: 6px;
+       color: #15042336;
+       font-family: Ubuntu;
+       font-size: 12px;
+       line-height: 16px;
+       text-transform: lowercase;
+       color: rgba(21, 4, 35, 0.21);
+     }
+   
+     .hiddenbutton {
+       width: 18.75%;
+       height: 28px;
+       padding-top: 5%;
+       margin-top: 1.5625%;
+       margin-left: 20%;
+       background: #a0bd1c;
+       border-radius: 6px;
+       font-size: 12px;
+       font-weight: 300;
+       font-style: normal;
+       color: #FBFCFB;
+       font-family: Ubuntu;
+     }
+   
+     .mobphone {
+       font-size: 12px;
+       padding-top: 3.125%;
+       color: #ffffff;
+       text-decoration: none;
+     }
+     .free {
+       font-weight: 500;
+       margin-left: 7.25%;
+       margin-top: 5.625%;
+       font-family: Ubuntu;
+       font-style: normal;
+       color: #ffffff;
+     }
+     .fsm{
+       display: flex;
+       flex-wrap: nowrap !important;
+     }
+     .fsm1{
+       width: 40%;
+     }
+     .fsm2{
+       width: 23%;
+     }
+     .fsm3{
+       width: 37%;
+     }
+   
+     .formobile{
+       width: 100%;
+     }
+     
+     .hiddenbutton{
+       margin-left: 3px;
+       padding-left: 8%;
+       width: 100%;
+     }
+     .new-section1__block21.layout {
+       height: 78px;
+   }
+   
+   .apply{
+     display:flex;
+     flex-direction: column;
+   }
+   .apply a{
+     width:95%;
+     margin-left:0%;
+     margin-right: 0%;
+     margin-top:3%;
+   }
+   .sign{
+   margin-bottom:5%;
+   }
+   
+   }
+ 
+   @media(max-width:320px){
+     .btn-review{
+       margin-left: 5em;
+     margin-right: 28%;
+     margin-bottom: 40%;
+     }
+     .new-section7__flex22{
+       display:flex;
+       flex-direction: column;
+     }
+     .new-section7__flex22-item{
+       flex:0 0 0;
+       margin-top:3%;
+       margin-left:5%;
+       margin-right:5%;
+     }
+     .div2, .div3, .div4{
+       padding-left:10%;
+       font-size:13px;
+       padding-right: 5%;
+     }
+     .footerlogo{
+       margin-left:-28px;
+     }
+ 
+     .new-section7__block15 {
+      margin-left:0px;
+     }
+     .new-section7__block16 {
+     margin-right:0px;
+     }
+   
+     .hands{
+       padding-left: 2%;
+       width: 100%;
+       padding-right: 2%;
+       margin-left: 0;
+     }
+     new-section5__flex3.layout {
+     width: 100%;
+ }
+ 
+ 
+ .shorttest{
+   margin-left:5px;
+ }
+ .adp{
+   margin-left:-5px;
+ }
+ .new-section7__block14.layout {
+     margin: 17px 1% 0px 70%;
+ }
+ .new-section5__content-box1.layout {
+     margin: -14px -5px 0px;
+ }
+ 
+     .new-section1__text-body8 {
+       margin-left: 0px;
+      }
+      .mobphone {
+       font-size: 12px;
+       padding-top: 3.125%;
+       color: #ffffff;
+       text-decoration: none;
+     }
+     .free {
+       font-weight: 500;
+       margin-left: 7.25%;
+       margin-top: 5.625%;
+       font-family: Ubuntu;
+       font-style: normal;
+       color: #ffffff;
+     }
+     .fsm{
+       display: flex;
+       flex-wrap: nowrap !important;
+       
+     }
+     .fsm1{
+       width: 55%;
+     }
+     .fsm2{
+       width: 30%;
+     /* height: 8px; */
+     margin-left: 3%;
+     margin-top: 1%;
+     }
+     .fsm3{
+       margin-left: 8%;
+     width: 65%;
+     }
+   
+     .formobile{
+       width: 100%;
+     }
+     .logoimg{
+       margin-left: 0px;
+     }
+   
+   
+     .laptopshow{
+       display:none;
+     }
+     .fsm{
+       display: flex;
+       align-items: flex-start;
+       flex-wrap: wrap !important;
+     }
+     .fsm>*{
+       padding-right:2%;
+       padding-left:3%;
+     }
+     .laptopflag
+   {
+     display:none;
+   }
+     .mobileshow{
+       display: block;
+     }
+     .laptop {
+       display: none;
+     }
+   .flag{
+     display:block;
+     width: 7.8125%;
+     height: 25px;
+     margin-left: 1.5625%;
+     margin-top: 0px;
+   }
+   .mobilelang {
+       display: block;
+     }
+     .mobile {
+       display: block;
+       margin-top: 2%;
+     }
+     /* .leadtext {
+       
+       width: 280px;
+   }
+   .section-team .single-person {
+    
+       width: 280px;
+       margin-left: -10px;
+   } */
+   
+   .flag {
+       display: block;
+       width: 25px;
+       height: 25px;
+       margin-left: -15px;
+       margin-top: -10px;
+   }
+   
+     .collapsebtn {
+       margin-top: -10px;
+       margin-right: 3.125%;
+     }
+   
+     .hiddenbutton {
+       display: block;
+     }
+   .collapse, .navbar-nav{
+     background-color: white;
+     z-index: 1000;
+   }
+     .english {
+       font-size: 14px;
+       color: #080C58;
+       margin-left: -70px;
+       margin-top: -10px;
+     }
+   
+   
+   
+     .hiddenbutton {
+       width: 100%;
+     height: 28px;
+     padding-top: 6%;
+     margin-top: 0%;
+     margin-left: 13px;
+     background: #a0bd1c;
+     border-radius: 6px;
+     font-size: 10px;
+     font-weight: 300;
+     font-style: normal;
+     color: #FBFCFB;
+     font-family: Ubuntu;
+     padding-left: 12%;
+     }
+   
+   
+     .new-section1__block21.layout {
+       height: 94px;
+   } 
+   
+   
+     
+ 
+     
+   }
+   
+   @media(max-width:280px){
+     .list-group-horizontal {
+     margin-left: 0;
+ }
+     .btn-review{
+       margin:60px;
+     }
+     .new-section7__flex22{
+       display:flex;
+       flex-direction: column;
+     }
+     .new-section7__flex22-item{
+       flex:0 0 0;
+       margin-top:3%;
+       margin-left:5%;
+       margin-right:5%;
+     }
+     .div2, .div3, .div4{
+       padding-left:10%;
+       font-size:13px;
+       padding-right: 5%;
+     }
+     .footerlogo{
+       margin-left:-28px;
+     }
+ 
+     .new-section7__block15 {
+      margin-left:0px;
+     }
+     .new-section7__block16 {
+     margin-right:0px;
+     }
+     .hiddenbutton {
+       width: 100%;
+     height: 28px;
+     padding-top: 6%;
+     margin-top: 0%;
+     margin-left: 8px;
+     background: #a0bd1c;
+     border-radius: 6px;
+     font-size: 10px;
+     font-weight: 300;
+     font-style: normal;
+     color: #FBFCFB;
+     font-family: Ubuntu;
+     padding-left: 12%;
+     }
+     .new-section1__text-body8 {
+       margin-left: 0px;
+      }
+     .flag{
+       display:block !important;
+     }
+      .collapsebtn {
+       margin-right: 0px;
+     }
+     .logoimg{
+       margin-left: 0px;
+     }
+     .english {
+       font-size: 10px;
+       color: #080C58;
+       margin-left: -70px;
+       margin-top: -10px;
+     }
+     .free{
+       margin-left: 8%;
+       font-size: 10px;
+     }
+     .fsm{
+       display: flex;
+       flex-wrap: wrap !important;
+     }
+     .new-section5__content-box1.layout {
+     margin: -14px -22px 0px;
+ }
+   
+   }

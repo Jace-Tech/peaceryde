@@ -1,31 +1,59 @@
-@media (max-width: 540px){
-  .laptopshow{
-    display:none;
+@media (max-width: 540px) {
+  .policyh1 {
+    text-align: left;
+    padding-left: 48px;
+    font-size: 25px;
+    margin-top: 20px;
+    color: #0A0E69;
+    font-weight: 500px;
   }
-  .mobileshow{
-    display: block;
-  }
-  .laptopflag
+  .chee
 {
-  display:none;
+  /* padding-left: 6%; */
+  padding-top: 10%;
 }
-.flag{
-  display:block;
-  width: 25px;
-  height: 25px;
-  margin-left: 5px;
-  margin-top: -10px;
+.edit{
+  margin-right: 5%;
+  margin-left: 5%;
 }
-  .mobilelang {
+
+  .laptopshow {
+    display: none;
+  }
+
+  .mobileshow {
     display: block;
   }
-  .divcover {
-    margin-top: 120PX;
+
+  .laptopflag {
+    display: none;
+  }
+
+  .flagnothing {
+    display: block;
+    width: 25px;
+    height: 25px;
+    margin-left: 5px;
+    margin-top: -10px;
+  }
+
+  .mobilelangnothing {
+    display: block;
+  }
+
+  .container, .container-md, .container-sm {
+    max-width: 99%;
 }
-  .collapsebtn {
+.divcover {
+  margin-top: 120PX;
+  margin-left: 0%;
+  margin-right: 5%;
+}
+  .collapsebtnnothing {
     margin-top: -10px;
     margin-right: 20px;
   }
+
   .contactus {
     font-size: 40px;
     text-align: center;
@@ -33,16 +61,17 @@
     font-family: Rubik;
     margin-bottom: 78px;
     padding-top: 121px;
-}
-  .hiddenbutton {
+  }
+
+  .hiddenbuttonnothing {
     display: block;
   }
 
-  .mobile {
+  .mobilenothing {
     display: block;
   }
 
-  .english {
+  .englishnothing {
     font-size: 14px;
     color: #080C58;
     margin-left: 110px;
@@ -54,14 +83,17 @@
   }
 
   .mt-99 {
-    margin-top: 99px;
+    margin-top: 9px;
   }
-
+  .mag {
+    margin-top: 10%;
+    margin-bottom: 0;
+}
   #content1 {
     margin-left: 50px;
   }
 
-  .call {
+  .callnothing {
     margin-top: 10px;
   }
 
@@ -90,7 +122,7 @@
   }
 
   .aboutpageheight {
-    height: 2700px;
+    height: 2900px;
   }
 
   .aboutimg1 {
@@ -116,7 +148,7 @@
   }
 
   .contactheight {
-    height: 1700px;
+    height: 2000px;
   }
 
   .faqheight {
@@ -222,7 +254,7 @@
 
   .ppheight {
     position: relative;
-    height: 1700px;
+    height: 4400px;
   }
 
   .pptext {
@@ -296,16 +328,16 @@
 
   .nbitext {
     font-size: 18px;
-
-    width: 480px;
-    margin-left: 20px;
+    margin-top: 0;
+    width: 500px;
+    margin-left: 0px;
     padding: 7%;
   }
 
   .nbitext2 {
     font-size: 18px;
-    width: 480px;
-    margin-left: 20px;
+    width: 500px;
+    margin-left: 0px;
     padding: 7%;
   }
 
@@ -364,6 +396,10 @@
     color: #a0bd1c;
   }
 
+  .lmt {
+    margin-top: 30%;
+  }
+
   .button2:hover {
     background-color: #a0bd1c;
     color: white;
@@ -413,7 +449,7 @@
 
   .home {
     color: #000000;
-    margin-left: 30px;
+    margin-left: 10px;
     margin-top: 19px;
     font-family: Ubuntu;
     font-style: normal;
@@ -424,7 +460,7 @@
 
   .visa {
     color: #000000;
-    margin-left: 30px;
+    margin-left: 10px;
     margin-top: 19px;
     font-family: Ubuntu;
     font-style: normal;
@@ -435,7 +471,7 @@
 
   .services {
     color: #000000;
-    margin-left: 30px;
+    margin-left: 10px;
     margin-top: 19px;
     font-family: Ubuntu;
     font-style: normal;
@@ -446,8 +482,8 @@
 
   .contact {
     width: 100%;
-    color: #000000;
-    margin-left: 30px;
+    color:#000000;
+    margin-left: 10px;
     margin-top: 19px;
     font-family: Ubuntu;
     font-style: normal;
@@ -459,7 +495,7 @@
   .about {
     width: 100%;
     color: #000000;
-    margin-left: 30px;
+    margin-left: 10px;
     margin-top: 19px;
     font-family: Ubuntu;
     font-style: normal;
@@ -473,7 +509,7 @@
     height: 36px;
     padding-left: 56px;
     padding-top: 5px;
-    margin-left: 30px;
+    margin-left: 0px;
     margin-bottom: 10px;
   }
 
@@ -483,11 +519,11 @@
     background-repeat: no-repeat;
   }
 
-  .new-section1__block21.layout {
+  .callssnothing {
     height: 80px;
   }
 
-  .free {
+  .freenothing {
     font-weight: 500;
     margin-left: 20px;
     margin-top: 18px;
@@ -505,18 +541,18 @@
     flex-direction: column;
   }
 
-  .mobile {
+  .mobilenothing {
     padding-top: 8px;
   }
 
-  .mobphone {
+  .mobphonenothing {
     font-size: 14px;
     padding-top: 10px;
     color: #ffffff;
     text-decoration: none;
   }
 
-  .formobile {
+  .formobilenothing {
     display: block;
     margin-left: 20px;
     width: 180px;
@@ -533,7 +569,7 @@
     color: rgba(21, 4, 35, 0.21);
   }
 
-  .hiddenbutton {
+  .hiddenbuttonnothing {
     width: 60px;
     height: 28px;
     padding-top: 5px;
@@ -646,7 +682,7 @@
     color: white;
   }
 
-  .phone {
+  .phonenothing {
     color: white;
     padding-top: 1px;
     width: 120px;
@@ -665,7 +701,7 @@
   }
 
   .shop {
-    margin-left: -84px;
+    margin-left: -2%;
     font-family: rubik;
     font-size: 16px;
   }
@@ -887,16 +923,16 @@
   }
 
   .get {
-    margin-left: 130px;
+    margin-left: 10%;
   }
 
   .reviews {
-    width: 1020px;
-    margin-left: 180px;
+    width: 100%;
+    margin-left: 30% ;
   }
 
   .btn-review {
-    margin: 10px 190px 90px;
+    margin: 10px 195px 90px;
   }
 
   .applycard {
@@ -905,10 +941,12 @@
     width: 438px;
     margin: 132px auto;
   }
+
   .new-section2__group.layout2 {
     position: relative;
-    
+
   }
+
   .applybtndiv {
     margin-left: 333px;
     margin-top: 89px;
@@ -1052,7 +1090,7 @@
 
   .company {
     margin-top: 50px;
-    padding-left: 30px;
+    padding-left: 10px;
   }
 
   .corp {
@@ -1079,6 +1117,7 @@
     color: #0A0E69;
     text-decoration: none;
     font-weight: 500;
+    margin-left: -10px;
   }
 
   .shorttest {
@@ -1184,16 +1223,18 @@ width: 100%;
     font-size: 16px;
     font-weight: 300;
     width: 480px;
+    text-align: justify;
   }
 
   .topdiv {
     margin: 4px auto 50px;
     width: 426px;
   }
-  .biwidth
-{
-  width:380px;
-}
+
+  .biwidth {
+    width: 380px;
+  }
+
   .cardform {
     border: 1px solid #ffffff;
     height: 1425px;
@@ -1223,12 +1264,14 @@ width: 100%;
     margin-left: 31px;
     margin-top: 72px;
   }
+
   .code {
     width: 100px;
     margin-top: 27px;
     height: 44px;
     border: 1px solid #555555;
-}
+  }
+
   .yourname {
     padding-top: 19px;
     padding-left: 31px;
@@ -1336,8 +1379,9 @@ width: 100%;
     margin: 26px auto 0px;
     width: 303px;
   }
+
   .vsbform2 {
- 
+
     margin: 0px auto 26px;
     width: 303px;
   }
@@ -1363,30 +1407,33 @@ width: 100%;
     width: 303px;
     margin-left: 70px;
   }
+
   .leaderpageheight {
-    height: 5350px;
-}
-.section-team .single-person {
-  margin-top: 0px;
-  padding: 3px;
-  border-radius: 5px;
-}
-.leadtext {
-  font-size: 18px;
-  font-family: 'Ubuntu';
-  color: #0A0E69;
-  font-style: normal;
-  font-weight: 300;
-  font-size: 15px;
-  line-height: 35px;
-  letter-spacing: 0.04em;
-  width: 100%;
-}
-.section-team .single-person {
-  margin-top: 0px;
-  /* padding: 30px; */
-  border-radius: 5px;
-}
+    height: 5950px;
+  }
+
+  .section-team .single-person {
+    margin-top: 0px;
+    padding: 3px;
+    border-radius: 5px;
+  }
+  .leadtext {
+    font-size: 18px;
+    font-family: 'Ubuntu';
+    color: #0A0E69;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 35px;
+    letter-spacing: 0.04em;
+    width: 100%;
+  }
+
+  .section-team .single-person {
+    margin-top: 0px;
+    /* padding: 30px; */
+    border-radius: 5px;
+  }
 
   .vsbformtextarea {
     width: 303px;
@@ -1406,7 +1453,7 @@ width: 100%;
   /*RESET PASSWORD*/
   .resetpassword {
     position: relative;
-    height: 800px;
+    height: 900px;
   }
 
   .resetform {
@@ -1702,25 +1749,28 @@ width: 100%;
   }
 }
 
-@media (max-width: 480px){
-  .mobilelang {
+@media (max-width: 480px) {
+  .mobilelangnothing {
     display: block;
   }
-
-  .collapsebtn {
+  .edit{
+    margin-right: 5%;
+    margin-left: 5%;
+  }
+  .collapsebtnnothing {
     margin-top: -10px;
     margin-right: 20px;
   }
 
-  .hiddenbutton {
+  .hiddenbuttonnothing {
     display: block;
   }
 
-  .mobile {
+  .mobilenothing {
     display: block;
   }
 
-  .english {
+  .englishnothing {
     font-size: 14px;
     color: #080C58;
     margin-left: 110px;
@@ -1728,7 +1778,7 @@ width: 100%;
 
   }
 
-  .call {
+  .callnothing {
     margin-top: 10px;
   }
 
@@ -1757,7 +1807,7 @@ width: 100%;
   }
 
   .aboutpageheight {
-    height: 2600px;
+    height: 2700px;
   }
 
   .aboutimg1 {
@@ -1783,12 +1833,12 @@ width: 100%;
   }
 
   .contactheight {
-    height: 1700px;
+    height: 2000px;
   }
 
   .faqheight {
 
-    height: 1500px;
+    height: 1900px;
   }
 
   .cont {
@@ -1889,7 +1939,7 @@ width: 100%;
 
   .ppheight {
     position: relative;
-    height: 1700px;
+    height: 4800px;
   }
 
   .pptext {
@@ -1932,7 +1982,7 @@ width: 100%;
   .imagebn {
     width: 320px;
     height: 266px;
-    margin-left: 12%;
+    margin-left: 10%;
   }
 
   .contactus {
@@ -1964,13 +2014,13 @@ width: 100%;
     font-size: 18px;
     padding-top: 21px;
     width: 430px;
-    margin-left: 10px;
+    margin-left: 0px;
     padding: 4%;
   }
 
   .nbitext2 {
     width: 430px;
-    margin-left: 10px;
+    margin-left: 0px;
     padding: 4%;
   }
 
@@ -2074,10 +2124,14 @@ width: 100%;
   .ml-118 {
     margin-left: 3px;
   }
+  .company {
+    margin-top: 50px;
+    padding-left: 10px;
+}
 
   .home {
     color: #000000;
-    margin-left: 30px;
+    margin-left: 10px;
     margin-top: 19px;
     font-family: Ubuntu;
     font-style: normal;
@@ -2088,7 +2142,7 @@ width: 100%;
 
   .visa {
     color: #000000;
-    margin-left: 30px;
+    margin-left: 10px;
     margin-top: 19px;
     font-family: Ubuntu;
     font-style: normal;
@@ -2099,7 +2153,7 @@ width: 100%;
 
   .services {
     color: #000000;
-    margin-left: 30px;
+    margin-left: 10px;
     margin-top: 19px;
     font-family: Ubuntu;
     font-style: normal;
@@ -2111,7 +2165,7 @@ width: 100%;
   .contact {
     width: 100%;
     color: #000000;
-    margin-left: 30px;
+    margin-left: 10px;
     margin-top: 19px;
     font-family: Ubuntu;
     font-style: normal;
@@ -2129,7 +2183,7 @@ width: 100%;
   .about {
     width: 100%;
     color: #000000;
-    margin-left: 30px;
+    margin-left: 10px;
     margin-top: 19px;
     font-family: Ubuntu;
     font-style: normal;
@@ -2153,11 +2207,11 @@ width: 100%;
     background-repeat: no-repeat;
   }
 
-  .new-section1__block21.layout {
+  .callssnothing {
     height: 80px;
   }
 
-  .free {
+  .freenothing {
     font-weight: 500;
     margin-left: 20px;
     margin-top: 18px;
@@ -2175,18 +2229,18 @@ width: 100%;
     flex-direction: column;
   }
 
-  .mobile {
+  .mobilenothing {
     padding-top: 8px;
   }
 
-  .mobphone {
+  .mobphonenothing {
     font-size: 14px;
     padding-top: 10px;
     color: #ffffff;
     text-decoration: none;
   }
 
-  .formobile {
+  .formobilenothing {
     display: block;
     margin-left: 20px;
     width: 180px;
@@ -2260,7 +2314,7 @@ width: 100%;
     margin: 50px auto;
   }
 
-  .hiddenbutton {
+  .hiddenbuttonnothing {
     width: 60px;
     height: 28px;
     padding-top: 5px;
@@ -2316,7 +2370,7 @@ width: 100%;
     color: white;
   }
 
-  .phone {
+  .phonenothing {
     color: white;
     padding-top: 1px;
     width: 120px;
@@ -2335,7 +2389,7 @@ width: 100%;
   }
 
   .shop {
-    margin-left: -72px;
+    margin-left: 0%;
     font-family: rubik;
     font-size: 15px;
   }
@@ -2407,26 +2461,30 @@ width: 100%;
 
   .list-group-horizontal {
     flex-direction: column;
-    margin-left: 50px;
+    margin-left: 2.5em;
+    margin-right: 2.5em;
   }
+  .mt-5 {
+    width: 100%;
+}
 
   .img1 {
     height: 110px;
     width: 113px;
-    margin-left: 110px;
+    margin-left: 35%;
     border-radius: 0px;
   }
 
   .img2 {
-    margin-left: 110px;
+    margin-left: 35%;
   }
 
   .img3 {
-    margin-left: 110px;
+    margin-left: 35%;
   }
 
   .img4 {
-    margin-left: 110px;
+    margin-left: 35%;
   }
 
   .img5 {
@@ -2435,7 +2493,7 @@ width: 100%;
   }
 
   .img56 {
-    margin-left: 110px;
+    margin-left: 35%;
     margin-right: 146px;
   }
 
@@ -2445,12 +2503,12 @@ width: 100%;
     font-family: Ubuntu;
     margin-top: 10px;
     height: 20px;
-    width: 11px;
-    padding-left: 160px;
+    width: 100%;
+    padding-left: 50%;
   }
 
   #content1 {
-    margin-left: 40px;
+    margin-left: 20%;
   }
 
   #content2 {
@@ -2471,81 +2529,73 @@ width: 100%;
   }
 
   .img2h1 {
-    font-size: 16px;
-    text-align: justify;
+    font-size: 23px;
     color: #F1F5F6;
-    margin-left: 160px;
     font-family: Ubuntu;
     margin-top: 10px;
-    font-family: Rubik;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 23px;
-    line-height: 20px;
+    height: 20px;
+    width: 100%;
+    padding-left: 50%;
+    margin-left: 0;
   }
 
   .img2h4 {
     text-align: justify;
     color: #F1F5F6;
-    margin-left: 110px;
+    margin-left: 35%;
     font-family: Ubuntu
   }
 
   .img3h1 {
-    font-size: 16px;
-    text-align: justify;
+    font-size: 23px;
     color: #F1F5F6;
-    margin-left: 155px;
     font-family: Ubuntu;
     margin-top: 10px;
-    font-family: Rubik;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 23px;
-    line-height: 20px;
+    height: 20px;
+    width: 100%;
+    padding-left: 50%;
+    margin-left: 0;
   }
 
   .img3h4 {
     color: #F1F5F6;
-    margin-left: 70px;
+    margin-left: 25%;
     font-family: Ubuntu;
   }
 
   .img4h1 {
-    text-align: justify;
-    color: #F1F5F6;
-    margin-left: 160px;
-    margin-top: 10px;
-    font-family: Rubik;
-    font-style: normal;
-    font-weight: 500;
     font-size: 23px;
-    line-height: 20px;
+    color: #F1F5F6;
+    font-family: Ubuntu;
+    margin-top: 10px;
+    height: 20px;
+    width: 100%;
+    padding-left: 50%;
+    margin-left: 0;
   }
 
   .img4h4 {
     text-align: justify;
     color: #F1F5F6;
-    margin-left: 110px;
+    margin-left: 36%;
     font-family: Ubuntu
   }
 
   .img5h1 {
-    text-align: justify;
-    color: #F1F5F6;
-    margin-left: 160px;
-    margin-top: 10px;
-    font-family: Rubik;
-    font-style: normal;
-    font-weight: 500;
     font-size: 23px;
-    line-height: 20px;
+    color: #F1F5F6;
+    font-family: Ubuntu;
+    margin-top: 10px;
+    height: 20px;
+    width: 100%;
+    margin-left: 0;
+    padding-left: 50%;
   }
 
   .img5h4 {
     text-align: justify;
     color: #F1F5F6;
-    margin-left: 120px;
+    margin-left: 40%;
     font-family: Ubuntu
   }
 
@@ -2561,13 +2611,21 @@ width: 100%;
   }
 
   .get {
-    margin-left: 100px;
+    margin-left: 10%;
   }
 
   .reviews {
-    width: 1020px;
-    margin-left: 140px;
+    width: 100%;
+    margin-left: 30% ;
   }
+  .mobilevideo {
+    display: block;
+    margin-top: -10%;
+}
+.et
+{
+  margin-left: 27%;
+}
 
   .applycard {
     border-radius: 10px;
@@ -2856,10 +2914,10 @@ width: 100%;
     margin: 4px auto 30px;
     width: 366px;
   }
-  .biwidth
-{
-  width:330px;
-}
+
+  .biwidth {
+    width: 330px;
+  }
 
   .cardform {
     border: 1px solid #ffffff;
@@ -2999,11 +3057,13 @@ width: 100%;
     width: 303px;
     margin-left: 51px;
   }
+
   .vsbform2 {
-    
+
     width: 303px;
     margin-left: 51px;
   }
+
   .vsbmt {
     margin-top: 27px;
   }
@@ -3025,9 +3085,11 @@ width: 100%;
     width: 303px;
     margin-left: 51px;
   }
+
   .leaderpageheight {
-    height: 5200px;
-}
+    height: 6100px;
+  }
+
   .vsbformtextarea {
     width: 303px;
     height: 116px;
@@ -3038,7 +3100,7 @@ width: 100%;
   /*RESET PASSWORD*/
   .resetpassword {
     position: relative;
-    height: 800px;
+    height: 900px;
   }
 
   .resetform {
@@ -3134,6 +3196,13 @@ width: 100%;
     font-size: 24px;
     color: #0A0E69;
   }
+  .chee {
+    margin-top: 15%;
+    margin-bottom: 0;
+}
+.et{
+  margin-top: 2%;
+}
 
   .reviewcard {
     border-radius: 10px;
@@ -3150,6 +3219,13 @@ width: 100%;
   .reviewmt {
     margin-top: 45px
   }
+  .container, .container-md, .container-sm {
+    max-width: 99%;
+}
+.divcover {
+  margin-left: 0%;
+  margin-right: 5%;
+}
 
   .reviewname {
     font-family: Rubik;
@@ -3334,9 +3410,13 @@ width: 100%;
 
 @media (max-width: 428px) {
   .leaderpageheight {
-    height: 5200px;
-}
-  .call {
+    height: 6150px;
+  }
+  .edit{
+    margin-right: 6%;
+    margin-left: 6%;
+  }
+  .callnothing {
     margin-top: 10px;
     margin-left: -10px;
   }
@@ -3404,20 +3484,20 @@ width: 100%;
     margin: 50px auto;
   }
 
-  .collapsebtn {
+  .collapsebtnnothing {
     margin-top: -10px;
     margin-right: 18px;
   }
 
-  .hiddenbutton {
+  .hiddenbuttonnothing {
     display: block;
   }
 
-  .mobile {
+  .mobilenothing {
     display: block;
   }
 
-  .english {
+  .englishnothing {
     font-size: 14px;
     color: #080C58;
     margin-left: 60px;
@@ -3569,12 +3649,18 @@ width: 100%;
   }
 
   .contactheight {
-    height: 1700px;
+    height: 1900px;
   }
 
   .faqheight {
 
-    height: 1500px;
+    height: 1900px;
+  }
+
+  .policyh1 {
+    text-align: left;
+    padding-left: 28px;
+
   }
 
   .cont {
@@ -3674,7 +3760,7 @@ width: 100%;
 
   .ppheight {
     position: relative;
-    height: 1700px;
+    height: 5000px;
   }
 
   .pptext {
@@ -3744,7 +3830,7 @@ width: 100%;
     font-size: 15px;
     padding-left: 20px;
     padding-top: 31px;
-    width: 385px;
+    width: 395px;
     margin-top: 5px;
   }
 
@@ -3872,10 +3958,14 @@ width: 100%;
   .ml-118 {
     margin-left: 3px;
   }
+  .company {
+    margin-top: 50px;
+    padding-left: 10px;
+}
 
   .home {
     color: #000000;
-    margin-left: 30px;
+    margin-left: 10px;
     margin-top: 19px;
     font-family: Ubuntu;
     font-style: normal;
@@ -3886,7 +3976,7 @@ width: 100%;
 
   .visa {
     color: #000000;
-    margin-left: 30px;
+    margin-left: 10px;
     margin-top: 19px;
     font-family: Ubuntu;
     font-style: normal;
@@ -3897,7 +3987,7 @@ width: 100%;
 
   .services {
     color: #000000;
-    margin-left: 30px;
+    margin-left: 10px;
     margin-top: 19px;
     font-family: Ubuntu;
     font-style: normal;
@@ -3909,7 +3999,7 @@ width: 100%;
   .contact {
     width: 100%;
     color: #000000;
-    margin-left: 30px;
+    margin-left: 10px;
     margin-top: 19px;
     font-family: Ubuntu;
     font-style: normal;
@@ -3921,7 +4011,7 @@ width: 100%;
   .about {
     width: 100%;
     color: #000000;
-    margin-left: 30px;
+    margin-left: 10px;
     margin-top: 19px;
     font-family: Ubuntu;
     font-style: normal;
@@ -3945,11 +4035,11 @@ width: 100%;
     background-repeat: no-repeat;
   }
 
-  .new-section1__block21.layout {
+  .callssnothing {
     height: 80px;
   }
 
-  .free {
+  .freenothing {
     font-weight: 500;
     margin-left: 20px;
     margin-top: 18px;
@@ -3967,18 +4057,18 @@ width: 100%;
     flex-direction: column;
   }
 
-  .mobile {
+  .mobilenothing {
     padding-top: 8px;
   }
 
-  .mobphone {
+  .mobphonenothing {
     font-size: 14px;
     padding-top: 10px;
     color: #ffffff;
     text-decoration: none;
   }
 
-  .formobile {
+  .formobilenothing {
     display: block;
     margin-left: 20px;
     width: 180px;
@@ -3995,7 +4085,7 @@ width: 100%;
     color: rgba(21, 4, 35, 0.21);
   }
 
-  .hiddenbutton {
+  .hiddenbuttonnothing {
     width: 60px;
     height: 28px;
     padding-top: 5px;
@@ -4051,7 +4141,7 @@ width: 100%;
     color: white;
   }
 
-  .phone {
+  .phonenothing {
     color: white;
     padding-top: 1px;
     width: 120px;
@@ -4070,7 +4160,7 @@ width: 100%;
   }
 
   .shop {
-    margin-left: -63px;
+    margin-left: -1%;
     font-family: rubik;
     font-size: 15px;
   }
@@ -4151,37 +4241,41 @@ width: 100%;
 
   .list-group-horizontal {
     flex-direction: column;
-    margin-left: 20px;
+    margin-left: 1.5em;
+    margin-right: 2.5em;
   }
+  .mt-5 {
+    width: 100%;
+}
 
-  .img1 {
-    height: 110px;
-    width: 113px;
-    margin-left: 110px;
-    border-radius: 0px;
-  }
+.img1 {
+  height: 110px;
+  width: 113px;
+  margin-left: 35%;
+  border-radius: 0px;
+}
 
-  .img2 {
-    margin-left: 110px;
-  }
+.img2 {
+  margin-left: 35%;
+}
 
-  .img3 {
-    margin-left: 110px;
-  }
+.img3 {
+  margin-left: 35%;
+}
 
-  .img4 {
-    margin-left: 110px;
-  }
+.img4 {
+  margin-left: 35%;
+}
 
-  .img5 {
-    margin-left: 0px;
-    margin-right: 6px;
-  }
+.img5 {
+  margin-left: 0px;
+  margin-right: 6px;
+}
 
-  .img56 {
-    margin-left: 110px;
-    margin-right: 146px;
-  }
+.img56 {
+  margin-left: 35%;
+  margin-right: 146px;
+}
 
   .img1h1 {
     font-size: 23px;
@@ -4189,25 +4283,12 @@ width: 100%;
     font-family: Ubuntu;
     margin-top: 10px;
     height: 20px;
-    width: 11px;
-    padding-left: 160px;
+    width: 100%;
+    padding-left: 50%;
   }
 
   #content1 {
-    margin-left: 60px;
-  }
-
-  .get {
-    margin-left: 45px;
-  }
-
-  .reviews {
-    width: 1020px;
-    margin-left: 120px;
-  }
-
-  .btn-review {
-    margin: 0px 135px 100px;
+    margin-left: 15%;
   }
 
   #content2 {
@@ -4228,83 +4309,78 @@ width: 100%;
   }
 
   .img2h1 {
-    font-size: 16px;
-    text-align: justify;
+    font-size: 23px;
     color: #F1F5F6;
-    margin-left: 160px;
     font-family: Ubuntu;
     margin-top: 10px;
-    font-family: Rubik;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 23px;
-    line-height: 20px;
+    height: 20px;
+    width: 100%;
+    padding-left: 50%;
+    margin-left: 0;
   }
 
   .img2h4 {
     text-align: justify;
     color: #F1F5F6;
-    margin-left: 110px;
+    margin-left: 35%;
     font-family: Ubuntu
   }
 
   .img3h1 {
-    font-size: 16px;
-    text-align: justify;
+    font-size: 23px;
     color: #F1F5F6;
-    margin-left: 160px;
     font-family: Ubuntu;
     margin-top: 10px;
-    font-family: Rubik;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 23px;
-    line-height: 20px;
+    height: 20px;
+    width: 100%;
+    padding-left: 50%;
+    margin-left: 0;
   }
 
   .img3h4 {
     color: #F1F5F6;
-    margin-left: 70px;
+    margin-left: 25%;
     font-family: Ubuntu;
   }
 
   .img4h1 {
-    text-align: justify;
-    color: #F1F5F6;
-    margin-left: 160px;
-    margin-top: 10px;
-    font-family: Rubik;
-    font-style: normal;
-    font-weight: 500;
     font-size: 23px;
-    line-height: 20px;
+    color: #F1F5F6;
+    font-family: Ubuntu;
+    margin-top: 10px;
+    height: 20px;
+    width: 100%;
+    padding-left: 50%;
+    margin-left: 0;
   }
 
   .img4h4 {
     text-align: justify;
     color: #F1F5F6;
-    margin-left: 110px;
+    margin-left: 36%;
     font-family: Ubuntu
   }
 
   .img5h1 {
-    text-align: justify;
-    color: #F1F5F6;
-    margin-left: 160px;
-    margin-top: 10px;
-    font-family: Rubik;
-    font-style: normal;
-    font-weight: 500;
     font-size: 23px;
-    line-height: 20px;
+    color: #F1F5F6;
+    font-family: Ubuntu;
+    margin-top: 10px;
+    height: 20px;
+    width: 100%;
+    margin-left: 0;
+    padding-left: 50%;
   }
 
   .img5h4 {
     text-align: justify;
     color: #F1F5F6;
-    margin-left: 120px;
+    margin-left: 37%;
     font-family: Ubuntu
   }
+  .mag {
+    margin-bottom: 0px;
+}
 
   .hands {
     margin: 104px 50px 4px 60px;
@@ -4586,26 +4662,29 @@ width: 100%;
     margin: 24px auto;
     width: 330px;
   }
+
   .bibtn {
     margin-left: 11px;
     margin-top: 56px;
     margin-bottom: 85px;
-}
-.biwidth
-{
-  width:330px;
-}
+  }
+
+  .biwidth {
+    width: 330px;
+  }
+
   .cardform {
     border: 1px solid #ffffff;
     height: 1425px;
   }
 
   .formh1 {
-    padding-left: 44px;
+    padding-left: 0px;
     font-family: 'Ubuntu';
     font-style: normal;
     font-weight: 500;
     font-size: 24px;
+    text-align: center;
     color: #0A0E69;
   }
 
@@ -4733,6 +4812,7 @@ width: 100%;
     width: 300px;
     margin-left: 15px;
   }
+
   .vsbform2 {
     margin-top: 0px;
     width: 300px;
@@ -4775,7 +4855,7 @@ width: 100%;
   /*RESET PASSWORD*/
   .resetpassword {
     position: relative;
-    height: 100vh;
+    height: 900px;
   }
 
   .resetform {
@@ -4852,6 +4932,10 @@ width: 100%;
 
   .applyselect {
     width: 332px;
+  }
+
+  .lmt {
+    margin-top: 38%;
   }
 
   .formrowdiv {
@@ -5119,20 +5203,26 @@ width: 100%;
 
 }
 
-@media (max-width: 414px){
+@media (max-width: 414px) {
   .leadtext {
-    
-    width: 380px;
-}
-.section-team .single-person {
- 
-    width: 380px;
-    margin-left: -10px;
-}
+
+    width: 100%;
+  }
+  .edit{
+    margin-right: 6%;
+    margin-left: 6%;
+  }
+  .section-team .single-person {
+
+    width: 100%;
+    margin-left: 0px;
+  }
+
   .leaderpageheight {
-    height: 6700px;
-}
-  .call {
+    height: 6250px;
+  }
+
+  .callnothing {
     margin-top: 10px;
     margin-left: -10px;
   }
@@ -5148,20 +5238,20 @@ width: 100%;
     margin-top: 20px;
   }
 
-  .collapsebtn {
+  .collapsebtnnothing {
     margin-top: -10px;
     margin-right: 18px;
   }
 
-  .hiddenbutton {
+  .hiddenbuttonnothing {
     display: block;
   }
 
-  .mobile {
+  .mobilenothing {
     display: block;
   }
 
-  .english {
+  .englishnothing {
     font-size: 14px;
     color: #080C58;
     margin-left: 0px;
@@ -5315,10 +5405,13 @@ width: 100%;
   .contactheight {
     height: 1700px;
   }
-
+  .contactheight {
+    height: 2100px;
+    top: 145px;
+  }
   .faqheight {
 
-    height: 1500px;
+    height: 1900px;
   }
 
   .cont {
@@ -5418,7 +5511,7 @@ width: 100%;
 
   .ppheight {
     position: relative;
-    height: 1700px;
+    height: 5000px;
   }
 
   .pptext {
@@ -5630,10 +5723,14 @@ width: 100%;
   .ml-118 {
     margin-left: 3px;
   }
+  .company {
+    margin-top: 50px;
+    padding-left: 10px;
+}
 
   .home {
     color: #000000;
-    margin-left: 30px;
+    margin-left: 10px;
     margin-top: 19px;
     font-family: Ubuntu;
     font-style: normal;
@@ -5644,7 +5741,7 @@ width: 100%;
 
   .visa {
     color: #000000;
-    margin-left: 30px;
+    margin-left: 10px;
     margin-top: 19px;
     font-family: Ubuntu;
     font-style: normal;
@@ -5655,7 +5752,7 @@ width: 100%;
 
   .services {
     color: #000000;
-    margin-left: 30px;
+    margin-left: 10px;
     margin-top: 19px;
     font-family: Ubuntu;
     font-style: normal;
@@ -5667,7 +5764,7 @@ width: 100%;
   .contact {
     width: 100%;
     color: #000000;
-    margin-left: 30px;
+    margin-left: 10px;
     margin-top: 19px;
     font-family: Ubuntu;
     font-style: normal;
@@ -5679,7 +5776,7 @@ width: 100%;
   .about {
     width: 100%;
     color: #000000;
-    margin-left: 30px;
+    margin-left: 10px;
     margin-top: 19px;
     font-family: Ubuntu;
     font-style: normal;
@@ -5703,11 +5800,11 @@ width: 100%;
     background-repeat: no-repeat;
   }
 
-  .new-section1__block21.layout {
+  .callssnothing {
     height: 80px;
   }
 
-  .free {
+  .freenothing {
     font-weight: 500;
     margin-left: 20px;
     margin-top: 18px;
@@ -5725,18 +5822,18 @@ width: 100%;
     flex-direction: column;
   }
 
-  .mobile {
+  .mobilenothing {
     padding-top: 8px;
   }
 
-  .mobphone {
+  .mobphonenothing {
     font-size: 14px;
     padding-top: 10px;
     color: #ffffff;
     text-decoration: none;
   }
 
-  .formobile {
+  .formobilenothing {
     display: block;
     margin-left: 20px;
     width: 180px;
@@ -5753,7 +5850,7 @@ width: 100%;
     color: rgba(21, 4, 35, 0.21);
   }
 
-  .hiddenbutton {
+  .hiddenbuttonnothing {
     width: 60px;
     height: 28px;
     padding-top: 5px;
@@ -5809,7 +5906,7 @@ width: 100%;
     color: white;
   }
 
-  .phone {
+  .phonenothing {
     color: white;
     padding-top: 1px;
     width: 120px;
@@ -5828,7 +5925,7 @@ width: 100%;
   }
 
   .shop {
-    margin-left: -62px;
+    margin-left: 1%;
     font-family: rubik;
     font-size: 15px;
   }
@@ -5909,37 +6006,41 @@ width: 100%;
 
   .list-group-horizontal {
     flex-direction: column;
-    margin-left: 20px;
+    margin-left: 6%;
+    margin-right: 2.5em;
   }
+  .mt-5 {
+    width: 100%;
+}
 
-  .img1 {
-    height: 110px;
-    width: 113px;
-    margin-left: 110px;
-    border-radius: 0px;
-  }
+.img1 {
+  height: 110px;
+  width: 113px;
+  margin-left: 35%;
+  border-radius: 0px;
+}
 
-  .img2 {
-    margin-left: 110px;
-  }
+.img2 {
+  margin-left: 35%;
+}
 
-  .img3 {
-    margin-left: 110px;
-  }
+.img3 {
+  margin-left: 35%;
+}
 
-  .img4 {
-    margin-left: 110px;
-  }
+.img4 {
+  margin-left: 35%;
+}
 
-  .img5 {
-    margin-left: 0px;
-    margin-right: 6px;
-  }
+.img5 {
+  margin-left: 0px;
+  margin-right: 6px;
+}
 
-  .img56 {
-    margin-left: 110px;
-    margin-right: 146px;
-  }
+.img56 {
+  margin-left: 35%;
+  margin-right: 146px;
+}
 
   .img1h1 {
     font-size: 23px;
@@ -5947,22 +6048,12 @@ width: 100%;
     font-family: Ubuntu;
     margin-top: 10px;
     height: 20px;
-    width: 11px;
-    padding-left: 160px;
+    width: 100%;
+    padding-left: 50%;
   }
 
   #content1 {
-    margin-left: 40px;
-  }
-
-  .get {
-    margin-left: 30px;
-  }
-
-  .reviews {
-    width: 1020px;
-    margin-left: 115px;
-    margin-top: 120px;
+    margin-left: 15%;
   }
 
   #content2 {
@@ -5983,84 +6074,87 @@ width: 100%;
   }
 
   .img2h1 {
-    font-size: 16px;
-    text-align: justify;
+    font-size: 23px;
     color: #F1F5F6;
-    margin-left: 160px;
     font-family: Ubuntu;
     margin-top: 10px;
-    font-family: Rubik;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 23px;
-    line-height: 20px;
+    height: 20px;
+    width: 100%;
+    padding-left: 50%;
+    margin-left: 0;
   }
 
   .img2h4 {
     text-align: justify;
     color: #F1F5F6;
-    margin-left: 110px;
+    margin-left: 35%;
     font-family: Ubuntu
   }
 
   .img3h1 {
-    font-size: 16px;
-    text-align: justify;
+    font-size: 23px;
     color: #F1F5F6;
-    margin-left: 160px;
     font-family: Ubuntu;
     margin-top: 10px;
-    font-family: Rubik;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 23px;
-    line-height: 20px;
+    height: 20px;
+    width: 100%;
+    padding-left: 50%;
+    margin-left: 0;
   }
 
   .img3h4 {
     color: #F1F5F6;
-    margin-left: 60px;
+    margin-left: 24%;
     font-family: Ubuntu;
   }
 
   .img4h1 {
-    text-align: justify;
-    color: #F1F5F6;
-    margin-left: 160px;
-    margin-top: 10px;
-    font-family: Rubik;
-    font-style: normal;
-    font-weight: 500;
     font-size: 23px;
-    line-height: 20px;
+    color: #F1F5F6;
+    font-family: Ubuntu;
+    margin-top: 10px;
+    height: 20px;
+    width: 100%;
+    padding-left: 50%;
+    margin-left: 0;
   }
 
   .img4h4 {
     text-align: justify;
     color: #F1F5F6;
-    margin-left: 110px;
+    margin-left: 36%;
     font-family: Ubuntu
   }
 
   .img5h1 {
-    text-align: justify;
-    color: #F1F5F6;
-    margin-left: 160px;
-    margin-top: 10px;
-    font-family: Rubik;
-    font-style: normal;
-    font-weight: 500;
     font-size: 23px;
-    line-height: 20px;
+    color: #F1F5F6;
+    font-family: Ubuntu;
+    margin-top: 10px;
+    height: 20px;
+    width: 100%;
+    margin-left: 0;
+    padding-left: 50%;
   }
 
   .img5h4 {
     text-align: justify;
     color: #F1F5F6;
-    margin-left: 120px;
+    margin-left: 37%;
     font-family: Ubuntu
   }
-
+  .mt-99 {
+    margin-top: 0%;
+}
+.reviews {
+  width: 100%;
+  margin-left: 23%;
+}
+.chee
+{
+  padding-left: 6%;
+  padding-top: 10%;
+}
   .hands {
     margin: 104px 50px 4px 60px;
     font-family: Rubik;
@@ -6241,7 +6335,7 @@ width: 100%;
     color: #0A0E69;
     text-decoration: none;
     font-weight: 500;
-    margin-left: 20px;
+    margin-left: -10px;
   }
 
   .height {
@@ -6363,11 +6457,12 @@ width: 100%;
   }
 
   .formh1 {
-    padding-left: 44px;
+    padding-left: 0px;
     font-family: 'Ubuntu';
     font-style: normal;
     font-weight: 500;
     font-size: 24px;
+    text-align: center;
     color: #0A0E69;
   }
 
@@ -6495,11 +6590,13 @@ width: 100%;
     width: 300px;
     margin-left: 15px;
   }
+
   .vsbform2 {
     margin-top: 0px;
     width: 300px;
     margin-left: 15px;
   }
+
   .forgotpage {
     margin-top: 250px;
   }
@@ -6536,7 +6633,7 @@ width: 100%;
   /*RESET PASSWORD*/
   .resetpassword {
     position: relative;
-    height: 100vh;
+    height: 900px;
   }
 
   .resetform {
@@ -6589,12 +6686,14 @@ width: 100%;
     border-radius: 10px;
     border-color: transparent;
     width: 350px;
-    margin: -50px auto;
+    margin: -80px auto;
   }
+
   .new-section2__group.layout2 {
     position: relative;
-   
+
   }
+
   .applybtndiv {
     margin-left: 210px;
     margin-top: 49px;
@@ -6633,7 +6732,7 @@ width: 100%;
 
   /*SIGN IN*/
   .signinpage {
-    margin-top: 40px;
+    margin-top: 150px;
   }
 
   .sih2 {
@@ -6884,35 +6983,38 @@ width: 100%;
 
 }
 
-@media(max-width:375px){
+@media(max-width:375px) {
 
   .leadtext {
-    
+
     width: 300px;
-}
-.section-team .single-person {
- 
-    width: 300px;
+  }
+
+  .section-team .single-person {
+
+    width: 100%;
     margin-left: -1px;
-}
+  }
+
   .leaderpageheight {
-    height: 6800px;
-}
-  .collapsebtn {
+    height: 6400px;
+  }
+
+  .collapsebtnnothing {
     margin-top: -10px;
     margin-right: 20px;
   }
 
-  .call {
+  .callnothing {
     margin-top: 10px;
     margin-left: -1px;
   }
 
-  .hiddenbutton {
+  .hiddenbuttonnothing {
     display: block;
   }
 
-  .mobile {
+  .mobilenothing {
     display: block;
   }
 
@@ -6927,7 +7029,7 @@ width: 100%;
     margin-top: 20px;
   }
 
-  .mobphone {
+  .mobphonenothing {
     font-size: 10px;
     padding-top: 10px;
     padding-left: 8px;
@@ -6935,14 +7037,14 @@ width: 100%;
     text-decoration: none;
   }
 
-  .english {
+  .englishnothing {
     font-size: 14px;
     color: #080C58;
     margin-left: -20px;
     margin-top: -10px;
   }
 
-  .hiddenbutton {
+  .hiddenbuttonnothing {
     width: 60px;
     height: 28px;
     padding-top: 5px;
@@ -7085,7 +7187,7 @@ width: 100%;
     color: #0A0E69;
     font-family: Ubuntu;
     margin-top: 90px;
-    margin-left: -20px;
+    margin-left: 10px;
   }
 
   .aboutimg1 {
@@ -7111,13 +7213,13 @@ width: 100%;
   }
 
   .contactheight {
-    height: 1700px;
+    height: 2000px;
     top: 145px;
   }
 
   .faqheight {
 
-    height: 1500px;
+    height: 1900px;
   }
 
   .cont {
@@ -7217,7 +7319,7 @@ width: 100%;
 
   .ppheight {
     position: relative;
-    height: 1700px;
+    height: 5000px;
   }
 
   .pptext {
@@ -7418,7 +7520,7 @@ width: 100%;
 
   .home {
     color: #000000;
-    margin-left: 30px;
+    margin-left: 10px;
     margin-top: 19px;
     font-family: Ubuntu;
     font-style: normal;
@@ -7429,7 +7531,7 @@ width: 100%;
 
   .visa {
     color: #000000;
-    margin-left: 30px;
+    margin-left: 10px;
     margin-top: 19px;
     font-family: Ubuntu;
     font-style: normal;
@@ -7440,7 +7542,7 @@ width: 100%;
 
   .services {
     color: #000000;
-    margin-left: 30px;
+    margin-left: 10px;
     margin-top: 19px;
     font-family: Ubuntu;
     font-style: normal;
@@ -7452,7 +7554,7 @@ width: 100%;
   .contact {
     width: 100%;
     color: #000000;
-    margin-left: 30px;
+    margin-left: 10px;
     margin-top: 19px;
     font-family: Ubuntu;
     font-style: normal;
@@ -7464,7 +7566,7 @@ width: 100%;
   .about {
     width: 100%;
     color: #000000;
-    margin-left: 30px;
+    margin-left: 10px;
     margin-top: 19px;
     font-family: Ubuntu;
     font-style: normal;
@@ -7489,11 +7591,11 @@ width: 100%;
     background-repeat: no-repeat;
   }
 
-  .new-section1__block21.layout {
+  .callssnothing {
     height: 80px;
   }
 
-  .free {
+  .freenothing {
     font-weight: 500;
     margin-left: 20px;
     margin-top: 18px;
@@ -7535,7 +7637,7 @@ width: 100%;
     margin-left: 0px;
   }
 
-  .text {
+  .textnothing {
     width: 249px;
     height: 16px;
     font-size: 12px;
@@ -7546,7 +7648,7 @@ width: 100%;
     color: white;
   }
 
-  .phone {
+  .phonenothing {
     display: none;
     color: white;
     padding-top: 0px;
@@ -7561,7 +7663,7 @@ width: 100%;
   }
 
   .shop {
-    margin-left: -55px;
+    margin-left: 0%;
     font-family: rubik;
     font-size: 15px;
   }
@@ -7647,26 +7749,30 @@ width: 100%;
 
   .list-group-horizontal {
     flex-direction: column;
-    margin-left: 0px;
+    margin-left: 2.5em;
+    margin-right: 2.5em;
   }
+  .mt-5 {
+    width: 100%;
+}
 
-  .img1 {
+ .img1 {
     height: 110px;
     width: 113px;
-    margin-left: 110px;
+    margin-left: 30%;
     border-radius: 0px;
   }
 
   .img2 {
-    margin-left: 110px;
+    margin-left: 30%;
   }
 
   .img3 {
-    margin-left: 110px;
+    margin-left: 30%;
   }
 
   .img4 {
-    margin-left: 110px;
+    margin-left: 30%;
   }
 
   .img5 {
@@ -7675,7 +7781,7 @@ width: 100%;
   }
 
   .img56 {
-    margin-left: 110px;
+    margin-left: 30%;
     margin-right: 146px;
   }
 
@@ -7685,23 +7791,22 @@ width: 100%;
     font-family: Ubuntu;
     margin-top: 10px;
     height: 20px;
-    width: 11px;
-    padding-left: 160px;
+    width: 100%;
+    padding-left: 50%;
   }
+  /* .mobilevideo {
+    display: block;
+    margin-top: -10%;
+    margin-left: 5%;
+    margin-right: 5%;
+} */
 
   #content1 {
-    margin-left: 40px;
+    margin-left: 18%;
   }
-
   .get {
-    margin-left: 50px;
-  }
-
-  .reviews {
-    width: 1020px;
-    margin-left: 95px;
-  }
-
+    margin-left: 0%;
+}
   #content2 {
     margin-left: 5px;
   }
@@ -7710,93 +7815,92 @@ width: 100%;
     content: "\a";
     white-space: inherit;
   }
-
+  .chee {
+    padding-left: 6%;
+    padding-top: 10%;
+}
   .img1h4 {
     color: #F1F5F6;
     font-family: Ubuntu;
     height: 20px;
-    padding-left: 70px;
+    padding-left: 15%;
     margin-top: 16px;
   }
 
   .img2h1 {
-    font-size: 16px;
-    text-align: justify;
+    font-size: 23px;
     color: #F1F5F6;
-    margin-left: 160px;
     font-family: Ubuntu;
     margin-top: 10px;
-    font-family: Rubik;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 23px;
-    line-height: 20px;
+    height: 20px;
+    width: 100%;
+    padding-left: 50%;
+    margin-left: 0;
   }
 
   .img2h4 {
     text-align: justify;
     color: #F1F5F6;
-    margin-left: 110px;
+    margin-left: 30%;
     font-family: Ubuntu
   }
 
   .img3h1 {
-    font-size: 16px;
-    text-align: justify;
+    font-size: 23px;
     color: #F1F5F6;
-    margin-left: 160px;
     font-family: Ubuntu;
     margin-top: 10px;
-    font-family: Rubik;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 23px;
-    line-height: 20px;
+    height: 20px;
+    width: 100%;
+    margin-left: 0;
+    padding-left: 50%;
   }
 
   .img3h4 {
     color: #F1F5F6;
-    margin-left: 60px;
+    margin-left: 15%;
     font-family: Ubuntu;
   }
 
   .img4h1 {
-    text-align: justify;
-    color: #F1F5F6;
-    margin-left: 160px;
-    margin-top: 10px;
-    font-family: Rubik;
-    font-style: normal;
-    font-weight: 500;
     font-size: 23px;
-    line-height: 20px;
+    color: #F1F5F6;
+    font-family: Ubuntu;
+    margin-top: 10px;
+    height: 20px;
+    width: 100%;
+    padding-left: 50%;
+    margin-left: 0;
   }
 
   .img4h4 {
     text-align: justify;
     color: #F1F5F6;
-    margin-left: 110px;
+    margin-left: 30%;
     font-family: Ubuntu
   }
 
   .img5h1 {
-    text-align: justify;
-    color: #F1F5F6;
-    margin-left: 160px;
-    margin-top: 10px;
-    font-family: Rubik;
-    font-style: normal;
-    font-weight: 500;
     font-size: 23px;
-    line-height: 20px;
+    color: #F1F5F6;
+    font-family: Ubuntu;
+    margin-top: 10px;
+    height: 20px;
+    width: 100%;
+    padding-left: 50%;
+    margin-left: 0;
   }
 
   .img5h4 {
     text-align: justify;
     color: #F1F5F6;
-    margin-left: 120px;
-    font-family: Ubuntu;
+    margin-left: 35%;
+    font-family: Ubuntu
   }
+  .reviews {
+    width: 100%;
+    margin-left: 20%;
+}
 
   .hands {
     margin-top: 104px;
@@ -8092,11 +8196,12 @@ width: 100%;
   }
 
   .formh1 {
-    padding-left: 44px;
+    padding-left: 0px;
     font-family: 'Ubuntu';
     font-style: normal;
     font-weight: 500;
     font-size: 24px;
+    text-align: center;
     color: #0A0E69;
   }
 
@@ -8224,11 +8329,13 @@ width: 100%;
     width: 260px;
     margin-left: 15px;
   }
+
   .vsbform2 {
     margin-top: 0px;
     width: 260px;
     margin-left: 15px;
   }
+
   .forgotpage {
     margin-top: 250px;
   }
@@ -8270,7 +8377,7 @@ width: 100%;
   /*RESET PASSWORD*/
   .resetpassword {
     position: relative;
-    height: 100vh;
+    height: 900px;
   }
 
   .resetform {
@@ -8550,7 +8657,7 @@ width: 100%;
 
   .nbvformheight {
     position: relative;
-    height: 1800px;
+    height: 2000px;
     top: 145px;
   }
 
@@ -8620,36 +8727,40 @@ width: 100%;
   }
 }
 
-@media(max-width:360px){
-  .mobile {
-    display: block;
-  }
-  .leadtext {
-    
-    width: 300px;
-}
-.flag {
-  display: block;
-  width: 25px;
-  height: 25px;
-  margin-left: -5px;
-  margin-top: -10px;
-}
-.section-team .single-person {
- 
-    width: 300px;
-    margin-left: -10px;
-}
-  .hiddenbutton {
+@media(max-width:360px) {
+  .mobilenothing {
     display: block;
   }
 
-  .call {
+  .leadtext {
+
+    width: 300px;
+  }
+
+  .flagnothing {
+    display: block;
+    width: 25px;
+    height: 25px;
+    margin-left: -5px;
+    margin-top: -10px;
+  }
+
+  .section-team .single-person {
+
+    width: 100%;
+    margin-left: 0px;
+  }
+
+  .hiddenbuttonnothing {
+    display: block;
+  }
+
+  .callnothing {
     margin-top: 10px;
     margin-left: -1px;
   }
 
-  .mobphone {
+  .mobphonenothing {
     font-size: 10px;
     padding-top: 10px;
     padding-left: 8px;
@@ -8657,14 +8768,14 @@ width: 100%;
     text-decoration: none;
   }
 
-  .english {
+  .englishnothing {
     font-size: 14px;
     color: #080C58;
     margin-left: 0px;
     margin-top: -10px;
   }
 
-  .hiddenbutton {
+  .hiddenbuttonnothing {
     width: 55px;
     height: 28px;
     padding-top: 5px;
@@ -8835,13 +8946,19 @@ width: 100%;
   }
 
   .contactheight {
-    height: 1700px;
+    height: 2000px;
     top: 145px;
   }
 
   .faqheight {
 
-    height: 1500px;
+    height: 1900px;
+  }
+
+  .policyh1 {
+    text-align: left;
+    padding-left: 28px;
+
   }
 
   .cont {
@@ -8942,20 +9059,22 @@ width: 100%;
 
   .ppheight {
     position: relative;
-    height: 1700px;
+    height: 5000px;
   }
 
   .pptext {
-    padding-left: 12px;
-    padding-top: 50px;
+    padding-left: 18px;
+    padding-top: 82px;
     padding-bottom: 90px;
-    font-size: 35px;
+    font-size: 30px;
     color: white;
     font-family: ubuntu;
   }
+
   .btn-review {
     margin: 0px 100px 100px;
-}
+  }
+
   .pptop {
     width: 100%;
     height: 278px;
@@ -8990,7 +9109,7 @@ width: 100%;
     color: #0A0E69;
     font-family: Ubuntu;
     margin-top: 50px;
-    margin-left: -20px;
+    margin-left: 10px;
   }
 
   .imagebn {
@@ -9147,7 +9266,7 @@ width: 100%;
 
   .home {
     color: #000000;
-    margin-left: 30px;
+    margin-left: 10px;
     margin-top: 19px;
     font-family: Ubuntu;
     font-style: normal;
@@ -9158,7 +9277,7 @@ width: 100%;
 
   .visa {
     color: #000000;
-    margin-left: 30px;
+    margin-left: 10px;
     margin-top: 19px;
     font-family: Ubuntu;
     font-style: normal;
@@ -9169,7 +9288,7 @@ width: 100%;
 
   .services {
     color: #000000;
-    margin-left: 30px;
+    margin-left: 10px;
     margin-top: 19px;
     font-family: Ubuntu;
     font-style: normal;
@@ -9181,7 +9300,7 @@ width: 100%;
   .contact {
     width: 100%;
     color: #000000;
-    margin-left: 30px;
+    margin-left: 10px;
     margin-top: 19px;
     font-family: Ubuntu;
     font-style: normal;
@@ -9193,7 +9312,7 @@ width: 100%;
   .about {
     width: 100%;
     color: #000000;
-    margin-left: 30px;
+    margin-left: 10px;
     margin-top: 19px;
     font-family: Ubuntu;
     font-style: normal;
@@ -9218,11 +9337,11 @@ width: 100%;
     background-repeat: no-repeat;
   }
 
-  .new-section1__block21.layout {
+  .callssnothing {
     height: 80px;
   }
 
-  .free {
+  .freenothing {
     font-weight: 500;
     margin-left: 20px;
     margin-top: 18px;
@@ -9264,7 +9383,7 @@ width: 100%;
     margin-left: 0px;
   }
 
-  .text {
+  .textnothing {
     width: 249px;
     height: 16px;
     font-size: 12px;
@@ -9275,7 +9394,7 @@ width: 100%;
     color: white;
   }
 
-  .phone {
+  .phonenothing {
     display: none;
     color: white;
     padding-top: 0px;
@@ -9290,7 +9409,7 @@ width: 100%;
   }
 
   .shop {
-    margin-left: -49px;
+    margin-left: -4.5%;
     font-family: rubik;
     font-size: 15px;
   }
@@ -9371,158 +9490,143 @@ width: 100%;
 
   .list-group-horizontal {
     flex-direction: column;
-    margin-left: 0px;
-  }
+    margin-left: 1.5em;
+    margin-right: 2em;
+}
+  .mt-5 {
+    width: 100%;
+}
 
-  .img1 {
-    height: 110px;
-    width: 113px;
-    margin-left: 110px;
-    border-radius: 0px;
-  }
+.img1 {
+  height: 110px;
+  width: 113px;
+  margin-left: 30%;
+  border-radius: 0px;
+}
 
-  .img2 {
-    margin-left: 110px;
-  }
+.img2 {
+  margin-left: 30%;
+}
 
-  .img3 {
-    margin-left: 110px;
-  }
+.img3 {
+  margin-left: 30%;
+}
 
-  .img4 {
-    margin-left: 110px;
-  }
+.img4 {
+  margin-left: 30%;
+}
 
-  .img5 {
-    margin-left: 0px;
-    margin-right: 6px;
-  }
+.img5 {
+  margin-left: 0px;
+  margin-right: 6px;
+}
 
-  .img56 {
-    margin-left: 110px;
-    margin-right: 146px;
-  }
+.img56 {
+  margin-left: 30%;
+  margin-right: 146px;
+}
 
-  .img1h1 {
-    font-size: 23px;
-    color: #F1F5F6;
-    font-family: Ubuntu;
-    margin-top: 10px;
-    height: 20px;
-    width: 11px;
-    padding-left: 160px;
-  }
+.img1h1 {
+  font-size: 23px;
+  color: #F1F5F6;
+  font-family: Ubuntu;
+  margin-top: 10px;
+  height: 20px;
+  width: 100%;
+  padding-left: 50%;
+}
 
-  #content1 {
-    margin-left: 40px;
+#content1 {
+  margin-left: 17%;
+}
 
-  }
+#content2 {
+  margin-left: 5px;
+}
 
-  .get {
-    margin-left: 40px;
-  }
+#content1::before {
+  content: "\a";
+  white-space: inherit;
+}
 
-  .reviews {
-    width: 1020px;
-    margin-left: 80px;
-  }
+.img1h4 {
+  color: #F1F5F6;
+  font-family: Ubuntu;
+  height: 20px;
+  padding-left: 15%;
+  margin-top: 16px;
+}
 
-  #content2 {
-    margin-left: 5px;
-  }
+.img2h1 {
+  font-size: 23px;
+  color: #F1F5F6;
+  font-family: Ubuntu;
+  margin-top: 10px;
+  height: 20px;
+  width: 100%;
+  padding-left: 50%;
+  margin-left: 0;
+}
 
-  #content1::before {
-    content: "\a";
-    white-space: inherit;
-  }
+.img2h4 {
+  text-align: justify;
+  color: #F1F5F6;
+  margin-left: 30%;
+  font-family: Ubuntu
+}
 
-  .img1h4 {
-    color: #F1F5F6;
-    font-family: Ubuntu;
-    height: 20px;
-    padding-left: 75px;
-    margin-top: 16px;
-  }
+.img3h1 {
+  font-size: 23px;
+  color: #F1F5F6;
+  font-family: Ubuntu;
+  margin-top: 10px;
+  height: 20px;
+  width: 100%;
+  margin-left: 0;
+  padding-left: 50%;
+}
 
-  .img2h1 {
-    font-size: 16px;
-    text-align: justify;
-    color: #F1F5F6;
-    margin-left: 160px;
-    font-family: Ubuntu;
-    margin-top: 10px;
-    font-family: Rubik;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 23px;
-    line-height: 20px;
+.img3h4 {
+  color: #F1F5F6;
+  margin-left: 2.3em;
+  font-family: Ubuntu;
+}
 
-  }
+.img4h1 {
+  font-size: 23px;
+  color: #F1F5F6;
+  font-family: Ubuntu;
+  margin-top: 10px;
+  height: 20px;
+  width: 100%;
+  padding-left: 50%;
+  margin-left: 0;
+}
 
-  .img2h4 {
-    text-align: justify;
-    color: #F1F5F6;
-    margin-left: 110px;
-    font-family: Ubuntu
-  }
+.img4h4 {
+  text-align: justify;
+  color: #F1F5F6;
+  margin-left: 30%;
+  font-family: Ubuntu
+}
 
-  .img3h1 {
-    font-size: 16px;
-    text-align: justify;
-    color: #F1F5F6;
-    margin-left: 160px;
-    font-family: Ubuntu;
-    margin-top: 10px;
-    font-family: Rubik;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 23px;
-    line-height: 20px;
-  }
+.img5h1 {
+  font-size: 23px;
+  color: #F1F5F6;
+  font-family: Ubuntu;
+  margin-top: 10px;
+  height: 20px;
+  width: 100%;
+  padding-left: 50%;
+  margin-left: 0;
+}
 
-  .img3h4 {
-    color: #F1F5F6;
-    margin-left: 60px;
-    font-family: Ubuntu;
-  }
-
-  .img4h1 {
-    text-align: justify;
-    color: #F1F5F6;
-    margin-left: 160px;
-    margin-top: 10px;
-    font-family: Rubik;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 23px;
-    line-height: 20px;
-  }
-
-  .img4h4 {
-    text-align: justify;
-    color: #F1F5F6;
-    margin-left: 110px;
-    font-family: Ubuntu
-  }
-
-  .img5h1 {
-    text-align: justify;
-    color: #F1F5F6;
-    margin-left: 160px;
-    margin-top: 10px;
-    font-family: Rubik;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 23px;
-    line-height: 20px;
-  }
-
-  .img5h4 {
-    text-align: justify;
-    color: #F1F5F6;
-    margin-left: 120px;
-    font-family: Ubuntu
-  }
+.img5h4 {
+  text-align: justify;
+  color: #F1F5F6;
+  margin-left: 30%;
+  font-family: Ubuntu
+}
 
   .hands {
     margin-top: 104px;
@@ -9577,9 +9681,21 @@ width: 100%;
   }
 
   .mt-99 {
-    margin-top: 129px;
+    margin-top: 9px;
   }
-
+  .reviews {
+    width: 100%;
+    margin-left: 18%;
+}
+.chee {
+  padding-left: 8%;
+  padding-top: 10%;
+}
+/* .mobilevideo {
+  display: block;
+  margin-top: -10%;
+  margin-left: 5%;
+} */
   .to {
     padding-right: 20px;
   }
@@ -9779,7 +9895,7 @@ width: 100%;
 
   .nbvformheight {
     position: relative;
-    height: 1800px;
+    height: 1900px;
     top: 145px;
   }
 
@@ -9810,16 +9926,18 @@ width: 100%;
     font-size: 16px;
     font-weight: 300;
     width: 342px;
+    text-align: justify;
   }
 
   .topdiv {
     margin: 24px auto;
     width: 330px;
   }
+
   .bibtn {
     margin-left: 15px;
 
-}
+  }
 
   .cardform {
     border: 1px solid #ffffff;
@@ -9827,20 +9945,22 @@ width: 100%;
   }
 
   .formh1 {
-    padding-left: 44px;
+    padding-left: 0px;
     font-family: 'Ubuntu';
     font-style: normal;
     font-weight: 500;
     font-size: 24px;
+    text-align: center;
     color: #0A0E69;
   }
 
   .formp {
-    padding: 28px 95px 0px 70px;
+    padding: 28px;
     font-family: Ubuntu;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
+    text-align: center;
     color: #0A0E69;
   }
 
@@ -9965,11 +10085,13 @@ width: 100%;
     width: 260px;
     margin-left: 15px;
   }
+
   .vsbform2 {
     margin-top: 0px;
     width: 260px;
     margin-left: 15px;
   }
+
   .forgotpage {
     margin-top: 250px;
   }
@@ -10006,7 +10128,7 @@ width: 100%;
   /*RESET PASSWORD*/
   .resetpassword {
     position: relative;
-    height: 800px;
+    height: 900px;
 
   }
 
@@ -10318,7 +10440,7 @@ width: 100%;
     font-size: 14px;
     font-weight: 400;
     color: #000000;
-    width:220px;
+    width: 220px;
   }
 
   .expiry {
@@ -10326,7 +10448,7 @@ width: 100%;
     font-size: 14px;
     font-weight: 400;
     color: #000000;
-    
+
   }
 
   .expiryinput {
@@ -10348,49 +10470,63 @@ width: 100%;
 
 }
 
-@media(max-width:320px){
-  .mobile {
+@media(max-width:320px) {
+  .mobilenothing {
     display: block;
   }
+
   .leadtext {
-    
-    width: 280px;
-}
-.section-team .single-person {
- 
-    width: 280px;
-    margin-left: -10px;
+
+    width: 100%;
+  }
+
+  .section-team .single-person {
+
+    width: 100%;
+    margin-left: 0px;
+  }
+  .whoweare {
+    font-size: 40px;
+    /* text-align: center; */
+    color: #0A0E69;
+    font-family: Ubuntu;
+    margin-top: 50px;
+    margin-left: 10px;
 }
 
-.flag {
+  .flagnothing {
     display: block;
     width: 25px;
     height: 25px;
     margin-left: -15px;
     margin-top: -10px;
-}
-.maillink
-{font-size: small;}
+  }
+
+  .maillink {
+    font-size: small;
+  }
+
   .sbpage {
     margin: 200px 10px 0px;
-}
-  .collapsebtn {
+  }
+
+  .collapsebtnnothing {
     margin-top: -10px;
     margin-right: 10px;
   }
 
-  .hiddenbutton {
+  .hiddenbuttonnothing {
     display: block;
   }
 
-  .english {
+  .englishnothing {
     font-size: 14px;
     color: #080C58;
     margin-left: -30px;
     margin-top: -10px;
   }
 
-  .formobile {
+  .formobilenothing {
     display: block;
     margin-left: 20px;
     width: 180px;
@@ -10407,7 +10543,7 @@ width: 100%;
     color: rgba(21, 4, 35, 0.21);
   }
 
-  .hiddenbutton {
+  .hiddenbuttonnothing {
     width: 60px;
     height: 28px;
     padding-top: 5px;
@@ -10423,7 +10559,7 @@ width: 100%;
     padding-left: 6px;
   }
 
-  .mobphone {
+  .mobphonenothing {
     font-size: 12px;
     padding-top: 10px;
     color: #ffffff;
@@ -10515,18 +10651,19 @@ width: 100%;
   }
 
   .contactheight {
-    height: 1700px;
+    height: 2050px;
     top: 145px;
   }
 
+
   .faqheight {
 
-    height: 1500px;
+    height: 1900px;
   }
 
   .cont {
     margin-top: 19px;
-    padding-left: 66px;
+    padding-left: 36px;
   }
 
   .contactcard {
@@ -10548,7 +10685,7 @@ width: 100%;
   .faqtext {
     padding-left: 34px;
     font-size: 16px;
-    padding-top: 70px;
+    padding-top: 40px;
   }
 
   .helptext {
@@ -10622,14 +10759,14 @@ width: 100%;
 
   .ppheight {
     position: relative;
-    height: 1700px;
+    height: 5400px;
   }
 
   .pptext {
-    padding-left: 15px;
-    padding-top: 45px;
+    padding-left: 18px;
+    padding-top: 82px;
     padding-bottom: 90px;
-    font-size: 35px;
+    font-size: 28px;
     color: white;
     font-family: ubuntu;
   }
@@ -10646,9 +10783,11 @@ width: 100%;
     width: 290px;
     margin: 87px auto;
   }
+
   .signinpage {
     margin-top: 195px;
-}
+  }
+
   .pptext2 {
     font-family: ubuntu;
     font-size: 16px;
@@ -10812,7 +10951,7 @@ width: 100%;
 
   .home {
     color: #000000;
-    margin-left: 30px;
+    margin-left: 10px;
     margin-top: 19px;
     font-family: Ubuntu;
     font-style: normal;
@@ -10823,7 +10962,7 @@ width: 100%;
 
   .visa {
     color: #000000;
-    margin-left: 30px;
+    margin-left: 10px;
     margin-top: 19px;
     font-family: Ubuntu;
     font-style: normal;
@@ -10834,7 +10973,7 @@ width: 100%;
 
   .services {
     color: #000000;
-    margin-left: 30px;
+    margin-left: 10px;
     margin-top: 19px;
     font-family: Ubuntu;
     font-style: normal;
@@ -10846,7 +10985,7 @@ width: 100%;
   .contact {
     width: 100%;
     color: #000000;
-    margin-left: 30px;
+    margin-left: 10px;
     margin-top: 19px;
     font-family: Ubuntu;
     font-style: normal;
@@ -10858,7 +10997,7 @@ width: 100%;
   .about {
     width: 100%;
     color: #000000;
-    margin-left: 30px;
+    margin-left: 10px;
     margin-top: 19px;
     font-family: Ubuntu;
     font-style: normal;
@@ -10867,7 +11006,7 @@ width: 100%;
     line-height: 16px;
   }
 
-  .call {
+  .callnothing {
     margin-top: 37px;
     margin-left: -215px;
     width: 150px;
@@ -10889,11 +11028,11 @@ width: 100%;
     background-repeat: no-repeat;
   }
 
-  .new-section1__block21.layout {
+  .callssnothing {
     height: 105px;
   }
 
-  .free {
+  .freenothing {
     font-weight: 500;
     margin-left: 20px;
     margin-top: 18px;
@@ -10935,7 +11074,7 @@ width: 100%;
     margin-left: 0px;
   }
 
-  .text {
+  .textnothing {
     width: 249px;
     height: 16px;
     font-size: 12px;
@@ -10946,7 +11085,7 @@ width: 100%;
     color: white;
   }
 
-  .phone {
+  .phonenothing {
     display: none;
     color: white;
     padding-top: 0px;
@@ -10961,7 +11100,7 @@ width: 100%;
   }
 
   .shop {
-    margin-left: -65px;
+    margin-left: -6%;
     font-family: rubik;
     font-size: 14px;
   }
@@ -11026,6 +11165,10 @@ width: 100%;
     margin-left: 0px;
   }
 
+  .leaderpageheight {
+    height: 6900px;
+  }
+
   .blue {
     background-color: #1161d9;
     color: white;
@@ -11037,147 +11180,166 @@ width: 100%;
 
   .list-group-horizontal {
     flex-direction: column;
-    margin-left: -20px;
+    margin-left: 0em;
+    margin-right: 1em;
   }
+  .mt-5 {
+    width: 100%;
+}
 
-  .img1 {
-    height: 110px;
-    width: 113px;
-    margin-left: 110px;
-    border-radius: 0px;
-  }
+.img1 {
+  height: 110px;
+  width: 113px;
+  margin-left: 30%;
+  border-radius: 0px;
+}
+.mt-99 {
+  margin-top: 20px;
+}
+.mag {
+  margin-top: 10%;
+  margin-bottom: 0;
+  margin-left: 6%;
+}
+.chee
+{
+  margin-left: 4%;
+  margin-top: 20%;
+}
+.img2 {
+  margin-left: 30%;
+}
 
-  .img2 {
-    margin-left: 110px;
-  }
+.img3 {
+  margin-left: 30%;
+}
 
-  .img3 {
-    margin-left: 110px;
-  }
+.img4 {
+  margin-left: 30%;
+}
 
-  .img4 {
-    margin-left: 110px;
-  }
+.img5 {
+  margin-left: 0px;
+  margin-right: 6px;
+}
 
-  .img5 {
-    margin-left: 0px;
-    margin-right: 6px;
-  }
+.img56 {
+  margin-left: 30%;
+  margin-right: 146px;
+}
 
-  .img56 {
-    margin-left: 110px;
-    margin-right: 146px;
-  }
+.img1h1 {
+  font-size: 23px;
+  color: #F1F5F6;
+  font-family: Ubuntu;
+  margin-top: 10px;
+  height: 20px;
+  width: 100%;
+  padding-left: 50%;
+}
 
-  .img1h1 {
-    font-size: 23px;
-    color: #F1F5F6;
-    font-family: Ubuntu;
-    margin-top: 10px;
-    height: 20px;
-    width: 11px;
-    padding-left: 160px;
-  }
+#content1 {
+  margin-left: 15%;
+}
 
-  #content1 {
-    margin-left: 40px;
-  }
+#content2 {
+  margin-left: 5px;
+}
 
-  #content2 {
-    margin-left: 5px;
-  }
+#content1::before {
+  content: "\a";
+  white-space: inherit;
+}
 
-  #content1::before {
-    content: "\a";
-    white-space: inherit;
-  }
+.img1h4 {
+  color: #F1F5F6;
+  font-family: Ubuntu;
+  height: 20px;
+  padding-left: 15%;
+  margin-top: 16px;
+}
 
-  .img1h4 {
-    color: #F1F5F6;
-    font-family: Ubuntu;
-    height: 20px;
-    padding-left: 75px;
-    margin-top: 16px;
-  }
+.img2h1 {
+  font-size: 23px;
+  color: #F1F5F6;
+  font-family: Ubuntu;
+  margin-top: 10px;
+  height: 20px;
+  width: 100%;
+  padding-left: 50%;
+  margin-left: 0;
+}
 
-  .img2h1 {
-    font-size: 16px;
-    text-align: justify;
-    color: #F1F5F6;
-    margin-left: 160px;
-    font-family: Ubuntu;
-    margin-top: 10px;
-    font-family: Rubik;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 23px;
-    line-height: 20px;
-  }
+.img2h4 {
+  text-align: justify;
+  color: #F1F5F6;
+  margin-left: 30%;
+  font-family: Ubuntu
+}
 
-  .img2h4 {
-    text-align: justify;
-    color: #F1F5F6;
-    margin-left: 110px;
-    font-family: Ubuntu
-  }
+.img3h1 {
+  font-size: 23px;
+  color: #F1F5F6;
+  font-family: Ubuntu;
+  margin-top: 10px;
+  height: 20px;
+  width: 100%;
+  margin-left: 0;
+  padding-left: 50%;
+}
 
-  .img3h1 {
-    font-size: 16px;
-    text-align: justify;
-    color: #F1F5F6;
-    margin-left: 160px;
-    font-family: Ubuntu;
-    margin-top: 10px;
-    font-family: Rubik;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 23px;
-    line-height: 20px;
-  }
+.img3h4 {
+  color: #F1F5F6;
+  margin-left: 14%;
+  font-family: Ubuntu;
+}
 
-  .img3h4 {
-    color: #F1F5F6;
-    margin-left: 60px;
-    font-family: Ubuntu;
-  }
+.img4h1 {
+  font-size: 23px;
+  color: #F1F5F6;
+  font-family: Ubuntu;
+  margin-top: 10px;
+  height: 20px;
+  width: 100%;
+  padding-left: 50%;
+  margin-left: 0;
+}
 
-  .img4h1 {
-    text-align: justify;
-    color: #F1F5F6;
-    margin-left: 160px;
-    margin-top: 10px;
-    font-family: Rubik;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 23px;
-    line-height: 20px;
-  }
+.img4h4 {
+  text-align: justify;
+  color: #F1F5F6;
+  margin-left: 30%;
+  font-family: Ubuntu
+}
 
-  .img4h4 {
-    text-align: justify;
-    color: #F1F5F6;
-    margin-left: 110px;
-    font-family: Ubuntu
-  }
+.img5h1 {
+  font-size: 23px;
+  color: #F1F5F6;
+  font-family: Ubuntu;
+  margin-top: 10px;
+  height: 20px;
+  width: 100%;
+  padding-left: 50%;
+  margin-left: 0;
+}
 
-  .img5h1 {
-    text-align: justify;
-    color: #F1F5F6;
-    margin-left: 160px;
-    margin-top: 10px;
-    font-family: Rubik;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 23px;
-    line-height: 20px;
-  }
-
-  .img5h4 {
-    text-align: justify;
-    color: #F1F5F6;
-    margin-left: 120px;
-    font-family: Ubuntu
-  }
+.img5h4 {
+  text-align: justify;
+  color: #F1F5F6;
+  margin-left: 35%;
+  font-family: Ubuntu
+}
+.chee {
+  margin-left: 4%;
+  margin-top: 10%;
+}
+.mt-99 {
+  margin-top: 10px;
+}
+.reviews {
+  width: 100%;
+  margin-left: 10%;
+}
 
   .hands {
     margin-top: 104px;
@@ -11445,21 +11607,23 @@ width: 100%;
   .formtext {
     height: 213px;
     color: #0A0E69;
-    padding-left: 19px;
     padding-top: 32px;
+    padding-left: 22px;
     font-family: ubuntu;
     font-size: 16px;
     font-weight: 300;
-    width: 295px;
+    width: 275px;
+    text-align: start;
   }
 
   .topdiv {
     margin: 54px auto;
     width: 280px;
   }
+
   .bibtn {
     margin-left: 15px;
-}
+  }
 
   .cardform {
     border: 1px solid #ffffff;
@@ -11467,20 +11631,26 @@ width: 100%;
   }
 
   .formh1 {
-    padding-left: 44px;
+    padding-left: 0px;
     font-family: 'Ubuntu';
     font-style: normal;
     font-weight: 500;
+    text-align: center;
     font-size: 24px;
     color: #0A0E69;
   }
 
+  .biwidth {
+    width: 280px;
+  }
+
   .formp {
-    padding: 28px 65px 0px 60px;
+    padding: 28px;
     font-family: Ubuntu;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
+    text-align: center;
     color: #0A0E69;
   }
 
@@ -11513,12 +11683,13 @@ width: 100%;
     height: 44px;
     width: 250px;
   }
+
   .code {
     width: 100px;
     margin-top: 7px;
     height: 44px;
     border: 1px solid #555555;
-}
+  }
 
   .firstname2 {
     border: 1px solid #555555;
@@ -11606,11 +11777,13 @@ width: 100%;
     width: 245px;
     margin-left: 15px;
   }
+
   .vsbform2 {
     margin-top: 0px;
     width: 245px;
     margin-left: 15px;
   }
+
   .vsbmt {
     margin-top: 17px;
   }
@@ -11632,9 +11805,11 @@ width: 100%;
     width: 245px;
     margin-left: 15px;
   }
+
   .divcover {
     margin-top: 250px;
-}
+  }
+
   .vsbformtextarea {
     width: 245px;
     height: 116px;
@@ -11650,7 +11825,7 @@ width: 100%;
   /*RESET PASSWORD*/
   .resetpassword {
     position: relative;
-    height: 800px;
+    height: 900px;
 
   }
 
@@ -11730,7 +11905,7 @@ width: 100%;
 
     padding-left: 18px;
     padding-top: 13px;
-    width:270px;
+    width: 270px;
   }
 
   .amountpaid {
@@ -11804,6 +11979,12 @@ width: 100%;
 
   .applyh22 {
     text-align: center;
+  }
+
+  .policyh1 {
+    text-align: left;
+    padding-left: 28px;
+
   }
 
   .applyh2p {
@@ -11901,10 +12082,6 @@ width: 100%;
     font-weight: 500;
   }
 
-  .reviews {
-    width: 1020px;
-    margin-left: 70px;
-  }
 
   .reviewservice {
     font-family: Ubuntu;
@@ -12086,61 +12263,77 @@ width: 100%;
 
 }
 
-@media(max-width:280px){
-  .mobile {
+@media(max-width:280px) {
+  .mobilenothing {
     display: block;
   }
+
   .leadtext {
-    width: 250px;
+    width: 100%;
+  }
+
+  .flagnothing {
+    width: 25px;
+    height: 25px;
+    margin-left: -5px;
+    margin-top: -10px;
+  }
+
+  .section-team .single-person {
+
+    width: 100%;
+    margin-left: 0px;
+  }
+  .whoweare {
+    font-size: 40px;
+    /* text-align: center; */
+    color: #0A0E69;
+    font-family: Ubuntu;
+    margin-top: 50px;
+    margin-left: 0px;
 }
-.flag {
-  width: 25px;
-  height: 25px;
-  margin-left: -5px;
-  margin-top: -10px;
-}
-.section-team .single-person {
- 
-  width: 250px;
-  margin-left: -10px;
-}
-  .maillink
-{font-size: small;}
+  .maillink {
+    font-size: small;
+  }
+
   .sbpage {
     margin: 200px 10px 0px;
-}
-  .collapsebtn {
+  }
+
+  .collapsebtnnothing {
     margin-top: -10px;
     margin-right: 10px;
   }
 
-  .hiddenbutton {
+  .hiddenbuttonnothing {
     display: block;
   }
 
-  .new-section1__block21.layout {
+  .callssnothing {
     height: 105px;
   }
 
-  .call {
+  .callnothing {
     margin-top: 37px;
     margin-left: -190px;
     width: 150px;
   }
-  .flag{
+
+  .flagnothing {
     width: 25px;
     height: 25px;
-    margin-left: 5px;
+    margin-left: -5px;
     margin-top: -10px;
-}
-.english {
-  font-size: 10px;
-  color: #080C58;
-  margin-left: -50px;
-  margin-top: -5px;
-}
+  }
 
-  .formobile {
+  .englishnothing {
+    font-size: 10px;
+    color: #080C58;
+    margin-left: -50px;
+    margin-top: -5px;
+  }
+
+  .formobilenothing {
     display: block;
     margin-left: 20px;
     width: 180px;
@@ -12157,7 +12350,7 @@ width: 100%;
     color: rgba(21, 4, 35, 0.21);
   }
 
-  .hiddenbutton {
+  .hiddenbuttonnothing {
     width: 60px;
     height: 28px;
     padding-top: 5px;
@@ -12173,7 +12366,7 @@ width: 100%;
     padding-left: 6px;
   }
 
-  .mobphone {
+  .mobphonenothing {
     font-size: 12px;
     padding-top: 10px;
     color: #ffffff;
@@ -12223,7 +12416,7 @@ width: 100%;
   }
 
   .contactheight {
-    height: 1700px;
+    height: 2100px;
     top: 145px;
   }
 
@@ -12234,7 +12427,7 @@ width: 100%;
 
   .cont {
     margin-top: 19px;
-    padding-left: 56px;
+    padding-left: 36px;
   }
 
   .contactcard {
@@ -12330,14 +12523,14 @@ width: 100%;
 
   .ppheight {
     position: relative;
-    height: 1700px;
+    height: 5400px;
   }
 
   .pptext {
-    padding-left: 12px;
-    padding-top: 45px;
+    padding-left: 10px;
+    padding-top: 82px;
     padding-bottom: 90px;
-    font-size: 35px;
+    font-size: 25px;
     color: white;
     font-family: ubuntu;
   }
@@ -12505,7 +12698,7 @@ width: 100%;
 
   .home {
     color: #000000;
-    margin-left: 30px;
+    margin-left: 10px;
     margin-top: 19px;
     font-family: Ubuntu;
     font-style: normal;
@@ -12516,7 +12709,7 @@ width: 100%;
 
   .visa {
     color: #000000;
-    margin-left: 30px;
+    margin-left: 10px;
     margin-top: 19px;
     font-family: Ubuntu;
     font-style: normal;
@@ -12527,7 +12720,7 @@ width: 100%;
 
   .services {
     color: #000000;
-    margin-left: 30px;
+    margin-left: 10px;
     margin-top: 19px;
     font-family: Ubuntu;
     font-style: normal;
@@ -12539,7 +12732,7 @@ width: 100%;
   .contact {
     width: 100%;
     color: #000000;
-    margin-left: 30px;
+    margin-left: 10px;
     margin-top: 19px;
     font-family: Ubuntu;
     font-style: normal;
@@ -12551,7 +12744,7 @@ width: 100%;
   .about {
     width: 100%;
     color: #000000;
-    margin-left: 30px;
+    margin-left: 10px;
     margin-top: 19px;
     font-family: Ubuntu;
     font-style: normal;
@@ -12576,7 +12769,7 @@ width: 100%;
     background-repeat: no-repeat;
   }
 
-  .free {
+  .freenothing {
     font-weight: 500;
     margin-left: 25px;
     margin-top: 18px;
@@ -12633,7 +12826,7 @@ width: 100%;
     color: white;
   }
 
-  .phone {
+  .phonenothing {
 
     color: white;
     padding-top: 18px;
@@ -12655,7 +12848,7 @@ width: 100%;
   }
 
   .shop {
-    margin-left: -70px;
+    margin-left: -8%;
     font-family: rubik;
   }
 
@@ -12699,6 +12892,10 @@ width: 100%;
     color: #ffffff;
   }
 
+  .leaderpageheight {
+    height: 7400px;
+  }
+
   .logoimg {
     margin-top: 8px;
 
@@ -12736,20 +12933,20 @@ width: 100%;
   .img1 {
     height: 110px;
     width: 113px;
-    margin-left: 60px;
+    margin-left: 65px;
     border-radius: 0px;
   }
 
   .img2 {
-    margin-left: 60px;
+    margin-left: 65px;
   }
 
   .img3 {
-    margin-left: 60px;
+    margin-left: 65px;
   }
 
   .img4 {
-    margin-left: 60px;
+    margin-left: 65px;
   }
 
   .img5 {
@@ -12758,7 +12955,7 @@ width: 100%;
   }
 
   .img56 {
-    margin-left: 60px;
+    margin-left: 65px;
     margin-right: 146px;
   }
 
@@ -12768,8 +12965,8 @@ width: 100%;
     font-family: Ubuntu;
     margin-top: 10px;
     height: 20px;
-    width: 11px;
-    padding-left: 110px;
+    width: 100%;
+    padding-left: 50%;
   }
 
   #content1 {
@@ -12794,17 +12991,13 @@ width: 100%;
   }
 
   .img2h1 {
-    font-size: 16px;
-    text-align: justify;
+    font-size: 23px;
     color: #F1F5F6;
-    margin-left: 110px;
     font-family: Ubuntu;
     margin-top: 10px;
-    font-family: Rubik;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 23px;
-    line-height: 20px;
+    height: 20px;
+    width: 100%;
+    padding-left: 50%;
   }
 
   .img2h4 {
@@ -12815,17 +13008,13 @@ width: 100%;
   }
 
   .img3h1 {
-    font-size: 16px;
-    text-align: justify;
+    font-size: 23px;
     color: #F1F5F6;
-    margin-left: 110px;
     font-family: Ubuntu;
     margin-top: 10px;
-    font-family: Rubik;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 23px;
-    line-height: 20px;
+    height: 20px;
+    width: 100%;
+    padding-left: 50%;
   }
 
   .img3h4 {
@@ -12835,15 +13024,13 @@ width: 100%;
   }
 
   .img4h1 {
-    text-align: justify;
-    color: #F1F5F6;
-    margin-left: 110px;
-    margin-top: 10px;
-    font-family: Rubik;
-    font-style: normal;
-    font-weight: 500;
     font-size: 23px;
-    line-height: 20px;
+    color: #F1F5F6;
+    font-family: Ubuntu;
+    margin-top: 10px;
+    height: 20px;
+    width: 100%;
+    padding-left: 50%;
   }
 
   .img4h4 {
@@ -12852,19 +13039,28 @@ width: 100%;
     margin-left: 60px;
     font-family: Ubuntu
   }
-
   .img5h1 {
-    text-align: justify;
-    color: #F1F5F6;
-    margin-left: 110px;
-    margin-top: 10px;
-    font-family: Rubik;
-    font-style: normal;
-    font-weight: 500;
     font-size: 23px;
-    line-height: 20px;
+    color: #F1F5F6;
+    font-family: Ubuntu;
+    margin-top: 10px;
+    height: 20px;
+    width: 100%;
+    padding-left: 50%;
   }
-
+  .chee {
+    margin-left: 1%;
+    margin-top: 15%;
+}
+.mag {
+  margin-top: 3%;
+  margin-bottom: 0;
+  margin-left: 0%;
+}
+.chee {
+  padding-left: 2%;
+  padding-top: 2%;
+}
   .img5h4 {
     text-align: justify;
     color: #F1F5F6;
@@ -13159,9 +13355,11 @@ width: 100%;
     margin: 24px auto;
     width: 250px;
   }
+
   .biwidth {
     width: 250px;
-}
+  }
+
   .cardform {
     border: 1px solid #ffffff;
     height: 1380px;
@@ -13213,12 +13411,13 @@ width: 100%;
     height: 44px;
     width: 220px;
   }
+
   .code {
     width: 100px;
     margin-top: 7px;
     height: 44px;
     border: 1px solid #555555;
-}
+  }
 
   .firstname2 {
     border: 1px solid #555555;
@@ -13306,14 +13505,21 @@ width: 100%;
     width: 230px;
     margin-left: 11px;
   }
+
   .vsbform2 {
     margin-top: 17px;
     width: 230px;
-    margin-left: 11px; 
+    margin-left: 11px;
   }
 
   .vsbmt {
     margin-top: 17px;
+  }
+
+  .policyh1 {
+    text-align: left;
+    padding-left: 8px;
+
   }
 
   .vsbformp {
@@ -13333,9 +13539,11 @@ width: 100%;
     width: 230px;
     margin-left: 11px;
   }
+
   .divcover {
     margin-top: 250px;
-}
+  }
+
   .vsbformtextarea {
     width: 230px;
     height: 116px;
@@ -13412,7 +13620,7 @@ width: 100%;
     width: 250px;
     margin: 32px auto;
   }
- 
+
   .applybtndiv {
     margin-left: 153px;
     margin-top: 30px;
@@ -13486,7 +13694,7 @@ width: 100%;
 
     padding-left: 18px;
     padding-top: 13px;
-    width:245px;
+    width: 245px;
   }
 
   .amountpaid {
@@ -13594,7 +13802,11 @@ width: 100%;
 
   .reviews {
     width: 1020px;
-    margin-left: 40px;
+    margin-left: 10%;
+  }
+  .reviews {
+    width: 1020px;
+    margin-left: 10%;
   }
 
   .reviewservice {

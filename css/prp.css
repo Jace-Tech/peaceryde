@@ -1,0 +1,211 @@
+      
+      @media (max-width: 2560px){
+
+        .divcover {
+            margin-top: 0PX;
+            margin-left: 5px;
+        }
+        .ppheight2 {
+            position: relative;
+            height: 7100px;
+        }
+
+    }
+    @media (max-width: 1024px){
+        .policyh2
+        {
+            text-align: left;
+            padding-left: 33px;
+            font-size: 20px;
+            margin-top: 20px;
+            color: #0A0E69;
+            font-weight: 400px;
+        }
+        .policyh1 {
+            text-align: left;
+            padding-left: 33px;
+            font-size: 25px;
+            margin-top: 20px;
+            color: #0A0E69;
+            font-weight: 500px;
+        }
+        .pptext3 {
+            padding: 8px 33px 8px 33px;
+            font-size: 16px;
+            font-family: ubuntu;
+        }
+        .divcover {
+            margin-top: 0PX;
+            margin-left: 5px;
+        }
+        .ppheight2 {
+            position: relative;
+            height: 7000px;
+        }
+
+    }
+
+    @media(max-width: 900px)
+    {
+       
+        .divcover {
+            margin-top: 0PX;
+            margin-left: 5px;
+        }
+        .ppheight2 {
+            position: relative;
+            height: 7000px;
+        }
+    }
+    @media (max-width: 853px){
+
+        .divcover {
+            margin-top: 0PX;
+        }
+        .ppheight2 {
+            position: relative;
+            height: 7000px;
+        }
+
+    }
+    @media (max-width: 800px){
+
+        .divcover {
+            margin-top: 0PX;
+        }
+        .ppheight2 {
+            position: relative;
+            height: 7400px;
+        }
+
+     }
+    @media (max-width: 640px){
+
+        .divcover {
+            margin-top: 0PX;
+        }
+        .ppheight2 {
+            position: relative;
+            height: 8400px;
+        }
+
+    }
+      @media (max-width: 600px){
+
+        .divcover {
+            margin-top: 0PX;
+        }
+        .ppheight2 {
+            position: relative;
+            height: 8300px;
+        }
+
+      }
+      @media (max-width: 540px){
+
+        .divcover {
+    margin-top: 0PX;
+    margin-left: 0;
+    margin-right: 0;
+}
+        .ppheight2 {
+            position: relative;
+            height: 10300px;
+        }
+
+     }
+     
+      
+      @media (max-width: 480px){
+        .pptext3 {
+            
+            padding: 8px 33px 8px 33px;
+        }
+        .divcover {
+            margin-top: 0PX;
+        }
+        .ppheight2 {
+            position: relative;
+            height: 11100px;
+        }
+        .policyh2
+        {
+            text-align: left;
+            padding-left: 33px;
+            font-size: 20px;
+            margin-top: 20px;
+            color: #0A0E69;
+            font-weight: 400px;
+        }
+        .divcover {
+    margin-top: 10PX;
+    margin-left: 0;
+    margin-right: 0;
+}
+      }
+
+
+      @media (max-width: 428px){
+        .ppheight2 {
+            position: relative;
+            height: 12700px;
+        }
+        .divcover {
+    margin-top: 10PX;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+      }
+      @media (max-width: 414px){
+        .ppheight2 {
+            position: relative;
+            height: 12800px;
+        }
+        .divcover {
+    margin-top: 140PX;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+      }
+      @media (max-width: 375px){
+        .pptext3 {
+            
+            font-size: 16px;
+            font-family: ubuntu;
+        }
+        .ppheight2 {
+            position: relative;
+            height: 12700px;
+        }
+        .divcover {
+            margin-top: 175px;
+        }
+
+      }
+      @media(max-width: 360px)
+      {
+        .ppheight2 {
+            position: relative;
+            height: 12550px;
+        }
+      }
+      @media(max-width: 320px)
+      {
+        .ppheight2 {
+            position: relative;
+            height: 14350px;
+        }
+      }
+      @media (max-width: 280px){
+        .pptext3 {
+        
+          font-size: 16px;
+          font-family: ubuntu;
+        }
+        .ppheight2 {
+            position: relative;
+            height: 17000px;
+        }
+      }

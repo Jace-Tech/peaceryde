@@ -29,7 +29,7 @@ $uploads = new Upload($connect);
   <link rel="stylesheet" type="text/css" href="css/Laptops.css">
   <link rel="stylesheet" type="text/css" href="css/smallscreen800.css">
   <link rel="stylesheet" type="text/css" href="css/responsive.css">
-
+  <link rel="stylesheet" type="text/css" href="css/header.css">
   <script type="text/javascript" src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script type="text/javascript" src="https://unpkg.com/headroom.js@0.12.0/dist/headroom.min.js"></script>
   <script src="https://cdn.jsdelivr.net/gh/px2code/posize/build/v1.00.3.js"></script>
@@ -63,25 +63,25 @@ $uploads = new Upload($connect);
 
     <section class=" new-section1__group layout2">
 
-      <div class="background new-section1__cover-block layout ">
-        <div class="movement">
-          <h4 class="new-section1__highlights5-box layout">
-            <pre class="new-section1__highlights5 shop">
-                Your One-stop shop for </pre>
-          </h4>
-          <h1 class="bannertext new-section1__hero-title2 layout ">
-            Nigeria Visa and <br>Business Incorporation
-          </h1>
-          <h2 class="new-section1__medium-title layout made">
-            Made easy, fast and convenient!
-          </h2>
-          <div class="new-section1__block11 layout applys">
-            <a href="apply.php" class="btn applybtn">Apply NOW</a>
+    <div class="background new-section1__cover-block layout ">
+      <div class="movement">
+      <h4 class="new-section1__highlights5-box layout">
+        <pre class="new-section1__highlights5 shop">
+          Your One-stop shop for </pre>
+      </h4>
+      <h1 class="bannertext new-section1__hero-title2 layout ">
+        Nigeria Visa and <br>Business Incorporation
+      </h1>
+      <h2 class="new-section1__medium-title layout made">
+        Made easy, fast and convenient!
+      </h2>
+      <div class="new-section1__block11 layout applys">
+        <a href="SBForm.html" class="btn applybtn">Apply NOW</a>
 
-            <!-- <h5 class="new-section1__highlights1 layout">Apply NOW</h5> -->
-          </div>
-        </div>
+        <!-- <h5 class="new-section1__highlights1 layout">Apply NOW</h5> -->
       </div>
+    </div>
+  </div>
 
 
     </section>
@@ -91,26 +91,25 @@ $uploads = new Upload($connect);
     <section class="new-section2__section2 layout">
       <div class="movement">
         <div class="new-section2__flex layout row">
-          <div class="new-section2__flex-spacer"></div>
+          
           <div class="new-section2__flex-item col-md-4 col-sm-4 col-lg-4">
             <div class="new-section2__block12 layout">
               <div class="new-section2__flex6 layout">
                 <h5 class="new-section2__highlights6 layout">
-                  Nigeria business Visa On Arrival
+                  Nigeria Business Visa On Arrival
                 </h5>
-                <div style=" border-top: 1px solid #000080; height: 1px; margin-top: 10px; margin-bottom: 25px;">
-                </div>
+                <div style=" border-top: 1px solid #000080; height: 1px; margin-top: 10px; margin-bottom: 25px;"></div>
                 <!-- <hr style="border: 1px solid #060a5c; "> -->
                 <div style="display: flex;
                 justify-content: center;">
                   <img src="assets/Passport.png" width="139">
                 </div>
-
+  
                 <div class="new-section2__paragraph-body1-box layout">
-                  <pre class="new-section2__paragraph-body1">VOA is required for persons of legal age intending to come to Nigeria for business, and pleasure. The VOA immigration approval is needed for visa issuance in Nigeria.</pre>
+                  <pre class="new-section2__paragraph-body1">Business VOA is required for persons of legal age intending to come to Nigeria for business, meeting, conference etc. The Business VOA immigration approval is needed for visa issuance in Nigeria.</pre>
                 </div>
                 <div class="new-section2__block13a layout">
-                  <a href="NBVForm.php" class="btn" style="font-family: Ubuntu;
+                  <a href="NBVForm.html" class="btn" style="font-family: Ubuntu;
                   font-style: normal;
                   font-weight: normal;
                   font-size: 14px;
@@ -120,26 +119,25 @@ $uploads = new Upload($connect);
               </div>
             </div>
           </div>
-          <div class="new-section2__flex-spacer1"></div>
+          
           <div class="new-section2__flex-item col-md-4 col-sm-4 col-lg-4">
             <div class="new-section2__block12 layout">
               <div class="new-section2__flex6 layout">
                 <h5 class="new-section2__highlights6 layout">
-                  Nigeria Temporary Work Permit ( TWP)
+                  Nigeria Temporary Work Permit (TWP)
                 </h5>
-                <div style=" border-top: 1px solid #060a5c; height: 1px; margin-top: 10px; margin-bottom: 25px;">
-                </div>
+                <div style=" border-top: 1px solid #060a5c; height: 1px; margin-top: 10px; margin-bottom: 25px;"></div>
                 <!-- <hr style="border: 1px solid #060a5c; "> -->
                 <div style="display: flex;
                 justify-content: center;">
                   <img src="assets/twp.png" width="139">
                 </div>
-
+  
                 <div class="new-section2__paragraph-body1-box layout">
                   <pre class="new-section2__paragraph-body1">TWP is required for persons of legal age intending to work in Nigeria. The TWP immigration approval is a prerequisite for issuance of a TWP visa in a Nigerian embassy abroad.</pre>
                 </div>
                 <div class="new-section2__block13 layout">
-                  <a href="NTWPForm.php" class="btn" style="font-family: Ubuntu;
+                  <a href="NTWPForm.html" class="btn" style="font-family: Ubuntu;
                   font-style: normal;
                   font-weight: normal;
                   font-size: 14px;
@@ -149,26 +147,25 @@ $uploads = new Upload($connect);
               </div>
             </div>
           </div>
-          <div class="new-section2__flex-spacer1"></div>
+          
           <div class="new-section2__flex-item col-md-4 col-sm-4 col-lg-4">
             <div class="new-section2__block12 layout">
               <div class="new-section2__flex6 layout">
                 <h5 class="new-section2__highlights6 layout">
                   Nigeria Business Incorporation
                 </h5>
-                <div style=" border-top: 1px solid #060a5c; height: 1px; margin-top: 10px; margin-bottom: 25px;">
-                </div>
+                <div style=" border-top: 1px solid #060a5c; height: 1px; margin-top: 10px; margin-bottom: 25px;"></div>
                 <!-- <hr style="border: 1px solid #060a5c; "> -->
                 <div style="display: flex;
                 justify-content: center;">
                   <img src="assets/nbi.png" width="139" height="112">
                 </div>
-
+  
                 <div class="new-section2__paragraph-body1-box layout">
                   <pre class="new-section2__paragraph-body1">This is applicable to anyone of legal age intending to register a business in Nigeria.</pre>
                 </div>
                 <div class="new-section2__block13b layout">
-                  <a href="BIForm.php" class="btn" style="font-family: Ubuntu;
+                  <a href="BIForm.html" class="btn" style="font-family: Ubuntu;
                   font-style: normal;
                   font-weight: normal;
                   font-size: 14px;
@@ -176,7 +173,7 @@ $uploads = new Upload($connect);
                   color: #FBFCFB;">Apply</a>
                 </div>
               </div>
-
+  
             </div>
           </div>
         </div>
@@ -184,122 +181,7 @@ $uploads = new Upload($connect);
 
     </section>
     <comment content="======= End section2 =======" break="true"></comment><!-- ======= section3 ======= -->
-    <!-- <section class="new-section3__section3 layout row">
-        
-          <div class="col-md-12">
-            <div class="new-section3__group layout " style="background-color: white;">
-              
-              <div class="new-section3__block2 layout">
-                <div class="">
-                  <div class="new-section3__block2-spacer"></div>
-                <div class="width">
-                  <div class="row indexdivrow">
-                    <div class="col-md-3 col-xs-3 col-sm-3">
-                      <div class="new-section3__block2-item">
-                        <div class="new-section3__block3 layout">
-                          <div class="new-section3__block3-item">
-                            <div
-                              style="background-image: url(assets/nationality.png); background-repeat: no-repeat;"
-                              class="new-section3__icon4 layout">
-                            </div>
-                          </div>
-                          <div class="new-section3__block3-spacer"></div>
-                          <div class="new-section3__block3-item1">
-                            <div class="new-section3__flex9 layout">
-                              <h5 class="new-section3__highlights2 layout">
-                                Nationality
-                              </h5>
-                              <select class="form-select" style="border: 1px solid transparent; padding: 0; font-weight: 600;"
-                                aria-label="Default select example">
-                                <option selected>Please Select</option>
-                                <option value="1">One</option>
-                                <option value="2">Two</option>
-                                <option value="3">Three</option>
-                              </select>
-    
-                            </div>
-                          </div>
-    
-                        </div>
-                      </div>
-                    </div>
-        
-                    <div class="col-md-3 col-xs-3 col-sm-3 ml-80">
-                      <div class="new-section3__block2-item1">
-                        <div class="new-section3__block5 layout">
-                          <div class="new-section3__block5-item">
-                            <div style="background-image: url(assets/location.png); background-repeat: no-repeat;"
-                              class="new-section3__icon4 layout">
-                            </div>
-                          </div>
-                          <div class="new-section3__block5-spacer"></div>
-                          <div class="new-section3__block5-item1">
-                            <div class="new-section3__flex10 layout">
-                              <h5 class="new-section3__highlights2 layout1">
-                                Current Location
-                              </h5>
-                              <select class="form-select" style="border: 1px solid transparent; padding: 0;font-weight: 600;"
-                                aria-label="Default select example">
-                                <option selected>Please Select</option>
-                                <option value="1">One</option>
-                                <option value="2">Two</option>
-                                <option value="3">Three</option>
-                              </select>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-        
-                    <div class="col-md-3 col-xs-3 col-sm-3 ml-80" >
-                      <div class="new-section3__block2-item2">
-                        <div class="new-section3__block7 layout">
-                          <div class="new-section3__block5-item">
-                            <div style="background-image: url(assets/purpose.png); background-repeat: no-repeat;"
-                              class="new-section3__icon4 layout">
-                            </div>
-                          </div>
-                          <div class="new-section3__block7-spacer"></div>
-                          <div class="new-section3__block7-item1">
-                            <div class="new-section3__flex9 layout">
-                              <h5 class="new-section3__highlights2 layout2">Purpose</h5>
-                              <h5 class="new-section3__highlights31-box layout1">
-                                <select class="form-select" style="border: 1px solid transparent; padding: 0;font-weight: 600;"
-                                  aria-label="Default select example">
-                                  <option selected>Please Select</option>
-                                  <option value="1">One</option>
-                                  <option value="2">Two</option>
-                                  <option value="3">Three</option>
-                                </select>
-                              </h5>
-                            </div>
-                          </div>
-        
-                        </div>
-                      </div>
-                    </div>
-        
-                  </div>
-                </div>
-            
-                </div>
-                <div class="row ">
-                  <button class="btn blue">
-                    <div class="row">
-                      <div class="col-md-9">
-                        <h4 class="new-section3__highlights4 layout">Get started</h4>
-                      </div>
-                      <div class="col-md-3"> <img src="assets/arrow.png" style="margin-top: 10px;
-                        margin-right: 50px;"></div>
-                    </div>
-    
-                  </button>
-                </div>
-    
-              </div>
-            </div>
-          </div>
-      </section> -->
+  
     <comment content="======= End section3 =======" break="true"></comment><!-- ======= section4 ======= -->
 
     <section class="">
@@ -421,18 +303,18 @@ $uploads = new Upload($connect);
               <div class="new-section5__content-box1 layout cardwidth">
                 <!-- <img src="assets/800.png" width="84" class="cardimg"> -->
                 <svg width="89" height="89" class="cardimg" viewBox="0 0 89 89" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M89 44.5C89 69.0767 69.0767 89 44.5 89C19.9233 89 0 69.0767 0 44.5C0 19.9233 19.9233 0 44.5 0C69.0767 0 89 19.9233 89 44.5Z" fill="#F1F5F6" />
+                  <path d="M89 44.5C89 69.0767 69.0767 89 44.5 89C19.9233 89 0 69.0767 0 44.5C0 19.9233 19.9233 0 44.5 0C69.0767 0 89 19.9233 89 44.5Z" fill="#F1F5F6"/>
                   <g clip-path="url(#clip0_0_1)">
-                    <rect width="41.86" height="36.6229" transform="translate(24 26)" fill="#0A0E69" />
-                    <path d="M63.2402 62.6229H26.6173C25.9088 62.6229 25.2957 62.364 24.778 61.8463C24.2603 61.3286 24.0014 60.7155 24.0014 60.007V33.8478C24.0014 33.112 24.2535 32.4921 24.7576 31.988C25.2617 31.4839 25.8816 31.2318 26.6173 31.2318H29.2332V33.8478C29.2332 35.619 29.7169 36.9337 30.6843 37.7921C31.6516 38.6504 32.9119 39.0796 34.4651 39.0796C35.991 39.0796 37.2445 38.63 38.2255 37.7308C39.2064 36.8315 39.6969 35.5372 39.6969 33.8478V31.2318H50.1606V33.8478C50.1606 35.619 50.6443 36.9337 51.6116 37.7921C52.579 38.6504 53.8393 39.0796 55.3925 39.0796C56.9457 39.0796 58.2059 38.6504 59.1733 37.7921C60.1406 36.9337 60.6243 35.619 60.6243 33.8478V31.2318H63.2402C63.976 31.2318 64.5959 31.4839 65.1 31.988C65.6041 32.4921 65.8561 33.112 65.8561 33.8478V60.007C65.8561 60.7427 65.6041 61.3626 65.1 61.8667C64.5959 62.3708 63.976 62.6229 63.2402 62.6229ZM39.6969 55.0204V52.8541C41.4409 51.8458 42.3129 49.5569 42.3129 45.9873C42.3129 44.5703 41.8224 43.5008 40.8414 42.7787C39.8604 42.0566 38.607 41.6955 37.081 41.6955C35.5551 41.6955 34.3016 42.0566 33.3206 42.7787C32.3397 43.5008 31.8492 44.5703 31.8492 45.9873C31.8492 49.3934 32.7211 51.6551 34.4651 52.7723V55.0204C32.9391 55.3201 31.6925 55.8242 30.7251 56.5327C29.7578 57.2412 29.2605 58.0314 29.2332 58.9034C29.2332 59.6391 31.8492 60.007 37.081 60.007C42.3129 60.007 44.9288 59.6391 44.9288 58.9034C44.9015 58.0314 44.4042 57.2412 43.4369 56.5327C42.4695 55.8242 41.2229 55.3201 39.6969 55.0204ZM61.9323 44.3114H51.4686C51.1143 44.3114 50.8078 44.4409 50.5489 44.6997C50.2901 44.9586 50.1606 45.2652 50.1606 45.6194C50.1606 45.9736 50.2901 46.2802 50.5489 46.5391C50.8078 46.7979 51.1143 46.9274 51.4686 46.9274H61.9323C62.2865 46.9274 62.5931 46.7979 62.8519 46.5391C63.1108 46.2802 63.2402 45.9736 63.2402 45.6194C63.2402 45.2652 63.1108 44.9586 62.8519 44.6997C62.5931 44.4409 62.2865 44.3114 61.9323 44.3114ZM50.1606 50.8513C50.1606 51.2055 50.2901 51.512 50.5489 51.7709C50.8078 52.0298 51.1143 52.1592 51.4686 52.1592H56.7004C57.0547 52.1592 57.3612 52.0298 57.6201 51.7709C57.8789 51.512 58.0084 51.2055 58.0084 50.8513C58.0084 50.497 57.8789 50.1905 57.6201 49.9316C57.3612 49.6727 57.0547 49.5433 56.7004 49.5433H51.4686C51.1143 49.5433 50.8078 49.6727 50.5489 49.9316C50.2901 50.1905 50.1606 50.497 50.1606 50.8513ZM61.9323 54.7751H51.4686C51.1143 54.7751 50.8078 54.9046 50.5489 55.1634C50.2901 55.4223 50.1606 55.7289 50.1606 56.0831C50.1606 56.4373 50.2901 56.7439 50.5489 57.0028C50.8078 57.2616 51.1143 57.3911 51.4686 57.3911H61.9323C62.2865 57.3911 62.5931 57.2616 62.8519 57.0028C63.1108 56.7439 63.2402 56.4373 63.2402 56.0831C63.2402 55.7289 63.1108 55.4223 62.8519 55.1634C62.5931 54.9046 62.2865 54.7751 61.9323 54.7751ZM55.3925 36.4637C54.684 36.4637 54.0709 36.2048 53.5531 35.6871C53.0354 35.1693 52.7765 34.5562 52.7765 33.8478V28.6159C52.7765 27.8802 53.0286 27.2603 53.5327 26.7562C54.0368 26.2521 54.6567 26 55.3925 26C56.1282 26 56.7481 26.2521 57.2522 26.7562C57.7563 27.2603 58.0084 27.8802 58.0084 28.6159V33.8478C58.0084 34.5835 57.7563 35.2034 57.2522 35.7075C56.7481 36.2116 56.1282 36.4637 55.3925 36.4637ZM34.4651 36.4637C33.7566 36.4637 33.1435 36.2048 32.6258 35.6871C32.108 35.1693 31.8492 34.5562 31.8492 33.8478V28.6159C31.8492 27.8802 32.1012 27.2603 32.6053 26.7562C33.1094 26.2521 33.7294 26 34.4651 26C35.2008 26 35.8207 26.2521 36.3248 26.7562C36.829 27.2603 37.081 27.8802 37.081 28.6159V33.8478C37.081 34.5835 36.829 35.2034 36.3248 35.7075C35.8207 36.2116 35.2008 36.4637 34.4651 36.4637Z" fill="#F1F5F6" />
+                  <rect width="41.86" height="36.6229" transform="translate(24 26)" fill="#0A0E69"/>
+                  <path d="M63.2402 62.6229H26.6173C25.9088 62.6229 25.2957 62.364 24.778 61.8463C24.2603 61.3286 24.0014 60.7155 24.0014 60.007V33.8478C24.0014 33.112 24.2535 32.4921 24.7576 31.988C25.2617 31.4839 25.8816 31.2318 26.6173 31.2318H29.2332V33.8478C29.2332 35.619 29.7169 36.9337 30.6843 37.7921C31.6516 38.6504 32.9119 39.0796 34.4651 39.0796C35.991 39.0796 37.2445 38.63 38.2255 37.7308C39.2064 36.8315 39.6969 35.5372 39.6969 33.8478V31.2318H50.1606V33.8478C50.1606 35.619 50.6443 36.9337 51.6116 37.7921C52.579 38.6504 53.8393 39.0796 55.3925 39.0796C56.9457 39.0796 58.2059 38.6504 59.1733 37.7921C60.1406 36.9337 60.6243 35.619 60.6243 33.8478V31.2318H63.2402C63.976 31.2318 64.5959 31.4839 65.1 31.988C65.6041 32.4921 65.8561 33.112 65.8561 33.8478V60.007C65.8561 60.7427 65.6041 61.3626 65.1 61.8667C64.5959 62.3708 63.976 62.6229 63.2402 62.6229ZM39.6969 55.0204V52.8541C41.4409 51.8458 42.3129 49.5569 42.3129 45.9873C42.3129 44.5703 41.8224 43.5008 40.8414 42.7787C39.8604 42.0566 38.607 41.6955 37.081 41.6955C35.5551 41.6955 34.3016 42.0566 33.3206 42.7787C32.3397 43.5008 31.8492 44.5703 31.8492 45.9873C31.8492 49.3934 32.7211 51.6551 34.4651 52.7723V55.0204C32.9391 55.3201 31.6925 55.8242 30.7251 56.5327C29.7578 57.2412 29.2605 58.0314 29.2332 58.9034C29.2332 59.6391 31.8492 60.007 37.081 60.007C42.3129 60.007 44.9288 59.6391 44.9288 58.9034C44.9015 58.0314 44.4042 57.2412 43.4369 56.5327C42.4695 55.8242 41.2229 55.3201 39.6969 55.0204ZM61.9323 44.3114H51.4686C51.1143 44.3114 50.8078 44.4409 50.5489 44.6997C50.2901 44.9586 50.1606 45.2652 50.1606 45.6194C50.1606 45.9736 50.2901 46.2802 50.5489 46.5391C50.8078 46.7979 51.1143 46.9274 51.4686 46.9274H61.9323C62.2865 46.9274 62.5931 46.7979 62.8519 46.5391C63.1108 46.2802 63.2402 45.9736 63.2402 45.6194C63.2402 45.2652 63.1108 44.9586 62.8519 44.6997C62.5931 44.4409 62.2865 44.3114 61.9323 44.3114ZM50.1606 50.8513C50.1606 51.2055 50.2901 51.512 50.5489 51.7709C50.8078 52.0298 51.1143 52.1592 51.4686 52.1592H56.7004C57.0547 52.1592 57.3612 52.0298 57.6201 51.7709C57.8789 51.512 58.0084 51.2055 58.0084 50.8513C58.0084 50.497 57.8789 50.1905 57.6201 49.9316C57.3612 49.6727 57.0547 49.5433 56.7004 49.5433H51.4686C51.1143 49.5433 50.8078 49.6727 50.5489 49.9316C50.2901 50.1905 50.1606 50.497 50.1606 50.8513ZM61.9323 54.7751H51.4686C51.1143 54.7751 50.8078 54.9046 50.5489 55.1634C50.2901 55.4223 50.1606 55.7289 50.1606 56.0831C50.1606 56.4373 50.2901 56.7439 50.5489 57.0028C50.8078 57.2616 51.1143 57.3911 51.4686 57.3911H61.9323C62.2865 57.3911 62.5931 57.2616 62.8519 57.0028C63.1108 56.7439 63.2402 56.4373 63.2402 56.0831C63.2402 55.7289 63.1108 55.4223 62.8519 55.1634C62.5931 54.9046 62.2865 54.7751 61.9323 54.7751ZM55.3925 36.4637C54.684 36.4637 54.0709 36.2048 53.5531 35.6871C53.0354 35.1693 52.7765 34.5562 52.7765 33.8478V28.6159C52.7765 27.8802 53.0286 27.2603 53.5327 26.7562C54.0368 26.2521 54.6567 26 55.3925 26C56.1282 26 56.7481 26.2521 57.2522 26.7562C57.7563 27.2603 58.0084 27.8802 58.0084 28.6159V33.8478C58.0084 34.5835 57.7563 35.2034 57.2522 35.7075C56.7481 36.2116 56.1282 36.4637 55.3925 36.4637ZM34.4651 36.4637C33.7566 36.4637 33.1435 36.2048 32.6258 35.6871C32.108 35.1693 31.8492 34.5562 31.8492 33.8478V28.6159C31.8492 27.8802 32.1012 27.2603 32.6053 26.7562C33.1094 26.2521 33.7294 26 34.4651 26C35.2008 26 35.8207 26.2521 36.3248 26.7562C36.829 27.2603 37.081 27.8802 37.081 28.6159V33.8478C37.081 34.5835 36.829 35.2034 36.3248 35.7075C35.8207 36.2116 35.2008 36.4637 34.4651 36.4637Z" fill="#F1F5F6"/>
                   </g>
                   <defs>
-                    <clipPath id="clip0_0_1">
-                      <rect width="41.86" height="36.6229" fill="white" transform="translate(24 26)" />
-                    </clipPath>
+                  <clipPath id="clip0_0_1">
+                  <rect width="41.86" height="36.6229" fill="white" transform="translate(24 26)"/>
+                  </clipPath>
                   </defs>
-                </svg>
-
+                  </svg>
+                  
                 <h1 class="new-section5__hero-title4 layout cardh1" data-max="800">+</h1>
                 <h5 class="new-section5__highlights1 layout cardh5">
                   We have processed over 800 Nigeria Business Visas
@@ -440,47 +322,47 @@ $uploads = new Upload($connect);
               </div>
             </div>
           </div>
-          <div class="new-section5__flex3-spacer"></div>
+          
           <div class="get">
             <div class="new-section5__flex3-item">
               <div class="new-section5__content-box1 layout cardwidth">
                 <!-- <img src="assets/1000.png" width="84" class="cardimg"> -->
                 <svg width="89" height="89" class="cardimg" viewBox="0 0 89 89" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M89 44.5C89 69.0767 69.0767 89 44.5 89C19.9233 89 0 69.0767 0 44.5C0 19.9233 19.9233 0 44.5 0C69.0767 0 89 19.9233 89 44.5Z" fill="#F1F5F6" />
+                  <path d="M89 44.5C89 69.0767 69.0767 89 44.5 89C19.9233 89 0 69.0767 0 44.5C0 19.9233 19.9233 0 44.5 0C69.0767 0 89 19.9233 89 44.5Z" fill="#F1F5F6"/>
                   <g clip-path="url(#clip0_0_1)">
-                    <path d="M43.3137 27.9243C42.6335 27.9243 41.9271 28.1598 41.43 28.6569C40.9329 29.154 40.6974 29.8603 40.6974 30.5406V31.8487H28.9243V58.0112H43.5753C43.4053 57.174 43.3137 56.2975 43.3137 55.3949H31.5406V46.8136C32.3124 47.2584 33.2019 47.5462 34.1568 47.5462H45.943C46.6756 46.552 47.5651 45.6625 48.5593 44.9299H34.1568C32.6001 44.9299 31.5406 43.8704 31.5406 42.3137V34.4649H60.3193V42.3137C60.3193 42.523 60.3062 42.7192 60.267 42.9023C61.2088 43.1901 62.0984 43.5826 62.9356 44.0666V31.8487H51.1624V30.5406C51.1624 29.8603 50.927 29.154 50.4299 28.6569C49.9328 28.1598 49.2264 27.9243 48.5462 27.9243H43.3137ZM43.3137 30.5406H48.5462V31.8487H43.3137V30.5406ZM36.7731 39.6974V43.6218H39.3893V39.6974H36.7731ZM52.4706 39.6974V42.9154C53.3224 42.6492 54.1989 42.4695 55.0868 42.3791V39.6974H52.4706ZM56.3949 44.9299C50.6261 44.9299 45.9299 49.6261 45.9299 55.3949C45.9299 61.1638 50.6261 65.8599 56.3949 65.8599C62.1638 65.8599 66.8599 61.1638 66.8599 55.3949C66.8599 49.6261 62.1638 44.9299 56.3949 44.9299ZM56.3949 47.5462C60.7379 47.5462 64.2437 51.052 64.2437 55.3949C64.2437 59.7379 60.7379 63.2437 56.3949 63.2437C52.052 63.2437 48.5462 59.7379 48.5462 55.3949C48.5462 51.052 52.052 47.5462 56.3949 47.5462ZM55.0868 48.8543V56.7031H61.6274V54.0868H57.7031V48.8543H55.0868Z" fill="#0A0E69" />
+                  <path d="M43.3137 27.9243C42.6335 27.9243 41.9271 28.1598 41.43 28.6569C40.9329 29.154 40.6974 29.8603 40.6974 30.5406V31.8487H28.9243V58.0112H43.5753C43.4053 57.174 43.3137 56.2975 43.3137 55.3949H31.5406V46.8136C32.3124 47.2584 33.2019 47.5462 34.1568 47.5462H45.943C46.6756 46.552 47.5651 45.6625 48.5593 44.9299H34.1568C32.6001 44.9299 31.5406 43.8704 31.5406 42.3137V34.4649H60.3193V42.3137C60.3193 42.523 60.3062 42.7192 60.267 42.9023C61.2088 43.1901 62.0984 43.5826 62.9356 44.0666V31.8487H51.1624V30.5406C51.1624 29.8603 50.927 29.154 50.4299 28.6569C49.9328 28.1598 49.2264 27.9243 48.5462 27.9243H43.3137ZM43.3137 30.5406H48.5462V31.8487H43.3137V30.5406ZM36.7731 39.6974V43.6218H39.3893V39.6974H36.7731ZM52.4706 39.6974V42.9154C53.3224 42.6492 54.1989 42.4695 55.0868 42.3791V39.6974H52.4706ZM56.3949 44.9299C50.6261 44.9299 45.9299 49.6261 45.9299 55.3949C45.9299 61.1638 50.6261 65.8599 56.3949 65.8599C62.1638 65.8599 66.8599 61.1638 66.8599 55.3949C66.8599 49.6261 62.1638 44.9299 56.3949 44.9299ZM56.3949 47.5462C60.7379 47.5462 64.2437 51.052 64.2437 55.3949C64.2437 59.7379 60.7379 63.2437 56.3949 63.2437C52.052 63.2437 48.5462 59.7379 48.5462 55.3949C48.5462 51.052 52.052 47.5462 56.3949 47.5462ZM55.0868 48.8543V56.7031H61.6274V54.0868H57.7031V48.8543H55.0868Z" fill="#0A0E69"/>
                   </g>
                   <defs>
-                    <clipPath id="clip0_0_1">
-                      <rect width="41.86" height="41.86" fill="white" transform="translate(25 24)" />
-                    </clipPath>
+                  <clipPath id="clip0_0_1">
+                  <rect width="41.86" height="41.86" fill="white" transform="translate(25 24)"/>
+                  </clipPath>
                   </defs>
-                </svg>
-
-                <h1 class="new-section5__hero-title4 layout cardh1" data-max="1000">+</h1>
+                  </svg>
+                  
+                <h1 class="new-section5__hero-title4 layoutb cardh1" data-max="1000">+</h1>
                 <h5 class="new-section5__highlights1 layout cardh5">
                   We have processed over 1000 Temporary Work Permits
                 </h5>
               </div>
             </div>
           </div>
-          <div class="new-section5__flex3-spacer"></div>
+          
           <div class="get">
             <div class="new-section5__flex3-item">
               <div class="new-section5__content-box1 layout cardwidth">
                 <!-- <img src="assets/200.png" width="84" class="cardimg"> -->
                 <svg width="90" height="89" class="cardimg" viewBox="0 0 90 89" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M89.4344 44.5C89.4344 69.0767 69.4138 89 44.7172 89C20.0206 89 0 69.0767 0 44.5C0 19.9233 20.0206 0 44.7172 0C69.4138 0 89.4344 19.9233 89.4344 44.5Z" fill="#F1F5F6" />
-                  <path d="M52.6508 50.1626H56.1392V53.6509H52.6508V50.1626ZM52.6508 43.1859H56.1392V46.6742H52.6508V43.1859ZM52.6508 36.2092H56.1392V39.6976H52.6508V36.2092ZM46.9648 36.2092L49.1625 37.6743V36.2092H46.9648Z" fill="#0A0E69" />
-                  <path d="M40.4417 29.2324V31.8661L43.93 34.1859V32.7208H59.6275V57.1391H52.6508V60.6274H63.1158V29.2324H40.4417Z" fill="#0A0E69" />
-                  <path d="M37.2498 33.9417L49.1625 41.8776V60.6274H24.7441V42.2788L37.2498 33.9417ZM40.4416 57.1391H45.6741V43.4648L37.2498 38.1102L28.2325 43.8485V57.1391H33.465V46.6741H40.4416V57.1391Z" fill="#0A0E69" />
-                  <path opacity="0.3" d="M40.4417 57.1392H45.6742V43.4649L37.2499 38.1104L28.2325 43.8487V57.1392H33.465V46.6742H40.4417V57.1392Z" fill="#0A0E69" />
-                </svg>
-
-
+                  <path d="M89.4344 44.5C89.4344 69.0767 69.4138 89 44.7172 89C20.0206 89 0 69.0767 0 44.5C0 19.9233 20.0206 0 44.7172 0C69.4138 0 89.4344 19.9233 89.4344 44.5Z" fill="#F1F5F6"/>
+                  <path d="M52.6508 50.1626H56.1392V53.6509H52.6508V50.1626ZM52.6508 43.1859H56.1392V46.6742H52.6508V43.1859ZM52.6508 36.2092H56.1392V39.6976H52.6508V36.2092ZM46.9648 36.2092L49.1625 37.6743V36.2092H46.9648Z" fill="#0A0E69"/>
+                  <path d="M40.4417 29.2324V31.8661L43.93 34.1859V32.7208H59.6275V57.1391H52.6508V60.6274H63.1158V29.2324H40.4417Z" fill="#0A0E69"/>
+                  <path d="M37.2498 33.9417L49.1625 41.8776V60.6274H24.7441V42.2788L37.2498 33.9417ZM40.4416 57.1391H45.6741V43.4648L37.2498 38.1102L28.2325 43.8485V57.1391H33.465V46.6741H40.4416V57.1391Z" fill="#0A0E69"/>
+                  <path opacity="0.3" d="M40.4417 57.1392H45.6742V43.4649L37.2499 38.1104L28.2325 43.8487V57.1392H33.465V46.6742H40.4417V57.1392Z" fill="#0A0E69"/>
+                  </svg>
+                  
+                  
                 <h1 class="new-section5__hero-title4 layout cardh1" data-max="200">+</h1>
                 <h5 class="new-section5__highlights1 layout cardh5">
-                  We have Incorperated over 200 Nigeria Businesses
+                  We have incorporated over 200 Nigeria Businesses
                 </h5>
               </div>
             </div>
@@ -496,11 +378,11 @@ $uploads = new Upload($connect);
           <h1 class="new-section6__hero-title1 layout customers">
             What our customers have to say about us
           </h1>
-          <div class="row reviews mt-99">
+          <div class="reviews2 reviews mt-99">
             <div class="col-md-2 hide"></div>
             <?php  ?>
             <?php foreach ($reviews->getAllFeaturedReviews("text") as $review) : ?>
-              <div class="col-md-2 mag">
+              <div class="col-md-2 mag chee">
                 <div>
                   <?php if (isset($uploads->getUsersProfile($review["user_id"])["files"])) : ?>
                     <img src="./Dashboard/upload/<?= $uploads->getUsersProfile($review["user_id"])["files"] ?>" width="50" class="rounded-circle" style="margin-left: 65px; margin-bottom: 13px;">
@@ -564,7 +446,7 @@ $uploads = new Upload($connect);
               <h1 style="text-align: center; font-family: Rubik; font-style: normal; font-weight: normal; font-size: 30px; line-height: 41px; color: #060a5c;" class="mobilevideo">
                 Customer's video reviews
               </h1>
-              <div class="row reviews mt-99 mobilevideo">
+              <div class="row reviews mt-99 mobilevideo et">
                 <?php $i = 0; ?>
                 <?php foreach ($reviews->getAllFeaturedReviews("video") as $videoReview) : ?>
                   <?php if($i == 0):  ?>
@@ -639,245 +521,7 @@ $uploads = new Upload($connect);
       </div>
     </section>
     <comment content="======= End section7 =======" break="true"></comment><!-- ======= section8 ======= -->
-    <section class="new-section8__section8 layout">
-      <div class="new-section8__block19 layout">
-        <div class="movements">
-          <div class="new-section8__flex23 layout">
-            <div class="new-section8__flex24 layout">
-              <div class="">
-                <div class="row">
-                  <div class="col-md-2 col-sm-6 col-xs-6">
-                    <div class="new-section8__block20 layout">
-                      <img src="assets/logo.png" width="164" class="footerlogo">
-                      <ul>
-                        <li class="lg-li"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M10.7 8C10.7 6.5 9.5 5.3 8 5.3C6.5 5.3 5.3 6.5 5.3 8C5.3 9.5 6.5 10.7 8 10.7C9.5 10.7 10.7 9.5 10.7 8ZM12.1 8C12.1 10.3 10.3 12.1 8 12.1C5.7 12.1 3.9 10.3 3.9 8C3.9 5.7 5.7 3.9 8 3.9C10.3 3.9 12.1 5.7 12.1 8ZM13.2 3.7C13.2 4.3 12.8 4.7 12.2 4.7C11.6 4.7 11.2 4.3 11.2 3.7C11.2 3.1 11.6 2.7 12.2 2.7C12.8 2.7 13.2 3.2 13.2 3.7ZM8 1.4C6.8 1.4 4.3 1.3 3.3 1.7C2.6 2 2 2.6 1.8 3.3C1.4 4.3 1.5 6.8 1.5 8C1.5 9.2 1.4 11.7 1.8 12.7C2 13.4 2.6 14 3.3 14.2C4.3 14.6 6.9 14.5 8 14.5C9.1 14.5 11.7 14.6 12.7 14.2C13.4 13.9 13.9 13.4 14.2 12.7C14.6 11.6 14.5 9.1 14.5 8C14.5 6.9 14.6 4.3 14.2 3.3C14 2.6 13.4 2 12.7 1.8C11.7 1.3 9.2 1.4 8 1.4ZM16 8V11.3C16 12.5 15.6 13.7 14.7 14.7C13.8 15.6 12.6 16 11.3 16H4.7C3.5 16 2.3 15.6 1.3 14.7C0.5 13.8 0 12.6 0 11.3V8V4.7C0 3.4 0.5 2.2 1.3 1.3C2.3 0.5 3.5 0 4.7 0H11.3C12.5 0 13.7 0.4 14.7 1.3C15.5 2.2 16 3.4 16 4.7V8Z" fill="#080C58" />
-                          </svg>
-                          &nbsp; Instagram
-                        </li>
-
-                        <li class="lg-li"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M8 0.5C3.865 0.5 0.5 3.865 0.5 8C0.5 12.135 3.865 15.5 8 15.5C12.135 15.5 15.5 12.135 15.5 8C15.5 3.865 12.135 0.5 8 0.5ZM8 1.75C11.4594 1.75 14.25 4.54063 14.25 8C14.2515 9.49623 13.715 10.9431 12.7383 12.0766C11.7617 13.2101 10.41 13.9547 8.93 14.1744V9.8225H10.71L10.9894 8.01438H8.93V7.02688C8.93 6.27688 9.17688 5.61 9.87875 5.61H11.0069V4.0325C10.8088 4.00563 10.3894 3.9475 9.59688 3.9475C7.94187 3.9475 6.97187 4.82125 6.97187 6.8125V8.01438H5.27063V9.8225H6.97187V14.1588C5.51234 13.9185 4.18577 13.1672 3.22918 12.039C2.27259 10.9108 1.74831 9.47917 1.75 8C1.75 4.54063 4.54063 1.75 8 1.75Z" fill="#080C58" />
-                          </svg>
-                          &nbsp; Facebook
-                        </li>
-
-                        <li class="lg-li"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M9 15.6665C10.7681 15.6665 12.4638 14.9641 13.714 13.7139C14.9643 12.4636 15.6667 10.7679 15.6667 8.99984C15.6667 7.23173 14.9643 5.53604 13.714 4.28579C12.4638 3.03555 10.7681 2.33317 9 2.33317C7.23189 2.33317 5.5362 3.03555 4.28595 4.28579C3.03571 5.53604 2.33333 7.23173 2.33333 8.99984C2.33333 10.7679 3.03571 12.4636 4.28595 13.7139C5.5362 14.9641 7.23189 15.6665 9 15.6665ZM9 17.3332C4.3975 17.3332 0.666664 13.6023 0.666664 8.99984C0.666664 4.39734 4.3975 0.666504 9 0.666504C13.6025 0.666504 17.3333 4.39734 17.3333 8.99984C17.3333 13.6023 13.6025 17.3332 9 17.3332Z" fill="#080C58" />
-                            <path d="M13.1667 6.45568C12.86 6.58901 12.5308 6.68068 12.185 6.72068C12.5383 6.51235 12.8083 6.18235 12.9367 5.78985C12.6 5.98607 12.2326 6.12411 11.85 6.19818C11.6891 6.02949 11.4954 5.89535 11.281 5.80394C11.0665 5.71254 10.8356 5.66578 10.6025 5.66651C9.65833 5.66651 8.89333 6.42068 8.89333 7.34985C8.89333 7.48151 8.90833 7.60985 8.9375 7.73318C8.26027 7.70102 7.59718 7.52805 6.99054 7.2253C6.38389 6.92255 5.84702 6.49668 5.41416 5.97485C5.26213 6.23076 5.18209 6.52301 5.1825 6.82068C5.1825 7.40401 5.48499 7.92068 5.94333 8.22151C5.67203 8.213 5.40655 8.14078 5.16833 8.01068V8.03151C5.1709 8.42273 5.30899 8.80096 5.55909 9.10181C5.80919 9.40265 6.15583 9.60752 6.54 9.68151C6.28779 9.7482 6.0239 9.75788 5.7675 9.70985C5.87927 10.0464 6.09306 10.3398 6.37918 10.5493C6.66531 10.7588 7.00956 10.8741 7.36416 10.879C6.7558 11.3478 6.00886 11.6011 5.24083 11.599C5.10333 11.599 4.96749 11.5907 4.83333 11.5757C5.61705 12.0718 6.5258 12.3345 7.45333 12.3332C10.5983 12.3332 12.3175 9.76818 12.3175 7.54318L12.3117 7.32485C12.6469 7.08925 12.9366 6.79475 13.1667 6.45568Z" fill="#080C58" />
-                          </svg>
-                          &nbsp; Twitter</li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="col-md-3 col-sm-6 col-xs-6 div2">
-                    <h3 class="new-section8__highlights8 layout footh3">
-                      VISA SERVICES
-                    </h3>
-                    <ul>
-                      <li class="new-section8__text-body5 layout fs-13"><a class="fs-13" href="NBVForm.html" style=" text-decoration: none;">Nigeria Business Visa on
-                          Arrival</a></li>
-                      <li class="new-section8__text-body5 layout fs-13"><a class="fs-13" href="NTWPForm.html" style=" text-decoration: none;">Nigeria
-                          Temporary Work Permit
-                          Approval</a></li>
-                      <li class="new-section8__text-body5 layout fs-13"><a class="fs-13" href="SBForm.html" style=" text-decoration: none;">Nigeria
-                          Tourist Visa</a></li>
-                      <li class="new-section8__text-body5 layout fs-13"><a class="fs-13" href="SBForm.html" style=" text-decoration: none;">Nigeria
-                          Business Visa
-                          Extension</a></li>
-                      <li class="new-section8__text-body5 layout fs-13"><a class="fs-13" href="SBForm.html" style=" text-decoration: none;">Nigeria
-                          Subject To
-                          Regularization (STR)</a></li>
-                      <li class="new-section8__text-body5 layout fs-13"><a class="fs-13" href="SBForm.html" style=" text-decoration: none;">Permit to Land
-                          Immgration Approval For Marine Vessels Foreign Crew</a></li>
-
-                    </ul>
-                  </div>
-                  <div class="col-md-3 col-sm-6 col-xs-6 div3">
-                    <h3 class="new-section8__highlights8 layout footh3">
-                      OTHER SERVICES
-                    </h3>
-                    <ul>
-                      <li class="new-section8__text-body5 layout fs-13"><a class="fs-13" href="BIForm.html" style=" text-decoration: none;">Nigeria
-                          Business Incorporation</a>
-                      </li>
-                      <li class="new-section8__text-body5 layout fs-13"><a class="fs-13" href="SBForm.html" style=" text-decoration: none;">Hotel Bookings</a>
-                      </li>
-                      <li class="new-section8__text-body5 layout fs-13"><a class="fs-13" href="SBForm.html" style=" text-decoration: none;">Real Estate
-                          Cosultancy and
-                          Advisory</a></li>
-                      <li class="new-section8__text-body5 layout fs-13"><a class="fs-13" href="SBForm.html" style=" text-decoration: none;">Legal Advisory
-                          and Consultation</a>
-                      </li>
-                      <li class="new-section8__text-body5 layout fs-13"><a class="fs-13" href="SBForm.html" style=" text-decoration: none;">Africa travels
-                          & tours</a></li>
-                      <li class="new-section8__text-body5 layout fs-13"><a class="fs-13" href="SBForm.html" style=" text-decoration: none;">Nigerian
-                          Immigration
-                          Consultancy</a></li>
-                      <li class="new-section8__text-body5 layout fs-13"><a class="fs-13" href="SBForm.html" style=" text-decoration: none;">Nigeria Custom
-                          Brokerage Services</a>
-                      </li>
-                      <li class="new-section8__text-body5 layout fs-13"><a class="fs-13" href="SBForm.html" style=" text-decoration: none;">Nigeria Department of Petroleum Resources (DPR) Permits Consultancy Services</a>
-                      </li>
-                      <li class="new-section8__text-body5 layout fs-13"><a class="fs-13" href="SBForm.html" style=" text-decoration: none;">Nigeria Maritime and Safety Agency Cabotage Consultancy Services</a>
-                      </li>
-                      <li class="new-section8__text-body5 layout fs-13"><a class="fs-13" href="SBForm.html" style=" text-decoration: none;">Nigeria Ports Authority Consultancy Services</a></li>
-                      <li class="new-section8__text-body5 layout fs-13"><a class="fs-13" href="SBForm.html" style=" text-decoration: none;">Other Nigerian Government Agencies Consultancy Support Services</a></li>
-                      <li class="new-section8__text-body5 layout fs-13"><a class="fs-13" href="SBForm.html" style=" text-decoration: none;">Nigeria COVID 19 Payment Services</a>Airport
-                        Immigration Meet and
-                        Greet</li>
-                      <li class="new-section8__text-body5 layout fs-13"><a class="fs-13" href="SBForm.html" style=" text-decoration: none;">Nigeria COVID 19 Payment Services</a>Airport
-                        Protocol Services</li>
-                      <li class="new-section8__text-body5 layout fs-13"><a class="fs-13" href="SBForm.html" style=" text-decoration: none;">Nigeria COVID 19 Payment Services</a>Airport
-                        Transfers</li>
-                      <li class="new-section8__text-body5 layout fs-13"><a class="fs-13" href="SBForm.html" style=" text-decoration: none;">Nigeria COVID 19 Payment Services</a>Vehicle Rentals
-                      </li>
-                      <li class="new-section8__text-body5 layout fs-13"><a class="fs-13" href="SBForm.html" style=" text-decoration: none;">Nigeria COVID 19 Payment Services</a>Armed Security
-                        Escort Services
-                      </li>
-                      <li class="new-section8__text-body5 layout fs-13"><a class="fs-13" href="SBForm.html" style=" text-decoration: none;">Nigeria COVID 19 Payment Services</a></li>
-                    </ul>
-                  </div>
-                  <div class="col-md-4 col-sm-6 col-xs-6 div4">
-                    <div class="row">
-                      <div class="col-md-5 col-sm-6 col-xs-6">
-                        <h3 class="new-section8__highlights8 layout footh3">
-                          SUPPORT
-                        </h3>
-                        <ul>
-                          <li class="new-section8__text-body5 layout fs-13"><a class="fs-13" href="SBForm.html" style=" text-decoration: none;">Apply</a></li>
-                          <li class="new-section8__text-body5 layout fs-13"><a class="fs-13" href="faq.html" style=" text-decoration: none;">Help</a></li>
-                          <li class="new-section8__text-body5 layout fs-13"><a class="fs-13" href="contact.html" style=" text-decoration: none;">Contact Us</a>
-                          </li>
-                        </ul>
-                      </div>
-                      <div class="col-md-7 col-sm-6 col-xs-6 company">
-                        <h3 class="new-section8__highlights8 layout footh3">
-                          COMPANY
-                        </h3>
-                        <ul>
-                          <li class="new-section8__text-body5 layout fs-13"><a class="fs-13" href="about.html" style=" text-decoration: none;">About us</a>
-                          </li>
-                          <li class="new-section8__text-body5 layout fs-13"><a class="fs-13" href="pp.html" style=" text-decoration: none;">Privacy & Cookie Policy</a>
-                          </li>
-                          <li class="new-section8__text-body5 layout fs-13" 0><a href="t&c.html" class="fs-13" style=" text-decoration: none;">Terms And
-                              Conditions</a></li>
-                          <li class="new-section8__text-body5 layout fs-13">Refund
-                            Policy</li>
-                        </ul>
-                      </div>
-                    </div>
-                    <br>
-                    <br>
-                    <div class="row">
-                      <h3 class="new-section8__highlights8 layout footh3">
-                        CORPORATE CONTACT DETAILS
-                      </h3>
-                      <ul>
-                        <li class="new-section8__text-body5 layout fs-13">441 Granville
-                          Avenenue
-                          Hillside Illinois 60152</li>
-                        <li class="new-section8__text-body5 layout fs-13">+1 (708)
-                          318-0273
-                        </li>
-                        <li class="corp layout fs-13 ">
-                          info@peacerydeafrica.com</li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                <button id="top" style="cursor: pointer;
-                    bottom: 50px;
-                    height: 40px;
-                    background-color: #A0BD1C;
-                    border-radius: 50%;
-                    border:1px solid #A0BD1C;
-                    position: fixed;
-                    right: 50px;
-                    z-index: 5;" class="btn btn-sm btn-primary" onclick="openForm()">
-                  <svg width="26" height="24" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M23.0605 22.3053C22.0791 21.7249 21.3271 20.8247 20.9305 19.7557L20.9196 19.721C20.8828 19.6201 20.8812 19.5097 20.9152 19.4078C20.9491 19.3058 21.0166 19.2184 21.1067 19.1598L21.1087 19.1588C23.6682 17.305 25.3171 14.3298 25.33 10.9685V10.9666C25.33 4.91615 19.6597 0 12.665 0C5.67035 0.0633448 0 4.97752 0 10.9636C0 17.011 5.67035 21.9262 12.665 21.9262L12.8115 21.9272C13.6963 21.9272 14.5604 21.8342 15.3938 21.659L15.3126 21.6728C15.4 21.644 15.4937 21.6406 15.5829 21.663C15.6721 21.6855 15.7531 21.7328 15.8164 21.7995C17.7877 23.0053 20.0383 23.6786 22.3478 23.7533L22.3706 23.7543C22.4959 23.7698 22.623 23.7586 22.7437 23.7215C22.8643 23.6845 22.9758 23.6223 23.0707 23.5391C23.1657 23.4559 23.242 23.3536 23.2946 23.2389C23.3473 23.1242 23.3751 22.9996 23.3762 22.8734C23.5029 22.6824 23.2485 22.4923 23.0595 22.3053H23.0605ZM19.6567 21.2977C19.6932 21.3292 19.7162 21.3735 19.721 21.4214V21.4224C19.7191 21.4554 19.7052 21.4865 19.6818 21.5099C19.6585 21.5333 19.6273 21.5472 19.5943 21.5491C18.251 21.174 16.9996 20.5258 15.9184 19.6448L15.9362 19.6597C15.8511 19.5832 15.747 19.5311 15.6349 19.5088C15.5227 19.4865 15.4066 19.4949 15.2988 19.533L15.3037 19.532C14.438 19.7376 13.5518 19.8438 12.662 19.8487H12.6571C6.79868 19.8487 2.07157 15.9441 2.07157 11.0883C2.07157 6.23253 6.79868 2.32792 12.6571 2.32792C18.5155 2.32792 23.2436 6.23253 23.2436 11.0883C23.2029 12.5193 22.79 13.9149 22.0456 15.1376C21.3012 16.3604 20.251 17.368 18.9985 18.0612L18.9559 18.083C18.8513 18.1394 18.7621 18.2206 18.696 18.3195C18.6299 18.4183 18.589 18.5318 18.5769 18.6501V18.6531C18.7286 19.6132 19.1006 20.5251 19.6636 21.3175L19.6507 21.2977H19.6567ZM19.5943 13.5469V13.536C19.5945 13.4708 19.5817 13.4063 19.5568 13.3461C19.532 13.2859 19.4955 13.2311 19.4494 13.1851C19.4033 13.139 19.3486 13.1025 19.2884 13.0776C19.2282 13.0527 19.1636 13.04 19.0985 13.0401H19.0915C18.9741 13.0426 18.8616 13.0876 18.7748 13.1668C17.1053 14.5567 15.0006 15.3158 12.8283 15.3116L12.6561 15.3096H12.665C10.4355 15.2983 8.27519 14.5341 6.53441 13.1411L6.55421 13.1569C6.46243 13.0881 6.35428 13.0444 6.24045 13.0302H6.23748C6.16588 13.0314 6.09532 13.0476 6.03031 13.0776C5.9653 13.1077 5.90728 13.151 5.85996 13.2047C5.81263 13.2585 5.77705 13.3215 5.75548 13.3898C5.7339 13.4581 5.72682 13.5301 5.73468 13.6013V13.5993C5.74107 13.7186 5.77238 13.8351 5.82659 13.9415C5.8808 14.0479 5.95671 14.1417 6.04943 14.2169L6.05141 14.2179C6.83748 15.1651 7.82269 15.9272 8.9369 16.4502C10.0511 16.9732 11.2669 17.2441 12.4977 17.2436L12.6739 17.2417H12.665H12.7293C13.9944 17.2876 15.2523 17.0332 16.4002 16.4994C17.548 15.9656 18.553 15.1675 19.333 14.1704L19.3459 14.1526C19.4092 13.9626 19.5953 13.7092 19.5953 13.5192L19.5943 13.5469Z" fill="#F1F5F6" />
-                  </svg>
-                </button>
-                <div class="chat-popup" id="myForm">
-                  <form action="/action_page.php" class="form-container">
-                    <div class="wrapper">
-                      <div class="mainchat">
-                        <button type="button" class="btn cancel" style="margin-left: 280px;" onclick="closeForm()">X</button>
-                        <div class="px-2 scroll">
-                          <div class="d-flex align-items-center">
-                            <div class="text-left pr-1"><img src="https://img.icons8.com/color/40/000000/guest-female.png" width="30" class="img9" /></div>
-                            <div class="pr-2 pl-1"> <span class="name">Sarah Anderson</span>
-                              <p class="msg">Hi Dr. Hendrikson, I haven't been falling well for past few days.</p>
-                            </div>
-                          </div>
-                          <div class="d-flex align-items-center text-right justify-content-end ">
-                            <div class="pr-2"> <span class="name">Dr. Hendrikson</span>
-                              <p class="msg">Let's jump on a video call</p>
-                            </div>
-                            <div><img src="https://i.imgur.com/HpF4BFG.jpg" width="30" class="img9" /></div>
-                          </div>
-                          <div class="text-center"><span class="between">Call started at 10:47am</span></div>
-                          <div class="text-center"><span class="between">Call ended at 11:03am</span></div>
-                          <div class="d-flex align-items-center">
-                            <div class="text-left pr-1"><img src="https://img.icons8.com/color/40/000000/guest-female.png" width="30" class="img9" /></div>
-                            <div class="pr-2 pl-1"> <span class="name">Sarah Anderson</span>
-                              <p class="msg">How often should i take this?</p>
-                            </div>
-                          </div>
-                          <div class="d-flex align-items-center text-right justify-content-end ">
-                            <div class="pr-2"> <span class="name">Dr. Hendrikson</span>
-                              <p class="msg">Twice a day, at breakfast and before bed</p>
-                            </div>
-                            <div><img src="https://i.imgur.com/HpF4BFG.jpg" width="30" class="img9" /></div>
-                          </div>
-                          <div class="d-flex align-items-center">
-                            <div class="text-left pr-1"><img src="https://img.icons8.com/color/40/000000/guest-female.png" width="30" class="img9" /></div>
-                            <div class="pr-2 pl-1"> <span class="name">Sarah Anderson</span>
-                              <p class="msg">How often should i take this?</p>
-                            </div>
-                          </div>
-                        </div>
-                        <nav class="navbars bg-white navbar-expand-sm d-flex justify-content-between"> <input type="text number" name="text" class="form-controls" placeholder="Type a message...">
-                          <div class=" d-flex justify-content-end align-content-center text-center ml-2"> <svg width="33" height="35" viewBox="0 0 33 35" fill="none" xmlns="http://www.w3.org/2000/svg">
-                              <path d="M32.4419 20.4722C32.5822 19.2858 32.0534 18.1264 31.0686 17.4434L8.12261 1.50404C7.09665 0.772938 5.80289 0.713532 4.70133 1.30734C3.57966 1.91099 2.86538 3.55356 3.029 4.81133L4.30132 14.5749C4.43205 15.5761 5.23388 16.3557 6.23997 16.4571L19.7964 17.8394C20.4918 17.8985 20.9955 18.5204 20.9086 19.213C20.8348 19.8949 20.222 20.3912 19.5266 20.3321L5.95836 18.9379C4.95253 18.8342 4.00153 19.4326 3.65928 20.3856L0.300426 29.7007C-0.10413 30.8007 0.103129 31.9631 0.816651 32.8442C0.900595 32.9479 0.995031 33.0645 1.09201 33.1576C2.04085 34.0627 3.38245 34.3065 4.60167 33.8126L30.4291 23.1319C31.5361 22.6861 32.3016 21.6586 32.4419 20.4722Z" fill="#1161D9" />
-                            </svg>
-                          </div>
-                        </nav>
-                      </div>
-                    </div>
-
-                  </form>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <hr>
-        <div class="movements">
-          <div class="lastfooter">
-            <div class="row lastfooterrow">
-              <div class="col-md-3 col-sm-12 col-xs-12">
-                <p class="adp"><a class="locaddress" href="Index.html"> &copy; &nbsp;
-                    2022 PeaceRyde Africa LLC</a></p>
-              </div>
-              <div class="col-md-5 col-sm-12 col-xs-12">
-                <p class="shorttest">PeaceRyde Afica LLC is Registered with the state of Delaware USA
-                  under the File Number 6549846</p>
-              </div>
-              <div class="col-md-2">
-                <p class="policy"><a class="privacy" href="pp.html">Privacy and Cookie
-                    Policy</a></p>
-              </div>
-              <div class="col-md-2">
-                <p class="adtc"><a class="tc" href="t&c.html">Terms & Conditions</a></p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-
-    </section>
+    <?php include("./inc/footer.php"); ?>
     <!-- ======= End section8 ======= -->
 
   </main>
