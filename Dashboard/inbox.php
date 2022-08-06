@@ -176,13 +176,13 @@ if (isset($_GET['message'])) {
                                                     <img src="./pic/<?= $USER_PROFILE_PIC; ?>" class="rounded-circle mr-1" alt="Chris Wood" width="40" height="40">
                                                 <?php else : ?>
                                                     <div class="avater">
-                                                        <?= getSubName(getSubAdmin($connect, $_GET['message'])); ?>
+                                                        <?= getSubName(getSubAdmin($connect, $_GET['message'])['name']); ?>
                                                     </div>
                                                 <?php endif; ?>
                                             </div>
                                             <div class="flex-grow-1 pl-3">
                                                 <strong>
-                                                    <?= getSubAdmin($connect, $_GET['message']);  ?>
+                                                    <?= getSubAdmin($connect, $_GET['message'])['name'];  ?>
                                                 </strong>
                                                 <!-- <div class="text-muted small"><em>Typing...</em></div> -->
                                             </div>
@@ -201,14 +201,14 @@ if (isset($_GET['message'])) {
                                                                 <div>
                                                                     <img src="./pic/<?= $USER_PROFILE_PIC; ?>" class="rounded-circle mr-1" alt="Chris Wood" width="40" height="40">
                                                                     <div class="text-muted small text-nowrap mt-2">
-                                                                        
+                                                                        <?= date("D, h:i a", strtotime($__message['date'])); ?>
                                                                     </div>
                                                                 </div>
 
                                                             <?php else : ?>
                                                                 <div>
                                                                     <div class="avater">
-                                                                        <?= getSubName(getSubAdmin($connect, $_GET['message'])); ?>
+                                                                        <?= getSubName(getSubAdmin($connect, $_GET['message'])["name"]); ?>
                                                                     </div>
                                                                     <div class="text-muted small text-nowrap mt-2">
                                                                         <?= date("D, h:i a", strtotime($__message['date'])); ?>
