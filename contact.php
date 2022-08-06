@@ -42,64 +42,63 @@
         <!-- ======= section1 ======= -->
         <?php include("./inc/header.php"); ?>
         <section class=" new-section2__group layout2 contactheight" style="background-color: #f8f6f6;">
-            <div class="new-section1__cover-block layout">
-                <h1 class="contactus">
-                    Contact Us
-                </h1>
-                <div class="row">
-                    
-                    <div class="col-md-6 col-sm-12 cont">
-                        <h2 style="font-size: 20px; color: #080C58; font-weight: 500;">Office Address</h2>
-                        <p style="font-size: 18px; color: #080C58; padding-top: 21px;">441 Grandville Avenenue Hillside Illinois 60162
-                        </p>
-                        
-                        <h2 style="font-size: 20px; color: #080C58; font-weight: 500; padding-top: 39px;">Phone Number</h2>
-                        <p style="padding-top: 21px;"><a href="" style="font-size: 18px; color: #080C58; ">+1 (708) 318-0273</a>
-                        </p>
-                        
-                        <h2 style="font-size: 20px; color: #080C58; font-weight: 500; padding-top: 34px;">e-Mail Address</h2>
-                        <p style="font-size: 18px; color: #080C58; padding-top: 21px;">info@peacerydeafrica.com</p>
+          <div class="new-section1__cover-block layout">
+              <h1 class="contactus">
+                  Contact Us
+              </h1>
+              <div class="row">
+                      
+                <div class="col-md-6 col-sm-12 cont">
+                    <h2 style="font-size: 20px; color: #080C58; font-weight: 500;">United States of America</h2>
+                    <p style="font-size: 18px; color: #080C58; padding-top: 21px;">433 W Harrison St #5409 Chicago, IL 60699</p>
+                    <p style="padding-top: 21px;">phone: <a href="" style="font-size: 18px; color: #080C58; ">+1 (302) 703-9867</a>
+                    </p>
+                    <br>
+                    <h2 style="font-size: 20px; color: #080C58; font-weight: 500;">United Kingdom</h2>
+                    <p style="font-size: 18px; color: #080C58; padding-top: 21px;">Office 1651 182-184 High Street 
+                      North, East Ham, London E6 2JA. United Kingdom.</p>
+                    <p style="padding-top: 21px;">phone: <a href="" style="font-size: 18px; color: #080C58; ">+44 7418371490</a>
+                    </p>
+                    <br>
+                    <h2 style="font-size: 20px; color: #080C58; font-weight: 500;">Nigeria </h2>
+                    <p style="font-size: 18px; color: #080C58; padding-top: 21px;">30 Bishop Oluwole Street, Victoria Island Lagos State. Nigeria</p>
+                    <p style="padding-top: 21px;">phone: <a href="" style="font-size: 18px; color: #080C58; ">+234 (903) 795 5511</a>
+                    </p>
+                    <br>
+                    <h2 style="font-size: 20px; color: #080C58; font-weight: 500; padding-top: 34px;">e-Mail Address</h2>
+                    <p style="font-size: 18px; color: #080C58; padding-top: 21px;">info@peacerydeafrica.com</p>
 
-                    </div>
-
-                    <div class="col-md-6 col-sm-12">
-                        <div class="card contactcard">
-                            <h2
-                                style="padding-top:53px; font-size: 20px; text-align: center; color: #000000; font-weight: 500;">
-                                Contact Us Form</h2>
-                            <form
-                                class="contactform">
-                                <label style="font-size: 18px;">Name</label>
-                                <br>
-                                <input type="text" class="form-control"
-                                    style="border-top:transparent;border-left: transparent;border-right: transparent; border-bottom:1px solid #000000;margin-top: -10px;">
-                                <br>
-                                <label style="font-size: 18px;">Phone Number</label>
-
-                                <input type="text" class="form-control"
-                                    style="border-top:transparent;border-left: transparent;border-right: transparent; border-bottom:1px solid #000000; margin-top: -10px;">
-                                <br>
-                                <label style="font-size: 18px;">Email Address</label>
-                                <br>
-                                <input type="text" class="form-control"
-                                    style="border-top:transparent;border-left: transparent;border-right: transparent; border-bottom:1px solid #000000;margin-top: -10px;">
-                                <br>
-                                <label style="font-size: 18px;">Please Enter Your Message</label>
-                                <br>
-                                <input type="text" class="form-control"
-                                    style="border-top:transparent;border-left: transparent;border-right: transparent; border-bottom:1px solid #000000;margin-top: -10px;">
-                                <br>
-                                
-                                <br>
-                                <button class="btn btn-primary"
-                                    style="width: 100%; border-radius: 10px; margin-top: 30px; height: 50px;font-size: 18px;">
-                                    Submit</button>
-                            </form>
-                        </div>
+                </div>
+                <div class="col-md-6 col-sm-12">
+                    <div class="card contactcard">
+                        <h2 style="padding-top:53px; font-size: 20px; text-align: center; color: #000000; font-weight: 500;">
+                            Contact Us Form
+                        </h2>
+                        <form class="contactform">
+                            <label style="font-size: 18px;">Name</label>
+                            <br>
+                            <input type="text" class="form-control" style="border-top:transparent;border-left: transparent;border-right: transparent; border-bottom:1px solid #000000;margin-top: -10px;">
+                            <br>
+                            <label style="font-size: 18px;">Phone Number</label>
+                            <input type="text" class="form-control" style="border-top:transparent;border-left: transparent;border-right: transparent; border-bottom:1px solid #000000; margin-top: -10px;">
+                            <br>
+                            <label style="font-size: 18px;">Email Address</label>
+                            <br>
+                            <input type="text" class="form-control" style="border-top:transparent;border-left: transparent;border-right: transparent; border-bottom:1px solid #000000;margin-top: -10px;">
+                            <br>
+                            <label style="font-size: 18px;">Please Enter Your Message</label>
+                            <br>
+                            <input type="text" class="form-control" style="border-top:transparent;border-left: transparent;border-right: transparent; border-bottom:1px solid #000000;margin-top: -10px;">
+                            <br>
+                            <br>
+                            <button class="btn btn-primary" style="width: 100%; border-radius: 10px; margin-top: 30px; height: 50px;font-size: 18px;">
+                                Submit
+                            </button>
+                        </form>
                     </div>
                 </div>
-
-            </div>
+              </div>
+          </div>
         </section>
 
             <comment content="======= End section7 =======" break="true"></comment><!-- ======= section8 ======= -->
