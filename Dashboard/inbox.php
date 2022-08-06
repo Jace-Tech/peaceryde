@@ -149,16 +149,20 @@ if (isset($_GET['message'])) {
                                     </div>
                                 </div>
 
-                                <a href="?message=<?= "MAIN_ADMIN"; ?>" class="list-group-item <?= "MAIN_ADMIN" == $_GET['message'] ? "bg-light" : "" ?> list-group-item-action border-0">
-                                    <!-- <div class="badge bg-success float-right">5</div> -->
-                                    <div class="d-flex align-items-start">
-                                        <img src="./pic/index.png" class="rounded-circle mr-1" alt="<?= $main_admin['name']; ?>" width="40" height="40">
-                                        <div class="flex-grow-1 ml-3">
-                                            <?= $main_admin['name']; ?>
-                                            <!-- <div class="small"><span class="fas fa-circle chat-online"></span> Online</div> -->
+                                <?php if(count($main_admin)): ?>
+                                    <a href="?message=<?= "MAIN_ADMIN"; ?>" class="list-group-item <?= "MAIN_ADMIN" == $_GET['message'] ? "bg-light" : "" ?> list-group-item-action border-0">
+                                        <!-- <div class="badge bg-success float-right">5</div> -->
+                                        <div class="d-flex align-items-start">
+                                            <img src="./pic/index.png" class="rounded-circle mr-1" alt="<?= $main_admin['name']; ?>" width="40" height="40">
+                                            <div class="flex-grow-1 ml-3">
+                                                <?= $main_admin['name']; ?>
+                                                <!-- <div class="small"><span class="fas fa-circle chat-online"></span> Online</div> -->
+                                            </div>
                                         </div>
-                                    </div>
-                                </a>
+                                    </a>
+                                <?php else: ?>
+                                    <p class="text-muted text-sm">No user found</p>
+                                <?php endif; ?>
 
                                 <hr class="d-block d-lg-none mt-1 mb-0">
                             </div>
@@ -196,7 +200,9 @@ if (isset($_GET['message'])) {
                                                             <?php if ($USER_PROFILE_PIC) : ?>
                                                                 <div>
                                                                     <img src="./pic/<?= $USER_PROFILE_PIC; ?>" class="rounded-circle mr-1" alt="Chris Wood" width="40" height="40">
-                                                                    <div class="text-muted small text-nowrap mt-2">2:33 am</div>
+                                                                    <div class="text-muted small text-nowrap mt-2">
+                                                                        
+                                                                    </div>
                                                                 </div>
 
                                                             <?php else : ?>
@@ -215,25 +221,26 @@ if (isset($_GET['message'])) {
                                                                 <?= $__message['message']; ?>
                                                             </div>
                                                         </div>
+                                                    <?php else: ?>
+                                                        <!-- Admin -->
+                                                        <div class="chat-message-left pb-4">
+                                                            <div>
+                                                                <img src="./pic/index.png" class="rounded-circle mr-1" alt="Sharon Lessman" width="40" height="40">
+                                                                <?= date("D, h:i a", strtotime($__message['date'])); ?>
+                                                            </div>
+                                                            <div class="flex-shrink-1 bg-light rounded py-2 px-3 ml-3">
+                                                                <div class="font-weight-bold mb-1">
+                                                                    <?= getSubAdmin($connect, $_GET['message'])['name']; ?>
+                                                                </div>
+                                                                <?= $__message['message']; ?>
+                                                            </div>
+                                                        </div>
                                                     <?php endif; ?>
                                                 <?php endforeach; ?>
                                             <?php else : ?>
+                                                <div class="text-sm text-muted text-center">No messages yet</div>
                                             <?php endif; ?>
 
-
-                                            <!-- Admin -->
-                                            <div class="chat-message-left pb-4">
-                                                <div>
-                                                    <img src="./pic/index.png" class="rounded-circle mr-1" alt="Sharon Lessman" width="40" height="40">
-                                                    <?= date("D, h:i a", strtotime($__message['date'])); ?>
-                                                </div>
-                                                <div class="flex-shrink-1 bg-light rounded py-2 px-3 ml-3">
-                                                    <div class="font-weight-bold mb-1">
-                                                        <?= getSubAdmin($connect, $_GET['message'])['name']; ?>
-                                                    </div>
-                                                    <?= $__message['message']; ?>
-                                                </div>
-                                            </div>
                                         </div>
                                     </div>
 
