@@ -480,11 +480,8 @@
                         <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
                       </div>
                     </div>
-                    <!-- /.box-header -->
                     <div class="box-body">
-                      <!-- Conversations are loaded here -->
                       <div class="direct-chat-messages">
-                        <!-- Message. Default to the left -->
                         <?php if(count($USER_MESSAGES)): ?>
                         <?php foreach($USER_MESSAGES as $message): ?>
 							<?php $messages->mark_read($message['message_id']); ?>
@@ -520,30 +517,6 @@
                     <?php else: ?>
                         <p class="text-muted text-center">No messages yet</p>
                     <?php endif; ?>
-                      <!-- Contacts are loaded here -->
-                      <!-- <div class="direct-chat-contacts">
-                        <ul class="contacts-list">
-                          <li>
-                            <a href="#">
-                              <img class="contacts-list-img" src="https://bootdey.com/img/Content/user_1.jpg">
-                
-                              <div class="contacts-list-info">
-                                    <span class="contacts-list-name">
-                                      Count Dracula
-                                      <small class="contacts-list-date pull-right">2/28/2015</small>
-                                    </span>
-                                <span class="contacts-list-msg">How have you been? I was...</span>
-                              </div> -->
-                              <!-- /.contacts-list-info -->
-                            <!-- </a>
-                          </li> -->
-                          <!-- End Contact Item -->
-                        <!-- </ul> -->
-                        <!-- /.contatcts-list -->
-                      <!-- </div> -->
-                      <!-- /.direct-chat-pane -->
-                    <!-- </div> -->
-                    <!-- /.box-body -->
                     <div class="box-footer">
                       <form action="./handler/message_handler.php" method="post">
                         <div class="input-group">

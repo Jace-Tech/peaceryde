@@ -1,5 +1,10 @@
 <?php include("./inc/check_session.php"); ?>
+<?php
+$messages = new Message($connect);
 
+$USER_MESSAGES = $messages->get_conversation($USER_ID, "MAIN_ADMIN");
+$isUnread = count($messages->get_user_unread_messages($USER_ID));
+?>
 
 <!DOCTYPE html>
 <html dir="ltr" lang="en">
@@ -384,6 +389,18 @@
                 margin-left: 25px;
             }
         }
+
+        .avatar {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            font-size: 1.5rem;
+            background-color: #fff !important;
+            color: #555;
+        }
     </style>
 </head>
 
@@ -423,15 +440,8 @@
                                 <img src="./pic/<?= $USER_PROFILE_PIC != "" || $USER_PROFILE_PIC != NULL ? $USER_PROFILE_PIC :  "index.png" ?>" class="account-img">
                             </div>
                             <div class="">
-                                <h3 class="page-title text-truncate mb-1 account
-                                ">My Account</h3>
-                                <p style="padding-top: 1px;font-family: Ubuntu;
-                                font-size: 16px;
-                                font-style: normal;
-                                font-weight: 400;
-                                padding-left: 30px;
-                                color: #0F1377;
-                                ">
+                                <h3 class="page-title text-truncate mb-1 account">My Account</h3>
+                                <p style="padding-top: 1px;font-family: Ubuntu; font-size: 16px; font-style: normal; font-weight: 400; padding-left: 30px; color: #0F1377; ">
                                     <?= $USER['firstname'] . " " . $USER['lastname'] ?>
                                 </p>
                             </div>
@@ -440,25 +450,34 @@
                     <div class="align-self-center">
                         <div class="customize-input">
                             <ol class="breadcrumb mb-2">
-                                <li class="breadcrumb-item"><a href="./inbox.php" style="color: #080C58;"><svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M17.6618 3.6875C19.1722 3.6875 20.3962 4.91146 20.3962 6.42188V16.5781C20.3962 18.0885 19.1722 19.3125 17.6618 19.3125H3.33887C2.61367 19.3125 1.91817 19.0244 1.40537 18.5116C0.892577 17.9988 0.604492 17.3033 0.604492 16.5781V6.42188C0.604492 4.91146 1.82845 3.6875 3.33887 3.6875H17.6618ZM19.0941 8.55781L10.8139 13.112C10.7287 13.1588 10.6341 13.186 10.537 13.1915C10.4399 13.197 10.3429 13.1807 10.2529 13.1437L10.1868 13.1125L1.90658 8.55729V16.5781C1.90658 16.958 2.05748 17.3223 2.32608 17.5909C2.59469 17.8595 2.959 18.0104 3.33887 18.0104H17.6618C18.0417 18.0104 18.406 17.8595 18.6746 17.5909C18.9432 17.3223 19.0941 16.958 19.0941 16.5781V8.55781ZM17.6618 4.98958H3.33887C2.959 4.98958 2.59469 5.14048 2.32608 5.40909C2.05748 5.6777 1.90658 6.04201 1.90658 6.42188V7.0724L10.5003 11.7984L19.0941 7.07187V6.42188C19.0941 6.04201 18.9432 5.6777 18.6746 5.40909C18.406 5.14048 18.0417 4.98958 17.6618 4.98958Z" fill="#080C58" />
-                                            <circle cx="16" cy="6.09082" r="6" fill="#E80F0F" />
-                                            <path d="M14.023 3.95C14.441 3.78867 14.848 3.58333 15.244 3.334C15.64 3.07733 16.003 2.75833 16.333 2.377H17.059V10H16.036V3.796C15.948 3.87667 15.838 3.961 15.706 4.049C15.5813 4.137 15.442 4.22133 15.288 4.302C15.1413 4.38267 14.9837 4.45967 14.815 4.533C14.6537 4.60633 14.496 4.66867 14.342 4.72L14.023 3.95Z" fill="white" />
-                                        </svg>
-                                        &nbsp;&nbsp; Inbox
-                                    </a>
-                                </li>
+                                <?php if ($isUnread) : ?>
+                                    <li class="breadcrumb-item">
+                                        <a href="./inbox.php" style="color: #080C58;"><svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M17.6618 3.6875C19.1722 3.6875 20.3962 4.91146 20.3962 6.42188V16.5781C20.3962 18.0885 19.1722 19.3125 17.6618 19.3125H3.33887C2.61367 19.3125 1.91817 19.0244 1.40537 18.5116C0.892577 17.9988 0.604492 17.3033 0.604492 16.5781V6.42188C0.604492 4.91146 1.82845 3.6875 3.33887 3.6875H17.6618ZM19.0941 8.55781L10.8139 13.112C10.7287 13.1588 10.6341 13.186 10.537 13.1915C10.4399 13.197 10.3429 13.1807 10.2529 13.1437L10.1868 13.1125L1.90658 8.55729V16.5781C1.90658 16.958 2.05748 17.3223 2.32608 17.5909C2.59469 17.8595 2.959 18.0104 3.33887 18.0104H17.6618C18.0417 18.0104 18.406 17.8595 18.6746 17.5909C18.9432 17.3223 19.0941 16.958 19.0941 16.5781V8.55781ZM17.6618 4.98958H3.33887C2.959 4.98958 2.59469 5.14048 2.32608 5.40909C2.05748 5.6777 1.90658 6.04201 1.90658 6.42188V7.0724L10.5003 11.7984L19.0941 7.07187V6.42188C19.0941 6.04201 18.9432 5.6777 18.6746 5.40909C18.406 5.14048 18.0417 4.98958 17.6618 4.98958Z" fill="#080C58" />
+                                                <circle cx="16" cy="6.09082" r="6" fill="#E80F0F" />
+                                            </svg>
+                                            &nbsp;&nbsp; Inbox
+                                        </a>
+                                    </li>
+                                <?php else : ?>
+                                    <li class="breadcrumb-item">
+                                        <a href="./inbox.php" style="color: #080C58;"><svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M17.6618 3.6875C19.1722 3.6875 20.3962 4.91146 20.3962 6.42188V16.5781C20.3962 18.0885 19.1722 19.3125 17.6618 19.3125H3.33887C2.61367 19.3125 1.91817 19.0244 1.40537 18.5116C0.892577 17.9988 0.604492 17.3033 0.604492 16.5781V6.42188C0.604492 4.91146 1.82845 3.6875 3.33887 3.6875H17.6618ZM19.0941 8.55781L10.8139 13.112C10.7287 13.1588 10.6341 13.186 10.537 13.1915C10.4399 13.197 10.3429 13.1807 10.2529 13.1437L10.1868 13.1125L1.90658 8.55729V16.5781C1.90658 16.958 2.05748 17.3223 2.32608 17.5909C2.59469 17.8595 2.959 18.0104 3.33887 18.0104H17.6618C18.0417 18.0104 18.406 17.8595 18.6746 17.5909C18.9432 17.3223 19.0941 16.958 19.0941 16.5781V8.55781ZM17.6618 4.98958H3.33887C2.959 4.98958 2.59469 5.14048 2.32608 5.40909C2.05748 5.6777 1.90658 6.04201 1.90658 6.42188V7.0724L10.5003 11.7984L19.0941 7.07187V6.42188C19.0941 6.04201 18.9432 5.6777 18.6746 5.40909C18.406 5.14048 18.0417 4.98958 17.6618 4.98958Z" fill="#080C58" />
+                                            </svg>
+                                            &nbsp;&nbsp; Inbox
+                                        </a>
+                                    </li>
+                                <?php endif; ?>
+                                
                                 <li class="breadcrumb-item">
-                                    <button id="top" class="" onclick="openForm()" style="background-color: transparent;
+                                    <a href="./inbox.php" id="top" class="" onclick="openForm()" style="background-color: transparent;
                                     border: transparent;
                                     color: #080C58;">
                                         <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M17.5 1.25C17.8315 1.25 18.1495 1.3817 18.3839 1.61612C18.6183 1.85054 18.75 2.16848 18.75 2.5V12.5C18.75 12.8315 18.6183 13.1495 18.3839 13.3839C18.1495 13.6183 17.8315 13.75 17.5 13.75H5.5175C4.85451 13.7501 4.21873 14.0136 3.75 14.4825L1.25 16.9825V2.5C1.25 2.16848 1.3817 1.85054 1.61612 1.61612C1.85054 1.3817 2.16848 1.25 2.5 1.25H17.5ZM2.5 0C1.83696 0 1.20107 0.263392 0.732233 0.732233C0.263392 1.20107 0 1.83696 0 2.5L0 18.4913C2.62686e-05 18.6149 0.0367407 18.7358 0.105497 18.8386C0.174252 18.9414 0.271959 19.0215 0.386249 19.0687C0.50054 19.116 0.626276 19.1282 0.747545 19.104C0.868814 19.0797 0.980163 19.0201 1.0675 18.9325L4.63375 15.3663C4.86812 15.1318 5.18601 15.0001 5.5175 15H17.5C18.163 15 18.7989 14.7366 19.2678 14.2678C19.7366 13.7989 20 13.163 20 12.5V2.5C20 1.83696 19.7366 1.20107 19.2678 0.732233C18.7989 0.263392 18.163 0 17.5 0L2.5 0Z" fill="#080C58" />
                                         </svg>
                                         Send a Message
-                                    </button>
-
-
+                                    </a>
 
                                 <li class="breadcrumb-item">
                                     <form action="./handler/logout_handler.php" method="post" style="display: inline-block">
@@ -546,45 +565,60 @@
                         <div class="mainchat">
                             <button type="button" class="btn cancel" style="margin-left: 280px;" onclick="closeForm()">X</button>
                             <div class="px-2 scroll">
-                                <div class="d-flex align-items-center">
-                                    <div class="text-left pr-1"><img src="https://img.icons8.com/color/40/000000/guest-female.png" width="30" class="img9" /></div>
-                                    <div class="pr-2 pl-1"> <span class="name">Sarah Anderson</span>
-                                        <p class="msg">Hi Dr. Hendrikson, I haven't been falling well for past few days.</p>
-                                    </div>
-                                </div>
-                                <div class="d-flex align-items-center text-right justify-content-end ">
-                                    <div class="pr-2"> <span class="name">Dr. Hendrikson</span>
-                                        <p class="msg">Let's jump on a video call</p>
-                                    </div>
-                                    <div><img src="https://i.imgur.com/HpF4BFG.jpg" width="30" class="img9" /></div>
-                                </div>
-                                <div class="text-center"><span class="between">Call started at 10:47am</span></div>
-                                <div class="text-center"><span class="between">Call ended at 11:03am</span></div>
-                                <div class="d-flex align-items-center">
-                                    <div class="text-left pr-1"><img src="https://img.icons8.com/color/40/000000/guest-female.png" width="30" class="img9" /></div>
-                                    <div class="pr-2 pl-1"> <span class="name">Sarah Anderson</span>
-                                        <p class="msg">How often should i take this?</p>
-                                    </div>
-                                </div>
-                                <div class="d-flex align-items-center text-right justify-content-end ">
-                                    <div class="pr-2"> <span class="name">Dr. Hendrikson</span>
-                                        <p class="msg">Twice a day, at breakfast and before bed</p>
-                                    </div>
-                                    <div><img src="https://i.imgur.com/HpF4BFG.jpg" width="30" class="img9" /></div>
-                                </div>
-                                <div class="d-flex align-items-center">
-                                    <div class="text-left pr-1"><img src="https://img.icons8.com/color/40/000000/guest-female.png" width="30" class="img9" /></div>
-                                    <div class="pr-2 pl-1"> <span class="name">Sarah Anderson</span>
-                                        <p class="msg">How often should i take this?</p>
-                                    </div>
-                                </div>
+
+                                <?php if (count($USER_MESSAGES)) : ?>
+                                    <?php foreach ($USER_MESSAGES as $message) : ?>
+                                        <?php if ($message['sender_id'] == $USER_ID) : ?>
+                                            <!-- User -->
+                                            <div class="d-flex align-items-center text-right justify-content-end ">
+                                                <div class="pr-2"> <span class="name">
+                                                        <?= $USER['firstname'] . ' ' . $USER['lastname']; ?>
+                                                    </span>
+                                                    <p class="msg">
+                                                        <?= $message['message']; ?>
+                                                    </p>
+                                                </div>
+                                                <?php if ($USER_PROFILE_PIC) : ?>
+                                                    <div><img src="./pic/<?= $USER_PROFILE_PIC; ?>" width="30" class="img9" /></div>
+                                                <?php else : ?>
+                                                    <div class="avatar">
+                                                        <?= getSubName($USER['firstname'] . ' ' . $USER['lastname']); ?>
+                                                    </div>
+                                                <?php endif; ?>
+                                            </div>
+                                        <?php else : ?>
+
+                                            <!-- Other Person -->
+                                            <div class="d-flex align-items-center">
+                                                <div class="text-left pr-1">
+                                                    <img src="./pic/index.png" width="30" class="img9" />
+                                                </div>
+                                                <div class="pr-2 pl-1"> <span class="name">
+                                                        <?= getSubAdmin($connect, $message['sender_id'])['name']; ?>
+                                                    </span>
+                                                    <p class="msg">
+                                                        <?= $message['message']; ?>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        <?php endif; ?>
+                                    <?php endforeach; ?>
+                                <?php else : ?>
+                                <?php endif; ?>
+
                             </div>
-                            <nav class="navbars bg-white navbar-expand-sm d-flex justify-content-between"> <input type="text number" name="text" class="form-controls" placeholder="Type a message...">
-                                <div class=" d-flex justify-content-end align-content-center text-center ml-2"> <svg width="33" height="35" viewBox="0 0 33 35" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M32.4419 20.4722C32.5822 19.2858 32.0534 18.1264 31.0686 17.4434L8.12261 1.50404C7.09665 0.772938 5.80289 0.713532 4.70133 1.30734C3.57966 1.91099 2.86538 3.55356 3.029 4.81133L4.30132 14.5749C4.43205 15.5761 5.23388 16.3557 6.23997 16.4571L19.7964 17.8394C20.4918 17.8985 20.9955 18.5204 20.9086 19.213C20.8348 19.8949 20.222 20.3912 19.5266 20.3321L5.95836 18.9379C4.95253 18.8342 4.00153 19.4326 3.65928 20.3856L0.300426 29.7007C-0.10413 30.8007 0.103129 31.9631 0.816651 32.8442C0.900595 32.9479 0.995031 33.0645 1.09201 33.1576C2.04085 34.0627 3.38245 34.3065 4.60167 33.8126L30.4291 23.1319C31.5361 22.6861 32.3016 21.6586 32.4419 20.4722Z" fill="#1161D9" />
-                                    </svg>
+                            <form action="./handler/message_handler.php" method="post" class="navbars bg-white navbar-expand-sm d-flex justify-content-between">
+                                <input type="text number" name="message" class="form-controls" placeholder="Type a message...">
+                                <input type="hidden" name="sender" value="<?= $USER_ID ?>">
+                                <input type="hidden" name="reciever" value="<?= "MAIN_ADMIN"; ?>">
+                                <div class=" d-flex justify-content-end align-content-center text-center ml-2">
+                                    <button name="send" type="submit" class="btn">
+                                        <svg width="33" height="35" viewBox="0 0 33 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M32.4419 20.4722C32.5822 19.2858 32.0534 18.1264 31.0686 17.4434L8.12261 1.50404C7.09665 0.772938 5.80289 0.713532 4.70133 1.30734C3.57966 1.91099 2.86538 3.55356 3.029 4.81133L4.30132 14.5749C4.43205 15.5761 5.23388 16.3557 6.23997 16.4571L19.7964 17.8394C20.4918 17.8985 20.9955 18.5204 20.9086 19.213C20.8348 19.8949 20.222 20.3912 19.5266 20.3321L5.95836 18.9379C4.95253 18.8342 4.00153 19.4326 3.65928 20.3856L0.300426 29.7007C-0.10413 30.8007 0.103129 31.9631 0.816651 32.8442C0.900595 32.9479 0.995031 33.0645 1.09201 33.1576C2.04085 34.0627 3.38245 34.3065 4.60167 33.8126L30.4291 23.1319C31.5361 22.6861 32.3016 21.6586 32.4419 20.4722Z" fill="#1161D9" />
+                                        </svg>
+                                    </button>
                                 </div>
-                            </nav>
+                            </form>
                         </div>
                     </div>
 

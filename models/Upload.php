@@ -11,7 +11,7 @@ class Upload {
 
     public function uploadFile(array $file, $des)
     {
-        extract($file);
+        // extract($file);
 
         $file_name = $file['name'];
         $file_size = $file['size'];
