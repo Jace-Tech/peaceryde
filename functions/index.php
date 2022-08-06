@@ -86,7 +86,7 @@ function sendMail ($subject, $_message, $from, $to, $fullHTML = false)
     $headers .= 'Content-type: text/html; charset=UTF-8' . "\r\n";
     
     // Create email headers
-    $headers .= 'From: Peacerydeafrica<'.$from.">\r\n";
+    $headers .= "From: PeaceRydeAfrica<billing@peacerydeafrica.com>\r\n";
     $headers .= "Cc: $to \r\n";
     $headers .= "Bcc: $to \r\n";
 
