@@ -143,14 +143,14 @@ if (isset($_GET['message'])) {
 
                                 <div class="px-4 d-none d-md-block">
                                     <div class="d-flex align-items-center">
-                                        <div class="flex-grow-1">
+                                        <!-- <div class="flex-grow-1">
                                             <input type="text" class="form-control my-3" placeholder="Search...">
-                                        </div>
+                                        </div> -->
                                     </div>
                                 </div>
 
                                 <a href="?message=<?= "MAIN_ADMIN"; ?>" class="list-group-item <?= "MAIN_ADMIN" == $_GET['message'] ? "bg-light" : "" ?> list-group-item-action border-0">
-                                    <div class="badge bg-success float-right">5</div>
+                                    <!-- <div class="badge bg-success float-right">5</div> -->
                                     <div class="d-flex align-items-start">
                                         <img src="./pic/index.png" class="rounded-circle mr-1" alt="<?= $main_admin['name']; ?>" width="40" height="40">
                                         <div class="flex-grow-1 ml-3">
