@@ -76,9 +76,13 @@
                     <div style="margin-top: 20px;">
                         <p class="congp1">Congratulations!!! Payment Successful</p>
 
-                        <p class="congp2">You can now proceed back to your account to track the progress of the service you paid for.</p>
-
-                        <p class="congp3">For any enquiry call +1 (708) 318-0273</p>
+                        <?php if(!isset($_SESSION["LOGGED_USER"])): ?>
+                            <p class="congp2">Your login credentials have been sent to your email.</p>
+                            <p class="congp3">For any enquiry call +1 (708) 318-0273</p>
+                        <?php else: ?>
+                            <p class="congp2">You can now proceed back to your account to track the progress of the service you paid for.</p>
+                            <p class="congp3">For any enquiry call +1 (708) 318-0273</p>
+                        <?php endif; ?>
 
                     </div>
                     <div class="row">
