@@ -155,7 +155,7 @@
                     </div>
                     <div class="row" style="margin-top: 25px;">
                         <div class="col-md-4 col-xl-2">
-                            <select class="form-select code" required name="country_code" aria-label="Default select example">
+                            <select class="form-select code" required name="countryCode" aria-label="Default select example">
                                 <option selected>Please Select</option>
                                 <option data-countryCode="NG" value="234">Nigeria (+234)</option>
                                 <option data-countryCode="GB" value="44">United Kingdom (+44)</option>
@@ -449,7 +449,7 @@
             form.elements.passport.value = passport
             Array.from(form.elements.title.children).filter(item => item.value == title)[0].selected = true
             Array.from(form.elements.country.children).filter(item => item.value == country)[0].selected = true
-            Array.from(form.elements.country_code.children).filter(item => item.value == countryCode)[0].selected = true
+            Array.from(form.elements.countryCode.children).filter(item => item.value == countryCode)[0].selected = true
             Array.from(genders).filter(item => item.value == gender)[0].checked = true
         }
 

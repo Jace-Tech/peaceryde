@@ -339,7 +339,7 @@
                     <div class="row" style="margin-top: 25px;">
                         <div class="col-md-5 col-lg-4 col-xl-3">
                             <div class="form-group">
-                                <input name="companyEmail" type="text" name="" class="form-control firstname" placeholder="Company Name">
+                                <input name="companyName" type="text" name="" class="form-control firstname" placeholder="Company Name">
                             </div>
                         </div>
                         <div class="col-md-5 col-lg-4 col-xl-3">
@@ -403,17 +403,16 @@
                 companyName,
                 coperateAddress,
                 email,
+                firstname,
+                lastname,
                 service,
                 mode
             } = JSON.parse(storedUser)
 
             // form.elements.email.value = email
-            // form.elements.dob.value = dob
-            // form.elements.firstname.value = firstname
-            // form.elements.lastname.value = lastname
-            // form.elements.middlename.value = middlename
-            // form.elements.lastname.value = lastname
-            // form.elements.service.value = service
+            form.elements.firstname.value = firstname
+            form.elements.lastname.value = lastname
+            // form.elements.shares.value = shares
             // form.elements.phone.value = phone
             // form.elements.passport.value = passport
             // Array.from(form.elements.title.children).filter(item => item.value == title)[0].selected = true

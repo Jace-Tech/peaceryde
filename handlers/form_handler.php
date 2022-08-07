@@ -120,8 +120,13 @@ if(isset($_POST['bi'])) {
             'shares' => $shares,
             'email' => $email,
             'companyName' => $companyName,
-            'coperateAddress' => $coperateAddress
+            'coperateAddress' => $coperateAddress,
+            'coperateEmail' => $coperateEmail,
+            'website' => $website,
+            'employeeNo' => $employeeNo,
+            'message' => $message
         ];
+        
 
         $bis->addBI($bi_options);
     }
