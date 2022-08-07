@@ -114,6 +114,7 @@
             unset($_SESSION['REF']);
             unset($_SESSION['REG_NO']);
             unset($_SESSION['PRICE']);
+            unset($_SESSION['SERVICE']);
         ?>
     </div>
 </body>

@@ -44,6 +44,7 @@ if(isset($_POST['twp'])) {
     // Get TWP Calculations
     $fees = get_twp($country);
     $_SESSION["PRICE"] = json_encode($fees);
+    $_SESSION['SERVICE'] = $service;
 
     // Redirect to payment page
     header('Location: ../payment.php');
@@ -86,6 +87,7 @@ if(isset($_POST['nbv'])) {
     // Get TWP Calculations
     $fees = get_total_price($country);
     $_SESSION["PRICE"] = json_encode($fees);
+    $_SESSION['SERVICE'] = $service;
 
     // Redirect to payment page
     header('Location: ../payment.php');
@@ -142,6 +144,7 @@ if(isset($_POST['bi'])) {
     // Get TWP Calculations
     $fees = get_bi_price($shares);
     $_SESSION["PRICE"] = json_encode($fees);
+    $_SESSION['SERVICE'] = $service;
 
     // Redirect to payment page
     header('Location: ../payment.php');

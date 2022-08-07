@@ -127,28 +127,29 @@ if(isset($_GET["reference"])) {
             ];
 
             // Add to database
-            $userLogins->register($newUser);
+            $userLogins->register($newUser); 
+            
+            // Mail User
+            $subject = "Registration successful";
+
+            $message = "<p>Hi " . $user['firstname'] . ",</p>";
+            $message .= "<p>Here's your login information </p>";
+            $message .= "<p> Username / Email : <b>" . $user['email'] . "</b> <br /> Password: <b>$password</b></p>";
+
+            $from = "billing@peacerydeafrica.com";
+            $to = $user['email'];
+
+            // Send Login Details
+            sendMail($subject, $message, $from, $to);
+
         }
-
-        // Mail User
-        $subject = "Registration successful";
-
-        $message = "<p>Hi " . $user['firstname'] . ",</p>";
-        $message .= "<p>Here's your login information </p>";
-        $message .= "<p> Username / Email : <b>" . $user['email'] . "</b> <br /> Password: <b>$password</b></p>";
-
-        $from = "billing@peacerydeafrica.com";
-        $to = $user['email'];
-
-        // Send Login Details
-        sendMail($subject, $message, $from, $to);
 
         // Send Reciept
         $subject = "Payment Receipt";
         $name = $user['firstname'];
 
         // Send Receipt
-        $service = $userServices->getService($id)['service_id'];
+        $service = $_SESSION['SERVICE'];
         $PRICE = json_decode($_SESSION['PRICE'], true);
 
         if ($service == "srvs-002") {
