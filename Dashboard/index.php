@@ -27,8 +27,8 @@ $isUnread = count($messages->get_user_unread_messages($USER_ID));
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap" rel="stylesheet">
     <link href="./assets/libs/chartist/dist/chartist.min.css" rel="stylesheet">
     <link href="./assets/extra-libs/jvector/jquery-jvectormap-2.0.2.css" rel="stylesheet" />
-    <link href="../dist/css/style.min.css" rel="stylesheet">
-    <link href="../dist/css/responsive.css" rel="stylesheet">
+    <link href="./dist/css/style.min.css" rel="stylesheet">
+    <link href="./dist/css/responsive.css" rel="stylesheet">
     <script>
         const isOld = localStorage.getItem("USER_REG")
         if (isOld) {

@@ -25,6 +25,7 @@
     <link href="./assets/extra-libs/jvector/jquery-jvectormap-2.0.2.css" rel="stylesheet" />
     <!-- Custom CSS -->
     <link href="./dist/css/style.min.css" rel="stylesheet">
+    <link href="./dist/css/responsive.css" rel="stylesheet">
     <style>
         .left-sidebar a:hover {
             color: #f1f1f1;
