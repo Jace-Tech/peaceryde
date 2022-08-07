@@ -68,21 +68,21 @@
         <!-- Sidebar -->
 
         <div class="page-wrapper" id="main">
-        <span style="font-size:30px;cursor:pointer" onclick="openNav()"> <svg width="19" height="15" viewBox="0 0 19 15" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-bottom: 10px;
+            <span style="font-size:30px;cursor:pointer" onclick="openNav()"> <svg width="19" height="15" viewBox="0 0 19 15" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-bottom: 10px;
                 margin-top: 50px;">
-                  <rect y="6" width="19" height="3" fill="#A0BD1C"/>
-                  <rect y="12" width="19" height="3" fill="#A0BD1C"/>
-                  <rect width="19" height="3" fill="#A0BD1C"/>
-                  </svg>
-                  </span>
-                  <div class="align-self-center">                       
-                <h3 class="page-title title">Nigeria Business Visa on Arrival </h3>  
-                <p class="fill">Fill the Form Below</p>   
-                <p class="personal">Your personal details</p>                                          
+                    <rect y="6" width="19" height="3" fill="#A0BD1C" />
+                    <rect y="12" width="19" height="3" fill="#A0BD1C" />
+                    <rect width="19" height="3" fill="#A0BD1C" />
+                </svg>
+            </span>
+            <div class="align-self-center">
+                <h3 class="page-title title">Nigeria Business Visa on Arrival </h3>
+                <p class="fill">Fill the Form Below</p>
+                <p class="personal">Your personal details</p>
             </div>
-            <form action="../handlers/form_handler.php" method="post" class="formml" data-form >
+            <form action="../handlers/form_handler.php" method="post" class="formml" data-form>
                 <div class="form-body">
-                <div class="row">
+                    <div class="row">
                         <div class="col-md-4 col-lg-3 col-xl-3">
                             <select class="form-select fmselect" name="title" aria-label="Default select example">
                                 <option selected>Title</option>
@@ -92,7 +92,7 @@
                             </select>
                         </div>
                     </div>
-                    
+
                     <p class="nameappears">Your name must be entered in English as it appears on your passport.</p>
 
                     <div class="row" style="margin-top: 25px;">
@@ -108,7 +108,7 @@
                         </div>
                         <div class="col-md-4 col-lg-3 col-xl-2">
                             <div class="form-group">
-                            <input type="hidden" name="service" value="srvs-002">
+                                <input type="hidden" name="service" value="srvs-002">
                                 <input name="lastname" type="text" class="form-control lastname" placeholder="Last Name (as on passport)">
                             </div>
                         </div>
@@ -120,7 +120,7 @@
                                 <input type="date" name="dob" class="form-control dob" placeholder="Date of birth">
                             </div>
                         </div>
-  
+
                         <div class="col-md-6 col-lg-6 col-xl-3">
                             <label>Gender</label>
                             <br>
@@ -140,7 +140,7 @@
 
                     </div>
                     <div class="row" style="margin-top: 25px;">
-                    <div class="col-md-4 col-xl-2">
+                        <div class="col-md-4 col-xl-2">
                             <div class="form-group">
                                 <input type="email" class="form-control email" name="email" value="<?= $LOGGED_USER['email']; ?>" placeholder="Email address">
                             </div>
@@ -150,7 +150,7 @@
                             <div class="form-group">
                                 <input type="text" name="passport" class="form-control passno" placeholder="Passport No">
                             </div>
-                        </div>  
+                        </div>
                     </div>
                     <div class="row" style="margin-top: 25px;">
                         <div class="col-md-4 col-xl-2">
@@ -387,18 +387,22 @@
                     <p class="please">Please select below your Nationality (as on passport)</p>
                     <div class="row">
                         <div class="col-md-4 col-xl-3">
-                        <select name="country" class="form-select nationality" aria-label="Default select example">
-                        <option selected>Select Country</option>
-                        <?php foreach ($country_fee as $key => $value) : ?>
-                            <option value="<?= $key ?>"><?= $key ?></option>
-                        <?php endforeach; ?>
-                    </select>
+                            <select name="country" class="form-select nationality" aria-label="Default select example">
+                                <option selected>Select Country</option>
+                                <?php foreach ($country_fee as $key => $value) : ?>
+                                    <?php if ($key == "united states") : ?>
+                                        United States of America
+                                    <?php else : ?>
+                                        <?= strtoupper(substr($key, 0, 1)) . substr($key, 1); ?>
+                                    <?php endif; ?>
+                                <?php endforeach; ?>
+                            </select>
                         </div>
                     </div>
-                   
+
                 </div>
                 <div class="divbtn">
-                    <button data-btn type="submit" class="btn btnproceed" >Proceed to Payment</button>
+                    <button data-btn type="submit" class="btn btnproceed">Proceed to Payment</button>
                 </div>
 
             </form>
@@ -450,10 +454,10 @@
                 form.submit()
             })
     </script>
-   <script>
-  function openNav() {
-    		
-            if  (screen.width >= 800) {
+    <script>
+        function openNav() {
+
+            if (screen.width >= 800) {
                 document.getElementById("sidebar").style.width = "260px";
                 document.getElementById("main").style.marginLeft = "260px";
             } else {
@@ -461,21 +465,21 @@
                 document.getElementById("main").style.marginLeft = "100%";
             }
         }
-            
+
         /* Close Nav */
         function closeNav() {
-                
+
             if (screen.width >= 768) {
                 document.getElementById("sidebar").style.width = "0";
-                document.getElementById("main").style.marginLeft= "0";;
+                document.getElementById("main").style.marginLeft = "0";;
             } else {
                 document.getElementById("sidebar").style.width = "0";
-                document.getElementById("main").style.marginLeft= "0";;
+                document.getElementById("main").style.marginLeft = "0";;
             }
         }
-        </script>
-        <script>
-        if(localStorage.getItem('USER_REG')){
+    </script>
+    <script>
+        if (localStorage.getItem('USER_REG')) {
             localStorage.removeItem("USER_REG")
         }
     </script>

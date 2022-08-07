@@ -379,7 +379,11 @@
                 <select required name="country" class="form-select formml select" aria-label="Default select example">
                   <option selected>Country </option>
                   <?php foreach ($country_fee as $key => $value) : ?>
-                    <option value="<?= $key ?>"><?= strtoupper(substr($key, 0, 1)) . substr($key, 1); ?></option>
+                      <?php if($key == "united states"): ?>
+                        United States of America
+                      <?php else: ?>
+                        <?= strtoupper(substr($key, 0, 1)) . substr($key, 1); ?>
+                      <?php endif; ?>
                   <?php endforeach; ?>
                 </select>
                 <div class=" formml" style="margin-top: 27px;">
