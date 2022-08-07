@@ -1,8 +1,8 @@
 <?php 
 session_start();
 
-// require_once("../db/config.php");
-require_once("../db/conf.php");
+require_once("../db/config.php");
+// require_once("../db/conf.php");
 include("../models/UserLogin.php");
 
 $userLogins = new UserLogin($connect);
