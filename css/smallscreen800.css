@@ -111,42 +111,40 @@
   margin-bottom: 85px;
 }
 
-@media (max-width: 900px) {
-
-  .leaderpageheight {
+@media (max-width: 900px){
+  
+.leaderpageheight {
     height: 5500px;
+}
+  .laptopflag
+  {
+    display:none;
   }
-
-  .laptopflag {
-    display: none;
-  }
-
-  .flagnothing {
-    display: block;
+  .flag{
+    display:block;
     width: 25px;
     height: 25px;
     margin-left: 5px;
     margin-top: -8px;
   }
-
-  .collapsebtnnothing {
+  .collapsebtn {
     margin-top: -5px;
     margin-right: 40px;
   }
 
-  .hiddenbuttonnothing {
+  .hiddenbutton {
     display: none;
   }
 
-  .mobilenothing {
+  .mobile {
     display: none;
   }
 
-  .mobilelangnothing {
+  .mobilelang {
     display: block;
   }
 
-  .englishnothing {
+  .english {
     margin-left: 450px;
   }
 
@@ -237,10 +235,9 @@
     width: 738px;
     margin: 80px auto;
   }
-
   .new-section2__group.layout2 {
     position: relative;
-
+    
   }
 
   .cf {
@@ -261,7 +258,7 @@
     margin-top: 14px;
   }
 
-  .freenothingnothing {
+  .free {
     font-weight: 500;
     margin-left: 185px;
     margin-top: 18px;
@@ -269,13 +266,11 @@
     font-style: normal;
     color: #ffffff;
   }
-
   .laptopvideoh1 {
     text-align: justify;
     padding-left: 260px;
-  }
-
-  .textnothing {
+}
+  .text {
     width: 249px;
     height: 16px;
     margin-top: 18px;
@@ -329,7 +324,7 @@
     padding-left: 10px;
   }
 
-  .phonenothing {
+  .phone {
     /* color: white; */
     padding-top: 15px;
     width: 120px;
@@ -350,7 +345,7 @@
   }
 
   .shop {
-    margin-left: 7.2%;
+    margin-left: -18.5%;
     font-family: rubik;
     font-size: 14px;
   }
@@ -380,7 +375,7 @@
   .home {
     color: #000000;
     margin-left: 60px;
-    margin-top: 15px;
+    margin-top: 5px;
     font-family: Ubuntu;
     font-style: normal;
     font-weight: 400;
@@ -527,8 +522,8 @@
   }
 
   .reviews {
-    width: 100%;
-    margin-left: 14%;
+    width: 1320px;
+    margin-left: 120px;
   }
 
   .btn-review {
@@ -615,7 +610,7 @@
 
   .list-group-horizontal {
 
-    margin:0 5%;
+    margin-left: 10px;
   }
 
   .img1 {
@@ -813,7 +808,7 @@
     display: flex;
   }
 
-
+ 
 
   .form-group {
     padding: 5px;
@@ -1019,10 +1014,9 @@
     margin: 26px auto;
     width: 416px;
   }
-
   .vsbform2 {
     margin: 26px auto;
-    width: 416px;
+    width: 416px; 
   }
 
   .vsbmt {
@@ -1046,12 +1040,10 @@
     width: 450px;
     margin-left: 160px;
   }
-
   .servicebtn {
-
+ 
     margin-left: -120px;
-  }
-
+}
   .vsbformtextarea {
     width: 450px;
     height: 116px;
@@ -1157,14 +1149,12 @@
     font-size: 24px;
     color: #0A0E69;
   }
-
   .reviewvideo {
     width: 500px;
     height: 200px;
     margin-left: -20px;
     margin-top: 80px;
-  }
-
+}
   .reviewcard {
     border-radius: 10px;
     border-color: transparent;
@@ -1180,14 +1170,12 @@
   .reviewmt {
     margin-top: 45px
   }
-
   .policyh1 {
     text-align: left;
     padding-left: 86px;
 
     font-weight: 500px;
-  }
-
+}
   .reviewname {
     font-family: Rubik;
     color: #080C58;
@@ -1465,7 +1453,6 @@
     position: relative;
     height: 3500px;
   }
-
   .ppheight2 {
     position: relative;
     height: 7500px;
@@ -1528,14 +1515,14 @@
   }
 
   .imagebn2 {
-    margin-left: 0px;
+    margin-left: 100px;
     width: 360px;
     height: 360px;
   }
 
   .nbitext {
-    padding-left: 0px;
-    width: 400px;
+    padding-left: 100px;
+    width: 450px;
   }
 
   .nbitext2 {
@@ -1572,21 +1559,21 @@
   }
 }
 
-@media (max-width: 853px) {
-  .collapsebtnnothing {
+@media (max-width: 853px){
+  .collapsebtn {
     margin-top: -5px;
     margin-right: 40px;
   }
 
-  .hiddenbuttonnothing {
+  .hiddenbutton {
     display: none;
   }
 
-  .mobilenothing {
+  .mobile {
     display: none;
   }
 
-  .englishnothing {
+  .english {
     margin-left: 410px;
   }
 
@@ -1696,7 +1683,7 @@
     margin-top: 14px;
   }
 
-  .freenothingnothing {
+  .free {
     font-weight: 500;
     margin-left: 135px;
     margin-top: 18px;
@@ -1705,7 +1692,7 @@
     color: #ffffff;
   }
 
-  .textnothing {
+  .text {
     width: 249px;
     height: 16px;
     margin-top: 18px;
@@ -1754,7 +1741,7 @@
     padding-left: 10px;
   }
 
-  .phonenothing {
+  .phone {
     /* color: white; */
     padding-top: 15px;
     width: 120px;
@@ -1775,7 +1762,7 @@
   }
 
   .shop {
-    margin-left: 6.3%;
+    margin-left: -13.5%;
     font-family: rubik;
   }
 
@@ -1945,8 +1932,8 @@
   }
 
   .reviews {
-    width: 100%;
-    margin-left: 12%;
+    width: 1550px;
+    margin-left: 75px;
   }
 
   .mt-5 {
@@ -2432,10 +2419,9 @@
     margin: 26px auto;
     width: 416px;
   }
-
   .vsbform2 {
     margin: 26px auto;
-    width: 416px;
+    width: 416px; 
   }
 
   .vsbmt {
@@ -2925,14 +2911,14 @@
     font-size: 14px;
     line-height: 35px;
     letter-spacing: 0.04em;
-    padding-left: 30px;
-    width: 400px;
+    padding-left: 130px;
+    width: 460px;
   }
 
   .imagebn2 {
     width: 353px;
     height: 353px;
-    margin-left: 25px;
+    margin-left: 115px;
   }
 
   .whatwedo {
@@ -2984,21 +2970,21 @@
   }
 }
 
-@media (max-width: 800px) {
-  .collapsebtnnothing {
+@media (max-width: 800px){
+  .collapsebtn {
     margin-top: -5px;
     margin-right: 40px;
   }
 
-  .hiddenbuttonnothing {
+  .hiddenbutton {
     display: none;
   }
 
-  .mobilenothing {
+  .mobile {
     display: none;
   }
 
-  .englishnothing {
+  .english {
     margin-left: 380px;
   }
 
@@ -3109,7 +3095,7 @@
     margin-top: 14px;
   }
 
-  .freenothingnothing {
+  .free {
     font-weight: 500;
     margin-left: 80px;
     margin-top: 18px;
@@ -3118,7 +3104,7 @@
     color: #ffffff;
   }
 
-  .textnothing {
+  .text {
     width: 249px;
     height: 16px;
     margin-top: 18px;
@@ -3167,7 +3153,7 @@
     padding-left: 10px;
   }
 
-  .phonenothing {
+  .phone {
     /* color: white; */
     padding-top: 15px;
     width: 120px;
@@ -3188,7 +3174,7 @@
   }
 
   .shop {
-    margin-left: 6%;
+    margin-left: -13.5%;
     font-family: rubik;
   }
 
@@ -3359,9 +3345,8 @@
   }
 
   .reviews {
-    width: 100%;
-    margin-left: 37%;
-    flex-direction: column;
+    width: 1520px;
+    margin-left: 50px;
   }
 
   .mt-5 {
@@ -3381,12 +3366,7 @@
     font-size: 23px;
     line-height: 20px;
   }
-  .mag {
-    margin-top: 10%;
-}
-.mt-99 {
-  margin-top: 0px;
-}
+
   .img2h4 {
     text-align: justify;
     color: #F1F5F6;
@@ -3597,12 +3577,10 @@
     margin-top: -2px;
     margin-left: 15px;
   }
-
   .adp {
     margin-top: -2px;
     margin-left: 10px;
-  }
-
+}
   .shorttest {
     font-size: 11px;
     color: #0A0E69;
@@ -3798,11 +3776,10 @@
   .gender {
     padding-left: 78px;
   }
-
-  .genderwidth {
-    width: 300px;
-  }
-
+.genderwidth
+{
+  width:300px;
+}
   .male {
     margin-left: 48px;
   }
@@ -3857,12 +3834,10 @@
     margin: 26px auto;
     width: 416px;
   }
-
-  .vsbform2 {
+.vsbform2 {
     margin: 26px auto;
-    width: 416px;
+    width: 416px; 
   }
-
   .vsbmt {
     margin-top: 27px;
   }
@@ -4344,14 +4319,14 @@
     font-size: 14px;
     line-height: 35px;
     letter-spacing: 0.04em;
-    padding-left: 35px;
-    width: 350px;
+    padding-left: 105px;
+    width: 400px;
   }
 
   .imagebn2 {
     width: 313px;
     height: 313px;
-    margin-left: 15px;
+    margin-left: 105px;
   }
 
   .nbitext2 {
@@ -4383,21 +4358,21 @@
   }
 }
 
-@media (max-width: 768px) {
-  .collapsebtnnothing {
+@media (max-width: 768px){
+  .collapsebtn {
     margin-top: -5px;
     margin-right: 40px;
   }
 
-  .hiddenbuttonnothing {
+  .hiddenbutton {
     display: none;
   }
 
-  .mobilenothing {
+  .mobile {
     display: none;
   }
 
-  .mobilelangnothing {
+  .mobilelang {
     display: block;
   }
 
@@ -4405,7 +4380,7 @@
     display: none;
   }
 
-  .englishnothing {
+  .english {
     margin-left: 350px;
   }
 
@@ -4492,10 +4467,9 @@
     width: 735px;
     margin: 80px auto;
   }
-
   .new-section2__group.layout2 {
     position: relative;
-
+    
   }
 
   .cf {
@@ -4516,14 +4490,14 @@
     margin-top: 14px;
   }
 
-  .freenothingnothing {
+  .free {
 
     margin-left: 50px;
     margin-top: 18px;
 
   }
 
-  .textnothing {
+  .text {
     width: 249px;
     height: 16px;
     margin-top: 18px;
@@ -4572,7 +4546,7 @@
     padding-left: 10px;
   }
 
-  .phonenothing {
+  .phone {
     /* color: white; */
     padding-top: 15px;
     width: 120px;
@@ -4593,7 +4567,7 @@
   }
 
   .shop {
-    margin-left: 5.5%;
+    margin-left: -13.5%;
     font-family: rubik;
   }
 
@@ -4738,14 +4712,7 @@
     margin-left: 20px;
     margin-top: 0px;
   }
-  .laptopvideo{
-    display: none;
-  }
 
-  .reviews2
-  {
-    flex-direction: column;
-  }
   .buttons3 {
     background: #a0bd1c;
     border-radius: 6px;
@@ -4767,13 +4734,12 @@
     height: 87px;
     margin-left: -50px;
   }
+
   .reviews {
-    width: 100%;
-    margin-left: 34%;
+    width: 1300px;
+    margin-left: 60px;
   }
-.mag{
-  margin-top: 30px;
-}
+
   .mt-5 {
     width: 250px;
   }
@@ -5239,12 +5205,10 @@
     margin: 26px auto;
     width: 416px;
   }
-
   .vsbform2 {
     margin: 26px auto;
-    width: 416px;
+    width: 416px; 
   }
-
   .vsbmt {
     margin-top: 27px;
   }
@@ -5576,7 +5540,7 @@
 
   .contactheight {
     position: relative;
-    height: 1950px;
+    height: 1350px;
   }
 
   .faqheight {
@@ -5749,25 +5713,25 @@
   }
 }
 
-@media (max-width: 720px) {
+@media (max-width: 720px){
   .bannertext {
     font-size: 30px;
   }
 
-  .collapsebtnnothing {
+  .collapsebtn {
     margin-top: -5px;
     margin-right: 40px;
   }
 
-  .hiddenbuttonnothing {
+  .hiddenbutton {
     display: none;
   }
 
-  .mobilenothing {
+  .mobile {
     display: none;
   }
 
-  .mobilelangnothing {
+  .mobilelang {
     display: block;
   }
 
@@ -5775,12 +5739,12 @@
     display: none;
   }
 
-  .englishnothing {
+  .english {
     margin-left: 300px;
   }
 
   .get {
-    margin-left: 0px;
+    margin-left: 220px;
   }
 
   .successcard {
@@ -5886,14 +5850,14 @@
     margin-top: 14px;
   }
 
-  .freenothingnothing {
+  .free {
 
     margin-left: 30px;
     margin-top: 18px;
 
   }
 
-  .textnothing {
+  .text {
     width: 249px;
     height: 16px;
     margin-top: 18px;
@@ -5942,7 +5906,7 @@
     padding-left: 10px;
   }
 
-  .phonenothing {
+  .phone {
     /* color: white; */
     padding-top: 15px;
     width: 120px;
@@ -5963,7 +5927,7 @@
   }
 
   .shop {
-    margin-left: 5%;
+    margin-left: -14%;
     font-family: rubik;
   }
 
@@ -6116,8 +6080,8 @@
   }
 
   .reviews {
-    width: 100%;
-    margin-left: 35%;
+    width: 1300px;
+    margin-left: 270px;
   }
 
   .btn-review {
@@ -6571,10 +6535,9 @@
     margin: 26px auto;
     width: 416px;
   }
-
   .vsbform2 {
     margin: 26px auto;
-    width: 416px;
+    width: 416px; 
   }
 
   .vsbmt {
@@ -6689,15 +6652,13 @@
   .reviewheight {
     height: 1800px;
   }
-
-  .laptopvideo {
+  .laptopvideo{
     display: none;
   }
-
-  .mobilevideo {
-    display: block;
-  }
-
+.mobilevideo
+{
+  display: block;
+}
   .reviewh2 {
     padding-top: 68px;
     padding-left: 350px;
@@ -6916,7 +6877,7 @@
 
   .contactheight {
     position: relative;
-    height: 2000px;
+    height: 1700px;
   }
 
   .faqheight {
@@ -7046,7 +7007,7 @@
     color: #0A0E69;
     font-family: Ubuntu;
     margin-bottom: 58px;
-    margin-left: 0px;
+    margin-left: 190px;
   }
 
   .whatwedo {
@@ -7055,7 +7016,7 @@
     color: #0A0E69;
     font-family: Ubuntu;
     margin-top: 78px;
-    margin-left: 0px;
+    margin-left: 190px;
   }
 
   .imagebn {
@@ -7067,20 +7028,16 @@
 
   .nbitext {
     padding-left: 80px;
-    width: 700px;
-    margin-top: 0px;
+    width: 600px;
+    margin-top: 47px;
   }
 
   .imagebn2 {
     width: 420px;
-    height: 320px;
+    height: 420px;
     margin-left: 120px;
-    margin-top: -910px;
+    margin-top: -900px;
   }
-  .divcover {
-    margin-right: 0PX;
-    margin-left: 0px;
-}
 
   .top2 {
     margin-top: 350px;
@@ -7088,7 +7045,7 @@
 
   .nbitext2 {
     padding-left: 80px;
-    width: 700px;
+    width: 600px;
   }
 
   .col-md-1 {
@@ -7116,21 +7073,21 @@
   }
 }
 
-@media (max-width: 640px) {
-  .collapsebtnnothing {
+@media (max-width: 640px){
+  .collapsebtn {
     margin-top: -5px;
     margin-right: 40px;
   }
 
-  .hiddenbuttonnothing {
+  .hiddenbutton {
     display: none;
   }
 
-  .mobilenothing {
+  .mobile {
     display: none;
   }
 
-  .mobilelangnothing {
+  .mobilelang {
     display: block;
   }
 
@@ -7138,7 +7095,7 @@
     display: none;
   }
 
-  .englishnothing {
+  .english {
     margin-left: 220px;
   }
 
@@ -7223,7 +7180,7 @@
     margin-top: 14px;
   }
 
-  .freenothingnothing {
+  .free {
     font-weight: 600;
     margin-left: 5px;
     margin-top: 18px;
@@ -7232,7 +7189,7 @@
     color: #ffffff;
   }
 
-  .textnothing {
+  .text {
     width: 249px;
     height: 16px;
     margin-top: 18px;
@@ -7281,7 +7238,7 @@
     padding-left: 10px;
   }
 
-  .phonenothing {
+  .phone {
     /* color: white; */
     padding-top: 15px;
     width: 120px;
@@ -7302,7 +7259,7 @@
   }
 
   .shop {
-    margin-left: 4%;
+    margin-left: -14%;
     font-family: rubik;
   }
 
@@ -7623,7 +7580,7 @@
 
   .img3h4 {
     color: #F1F5F6;
-    margin-left: 76%;
+    margin-left: 6px;
     font-family: Ubuntu;
   }
 
@@ -7640,11 +7597,11 @@
   }
 
   .get {
-    margin: 10px 10%;
+    margin: 10px 180px;
   }
 
   .customers {
-    width: 100%;
+    width: 480px;
     height: 41px;
     font-family: Rubik;
     font-style: normal;
@@ -7957,12 +7914,10 @@
     margin: 26px auto;
     width: 416px;
   }
-
-  .vsbform2 {
+.vsbform2 {
     margin: 26px auto;
-    width: 416px;
+    width: 416px; 
   }
-
   .vsbmt {
     margin-top: 27px;
   }
@@ -8293,7 +8248,7 @@
 
   .contactheight {
     position: relative;
-    height: 2100px;
+    height: 1700px;
   }
 
   .faqheight {
@@ -8419,14 +8374,14 @@
   .imagebn {
     width: 413px;
     height: 344px;
-    margin-left: 15%;
+    margin-left: 20%;
   }
 
   .imagebn2 {
     width: 420px;
-    height: 320px;
-    margin-left: 15%;
-    margin-top: -1100px;
+    height: 420px;
+    margin-left: 20%;
+    margin-top: -1050px;
   }
 
   .whatwedo {
@@ -8435,7 +8390,7 @@
     color: #0A0E69;
     font-family: Ubuntu;
     margin-top: 78px;
-    margin-left: 0px;
+    margin-left: 100px;
   }
 
   .whoweare {
@@ -8444,7 +8399,7 @@
     color: #0A0E69;
     font-family: Ubuntu;
 
-    margin-left: 0px;
+    margin-left: 100px;
   }
 
   .top2 {
@@ -8546,26 +8501,24 @@
     margin-top: 40px;
     padding: 10px;
     border-radius: 5px;
-  }
-
+}
   .leaderpageheight {
-    height: 6800px;
-  }
-
-  .collapsebtnnothing {
+    height: 6300px;
+}
+  .collapsebtn {
     margin-top: -5px;
     margin-right: 40px;
   }
 
-  .hiddenbuttonnothing {
+  .hiddenbutton {
     display: none;
   }
 
-  .mobilenothing {
+  .mobile {
     display: none;
   }
 
-  .mobilelangnothing {
+  .mobilelang {
     display: block;
   }
 
@@ -8573,11 +8526,11 @@
     display: none;
   }
 
-  .englishnothing {
+  .english {
     margin-left: 170px;
   }
 
-  .callssnothing {
+  .new-section1__block21.layout {
     height: 50px;
   }
 
@@ -8595,7 +8548,7 @@
 
   .list-group-horizontal {
     flex-direction: column;
-    margin-left: 33%;
+    margin-left: 200px;
   }
 
   .hide {
@@ -8664,7 +8617,7 @@
     margin-top: 14px;
   }
 
-  .freenothingnothing {
+  .free {
     font-weight: 600;
     margin-left: 35px;
     margin-top: 18px;
@@ -8674,7 +8627,7 @@
     color: #ffffff;
   }
 
-  .textnothing {
+  .text {
     width: 249px;
     height: 16px;
     margin-top: 18px;
@@ -8737,7 +8690,7 @@
     padding-left: 10px;
   }
 
-  .phonenothing {
+  .phone {
     /* color: white; */
     padding-top: 15px;
     width: 120px;
@@ -8758,7 +8711,7 @@
   }
 
   .shop {
-    margin-left: 1.5%;
+    margin-left: -14%;
     font-family: rubik;
   }
 
@@ -8785,7 +8738,7 @@
 
   .home {
     color: #000000;
-    margin-left: 10px;
+    margin-left: 60px;
     margin-top: 5px;
     font-family: Ubuntu;
     font-style: normal;
@@ -8796,7 +8749,7 @@
 
   .visa {
     color: #000000;
-    margin-left: 10px;
+    margin-left: 60px;
     margin-top: 5px;
     font-family: Ubuntu;
     font-style: normal;
@@ -8807,7 +8760,7 @@
 
   .services {
     color: #000000;
-    margin-left: 10px;
+    margin-left: 60px;
     margin-top: 5px;
     font-family: Ubuntu;
     font-style: normal;
@@ -8819,7 +8772,7 @@
   .contact {
     width: 100%;
     color: #000000;
-    margin-left: 10px;
+    margin-left: 60px;
     margin-top: 5px;
     font-family: Ubuntu;
     font-style: normal;
@@ -8835,7 +8788,7 @@
   .about {
     width: 100%;
     color: #000000;
-    margin-left: 10px;
+    margin-left: 60px;
     margin-top: 5px;
     font-family: Ubuntu;
     font-style: normal;
@@ -8936,8 +8889,8 @@
   }
 
   .reviews {
-    width: 100%;
-    margin: 0px 32% 40px;
+    width: 1020px;
+    margin: 100px 210px 40px;
   }
 
   .btn-review {
@@ -8985,6 +8938,12 @@
     margin-left: 40px;
     font-family: Ubuntu
   }
+  .shorttest {
+  
+    padding-top: 0px;
+    padding-bottom: 0px;
+   
+}
 
   .img5h1 {
     font-size: 32px;
@@ -9087,14 +9046,6 @@
     color: #060a5c;
     text-align: center;
   }
-  /* .container, .container-md, .container-sm {
-    max-width: 95%;
-}
-.divcover {
-  margin-top: 120PX;
-  margin-left: 3%;
-  margin-right: 5%;
-} */
 
   .subscribe {
     background: #0C65EB;
@@ -9113,21 +9064,17 @@
   }
 
   .div2 {
-    padding-left: 30px;
-    margin-top: 180px;
+    padding-left: 0px;
   }
-  .company {
-    margin-left: 0px;
-    margin-top: 10%;
-}
+
   .div3 {
-    padding-left: 30px;
-    margin-top: 0px;
+    padding-left: 20px;
+
   }
 
   .div4 {
-    padding-left: 30px;
-    margin-top: 0px;
+    padding-left: 5px;
+
   }
 
   .fs-13 {
@@ -9260,13 +9207,11 @@
     margin: 30px auto 166px;
     width: 538px;
   }
-
   .bibtn {
     margin-left: 36px;
     margin-top: 56px;
     margin-bottom: 85px;
-  }
-
+}
   .cardform {
     border: 1px solid #ffffff;
     height: 1399px;
@@ -9359,7 +9304,7 @@
   }
 
   .male {
-    margin-left: -20px;
+    margin-left:-20px;
   }
 
   .please {
@@ -9412,12 +9357,10 @@
     margin: 26px auto;
     width: 416px;
   }
-
   .vsbform2 {
     margin: 26px auto;
-    width: 416px;
+    width: 416px; 
   }
-
   .vsbmt {
     margin-top: 27px;
   }
@@ -9543,13 +9486,12 @@
     padding-left: 280px;
 
   }
-
   .reviewvideo {
     width: 400px;
     height: 200px;
     margin-left: -20px;
     margin-top: 80px;
-  }
+}
 
   .reviewcard {
     width: 500px;
@@ -9735,14 +9677,14 @@
   }
 
   .applybtn {
-    padding-top: 9px;
-    padding-bottom: 9px;
+    padding-top: 5px;
+    padding-bottom: 5px;
     font-size: 14px;
   }
 
   .contactheight {
     position: relative;
-    height: 2000px;
+    height: 1700px;
   }
 
   .faqheight {
@@ -9825,7 +9767,6 @@
     position: relative;
     height: 3850px;
   }
-
   .contactus {
     font-size: 40px;
     text-align: center;
@@ -9833,8 +9774,7 @@
     font-family: Rubik;
     margin-bottom: 8px;
     padding-top: 91px;
-  }
-
+}
   .pptop {
     width: 100%;
     height: 200px;
@@ -9885,7 +9825,7 @@
     color: #0A0E69;
     font-family: Ubuntu;
     margin-top: 78px;
-    margin-left: 0px;
+    margin-left: 80px;
   }
 
   .whoweare {
@@ -9893,7 +9833,7 @@
     /* text-align: center; */
     color: #0A0E69;
     font-family: Ubuntu;
-    margin-left: 0px;
+    margin-left: 80px;
   }
 
   .imagebn {
@@ -9905,9 +9845,9 @@
 
   .imagebn2 {
     width: 320px;
-    height: 300px;
-    margin-left: 20%;
-    margin-top: -1090px;
+    height: 320px;
+    margin-left: 25%;
+    margin-top: -1030px;
   }
 
   .top2 {

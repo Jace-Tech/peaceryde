@@ -5,10 +5,10 @@
 .body {
   overflow-x: hidden;
 }
-.paybtn {
-  width: 89%;
-  height: 50px;
-  margin-right: 10%;
+.paybtn
+{
+  width:200px;
+  height: 200px;
 }
 .movements {
   margin-left: 500px;
@@ -950,13 +950,13 @@ p,a,h1,h2,h3,h4 {
 
   .cont {
     margin-top: 49px;
-    padding-left: 806px;
+    padding-left: 706px;
   }
 
   .contactcard {
     border: transparent;
     border-radius: 25px;
-    margin-left: 0px;
+    margin-left: 100px;
     width: 566px;
   }
 
@@ -2382,13 +2382,13 @@ p,a,h1,h2,h3,h4 {
 
   .cont {
     margin-top: 49px;
-    padding-left: 506px;
+    padding-left: 406px;
   }
 
   .contactcard {
     border: transparent;
     border-radius: 25px;
-    margin-left: -50px;
+    margin-left: 100px;
     width: 566px;
   }
 
@@ -3776,13 +3776,13 @@ p,a,h1,h2,h3,h4 {
 
   .cont {
     margin-top: 49px;
-    padding-left: 366px;
+    padding-left: 256px;
   }
 
   .contactcard {
     border: transparent;
     border-radius: 25px;
-    margin-left: -30px;
+    margin-left: 80px;
     width: 566px;
   }
 
@@ -5150,13 +5150,13 @@ p,a,h1,h2,h3,h4 {
 
   .cont {
     margin-top: 49px;
-    padding-left: 346px;
+    padding-left: 246px;
   }
 
   .contactcard {
     border: transparent;
     border-radius: 25px;
-    margin-left: -0px;
+    margin-left: 50px;
     width: 566px;
   }
 
@@ -6509,13 +6509,13 @@ p,a,h1,h2,h3,h4 {
 
   .cont {
     margin-top: 49px;
-    padding-left: 306px;
+    padding-left: 126px;
   }
 
   .contactcard {
     border: transparent;
     border-radius: 25px;
-    margin-left: -100px;
+    margin-left: 70px;
     width: 566px;
   }
 
@@ -7863,13 +7863,13 @@ p,a,h1,h2,h3,h4 {
 
   .cont {
     margin-top: 49px;
-    padding-left: 256px;
+    padding-left: 206px;
   }
 
   .contactcard {
     border: transparent;
     border-radius: 25px;
-    margin-left: -30px;
+    margin-left: 20px;
     width: 566px;
   }
 
@@ -9231,13 +9231,13 @@ p,a,h1,h2,h3,h4 {
 
   .cont {
     margin-top: 49px;
-    padding-left: 256px;
+    padding-left: 106px;
   }
 
   .contactcard {
     border: transparent;
     border-radius: 25px;
-    margin-left: -0px;
+    margin-left: 50px;
     width: 566px;
   }
 
@@ -10619,13 +10619,13 @@ p,a,h1,h2,h3,h4 {
 
   .cont {
     margin-top: 49px;
-    padding-left: 206px;
+    padding-left: 106px;
   }
 
   .contactcard {
     border: transparent;
     border-radius: 25px;
-    margin-left: -10px;
+    margin-left: 10px;
     width: 566px;
   }
 
@@ -12185,7 +12185,7 @@ p,a,h1,h2,h3,h4 {
     height: 1800px;
   }
   .leaderpageheight {
-    height: 3200px;
+    height: 3500px;
 }
   input[type=radio],
   input.radio {
@@ -13055,13 +13055,13 @@ p,a,h1,h2,h3,h4 {
 
   .cont {
     margin-top: 49px;
-    padding-left: 186px;
+    padding-left: 86px;
   }
 
   .contactcard {
     border: transparent;
     border-radius: 25px;
-    margin-left: -50px;
+    margin-left: 10px;
     width: 566px;
   }
 
@@ -14266,7 +14266,7 @@ p,a,h1,h2,h3,h4 {
     color: #F1F5F6;
   }
   .leaderpageheight {
-    height: 4400px;
+    height: 4650px;
 }
   .everythingtext2 {
     font-weight: 400;
@@ -14401,13 +14401,13 @@ p,a,h1,h2,h3,h4 {
 
   .cont {
     margin-top: 49px;
-    padding-left: 116px;
+    padding-left: 56px;
   }
 
   .contactcard {
     border: transparent;
     border-radius: 25px;
-    margin-left: -30px;
+    margin-left: 10px;
     width: 446px;
   }
 
@@ -14418,3 +14418,4 @@ p,a,h1,h2,h3,h4 {
     padding-top: 49px;
   }
 }
+

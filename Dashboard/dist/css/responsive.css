@@ -6,6 +6,22 @@
 {
   padding-top:25px;padding-left:36px;color:#5B616E;font-family: Segoe UI;font-size: 16px;font-style: normal;font-weight: 400;
 }
+.trackh3
+{
+  font-family: Ubuntu;
+  font-size: 30px;
+  font-style: normal;
+  color:#0F1377;
+  padding-top:20px;padding-left:51px
+}
+.logoutmobile
+{
+  display: none;
+}
+.logoutlaptop
+{
+  display: block;
+}
 @media(min-width:900px) and (max-width: 2560px) {
 /**/
 .title
@@ -21,12 +37,12 @@
 }
 .fill
 {
-  padding: 30px 30px 5px;
+  padding: 0px 30px 25px;
     /* padding-left: 204px; */
     font-family: Ubuntu;
-    font-size: 24px;
+    font-size: 20px;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 200;
     color: #0A0E69;
     text-align: center;
 }
@@ -410,7 +426,7 @@
     font-size: 30px;
     font-style: normal;
     color:#0F1377;
-    padding-top:20px;padding-left:395px
+    padding-top:20px;padding-left:355px
                                   
   }
   .manage
@@ -477,6 +493,7 @@
     #main {
       transition: margin-left .5s;
       padding: 16px;
+      height: 900px;
     }
     .image-upload-two{
         grid-area: img-u-two;
@@ -536,7 +553,7 @@
         color: #0F1377;
         padding-top: 20px;
         text-align: center;
-         width: 900px;
+         width: 800px;
       }
       .customise
       {
@@ -626,12 +643,12 @@
 }
 .fill
 {
-  padding: 30px 30px 5px;
+  padding: 0px 30px 25px;
     /* padding-left: 204px; */
     font-family: Ubuntu;
-    font-size: 24px;
+    font-size: 20px;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 200;
     color: #0A0E69;
     text-align: center;
 }
@@ -1132,11 +1149,11 @@
           font-size: 30px;
           font-style: normal;
           color:#0F1377;
-          padding-top:20px;padding-left:51px;
+          padding-top:20px;padding-left:281px;
       }
       .customise
       {
-        margin-top: -40px; display: flex;
+        margin-top: 40px; display: flex;
         justify-content: center;
       }
       .click
@@ -1214,12 +1231,12 @@
 }
 .fill
 {
-  padding: 30px 30px 5px;
+  padding: 0px 30px 25px;
     /* padding-left: 204px; */
     font-family: Ubuntu;
-    font-size: 24px;
+    font-size: 20px;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 200;
     color: #0A0E69;
     text-align: center;
 }
@@ -1792,12 +1809,12 @@
 }
 .fill
 {
-  padding-top: 30px;
+  padding-top: 0px;
     
     font-family: Ubuntu;
-    font-size: 24px;
+    font-size: 20px;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 200;
     color: #0A0E69;
     text-align: center;
 }
@@ -2022,7 +2039,7 @@
     font-style: normal;
     color: #0F1377;
     padding-top: 20px;
-    padding-left: 51px;                              
+    text-align: center;                             
   }
   .manage
   {
@@ -2359,6 +2376,7 @@
   }
   }
 @media(min-width:375px) and (max-width: 479px) {
+ 
   .title
 {
   padding: 30px;
@@ -2372,12 +2390,12 @@
 }
 .fill
 {
-  padding: 30px 30px 5px;
+  padding: 0px 30px 25px;
     /* padding-left: 204px; */
     font-family: Ubuntu;
-    font-size: 24px;
+    font-size: 20px;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 200;
     color: #0A0E69;
     text-align: center;
 }
@@ -2614,7 +2632,7 @@
     font-style: normal;
     color: #0F1377;
     padding-top: 20px;
-    padding-left: 51px;                              
+    text-align: center;                            
   }
   .manage
   {
@@ -2950,7 +2968,15 @@
   }
 }
 @media(min-width:280px) and (max-width: 374px) {
-  
+  .logoutmobile
+  {
+    display: block;
+    padding-left: 80px;
+  }
+  .logoutlaptop
+  {
+    display: none;
+  }
   .title
 {
   padding: 30px;
@@ -2964,12 +2990,12 @@
 }
 .fill
 {
-  padding: 30px 30px 5px;
+  padding: 0px 30px 25px;
     /* padding-left: 204px; */
     font-family: Ubuntu;
-    font-size: 24px;
+    font-size: 20px;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 200;
     color: #0A0E69;
     text-align: center;
 }
@@ -3069,7 +3095,7 @@
     width: 100%;
     height: 440px;
     background-color: #f7f7f7;
-    margin-top: 28px;
+    margin-top: 58px;
     margin-left: 7px;
     overflow-x: auto;
   }
@@ -3091,7 +3117,11 @@
   {
     padding-top:48px;color:#080C58;font-family: Ubuntu;font-size: 12px;font-style: normal;font-weight: 500;
   }
-  
+  .trackh3
+{
+ 
+  margin-top:50px;padding-left:51px
+}
   /*SERVICES*/
   .question {
     font-family: Ubuntu;
@@ -3206,7 +3236,7 @@
     font-style: normal;
     color: #0F1377;
     padding-top: 20px;
-    padding-left: 51px;                              
+    text-align: center;                            
   }
   .manage
   {
@@ -3413,6 +3443,7 @@
   #main {
     transition: margin-left .5s;
     padding: 16px;
+
   }
   .drop-zone {
     width: 100%;

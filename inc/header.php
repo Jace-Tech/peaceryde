@@ -47,7 +47,7 @@
     
             <nav class="navbar navbar-expand-lg bg-nav shadow navbar-light height" style="padding-bottom: 0px;">
               <div class="container-fluid cf cfheight">
-                <a class="navbar-brand brand" href="Index.php"><img src="assets/logo.png" class="logoimg" width="164"></a>
+                <a class="navbar-brand brand" href="Index.html"><img src="assets/logo.png" class="logoimg" width="164"></a>
                 <div class=" nav-item dropdown mobilelang">
                   <a class="nav-link dropdown-toggle nav english" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false"
                     >
@@ -60,10 +60,10 @@
                       </svg>
                       &nbsp;<span>English |</span></a>
                   <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                    <li><a class="dropdown-item" href="#"
+                    <li><a class="dropdown-item" href="NBV.html"
                         style="color: black; font-size: 15px; padding-bottom: 10px;">Nigeria
                       </a></li>
-                    <li><a class=" dropdown-item" href="#"
+                    <li><a class=" dropdown-item" href="NTWP.html"
                         style="color: black; font-size: 15px; padding-bottom: 10px;">Nigeria</a>
                     </li>
                     <li><a class=" dropdown-item" href="#"
@@ -97,23 +97,23 @@
                 <div class="collapse navbar-collapse" id="collapsibleNavbar">
                   <ul class="navbar-nav">
                     <li class="nav-item">
-                      <a class="nav-link nav link home" href="index.php">Home</a>
+                      <a class="nav-link nav link home" href="Index.html">Home</a>
                     </li>
                     <li class="nav-item dropdown">
-                      <a class="nav-link link services" href="sbform.php"> Services</a>
+                      <a class="nav-link link services" href="sbform.html"> Services</a>
                     </li>
                     <li class=" nav-item">
-                      <a class="nav-link link home" href="leaders.php">Leadership</a>
+                      <a class="nav-link link home" href="leaders.html">Leadership</a>
                     </li>
     
                     <li class=" nav-item">
-                      <a class="nav-link link contact" href="about.php">About Us</a>
+                      <a class="nav-link link contact" href="about.html">About Us</a>
                     </li>
                     
                 
                     <li class="nav-item apply ml-118">
-                      <a href="SBForm.php" class="btn button btn-outline-light appbtn" type="button">Apply</a>
-                      <a href="signin.php" class="btn button2 sign" type="button">Sign In</a>
+                      <a href="SBForm.html" class="btn button btn-outline-light appbtn" type="button">Apply</a>
+                      <a href="signin.html" class="btn button2 sign" type="button">Sign In</a>
                     </li>
                   
                   <li class=" nav-item dropdown lang">
@@ -121,10 +121,10 @@
                       >
                       <img src="assets/image_2022-02-27_16-21-31.png" width="17" style="margin-top:-4px;font-size: 14px;">&nbsp;<span>English |</span></a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                      <li><a class="dropdown-item" href="#"
+                      <li><a class="dropdown-item" href="NBV.html"
                           style="color: black; font-size: 15px; padding-bottom: 10px;">Nigeria
                         </a></li>
-                      <li><a class=" dropdown-item" href="#"
+                      <li><a class=" dropdown-item" href="NTWP.html"
                           style="color: black; font-size: 15px; padding-bottom: 10px;">Nigeria</a>
                       </li>
                       <li><a class=" dropdown-item" href="#"
