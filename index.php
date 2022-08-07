@@ -29,7 +29,7 @@ $uploads = new Upload($connect);
   <link rel="stylesheet" type="text/css" href="css/Laptops.css">
   <link rel="stylesheet" type="text/css" href="css/smallscreen800.css">
   <link rel="stylesheet" type="text/css" href="css/responsive.css">
-  <link rel="stylesheet" type="text/css" href="css/header.css">
+  <!-- <link rel="stylesheet" type="text/css" href="css/header.css"> -->
   <script type="text/javascript" src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script type="text/javascript" src="https://unpkg.com/headroom.js@0.12.0/dist/headroom.min.js"></script>
   <script src="https://cdn.jsdelivr.net/gh/px2code/posize/build/v1.00.3.js"></script>
@@ -378,7 +378,7 @@ $uploads = new Upload($connect);
           <h1 class="new-section6__hero-title1 layout customers">
             What our customers have to say about us
           </h1>
-          <div class="reviews2 reviews mt-99">
+          <div class="row reviews mt-99">
             <div class="col-md-2 hide"></div>
             <?php  ?>
             <?php foreach ($reviews->getAllFeaturedReviews("text") as $review) : ?>
@@ -423,7 +423,7 @@ $uploads = new Upload($connect);
           </div>
           <?php if (count($reviews->getAllFeaturedReviews("video")) >= 3) : ?>
             <div class="">
-              <h1 style="text-align: center; font-family: Rubik; font-style: normal; font-weight: normal; font-size: 30px; line-height: 41px; color: #060a5c;" class="laptopvideo">
+              <h1 class="laptopvideo laptopvideoh1">
                 Customer's video reviews
               </h1>
               <div class="row reviews mt-99 laptopvideo">
@@ -446,7 +446,7 @@ $uploads = new Upload($connect);
               <h1 style="text-align: center; font-family: Rubik; font-style: normal; font-weight: normal; font-size: 30px; line-height: 41px; color: #060a5c;" class="mobilevideo">
                 Customer's video reviews
               </h1>
-              <div class="row reviews mt-99 mobilevideo et">
+              <div class="row reviews mt-99 mobilevideo">
                 <?php $i = 0; ?>
                 <?php foreach ($reviews->getAllFeaturedReviews("video") as $videoReview) : ?>
                   <?php if($i == 0):  ?>
@@ -473,50 +473,50 @@ $uploads = new Upload($connect);
       <div class="new-section7__group layout">
         <div class="movement">
           <div class="new-section7__box8 layout"></div>
-
+        
           <div class="row" style="background-color: #E6F5EE;">
             <div class="col-md-6 col-sm-6 col-xs-6">
-
-              <div class="new-section7__cover-group layout">
-                <div style="background-image:url(assets/subscription.png); background-size: cover;" class="new-section7__cover1 layout">
+              
+                <div class="new-section7__cover-group layout">
+                  <div style="background-image:url(assets/subscription.png); background-size: cover;" class="new-section7__cover1 layout">
+                  </div>
+                  <div class="new-section7__box9 layout"></div>
                 </div>
-                <div class="new-section7__box9 layout"></div>
-              </div>
-
+              
             </div>
             <div class="col-md-6 col-sm-6 col-xs-6">
-
-              <div class="new-section7__flex21 layout">
-                <h3 class="new-section7__subtitle1 layout offer">
-                  Never miss an offer
-                </h3>
-                <div class="new-section7__text-body3 layout sub">
-                  Subscribe and be the first to receive our exclusive offers.
-                </div>
-                <div class="new-section7__flex22 layout">
-                  <div class="new-section7__flex22-item">
-                    <div class="new-section7__block15 layout">
-                      <input type="email" class="form-control" placeholder="email address" style="font-family: ubuntu;">
+              
+                <div class="new-section7__flex21 layout">
+                  <h3 class="new-section7__subtitle1 layout offer">
+                    Never miss an offer
+                  </h3>
+                  <div class="new-section7__text-body3 layout sub">
+                    Subscribe and be the first to receive our exclusive offers.
+                  </div>
+                  <div class="new-section7__flex22 layout">
+                    <div class="new-section7__flex22-item">
+                      <div class="new-section7__block15 layout">
+                        <input type="email" class="form-control" placeholder="Name" style="font-family: ubuntu;">
+                      </div>
+                    </div>
+                    <div class="new-section7__flex22-item">
+                      <div class="new-section7__block16 layout">
+                        <input type="text" class="form-control" placeholder="Email" style="font-family: ubuntu;">
+                      </div>
                     </div>
                   </div>
-                  <div class="new-section7__flex22-item">
-                    <div class="new-section7__block16 layout">
-                      <input type="text" class="form-control" placeholder="country" style="font-family: ubuntu;">
-                    </div>
+                  <div class="new-section7__block14 layout">
+                    <button class="btn subscribe">subscribe</button>
+    
                   </div>
                 </div>
-                <div class="new-section7__block14 layout">
-                  <button class="btn subscribe">subscribe</button>
-
-                </div>
-              </div>
-
+              
             </div>
           </div>
         </div>
-
-
-        <!-- <div class="new-section7__flex5-spacer"></div> -->
+       
+          
+          <!-- <div class="new-section7__flex5-spacer"></div> -->
 
       </div>
     </section>
@@ -583,3 +583,7 @@ $uploads = new Upload($connect);
 </body>
 
 </html>
+
+
+
+
