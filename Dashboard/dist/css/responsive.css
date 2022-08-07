@@ -132,7 +132,7 @@
   .drop-zone {
     width: 527px;
     height: 360px;
-    margin-top: 82px;
+    margin-top: 30px;
     margin-left: 23px;
     display: flex;
     font-family: Rubik;
@@ -143,7 +143,15 @@
     background-color: #ffffff;
     border: 1px dashed #0A0E69;
     border-radius: 10px;
-}       
+}    
+.upload-input {
+  width:307px;
+  height:43px;
+  /* border:1px solid #555555; */
+  font-size: 13px;
+  margin-top: 50px;
+  margin-left: 20px;
+}   
 .add
 {
   font-family: Ubuntu;padding-left:255px;color:#ffffff;font-size: 13px;font-style: normal;font-weight: 400;
@@ -168,10 +176,11 @@
   transition: margin-left .5s;
   padding: 16px;
 }
+
 .drop-zone {
   width: 827px;
   height: 360px;
-  margin-top: 82px;
+  margin-top: 30px;
   margin-left:23px;
   display: flex;
   font-family: Rubik;
@@ -756,7 +765,7 @@
 .drop-zone {
   width: 657px;
   height: 360px;
-  margin-top: 82px;
+  margin-top: 30px;
   margin-left:23px;
   display: flex;
   font-family: Rubik;
@@ -768,6 +777,15 @@
   border: 1px dashed #0A0E69;
   border-radius: 10px;
 }
+
+.upload-input {
+  width:307px;
+  height:43px;
+  /* border:1px solid #555555; */
+  font-size: 13px;
+  margin-top: 50px;
+  margin-left: 20px;
+}   
 
 .drop-zone--over {
   border-style: solid;
@@ -1677,7 +1695,7 @@
   .drop-zone {
     width: 100%;
     height: 100%;
-    margin: 82px auto;
+    margin: 30px auto;
     display: flex;
     font-family: Rubik;
     font-weight: 500;
@@ -1688,6 +1706,15 @@
     border: 1px dashed #0A0E69;
     border-radius: 10px;
   }
+
+  .upload-input {
+    width:307px;
+    height:43px;
+    /* border:1px solid #555555; */
+    font-size: 13px;
+    margin-top: 50px;
+    margin-left: 20px;
+  }   
   
   .drop-zone--over {
     border-style: solid;
@@ -2249,7 +2276,7 @@
   .drop-zone {
     width: 100%;
     height: 100%;
-    margin: 82px auto;
+    margin: 30px auto;
     display: flex;
     font-family: Rubik;
     font-weight: 500;
@@ -2260,6 +2287,15 @@
     border: 1px dashed #0A0E69;
     border-radius: 10px;
   }
+
+  .upload-input {
+    width:307px;
+    height:43px;
+    /* border:1px solid #555555; */
+    font-size: 13px;
+    margin-top: 50px;
+    margin-left: 20px;
+  }   
   
   .drop-zone--over {
     border-style: solid;
@@ -2843,7 +2879,7 @@
   .drop-zone {
     width: 100%;
     height: 100%;
-    margin: 82px auto;
+    margin: 30px auto;
     display: flex;
     font-family: Rubik;
     font-weight: 500;
@@ -2854,6 +2890,15 @@
     border: 1px dashed #0A0E69;
     border-radius: 10px;
   }
+
+  .upload-input {
+    width: 100%;
+    height:43px;
+    /* border:1px solid #555555; */
+    font-size: 13px;
+    margin-top: 50px;
+    /* margin-left: 20px; */
+  }   
   
   .drop-zone--over {
     border-style: solid;
@@ -3448,7 +3493,7 @@
   .drop-zone {
     width: 100%;
     height: 100%;
-    margin: 82px auto;
+    margin: 30px auto;
     display: flex;
     font-family: Rubik;
     font-weight: 500;
@@ -3459,6 +3504,16 @@
     border: 1px dashed #0A0E69;
     border-radius: 10px;
   }
+
+  .upload-input {
+    width: 100%;
+    height:43px;
+    /* border:1px solid #555555; */
+    font-size: 13px;
+    margin-top: 50px;
+    /* margin-left: 20px; */
+  }   
+  
   
   .drop-zone--over {
     border-style: solid;
