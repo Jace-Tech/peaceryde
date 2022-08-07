@@ -97,7 +97,7 @@
             <div class="collapse navbar-collapse" id="collapsibleNavbar">
               <ul class="navbar-nav">
                 <li class="nav-item">
-                  <a class="nav-link nav link home" href="Index.php">Home</a>
+                  <a class="nav-link nav link home" href="index.php">Home</a>
                 </li>
                 <li class="nav-item dropdown">
                   <a class="nav-link link services" href="sbform.php"> Services</a>
