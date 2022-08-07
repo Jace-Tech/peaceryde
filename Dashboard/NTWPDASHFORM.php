@@ -77,7 +77,7 @@
                 </svg>
             </span>
             <div class="align-self-center">
-                <h3 class="page-title title">Nigeria Business Visa on Arrival </h3>
+                <h3 class="page-title title">Nigeria Temporary Work Permit</h3>
                 <p class="fill">Fill the Form Below</p>
                 <p class="personal">Your personal details</p>
             </div>
