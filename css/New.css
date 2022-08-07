@@ -496,7 +496,7 @@
     }
   @media (max-width: 480px) {
     .new-section1__cover-block.layout {
-      top: 145px; }
+      top: 180px; }
     .new-section1__group.layout2 {
       position: relative;
       height: 780px; }
@@ -930,7 +930,7 @@
           margin: 24px 72.28% 67px 60px; } }
       @media (max-width: 600px) {
         .new-section1__block11.layout {
-          margin: 24px 60px 60px; } }
+          margin: 4px 60px 60px; } }
   @media (max-width: 575px) {
     .new-section1__block11.layout {
       margin: 30px 72.28% 51px 30px; } }
@@ -2120,7 +2120,7 @@
       margin: 0px 0px 58px; width:250px; height: 490px; } }
   @media (max-width: 480px) {
     .new-section2__block12.layout {
-      margin: 0px 0px 40px; width:270px;height: 460px; } }
+      margin: 0px 0px 40px; width:270px;height: 490px; } }
   @media (max-width: 384px) {
     .new-section2__block12.layout {
       margin: 0px 35px 40px;
@@ -2416,10 +2416,10 @@
       margin: 34px auto 11px; } }
       @media (max-width: 414px) {
         .new-section2__block13.layout {
-          margin: 30px auto 11px; } }
+          margin: 50px auto 11px; } }
   @media (max-width: 383px) {
     .new-section2__block13.layout {
-      margin: 25px auto 10px; } }
+      margin: 40px auto 10px; } }
   @media (max-width: 280px) {
     .new-section2__block13.layout {
       margin: 23px auto 10px; } }
@@ -2443,7 +2443,7 @@
       margin: 124px auto 13px; } }
       @media (max-width: 603px) {
         .new-section2__block13b.layout {
-          margin: 144px auto 13px; } }
+          margin: 149px auto 13px; } }
   @media (max-width: 575px) {
     .new-section2__block13b.layout {
       margin: 120px auto 12px; } }
@@ -2452,10 +2452,10 @@
       margin: 95px auto 11px; } }
       @media (max-width: 414px) {
         .new-section2__block13b.layout {
-          margin: 90px auto 11px; } }
+          margin: 110px auto 11px; } }
   @media (max-width: 383px) {
     .new-section2__block13b.layout {
-      margin: 110px auto 10px; } }
+      margin: 130px auto 10px; } }
       @media (max-width: 280px) {
         .new-section2__block13b.layout {
           margin: 105px auto 10px; } }
