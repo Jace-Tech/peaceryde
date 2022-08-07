@@ -85,7 +85,7 @@
                 <div class="form-body">
                     <div class="row">
                         <div class="col-md-4 col-lg-3 col-xl-3">
-                            <select class="form-select fmselect" name="title" aria-label="Default select example">
+                            <select class="form-select fmselect" aria-label="Default select example" name="title">
                                 <option selected>Title</option>
                                 <?php foreach ($titles as $title) : ?>
                                     <option value="<?= $title ?>"><?= $title ?></option>
@@ -464,28 +464,28 @@
         }
     </script>
     <script>
-        function openNav() {
-
-            if (screen.width >= 800) {
-                document.getElementById("sidebar").style.width = "260px";
-                document.getElementById("main").style.marginLeft = "260px";
-            } else {
-                document.getElementById("sidebar").style.width = "100%";
-                document.getElementById("main").style.marginLeft = "100%";
-            }
-        }
+     function openNav() {
+          
+          if  (screen.width >= 800) {
+              document.getElementById("sidebar").style.width = "260px";
+              document.getElementById("main").style.marginLeft = "260px";
+          } else {
+              document.getElementById("sidebar").style.width = "100%";
+              document.getElementById("main").style.marginLeft = "100%";
+          }
+      }
 
         /* Close Nav */
         function closeNav() {
-
-            if (screen.width >= 768) {
-                document.getElementById("sidebar").style.width = "0";
-                document.getElementById("main").style.marginLeft = "0";;
-            } else {
-                document.getElementById("sidebar").style.width = "0";
-                document.getElementById("main").style.marginLeft = "0";;
-            }
-        }
+          
+          if (screen.width >= 768) {
+              document.getElementById("sidebar").style.width = "0";
+              document.getElementById("main").style.marginLeft= "0";;
+          } else {
+              document.getElementById("sidebar").style.width = "0";
+              document.getElementById("main").style.marginLeft= "0";;
+          }
+      }
     </script>
     <script src="./assets/libs/jquery/dist/jquery.min.js"></script>
     <script src="./assets/libs/popper.js/dist/umd/popper.min.js"></script>
