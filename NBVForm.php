@@ -471,7 +471,7 @@
       const form = $('[data-form]')[0].elements
 
       const country = form.country.value
-      const countryCode = form.country_code.value
+      const countryCode = form.countryCode.value
       const dob = form.dob.value
       const email = form.email.value
       const firstname = form.firstname.value
