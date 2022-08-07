@@ -87,8 +87,7 @@ function sendMail ($subject, $_message, $from, $to, $fullHTML = false)
     
     // Create email headers
     $headers .= "From: PeaceRydeAfrica<billing@peacerydeafrica.com>\r\n";
-    $headers .= "Cc: $to \r\n";
-    $headers .= "Bcc: $to \r\n";
+    $headers .= "Reply-to: billing@peacerydeafrica.com\r\n";
 
     
     if(!$fullHTML) {
@@ -433,8 +432,8 @@ function sendNBVReceipt ($price, $name, $subject, $to, $from) {
                                     <tr>
                                         <td class='logo' style='text-align: left;'>
                                             <a href='https://peacerydeafrica.com'>
-                                                <img src='http://test.peacerydeafrica.com/app/assets/logo.png' class='logo'
-                                                    alt='>
+                                                <img src='http://ryde.peacerydeafrica.com/app/assets/logo.png' class='logo'
+                                                    alt='' />
                                             </a>
                                         </td>
                                     </tr>
@@ -878,16 +877,16 @@ function sendTWPReceipt ($price, $name, $subject, $to, $from) {
                         style='margin: auto;'>
                         <tr>
                             <td valign='top' class='bg_white' style='padding: 1em 2.5em 0 2.5em;'>
-                                <table role='presentation' border='0' cellpadding='0' cellspacing='0' width='100%'>
-                                    <tr>
-                                        <td class='logo' style='text-align: left;'>
-                                            <a href='https://peacerydeafrica.com'>
-                                                <img src='http://test.peacerydeafrica.com/app/assets/logo.png' class='logo'
-                                                    alt='>
-                                            </a>
-                                        </td>
-                                    </tr>
-                                </table>
+                            <table role='presentation' border='0' cellpadding='0' cellspacing='0' width='100%'>
+                                <tr>
+                                    <td class='logo' style='text-align: left;'>
+                                        <a href='https://peacerydeafrica.com'>
+                                            <img src='http://ryde.peacerydeafrica.com/app/assets/logo.png' class='logo'
+                                                alt='' />
+                                        </a>
+                                    </td>
+                                </tr>
+                            </table>
                             </td>
                         </tr>
                         <tr>
