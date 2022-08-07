@@ -415,6 +415,8 @@
         console.clear();
         const storedUser = localStorage.getItem("USER_REG");
         const form = document.querySelector("[data-form]")
+        const genders = document.querySelectorAll('[name=gender]')
+
         console.log({
             storedUser
         });
@@ -447,7 +449,7 @@
             Array.from(form.elements.title.children).filter(item => item.value == title)[0].selected = true
             Array.from(form.elements.country.children).filter(item => item.value == country)[0].selected = true
             Array.from(form.elements.country_code.children).filter(item => item.value == countryCode)[0].selected = true
-            Array.from(form.elements.gender).filter(item => item.value == gender)[0].checked = true
+            Array.from(genders).filter(item => item.value == gender)[0].checked = true
         }
 
         document.querySelector("[data-btn]")
