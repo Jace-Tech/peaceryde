@@ -473,6 +473,8 @@
       $('#exampleModal').modal('show');
 
       const form = $('[data-form]')[0].elements
+      const genders = document.querySelectorAll('[name=gender]')
+
 
       const country = form.country.value
       const countryCode = form.countryCode.value
@@ -485,7 +487,7 @@
       const title = form.title.value
       const service = form.service.value
       const passport = form.passport.value
-      const gender = Array.from(form.gender).filter(item => item.checked == true)[0].value
+      const gender = Array.from(genders).filter(item => item.checked == true)[0].value
       const mode = "TWP"
 
       const data = {
