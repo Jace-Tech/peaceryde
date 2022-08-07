@@ -86,13 +86,13 @@
                     <div class="row" style="margin-top: 25px;">
                         <div class="col-md-5 col-lg-4 col-xl-3">
                             <div class="form-group">
-                                <input type="text" class="form-control dob" placeholder="first Name">
+                                <input name="firstname" type="text" class="form-control dob" placeholder="first Name">
                             </div>
                         </div>
                         
                         <div class="col-md-5 col-lg-4 col-xl-3">
                             <div class="form-group">
-                                <input type="text" class="form-control dob" placeholder="Last Name">
+                                <input name="lastname" type="text" class="form-control dob" placeholder="Last Name">
                             </div>
                         </div>
                         
@@ -100,14 +100,14 @@
                     <div class="row" style="margin-top: 25px;">
                         <div class="col-md-5 col-lg-4 col-xl-3">
                             <div class="form-group">
-                                <input type="text" class="form-control mobileno" placeholder="Email">
+                                <input type="text" name="email" class="form-control mobileno" placeholder="Email">
                             </div>
                         </div> 
                         <div class="col-md-5 col-lg-4 col-xl-3">
                             <div class="form-group">
                                 <div class="input-group mb-3">
                                     <div class="input-group-prepend">
-                                        <select class="custom-select" id="inputGroupSelect01" style="width: 100px;height:43px; background-color: #ADC92E; color: #F9FFFF; font-size:11px;">
+                                        <select name="countryCode" class="custom-select" id="inputGroupSelect01" style="width: 100px;height:43px; background-color: #ADC92E; color: #F9FFFF; font-size:11px;">
                                             <optgroup label="Country Code">
                                             
                                                 <option data-countryCode="DZ" value="213">Algeria (+213)</option>
@@ -326,7 +326,7 @@
                                                 <option data-countryCode="ZW" value="263">Zimbabwe (+263)</option>
                                               </optgroup>
                                         </select>
-                                        <input type="text" class="form-control mobileno2" placeholder="Mobile Number">
+                                        <input name="phone" type="text" class="form-control mobileno2" placeholder="Mobile Number">
                                     </div>
                                    
                                 </div>
@@ -339,12 +339,12 @@
                     <div class="row" style="margin-top: 25px;">
                         <div class="col-md-5 col-lg-4 col-xl-3">
                             <div class="form-group">
-                                <input type="text" class="form-control firstname" placeholder="Company Name">
+                                <input name="companyEmail" type="text" name="" class="form-control firstname" placeholder="Company Name">
                             </div>
                         </div>
                         <div class="col-md-5 col-lg-4 col-xl-3">
                             <div class="form-group">
-                                <input type="text" class="form-control middlename" placeholder="Company Email">
+                                <input name="companyEmail" type="text" class="form-control middlename" placeholder="Company Email">
                             </div>
                         </div>
                         
@@ -362,13 +362,13 @@
                     <div class="row" style="margin-top: 25px;">
                         <div class="col-md-5 col-lg-4 col-xl-3">
                             <div class="form-group">
-                                <input type="text" class="form-control dob" placeholder="Website">
+                                <input name="website" type="text" class="form-control dob" placeholder="Website">
                             </div>
                         </div>
                         
                         <div class="col-md-5 col-lg-4 col-xl-3">
                             <div class="form-group">
-                                <input type="text" class="form-control dob" placeholder="Employee No">
+                                <input name="employeeNo" type="text" class="form-control dob" placeholder="Employee No">
                             </div>
                         </div>
                         
@@ -377,13 +377,13 @@
                     ">Message</p>
                     <div class="row">
                         <div class="col-md-8 col-lg-6 col-xl-4">
-                            <textarea style="width: 100%;margin-top:21; height: 150px;margin-bottom: 65px; border: 1px solid #555555;"></textarea>
+                            <textarea name="message" style="width: 100%;margin-top:21; height: 150px;margin-bottom: 65px; border: 1px solid #555555;"></textarea>
                         </div>
                     </div>
                     
                 </div>
                 <div class="divbtn">
-                    <button type="submit" class="btn btnproceed">Proceed to Payment</button>
+                    <button type="submit" name="bi" class="btn btnproceed">Proceed to Payment</button>
                 </div>  
             </form>
         </div>
