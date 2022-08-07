@@ -66,21 +66,32 @@ if(isset($_POST['pay'])){
     switch ($payment_option) {
         case "paystack":
             // Initialize payment with paystack
-            $details = $paystackPayment->initialize_payment($user['email'], $total_price, $url);
+            try {
+                $details = $paystackPayment->initialize_payment($user['email'], $total_price, $url);
 
-            // Generate Payment Options
-            $payment = [
-                "amount" => $total_price,
-                "userId" => $id,
-                "service" => $service,
-                "ref" => $details['ref']
-            ];
+                // Generate Payment Options
+                $payment = [
+                    "amount" => $total_price,
+                    "userId" => $id,
+                    "service" => $service,
+                    "ref" => $details['ref']
+                ];
 
-            // Add to database
-            $result = $payments->addPayment($payment);
+                // Add to database
+                $result = $payments->addPayment($payment);
 
-            // Redirect to paystack for payment 
-            if ($result) header("Location:" . $details['pay']['data']['authorization_url']);
+                // Redirect to paystack for payment 
+                if ($result) header("Location:" . $details['pay']['data']['authorization_url']);
+            } catch (Exception $e) {
+                // Generate Alert Session
+                $_SESSION['ALERT'] = json_encode([
+                    "status" => "error",
+                    "message" => "Payment was not successful"
+                ]);
+
+                header("Location:" . $_SERVER['HTTP_REFERER']);
+            }
+            
             break;
 
         default:
