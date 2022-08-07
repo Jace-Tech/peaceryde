@@ -427,13 +427,13 @@ $isUnread = count($messages->get_user_unread_messages($USER_ID));
 
 
         <div class="page-wrapper" id="main">
-            <span style="font-size:30px;cursor:pointer" onclick="openNav()"> <svg width="19" height="15" viewBox="0 0 19 15" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-bottom: 10px;
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()"> <svg width="19" height="15" viewBox="0 0 19 15" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-bottom: 10px;
                 margin-top: 50px;">
-                    <rect y="6" width="19" height="3" fill="#A0BD1C" />
-                    <rect y="12" width="19" height="3" fill="#A0BD1C" />
-                    <rect width="19" height="3" fill="#A0BD1C" />
-                </svg>
-            </span>
+                  <rect y="6" width="19" height="3" fill="#A0BD1C"/>
+                  <rect y="12" width="19" height="3" fill="#A0BD1C"/>
+                  <rect width="19" height="3" fill="#A0BD1C"/>
+                  </svg>
+                  </span>
             <div class="page-breadcrumb">
                 <div class="row">
                     <div class="align-self-center">
