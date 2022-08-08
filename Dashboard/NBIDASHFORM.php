@@ -92,14 +92,14 @@
                         <div class="col-md-5 col-lg-4 col-xl-3">
                             <div class="form-group">
                                 <label class="form-label">First Name</label>
-                                <input name="firstname" type="text" value="<?= $FORM_APPLY['firstname'] ?? ""; ?>" class="form-control dob" placeholder="First Name">
+                                <input required name="firstname" type="text" value="<?= $FORM_APPLY['firstname'] ?? ""; ?>" class="form-control dob" placeholder="First Name">
                             </div>
                         </div>
                         
                         <div class="col-md-5 col-lg-4 col-xl-3">
                             <div class="form-group">
                                 <label class="form-label">Last Name</label>
-                                <input name="lastname" value="<?= $FORM_APPLY['lastname'] ?? ""; ?>" type="text" class="form-control dob" placeholder="Last Name">
+                                <input required name="lastname" value="<?= $FORM_APPLY['lastname'] ?? ""; ?>" type="text" class="form-control dob" placeholder="Last Name">
                             </div>
                         </div>
                         
@@ -108,7 +108,7 @@
                         <div class="col-md-5 col-lg-4 col-xl-3">
                             <div class="form-group">
                                 <label class="form-label">Email Address</label>
-                                <input type="text" name="email" value="<?= $FORM_APPLY['email'] ?? ""; ?>" class="form-control mobileno" placeholder="Email">
+                                <input required type="text" name="email" value="<?= $FORM_APPLY['email'] ?? ""; ?>" class="form-control mobileno" placeholder="Email">
                                 <input required type="hidden" name="service" value="srvs-003">
                             </div>
                         </div> 
@@ -117,7 +117,7 @@
                                 <div class="input-group mb-3">
                                     <label class="form-label">Mobile Number</label>
                                     <div class="input-group-prepend">
-                                        <select name="countryCode" class="custom-select" id="inputGroupSelect01" style="width: 100px;height:43px; background-color: #ADC92E; color: #F9FFFF; font-size:11px;">
+                                        <select required name="countryCode" class="custom-select" id="inputGroupSelect01" style="width: 100px;height:43px; background-color: #ADC92E; color: #F9FFFF; font-size:11px;">
                                             <optgroup label="Country Code">
                                             
                                                 <option data-countryCode="DZ" value="213">Algeria (+213)</option>
@@ -336,7 +336,7 @@
                                                 <option data-countryCode="ZW" value="263">Zimbabwe (+263)</option>
                                               </optgroup>
                                         </select>
-                                        <input name="phone" type="text" class="form-control mobileno2" placeholder="Mobile Number">
+                                        <input required name="phone" type="text" class="form-control mobileno2" placeholder="Mobile Number">
                                     </div>
                                    
                                 </div>
@@ -350,13 +350,13 @@
                         <div class="col-md-5 col-lg-4 col-xl-3">
                             <div class="form-group">
                                 <label class="form-label">Company Name</label>
-                                <input name="companyName" type="text" name="" class="form-control firstname" placeholder="Company Name">
+                                <input name="companyName" required type="text" name="" class="form-control firstname" placeholder="Company Name">
                             </div>
                         </div>
                         <div class="col-md-5 col-lg-4 col-xl-3">
                             <div class="form-group">
                                 <label class="form-label">Company Email</label>
-                                <input name="companyEmail" type="text" class="form-control middlename" placeholder="Company Email">
+                                <input name="companyEmail" required type="text" class="form-control middlename" placeholder="Company Email">
                             </div>
                         </div>
                         
@@ -381,8 +381,8 @@
                         
                         <div class="col-md-5 col-lg-4 col-xl-3">
                             <div class="form-group">
-                                <label class="form-label">Employee No</label>
-                                <input name="employeeNo" type="text" class="form-control dob" placeholder="Employee No">
+                                <label class="form-label">No of Employees </label>
+                                <input name="employeeNo" type="text" class="form-control dob" placeholder="No of Employees">
                             </div>
                         </div>
                         

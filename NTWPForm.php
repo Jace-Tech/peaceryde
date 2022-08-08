@@ -512,8 +512,6 @@
         mode
       }
 
-      alert("WORKING");
-
       localStorage.setItem('USER_REG', JSON.stringify(data))
     }
   </script>

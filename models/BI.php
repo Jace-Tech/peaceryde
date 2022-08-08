@@ -16,10 +16,10 @@ class BI {
         $result = $this->connection->prepare($query);
         $result->execute([
             'userId' => $userId,
-            'shares' => $shares,
+            'shares' => $shares ?? "",
             'email' => $email,
             'companyName' => $companyName,
-            'coperateAddress' => $coperateAddress,
+            'coperateAddress' => $coperateAddress ?? "",
             'coperateEmail' => $coperateEmail,
             'website' => $website,
             'employeeNo' => $employeeNo,
