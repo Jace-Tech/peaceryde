@@ -3,6 +3,11 @@
 $upload = new Upload($connect);
 $UPLOADS = $upload->getUserUploads($USER_ID);
 
+$messages = new Message($connect);
+
+$USER_MESSAGES = $messages->get_conversation($USER_ID, "MAIN_ADMIN");
+$isUnread = count($messages->get_user_unread_messages($USER_ID));
+
 ?>
 
 
