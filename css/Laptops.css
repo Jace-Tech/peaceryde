@@ -4078,7 +4078,7 @@ p,a,h1,h2,h3,h4 {
   }
 
   .shop {
-    margin-left: 70px;
+    margin-left: 8.9%;
     font-family: rubik;
   }
 
@@ -4211,7 +4211,7 @@ p,a,h1,h2,h3,h4 {
 
   .list-group-horizontal {
 
-    margin-left: 0;
+    margin-left: 100px;
     justify-content: center;
   }
 
@@ -5450,7 +5450,7 @@ p,a,h1,h2,h3,h4 {
   }
 
   .shop {
-    margin-left: 85px;
+    margin-left: 10.2%;
     font-family: rubik;
   }
 
@@ -5583,7 +5583,7 @@ p,a,h1,h2,h3,h4 {
 
   .list-group-horizontal {
 
-    margin-left: 0;
+    margin-left: 90px;
     justify-content: center;
   }
 
@@ -6813,7 +6813,7 @@ p,a,h1,h2,h3,h4 {
   }
 
   .shop {
-    margin-left: -12px;
+    margin-left: 1.3%;
     font-family: rubik;
   }
 
@@ -6946,7 +6946,7 @@ p,a,h1,h2,h3,h4 {
 
   .list-group-horizontal {
 
-    margin-left: 0;
+    margin-left: 90px;
     justify-content: center;
   }
 
@@ -7939,6 +7939,11 @@ p,a,h1,h2,h3,h4 {
   .navbar-light .navbar-nav .nav-link {
     color: #000000;
   }
+  .list-group-horizontal {
+
+    margin-left: 80px;
+    justify-content: center;
+  }
 
   .about {
     width: 100%;
@@ -8168,7 +8173,7 @@ p,a,h1,h2,h3,h4 {
   }
 
   .shop {
-    margin-left: 0px;
+    margin-left: 2.4%;
     font-family: rubik;
   }
 
@@ -8299,11 +8304,6 @@ p,a,h1,h2,h3,h4 {
     font-family: Ubuntu
   }
 
-  .list-group-horizontal {
-
-    margin-left: 0;
-    justify-content: center;
-  }
 
   .img1 {
     margin-left: 55px;
@@ -9559,7 +9559,7 @@ p,a,h1,h2,h3,h4 {
   }
 
   .shop {
-    margin-left: -30px;
+    margin-left: -0.5%;
     font-family: rubik;
   }
 
@@ -9692,7 +9692,7 @@ p,a,h1,h2,h3,h4 {
 
   .list-group-horizontal {
 
-    margin-left: 0;
+    margin-left: 70px;
     justify-content: center;
   }
 
@@ -10921,7 +10921,7 @@ p,a,h1,h2,h3,h4 {
   }
 
   .shop {
-    margin-left: -75px;
+    margin-left: -6%;
     font-family: rubik;
   }
 
@@ -11054,7 +11054,7 @@ p,a,h1,h2,h3,h4 {
 
   .list-group-horizontal {
 
-    margin-left: 0;
+    margin-left: 60px;
     justify-content: center;
   }
 
@@ -11951,7 +11951,7 @@ p,a,h1,h2,h3,h4 {
   }
 
   .shop {
-    margin-left: -8.5%;
+    margin-left: -4.7%;
     font-family: rubik;
   }
 
@@ -12540,7 +12540,7 @@ p,a,h1,h2,h3,h4 {
 
   .list-group-horizontal {
 
-    margin-left: 0;
+    margin-left: 50px;
     justify-content: center;
   }
 
@@ -13251,7 +13251,7 @@ p,a,h1,h2,h3,h4 {
 }
 
   .shop {
-    margin-left: -54px;
+    margin-left: -5.4%;
     font-size: 12px;
     font-family: rubik;
   }
