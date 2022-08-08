@@ -15,7 +15,7 @@ class UserService {
     }
 
     public function getUserServices($id) {
-        $query = "SELECT * FROM `user_services` WHERE `user_id` = ? ORDER BY `date` DESC LIMIT 1";
+        $query = "SELECT * FROM `user_services` WHERE `user_id` = ? ORDER BY `date` DESC";
         $result = $this->connection->prepare($query);
         $result->execute([$id]);
 
