@@ -104,19 +104,19 @@
                     <p class="nameappears">Your name must be entered in English as it appears on your passport.</p>
 
                     <div class="row" style="margin-top: 25px;">
-                        <div class="col-md-4 col-lg-3 col-xl-2">
+                        <div class="col-md-4 col-lg-3 col-xl-3">
                             <div class="form-group">
                                 <label class="form-label">First Name</label>
                                 <input name="firstname" type="text" value="<?= $FORM_APPLY['firstname'] ?? ""; ?>" class="form-control firstname" placeholder="First Name (as on passport)">
                             </div>
                         </div>
-                        <div class="col-md-4 col-lg-3 col-xl-2">
+                        <div class="col-md-4 col-lg-3 col-xl-3">
                             <div class="form-group">
                                 <label class="form-label">Middle Name</label>
                                 <input name="middlename" type="text" class="form-control middlename" placeholder="Middle Name (as on passport)">
                             </div>
                         </div>
-                        <div class="col-md-4 col-lg-3 col-xl-2">
+                        <div class="col-md-4 col-lg-3 col-xl-3">
                             <div class="form-group">
                                 <label class="form-label">Last Name</label>
                                 <input type="hidden" name="service" value="srvs-002">
@@ -126,7 +126,7 @@
 
                     </div>
                     <div class="row" style="margin-top: 25px;">
-                        <div class="col-md-4 col-lg-3 col-xl-2">
+                        <div class="col-md-4 col-lg-3 col-xl-3">
                             <div class="form-group">
                                 <label class="form-label">Date of Birth</label>
                                 <input type="date" name="dob" class="form-control dob" placeholder="Date of birth">
@@ -152,14 +152,14 @@
 
                     </div>
                     <div class="row" style="margin-top: 25px;">
-                        <div class="col-md-4 col-xl-2">
+                        <div class="col-md-4 col-xl-3">
                             <div class="form-group">
                                 <label class="form-label">Email Address</label>
                                 <input type="email" class="form-control email" value="<?= $FORM_APPLY['email'] ?? ""; ?>" name="email" value="<?= $LOGGED_USER['email']; ?>" placeholder="Email address">
                             </div>
                         </div>
 
-                        <div class="col-md-4 col-xl-2">
+                        <div class="col-md-4 col-xl-3">
                             <div class="form-group">
                                 <label class="form-label">Passport No.</label>
                                 <input type="text" name="passport" class="form-control passno" placeholder="Passport No">
@@ -170,7 +170,7 @@
                         <div class="col-12">
                             <label class="form-label">Mobile Number</label>
                         </div>
-                        <div class="col-md-4 col-xl-2">
+                        <div class="col-md-4 col-xl-3">
                             <select class="form-select code" required name="countryCode" aria-label="Default select example">
                                 <option selected>Please Select</option>
                                 <option data-countryCode="NG" value="234">Nigeria (+234)</option>

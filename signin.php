@@ -39,9 +39,9 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <style>
 
-    .proceed
+.proceed
 {
-   background-color: #C9DA7A;
+   background-color: #a0bd1c;
     font-family: Ubuntu;
     font-size: 14px;
     font-style: normal;
@@ -80,7 +80,7 @@
                            </div>
                            <div class="col-lg-4 col-md-4 col-sm-4 col-xl-4">
                             <div class="rpmb">
-                                <button name="login" type="submit" class="btn proceed sibutton">Next</button>
+                                <button name="login" type="submit" class="btn proceed sibutton">Sign In</button>
                             </div>
                            </div>
                        </div>
