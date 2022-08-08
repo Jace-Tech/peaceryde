@@ -146,7 +146,7 @@ if(isset($_POST['bi'])) {
         $bis->addBI($bi_options);
     }
 
-    // Get TWP Calculations
+    // Get BI Calculations
     $fees = get_bi_price($shares);
     $_SESSION["PRICE"] = json_encode($fees);
     $_SESSION['SERVICE'] = $service;

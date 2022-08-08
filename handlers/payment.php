@@ -44,7 +44,7 @@ if(isset($_POST['pay'])){
 
     // If successful
     $url = $_SERVER['HTTP_ORIGIN'] . "/handlers/payment.php";
-    $service = $userServices->getService($id)['service_id'];
+    $service = $_SESSION['SERVICE'];
     $total_price = 0;
 
     if ($service == "srvs-002") {
