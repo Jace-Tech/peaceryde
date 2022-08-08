@@ -65,14 +65,14 @@ $isUnread = count($messages->get_user_unread_messages($USER_ID));
             }
 
             .breadcrumb {
-                margin-top: -180px;
+                margin-top: -215px;
                 margin-left: 58px;
             }
         }
 
         @media only screen and (max-width: 1600px) {
             .breadcrumb {
-                margin-top: -180px;
+                margin-top: -215px;
                 margin-left: 158px;
             }
 
@@ -83,7 +83,7 @@ $isUnread = count($messages->get_user_unread_messages($USER_ID));
 
         @media only screen and (max-width: 1440px) {
             .breadcrumb {
-                margin-top: -190px;
+                margin-top: -215px;
                 margin-left: 58px;
             }
 
@@ -94,7 +94,7 @@ $isUnread = count($messages->get_user_unread_messages($USER_ID));
 
         @media only screen and (max-width: 1366px) {
             .breadcrumb {
-                margin-top: -190px;
+                margin-top: -215px;
                 margin-left: 58px;
             }
 
@@ -103,9 +103,10 @@ $isUnread = count($messages->get_user_unread_messages($USER_ID));
             }
         }
 
+
         @media only screen and (max-width: 1280px) {
             .breadcrumb {
-                margin-top: -190px;
+                margin-top: -215px;
                 margin-left: 58px;
             }
 
@@ -116,35 +117,30 @@ $isUnread = count($messages->get_user_unread_messages($USER_ID));
 
         @media only screen and (max-width: 1024px) {
             .breadcrumb {
-                margin-top: -300px;
+                margin-top: -355px;
                 margin-left: 300px;
             }
         }
 
         @media only screen and (max-width: 900px) {
             .breadcrumb {
-                margin-top: -300px;
+                margin-top: -355px;
                 margin-left: 200px;
             }
         }
 
         @media only screen and (max-width: 853px) {
             .breadcrumb {
-                margin-top: -300px;
+                margin-top: -355px;
                 margin-left: 150px;
             }
         }
 
         @media only screen and (max-width: 800px) {
             .breadcrumb {
-                margin-top: -300px;
+                margin-top: -355px;
                 margin-left: 100px;
             }
-
-            .mobile {
-                margin-left: 0px;
-            }
-        }
 
         @media only screen and (max-width: 768px) {
             .breadcrumb {
