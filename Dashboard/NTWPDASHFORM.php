@@ -114,7 +114,6 @@
                         <div class="col-md-4 col-lg-3 col-xl-2">
                             <div class="form-group">
                                 <label class="form-label">Last Name</label>
-                                <input type="hidden" name="service" value="srvs-002">
                                 <input name="lastname" type="text" class="form-control lastname" placeholder="Last Name (as on passport)">
                             </div>
                         </div>
@@ -392,6 +391,7 @@
                         <div class="col-md-4">
                             <div class="form-group">
                                 <input type="hidden" name="twp" value="">
+                                <input required type="hidden" name="service" value="srvs-001">
                                 <input name="phone" type="text" style="width:307px;height:43px;border:1px solid #555555;font-size: 13px;" class="form-control" placeholder="Mobile number">
                             </div>
                         </div>
