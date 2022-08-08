@@ -78,7 +78,7 @@
         <h3 class="page-title title">Service Booking Form </h3>
         <p class="fill">Plesae fill this form to indicate your interest in any of our services and we will contact you within 24hrs</p>
       </div>
-      <form class="formml" method="post" action="./handlers/apply_handler.php">
+      <form class="formml" method="post" action="./handler/apply_handler.php">
         <div class="form-body">
           <div class="row" style="margin-top: 25px;">
             <div class="col-md-5 col-lg-4 col-xl-3">
@@ -371,7 +371,7 @@
 
         </div>
         <div class="divbtn">
-          <button type="submit" required name="apply" class="btn btnproceed">Proceed</button>
+          <button type="submit" name="apply" class="btn btnproceed">Proceed</button>
         </div>
       </form>
     </div>
