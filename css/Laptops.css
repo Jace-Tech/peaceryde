@@ -1247,7 +1247,7 @@ p,a,h1,h2,h3,h4 {
   }
 
   .movement {
-    margin-left: 200px;
+    margin-left: 0px;
   }
 
   .shop {
@@ -2683,7 +2683,7 @@ p,a,h1,h2,h3,h4 {
   }
 
   .shop {
-    margin-left: 12.6px;
+    margin-left: 12.6%;
     font-family: rubik;
   }
 
