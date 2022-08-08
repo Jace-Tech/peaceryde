@@ -693,11 +693,11 @@
 @media (max-width: 2560px) {
   .new-section1__hero-title2.layout {
 
-    margin: 6px 37.19% 0px 645px;
+    margin: 6px 37.19% 0px 33%;
   }
 }
 
-@media (max-width: 1920px) {
+@media (max-width: 1921px) {
   .new-section1__hero-title2.layout {
 
     margin: 6px 37.19% 0px 350px;
@@ -1111,7 +1111,7 @@
 
 @media (max-width: 2560px) {
   .new-section1__medium-title.layout {
-    margin: 11px 50px 0px 649px;
+    margin: 11px 50px 0px 33%;
   }
 }
 
@@ -1245,7 +1245,7 @@
 
 @media (max-width: 2560px) {
   .new-section1__block11.layout {
-    margin: 60px 72.28% 175px 649px;
+    margin: 60px 72.28% 175px 33%;
   }
 }
 
@@ -2727,7 +2727,7 @@
 @media(max-width: 2560px) {
   .new-section2__flex.layout {
 
-    margin: 10px 31px 50px 100px;
+    margin: 10px 0px 50px 0px;
   }
 
   .new-section2__flex-spacer {
@@ -7222,7 +7222,7 @@
 @media (max-width: 2560px) {
   .new-section5__flex3.layout {
 
-    margin: 0px 604px;
+    margin: 0px 0px;
   }
 }
 

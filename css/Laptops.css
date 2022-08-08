@@ -11,7 +11,9 @@
   height: 200px;
 }
 .movements {
-  margin-left: 500px;
+  margin-left: 16%;
+  justify-content: center;
+
 }
 .new-section2__group.layout2 {
   position: relative;
@@ -1249,7 +1251,7 @@ p,a,h1,h2,h3,h4 {
   }
 
   .shop {
-    margin-left: 160px;
+    margin-left: 21.3%;
     font-family: rubik;
   }
 
@@ -1389,7 +1391,8 @@ p,a,h1,h2,h3,h4 {
 
   .list-group-horizontal {
 
-    margin-left: 550px;
+    margin-left: 0;
+    justify-content: center;
   }
 
   .img1 {
@@ -1519,7 +1522,7 @@ p,a,h1,h2,h3,h4 {
   }
 
   .lastfooter {
-    padding-left: 104px;
+    padding-left: 354px;
     padding-right: 170px;
   }
 
@@ -2676,7 +2679,7 @@ p,a,h1,h2,h3,h4 {
   }
 
   .movement {
-    margin-left: 200px;
+    margin-left: 0px;
   }
 
   .shop {
@@ -2823,7 +2826,8 @@ p,a,h1,h2,h3,h4 {
 
   .list-group-horizontal {
 
-    margin-left: 250px;
+    margin-left: 0;
+    justify-content: center;
   }
 
   .img1 {
@@ -4207,7 +4211,8 @@ p,a,h1,h2,h3,h4 {
 
   .list-group-horizontal {
 
-    margin-left: 170px;
+    margin-left: 0;
+    justify-content: center;
   }
 
   .img1 {
@@ -5578,7 +5583,8 @@ p,a,h1,h2,h3,h4 {
 
   .list-group-horizontal {
 
-    margin-left: 150px;
+    margin-left: 0;
+    justify-content: center;
   }
 
   .img1 {
@@ -6940,7 +6946,8 @@ p,a,h1,h2,h3,h4 {
 
   .list-group-horizontal {
 
-    margin-left: 150px;
+    margin-left: 0;
+    justify-content: center;
   }
 
   .img1 {
@@ -8294,7 +8301,8 @@ p,a,h1,h2,h3,h4 {
 
   .list-group-horizontal {
 
-    margin-left: 120px;
+    margin-left: 0;
+    justify-content: center;
   }
 
   .img1 {
@@ -9684,7 +9692,8 @@ p,a,h1,h2,h3,h4 {
 
   .list-group-horizontal {
 
-    margin-left: 110px;
+    margin-left: 0;
+    justify-content: center;
   }
 
   .img1 {
@@ -11045,7 +11054,8 @@ p,a,h1,h2,h3,h4 {
 
   .list-group-horizontal {
 
-    margin-left: 90px;
+    margin-left: 0;
+    justify-content: center;
   }
 
   .img1 {
@@ -12530,7 +12540,8 @@ p,a,h1,h2,h3,h4 {
 
   .list-group-horizontal {
 
-    margin-left: 80px;
+    margin-left: 0;
+    justify-content: center;
   }
 
   .img1 {
@@ -13492,7 +13503,8 @@ p,a,h1,h2,h3,h4 {
 
   .list-group-horizontal {
 
-    margin-left: 40px;
+    margin-left: 0;
+    justify-content: center;
   }
 
   .img1 {

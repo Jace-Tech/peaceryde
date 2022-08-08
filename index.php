@@ -121,7 +121,7 @@ $uploads = new Upload($connect);
     </section>
     <comment content="======= End section1 =======" break="true"></comment><!-- ======= section2 ======= -->
     <section class="new-section2__section2 layout">
-      <div class="movement">
+    
         <div class="new-section2__flex layout row">
 
           <div class="new-section2__flex-item col-md-4 col-sm-4 col-lg-4">
@@ -209,7 +209,7 @@ $uploads = new Upload($connect);
             </div>
           </div>
         </div>
-      </div>
+      
 
     </section>
     <comment content="======= End section2 =======" break="true"></comment><!-- ======= section3 ======= -->
@@ -327,7 +327,7 @@ $uploads = new Upload($connect);
       <h1 class="new-section5__hero-title1 layout hands">
         You are in the right hands
       </h1>
-      <div class="movement">
+      
         <div class="new-section5__flex3 layout flexd">
 
           <div class="get">
@@ -400,7 +400,7 @@ $uploads = new Upload($connect);
             </div>
           </div>
         </div>
-      </div>
+     
 
     </section>
     <comment content="======= End section5 =======" break="true"></comment><!-- ======= section6 ======= -->
