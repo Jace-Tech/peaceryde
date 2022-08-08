@@ -45,14 +45,14 @@
             <p class="applyh2p">Plesae fill this form to indicate your interest in any of our services and we will contact you within 24hrs</p>
           </div>
           <form method="post" action="./handlers/apply_handler.php">
-            <input type="text" class="form-control vsbform" placeholder="First Name" name="firstname">
-            <input type="text" class="form-control vsbform vsbmt" placeholder="Last Name" name="lastname">
-            <input type="text" class="form-control vsbform vsbmt" placeholder="Email" name="email">
+            <input type="text" class="form-control vsbform" placeholder="First Name" required name="firstname">
+            <input type="text" class="form-control vsbform vsbmt" placeholder="Last Name" required name="lastname">
+            <input type="text" class="form-control vsbform vsbmt" placeholder="Email" required name="email">
 
             <div class="row vsbform2">
               <div class="input-group" style="padding-left: 0px; padding-right: 0px;">
                 <div class="input-group-prepend">
-                  <select name="countryCode" id="" class="form-select code" aria-label="Default select example">
+                  <select required name="countryCode" id="" class="form-select code" aria-label="Default select example">
                     <optgroup label="Country Code">
                       <option data-countryCode="DZ" value="213">Algeria (+213)</option>
                       <option data-countryCode="AD" value="376">Andorra (+376)</option>
@@ -271,13 +271,13 @@
                     </optgroup>
                   </select>
                 </div>
-                <input type="text" class="form-control firstname" name="phone" placeholder="Mobile Number">
+                <input type="text" class="form-control firstname" required name="phone" placeholder="Mobile Number">
               </div>
             </div>
 
 
             <p class="vsbformp">Which of our services are you applying For?</p>
-            <select class="form-select vsbformselect vsbmt" name="service" aria-label="Default select example">
+            <select class="form-select vsbformselect vsbmt" required name="service" aria-label="Default select example">
               <option value="" selected disabled>Choose service</option>
              <?php if(count($services)): ?>
                 <?php foreach ($services as $service): ?>

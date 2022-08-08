@@ -1,5 +1,10 @@
 <?php include("./inc/check_session.php"); ?>
 
+<?php  
+    if(isset($_SESSION['APPLY_FORM_DATA'])) {
+        $FORM_APPLY = json_decode($_SESSION['APPLY_FORM_DATA'], true);
+    }
+?>
 
 <!DOCTYPE html>
 <html dir="ltr" lang="en">
@@ -81,20 +86,20 @@
                 <p class="fill">Fill the Form Below</p>   
                 <p class="personal">Your personal details</p>                                          
             </div>
-            <form class="formml">
+            <form class="formml" method="post" action="../handlers/form_handler.php">
                 <div class="form-body">
                     <div class="row" style="margin-top: 25px;">
                         <div class="col-md-5 col-lg-4 col-xl-3">
                             <div class="form-group">
                                 <label class="form-label">First Name</label>
-                                <input name="firstname" type="text" class="form-control dob" placeholder="First Name">
+                                <input name="firstname" type="text" value="<?= $FORM_APPLY['firstname'] ?? ""; ?>" class="form-control dob" placeholder="First Name">
                             </div>
                         </div>
                         
                         <div class="col-md-5 col-lg-4 col-xl-3">
                             <div class="form-group">
                                 <label class="form-label">Last Name</label>
-                                <input name="lastname" type="text" class="form-control dob" placeholder="Last Name">
+                                <input name="lastname" value="<?= $FORM_APPLY['lastname'] ?? ""; ?>" type="text" class="form-control dob" placeholder="Last Name">
                             </div>
                         </div>
                         
@@ -103,7 +108,7 @@
                         <div class="col-md-5 col-lg-4 col-xl-3">
                             <div class="form-group">
                                 <label class="form-label">Email Address</label>
-                                <input type="text" name="email" class="form-control mobileno" placeholder="Email">
+                                <input type="text" name="email" value="<?= $FORM_APPLY['email'] ?? ""; ?>" class="form-control mobileno" placeholder="Email">
                                 <input required type="hidden" name="service" value="srvs-003">
                             </div>
                         </div> 

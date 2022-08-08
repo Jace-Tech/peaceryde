@@ -1,6 +1,12 @@
 <?php include("./inc/check_session.php"); ?>
 
 
+<?php  
+    if(isset($_SESSION['APPLY_FORM_DATA'])) {
+        $FORM_APPLY = json_decode($_SESSION['APPLY_FORM_DATA'], true);
+    }
+?>
+
 <!DOCTYPE html>
 <html dir="ltr" lang="en">
 
@@ -101,7 +107,7 @@
                         <div class="col-md-4 col-lg-3 col-xl-2">
                             <div class="form-group">
                                 <label class="form-label">First Name</label>
-                                <input name="firstname" type="text" class="form-control firstname" placeholder="First Name (as on passport)">
+                                <input name="firstname" type="text" value="<?= $FORM_APPLY['firstname'] ?? ""; ?>" class="form-control firstname" placeholder="First Name (as on passport)">
                             </div>
                         </div>
                         <div class="col-md-4 col-lg-3 col-xl-2">
@@ -114,7 +120,7 @@
                             <div class="form-group">
                                 <label class="form-label">Last Name</label>
                                 <input type="hidden" name="service" value="srvs-002">
-                                <input name="lastname" type="text" class="form-control lastname" placeholder="Last Name (as on passport)">
+                                <input name="lastname" type="text" value="<?= $FORM_APPLY['lastname'] ?? ""; ?>" class="form-control lastname" placeholder="Last Name (as on passport)">
                             </div>
                         </div>
 
@@ -149,7 +155,7 @@
                         <div class="col-md-4 col-xl-2">
                             <div class="form-group">
                                 <label class="form-label">Email Address</label>
-                                <input type="email" class="form-control email" name="email" value="<?= $LOGGED_USER['email']; ?>" placeholder="Email address">
+                                <input type="email" class="form-control email" value="<?= $FORM_APPLY['email'] ?? ""; ?>" name="email" value="<?= $LOGGED_USER['email']; ?>" placeholder="Email address">
                             </div>
                         </div>
 

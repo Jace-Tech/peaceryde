@@ -83,13 +83,13 @@
           <div class="row" style="margin-top: 25px;">
             <div class="col-md-5 col-lg-4 col-xl-3">
               <div class="form-group">
-                <input type="text" name="firstname" class="form-control dob" placeholder="first Name">
+                <input type="text" required name="firstname" class="form-control dob" placeholder="first Name">
               </div>
             </div>
 
             <div class="col-md-5 col-lg-4 col-xl-3">
               <div class="form-group">
-                <input type="text" name="lastname" class="form-control dob" placeholder="Last Name">
+                <input type="text" required name="lastname" class="form-control dob" placeholder="Last Name">
               </div>
             </div>
 
@@ -97,14 +97,14 @@
           <div class="row" style="margin-top: 25px;">
             <div class="col-md-5 col-lg-4 col-xl-3">
               <div class="form-group">
-                <input type="text" name="email" class="form-control mobileno" placeholder="Email">
+                <input type="text" required name="email" class="form-control mobileno" placeholder="Email">
               </div>
             </div>
             <div class="col-md-5 col-lg-4 col-xl-3">
               <div class="form-group">
                 <div class="input-group mb-3">
                   <div class="input-group-prepend">
-                    <select class="custom-select" name="countryCode" id="inputGroupSelect01" style="width: 100px;height:43px; background-color: #ADC92E; color: #F9FFFF; font-size:11px;">
+                    <select class="custom-select" required name="countryCode" id="inputGroupSelect01" style="width: 100px;height:43px; background-color: #ADC92E; color: #F9FFFF; font-size:11px;">
                       <optgroup label="Country Code">
 
                         <option data-countryCode="DZ" value="213">Algeria (+213)</option>
@@ -323,7 +323,7 @@
                         <option data-countryCode="ZW" value="263">Zimbabwe (+263)</option>
                       </optgroup>
                     </select>
-                    <input type="text" name="phone" class="form-control mobileno2" placeholder="Mobile Number">
+                    <input type="text" required name="phone" class="form-control mobileno2" placeholder="Mobile Number">
                   </div>
 
                 </div>
@@ -371,7 +371,7 @@
 
         </div>
         <div class="divbtn">
-          <button type="submit" name="apply" class="btn btnproceed">Proceed</button>
+          <button type="submit" required name="apply" class="btn btnproceed">Proceed</button>
         </div>
       </form>
     </div>
