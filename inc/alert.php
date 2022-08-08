@@ -12,5 +12,4 @@ if(isset($_SESSION['ALERT'])) {
 }
 
 unset($_SESSION['ALERT']);
-
 ?>

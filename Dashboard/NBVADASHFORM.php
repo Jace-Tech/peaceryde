@@ -458,8 +458,8 @@
             form.elements.phone.value = phone
             form.elements.passport.value = passport
             Array.from(form.elements.title.children).filter(item => item.value == title)[0].selected = true
-            Array.from(form.elements.country.children).filter(item => item.value == country)[0].selected = true
-            Array.from(form.elements.countryCode.children).filter(item => item.value == countryCode)[0].selected = true
+            // Array.from(form.elements.country.children).filter(item => item.value == country)[0].selected = true
+            // Array.from(form.elements.countryCode.children).filter(item => item.value == countryCode)[0].selected = true
             Array.from(genders).filter(item => item.value == gender)[0].checked = true
         }
 
