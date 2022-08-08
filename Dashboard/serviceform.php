@@ -1,4 +1,5 @@
 <?php include("./inc/check_session.php"); ?>
+<?php $services = getAllServices($connect); ?>
 
 <!DOCTYPE html>
 <html dir="ltr" lang="en">
@@ -61,9 +62,9 @@
   </div>
 
   <div id="main-wrapper" data-theme="light" data-layout="vertical" data-navbarbg="skin6" data-sidebartype="full" data-sidebar-position="fixed" data-header-position="fixed" data-boxed-layout="full">
-     <!-- Sidebar -->
-     <?php include("./inc/sidebar.php"); ?>
-      <!-- Sidebar -->
+    <!-- Sidebar -->
+    <?php include("./inc/sidebar.php"); ?>
+    <!-- Sidebar -->
 
     <div class="page-wrapper" id="main">
       <span style="font-size:30px;cursor:pointer" onclick="openNav()"> <svg width="19" height="15" viewBox="0 0 19 15" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-bottom: 10px;
@@ -77,18 +78,18 @@
         <h3 class="page-title title">Service Booking Form </h3>
         <p class="fill">Plesae fill this form to indicate your interest in any of our services and we will contact you within 24hrs</p>
       </div>
-      <form class="formml">
+      <form class="formml" method="post" action="./handlers/apply_handler.php">
         <div class="form-body">
           <div class="row" style="margin-top: 25px;">
             <div class="col-md-5 col-lg-4 col-xl-3">
               <div class="form-group">
-                <input type="text" class="form-control dob" placeholder="first Name">
+                <input type="text" name="firstname" class="form-control dob" placeholder="first Name">
               </div>
             </div>
 
             <div class="col-md-5 col-lg-4 col-xl-3">
               <div class="form-group">
-                <input type="text" class="form-control dob" placeholder="Last Name">
+                <input type="text" name="lastname" class="form-control dob" placeholder="Last Name">
               </div>
             </div>
 
@@ -96,14 +97,14 @@
           <div class="row" style="margin-top: 25px;">
             <div class="col-md-5 col-lg-4 col-xl-3">
               <div class="form-group">
-                <input type="text" class="form-control mobileno" placeholder="Email">
+                <input type="text" name="email" class="form-control mobileno" placeholder="Email">
               </div>
             </div>
             <div class="col-md-5 col-lg-4 col-xl-3">
               <div class="form-group">
                 <div class="input-group mb-3">
                   <div class="input-group-prepend">
-                    <select class="custom-select" id="inputGroupSelect01" style="width: 100px;height:43px; background-color: #ADC92E; color: #F9FFFF; font-size:11px;">
+                    <select class="custom-select" name="countryCode" id="inputGroupSelect01" style="width: 100px;height:43px; background-color: #ADC92E; color: #F9FFFF; font-size:11px;">
                       <optgroup label="Country Code">
 
                         <option data-countryCode="DZ" value="213">Algeria (+213)</option>
@@ -322,7 +323,7 @@
                         <option data-countryCode="ZW" value="263">Zimbabwe (+263)</option>
                       </optgroup>
                     </select>
-                    <input type="text" class="form-control mobileno2" placeholder="Mobile Number">
+                    <input type="text" name="phone" class="form-control mobileno2" placeholder="Mobile Number">
                   </div>
 
                 </div>
@@ -341,62 +342,15 @@
               <div class="form-group">
                 <div class="input-group mb-3">
                   <div class="input-group-prepend">
-                    <select class="form-select fmselect" aria-label="Default select example">
-
+                    <select name="service" class="form-select fmselect" aria-label="Default select example">
                       <option selected>Services</option>
-                      <option value="1">Nigeria Business Visa</option>
-                      <option value="2">Nigeria Temporary Work Permit</option>
-                      <option value="3">Nigeria Business Incorporation</option>
-
-                      <option value="5">Nigeria
-                        Tourist Visa</option>
-
-                      <option value="6">Nigeria
-                        Business Visa
-                        Extension</option>
-                      <option value="7">Nigeria
-                        Subject To
-                        Regularization (STR)</option>
-                      <option value="8">Permit to Land
-                        Immgration Approval For Marine Vessels Foreign Crew</option>
-                      <option value="9">Real Estate
-                        Cosultancy and
-                        Advisory</option>
-                      <option value="10">Legal Advisory
-                        and Consultation
-                      </option>
-                      <option value="11">Africa travels
-                        & tours</option>
-                      <option value="12">Nigerian
-                        Immigration
-                        Consultancy</option>
-                      <option value="13">Nigeria Custom
-                        Brokerage Services
-                      </option>
-                      <option value="14">Hotel Booking
-                      </option>
-                      <option value="14">Nigeria Department of Petroleum Resources (DPR) Permits Consultancy Services
-                      </option>
-                      <option value="15">Nigeria Maritime and Safety Agency Cabotage Consultancy Services
-                      </option>
-                      <option value="16">Nigeria Ports Authority Consultancy Services</option>
-                      <option value="17">Other Nigerian Government Agencies Consultancy Support Services</option>
-                      <option value="18">Airport
-                        Immigration Meet and
-                        Greet</option>
-                      <option value="19">Airport
-                        Protocol Services</option>
-                      <option value="20">Airport
-                        Transfers</option>
-                      <option value="21">Vehicle Rentals
-                      </option>
-                      <option value="22">Armed Security
-                        Escort Services
-                      </option>
-                      <option value="23">Nigeria COVID
-                        19 Payment
-                        Services</option>
-                      <option value="5">Hotel Booking</option>
+                      <?php if (count($services)) : ?>
+                        <?php foreach ($services as $service) : ?>
+                          <option value="<?= $service['service_id'] ?>">
+                            <?= $service['service'] ?>
+                          </option>
+                        <?php endforeach; ?>
+                      <?php endif; ?>
                     </select>
                   </div>
 
@@ -411,13 +365,13 @@
                       ">Messages</p>
           <div class="row">
             <div class="col-md-8 col-lg-6 col-xl-4">
-              <textarea style="width: 100%;margin-top:21; height: 150px;margin-bottom: 65px; border: 1px solid #555555;"></textarea>
+              <textarea name="message" style="width: 100%;margin-top:21; height: 150px;margin-bottom: 65px; border: 1px solid #555555;"></textarea>
             </div>
           </div>
 
         </div>
         <div class="divbtn">
-          <button type="submit" class="btn btnproceed">Proceed</button>
+          <button type="submit" name="apply" class="btn btnproceed">Proceed</button>
         </div>
       </form>
     </div>

@@ -22,11 +22,11 @@ if(isset($_POST['apply'])) {
         $subject = "<h3> Application for $service </h3>";
         $message = "<p>Hi $name.</p>";
         
-        $message = "<p>My name is {$POST['firstname']} {$POST['lastname']}</p>";
-        $message .= "<p>{$POST['message']}</p>";
-        $message .= "<p>Email: <a href='mailto:{$POST['email']}?subject=$service'>{$POST['email']}</a> </p>";
-        $message .= "<p>Firstname: {$POST['firstname']} </p>";
-        $message .= "<p>Lastname: {$POST['lastname']} </p>";
+        $message = "<p>My name is " . $POST['firstname'] . " " . $POST['lastname'] . "</p>";
+        $message .= "<p>" . $POST['message'] . "</p>";
+        $message .= "<p>Email: <a href='mailto:" . $POST['email'] . "?subject=$service'>" . $POST['email'] . "</a> </p>";
+        $message .= "<p>Firstname: " . $POST['firstname'] . " </p>";
+        $message .= "<p>Lastname: " . $POST['lastname'] . " </p>";
         $message .= "<p>Phone No: <a href='tel:+{$POST['countryCode']}{$POST['phone']}'>+{$POST['countryCode']}{$POST['phone']}</a> </p>";
 
         $to = "mailto:theonlyfreddie@gmail.com";

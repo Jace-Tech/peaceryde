@@ -373,7 +373,7 @@
                             </optgroup>
                           </select>
                       </div>
-                      <input type="text" name="phone" class="form-control firstname" value="<?= $FORM_APPY['phone'] ?? "" ?>" placeholder="country code (Mobile number)" >
+                      <input type="text" name="phone" class="form-control firstname" value="" placeholder="country code (Mobile number)" >
                       <input required type="hidden" name="service" value="srvs-001">
                       <input required type="hidden" name="twp" value="">
                     </div>
