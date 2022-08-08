@@ -134,8 +134,13 @@ if(isset($_GET["reference"])) {
             
             // Mail User
             $subject = "Registration successful";
-
-            $message = "<p>Hi " . $user['firstname'] . ",</p>";
+            $message = "<div>
+                            <a href='https://peacerydeafrica.com'>
+                                <img src='http://ryde.peacerydeafrica.com/app/assets/logo.png' style='height: 80px; object-fit: contain;'
+                                    alt='' />
+                            </a>
+                        </div>";
+            $message .= "<p>Hi " . $user['firstname'] . ",</p>";
             $message .= "<p>Here's your login information </p>";
             $message .= "<p> Username / Email : <b>" . $user['email'] . "</b> <br /> Password: <b>$password</b></p>";
 

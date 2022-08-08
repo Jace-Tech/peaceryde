@@ -93,8 +93,8 @@ function sendMail ($subject, $_message, $from, $to, $fullHTML = false)
     if(!$fullHTML) {
         $message = "<!DOCTYPE html>
         <html>
-            <head>
-                <link rel='shortcut icon' href='http://test.peacerydeafrica.com/app/assets/logo.png' type='image/x-icon'> 
+            <head> 
+                <meta charset='UTF-8' />
             </head> 
             <body>";
         $message  .= $_message;
