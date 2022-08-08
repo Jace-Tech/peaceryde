@@ -66,12 +66,14 @@
                               <div class="form-row formml">
                                 <div class="row">
                                   <div class="col-md-5">
-                                    <div class="form-group">                                 
+                                    <div class="form-group">    
+                                      <label class="form-label">First Name</label>                             
                                       <input type="text" name="firstname" value="<?= $FORM_APPY['firstname'] ?? "" ?>" class="form-control firstname2" placeholder="First Name" >
                                   </div>
                                   </div>
                                   <div class="col-md-5">
                                     <div class="form-group">
+                                      <label class="form-label">Last Name</label>
                                       <input type="text" name="lastname" class="form-control firstname2" value="<?= $FORM_APPY['lastname'] ?? "" ?>" placeholder="Last Name" >
                                     </div>
                                   </div>
@@ -325,12 +327,14 @@
                               <div class="form-row formml">
                                 <div class="row">
                                   <div class="col-md-5">
-                                    <div class="form-group">                                 
+                                    <div class="form-group">              
+                                      <label class="form-label">Company Name</label>                   
                                       <input type="text" name="companyName" class="form-control firstname2" placeholder="Company Name" >
                                   </div>
                                   </div>
                                   <div class="col-md-5">
-                                    <div class="form-group">                                 
+                                    <div class="form-group">           
+                                      <label class="form-label">Coporate Address</label>                      
                                       <input type="text" name="coperateAddress" class="form-control firstname2" placeholder="Coporate Address" >
                                   </div>
                                   </div>
@@ -341,6 +345,7 @@
                                   
                                   <div class="col-md-5">
                                     <div class="form-group">
+                                    <label class="form-label">No of Shares</label>
                                       <input type="text" name="shares" class="form-control firstname2" placeholder="No of Shares" >
                                     </div>
                                   </div>

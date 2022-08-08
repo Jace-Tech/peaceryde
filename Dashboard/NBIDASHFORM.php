@@ -86,12 +86,14 @@
                     <div class="row" style="margin-top: 25px;">
                         <div class="col-md-5 col-lg-4 col-xl-3">
                             <div class="form-group">
-                                <input name="firstname" type="text" class="form-control dob" placeholder="first Name">
+                                <label class="form-label">First Name</label>
+                                <input name="firstname" type="text" class="form-control dob" placeholder="First Name">
                             </div>
                         </div>
                         
                         <div class="col-md-5 col-lg-4 col-xl-3">
                             <div class="form-group">
+                                <label class="form-label">Last Name</label>
                                 <input name="lastname" type="text" class="form-control dob" placeholder="Last Name">
                             </div>
                         </div>
@@ -100,12 +102,14 @@
                     <div class="row" style="margin-top: 25px;">
                         <div class="col-md-5 col-lg-4 col-xl-3">
                             <div class="form-group">
+                                <label class="form-label">Email Address</label>
                                 <input type="text" name="email" class="form-control mobileno" placeholder="Email">
                             </div>
                         </div> 
                         <div class="col-md-5 col-lg-4 col-xl-3">
                             <div class="form-group">
                                 <div class="input-group mb-3">
+                                    <label class="form-label">Mobile Number</label>
                                     <div class="input-group-prepend">
                                         <select name="countryCode" class="custom-select" id="inputGroupSelect01" style="width: 100px;height:43px; background-color: #ADC92E; color: #F9FFFF; font-size:11px;">
                                             <optgroup label="Country Code">
@@ -339,11 +343,13 @@
                     <div class="row" style="margin-top: 25px;">
                         <div class="col-md-5 col-lg-4 col-xl-3">
                             <div class="form-group">
+                                <label class="form-label">Company Name</label>
                                 <input name="companyName" type="text" name="" class="form-control firstname" placeholder="Company Name">
                             </div>
                         </div>
                         <div class="col-md-5 col-lg-4 col-xl-3">
                             <div class="form-group">
+                                <label class="form-label">Company Email</label>
                                 <input name="companyEmail" type="text" class="form-control middlename" placeholder="Company Email">
                             </div>
                         </div>
@@ -362,12 +368,14 @@
                     <div class="row" style="margin-top: 25px;">
                         <div class="col-md-5 col-lg-4 col-xl-3">
                             <div class="form-group">
+                                <label class="form-label">Website</label>
                                 <input name="website" type="text" class="form-control dob" placeholder="Website">
                             </div>
                         </div>
                         
                         <div class="col-md-5 col-lg-4 col-xl-3">
                             <div class="form-group">
+                                <label class="form-label">Employee No</label>
                                 <input name="employeeNo" type="text" class="form-control dob" placeholder="Employee No">
                             </div>
                         </div>

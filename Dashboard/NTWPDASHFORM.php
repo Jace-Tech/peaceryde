@@ -86,6 +86,7 @@
                 <div class="form-body">
                     <div class="row">
                         <div class="col-md-4 col-lg-3 col-xl-3">
+                            <label class="form-label">Title</label>
                             <select class="form-select fmselect" aria-label="Default select example" name="title">
                                 <option selected>Title</option>
                                 <?php foreach ($titles as $title) : ?>
@@ -100,16 +101,19 @@
                     <div class="row" style="margin-top: 25px;">
                         <div class="col-md-4 col-lg-3 col-xl-2">
                             <div class="form-group">
+                                <label class="form-label">First Name</label>
                                 <input name="firstname" type="text" class="form-control firstname" placeholder="First Name (as on passport)">
                             </div>
                         </div>
                         <div class="col-md-4 col-lg-3 col-xl-2">
                             <div class="form-group">
+                                <label class="form-label">Middle Name</label>
                                 <input name="middlename" type="text" class="form-control middlename" placeholder="Middle Name (as on passport)">
                             </div>
                         </div>
                         <div class="col-md-4 col-lg-3 col-xl-2">
                             <div class="form-group">
+                                <label class="form-label">Last Name</label>
                                 <input type="hidden" name="service" value="srvs-002">
                                 <input name="lastname" type="text" class="form-control lastname" placeholder="Last Name (as on passport)">
                             </div>
@@ -119,6 +123,7 @@
                     <div class="row" style="margin-top: 25px;">
                         <div class="col-md-4 col-lg-3 col-xl-2">
                             <div class="form-group">
+                                <label class="form-label">Date of Birth</label>
                                 <input type="date" name="dob" class="form-control dob" placeholder="Date of birth">
                             </div>
                         </div>
@@ -144,17 +149,22 @@
                     <div class="row" style="margin-top: 25px;">
                         <div class="col-md-4 col-xl-2">
                             <div class="form-group">
+                                <label class="form-label">Email Address</label>
                                 <input type="email" class="form-control email" name="email" value="<?= $LOGGED_USER['email']; ?>" placeholder="Email address">
                             </div>
                         </div>
 
                         <div class="col-md-4 col-xl-2">
                             <div class="form-group">
+                                <label class="form-label">Passport No</label>
                                 <input type="text" name="passport" class="form-control passno" placeholder="Passport No">
                             </div>
                         </div>
                     </div>
                     <div class="row" style="margin-top: 25px;">
+                        <div class="col-12">
+                            <label class="form-label">Passport No</label>
+                        </div>
                         <div class="col-md-4 col-xl-2">
                             <select class="form-select code" required name="countryCode" aria-label="Default select example">
                                 <option selected>Please Select</option>
@@ -389,6 +399,7 @@
                     <p class="please">Please select below your Nationality (as on passport)</p>
                     <div class="row">
                         <div class="col-md-4 col-xl-3">
+                            <label class="form-label">Country</label>
                             <select name="country" class="form-select nationality" aria-label="Default select example">
                                 <option selected>Select Country</option>
                                 <?php foreach ($country_fee as $key => $value) : ?>

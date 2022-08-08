@@ -1,3 +1,5 @@
+<?php include("./inc/check_session.php"); ?>
+
 <!DOCTYPE html>
 <html>
 <!--  This source code is exported from pxCode, you can get more document from https://www.pxcode.io  -->

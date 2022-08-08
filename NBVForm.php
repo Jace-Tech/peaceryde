@@ -76,16 +76,19 @@
                   <div class="row">
                     <div class="col-md-3">
                       <div class="form-group">
+                        <label class="form-label">First Name</label>
                         <input name="firstname" required class="form-control firstname" value="<?= $FORM_APPY["firstname"] ?? "" ?>" placeholder="First Name (as on passport)">
                       </div>
                     </div>
                     <div class="col-md-3">
                       <div class="form-group">
+                        <label class="form-label">Middle Name</label>
                         <input required name="middlename" type="text" class="form-control middlename" placeholder="Middle Name (as on passport)">
                       </div>
                     </div>
                     <div class="col-md-3">
                       <div class="form-group" style="margin-right: 117px;">
+                        <label class="form-label">Last Name</label>
                         <input class="form-control lastname" name="lastname" type="text" value="<?= $FORM_APPY["lastname"] ?? "" ?>" required placeholder="Last Name (as on passport)">
                       </div>
                     </div>
@@ -96,6 +99,7 @@
                   <div class="row">
                     <div class="col-md-3">
                       <div class="form-group">
+                        <label class="form-label">Date of Birth</label>
                         <input type="date" required name="dob" class="form-control firstname" placeholder="Date of Birth">
                       </div>
                     </div>
@@ -127,11 +131,13 @@
                   <div class="row">
                     <div class="col-md-5">
                       <div class="form-group">
+                        <label class="form-label">Email address</label>
                         <input type="email" required name="email" class="form-control firstname2" placeholder="Email address" value="<?= $FORM_APPY["email"] ?? "" ?>">
                       </div>
                     </div>
                     <div class="col-md-5">
                       <div class="form-group">
+                        <label class="form-label">Passport No</label>
                         <input type="text" name="passport" required class="form-control firstname2" placeholder="Passport No">
                       </div>
                     </div>

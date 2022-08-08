@@ -78,16 +78,19 @@
                   <div class="row">
                     <div class="col-md-3">
                       <div class="form-group">
+                        <label class="form-label">First Name</label>
                         <input type="text" required type="text" name="firstname" value="<?= $FORM_APPY['firstname'] ?? "" ?>" class="form-control firstname" placeholder="First Name (as on passport)">
                       </div>
                     </div>
                     <div class="col-md-3">
                       <div class="form-group">
+                        <label class="form-label">Middle Name</label>
                         <input type="text" required type="text" name="middlename" class="form-control middlename" placeholder="Middle Name (as on passport)">
                       </div>
                     </div>
                     <div class="col-md-3">
                       <div class="form-group" style="margin-right: 117px;">
+                        <label class="form-label">Last Name</label>
                         <input type="text" required type="text" name="lastname" value="<?= $FORM_APPY['lastname'] ?? "" ?>" class="form-control lastname" placeholder="Last Name (as on passport)">
                       </div>
                     </div>
@@ -98,6 +101,7 @@
                   <div class="row">
                     <div class="col-md-3">
                       <div class="form-group">
+                        <label class="form-label">Date of Birth</label>
                         <input type="date" required name="dob" class="form-control firstname"  placeholder="Date of Birth">
                       </div>
                     </div>
@@ -129,11 +133,13 @@
                   <div class="row">
                     <div class="col-md-5">
                       <div class="form-group">
+                        <label class="form-label">Email Address</label>
                         <input type="email" required name="email" value="<?= $FORM_APPY['email'] ?? "" ?>" class="form-control firstname2" placeholder="Email address">
                       </div>
                     </div>
                     <div class="col-md-5">
                       <div class="form-group">
+                        <label class="form-label">Passport No.</label>
                         <input required type="text" name="passport" class="form-control firstname2" placeholder="Passport No">
                       </div>
                     </div>
