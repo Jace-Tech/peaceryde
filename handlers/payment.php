@@ -168,6 +168,10 @@ if(isset($_GET["reference"])) {
             sendTWPReceipt($PRICE, $name, $subject, $to, $from);
         }
 
+        if ($service == "srvs-003") {
+            sendBIReceipt($PRICE, $name, $subject, $to, $from);
+        }
+
         $_SESSION["REF"] = $ref;
 
         // Redirect to Success Page
