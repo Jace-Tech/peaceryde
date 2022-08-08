@@ -369,7 +369,7 @@ $isUnread = count($messages->get_user_unread_messages($USER_ID));
                     <div class="align-self-center">
                         <div class="row">
                             <div class="">
-                                <h3 class="page-title text-truncate mb-1 trackh3">My Progress</h3>
+                                <h3 class="page-title text-truncate mb-1 trackh3" style="color: #080C58;">My Progress</h3>
 
                             </div>
                         </div>
