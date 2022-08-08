@@ -111,6 +111,9 @@ if(isset($_GET["reference"])) {
         // Update Payments table
         $payments->updatePayment($ref, "success");
 
+        $from = "billing@peacerydeafrica.com";
+        $to = $user['email'];
+
         if(!isset($_SESSION['LOGGED_USER'])) {
             // Generate Login Credientials
             $password = $userLogins->generatePassword();
