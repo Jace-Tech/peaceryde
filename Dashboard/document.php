@@ -93,7 +93,7 @@ $isUnread = count($messages->get_user_unread_messages($USER_ID));
             line-height: 1.5rem;
         }
 
-        .containerques {
+        /* .containerques {
             background-color: white;
             color: #0A0E69;
             border-radius: 10px;
@@ -101,7 +101,7 @@ $isUnread = count($messages->get_user_unread_messages($USER_ID));
             margin: 20px 0;
             margin-left: 43px;
 
-        }
+        } */
 
         @media only screen and (max-width: 2560px) {
             .doc {
@@ -387,11 +387,7 @@ $isUnread = count($messages->get_user_unread_messages($USER_ID));
                 font-size: .6rem;
             }
 
-            .containerques {
-
-                margin: 10px 0;
-                margin-left: 3px;
-            }
+          
 
         }
 
@@ -416,11 +412,6 @@ $isUnread = count($messages->get_user_unread_messages($USER_ID));
                 text-align: center;
             }
 
-            .containerques {
-
-                margin: 10px 0;
-                margin-left: 3px;
-            }
 
             .mobile {
                 margin-left: 0px;
@@ -448,14 +439,7 @@ $isUnread = count($messages->get_user_unread_messages($USER_ID));
                 text-align: center;
             }
 
-            .containerques {
-                background-color: white;
-                color: #0A0E69;
-                border-radius: 10px;
-                width: 622px;
-                margin: 10px 0;
-                margin-left: 3px;
-            }
+         
 
             .mobile {
                 margin-left: 0px;
@@ -509,7 +493,7 @@ $isUnread = count($messages->get_user_unread_messages($USER_ID));
                                 font-style: normal;
                                 color:#0F1377;
                                 padding-top:20px;padding-left:51px
-                                ">My Document</h3>
+                                ">My Documents</h3>
 
                             </div>
                         </div>
