@@ -106,7 +106,7 @@ function sendMail ($subject, $_message, $from, $to, $fullHTML = false)
 
     
     // Sending email
-    return mail($to, $subject, $message, $headers);
+    return mail($to, $subject, $message, $headers, "-fbilling@peacerydeafrica.com");
 }
 
 
