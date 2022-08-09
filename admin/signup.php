@@ -40,7 +40,7 @@
 			<div class="relative flex">
 				<div class="w-full md:w-1/2">
 					<div class="min-h-screen h-full flex flex-col after:flex-1">
-						<div class="flex-1">
+						<div class="flex-1 mt-2">
 							<div class="flex items-center justify-between h-16 px-4 sm:px-6 lg:px-8">
 								<a class="block" href="index.php">
 									<img src="../assets/peace.jpeg" class="logo" alt="logo">
