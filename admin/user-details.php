@@ -200,7 +200,7 @@ $USERS_ADMIN = getSubAdmin($connect, $USER_SUB_ADMIN['sub_admin']);
                         <div class="grid grid-cols-12 gap-6">
                             <div class="col-span-full sm:col-span-6 xl:col-span-6">
                                 <label class="text-sm font-semibold block mb-2 text-gray-600">Service</label>
-                                <select  name="service" id="" class="w-full p-2 text-sm border-gray-300">
+                                <select  name="service" id="" class="w-full p-2 text-sm border-gray-300 rounded-sm">
                                     <option value="" disabled selected>Choose service</option>
                                     <?php foreach($services->getAllServices() as $_service): ?>
                                         <option value="<?= $_service['service_id']; ?>">
@@ -212,7 +212,7 @@ $USERS_ADMIN = getSubAdmin($connect, $USER_SUB_ADMIN['sub_admin']);
     
                             <div class="col-span-full sm:col-span-6 xl:col-span-6">
                                 <label class="text-sm font-semibold block mb-2 text-gray-600">Service Status</label>
-                                <select name="serviceStatus" id="" class="w-full p-2 text-sm border-gray-300">
+                                <select name="serviceStatus" id="" class="w-full p-2 text-sm border-gray-300 rounded-sm">
                                     <option value="" disabled selected>Choose service status</option>
                                     <option value="awaiting uploads">Awaiting uploads</option>
                                     <option value="approved">Approved</option>
@@ -224,12 +224,12 @@ $USERS_ADMIN = getSubAdmin($connect, $USER_SUB_ADMIN['sub_admin']);
                         <div class="grid grid-cols-12 gap-6 mt-3">
                             <div class="col-span-full sm:col-span-6 xl:col-span-6">
                                 <label class="text-sm font-semibold block mb-2 text-gray-600">Amount paid</label>
-                                <input type="text" name="amount" class="form-input w-full p-2 border-gray-300" id="">
+                                <input type="text" name="amount" class="form-input w-full p-2 border-gray-300 rounded-sm" id="">
                             </div>
 
                             <div class="col-span-full sm:col-span-6 xl:col-span-6">
                                 <label class="text-sm font-semibold block mb-2 text-gray-600">Payment Status</label>
-                                <select name="paymentStatus" id="" class="w-full p-2 text-sm border-gray-300">
+                                <select name="paymentStatus" id="" class="w-full p-2 text-sm border-gray-300 rounded-sm">
                                     <option value="" disabled selected>Choose payment status</option>
                                     <option value="pending">Pending</option>
                                     <option value="success">Success</option>
