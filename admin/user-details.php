@@ -1,7 +1,7 @@
 <?php require_once("./addons/models.php"); ?>
 
 <?php
-if (!isset($_GET['user'])) header('Location: ../users.php');
+if (!isset($_GET['user'])) header('Location: ./users.php');
 ?>
 
 <?php
@@ -196,7 +196,7 @@ $USERS_ADMIN = getSubAdmin($connect, $USER_SUB_ADMIN['sub_admin']);
 
             <div class="mt-4">
                 <?php if(isset($_GET['page']) && $_GET['page'] == "service"): ?>
-                    <form class="block w-full" >
+                    <form class="block w-full" action="./handler/user_handler.php" method="post">
                         <div class="grid grid-cols-12 gap-6">
                             <div class="col-span-full sm:col-span-6 xl:col-span-6">
                                 <label class="text-sm font-semibold block mb-2 text-gray-600">Service</label>
