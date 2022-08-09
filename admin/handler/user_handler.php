@@ -164,10 +164,6 @@ if(isset($_POST["add-service"])) {
         // Update service status
         $USER_SERVICE->updateStatus($id, $service, $serviceStatus);
 
-        print_r($userServiceResult);
-
-        die();
-
         // Add the payment details
         $paymentDetails = [
            'userId' => $userServiceResult['userId'],
@@ -177,7 +173,11 @@ if(isset($_POST["add-service"])) {
             'status' => $paymentStatus
         ];
 
+        print_r($paymentDetails);
+        die();
+
         $result = $PAYMENT->addPayment($paymentDetails);
+
         if($result) {
             setAdminAlert("Service added successfully", 'success');
             header("Location: ../user-details.php?user=$id");
