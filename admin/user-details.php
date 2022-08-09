@@ -199,7 +199,7 @@ $USERS_ADMIN = getSubAdmin($connect, $USER_SUB_ADMIN['sub_admin']);
                     <form class="block w-full" >
                         <div class="grid grid-cols-12 gap-6">
                             <div class="col-span-full sm:col-span-6 xl:col-span-6">
-                                <label class="font-semibold block mb-2 text-gray-600">Service</label>
+                                <label class="text-sm font-semibold block mb-2 text-gray-600">Service</label>
                                 <select name="service" id="" class="w-full p-2">
                                     <option value="" disabled selected>Choose service</option>
                                     <?php foreach($services->getAllServices() as $_service): ?>
@@ -211,7 +211,7 @@ $USERS_ADMIN = getSubAdmin($connect, $USER_SUB_ADMIN['sub_admin']);
                             </div>
     
                             <div class="col-span-full sm:col-span-6 xl:col-span-6">
-                                <label class="font-semibold block mb-2 text-gray-600">Service Status</label>
+                                <label class="text-sm font-semibold block mb-2 text-gray-600">Service Status</label>
                                 <select name="serviceStatus" id="" class="w-full p-2">
                                     <option value="" disabled selected>Choose service status</option>
                                     <option value="awaiting uploads">Awaiting uploads</option>
@@ -221,14 +221,14 @@ $USERS_ADMIN = getSubAdmin($connect, $USER_SUB_ADMIN['sub_admin']);
                             </div>
                         </div>
 
-                        <div class="grid grid-cols-12 gap-6">
+                        <div class="grid grid-cols-12 gap-6 mt-3">
                             <div class="col-span-full sm:col-span-6 xl:col-span-6">
-                                <label class="font-semibold block mb-2 text-gray-600">Amount paid</label>
+                                <label class="text-sm font-semibold block mb-2 text-gray-600">Amount paid</label>
                                 <input type="text" name="amount" class="form-input w-full p-2" id="">
                             </div>
 
                             <div class="col-span-full sm:col-span-6 xl:col-span-6">
-                                <label class="font-semibold block mb-2 text-gray-600">Payment Status</label>
+                                <label class="text-sm font-semibold block mb-2 text-gray-600">Payment Status</label>
                                 <select name="paymentStatus" id="" class="w-full p-2">
                                     <option value="" disabled selected>Choose payment status</option>
                                     <option value="pending">Pending</option>
@@ -238,7 +238,7 @@ $USERS_ADMIN = getSubAdmin($connect, $USER_SUB_ADMIN['sub_admin']);
                             </div>
                         </div>
 
-                        <div class="grid grid-cols-12 gap-6">
+                        <div class="grid grid-cols-12 gap-6 mt-6">
                             <div class="col-span-full">
                                 <input type="hidden" name="id" value="<?= $_GET['user']; ?>">
                                 <button name="add-service" class="btn bg-indigo-500 hover:bg-indigo-600 text-white">
