@@ -19,7 +19,9 @@
   position: relative;
  
 }
-
+.mt-15{
+  margin-top: 10%;
+}
 .policyh1
 {
   text-align: left;

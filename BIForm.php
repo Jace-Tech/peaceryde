@@ -63,18 +63,23 @@
                         
                         <div>
                             <form>
-                              <div class="form-row formml">
+                              <div class="form-row mt-15 formml">
                                 <div class="row">
                                   <div class="col-md-5">
                                     <div class="form-group">    
-                                      <label class="form-label">First Name</label>                             
-                                      <input type="text" name="firstname" value="<?= $FORM_APPY['firstname'] ?? "" ?>" class="form-control firstname2" placeholder="First Name" >
-                                  </div>
+                                      <label class="form-label">First Name</label> 
+                                      <div class="input-group mb-3 biwidth">                            
+                                        <input type="text" name="firstname" value="<?= $FORM_APPY['firstname'] ?? "" ?>" class="form-control firstname2" placeholder="First Name" >
+                                  
+                                      </div>
+                                    </div>
                                   </div>
                                   <div class="col-md-5">
                                     <div class="form-group">
                                       <label class="form-label">Last Name</label>
-                                      <input type="text" name="lastname" class="form-control firstname2" value="<?= $FORM_APPY['lastname'] ?? "" ?>" placeholder="Last Name" >
+                                      <div class="input-group mb-3 biwidth">
+                                        <input type="text" name="lastname" class="form-control firstname2" value="<?= $FORM_APPY['lastname'] ?? "" ?>" placeholder="Last Name" >
+                                      </div>
                                     </div>
                                   </div>
                                 </div> 
@@ -85,8 +90,10 @@
                                     <label class="mb-2" style="margin-top:27px">Personal Email</label>
                                     <div class="form-group">  
                                       <input type="hidden" name="bi">                               
-                                      <input type="hidden" name="service" value="srvs-003">                               
-                                      <input type="email" class="form-control firstname2" name="email" value="<?= $FORM_APPY['email'] ?? "" ?>" placeholder="Email" >
+                                      <input type="hidden" name="service" value="srvs-003">
+                                      <div class="input-group mb-3 biwidth">                               
+                                        <input type="email" class="form-control firstname2" name="email" value="<?= $FORM_APPY['email'] ?? "" ?>" placeholder="Email" >
+                                      </div>
                                   </div>
                                   </div>
                                   <div class="col-md-5">
@@ -328,14 +335,18 @@
                                 <div class="row">
                                   <div class="col-md-5">
                                     <div class="form-group">              
-                                      <label class="form-label">Company Name</label>                   
-                                      <input type="text" name="companyName" class="form-control firstname2" placeholder="Company Name" >
-                                  </div>
+                                      <label class="form-label">Company Name</label> 
+                                      <div class="input-group mb-3 biwidth">                  
+                                        <input type="text" name="companyName" class="form-control firstname2" placeholder="Company Name" >
+                                      </div>
+                                    </div>
                                   </div>
                                   <div class="col-md-5">
                                     <div class="form-group">           
-                                      <label class="form-label">Coporate Address</label>                      
-                                      <input type="text" name="coperateAddress" class="form-control firstname2" placeholder="Coporate Address" >
+                                      <label class="form-label">Coporate Address</label>  
+                                      <div class="input-group mb-3 biwidth">                    
+                                        <input type="text" name="coperateAddress" class="form-control firstname2" placeholder="Coporate Address" >
+                                      </div>
                                   </div>
                                   </div>
                                 </div> 
@@ -343,10 +354,12 @@
                               <div class="form-row formml">
                                 <div class="row">
                                   
-                                  <div class="col-md-5">
+                                  <div class="col-md-6">
                                     <div class="form-group">
                                     <label class="form-label">No of Shares</label>
-                                      <input type="text" name="shares" class="form-control firstname2" placeholder="No of Shares" >
+                                      <div class="input-group mb-3 biwidth">
+                                       <input type="text" name="shares" class="form-control firstname2" placeholder="No of Shares" >
+                                      </div>
                                     </div>
                                   </div>
                                 </div> 
