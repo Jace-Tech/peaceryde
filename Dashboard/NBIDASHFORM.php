@@ -350,28 +350,30 @@
                         <div class="col-md-5 col-lg-4 col-xl-3">
                             <div class="form-group">
                                 <label class="form-label">Company Name</label>
+                                <input type="hidden" name="service" >
                                 <input name="companyName" required type="text" name="" class="form-control firstname" placeholder="Company Name">
                             </div>
                         </div>
                         <div class="col-md-5 col-lg-4 col-xl-3">
                             <div class="form-group">
-                                <label class="form-label">Company Email</label>
-                                <input name="companyEmail" required type="text" class="form-control middlename" placeholder="Company Email">
+                                <label class="form-label">No of Shares</label>
+                                <input name="shares" required type="text" class="form-control middlename" placeholder="No of shares">
                             </div>
                         </div>
                         
                     </div>
-                    <!-- <p class="please">Company Mailing Address</p>
+
+                    <p class="please">Coperate Address</p>
                     <div class="row" style="margin-top: 15px;">
                         <div class="col-md-6 col-lg-4 col-xl-3">
                             <div class="form-group">
-                                <input type="text" class="form-control dob" placeholder="Company Address">
+                                <input type="text" name="coperateAddress" class="form-control dob" placeholder="Coperate Address">
                             </div>
                         </div>
                         
-                    </div> -->
+                    </div>
 
-                    <div class="row" style="margin-top: 25px;">
+                    <!-- <div class="row" style="margin-top: 25px;">
                         <div class="col-md-5 col-lg-4 col-xl-3">
                             <div class="form-group">
                                 <label class="form-label">Website</label>
@@ -386,14 +388,14 @@
                             </div>
                         </div>
                         
-                    </div>
-                    <p style="font-family: Ubuntu;font-size: 14px;font-style: normal;font-weight: 400; padding-top:27px;
+                    </div> -->
+                    <!-- <p style="font-family: Ubuntu;font-size: 14px;font-style: normal;font-weight: 400; padding-top:27px;
                     ">Message</p>
                     <div class="row">
                         <div class="col-md-8 col-lg-6 col-xl-4">
                             <textarea name="message" style="width: 100%;margin-top:21; height: 150px;margin-bottom: 65px; border: 1px solid #555555;"></textarea>
                         </div>
-                    </div>
+                    </div> -->
                     
                 </div>
                 <div class="divbtn">
@@ -423,10 +425,11 @@
                 mode
             } = JSON.parse(storedUser)
 
-            // form.elements.email.value = email
+            form.elements.email.value = email
             form.elements.firstname.value = firstname
             form.elements.lastname.value = lastname
-            // form.elements.shares.value = shares
+            form.elements.shares.value = shares
+            form.elements.coperateAddress.value = coperateAddress
             // form.elements.phone.value = phone
             // form.elements.passport.value = passport
             // Array.from(form.elements.title.children).filter(item => item.value == title)[0].selected = true

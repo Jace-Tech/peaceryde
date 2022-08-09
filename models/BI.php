@@ -17,13 +17,13 @@ class BI {
         $result->execute([
             'userId' => $userId,
             'shares' => $shares ?? "",
-            'email' => $email,
-            'companyName' => $companyName,
+            'email' => $email ?? "",
+            'companyName' => $companyName ?? "",
             'coperateAddress' => $coperateAddress ?? "",
-            'coperateEmail' => $coperateEmail,
-            'website' => $website,
-            'employeeNo' => $employeeNo,
-            'message' => $message
+            'coperateEmail' => $coperateEmail ?? "",
+            'website' => $website ?? "",
+            'employeeNo' => $employeeNo ?? "",
+            'message' => $message ?? ""
         ]);
 
         return $result;

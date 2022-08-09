@@ -434,9 +434,12 @@
       const form = $('[data-form]')[0].elements
 
       const shares = form.shares.value
-      const companyName = form.companyName.value
-      const coperateAddress = form.coperateAddress.value
+      const firstname = form.firstname.value
+      const lastname = form.lastname.value
+      const countryCode = form.countryCode.value
       const email = form.email.value
+      const coperateAddress = form.coperateAddress.value
+      const coperateName = form.coperateName.value
       const service = form.service.value
 
       const mode = "BI"
@@ -444,6 +447,8 @@
       const data = {
         shares,
         companyName,
+        firstname,
+        lastname,
         coperateAddress,
         email,
         service,
