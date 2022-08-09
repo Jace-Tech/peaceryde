@@ -350,7 +350,6 @@
                         <div class="col-md-5 col-lg-4 col-xl-3">
                             <div class="form-group">
                                 <label class="form-label">Company Name</label>
-                                <input type="hidden" name="service" >
                                 <input name="companyName" required type="text" name="" class="form-control firstname" placeholder="Company Name">
                             </div>
                         </div>
