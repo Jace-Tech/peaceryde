@@ -37,6 +37,7 @@ $USERS_ADMIN = getSubAdmin($connect, $USER_SUB_ADMIN['sub_admin']);
             </div>
         </div>
 
+        <!-- USER DETAILS -->
         <div class="mt-16">
             <h3 class="mt-2 text-gray-600 font-bold text-md uppercase">Profile</h3>
             <div class="mt-4">
@@ -85,13 +86,13 @@ $USERS_ADMIN = getSubAdmin($connect, $USER_SUB_ADMIN['sub_admin']);
                 <div class="px-2 py-2 border-b flex">
                     <p class="text-gray-600 text-sm font-bold mr-2">Date of Birth: </p>
                     <p class="text-gray-600 flex-1 text-sm">
-                        <?= $USER['date_of_birth'] ?? "<i>NILL</i>"; ?>
+                        <?= date("d, M Y", strtotime($USER['date_of_birth']) )?? "<i>NILL</i>"; ?>
                     </p>
                 </div>
             </div>
         </div>
 
-
+        <!-- SUBADMINS -->
         <div class="mt-16">
             <h3 class="mt-2 text-gray-600 font-bold text-md uppercase">Sub Admin</h3>
             <div class="mt-4">
@@ -180,89 +181,155 @@ $USERS_ADMIN = getSubAdmin($connect, $USER_SUB_ADMIN['sub_admin']);
             </div>
         </div>
 
+        <!-- SERVICES -->
         <div class="mt-16">
-            <h3 class="mt-2 text-gray-600 font-bold text-md uppercase">Services</h3>
+            <div class="flex items-center justify-between flex-wrap">
+                <h3 class="mt-2 text-gray-600 font-bold text-md uppercase">Services</h3>
+
+                <a href="./user-details.php?page=service&user=<?= $_GET['user'];?>" class="btn bg-indigo-500 hover:bg-indigo-600 text-white">
+                    <svg class="w-4 h-4 fill-current opacity-50 shrink-0" viewBox="0 0 16 16">
+                        <path d="M15 7H9V1c0-.6-.4-1-1-1S7 .4 7 1v6H1c-.6 0-1 .4-1 1s.4 1 1 1h6v6c0 .6.4 1 1 1s1-.4 1-1V9h6c.6 0 1-.4 1-1s-.4-1-1-1z"></path>
+                    </svg>
+                    <span class="hidden xs:block ml-2">Add Service</span>
+                </a>
+            </div>
+
             <div class="mt-4">
-                <div class="overflow-x-auto">
-                    <table class="table-auto w-full">
-                        <?php if (count($USER_SERVICES)) : ?>
-                            <thead class="text-xs font-semibold uppercase text-gray-500 bg-gray-50 border-t border-b border-gray-200">
-                                <tr>
-                                    <th class="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap">
-                                        <div class="font-semibold text-left">Sevice</div>
-                                    </th>
+                <?php if(isset($_GET['page']) && $_GET['page'] == "service"): ?>
+                    <form class="block w-full" >
+                        <div class="grid grid-cols-12 gap-6">
+                            <div class="col-span-full sm:col-span-6 xl:col-span-6">
+                                <label class="font-semibold block mb-2 text-gray-600">Service</label>
+                                <select name="service" id="" class="w-full p-2">
+                                    <option value="" disabled selected>Choose service</option>
+                                    <?php foreach($services->getAllServices() as $_service): ?>
+                                        <option value="<?= $_service['service_id']; ?>">
+                                            <?= $_service['service'] ?>
+                                        </option>
+                                    <?php endforeach; ?>
+                                </select>
+                            </div>
+    
+                            <div class="col-span-full sm:col-span-6 xl:col-span-6">
+                                <label class="font-semibold block mb-2 text-gray-600">Service Status</label>
+                                <select name="serviceStatus" id="" class="w-full p-2">
+                                    <option value="" disabled selected>Choose service status</option>
+                                    <option value="awaiting uploads">Awaiting uploads</option>
+                                    <option value="approved">Approved</option>
+                                    <option value="declined">Declined</option>
+                                </select>
+                            </div>
+                        </div>
 
-                                    <th class="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap">
-                                        <div class="font-semibold text-left">Status</div>
-                                    </th>
+                        <div class="grid grid-cols-12 gap-6">
+                            <div class="col-span-full sm:col-span-6 xl:col-span-6">
+                                <label class="font-semibold block mb-2 text-gray-600">Amount paid</label>
+                                <input type="text" name="amount" class="form-input w-full p-2" id="">
+                            </div>
 
-                                    <th class="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap">
-                                        <div class="font-semibold text-left">Payment Status</div>
-                                    </th>
+                            <div class="col-span-full sm:col-span-6 xl:col-span-6">
+                                <label class="font-semibold block mb-2 text-gray-600">Payment Status</label>
+                                <select name="paymentStatus" id="" class="w-full p-2">
+                                    <option value="" disabled selected>Choose payment status</option>
+                                    <option value="pending">Pending</option>
+                                    <option value="success">Success</option>
+                                    <option value="declined">Declined</option>
+                                </select>
+                            </div>
+                        </div>
 
-                                    <th class="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap"><span class="sr-only">Menu</span></th>
-                                </tr>
-                            </thead>
-
-                            <tbody class="text-sm divide-y divide-gray-200">
-                                <?php foreach ($USER_SERVICES as $service) : ?>
+                        <div class="grid grid-cols-12 gap-6">
+                            <div class="col-span-full">
+                                <input type="hidden" name="id" value="<?= $_GET['user']; ?>">
+                                <button name="add-service" class="btn bg-indigo-500 hover:bg-indigo-600 text-white">
+                                    <span class="hidden xs:block">Add Service</span>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                <?php else: ?>
+                    <div class="overflow-x-auto">
+                        <table class="table-auto w-full">
+                            <?php if (count($USER_SERVICES)) : ?>
+                                <thead class="text-xs font-semibold uppercase text-gray-500 bg-gray-50 border-t border-b border-gray-200">
                                     <tr>
-                                        <td class="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap">
-                                            <div class="flex items-center">
-                                                <div class="font-medium text-gray-800"><?= getService($connect, $service['service_id'])['service']; ?></div>
-                                            </div>
-                                        </td>
-
-                                        <td class="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap">
-                                            <div class="flex items-center">
-                                                <?php if (strtolower($service['status']) == "approved") : ?>
-                                                    <div class="font-light text-sm bg-green-500 text-white px-2 py-1" style="font-size: .8rem; text-transform: capitalize;"><?= $service['status']; ?></div>
-                                                <?php else : ?>
-                                                    <div class="font-light text-sm bg-yellow-500 text-white px-2 py-1" style="font-size: .8rem; text-transform: capitalize;"><?= $service['status']; ?></div>
-                                                <?php endif; ?>
-                                            </div>
-                                        </td>
-
-                                        <td class="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap">
-                                            <div class="flex items-center">
-                                                <div class="font-light text-gray-500 "><?= getServicePayment($connect, $_GET['user'], $service['service_id'])['status'] ?? "<i>NILL</i>"; ?></div>
-                                            </div>
-                                        </td>
-
-                                        <td class="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap">
-                                            <?php if (isset($_GET['update'])) : ?>
-                                                <?php if ($_GET['update'] === $service['service_id']) : ?>
-                                                    <form action="./handler/user_handler.php" method="post">
-                                                        <input type="hidden" name="user" value="<?= $_GET['user'] ?>" />
-                                                        <input type="hidden" name="service" value="<?= $_GET['update'] ?>" />
-                                                        <div class="flex items-center">
-                                                            <input type="text" placeholder="Status..." name="status" class="form-input text-xs">
-                                                            <button class="btn bg-indigo-500 hover:bg-indigo-600 text-white btn-sm text-sm" name="update-status">Update</button>
-                                                        </div>
-                                                    </form>
-                                                <?php endif; ?>
-                                            <?php else : ?>
-                                                <a href="?user=<?= $_GET['user'] ?>&update=<?= $service['service_id']; ?>" class="btn btn-sm text-xs bg-indigo-500 hover:bg-indigo-600 text-white">Update Status</a>
-                                            <?php endif; ?>
-                                        </td>
+                                        <th class="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap">
+                                            <div class="font-semibold text-left">Sevice</div>
+                                        </th>
+    
+                                        <th class="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap">
+                                            <div class="font-semibold text-left">Status</div>
+                                        </th>
+    
+                                        <th class="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap">
+                                            <div class="font-semibold text-left">Payment Status</div>
+                                        </th>
+    
+                                        <th class="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap"><span class="sr-only">Menu</span></th>
                                     </tr>
-                                <?php endforeach; ?>
-                            </tbody>
-
-                        <?php else : ?>
-                            <tr>
-                                <td class="h-56">
-                                    <div class="p-2 flex justify-center align-center ">
-                                        <h4 class="text-blue-500 text-sm">No Sub Admin Found</h4>
-                                    </div>
-                                </td>
-                            </tr>
-                        <?php endif; ?>
-                    </table>
-                </div>
+                                </thead>
+    
+                                <tbody class="text-sm divide-y divide-gray-200">
+                                    <?php foreach ($USER_SERVICES as $service) : ?>
+                                        <tr>
+                                            <td class="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap">
+                                                <div class="flex items-center">
+                                                    <div class="font-medium text-gray-800"><?= getService($connect, $service['service_id'])['service']; ?></div>
+                                                </div>
+                                            </td>
+    
+                                            <td class="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap">
+                                                <div class="flex items-center">
+                                                    <?php if (strtolower($service['status']) == "approved") : ?>
+                                                        <div class="font-light text-sm bg-green-500 text-white px-2 py-1" style="font-size: .8rem; text-transform: capitalize;"><?= $service['status']; ?></div>
+                                                    <?php else : ?>
+                                                        <div class="font-light text-sm bg-yellow-500 text-white px-2 py-1" style="font-size: .8rem; text-transform: capitalize;"><?= $service['status']; ?></div>
+                                                    <?php endif; ?>
+                                                </div>
+                                            </td>
+    
+                                            <td class="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap">
+                                                <div class="flex items-center">
+                                                    <div class="font-light text-gray-500 "><?= getServicePayment($connect, $_GET['user'], $service['service_id'])['status'] ?? "<i>NILL</i>"; ?></div>
+                                                </div>
+                                            </td>
+    
+                                            <td class="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap">
+                                                <?php if (isset($_GET['update'])) : ?>
+                                                    <?php if ($_GET['update'] === $service['service_id']) : ?>
+                                                        <form action="./handler/user_handler.php" method="post">
+                                                            <input type="hidden" name="user" value="<?= $_GET['user'] ?>" />
+                                                            <input type="hidden" name="service" value="<?= $_GET['update'] ?>" />
+                                                            <div class="flex items-center">
+                                                                <input type="text" placeholder="Status..." name="status" class="form-input text-xs">
+                                                                <button class="btn bg-indigo-500 hover:bg-indigo-600 text-white btn-sm text-sm" name="update-status">Update</button>
+                                                            </div>
+                                                        </form>
+                                                    <?php endif; ?>
+                                                <?php else : ?>
+                                                    <a href="?user=<?= $_GET['user'] ?>&update=<?= $service['service_id']; ?>" class="btn btn-sm text-xs bg-indigo-500 hover:bg-indigo-600 text-white">Update Status</a>
+                                                <?php endif; ?>
+                                            </td>
+                                        </tr>
+                                    <?php endforeach; ?>
+                                </tbody>
+    
+                            <?php else : ?>
+                                <tr>
+                                    <td class="h-56">
+                                        <div class="p-2 flex justify-center align-center ">
+                                            <h4 class="text-blue-500 text-sm">No Service found</h4>
+                                        </div>
+                                    </td>
+                                </tr>
+                            <?php endif; ?>
+                        </table>
+                    </div>
+                <?php endif; ?>
             </div>
         </div>
 
+        <!-- DOCUMENTS -->
         <div class="mt-16">
             <h3 class="mt-2 text-gray-600 font-bold text-md uppercase">Documents</h3>
             <div class="mt-4">

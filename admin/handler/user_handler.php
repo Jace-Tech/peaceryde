@@ -3,6 +3,7 @@
 require_once("./models.php");
 
 $USER = new User($connect);
+$PAYMENT = new Payment($connect);
 $USER_SERVICE = new UserService($connect);
 $USER_LOGIN = new UserLogin($connect);
 $USER_UPLOAD = new UserLogin($connect);
@@ -140,5 +141,47 @@ if(isset($_POST['assign'])) {
     else {
         setAdminAlert("Something went wrong", "error");
         header("Location: ../user-details.php?user=$user");
+    }
+}
+
+if(isset($_POST["add-service"])) {
+    $service = $_POST["service"];
+    $id = $_POST["id"];
+    $amount = $_POST["amount"];
+    $serviceStatus = $_POST["serviceStatus"];
+    $paymentStatus = $_POST["paymentStatus"];
+
+    try {
+        // Add service
+        $userServiceResult = $USER->add_user_service($id, $service);
+
+        if(!$userServiceResult) {
+            setAdminAlert("Error adding service", "error");
+            header("Location: ../user-details.php?user=$id");
+            exit();
+        }
+
+        // Update service status
+        $USER_SERVICE->updateStatus($id, $service, $serviceStatus);
+
+        // Add the payment details
+        $paymentDetails = [
+           'userId' => $userServiceResult['userId'],
+            'ref' => generateTransactionId(),
+            'service' => $userServiceResult['id'],
+            'amount' => $amount,
+            'status' => $paymentStatus
+        ];
+
+        $result = $PAYMENT->addPayment($paymentDetails);
+        if($result) {
+            setAdminAlert("Service added successfully", 'success');
+            header("Location: ../user-details.php?user=$id");
+        }
+
+    } catch (Exception $e) {
+        setAdminAlert("Error adding service", "error");
+        header("Location: ../user-details.php?user=$id");
+        exit();
     }
 }

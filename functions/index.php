@@ -19,6 +19,17 @@ function filter_field($input, $type = 'string')
     return $filtered_input;
 }
 
+
+function generateTransactionId (int $length = 11) {
+    $id = "trx-ref_";
+
+    for ($i = 0; $i < $length; $i++) { 
+        $id .= rand(0, 9);
+    }
+
+    return $id;
+}
+
 function checkIfPayed ($conn, $service) {
     $query = "SELECT * FROM `payment` WHERE `service` = ?";
     $result = $conn->prepare($query);

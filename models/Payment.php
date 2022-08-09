@@ -19,7 +19,7 @@ class Payment {
             'ref' => $ref,
             'service' => $service,
             'amount' => $amount,
-            'status' => "pending"
+            'status' => $status ?? "pending"
         ]);
 
         return $result;
