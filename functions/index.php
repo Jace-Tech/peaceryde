@@ -19,6 +19,21 @@ function filter_field($input, $type = 'string')
     return $filtered_input;
 }
 
+function checkIfPayed ($conn, $service) {
+    $query = "SELECT * FROM `payment` WHERE `service` = ?";
+    $result = $conn->prepare($query);
+    $result->execute([$service]);
+
+    $row = $result->fetch();
+    $status = $row['status'];
+
+    if($status == "success") {
+        return true;
+    }
+    else {
+        return false;
+    }
+}
 
 function getGreeting()
 {

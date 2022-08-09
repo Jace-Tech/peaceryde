@@ -445,14 +445,16 @@ $isUnread = count($messages->get_user_unread_messages($USER_ID));
                     <tbody>
                         <?php if (count($userServices)) : ?>
                             <?php foreach ($userServices as $service) : ?>
-                                <tr>
-                                    <th scope="row" class="progressth">
-                                        <?= $SERVICE->getUserService($service['service_id'])['service'] ?>
-                                    </th>
-                                    <td class="progressapprove" style="text-transform: capitalize;">
-                                        <?= $service['status'] ?>
-                                    </td>
-                                </tr>
+                                <?php if(checkIfPayed($connect, $service['id'])): ?>
+                                    <tr>
+                                        <th scope="row" class="progressth">
+                                            <?= $SERVICE->getUserService($service['service_id'])['service'] ?>
+                                        </th>
+                                        <td class="progressapprove" style="text-transform: capitalize;">
+                                            <?= $service['status'] ?>
+                                        </td>
+                                    </tr>
+                                <?php endif; ?>
                             <?php endforeach; ?>
                         <?php else : ?>
                             <tr>

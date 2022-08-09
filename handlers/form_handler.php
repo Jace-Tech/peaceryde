@@ -30,15 +30,18 @@ if(isset($_POST['twp'])) {
 
     if(isset($_SESSION['LOGGED_USER'])) {
         $LOGGED_USER = json_decode($_SESSION['LOGGED_USER'], true);
-        $users->add_user_service($LOGGED_USER['user_id'], $service);
+        $serviceResult = $users->add_user_service($LOGGED_USER['user_id'], $service);
 
         // Generate a session with user ID
         $_SESSION['REG_NO'] = $LOGGED_USER['user_id'];
+        $_SESSION["SERVICE_ID"] = $serviceResult['id']; 
+
     }
     else {
         $result = $users->add_new_user($user);
         // Generate a session with user ID
-        $_SESSION['REG_NO'] = $result;
+        $_SESSION['REG_NO'] = $result['userId'];
+        $_SESSION["SERVICE_ID"] = $result['id']; 
     }
 
     // Get TWP Calculations
@@ -73,15 +76,17 @@ if(isset($_POST['nbv'])) {
 
     if(isset($_SESSION['LOGGED_USER'])) {
         $LOGGED_USER = json_decode($_SESSION['LOGGED_USER'], true);
-        $users->add_user_service($LOGGED_USER['user_id'], $service);
+        $serviceResult = $users->add_user_service($LOGGED_USER['user_id'], $service);
 
         // Generate a session with user ID
         $_SESSION['REG_NO'] = $LOGGED_USER['user_id'];
+        $_SESSION["SERVICE_ID"] = $serviceResult['id']; 
     }
     else {
         $result = $users->add_new_user($user);
         // Generate a session with user ID
-        $_SESSION['REG_NO'] = $result;
+        $_SESSION['REG_NO'] = $result['userId'];
+        $_SESSION["SERVICE_ID"] = $result['id']; 
     }
     
     // Get TWP Calculations
@@ -110,10 +115,11 @@ if(isset($_POST['bi'])) {
 
     if(isset($_SESSION['LOGGED_USER'])) {
         $LOGGED_USER = json_decode($_SESSION['LOGGED_USER'], true);
-        $users->add_user_service($LOGGED_USER['user_id'], $service);
+        $serviceResult = $users->add_user_service($LOGGED_USER['user_id'], $service);
 
         // Generate a session with user ID
         $_SESSION['REG_NO'] = $LOGGED_USER['user_id'];
+        $_SESSION['SERVICE_ID'] = $serviceResult['id'];
 
         $bi_options = [
             'userId' => $LOGGED_USER['user_id'], 
@@ -129,10 +135,11 @@ if(isset($_POST['bi'])) {
     else {
         $result = $users->add_new_user($user);
         // Generate a session with user ID
-        $_SESSION['REG_NO'] = $result;
+        $_SESSION['REG_NO'] = $result['userId'];
+        $_SESSION["SERVICE_ID"] = $result['id']; 
 
         $bi_options = [
-            'userId' => $result, 
+            'userId' => $result['userId'], 
             'shares' => $shares,
             'email' => $email,
             'companyName' => $companyName,

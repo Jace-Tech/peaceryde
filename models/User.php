@@ -49,9 +49,20 @@ class User {
                 "userId" => $userId,
                 "serviceId" => $serviceId
             ]);
+            
+            if($result) {
+                
+                $subQuery = "SELECT * FROM `user_services` WHERE `user_id` = '$userId' AND `service_id` = '$serviceId'";
+                $resultQuery = $this->connection->query($subQuery);
+                $id = $resultQuery->fetch()['id'];
 
-            if($result) return $userId;
+                return [
+                    "userId" => $userId,
+                    "id" => $id
+                ];
+            }
             else return false;
+            
         }
         else {
             return false;
@@ -67,7 +78,18 @@ class User {
             "serviceId" => $serviceId
         ]);
 
-        if($result) return $userId;
+
+        if($result) {
+
+            $subQuery = "SELECT * FROM `user_services` WHERE `user_id` = '$userId' AND `service_id` = '$serviceId'";
+            $resultQuery = $this->connection->query($subQuery);
+            $id = $resultQuery->fetch()['id'];
+            
+            return [
+                "userId" => $userId,
+                "id" => $id
+            ];
+        } 
         else return false;
     }
 

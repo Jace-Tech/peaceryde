@@ -73,12 +73,15 @@ if(isset($_POST['pay'])){
                 $payment = [
                     "amount" => $total_price,
                     "userId" => $id,
-                    "service" => $service,
+                    "service" => $_SESSION['SERVICE_ID'],
                     "ref" => $details['ref']
                 ];
 
                 // Add to database
                 $result = $payments->addPayment($payment);
+
+                // Unset the id Session
+                unset($_SESSION['SERVICE_ID']);
 
                 // Redirect to paystack for payment 
                 if ($result) header("Location:" . $details['pay']['data']['authorization_url']);

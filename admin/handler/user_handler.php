@@ -26,7 +26,8 @@ if(isset($_POST['add'])) {
     ];
 
     // Added User
-    $userId = $USER->add_new_user($data);
+    $result = $USER->add_new_user($data);
+    $userId = $result['userId'];
 
     // Add Login Details
     $data = [
