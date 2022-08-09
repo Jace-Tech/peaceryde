@@ -173,13 +173,14 @@ if(isset($_POST["add-service"])) {
             'status' => $paymentStatus
         ];
 
-        print_r($paymentDetails);
-        die();
-
         $result = $PAYMENT->addPayment($paymentDetails);
 
         if($result) {
             setAdminAlert("Service added successfully", 'success');
+            header("Location: ../user-details.php?user=$id");
+        }
+        else {
+            setAdminAlert("Error adding service", "error");
             header("Location: ../user-details.php?user=$id");
         }
 
