@@ -20,8 +20,8 @@
 		<link href="style.311cc0a03ae53c54945b.css" rel="stylesheet">
 		<style>
 			.logo {
-				width: 32px;
-				height: 32px;
+				width: 90px;
+				height: 90px;
 				object-fit: contain;
 			}
 		</style>
