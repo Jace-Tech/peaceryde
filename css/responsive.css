@@ -1385,7 +1385,7 @@ width: 100%;
     margin-left: 70px;
   }
   .leaderpageheight {
-    height: 5950px;
+    height: 6100px;
 }
 .section-team .single-person {
   margin-top: 0px;
@@ -3054,7 +3054,7 @@ width: 100%;
     margin-left: 51px;
   }
   .leaderpageheight {
-    height: 6100px;
+    height: 6300px;
 }
   .vsbformtextarea {
     width: 303px;
@@ -3362,7 +3362,7 @@ width: 100%;
 
 @media (max-width: 428px) {
   .leaderpageheight {
-    height: 6150px;
+    height: 6350px;
 }
   .call {
     margin-top: 10px;
@@ -5164,8 +5164,8 @@ width: 100%;
     width: 380px;
     margin-left: -10px;
 }
-  .leaderpageheight {
-    height: 6250px;
+.leaderpageheight {
+  height: 6400px;
 }
   .call {
     margin-top: 10px;
@@ -6931,8 +6931,8 @@ width: 100%;
     width: 300px;
     margin-left: -1px;
 }
-  .leaderpageheight {
-    height: 6400px;
+.leaderpageheight {
+  height: 6600px;
 }
   .collapsebtn {
     margin-top: -10px;
@@ -11070,7 +11070,7 @@ width: 100%;
     margin-left: 0px;
   }
   .leaderpageheight {
-    height: 6700px;
+    height: 6900px;
 }
   .blue {
     background-color: #1161d9;
@@ -12755,7 +12755,7 @@ width: 100%;
     color: #ffffff;
   }
   .leaderpageheight {
-    height: 7000px;
+    height: 7200px;
 }
 
   .logoimg {

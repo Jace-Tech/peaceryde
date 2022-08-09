@@ -45,45 +45,45 @@
 		<!-- Header Here -->
 
     <section class=" new-section2__group layout2 aboutpageheight" style="background-color: #f8f6f6;">
-    <div class="container new-section1__cover-block layout divcover">
-                <h1 class="whoweare">
-                    Who We Are
-                </h1>
-                <div class="row">
-                 
-                  <div class="col-md-5 col-sm-12">
-                      <img src="assets/about.png" class="imagebn">
-                  </div>
-                  <div class="col-md-1 hide"></div>
-                  <div class="col-md-5 col-sm-12">
-                      <p class="nbitext">PeaceRyde Africa LLC (A member of Limejuice Group) is incorporated in the state of Delaware USA providing services to client’s home and abroad who intend to incorporate a business in Nigeria, travel to Nigeria for business, work, pleasure, tour Africa etc. 
-                       </p>
-                       <br>
-                       <p class="nbitext">
-                        PeaceRyde Africa has a dedicated, and experienced Immigration and Protocol team to ensure swift Nigeria visa processing, smooth arrival and departure procedures in Nigerian Airports, and Nigeria business incorporation which only takes a few days.
-                       </p>
-                  </div>                
-              </div>
-              <h1 class="whatwedo"> What We do </h1>
-             <div class="row mt-75">
-                <div class="col-md-5 col-sm-12 top2">
-                  <p class=" nbitext2">PeaceRyde Africa LLC through its affiliate company in Nigeria (PeaceRyde Africa Limited) provides a wide range of vehicles ranging from buses, saloon, SUVs/Jeeps, for your transportation while in Nigeria. All vehicles are ensuite with free Wi-Fi installed and a complimentary face mask, hand gloves to ensure peace, safety, comfort, and in compliance with Covid-19 protocols. 
-                    For PeaceRyde Africa, safety, efficiency, excellent, professional, and quality service delivery are paramount and makes us stand out. Our concierge team would take care of your accommodation arrangements, restaurant reservations, and other exciting places of interest. 
-                    
-                    <br><br>PeaceRyde Africa team are loyal, courteous, helpful, friendly and would make your stay in Nigeria enjoyable, memorable, and stress-free. You can reach us 24 hours a day for inquiries or support while in Nigeria. 100% money-back guarantee with PeaceRyde Africa LLC. 
-                    
-                  </p>
-                    
-                </div>
-                <div class="col-md-1 hide"></div>
-                <div class="col-md-5 col-sm-12">
-                  <img src="assets/pass.png" class="imagebn2">
-                </div>
-              
-              </div>
-
+      <div class="container new-section1__cover-block layout divcover">
+          <h1 class="whoweare">
+              Who We Are
+          </h1>
+          <div class="row">
+            
+            <div class="col-md-6 col-sm-12">
+                <img src="assets/about.png" class="imagebn">
             </div>
-        </section>
+            <!-- <div class="col-md-1 hide"></div> -->
+            <div class="col-md-6 col-sm-12">
+                <p class="nbitext">PeaceRyde Africa LLC (A member of Limejuice Group) is incorporated in the state of Delaware USA providing services to client’s home and abroad who intend to incorporate a business in Nigeria, travel to Nigeria for business, work, pleasure, tour Africa etc. 
+                  </p>
+                  <br>
+                  <p class="nbitext">
+                  PeaceRyde Africa has a dedicated, and experienced Immigration and Protocol team to ensure swift Nigeria visa processing, smooth arrival and departure procedures in Nigerian Airports, and Nigeria business incorporation which only takes a few days.
+                  </p>
+            </div>                
+        </div>
+        <h1 class="whatwedo"> What We do </h1>
+        <div class="row mt-75">
+          <div class="col-md-6 col-sm-12 top2">
+            <p class=" nbitext2">PeaceRyde Africa LLC through its affiliate company in Nigeria (PeaceRyde Africa Limited) provides a wide range of vehicles ranging from buses, saloon, SUVs/Jeeps, for your transportation while in Nigeria. All vehicles are ensuite with free Wi-Fi installed and a complimentary face mask, hand gloves to ensure peace, safety, comfort, and in compliance with Covid-19 protocols. 
+              For PeaceRyde Africa, safety, efficiency, excellent, professional, and quality service delivery are paramount and makes us stand out. Our concierge team would take care of your accommodation arrangements, restaurant reservations, and other exciting places of interest. 
+              
+              <br><br>PeaceRyde Africa team are loyal, courteous, helpful, friendly and would make your stay in Nigeria enjoyable, memorable, and stress-free. You can reach us 24 hours a day for inquiries or support while in Nigeria. 100% money-back guarantee with PeaceRyde Africa LLC. 
+              
+            </p>
+              
+          </div>
+          <!-- <div class="col-md-1 hide"></div> -->
+          <div class="col-md-6 col-sm-12">
+            <img src="assets/pass.png" class="imagebn2">
+          </div>
+        
+        </div>
+
+      </div>
+    </section>
 
     <?php include("./inc/footer.php"); ?>
 	</main>

@@ -113,8 +113,8 @@
 
 @media (max-width: 900px){
   
-.leaderpageheight {
-    height: 5500px;
+  .leaderpageheight {
+    height: 5700px;
 }
   .laptopflag
   {
@@ -8502,8 +8502,8 @@
     padding: 10px;
     border-radius: 5px;
 }
-  .leaderpageheight {
-    height: 6300px;
+.leaderpageheight {
+  height: 6500px;
 }
   .collapsebtn {
     margin-top: -5px;

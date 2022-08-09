@@ -81,15 +81,15 @@
                       <div class="single-person">
                         <div class="person-info">
                           <h3 class="full-name">Socrates Limejuice Bobmanuel</h3>
-                          <span class="speciality">Founder</span>
+                          <span class="speciality">FOUNDER / MANAGING DIRECTOR</span>
                         </div>
                             
-                            <p class="leadtext">Socrates Limejuice Bobmanuel is the founder of PeaceRyde Africa LLC, a travel, and tours immigration, and consultancy services company providing a secure and user friendly online digital platform that serves to make processing of business incorporation, and visa services for Nigeria quick, easy, and seamless with just a click of a button. 
+                            <p class="leadtext">Socrates Limejuice Bobmanuel is the founder and Managing Director / Chief Executive Officer of PeaceRyde Africa LLC (A member of Limejuice Group), a travel, and tours immigration, and consultancy services company providing a secure and user friendly online digital platform that serves to make processing of business incorporation, and visa services for Nigeria quick, easy, and seamless with just a click of a button. 
                               </p>
                             <br>
                             <p class="leadtext">Socrates has over a decade of experience in processing Nigeria visa approvals, travel consultancy, and general logistics services for several local and international clients.</p>
                             <br>
-                            <span>You may contact Socrates directly <a class="maillink" href="mailto:socrates@peacerydeafrica.com">socrates@peacerydeafrica.com</a> if you would like a more personalized service experience.</span>
+                            <span>You may contact Socrates via email <a class="maillink" href="mailto:socrates@peacerydeafrica.com">(socrates@peacerydeafrica.com)</a> if you would like a more personalized service experience.</span>
                          
                       </div>
                       
@@ -103,21 +103,21 @@
                           <img src="assets/joy.png" alt="">
                           
                         </div>
-                        
+                      
                       </div>
                       <div class="single-person">
                         <div class="person-info">
                           <h3 class="full-name">Joy Eshiofune Bobmanuel </h3>
-                          <span class="speciality">Director, Legal and Corporate Business Services</span>
+                          <span class="speciality">GROUP DIRECTOR, LEGAL, CORPORATE BUSINESS SERVICES & COMPANY SECRETARY</span>
                         </div>
                             
-                            <p class="leadtext">Joy Eshiofune Bobmanuel is the Director for Legal & Corporate Business Services for PeaceRyde Africa LLC. Joy has several professional years of experience in business related services, active law practice; and corporate law, processing Nigeria business incorporation, annual returns filings, pre and post business incorporation services with the corporate affairs commission.
+                            <p class="leadtext">Joy Eshiofune Bobmanuel is the Director for Legal, Corporate Business Services and Company Secretary for PeaceRyde Africa LLC. Joy has several professional years of experience in business related services, active law practice; and corporate law, processing Nigeria business incorporation, annual returns filings, pre and post business incorporation services with the corporate affairs commission.
                              
                             </p>
                             <br>
-                            <p class="leadtext"> Joy has successfully registered and set up businesses for both local and foreign clients, and she currently acts as their legal representative in matters relating to Nigeria immigration laws, real estate investments, legal advice, litigation, mediation, arbitration, management of case files, legal drafting & contracts, legal representation in Superior courts etc.</p>
+                            <p class="leadtext"> Joy has successfully registered and set up businesses for both local and foreign clients, and she currently acts as their legal representative in matters relating to Nigeria immigration laws, real estate investments, legal advice, litigation, mediation, arbitration, management of case files, legal drafting & contracts, legal representation in Superior courts etc. </p>
                             <br>
-                            <span>You may contact Joy <a class="maillink" href="mailto:incorporation@peacerydeafrica.com">incorporation@peacerydeafrica.com</a></span>
+                            <span>You may contact Joy for business incorporation via email <a class="maillink" href="mailto:incorporation@peacerydeafrica.com">(incorporation@peacerydeafrica.com)</a></span>
                          
                       </div>
                       
@@ -150,7 +150,7 @@
                       <div class="single-person">
                         <div class="person-info">
                           <h3 class="full-name">Eugene Okobi Ujukwu </h3>
-                          <span class="speciality">Business Risk & Strategy Manager</span>
+                          <span class="speciality">GROUP GENERAL MANAGER, BUSINESS RISK & STRATEGY</span>
                         </div>
                             
                             <p class="leadtext">Eugene Okobi Ujukwu was an astute banker with over 33 years’ experience in the Financial Institutions. He worked as Operations Manager in International Merchant Bank Limited; Area Internal Control Manager in Standard Trust Bank Limited; Regional Internal Controller (Eastern and Northern Regions) in United Bank for Africa PLC.</p>
@@ -169,7 +169,9 @@
                               <br>
                               <p class="leadtext">Eugene had several courses and training both locally and international space on Risk Management, Human Relations Management, Compliance Issues/ Management and Transport Business Management.</p>
                               <br>
-                              <p class="leadtext">Eugene has implemented many cost-saving measures in his previous organizations that resulted in significant revenue gains for the organizations. </p>
+                              <p class="leadtext">Eugene has implemented many cost-saving measures in his previous organizations that resulted in significant revenue gains for the organizations.</p>
+                              <br>
+                              <span>You may contact Eugene via email<a class="maillink" href="mailto:eugene@peacerydeafrica.com">(eugene@peacerydeafrica.com)</a></span>
                       </div>
                       
                     </div>
@@ -187,11 +189,11 @@
                       <div class="single-person">
                         <div class="person-info">
                           <h3 class="full-name">Daniella Iyore Uwagboe </h3>
-                          <span class="speciality">Financial Shared Services Manager and Account Executive</span>
+                          <span class="speciality">GROUP FINANCIAL SHARED SERVICES MANAGER AND ACCOUNT EXECUTIVE</span>
                         </div>
                             
-                            <p class="leadtext">Daniella Iyore Uwagboe is the Manager for Financial Shared Services & Account Executive for PeaceRyde Africa LLC. Daniella brings a wealth of experience in efficiently and successfully resolving customers complaints, recorded successes in effectively closing-out customers’ accounts reconciliations, corporate tax filings, and other financial related shared services for PeaceRyde Africa LLC and its affiliate companies.</p>
-                            <span>You may contact Daniella <a class="maillink" href="mailto:billing@peacerydeafrica.com">billing@peacerydeafrica.com</a></span>
+                            <p class="leadtext">Daniella Iyore Uwagboe is the Group Manager for Financial Shared Services & Account Executive for PeaceRyde Africa LLC. Daniella brings a wealth of experience in efficiently and successfully resolving customers complaints, recorded successes in effectively closing-out customers’ accounts reconciliations, corporate tax filings, and other financial related shared services for PeaceRyde Africa LLC and its affiliate companies.</p>
+                            <span>You may contact Daniella via email <a class="maillink" href="mailto:daniella@peacerydeafrica.com">(daniella@peacerydeafrica.com)</a></span>
                            
                             <!-- <p class="leadtext">You may contact Daniella @ billing@peacerydeafrica.com</p> -->
                          
@@ -201,7 +203,7 @@
                     <div class="col-xs-12 col-sm-5 col-lg-6 col-xl-4">
                       <div class="single-person laptopshow">
                         <div class="person-image">
-                          <img src="assets/danielle.png" alt="">
+                          <img src="assets/imgg.jpeg" alt="">
                          
                         </div>
                         
@@ -216,20 +218,21 @@
                                             
                       <span>Please feel free to write to our customer experience team using any of the below email addresses: </span>
                       <ul>
-                        <li><a class="maillink" href="mailto:visas@peacerydeafrica.com">visas@peacerydeafrica.com</a></li>
-                        <li><a class="maillink" href="mailto:info@peacerydeafrica.com">info@peacerydeafrica.com</a></li>
-                        <li><a class="maillink" href="mailto:concierge@peacerydeafrica.com">concierge@peacerydeafrica.com</a></li>
-                        <li><a class="maillink" href="mailto:support@peacerydeafrica.com">support@peacerydeafrica.com</a></li>
+                        <li><a class="maillink" href="mailto:visas@peacerydeafrica.com">•	visas@peacerydeafrica.com</a></li>
+                        <li><a class="maillink" href="mailto:info@peacerydeafrica.com">•	info@peacerydeafrica.com</a></li>
+                        <li><a class="maillink" href="mailto:concierge@peacerydeafrica.com">•	concierge@peacerydeafrica.com</a></li>
+                        <li><a class="maillink" href="mailto:support@peacerydeafrica.com">•	support@peacerydeafrica.com</a></li>
+                        <li><a class="maillink" href="mailto:billing@peacerydeafrica.com">•	billing@peacerydeafrica.com </a></li>
                       </ul>
                       <!-- <span>You may contact Daniella <a class="maillink" href="mailto:billing@peacerydeafrica.com">billing@peacerydeafrica.com</a></span> -->
                        
                         <!-- <p class="leadtext">You may contact Daniella @ billing@peacerydeafrica.com</p> -->
                      
-                  </div>
-              </div>
             </div>
           </div>
-        </section>
+        </div>
+      </div>
+    </section>
         <?php include("./inc/footer.php"); ?>
     </main>
     <script type="text/javascript">

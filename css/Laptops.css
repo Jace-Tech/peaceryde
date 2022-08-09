@@ -913,7 +913,7 @@ p,a,h1,h2,h3,h4 {
   }
 
   .divcover {
-    margin-left: 780px;
+    margin-left: 650px;
   }
 
   .whatwedo {
@@ -930,7 +930,7 @@ p,a,h1,h2,h3,h4 {
     line-height: 35px;
     letter-spacing: 0.04em;
     padding-left: 35px;
-    width: 513px;
+    width: 553px;
   }
 
   .nbitext2 {
@@ -1843,7 +1843,7 @@ p,a,h1,h2,h3,h4 {
     margin-left: 221px;
   }
   .leaderpageheight {
-    height: 3500px;
+    height: 3700px;
 }
   .vsbformtextarea {
     width: 508px;
@@ -2357,7 +2357,7 @@ p,a,h1,h2,h3,h4 {
 
   .nbitext {
     padding-left: 55px;
-    width: 513px;
+    width: 553px;
   }
 
   .whoweare {
@@ -2365,7 +2365,7 @@ p,a,h1,h2,h3,h4 {
   }
 
   .divcover {
-    margin-left: 410px;
+    margin-left: 300px;
   }
 
   .whatwedo {
@@ -3758,7 +3758,7 @@ p,a,h1,h2,h3,h4 {
   }
 
   .divcover {
-    margin-left: 280px;
+    margin-left: 150px;
   }
 
   .whatwedo {
@@ -5114,6 +5114,10 @@ p,a,h1,h2,h3,h4 {
     margin-left: 288px;
   }
 
+ .nbiimage {
+    margin-left: 288px;
+  }
+
   .imagebn {
     width: 513px;
     height: 444px;
@@ -5129,7 +5133,7 @@ p,a,h1,h2,h3,h4 {
   }
 
   .divcover {
-    margin-left: 220px;
+    margin-left: 150px;
   }
 
   .whatwedo {
@@ -5146,7 +5150,7 @@ p,a,h1,h2,h3,h4 {
     line-height: 35px;
     letter-spacing: 0.04em;
     padding-left: 55px;
-    width: 513px;
+    width: 553px;
   }
 
   .nbitext2 {
@@ -6493,7 +6497,7 @@ p,a,h1,h2,h3,h4 {
   }
 
   .divcover {
-    margin-left: 210px;
+    margin-left: 150px;
   }
 
   .whatwedo {
@@ -6510,7 +6514,7 @@ p,a,h1,h2,h3,h4 {
     line-height: 35px;
     letter-spacing: 0.04em;
     padding-left: 55px;
-    width: 513px;
+    width: 553px;
   }
 
   .cont {
@@ -9217,7 +9221,7 @@ p,a,h1,h2,h3,h4 {
   .nbitext {
 
     padding-left: 55px;
-    width: 513px;
+    width: 553px;
   }
 
   .whoweare {
@@ -9225,7 +9229,7 @@ p,a,h1,h2,h3,h4 {
   }
 
   .divcover {
-    margin-left: 130px;
+    margin-left: 50px;
   }
 
   .whatwedo {
@@ -10599,14 +10603,14 @@ p,a,h1,h2,h3,h4 {
   }
 
   .imagebn2 {
-    margin-left: 125px;
+    margin-left: 15px;
     width: 500px;
     height: 344px;
   }
 
   .nbitext {
-    padding-left: 125px;
-    width: 500px;
+    padding-left: 15px;
+    width: 520px;
   }
 
   .whoweare {
@@ -10614,7 +10618,7 @@ p,a,h1,h2,h3,h4 {
   }
 
   .divcover {
-    margin-left: 130px;
+    margin-left: 100px;
   }
 
   .whatwedo {
@@ -10623,7 +10627,8 @@ p,a,h1,h2,h3,h4 {
 
   .nbitext2 {
     padding-left: 25px;
-    width: 500px;
+    width: 480px;
+    margin-left: 0;
   }
 
   .cont {
@@ -12195,7 +12200,7 @@ p,a,h1,h2,h3,h4 {
     height: 1800px;
   }
   .leaderpageheight {
-    height: 3500px;
+    height: 3700px;
 }
   input[type=radio],
   input.radio {
@@ -12476,7 +12481,7 @@ p,a,h1,h2,h3,h4 {
     line-height: 20px;
   }
   .divcover {
-    margin-left: 125px;
+    margin-left: 80px;
 }
 
   .img2h4 {
@@ -13049,14 +13054,14 @@ p,a,h1,h2,h3,h4 {
   }
 
   .imagebn2 {
-    margin-left: 95px;
+    margin-left: 35px;
     width: 473px;
     height: 344px;
   }
 
   .nbitext {
-    padding-left: 95px;
-    width: 513px;
+    padding-left: 35px;
+    width: 553px;
   }
 
   .nbitext2 {
@@ -14278,7 +14283,7 @@ p,a,h1,h2,h3,h4 {
     color: #F1F5F6;
   }
   .leaderpageheight {
-    height: 4650px;
+    height: 4800px;
 }
   .everythingtext2 {
     font-weight: 400;
