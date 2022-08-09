@@ -147,7 +147,7 @@ if(isset($_POST['assign'])) {
 if(isset($_POST["add-service"])) {
     $service = $_POST["service"];
     $id = $_POST["id"];
-    $amount = $_POST["amount"];
+    $amount = floatval($_POST["amount"]);
     $serviceStatus = $_POST["serviceStatus"];
     $paymentStatus = $_POST["paymentStatus"];
 
@@ -163,6 +163,10 @@ if(isset($_POST["add-service"])) {
 
         // Update service status
         $USER_SERVICE->updateStatus($id, $service, $serviceStatus);
+
+        print_r($userServiceResult);
+
+        die();
 
         // Add the payment details
         $paymentDetails = [
