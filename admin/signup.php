@@ -18,6 +18,13 @@
 		<title>Peace Ryde - Sign up</title>
 		<meta name="viewport" content="width=device-width,initial-scale=1">
 		<link href="style.311cc0a03ae53c54945b.css" rel="stylesheet">
+		<style>
+			.logo {
+				width: 32px;
+				height: 32px;
+				object-fit: contain;
+			}
+		</style>
 	</head>
 
 	<body class="font-inter antialiased bg-gray-100 text-gray-600">
@@ -36,7 +43,7 @@
 						<div class="flex-1">
 							<div class="flex items-center justify-between h-16 px-4 sm:px-6 lg:px-8">
 								<a class="block" href="index.php">
-									<img src="../assets/peace.jpeg" class="w-[32px] h-[32px] rounded-full" alt="logo">
+									<img src="../assets/peace.jpeg" class="logo" alt="logo">
 									<!-- <svg width="32" height="32" viewBox="0 0 32 32">
 										<defs>
 											<linearGradient x1="28.538%" y1="20.229%" x2="100%" y2="108.156%" id="logo-a">
