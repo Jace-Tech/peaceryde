@@ -64,3 +64,27 @@ if(isset($_POST['edit'])) {
         header('Location: ../service.php');
     }
 }
+
+if(isset($_POST["delete-service"])) {
+    $id = $_POST["delete-service"];
+    $user = $_POST['user'];
+
+    try {
+        $query = "DELETE FROM user_services WHERE id = ?";
+        $result = $connect->prepare($query);
+        $result->execute([$id]); 
+    
+        if($result) {
+            setAdminAlert("Service deleted successfully", 'success');
+            header("Location: ../user-datails.php?user=$user");
+        }
+        else {
+            setAdminAlert("Service failed delete", 'error');
+            header("Location: ../user-datails.php?user=$user");
+        }
+    }
+    catch (PDOException $e) {
+        setAdminAlert("Service failed delete", 'error');
+        header("Location: ../user-datails.php?user=$user");
+    }
+}
