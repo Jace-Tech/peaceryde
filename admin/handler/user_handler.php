@@ -313,12 +313,12 @@ if(isset($_GET['delete_id'])) {
     // Users Table
     try {
 
-        $queryCheckUser = "SELECT * FROM `uploads` WHERE `user_id` = ?";
+        $queryCheckUser = "SELECT * FROM `users` WHERE `user_id` = ?";
         $resultCheckUser = $connect->prepare($queryCheckUser); 
         $resultCheckUser->execute([$userId]);
     
         if($resultCheckUser->rowCount() > 0) {
-            $queryDeleteUser = "DELETE FROM `uploads` WHERE `user_id` = ?";
+            $queryDeleteUser = "DELETE FROM `users` WHERE `user_id` = ?";
             $resultDeleteUser = $connect->prepare($queryDeleteUser);
             $resultDeleteUser->execute([$userId]);
         }
