@@ -143,6 +143,24 @@ function getSubAdminUsers ($connect, $adminId) {
     return $result->fetchAll();
 }
 
+function getUsersWithSameCountryAsSubAdmin ($connect, $adminId) {
+    $countries = getSubAdminCountries($connect, $adminId);
+    $query = "SELECT * FROM users WHERE ";
+    for ($count = 0; $count < count($countries); $count++) { 
+        $country = $countries[$count];
+
+        if($count == count($countries) - 1) {
+            $query .= "country = '$country'";
+        }
+        else {
+            $query .= "country = '$country' OR";
+        }
+    }
+    $result = $connect->query($query);
+    $result->execute();
+    return $result->fetchAll();
+}
+
 function getAllServices($connect) {
     $query = "SELECT * FROM services";
     $result = $connect->prepare($query);

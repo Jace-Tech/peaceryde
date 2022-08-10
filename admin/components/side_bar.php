@@ -81,36 +81,36 @@
                                 </a>
                             </li>
                         <?php endif; ?>
-                    <?php endif;  ?>
 
-                    <?php if (strtolower($active) === "service") : ?>
-                        <li class="px-3 py-2 rounded-sm mb-0.5 last:mb-0 bg-gray-900">
-                            <a class="block text-gray-50 hover:text-white truncate transition duration-150" href="service.php">
-                                <div class="flex items-center">
-                                    <svg class="shrink-0 h-6 w-6" viewBox="0 0 24 24">
-                                        <circle class="fill-current text-gray-400 text-indigo-300" cx="18.5" cy="5.5" r="4.5"></circle>
-                                        <circle class="fill-current text-gray-600 text-indigo-500" cx="5.5" cy="5.5" r="4.5"></circle>
-                                        <circle class="fill-current text-gray-600 text-indigo-500" cx="18.5" cy="18.5" r="4.5"></circle>
-                                        <circle class="fill-current text-gray-400 text-indigo-300" cx="5.5" cy="18.5" r="4.5"></circle>
-                                    </svg>
-                                    <span class="text-sm font-medium ml-3 lg:opacity-0 lg:sidebar-expanded:opacity-100 2xl:opacity-100 duration-200">Manage Services</span>
-                                </div>
-                            </a>
-                        </li>
-                    <?php else : ?>
-                        <li class="px-3 py-2 rounded-sm mb-0.5 last:mb-0">
-                            <a class="block text-gray-50 hover:text-white truncate transition duration-150" href="service.php">
-                                <div class="flex items-center">
-                                    <svg class="shrink-0 h-6 w-6" viewBox="0 0 24 24">
-                                        <circle class="fill-current text-gray-400" cx="18.5" cy="5.5" r="4.5"></circle>
-                                        <circle class="fill-current text-gray-600" cx="5.5" cy="5.5" r="4.5"></circle>
-                                        <circle class="fill-current text-gray-600" cx="18.5" cy="18.5" r="4.5"></circle>
-                                        <circle class="fill-current text-gray-400" cx="5.5" cy="18.5" r="4.5"></circle>
-                                    </svg>
-                                    <span class="text-sm font-medium ml-3 lg:opacity-0 lg:sidebar-expanded:opacity-100 2xl:opacity-100 duration-200">Manage Services</span>
-                                </div>
-                            </a>
-                        </li>
+                        <?php if (strtolower($active) === "service") : ?>
+                            <li class="px-3 py-2 rounded-sm mb-0.5 last:mb-0 bg-gray-900">
+                                <a class="block text-gray-50 hover:text-white truncate transition duration-150" href="service.php">
+                                    <div class="flex items-center">
+                                        <svg class="shrink-0 h-6 w-6" viewBox="0 0 24 24">
+                                            <circle class="fill-current text-gray-400 text-indigo-300" cx="18.5" cy="5.5" r="4.5"></circle>
+                                            <circle class="fill-current text-gray-600 text-indigo-500" cx="5.5" cy="5.5" r="4.5"></circle>
+                                            <circle class="fill-current text-gray-600 text-indigo-500" cx="18.5" cy="18.5" r="4.5"></circle>
+                                            <circle class="fill-current text-gray-400 text-indigo-300" cx="5.5" cy="18.5" r="4.5"></circle>
+                                        </svg>
+                                        <span class="text-sm font-medium ml-3 lg:opacity-0 lg:sidebar-expanded:opacity-100 2xl:opacity-100 duration-200">Manage Services</span>
+                                    </div>
+                                </a>
+                            </li>
+                        <?php else : ?>
+                            <li class="px-3 py-2 rounded-sm mb-0.5 last:mb-0">
+                                <a class="block text-gray-50 hover:text-white truncate transition duration-150" href="service.php">
+                                    <div class="flex items-center">
+                                        <svg class="shrink-0 h-6 w-6" viewBox="0 0 24 24">
+                                            <circle class="fill-current text-gray-400" cx="18.5" cy="5.5" r="4.5"></circle>
+                                            <circle class="fill-current text-gray-600" cx="5.5" cy="5.5" r="4.5"></circle>
+                                            <circle class="fill-current text-gray-600" cx="18.5" cy="18.5" r="4.5"></circle>
+                                            <circle class="fill-current text-gray-400" cx="5.5" cy="18.5" r="4.5"></circle>
+                                        </svg>
+                                        <span class="text-sm font-medium ml-3 lg:opacity-0 lg:sidebar-expanded:opacity-100 2xl:opacity-100 duration-200">Manage Services</span>
+                                    </div>
+                                </a>
+                            </li>
+                        <?php endif; ?>
                     <?php endif; ?>
 
                     <?php if (strtolower($active) === "users") : ?>

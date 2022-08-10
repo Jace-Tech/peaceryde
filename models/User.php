@@ -54,6 +54,8 @@ class User {
                 
                 $subQuery = "SELECT * FROM `user_services` WHERE `user_id` = '$userId' AND `service_id` = '$serviceId'";
                 $resultQuery = $this->connection->query($subQuery);
+                $resultQuery->execute();
+
                 $id = $resultQuery->fetch()['id'];
 
                 return [
@@ -83,6 +85,7 @@ class User {
 
             $subQuery = "SELECT * FROM `user_services` WHERE `user_id` = '$userId' AND `service_id` = '$serviceId'";
             $resultQuery = $this->connection->query($subQuery);
+            $resultQuery->execute();
             $id = $resultQuery->fetch()['id'];
             
             return [
@@ -120,13 +123,21 @@ class User {
         return $result->fetchAll();
     }
 
-    public function searchUser ($query) {
-        $query = "SELECT * FROM `users` WHERE `firstname` LIKE '%$query%' OR `lastname` LIKE '%$query%' OR `email` LIKE '%$query%' OR `phone` LIKE '%$query%'";
+    public function searchUser ($search) {
+        $query = "SELECT * FROM `users` WHERE `firstname` LIKE '%$search%' OR `lastname` LIKE '%$search%' OR `email` LIKE '%$search%' OR `phone` LIKE '%$search%'";
         $result = $this->connection->prepare($query);
         $result->execute();
 
         return $result->fetchAll();
     }
+
+    // public function searchSubAdminUser ($search) {
+    //     $query = "SELECT * FROM `users` WHERE `firstname` LIKE '%$search%' OR `lastname` LIKE '%$search%' OR `email` LIKE '%$search%' OR `phone` LIKE '%$search%'";
+    //     $result = $this->connection->prepare($query);
+    //     $result->execute();
+
+    //     return $result->fetchAll();
+    // }
 
     public function delete_user($user_id)
     {
