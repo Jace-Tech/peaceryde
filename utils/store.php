@@ -153,7 +153,7 @@ function getUsersWithSameCountryAsSubAdmin ($connect, $adminId) {
             $query .= "country = '$country'";
         }
         else {
-            $query .= "country = '$country' OR";
+            $query .= "country = '$country' OR ";
         }
     }
     $result = $connect->query($query);
