@@ -143,7 +143,7 @@
                 </div>
               </div>
             </div>
-            <button id="top" style="cursor: pointer;
+            <!-- <button id="top" style="cursor: pointer;
             bottom: 50px;
             height: 40px;
             background-color: #A0BD1C;
@@ -205,7 +205,7 @@
                 </div>
 
               </form>
-            </div>
+            </div> -->
           </div>
         </div>
       </div>
