@@ -76,15 +76,15 @@ if(isset($_POST["delete-service"])) {
     
         if($result) {
             setAdminAlert("Service deleted successfully", 'success');
-            header("Location: ../user-datails.php?user=$user");
+            header("Location: ../user-details.php?user=$user");
         }
         else {
             setAdminAlert("Service failed delete", 'error');
-            header("Location: ../user-datails.php?user=$user");
+            header("Location: ../user-details.php?user=$user");
         }
     }
     catch (PDOException $e) {
         setAdminAlert("Service failed delete", 'error');
-        header("Location: ../user-datails.php?user=$user");
+        header("Location: ../user-details.php?user=$user");
     }
 }
