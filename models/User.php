@@ -121,7 +121,7 @@ class User {
     }
 
     public function searchUser ($query) {
-        $query = "SELECT * FROM `users` WHERE `firstname` LIKE '%$query%' OR `lastname` LIKE '%$query%' OR `email` LIKE '%$query%'";
+        $query = "SELECT * FROM `users` WHERE `firstname` LIKE '%$query%' OR `lastname` LIKE '%$query%' OR `email` LIKE '%$query%' OR `phone` LIKE '%$query%'";
         $result = $this->connection->prepare($query);
         $result->execute();
 

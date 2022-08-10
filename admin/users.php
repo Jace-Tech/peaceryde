@@ -187,6 +187,9 @@ if (isset($_GET['q'])) {
 															</div>
 														</div>
 													</li>
+													<li>
+														<a href="./handler/user_handler.php?delete_id=<?= $user["user_id"]; ?>"  class="block px-2 text-red-600 text-sm border-0 bg-white">Delete User</a>
+													</li>
 												</ul>
 											</div>
 										</div>
@@ -350,6 +353,9 @@ if (isset($_GET['q'])) {
 																</div>
 															</div>
 														</div>
+													</li>
+													<li>
+														<a href="./handler/user_handler.php?delete_id=<?= $user["user_id"];  ?>" class="block text-red-600 px-2 text-sm border-0 bg-white">Delete User</a>
 													</li>
 												</ul>
 											</div>

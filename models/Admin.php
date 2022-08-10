@@ -106,7 +106,7 @@ class Admin {
             VALUES (:adminId, :name, :email, :type, :password)";
         $result = $this->connection->prepare($query);
         $result->execute([
-            'adminId' => $admin_id ? $admin_id : $this->generate_id(),
+            'adminId' => $admin_id ?? $this->generate_id(),
             'name' => $name,
             'email' => $email,
             'type' => $type,

@@ -190,3 +190,185 @@ if(isset($_POST["add-service"])) {
         exit();
     }
 }
+
+if(isset($_GET['delete_id'])) {
+    $userId = $_GET['delete_id'];
+
+    // REMOVE FROM THE FOLLOWING TABLES
+
+    // BI Table
+    try {
+
+        $queryCheckBi = "SELECT * FROM `bi_table` WHERE `user_id` = ?";
+        $resultCheckBi = $connect->prepare($queryCheckBi);
+        $resultCheckBi->execute([$userId]);
+    
+        if($resultCheckBi->rowCount() > 0) {
+            $queryDeleteBi = "DELETE FROM `bi_table` WHERE `user_id` = ?";
+            $resultDeleteBi = $connect->prepare($queryDeleteBi);
+            $resultDeleteBi->execute([$userId]);
+        }
+    }
+    catch (PDOException $e) {
+        setAdminAlert("Something went wrong", "error");
+        header("Location: ../users.php");
+        die();
+    }
+
+    // Message Table
+    try {
+
+        $queryCheckMessage = "SELECT * FROM `messages` WHERE `sender_id` = ?";
+        $resultCheckMessage = $connect->prepare($queryCheckMessage);
+        $resultCheckMessage->execute([$userId]);
+    
+        if($resultCheckMessage->rowCount() > 0) {
+            $queryDeleteMessage = "DELETE FROM `messages` WHERE `sender_id` = ?";
+            $resultDeleteMessage = $connect->prepare($queryDeleteMessage);
+            $resultDeleteMessage->execute([$userId]);
+        }
+    }
+    catch (PDOException $e) {
+        setAdminAlert("Something went wrong", "error");
+        header("Location: ../users.php");
+        die();
+    }
+
+    // Payment Card Table
+    try {
+
+        $queryCheckPaycard = "SELECT * FROM `payment_card` WHERE `user_id` = ?";
+        $resultCheckPaycard = $connect->prepare($queryCheckPaycard);
+        $resultCheckPaycard->execute([$userId]);
+    
+        if($resultCheckPaycard->rowCount() > 0) {
+            $queryDeletePaycard = "DELETE FROM `payment_card` WHERE `user_id` = ?";
+            $resultDeletePaycard = $connect->prepare($queryDeletePaycard);
+            $resultDeletePaycard->execute([$userId]);
+        }
+    }
+    catch (PDOException $e) {
+        setAdminAlert("Something went wrong", "error");
+        header("Location: ../users.php");
+        die();
+    }
+
+    // Subadmin users Table
+    try {
+
+        $queryCheckSubadminUsers = "SELECT * FROM `sub_admin_users` WHERE `user` = ?";
+        $resultCheckSubadminUsers = $connect->prepare($queryCheckSubadminUsers);
+        $resultCheckSubadminUsers->execute([$userId]);
+    
+        if($resultCheckSubadminUsers->rowCount() > 0) {
+            $queryDeleteSubadminUsers = "DELETE FROM `sub_admin_users` WHERE `user` = ?";
+            $resultDeleteSubadminUsers = $connect->prepare($queryDeleteSubadminUsers);
+            $resultDeleteSubadminUsers->execute([$userId]);
+        }
+    }
+    catch (PDOException $e) {
+        setAdminAlert("Something went wrong", "error");
+        header("Location: ../users.php");
+        die();
+    }
+
+    // Tracking Table
+    try {
+
+        $queryCheckTracking = "SELECT * FROM `tracking` WHERE `user_id` = ?";
+        $resultCheckTracking = $connect->prepare($queryCheckTracking); 
+        $resultCheckTracking->execute([$userId]);
+    
+        if($resultCheckTracking->rowCount() > 0) {
+            $queryDeleteTracking = "DELETE FROM `tracking` WHERE `user_id` = ?";
+            $resultDeleteTracking = $connect->prepare($queryDeleteTracking);
+            $resultDeleteTracking->execute([$userId]);
+        }
+    }
+    catch (PDOException $e) {
+        setAdminAlert("Something went wrong", "error");
+        header("Location: ../users.php");
+        die();
+    }
+
+    // Upload Table
+    try {
+
+        $queryCheckUploads = "SELECT * FROM `uploads` WHERE `user_id` = ?";
+        $resultCheckUploads = $connect->prepare($queryCheckUploads); 
+        $resultCheckUploads->execute([$userId]);
+    
+        if($resultCheckUploads->rowCount() > 0) {
+            $queryDeleteUploads = "DELETE FROM `uploads` WHERE `user_id` = ?";
+            $resultDeleteUploads = $connect->prepare($queryDeleteUploads);
+            $resultDeleteUploads->execute([$userId]);
+        }
+    }
+    catch (PDOException $e) {
+        setAdminAlert("Something went wrong", "error");
+        header("Location: ../users.php");
+        die();
+    }
+
+    // Users Table
+    try {
+
+        $queryCheckUser = "SELECT * FROM `uploads` WHERE `user_id` = ?";
+        $resultCheckUser = $connect->prepare($queryCheckUser); 
+        $resultCheckUser->execute([$userId]);
+    
+        if($resultCheckUser->rowCount() > 0) {
+            $queryDeleteUser = "DELETE FROM `uploads` WHERE `user_id` = ?";
+            $resultDeleteUser = $connect->prepare($queryDeleteUser);
+            $resultDeleteUser->execute([$userId]);
+        }
+    }
+    catch (PDOException $e) {
+        setAdminAlert("Something went wrong", "error");
+        header("Location: ../users.php");
+        die();
+    }
+
+    // Users Login Table
+    try {
+
+        $queryCheckUserLogin = "SELECT * FROM `user_login` WHERE `user_id` = ?";
+        $resultCheckUserLogin = $connect->prepare($queryCheckUserLogin); 
+        $resultCheckUserLogin->execute([$userId]);
+    
+        if($resultCheckUserLogin->rowCount() > 0) {
+            $queryDeleteUserLogin = "DELETE FROM `user_login` WHERE `user_id` = ?";
+            $resultDeleteUserLogin = $connect->prepare($queryDeleteUserLogin);
+            $resultDeleteUserLogin->execute([$userId]);
+        }
+    }
+    catch (PDOException $e) {
+        setAdminAlert("Something went wrong", "error");
+        header("Location: ../users.php");
+        die();
+    }
+
+    // Users Service Table
+    try {
+
+        $queryCheckUserService = "SELECT * FROM `user_services` WHERE `user_id` = ?";
+        $resultCheckUserService = $connect->prepare($queryCheckUserService); 
+        $resultCheckUserService->execute([$userId]);
+    
+        if($resultCheckUserService->rowCount() > 0) {
+            $queryDeleteUserService = "DELETE FROM `user_services` WHERE `user_id` = ?";
+            $resultDeleteUserService = $connect->prepare($queryDeleteUserService);
+            $resultDeleteUserService->execute([$userId]);
+        }
+    }
+    catch (PDOException $e) {
+        setAdminAlert("Something went wrong", "error");
+        header("Location: ../users.php");
+        die();
+    }
+
+    setAdminAlert("User deleted successfully", 'success');
+    header('Location: ../users.php');
+
+    
+}
