@@ -369,6 +369,5 @@ if(isset($_GET['delete_id'])) {
 
     setAdminAlert("User deleted successfully", 'success');
     header('Location: ../users.php');
-
     
 }
