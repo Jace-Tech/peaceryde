@@ -70,7 +70,6 @@
                                       <label class="form-label">First Name</label> 
                                       <div class="input-group mb-3 biwidth">                            
                                         <input type="text" name="firstname" value="<?= $FORM_APPY['firstname'] ?? "" ?>" class="form-control firstname2" placeholder="First Name" >
-                                  
                                       </div>
                                     </div>
                                   </div>

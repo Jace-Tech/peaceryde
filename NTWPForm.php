@@ -79,20 +79,26 @@
                     <div class="col-md-3">
                       <div class="form-group">
                         <label class="form-label">First Name</label>
-                        <input type="text" required type="text" name="firstname" value="<?= $FORM_APPY['firstname'] ?? "" ?>" class="form-control firstname" placeholder="First Name (as on passport)">
+                        <div class="input-group mb-3 biwidth"> 
+                          <input type="text" required type="text" name="firstname" value="<?= $FORM_APPY['firstname'] ?? "" ?>" class="form-control firstname" placeholder="First Name (as on passport)">
+                  </div>
                       </div>
                     </div>
                     <div class="col-md-3">
                       <div class="form-group">
                         <label class="form-label">Middle Name</label>
+                        <div class="input-group mb-3 biwidth"> 
                         <input type="text" required type="text" name="middlename" class="form-control middlename" placeholder="Middle Name (as on passport)">
                       </div>
+                  </div>
                     </div>
                     <div class="col-md-3">
                       <div class="form-group" style="margin-right: 117px;">
                         <label class="form-label">Last Name</label>
+                        <div class="input-group mb-3 biwidth"> 
                         <input type="text" required type="text" name="lastname" value="<?= $FORM_APPY['lastname'] ?? "" ?>" class="form-control lastname" placeholder="Last Name (as on passport)">
                       </div>
+                  </div>
                     </div>
                   </div>
                 </div>
@@ -102,12 +108,15 @@
                     <div class="col-md-3">
                       <div class="form-group">
                         <label class="form-label">Date of Birth</label>
+                        <div class="input-group mb-3 biwidth"> 
                         <input type="date" required name="dob" class="form-control firstname"  placeholder="Date of Birth">
+                  </div>
                       </div>
                     </div>
                     <div class="col-md-5 genderwidth">
                       <div class="row">
                         <div class="col-md-12" style="margin-top: 25px;">
+                        
                           <label class="gender">Gender</label>
                           <br>
                           <div class="form-check form-check-inline male">
@@ -134,14 +143,18 @@
                     <div class="col-md-5">
                       <div class="form-group">
                         <label class="form-label">Email Address</label>
+                        <div class="input-group mb-3 biwidth"> 
                         <input type="email" required name="email" value="<?= $FORM_APPY['email'] ?? "" ?>" class="form-control firstname2" placeholder="Email address">
                       </div>
+                  </div>
                     </div>
                     <div class="col-md-5">
                       <div class="form-group">
                         <label class="form-label">Passport No.</label>
+                        <div class="input-group mb-3 biwidth"> 
                         <input required type="text" name="passport" class="form-control firstname2" placeholder="Passport No">
                       </div>
+                  </div>
                     </div>
                   </div>
                 </div>
