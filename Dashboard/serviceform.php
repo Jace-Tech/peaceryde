@@ -83,13 +83,13 @@
       <form class="formml" method="post" action="./handler/apply_handler.php">
         <div class="form-body">
           <div class="row" style="margin-top: 25px;">
-            <div class="col-md-5 col-lg-4 col-xl-3">
+            <div class="col-md-6 col-lg-5 col-xl-5">
               <div class="form-group">
                 <input type="text" required name="firstname" class="form-control dob" placeholder="first Name">
               </div>
             </div>
 
-            <div class="col-md-5 col-lg-4 col-xl-3">
+            <div class="col-md-6 col-lg-5 col-xl-5">
               <div class="form-group">
                 <input type="text" required name="lastname" class="form-control dob" placeholder="Last Name">
               </div>
@@ -97,12 +97,12 @@
 
           </div>
           <div class="row" style="margin-top: 25px;">
-            <div class="col-md-5 col-lg-4 col-xl-3">
+            <div class="col-md-6 col-lg-5 col-xl-5">
               <div class="form-group">
                 <input type="text" required name="email" class="form-control mobileno" placeholder="Email">
               </div>
             </div>
-            <div class="col-md-5 col-lg-4 col-xl-3">
+            <div class="col-md-6 col-lg-5 col-xl-5">
               <div class="form-group">
                 <div class="input-group mb-3">
                   <div class="input-group-prepend">
@@ -340,7 +340,7 @@
                       ">Which of our services are you applying For?</p>
           <div class="row" style="margin-top: 5px;">
 
-            <div class="col-md-6 col-lg-5 col-xl-3">
+            <div class="col-md-6 col-lg-5 col-xl-5">
               <div class="form-group">
                 <div class="input-group mb-3">
                   <div class="input-group-prepend">
