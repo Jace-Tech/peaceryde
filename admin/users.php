@@ -26,10 +26,8 @@ else {
 
 	// Get users based of country
 	$usersByCountry = getUsersWithSameCountryAsSubAdmin($connect, $LOGGED_ADMIN['admin_id']);
-	
 	$SUBADMIN_USERS = array_merge($usersByCountry, $assignedUsers);
 
-	print_r($SUBADMIN_USERS);
 	if (isset($_GET['q'])) {
 		$searchResult = array_filter($SUBADMIN_USERS, function ($item) {
 			$query = $_GET['q'];
@@ -122,6 +120,7 @@ else {
 											<div>
 												<label class="block text-sm font-medium mb-1" for="email">Email <span class="text-red-500">*</span></label>
 												<input name="email" id="email" class="form-input w-full px-2 py-2" required />
+												<input type="hidden" name="admin" value="<?= $LOGGED_ADMIN['admin_id']; ?>">
 											</div>
 
 											<div>
@@ -151,7 +150,7 @@ else {
 									<div class="px-5 py-4 border-t border-gray-200">
 										<div class="flex flex-wrap justify-end space-x-2">
 											<button class="btn-sm border-gray-200 hover:border-gray-300 text-gray-600" type="button" @click="modalOpen = false">Cancel</button>
-											<button type="submit" name="add" class="btn-sm bg-indigo-500 hover:bg-indigo-600 text-white">Create</button>
+											<button type="submit" name="add-subadmin-user" class="btn-sm bg-indigo-500 hover:bg-indigo-600 text-white">Create</button>
 										</div>
 									</div>
 								</form>

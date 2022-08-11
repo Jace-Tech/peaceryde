@@ -10,6 +10,56 @@ $USER_UPLOAD = new UserLogin($connect);
 $USER_SUBADMIN = new SubadminUsers($connect);
 $USER_UPLOAD = new Upload($connect);
 
+if(isset($_POST['add-subadmin-user'])) {
+    $firstname = filter_field($_POST['firstname']);
+    $title = filter_field($_POST['title']);
+    $lastname = filter_field($_POST['lastname']);
+    $email = filter_field($_POST['email'], "email");
+    $service = filter_field($_POST['service']);
+    $password = $_POST['password'];
+    $subAdmin = $_POST['admin'];
+
+    $data = [
+        "email" => $email,
+        "title" => $title,
+        "lastname" => $lastname,
+        "firstname" => $firstname,
+        "serviceId" => $service,
+    ];
+
+    // Added User
+    $result = $USER->add_new_user($data);
+    $userId = $result['userId'];
+
+    // Add Login Details
+    $data = [
+        "password" => $password,
+        "email" => $email,
+        "user_id" => $userId
+    ];
+
+    $result = $USER_LOGIN->register($data);
+    $subject = "Account Creation";
+    $message = "<p>Hi $firstname,</p>";
+    $message .= "<p>Here are your account details</p>";
+    $message .= "<ul>
+    <li>Username / Email: $email</li>
+    <li>Password: $password</li>
+    </ul>";
+
+    if($result) {
+        sendMail($subject, $message, FROM, $email);
+        addSubAdminUserAlt($connect, $userId, $subAdmin);
+        setAdminAlert("User added successfully", 'success');
+        header('Location: ../users.php');
+    }
+    else {
+        setAdminAlert("Something went wrong", 'error');
+        header('Location: ../users.php');
+    }
+    
+}
+
 if(isset($_POST['add'])) {
     $firstname = filter_field($_POST['firstname']);
     $title = filter_field($_POST['title']);

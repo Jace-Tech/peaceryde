@@ -74,6 +74,36 @@ function getSubName($_name)
     return substr($name[0], 0, 1);
 }
 
+function addSubAdminUserAlt ($connect, $user, $admin) {
+    // Check if user already exists 
+    try {
+        $queryCheck = "SELECT * FROM `sub_admin_users` WHERE `user` = ?";
+        $resultQuery = $connect->prepare($queryCheck);
+        $resultQuery->execute([$user]);
+
+        if (!$resultQuery->rowCount()) {
+            $query = "INSERT INTO `sub_admin_users` (`sub_admin`, `user`) VALUES (:admin, :user)";
+            $result = $connect->prepare($query);
+            $result->execute([
+                "admin" => $admin, 
+                "user" => $user
+            ]);
+
+            if($result) {
+                return [ "status" => true ];
+            }
+            else {
+                return ["status" => false, "error" => "Something went wrong"];
+            }
+        }
+        else {
+            return ["status" => false, "error" => "Admin already exists"];
+        }
+    } catch (PDOException $e) {
+        return ["status" => false, "error" => "Something went wrong"];
+    }
+}
+
 function getLinkColor ($link) 
 {
     $route = $_SERVER['PHP_SELF'];
