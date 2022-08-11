@@ -68,8 +68,13 @@ $active = $title = "Manage";
                                             </button>
                                         </div>
                                     </div>
-
                                     <div>
+                                        <div class="flex py-2">
+                                            <input type="checkbox" name="chat" class="form-check" value="1" id="chat">
+                                            <label for="chat">Chats Only</label>
+                                        </div>
+                                    </div>
+                                    <div id="services">
                                         <div class="flex items-center">
                                             <label class="block text-sm font-medium mb-1" for="service">Services <span class="text-red-500">*</span></label>
                                             <div class="relative ml-4" x-data="{ open: false }" @mouseenter="open = true" @mouseleave="open = false">
@@ -133,7 +138,7 @@ $active = $title = "Manage";
                                         </div>
                                     </div>
 
-                                </div>
+                                </.div>
                             </div>
 
                             <div class="px-5 py-4 border-t border-gray-200">
@@ -416,6 +421,16 @@ $active = $title = "Manage";
 </div>
 </div>
 <script src="main.75545896273710c7378c.js"></script>
+
+<script>
+    const serviceSection = document.querySelector("#services")
+    const checkbox = document.querySelector("#chat")
+
+    checkbox.addEventListener("change", () => {
+        serviceSection.style.display = checkbox.checked ? "none" : "block";
+    })
+
+</script>
 
 <script>
     const btns = document.querySelectorAll('[data-password-btn]')

@@ -49,6 +49,14 @@ if(isset($_POST['add-subadmin-user'])) {
 
     if($result) {
         sendMail($subject, $message, FROM, $email);
+        // Set Notification
+        if($LOGGED_ADMIN["admin_id"] == "MAIN_ADMIN") {
+            $admin = json_encode(["MAIN_ADMIN"]);
+        }
+        else {
+            $admin = json_encode(["MAIN_ADMIN", $LOGGED_ADMIN['admin_id']]);
+        }
+        setAdminNotification($connect, "./user-details.php?user=$userId", $admin, "A new user was added, click to view");
         addSubAdminUserAlt($connect, $userId, $subAdmin);
         setAdminAlert("User added successfully", 'success');
         header('Location: ../users.php');

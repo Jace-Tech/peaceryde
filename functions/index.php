@@ -104,6 +104,24 @@ function addSubAdminUserAlt ($connect, $user, $admin) {
     }
 }
 
+function setAdminNotification ($connect, $link, $admin, $message) {
+    try {
+        $query = "INSERT INTO `notification`(`admin`, `link`, `message`) VALUES (:admin, :link, :message)";
+        $result = $connect->prepare($query);
+        $result->execute([
+            "admin" => $admin,
+            "link" => $link,
+            "message" => $message
+        ]);
+
+        if($result) return true;
+        else return false;
+    }catch (PDOException $e) {
+        return false;
+    }
+    
+}
+
 function getLinkColor ($link) 
 {
     $route = $_SERVER['PHP_SELF'];

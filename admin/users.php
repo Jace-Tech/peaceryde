@@ -26,7 +26,7 @@ else {
 
 	// Get users based of country
 	$usersByCountry = getUsersWithSameCountryAsSubAdmin($connect, $LOGGED_ADMIN['admin_id']);
-	$SUBADMIN_USERS = array_merge($usersByCountry, $assignedUsers);
+	$SUBADMIN_USERS = array_merge($assignedUsers, $usersByCountry);
 
 	if (isset($_GET['q'])) {
 		$searchResult = array_filter($SUBADMIN_USERS, function ($item) {

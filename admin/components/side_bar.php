@@ -2,6 +2,7 @@
     .logo {
         width: 55px;
         height: 55px;
+        border-radius: 50%;
         object-fit: contain;
     }
 </style>
