@@ -106,6 +106,7 @@ if(isset($_POST['add'])) {
 
     if($result) {
         sendMail($subject, $message, FROM, $email);
+        setAdminNotification($connect, "./user-details.php?user=$userId", $LOGGED_ADMIN['admin_id'], "A new user was added, click to view");
         setAdminAlert("User added successfully", 'success');
         header('Location: ../users.php');
     }
