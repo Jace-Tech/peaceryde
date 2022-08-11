@@ -202,23 +202,31 @@ $active = $title = "Manage";
 
                                         <td class="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap">
                                             <div class="text-left flex items-center">
-                                                <?php $adminServices = json_decode(getSubAdminService($connect, $admin_id)['services'], true); ?>
-                                                <?php if (count($adminServices)) : ?>
-                                                    <ul>
-                                                        <?php foreach ($adminServices as $role) : ?>
-                                                            <li style="font-size: 12px">
-                                                                <?= getService($connect, $role)['service']; ?>
-                                                            </li>
-                                                        <?php endforeach; ?>
-                                                    </ul>
+                                                <?php if(getSubAdminService($connect, $admin_id)['services'] == "*"): ?>
+                                                    <span class="text-sm">All Services</span>
+                                                <?php else: ?>
+                                                    <?php $adminServices = json_decode(getSubAdminService($connect, $admin_id)['services'], true); ?>
+                                                    <?php if (count($adminServices)) : ?>
+                                                        <ul>
+                                                            <?php foreach ($adminServices as $role) : ?>
+                                                                <li style="font-size: 12px">
+                                                                    <?= getService($connect, $role)['service']; ?>
+                                                                </li>
+                                                            <?php endforeach; ?>
+                                                        </ul>
+                                                    <?php endif; ?>
                                                 <?php endif; ?>
                                             </div>
                                         </td>
 
                                         <td class="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap">
-                                            <div class="text-left" style="text-transform: capitalize;">
-                                                <?= formatCountryArray($admin->getSubAdmin($admin_id)['countries']); ?>
-                                            </div>
+                                            <?php if($admin->getSubAdmin($admin_id)['countries'] == "*"): ?>
+                                                <span class="text-sm">All countries</span>
+                                            <?php else: ?>
+                                                <div class="text-left" style="text-transform: capitalize;">
+                                                    <?= formatCountryArray($admin->getSubAdmin($admin_id)['countries']); ?>
+                                                </div>
+                                            <?php endif; ?>
                                         </td>
 
                                         <td class="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap">
