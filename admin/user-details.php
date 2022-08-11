@@ -4,7 +4,7 @@
 if (!isset($_GET['user'])) header('Location: ./users.php');
 
 if(isset($_GET['not_id'])) {
-    markNotificationAsSeen($connect, $_GET['not_id']);
+    markNotificationAsSeen($connect, $_GET['_tification_id']);
 }
 ?>
 
