@@ -82,7 +82,9 @@
                     <rect width="19" height="3" fill="#A0BD1C" />
                 </svg>
             </span>
-            <div class="align-self-center">
+            <div class="container">
+                <div class="card">
+                <div class="align-self-center">
                 <h3 class="page-title title">Nigeria Business Visa on Arrival </h3>
                 <p class="fill">Fill the Form Below</p>
                 <p class="personal">Your personal details</p>
@@ -425,6 +427,9 @@
                 </div>
 
             </form>
+                </div>
+            </div>
+            
         </div>
     </div>
 

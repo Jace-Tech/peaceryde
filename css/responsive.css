@@ -1279,7 +1279,20 @@ width: 100%;
     height: 44px;
     width: 350px;
   }
-
+  .section-team .single-person .person-image {
+    position: relative;
+    margin-bottom: 50px;
+    border-radius: 50%;
+    transition: padding .3s;
+    margin-right: 8px;
+    margin-left: 2px;
+}
+  .code {
+    width: 90px;
+    margin-top: 7px;
+    height: 44px;
+    border: 1px solid #555555;
+}
   .middlename {
     border: 1px solid #555555;
     font-family: ubuntu;
@@ -1402,6 +1415,7 @@ width: 100%;
   line-height: 35px;
   letter-spacing: 0.04em;
   width: 100%;
+  padding-right: 10px;
 }
 .section-team .single-person {
   margin-top: 0px;
@@ -6932,7 +6946,7 @@ width: 100%;
     margin-left: -1px;
 }
 .leaderpageheight {
-  height: 6600px;
+  height: 6900px;
 }
   .collapsebtn {
     margin-top: -10px;
@@ -11070,7 +11084,7 @@ width: 100%;
     margin-left: 0px;
   }
   .leaderpageheight {
-    height: 6900px;
+    height: 7000px;
 }
   .blue {
     background-color: #1161d9;
@@ -12755,7 +12769,7 @@ width: 100%;
     color: #ffffff;
   }
   .leaderpageheight {
-    height: 7200px;
+    height: 7500px;
 }
 
   .logoimg {

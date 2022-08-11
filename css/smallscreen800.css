@@ -1155,13 +1155,13 @@
     margin-left: -20px;
     margin-top: 80px;
 }
-  .reviewcard {
-    border-radius: 10px;
-    border-color: transparent;
-    width: 670px;
-    background-color: #ffffff;
-    margin: 32px 85px;
-  }
+.reviewcard {
+  border-radius: 10px;
+  border-color: transparent;
+  width: 80%;
+  background-color: #ffffff;
+  margin: 32px 10%;
+}
 
   .reviewml {
     margin-left: 57px;
@@ -2563,9 +2563,9 @@
   .reviewcard {
     border-radius: 10px;
     border-color: transparent;
-    width: 670px;
+    width: 80%;
     background-color: #ffffff;
-    margin: 32px 85px;
+    margin: 32px 10%;
   }
 
   .reviewml {
@@ -3977,9 +3977,9 @@
   .reviewcard {
     border-radius: 10px;
     border-color: transparent;
-    width: 670px;
+    width: 80%;
     background-color: #ffffff;
-    margin: 32px 85px;
+    margin: 32px 10%;
   }
 
   .reviewml {
@@ -5335,9 +5335,9 @@
   .reviewcard {
     border-radius: 10px;
     border-color: transparent;
-    width: 590px;
+    width: 80%;
     background-color: #ffffff;
-    margin: 32px 85px;
+    margin: 32px 10%;
   }
 
   .reviewml {
@@ -6462,6 +6462,12 @@
     margin-top: 0px;
     margin-right: 82px;
   }
+  .code {
+    width: 180px;
+    margin-top: 7px;
+    height: 44px;
+    border: 1px solid #555555;
+}
 
   .middlename {
     font-size: 12px;
@@ -6672,9 +6678,9 @@
   .reviewcard {
     border-radius: 10px;
     border-color: transparent;
-    width: 630px;
+    width: 80%;
     background-color: #ffffff;
-    margin: 32px 45px;
+    margin: 32px 10%;
   }
 
   .reviewml {
@@ -7824,7 +7830,7 @@
   .firstname {
     border: 1px solid #555555;
     font-family: ubuntu;
-    margin-top: 0px;
+    margin-top: 7px;
     height: 44px;
     width: 303px;
   }
@@ -7837,6 +7843,12 @@
     width: 303px;
     margin-right: 82px;
   }
+  .code {
+    width: 100px;
+    margin-top: 7px;
+    height: 44px;
+    border: 1px solid #555555;
+}
 
   .middlename {
     border: 1px solid #555555;
@@ -8043,7 +8055,7 @@
   }
 
   .reviewcard {
-    width: 500px;
+    width: 80%;
     margin: 32px auto;
   }
 
@@ -9267,7 +9279,7 @@
   .firstname {
     border: 1px solid #555555;
     font-family: ubuntu;
-    margin-top: 0px;
+    margin-top: 7px;
     height: 44px;
     width: 303px;
   }
@@ -9494,7 +9506,7 @@
 }
 
   .reviewcard {
-    width: 500px;
+    width: 80%;
     margin: 32px auto;
   }
 
