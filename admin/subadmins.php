@@ -299,17 +299,26 @@ $active = $title = "Manage";
                                                                         <div class="relative flex flex-col mt-1">
                                                                             <select name="service[]" multiple id="service">
                                                                                 <option value="" selected disabled>Choose services</option>
-                                                                                <?php if (count($service->getAllServices())) : ?>
+
+                                                                                <?php if(getSubAdminService($connect, $admin_id)['services'] != "*"): ?>
+                                                                                    <?php if (count($service->getAllServices())) : ?>
+                                                                                        <?php foreach ($service->getAllServices() as $service_item) : ?>
+                                                                                            <?php if (in_array($service_item['service_id'], json_decode(getSubAdminService($connect, $admin_id)['services'], true))) : ?>
+                                                                                                <option selected value="<?= $service_item['service_id'] ?>">
+                                                                                                    <?= $service_item['service'] ?>
+                                                                                                </option>
+                                                                                            <?php else : ?>
+                                                                                                <option value="<?= $service_item['service_id'] ?>">
+                                                                                                    <?= $service_item['service'] ?>
+                                                                                                </option>
+                                                                                            <?php endif; ?>
+                                                                                        <?php endforeach  ?>
+                                                                                    <?php endif; ?>
+                                                                                <?php else: ?>
                                                                                     <?php foreach ($service->getAllServices() as $service_item) : ?>
-                                                                                        <?php if (in_array($service_item['service_id'], json_decode(getSubAdminService($connect, $admin_id)['services'], true))) : ?>
-                                                                                            <option selected value="<?= $service_item['service_id'] ?>">
-                                                                                                <?= $service_item['service'] ?>
-                                                                                            </option>
-                                                                                        <?php else : ?>
-                                                                                            <option value="<?= $service_item['service_id'] ?>">
-                                                                                                <?= $service_item['service'] ?>
-                                                                                            </option>
-                                                                                        <?php endif; ?>
+                                                                                        <option value="<?= $service_item['service_id'] ?>">
+                                                                                            <?= $service_item['service'] ?>
+                                                                                        </option>
                                                                                     <?php endforeach  ?>
                                                                                 <?php endif; ?>
                                                                             </select>
@@ -335,21 +344,26 @@ $active = $title = "Manage";
                                                                         <div class="relative flex flex-col">
                                                                             <?php if (count($country_fee)) : ?>
                                                                                 <select class="form-control" name="country[]" multiple="multiple">
-                                                                                    <?php foreach ($country_fee as $country => $value) : ?>
-                                                                                        <?php if (in_array($country, json_decode($admin->getSubAdmin($admin_id)['countries'], true))) : ?>
-                                                                                            <div class="m-3">
+                                                                                    <?php if($admin->getSubAdmin($admin_id)['countries'] != "*"): ?>
+                                                                                        <?php foreach ($country_fee as $country => $value) : ?>
+                                                                                            <?php if (in_array($country, json_decode($admin->getSubAdmin($admin_id)['countries'], true))) : ?>
                                                                                                 <option value="<?= $country; ?>" selected>
                                                                                                     <?= $country; ?>
                                                                                                 </option>
-                                                                                            </div>
-                                                                                        <?php else : ?>
-                                                                                            <div class="m-3">
+                                                                                            <?php else : ?>
                                                                                                 <option value="<?= $country; ?>">
                                                                                                     <?= $country; ?>
                                                                                                 </option>
-                                                                                            </div>
-                                                                                        <?php endif;  ?>
-                                                                                    <?php endforeach  ?>
+                                                                                            <?php endif;  ?>
+                                                                                        <?php endforeach  ?>
+                                                                                    <?php else: ?>
+                                                                                        <?php foreach ($country_fee as $country => $value) : ?>
+                                                                                            <option value="<?= $country; ?>">
+                                                                                                <?= $country; ?>
+                                                                                            </option>
+                                                                                        <?php endforeach  ?>
+                                                                                    <?php endif; ?>
+
                                                                                 </select>
                                                                             <?php endif; ?>
 
