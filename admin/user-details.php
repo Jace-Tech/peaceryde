@@ -41,7 +41,7 @@ $USERS_ADMIN = getSubAdmin($connect, $USER_SUB_ADMIN['sub_admin']);
         <div class="mt-16">
             <div class="flex items-center justify-between flex-wrap g-3">
                 <h3 class="mt-2 text-gray-600 font-bold text-md uppercase">Profile</h3>
-                <a href="./user-details.php?user=<?= $_GET['user']; ?>&edit=<?= $_GET['user']; ?>" class="btn btn-sm btn-indigo-500">Edit</a>
+                <a href="./user-details.php?user=<?= $_GET['user']; ?>&edit=<?= $_GET['user']; ?>" class="btn btn-sm btn-indigo-600">Edit</a>
             </div>
             <div class="mt-4">
                 <?php if (!isset($_GET['edit'])) : ?>
@@ -121,7 +121,7 @@ $USERS_ADMIN = getSubAdmin($connect, $USER_SUB_ADMIN['sub_admin']);
                         <div class="grid grid-cols-12 gap-6 py-3">
                             <div class="col-span-full md:col-span-6">
                                 <label for="" class="block text-sm font-medium">Gender </label>
-                                <select name="gender" value="<?= $USER['gender'] ?? "" ?>" class="border-gray-300" id="">
+                                <select name="gender" value="<?= $USER['gender'] ?? "" ?>" class="w-full p-2 border-gray-300" id="">
                                     <option value="" disabled>Choose gender</option>
                                     <option value="male">Male</option>
                                     <option value="female">Female</option>
@@ -134,7 +134,7 @@ $USERS_ADMIN = getSubAdmin($connect, $USER_SUB_ADMIN['sub_admin']);
                             </div>
                         </div>
                         <div class="mt-4">
-                            <button name="update-user" class="btn btn-sm btn-indigo-500">Update Profile</button>
+                            <button name="update-user" class="btn btn-sm btn-indigo-600">Update Profile</button>
                         </div>
                     </form>
                 <?php endif; ?>
