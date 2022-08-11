@@ -60,7 +60,9 @@
 }
 .formml
 {
-  padding-left: 21px;
+  padding-left: 5%;
+  padding-right: 5%;
+  width: 60%;
 }
 .fmselect
 {
@@ -675,7 +677,9 @@
 }
 .formml
 {
-  padding-left: 21px;
+  padding-left: 5%;
+  padding-right: 5%;
+  width: 60%;
 }
 .fmselect
 {
@@ -1277,7 +1281,9 @@
 }
 .formml
 {
-  padding-left: 50px;
+  padding-left: 5%;
+  padding-right: 5%;
+  width: 60%;
 }
 .fmselect
 {
@@ -1852,7 +1858,9 @@
 }
 .formml
 {
-  padding-left: 21px;
+  padding-left: 5%;
+  padding-right: 5%;
+  width: 70%;
 }
 .fmselect
 {
@@ -2449,7 +2457,9 @@
 }
 .formml
 {
-  margin: 10%;
+  padding-left: 5%;
+  padding-right: 5%;
+  width: 80%;
 }
 .fmselect
 {
@@ -3058,7 +3068,9 @@
 }
 .formml
 {
-  padding-left: 11px;
+  padding-left: 5%;
+  padding-right: 5%;
+  width: 90%;
 }
 .fmselect
 {
