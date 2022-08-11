@@ -106,7 +106,7 @@ function addSubAdminUserAlt ($connect, $user, $admin) {
 
 function getNotications ($connect, $id) {
     try {
-        $query = "SELECT * FROM `notification` WHERE `admin_id` = ?";
+        $query = "SELECT * FROM `notification` WHERE `admin` = ?";
         $result = $connect->prepare($query);
         $result->execute([ $id ]);
 
