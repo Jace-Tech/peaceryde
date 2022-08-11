@@ -1,6 +1,7 @@
 <?php 
 
 require_once("./models.php");
+$LOGGED_ADMIN = json_decode($_COOKIE['LOGGED_ADMIN'], true);
 
 $USER = new User($connect);
 $PAYMENT = new Payment($connect);

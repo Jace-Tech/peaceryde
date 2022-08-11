@@ -30,16 +30,16 @@ class User {
         $result = $this->connection->prepare($query);
         $result->execute([
             'userId' => $userId,
-            'title' => $title,
+            'title' => $title ?? "",
             'firstname' => $firstname,
-            'middle_name' => $middle_name,
+            'middle_name' => $middle_name ?? "",
             'lastname' => $lastname,
-            'date_of_birth' => $dob,
-            'gender' => $gender,
-            'email' => $email,
-            'passport' => $passport,
-            'country' => $country,
-            'phone' => $phone,
+            'date_of_birth' => $dob ?? "",
+            'gender' => $gender ?? "",
+            'email' => $email ?? "",
+            'passport' => $passport ?? "",
+            'country' => $country ?? "",
+            'phone' => $phone ?? "",
         ]);
 
         if($result) {
