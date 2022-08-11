@@ -12,7 +12,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
   <!-- Favicon icon -->
-  <link rel="icon" type="image/png" sizes="16x16" href="./dist/image/logo.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./dist/image/icon.png">
   <title>PeaceRyde</title>
   <!-- Custom CSS -->
   <link href="./assets/extra-libs/c3/c3.min.css" rel="stylesheet">
@@ -74,9 +74,11 @@
           <rect width="19" height="3" fill="#A0BD1C" />
         </svg>
       </span>
-      <div class="align-self-center">
+      <div class="container">
+        <div class="card">
+        <div class="align-self-center">
         <h3 class="page-title title">Service Booking Form </h3>
-        <p class="fill">Plesae fill this form to indicate your interest in any of our services and we will contact you within 24hrs</p>
+        <p class="fill">Please fill this form to indicate your interest in any of our services and we will contact you within 24hrs</p>
       </div>
       <form class="formml" method="post" action="./handler/apply_handler.php">
         <div class="form-body">
@@ -365,7 +367,7 @@
                       ">Messages</p>
           <div class="row">
             <div class="col-md-8 col-lg-6 col-xl-4">
-              <textarea name="message" style="width: 100%;margin-top:21; height: 150px;margin-bottom: 65px; border: 1px solid #555555;"></textarea>
+              <textarea name="message" style="width: 80%;margin-top:21; height: 150px;margin-bottom: 5px; border: 1px solid #555555;"></textarea>
             </div>
           </div>
 
@@ -374,6 +376,9 @@
           <button type="submit" name="apply" class="btn btnproceed">Proceed</button>
         </div>
       </form>
+        </div>
+      </div>
+      
     </div>
 
   </div>
