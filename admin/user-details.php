@@ -39,56 +39,106 @@ $USERS_ADMIN = getSubAdmin($connect, $USER_SUB_ADMIN['sub_admin']);
 
         <!-- USER DETAILS -->
         <div class="mt-16">
-            <h3 class="mt-2 text-gray-600 font-bold text-md uppercase">Profile</h3>
+            <div class="flex items-center justify-between flex-wrap g-3">
+                <h3 class="mt-2 text-gray-600 font-bold text-md uppercase">Profile</h3>
+                <a href="./user-details.php?edit=<?= $_GET['user'] ?>" class="btn btn-sm btn-indigo">Edit</a>
+            </div>
             <div class="mt-4">
-                <div class="px-2 py-2 border-b flex">
-                    <p class="text-gray-600 text-sm font-bold mr-2">Firstname: </p>
-                    <p class="text-gray-600 flex-1 text-sm">
-                        <?= $USER['firstname'] ?? "<i>NILL</i>"; ?>
-                    </p>
-                </div>
+                <?php if (!isset($_GET['edit'])) : ?>
+                    <div class="px-2 py-2 border-b flex">
+                        <p class="text-gray-600 text-sm font-bold mr-2">Firstname: </p>
+                        <p class="text-gray-600 flex-1 text-sm">
+                            <?= $USER['firstname'] ?? "<i>NILL</i>"; ?>
+                        </p>
+                    </div>
 
-                <div class="px-2 py-2 border-b flex">
-                    <p class="text-gray-600 text-sm font-bold mr-2">Middle Name: </p>
-                    <p class="text-gray-600 flex-1 text-sm">
-                        <?= $USER['middle_name'] ?? "<i>NILL</i>"; ?>
-                    </p>
-                </div>
+                    <div class="px-2 py-2 border-b flex">
+                        <p class="text-gray-600 text-sm font-bold mr-2">Middle Name: </p>
+                        <p class="text-gray-600 flex-1 text-sm">
+                            <?= $USER['middle_name'] ?? "<i>NILL</i>"; ?>
+                        </p>
+                    </div>
 
-                <div class="px-2 py-2 border-b flex">
-                    <p class="text-gray-600 text-sm font-bold mr-2">Lastname: </p>
-                    <p class="text-gray-600 flex-1 text-sm">
-                        <?= $USER['lastname'] ?? "<i>NILL</i>"; ?>
-                    </p>
-                </div>
+                    <div class="px-2 py-2 border-b flex">
+                        <p class="text-gray-600 text-sm font-bold mr-2">Lastname: </p>
+                        <p class="text-gray-600 flex-1 text-sm">
+                            <?= $USER['lastname'] ?? "<i>NILL</i>"; ?>
+                        </p>
+                    </div>
 
-                <div class="px-2 py-2 border-b flex">
-                    <p class="text-gray-600 text-sm font-bold mr-2">Email: </p>
-                    <p class="text-gray-600 flex-1 text-sm">
-                        <?= $USER['email'] ?? "<i>NILL</i>"; ?>
-                    </p>
-                </div>
+                    <div class="px-2 py-2 border-b flex">
+                        <p class="text-gray-600 text-sm font-bold mr-2">Email: </p>
+                        <p class="text-gray-600 flex-1 text-sm">
+                            <?= $USER['email'] ?? "<i>NILL</i>"; ?>
+                        </p>
+                    </div>
 
-                <div class="px-2 py-2 border-b flex">
-                    <p class="text-gray-600 text-sm font-bold mr-2">Gender: </p>
-                    <p class="text-gray-600 flex-1 text-sm">
-                        <?= $USER['gender'] ?? "<i>NILL</i>"; ?>
-                    </p>
-                </div>
+                    <div class="px-2 py-2 border-b flex">
+                        <p class="text-gray-600 text-sm font-bold mr-2">Gender: </p>
+                        <p class="text-gray-600 flex-1 text-sm">
+                            <?= $USER['gender'] ?? "<i>NILL</i>"; ?>
+                        </p>
+                    </div>
 
-                <div class="px-2 py-2 border-b flex">
-                    <p class="text-gray-600 text-sm font-bold mr-2">Country: </p>
-                    <p class="text-gray-600 flex-1 text-sm">
-                        <?= $USER['country'] ?? "<i>NILL</i>"; ?>
-                    </p>
-                </div>
+                    <div class="px-2 py-2 border-b flex">
+                        <p class="text-gray-600 text-sm font-bold mr-2">Country: </p>
+                        <p class="text-gray-600 flex-1 text-sm">
+                            <?= $USER['country'] ?? "<i>NILL</i>"; ?>
+                        </p>
+                    </div>
 
-                <div class="px-2 py-2 border-b flex">
-                    <p class="text-gray-600 text-sm font-bold mr-2">Date of Birth: </p>
-                    <p class="text-gray-600 flex-1 text-sm">
-                        <?= date("d, M Y", strtotime($USER['date_of_birth']) )?? "<i>NILL</i>"; ?>
-                    </p>
-                </div>
+                    <div class="px-2 py-2 border-b flex">
+                        <p class="text-gray-600 text-sm font-bold mr-2">Date of Birth: </p>
+                        <p class="text-gray-600 flex-1 text-sm">
+                            <?= strtoupper($USER['date_of_birth']) == "NULL" ? date("d, M Y", strtotime($USER['date_of_birth'])) : "<i>NILL</i>"; ?>
+                        </p>
+                    </div>
+                <?php else : ?>
+                    <form class="form" method="post" action="./handler/user_handler.php">
+                        <div class="grid grid-cols-12 gap-6 py-3">
+                            <div class="col-span-full md:col-span-6">
+                                <label for="" class="block text-sm font-medium">Firstname</label>
+                                <input class="p-2 border-gray-300 form-input" type="text" name="firstname" value="<?= $USER['firstname'] ?>">
+                            </div>
+
+                            <div class="col-span-full md:col-span-6">
+                                <label for="" class="block text-sm font-medium">Lastname</label>
+                                <input class="p-2 border-gray-300 form-input" type="text" name="lastname" value="<?= $USER['lastname'] ?>">
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-12 gap-6 py-3">
+                            <div class="col-span-full md:col-span-6">
+                                <label for="" class="block text-sm font-medium">Middle name</label>
+                                <input class="p-2 border-gray-300 form-input" type="text" name="middlename" value="<?= $USER['middlename'] ?>">
+                            </div>
+
+                            <div class="col-span-full md:col-span-6">
+                                <label for="" class="block text-sm font-medium">Email</label>
+                                <input type="hidden" name="user" value="<?= $_GET['user'] ?>" />
+                                <input class="p-2 border-gray-300 form-input" type="email" name="email" value="<?= $USER['email'] ?>">
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-12 gap-6 py-3">
+                            <div class="col-span-full md:col-span-6">
+                                <label for="" class="block text-sm font-medium">Gender </label>
+                                <select name="gender" value="<?= $USER['gender']; ?>" class="border-gray-300" id="">
+                                    <option value="" disabled>Choose gender</option>
+                                    <option value="male">Male</option>
+                                    <option value="female">Female</option>
+                                </select> 
+                            </div>
+
+                            <div class="col-span-full md:col-span-6">
+                                <label for="" class="block text-sm font-medium">Date of Birth</label>
+                                <input class="p-2 border-gray-300 form-input" type="date" name="dob" value="<?= $USER['date_of_birth'] ?>">
+                            </div>
+                        </div>
+                        <div class="mt-4">
+                            <button name="update-user" class="btn btn-sm btn-indigo-500">Update Profile</button>
+                        </div>
+                    </form>
+                <?php endif; ?>
+
             </div>
         </div>
 
@@ -186,7 +236,7 @@ $USERS_ADMIN = getSubAdmin($connect, $USER_SUB_ADMIN['sub_admin']);
             <div class="flex items-center justify-between flex-wrap">
                 <h3 class="mt-2 text-gray-600 font-bold text-md uppercase">Services</h3>
 
-                <a href="./user-details.php?page=service&user=<?= $_GET['user'];?>" class="btn bg-indigo-500 hover:bg-indigo-600 text-white">
+                <a href="./user-details.php?page=service&user=<?= $_GET['user']; ?>" class="btn bg-indigo-500 hover:bg-indigo-600 text-white">
                     <svg class="w-4 h-4 fill-current opacity-50 shrink-0" viewBox="0 0 16 16">
                         <path d="M15 7H9V1c0-.6-.4-1-1-1S7 .4 7 1v6H1c-.6 0-1 .4-1 1s.4 1 1 1h6v6c0 .6.4 1 1 1s1-.4 1-1V9h6c.6 0 1-.4 1-1s-.4-1-1-1z"></path>
                     </svg>
@@ -195,21 +245,21 @@ $USERS_ADMIN = getSubAdmin($connect, $USER_SUB_ADMIN['sub_admin']);
             </div>
 
             <div class="mt-4">
-                <?php if(isset($_GET['page']) && $_GET['page'] == "service"): ?>
+                <?php if (isset($_GET['page']) && $_GET['page'] == "service") : ?>
                     <form class="block w-full" action="./handler/user_handler.php" method="post">
                         <div class="grid grid-cols-12 gap-6">
                             <div class="col-span-full sm:col-span-6 xl:col-span-6">
                                 <label class="text-sm font-semibold block mb-2 text-gray-600">Service</label>
-                                <select  name="service" id="" class="w-full p-2 text-sm border-gray-300 rounded-sm">
+                                <select name="service" id="" class="w-full p-2 text-sm border-gray-300 rounded-sm">
                                     <option value="" disabled selected>Choose service</option>
-                                    <?php foreach($services->getAllServices() as $_service): ?>
+                                    <?php foreach ($services->getAllServices() as $_service) : ?>
                                         <option value="<?= $_service['service_id']; ?>">
                                             <?= $_service['service'] ?>
                                         </option>
                                     <?php endforeach; ?>
                                 </select>
                             </div>
-    
+
                             <div class="col-span-full sm:col-span-6 xl:col-span-6">
                                 <label class="text-sm font-semibold block mb-2 text-gray-600">Service Status</label>
                                 <select name="serviceStatus" id="" class="w-full p-2 text-sm border-gray-300 rounded-sm">
@@ -247,7 +297,7 @@ $USERS_ADMIN = getSubAdmin($connect, $USER_SUB_ADMIN['sub_admin']);
                             </div>
                         </div>
                     </form>
-                <?php else: ?>
+                <?php else : ?>
                     <div class="overflow-x-auto">
                         <table class="table-auto w-full">
                             <?php if (count($USER_SERVICES)) : ?>
@@ -256,19 +306,19 @@ $USERS_ADMIN = getSubAdmin($connect, $USER_SUB_ADMIN['sub_admin']);
                                         <th class="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap">
                                             <div class="font-semibold text-left">Sevice</div>
                                         </th>
-    
+
                                         <th class="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap">
                                             <div class="font-semibold text-left">Status</div>
                                         </th>
-    
+
                                         <th class="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap">
                                             <div class="font-semibold text-left">Payment Status</div>
                                         </th>
-    
+
                                         <th class="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap"><span class="sr-only">Menu</span></th>
                                     </tr>
                                 </thead>
-    
+
                                 <tbody class="text-sm divide-y divide-gray-200">
                                     <?php foreach ($USER_SERVICES as $service) : ?>
                                         <tr>
@@ -277,7 +327,7 @@ $USERS_ADMIN = getSubAdmin($connect, $USER_SUB_ADMIN['sub_admin']);
                                                     <div class="font-medium text-gray-800"><?= getService($connect, $service['service_id'])['service']; ?></div>
                                                 </div>
                                             </td>
-    
+
                                             <td class="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap">
                                                 <div class="flex items-center">
                                                     <?php if (strtolower($service['status']) == "approved") : ?>
@@ -287,13 +337,13 @@ $USERS_ADMIN = getSubAdmin($connect, $USER_SUB_ADMIN['sub_admin']);
                                                     <?php endif; ?>
                                                 </div>
                                             </td>
-    
+
                                             <td class="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap">
                                                 <div class="flex items-center">
                                                     <div class="font-light text-gray-500 "><?= getServicePayment($connect, $_GET['user'], $service['id'])['status'] ?? "<i>NILL</i>"; ?></div>
                                                 </div>
                                             </td>
-    
+
                                             <td class="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap">
                                                 <?php if (isset($_GET['update'])) : ?>
                                                     <?php if ($_GET['update'] === $service['service_id']) : ?>
@@ -305,7 +355,7 @@ $USERS_ADMIN = getSubAdmin($connect, $USER_SUB_ADMIN['sub_admin']);
                                                                 <button class="btn bg-indigo-500 hover:bg-indigo-600 text-white btn-sm text-sm" name="update-status">Update</button>
                                                             </div>
                                                         </form>
-                                                    <?php else: ?>
+                                                    <?php else : ?>
                                                         <a href="./user-details.php?user=<?= $_GET['user'] ?>&update=<?= $service['service_id']; ?>" class="btn btn-sm text-xs bg-indigo-500 hover:bg-indigo-600 text-white">Update Status</a>
                                                     <?php endif; ?>
                                                 <?php else : ?>
@@ -319,7 +369,7 @@ $USERS_ADMIN = getSubAdmin($connect, $USER_SUB_ADMIN['sub_admin']);
                                         </tr>
                                     <?php endforeach; ?>
                                 </tbody>
-    
+
                             <?php else : ?>
                                 <tr>
                                     <td class="h-56">

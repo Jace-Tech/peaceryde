@@ -371,3 +371,40 @@ if(isset($_GET['delete_id'])) {
     header('Location: ../users.php');
     
 }
+
+if(isset($_POST['update-user'])) {
+    $email = $_POST['email'];
+    $firstname = $_POST['firstname'];
+    $lastname = $_POST['lastname'];
+    $gender = $_POST['gender'];
+    $dob = $_POST['dob'];
+    $middlename = $_POST['middlename'];
+    $id = $_POST['user'];
+
+    try {
+        $query = "UPDATE `users` SET `firstname` = :firstname, `lastname` = :lastname, `middlename` = :middlename, `email` = :email, `gender` = :gender, `dob` = :dob WHERE `user_id` = :user";
+        $result = $connect->prepare($query);
+        $result->execute([
+            "firstname" => $firstname,
+            "lastname" => $lastname,
+            "middlename" => $middlename,
+            "email" => $email,
+            "gender" => $gender,
+            "dob" => $dob,
+            "user" => $id
+        ]);
+
+        if ($result) {
+            setAdminAlert("User profile updated successfully", "success");
+            header("Location: ../user-details.php?user=$id");
+        }
+        else {
+            setAdminAlert("Failed to update user profile", "error");
+            header("Location: ../user-details.php?user=$id");
+        }
+
+    } catch (PDOException $e) {
+        setAdminAlert("Failed to update user profile", "error");
+        header("Location: ../user-details.php?user=$id");
+    }
+}

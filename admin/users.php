@@ -16,12 +16,17 @@ if($LOGGED_ADMIN['type'] == "HIGH") {
 	}
 }
 else {
-	// if (isset($_GET['q'])) {
-	// 	$query = $_GET['q'];
-	// 	$searchResult = $users->searchUser($query);
-	// }
+	$SUBADMIN_USERS = getUsersWithSameCountryAsSubAdmin($connect, $LOGGED_ADMIN['admin_id']);
+	if (isset($_GET['q'])) {
+		$searchResult = array_filter($SUBADMIN_USERS, function ($item) {
+			$query = $_GET['q'];
+			return preg_match("/.*[$query].*/", $item['firstname'])
+			|| preg_match("/.*[$query].*/", $item['lastname']) 
+			|| preg_match("/.*[$query].*/", $item['email'])
+			|| preg_match("/.*[$query].*/", $item['phone']);
+		});
+	}
 
-	print_r(getUsersWithSameCountryAsSubAdmin($connect, $LOGGED_ADMIN['admin_id']));
 }
 
 ?>
@@ -505,8 +510,8 @@ else {
 							</div>
 						</div>
 					</div>
-					<?php if (count($users->get_all_users())) : ?>
-						<?php foreach ($users->get_all_users() as $user) :  ?>
+					<?php if (count($SUBADMIN_USERS)) : ?>
+						<?php foreach ($SUBADMIN_USERS as $user) :  ?>
 							<div class="col-span-full sm:col-span-6 xl:col-span-3 bg-white shadow-lg rounded-sm border border-gray-200">
 								<div class="flex flex-col h-full">
 									<div class="grow p-5">
