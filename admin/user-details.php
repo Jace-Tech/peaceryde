@@ -312,7 +312,7 @@ $USERS_ADMIN = getSubAdmin($connect, $USER_SUB_ADMIN['sub_admin']);
                                                     <a href="./user-details.php?user=<?= $_GET['user'] ?>&update=<?= $service['service_id']; ?>" class="btn btn-sm text-xs bg-indigo-500 hover:bg-indigo-600 text-white">Update Status</a>
                                                     <form action="./handler/service_handler.php" method="post">
                                                         <input type="hidden" name="user" value="<?= $_GET['user']; ?>" />
-                                                        <button name="delete-service" value="<?= $service['id']; ?>" class="btn btn-sm text-xs bg-indigo-500 hover:bg-indigo-600 text-white">Delete Service</button>
+                                                        <button name="delete-service" value="<?= $service['id']; ?>" class="btn btn-sm text-xs bg-red-500 hover:bg-indigo-600 text-white">Delete Service</button>
                                                     </form>
                                                 <?php endif; ?>
                                             </td>
