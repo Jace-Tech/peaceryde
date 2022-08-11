@@ -111,7 +111,7 @@ $USERS_ADMIN = getSubAdmin($connect, $USER_SUB_ADMIN['sub_admin']);
                         <div class="grid grid-cols-12 gap-6 py-3">
                             <div class="col-span-full md:col-span-6">
                                 <label for="" class="block text-sm font-medium">Middle name</label>
-                                <input class="w-full p-2 border-gray-300 form-input" type="text" name="middlename" value="<?= $USER['middlename'] ?? "" ?>">
+                                <input class="w-full p-2 border-gray-300 form-input" type="text" name="middlename" value="<?= $USER['middle_name'] ?? "" ?>">
                             </div>
 
                             <div class="col-span-full md:col-span-6">

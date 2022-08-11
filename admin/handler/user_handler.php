@@ -382,7 +382,7 @@ if(isset($_POST['update-user'])) {
     $id = $_POST['user'];
 
     try {
-        $query = "UPDATE `users` SET `firstname` = :firstname, `lastname` = :lastname, `middlename` = :middlename, `email` = :email, `gender` = :gender, `dob` = :dob WHERE `user_id` = :user";
+        $query = "UPDATE `users` SET `firstname` = :firstname, `lastname` = :lastname, `middle_name` = :middlename, `email` = :email, `gender` = :gender, `dob` = :dob WHERE `user_id` = :user";
         $result = $connect->prepare($query);
         $result->execute([
             "firstname" => $firstname,
