@@ -98,30 +98,30 @@ $USERS_ADMIN = getSubAdmin($connect, $USER_SUB_ADMIN['sub_admin']);
                         <div class="grid grid-cols-12 gap-6 py-3">
                             <div class="col-span-full md:col-span-6">
                                 <label for="" class="block text-sm font-medium">Firstname</label>
-                                <input class="p-2 border-gray-300 form-input" type="text" name="firstname" value="<?= $USER['firstname'] ?>">
+                                <input class="w-full p-2 border-gray-300 form-input" type="text" name="firstname" value="<?= $USER['firstname'] ?? "" ?>">
                             </div>
 
                             <div class="col-span-full md:col-span-6">
                                 <label for="" class="block text-sm font-medium">Lastname</label>
-                                <input class="p-2 border-gray-300 form-input" type="text" name="lastname" value="<?= $USER['lastname'] ?>">
+                                <input class="w-full p-2 border-gray-300 form-input" type="text" name="lastname" value="<?= $USER['lastname'] ?? "" ?>">
                             </div>
                         </div>
                         <div class="grid grid-cols-12 gap-6 py-3">
                             <div class="col-span-full md:col-span-6">
                                 <label for="" class="block text-sm font-medium">Middle name</label>
-                                <input class="p-2 border-gray-300 form-input" type="text" name="middlename" value="<?= $USER['middlename'] ?>">
+                                <input class="w-full p-2 border-gray-300 form-input" type="text" name="middlename" value="<?= $USER['middlename'] ?? "" ?>">
                             </div>
 
                             <div class="col-span-full md:col-span-6">
                                 <label for="" class="block text-sm font-medium">Email</label>
                                 <input type="hidden" name="user" value="<?= $_GET['user'] ?>" />
-                                <input class="p-2 border-gray-300 form-input" type="email" name="email" value="<?= $USER['email'] ?>">
+                                <input class="w-full p-2 border-gray-300 form-input" type="email" name="email" value="<?= $USER['email'] ?? "" ?>">
                             </div>
                         </div>
                         <div class="grid grid-cols-12 gap-6 py-3">
                             <div class="col-span-full md:col-span-6">
                                 <label for="" class="block text-sm font-medium">Gender </label>
-                                <select name="gender" value="<?= $USER['gender']; ?>" class="border-gray-300" id="">
+                                <select name="gender" value="<?= $USER['gender'] ?? "" ?>" class="border-gray-300" id="">
                                     <option value="" disabled>Choose gender</option>
                                     <option value="male">Male</option>
                                     <option value="female">Female</option>
@@ -130,7 +130,7 @@ $USERS_ADMIN = getSubAdmin($connect, $USER_SUB_ADMIN['sub_admin']);
 
                             <div class="col-span-full md:col-span-6">
                                 <label for="" class="block text-sm font-medium">Date of Birth</label>
-                                <input class="p-2 border-gray-300 form-input" type="date" name="dob" value="<?= $USER['date_of_birth'] ?>">
+                                <input class="w-full p-2 border-gray-300 form-input" type="date" name="dob" value="<?= $USER['date_of_birth'] ?? "" ?>">
                             </div>
                         </div>
                         <div class="mt-4">
