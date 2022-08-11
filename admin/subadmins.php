@@ -119,6 +119,7 @@ $active = $title = "Manage";
                                         <div class="relative flex flex-col">
                                             <?php if (count($country_fee)) : ?>
                                                 <select class="form-control" name="country[]" multiple="multiple">
+                                                    <option value="*">All countries</option>
                                                     <?php foreach ($country_fee as $country => $value) : ?>
                                                         <?php if (!array_search($country, $admin->getTakenCountries())) : ?>
                                                             <div class="m-3">
