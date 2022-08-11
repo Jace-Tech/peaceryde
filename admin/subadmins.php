@@ -2,11 +2,11 @@
 
 
 <?php
-    if($LOGGED_ADMIN['type'] != "HIGH") header("Location: ./dashboard.php");
-    $admin = new Admin($connect);
-    $service = new Service($connect);
+if ($LOGGED_ADMIN['type'] != "HIGH") header("Location: ./dashboard.php");
+$admin = new Admin($connect);
+$service = new Service($connect);
 
-    $active = $title = "Manage";
+$active = $title = "Manage";
 ?>
 
 <!doctype html>
@@ -69,12 +69,12 @@
                                             </button>
                                         </div>
                                     </div>
-                                    <div>
+                                    <!-- <div>
                                         <div class="flex py-2">
                                             <input type="checkbox" name="chat" class="form-check" value="1" id="chat">
                                             <label for="chat">Chats Only</label>
                                         </div>
-                                    </div>
+                                    </div> -->
                                     <div id="services">
                                         <div class="flex items-center">
                                             <label class="block text-sm font-medium mb-1" for="service">Services <span class="text-red-500">*</span></label>
@@ -139,14 +139,14 @@
                                         </div>
                                     </div>
 
-                                </.div>
-                            </div>
-
-                            <div class="px-5 py-4 border-t border-gray-200">
-                                <div class="flex flex-wrap justify-end space-x-2"><button class="btn-sm border-gray-200 hover:border-gray-300 text-gray-600" type="button" @click="modalOpen = false">Cancel</button>
-                                    <button type="submit" name="addAdmin" class="btn-sm bg-indigo-500 hover:bg-indigo-600 text-white">Create</button>
+                                    </div>
                                 </div>
-                            </div>
+
+                                <div class="px-5 py-4 border-t border-gray-200">
+                                    <div class="flex flex-wrap justify-end space-x-2"><button class="btn-sm border-gray-200 hover:border-gray-300 text-gray-600" type="button" @click="modalOpen = false">Cancel</button>
+                                        <button type="submit" name="addAdmin" class="btn-sm bg-indigo-500 hover:bg-indigo-600 text-white">Create</button>
+                                    </div>
+                                </div>
                         </form>
                     </div>
                 </div>
@@ -208,9 +208,9 @@
                                         <td class="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap">
                                             <div class="text-left flex items-center">
                                                 <?php $adminServices = json_decode(getSubAdminService($connect, $admin_id)['services'], true); ?>
-                                                <?php if(count($adminServices)): ?>
+                                                <?php if (count($adminServices)) : ?>
                                                     <ul>
-                                                        <?php foreach($adminServices as $role ): ?>
+                                                        <?php foreach ($adminServices as $role) : ?>
                                                             <li style="font-size: 12px">
                                                                 <?= getService($connect, $role)['service']; ?>
                                                             </li>
@@ -423,7 +423,7 @@
 </div>
 <script src="main.75545896273710c7378c.js"></script>
 
-<script>
+<!-- <script>
     const serviceSection = document.querySelector("#services")
     const checkbox = document.querySelector("#chat")
 
@@ -431,7 +431,7 @@
         serviceSection.style.display = checkbox.checked ? "none" : "block";
     })
 
-</script>
+</script> -->
 
 <script>
     const btns = document.querySelectorAll('[data-password-btn]')
