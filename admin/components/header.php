@@ -7,9 +7,12 @@ $users = new User($connect);
 
 $ADMIN_UNREAD_MESSAGE = $messages->get_user_unread_messages($LOGGED_ADMIN['admin_id']);
 $NOTIFICATIONS = getNotications($connect, $LOGGED_ADMIN['admin_id']);
-$UNREAD_NOTIFICATIONS = array_filter($NOTIFICATIONS, function ($notification) {
-	return $notification['isRead'] == "0";
-});
+$UNREAD_NOTIFICATIONS = [];
+if(count($NOTIFICATIONS)) {
+	$UNREAD_NOTIFICATIONS = array_filter($NOTIFICATIONS, function ($notification) {
+		return $notification['isRead'] == "0";
+	});
+}
 
 
 
@@ -75,7 +78,7 @@ $UNREAD_NOTIFICATIONS = array_filter($NOTIFICATIONS, function ($notification) {
 					</div>
 				</div>
 				<hr class="w-px h-6 bg-gray-200" />
-				<div class="relative inline-flex" x-data="{ open: false }"><button class="inline-flex justify-center items-center group" aria-haspopup="true" @click.prevent="open = !open" :aria-expanded="open"><img class="w-8 h-8 rounded-full" src="images/user-avatar-32.png" width="32" height="32" alt="User" />
+				<div class="relative inline-flex" x-data="{ open: false }"><button class="inline-flex justify-center items-center group" aria-haspopup="true" @click.prevent="open = !open" :aria-expanded="open"><img class="w-8 h-8 rounded-full" src="../assets/icon.png" width="32" height="32" alt="User" />
 						<div class="flex items-center truncate">
 							<span class="truncate ml-2 text-sm font-medium text-white group-hover:text-white">
 								<?= $LOGGED_ADMIN['name'] ?>
