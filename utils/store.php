@@ -143,6 +143,14 @@ function getSubAdminUsers ($connect, $adminId) {
     return $result->fetchAll();
 }
 
+function getUser($connect, $userId) {
+    $query = "SELECT * FROM `users` WHERE `user_id` = ?";
+    $result = $connect->prepare($query);
+    $result->execute([$userId]);
+
+    return $result->fetch();
+}
+
 function getUsersWithSameCountryAsSubAdmin ($connect, $adminId) {
     $countries = getSubAdminCountries($connect, $adminId);
     $query = "SELECT * FROM users WHERE ";

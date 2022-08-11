@@ -16,7 +16,20 @@ if($LOGGED_ADMIN['type'] == "HIGH") {
 	}
 }
 else {
-	$SUBADMIN_USERS = getUsersWithSameCountryAsSubAdmin($connect, $LOGGED_ADMIN['admin_id']);
+	$usersId = getSubAdminUsers($connect, $LOGGED_ADMIN['admin_id']);
+	// Get admin assigned users
+	$assignedUsers = array_map(function ($item){
+		global $connect;
+		$user = getUser($connect, $item['user']);
+		return $user;
+	}, $usersId);
+
+	// Get users based of country
+	$usersByCountry = getUsersWithSameCountryAsSubAdmin($connect, $LOGGED_ADMIN['admin_id']);
+	
+	$SUBADMIN_USERS = array_merge($usersByCountry, $assignedUsers);
+
+	print_r($SUBADMIN_USERS);
 	if (isset($_GET['q'])) {
 		$searchResult = array_filter($SUBADMIN_USERS, function ($item) {
 			$query = $_GET['q'];
@@ -435,6 +448,7 @@ else {
 							</button>
 							<div class="fixed inset-0 bg-gray-900 bg-opacity-30 z-50 transition-opacity" x-show="modalOpen" x-transition:enter="transition ease-out duration-200" x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100" x-transition:leave="transition ease-out duration-100" x-transition:leave-start="opacity-100" x-transition:leave-end="opacity-0" aria-hidden="true" x-cloak></div>
 							<div id="feedback-modal" class="fixed inset-0 z-50 overflow-hidden flex items-center my-4 justify-center transform px-4 sm:px-6" role="dialog" aria-modal="true" x-show="modalOpen" x-transition:enter="transition ease-in-out duration-200" x-transition:enter-start="opacity-0 translate-y-4" x-transition:enter-end="opacity-100 translate-y-0" x-transition:leave="transition ease-in-out duration-200" x-transition:leave-start="opacity-100 translate-y-0" x-transition:leave-end="opacity-0 translate-y-4" x-cloak>
+								<!-- ADD USER FORM -->
 								<form method="post" action="./handler/user_handler.php" class="bg-white rounded shadow-lg overflow-auto max-w-lg w-full max-h-full" @click.outside="modalOpen = false" @keydown.escape.window="modalOpen = false">
 									<div class="px-5 py-3 border-b border-gray-200">
 										<div class="flex justify-between items-center">

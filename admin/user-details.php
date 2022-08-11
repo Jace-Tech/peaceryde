@@ -5,17 +5,17 @@ if (!isset($_GET['user'])) header('Location: ./users.php');
 ?>
 
 <?php
-$active = $title = "users";
-$users = new User($connect);
-$userServices = new UserService($connect);
-$services = new Service($connect);
-$trackings = new Tracking($connect);
+    $active = $title = "users";
+    $users = new User($connect);
+    $userServices = new UserService($connect);
+    $services = new Service($connect);
+    $trackings = new Tracking($connect);
 
-$USER = $users->get_user($_GET['user']);
-$USER_SERVICES = $userServices->getAllUserServices($_GET['user']);
-$USERS_DOCS = getUsersUploads($connect, $_GET['user']);
-$USER_SUB_ADMIN = getUsersSubAdmin($connect, $_GET['user']);
-$USERS_ADMIN = getSubAdmin($connect, $USER_SUB_ADMIN['sub_admin']);
+    $USER = $users->get_user($_GET['user']);
+    $USER_SERVICES = $userServices->getAllUserServices($_GET['user']);
+    $USERS_DOCS = getUsersUploads($connect, $_GET['user']);
+    $USER_SUB_ADMIN = getUsersSubAdmin($connect, $_GET['user']);
+    $USERS_ADMIN = getSubAdmin($connect, $USER_SUB_ADMIN['sub_admin']);
 ?>
 
 <!doctype html>
