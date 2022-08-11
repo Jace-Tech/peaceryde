@@ -117,6 +117,9 @@ function getNotications ($connect, $id) {
                 return in_array($id, $arr);
             });
         }
+        else {
+            return [];
+        }
     } catch (PDOException $e) {
         return false;
     }
