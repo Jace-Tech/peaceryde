@@ -69,12 +69,6 @@ $active = $title = "Manage";
                                             </button>
                                         </div>
                                     </div>
-                                    <!-- <div>
-                                        <div class="flex py-2">
-                                            <input type="checkbox" name="chat" class="form-check" value="1" id="chat">
-                                            <label for="chat">Chats Only</label>
-                                        </div>
-                                    </div> -->
                                     <div id="services">
                                         <div class="flex items-center">
                                             <label class="block text-sm font-medium mb-1" for="service">Services <span class="text-red-500">*</span></label>
@@ -95,6 +89,7 @@ $active = $title = "Manage";
                                             <?php if (count($service->getAllServices())) : ?>
                                                 <select name="service[]" multiple id="service">
                                                     <option value="" selected disabled>Choose services</option>
+                                                    <option value="*">All services</option>
                                                     <?php foreach ($service->getAllServices() as $service_item) : ?>
                                                         <option value="<?= $service_item['service_id']; ?>">
                                                             <?= $service_item['service']; ?>
@@ -138,15 +133,14 @@ $active = $title = "Manage";
 
                                         </div>
                                     </div>
-
-                                    </div>
                                 </div>
+                            </div>
 
-                                <div class="px-5 py-4 border-t border-gray-200">
-                                    <div class="flex flex-wrap justify-end space-x-2"><button class="btn-sm border-gray-200 hover:border-gray-300 text-gray-600" type="button" @click="modalOpen = false">Cancel</button>
-                                        <button type="submit" name="addAdmin" class="btn-sm bg-indigo-500 hover:bg-indigo-600 text-white">Create</button>
-                                    </div>
+                            <div class="px-5 py-4 border-t border-gray-200">
+                                <div class="flex flex-wrap justify-end space-x-2"><button class="btn-sm border-gray-200 hover:border-gray-300 text-gray-600" type="button" @click="modalOpen = false">Cancel</button>
+                                    <button type="submit" name="addAdmin" class="btn-sm bg-indigo-500 hover:bg-indigo-600 text-white">Create</button>
                                 </div>
+                            </div>
                         </form>
                     </div>
                 </div>

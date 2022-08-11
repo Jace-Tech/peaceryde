@@ -156,6 +156,35 @@ function getUser($connect, $userId) {
     return $result->fetch();
 }
 
+function getUserServices ($connect, $id) {
+    try {
+
+        $query = "SELECT * FROM `user_services` WHERE `user_id` = ?";
+        $result = $connect->prepare($query);
+        $result->execute([$id]);
+    
+        return $result->fetchAll();
+    } catch (PDOException $e) {
+        return [];
+    }
+}
+
+function getUsersWithSameServiceAsSubAdmin ($connect, $adminId) {
+    $services = json_decode(getSubAdminService($connect, $adminId)['services'], true);
+    $users = getAllUsers($connect);
+    return array_filter($users, function ($user) {
+        global $services;
+        global $connect;
+        
+        $userServices = getUserServices($connect, $user['user_id']);
+        foreach ($userServices as $userService) {
+            if(in_array($userService['service_id'], $services)) {
+                return $user;
+            }
+        }
+    });
+}
+
 function getUsersWithSameCountryAsSubAdmin ($connect, $adminId) {
     $countries = getSubAdminCountries($connect, $adminId);
     $query = "SELECT * FROM users WHERE ";

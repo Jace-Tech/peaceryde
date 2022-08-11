@@ -24,8 +24,8 @@ else {
 		return $user;
 	}, $usersId);
 
-	// Get users based of country
-	$usersByCountry = getUsersWithSameCountryAsSubAdmin($connect, $LOGGED_ADMIN['admin_id']);
+	// Get users based of service
+	$usersByService = getUsersWithSameServiceAsSubAdmin($connect, $LOGGED_ADMIN['admin_id']);
 	$SUBADMIN_USERS = array_merge($assignedUsers, $usersByCountry);
 
 	if (isset($_GET['q'])) {
