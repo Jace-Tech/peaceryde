@@ -7,14 +7,13 @@ $users = new User($connect);
 
 $ADMIN_UNREAD_MESSAGE = $messages->get_user_unread_messages($LOGGED_ADMIN['admin_id']);
 $NOTIFICATIONS = getNotications($connect, $LOGGED_ADMIN['admin_id']);
+var_dump($NOTIFICATIONS);
 $UNREAD_NOTIFICATIONS = [];
 if(count($NOTIFICATIONS)) {
 	$UNREAD_NOTIFICATIONS = array_filter($NOTIFICATIONS, function ($notification) {
 		return $notification['isRead'] == "0";
 	});
 }
-
-
 
 ?>
 <header class="sticky top-0 bg-white border-b border-gray-200 z-30" style="background-color:  #1161d9;">
