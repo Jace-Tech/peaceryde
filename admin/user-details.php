@@ -41,7 +41,9 @@ $USERS_ADMIN = getSubAdmin($connect, $USER_SUB_ADMIN['sub_admin']);
         <div class="mt-16">
             <div class="flex items-center justify-between flex-wrap g-3">
                 <h3 class="mt-2 text-gray-600 font-bold text-md uppercase">Profile</h3>
-                <a href="./user-details.php?user=<?= $_GET['user']; ?>&edit=<?= $_GET['user']; ?>" class="btn btn-sm bg-indigo-500 hover:bg-indigo-600 text-white">Edit</a>
+                <?php if(!isset($_GET['edit'])): ?>
+                    <a href="./user-details.php?user=<?= $_GET['user']; ?>&edit=<?= $_GET['user']; ?>" class="btn btn-sm bg-indigo-500 hover:bg-indigo-600 text-white">Edit</a>
+                <?php endif; ?>
             </div>
             <div class="mt-4">
                 <?php if (!isset($_GET['edit'])) : ?>
