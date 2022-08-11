@@ -91,21 +91,23 @@ function checkAdminCountry ($connect, $country) {
 
     foreach ($admins as $admin) {
         $countries = getSubAdminCountries($connect, $admin['admin_id']);
-        if(count($countries)) {
-            if(in_array($country, $countries)) {
-                return [
-                    "admin" => $admin,
-                    "countries" => $countries
-                ];
-            }
-            else {
+        if(is_array($countries)) {
+            if (count($countries)) {
+                if (in_array($country, $countries)) {
+                    return [
+                        "admin" => $admin,
+                        "countries" => $countries
+                    ];
+                } else {
+                    return NULL;
+                }
+            } else {
                 return NULL;
             }
         }
         else {
             return NULL;
         }
-
     }
 }
 
@@ -175,7 +177,7 @@ function getUsersWithSameServiceAsSubAdmin ($connect, $adminId) {
     return array_filter($users, function ($user) {
         global $services;
         global $connect;
-        
+
         $userServices = getUserServices($connect, $user['user_id']);
         foreach ($userServices as $userService) {
             if(in_array($userService['service_id'], $services)) {
