@@ -13,6 +13,7 @@ if(isset($_POST['addAdmin'])){
     $hashed_password = password_hash($password, PASSWORD_DEFAULT);
     $services = filter_var_array($_POST['service'], FILTER_SANITIZE_STRING);
     $admin_id = $admin->generate_id();
+    $isChatOnly = $_POST['chat'];
 
     if($admin->checkEmail($email)) {
         setAdminAlert("Email already exists", 'success');
@@ -22,13 +23,14 @@ if(isset($_POST['addAdmin'])){
 
     $user = [
         'name' => $name,
-        'countries' => $country,
-        'services' => $services,
+        'countries' => $country ?? "",
+        'services' => $services ?? "",
         'password' => $hashed_password,
         'admin_id' => $admin_id,
         'status' => "active",
         'type' => "LOW",
-        'email' => $email
+        'email' => $email,
+        'chat' => $isChatOnly
     ];
 
     $admin_result = $admin->addAdmin($user);

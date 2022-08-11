@@ -2,8 +2,9 @@
 <?php require_once("./addons/models.php"); ?>
 
 <?php
-$SERVICE = new Service($connect);
-$services = $SERVICE->getAllServices();
+    if($LOGGED_ADMIN['type'] != "HIGH") header("Location: ./dashboard.php");
+    $SERVICE = new Service($connect);
+    $services = $SERVICE->getAllServices();
 ?>
 
 <!doctype html>

@@ -7,6 +7,12 @@
     }
 </style>
 
+<?php  
+    if($LOGGED_ADMIN['type'] != "HIGH") {
+        $admin = getSubAdminService($connect, $LOGGED_ADMIN['admin_id']);
+    }
+?>
+
 <?php if (isset($active)) : ?>
     <div id="sidebar" class="flex flex-col absolute z-40 left-0 top-0 lg:static lg:left-auto lg:top-auto lg:translate-x-0 transform h-screen overflow-y-scroll lg:overflow-y-auto no-scrollbar w-64 lg:w-20 lg:sidebar-expanded:!w-64 2xl:!w-64 shrink-0 bg-gray-800 p-4 transition-all duration-200 ease-in-out" :class="sidebarOpen ? 'translate-x-0' : '-translate-x-64'" @click.outside="sidebarOpen = false" @keydown.escape.window="sidebarOpen = false" x-cloak="lg" style="overflow-x: hidden;">
         <div class="flex justify-between mb-10 pr-3 sm:px-2">
@@ -114,57 +120,119 @@
                         <?php endif; ?>
                     <?php endif; ?>
 
-                    <?php if (strtolower($active) === "users") : ?>
-                        <li class="px-3 py-2 rounded-sm mb-0.5 last:mb-0 bg-gray-900">
-                            <a class="block text-gray-50 hover:text-white truncate transition duration-150" href="users.php">
-                                <div class="flex items-center">
-                                    <svg class="shrink-0 h-6 w-6" viewBox="0 0 24 24">
-                                        <path class="fill-current text-gray-600 text-indigo-500" d="M18.974 8H22a2 2 0 012 2v6h-2v5a1 1 0 01-1 1h-2a1 1 0 01-1-1v-5h-2v-6a2 2 0 012-2h.974zM20 7a2 2 0 11-.001-3.999A2 2 0 0120 7zM2.974 8H6a2 2 0 012 2v6H6v5a1 1 0 01-1 1H3a1 1 0 01-1-1v-5H0v-6a2 2 0 012-2h.974zM4 7a2 2 0 11-.001-3.999A2 2 0 014 7z"></path>
-                                        <path class="fill-current text-gray-400 text-indigo-300" d="M12 6a3 3 0 110-6 3 3 0 010 6zm2 18h-4a1 1 0 01-1-1v-6H6v-6a3 3 0 013-3h6a3 3 0 013 3v6h-3v6a1 1 0 01-1 1z"></path>
-                                    </svg>
-                                    <span class="text-sm font-medium ml-3 lg:opacity-0 lg:sidebar-expanded:opacity-100 2xl:opacity-100 duration-200">Manage Users</span>
-                                </div>
-                            </a>
-                        </li>
-                    <?php else : ?>
-                        <li class="px-3 py-2 rounded-sm mb-0.5 last:mb-0">
-                            <a class="block text-gray-50 hover:text-white truncate transition duration-150" href="users.php">
-                                <div class="flex items-center">
-                                    <svg class="shrink-0 h-6 w-6" viewBox="0 0 24 24">
-                                        <path class="fill-current text-gray-600" :class="page.startsWith('team-') && 'text-indigo-500'" d="M18.974 8H22a2 2 0 012 2v6h-2v5a1 1 0 01-1 1h-2a1 1 0 01-1-1v-5h-2v-6a2 2 0 012-2h.974zM20 7a2 2 0 11-.001-3.999A2 2 0 0120 7zM2.974 8H6a2 2 0 012 2v6H6v5a1 1 0 01-1 1H3a1 1 0 01-1-1v-5H0v-6a2 2 0 012-2h.974zM4 7a2 2 0 11-.001-3.999A2 2 0 014 7z" />
-                                        <path class="fill-current text-gray-400" :class="page.startsWith('team-') && 'text-indigo-300'" d="M12 6a3 3 0 110-6 3 3 0 010 6zm2 18h-4a1 1 0 01-1-1v-6H6v-6a3 3 0 013-3h6a3 3 0 013 3v6h-3v6a1 1 0 01-1 1z" />
-                                    </svg>
-                                    <span class="text-sm font-medium ml-3 lg:opacity-0 lg:sidebar-expanded:opacity-100 2xl:opacity-100 duration-200">Manage Users</span>
-                                </div>
-                            </a>
-                        </li>
+                    <?php if($LOGGED_ADMIN['type'] == "HIGH"): ?>
+                        <?php if (strtolower($active) === "users") : ?>
+                            <li class="px-3 py-2 rounded-sm mb-0.5 last:mb-0 bg-gray-900">
+                                <a class="block text-gray-50 hover:text-white truncate transition duration-150" href="users.php">
+                                    <div class="flex items-center">
+                                        <svg class="shrink-0 h-6 w-6" viewBox="0 0 24 24">
+                                            <path class="fill-current text-gray-600 text-indigo-500" d="M18.974 8H22a2 2 0 012 2v6h-2v5a1 1 0 01-1 1h-2a1 1 0 01-1-1v-5h-2v-6a2 2 0 012-2h.974zM20 7a2 2 0 11-.001-3.999A2 2 0 0120 7zM2.974 8H6a2 2 0 012 2v6H6v5a1 1 0 01-1 1H3a1 1 0 01-1-1v-5H0v-6a2 2 0 012-2h.974zM4 7a2 2 0 11-.001-3.999A2 2 0 014 7z"></path>
+                                            <path class="fill-current text-gray-400 text-indigo-300" d="M12 6a3 3 0 110-6 3 3 0 010 6zm2 18h-4a1 1 0 01-1-1v-6H6v-6a3 3 0 013-3h6a3 3 0 013 3v6h-3v6a1 1 0 01-1 1z"></path>
+                                        </svg>
+                                        <span class="text-sm font-medium ml-3 lg:opacity-0 lg:sidebar-expanded:opacity-100 2xl:opacity-100 duration-200">Manage Users</span>
+                                    </div>
+                                </a>
+                            </li>
+                        <?php else : ?>
+                            <li class="px-3 py-2 rounded-sm mb-0.5 last:mb-0">
+                                <a class="block text-gray-50 hover:text-white truncate transition duration-150" href="users.php">
+                                    <div class="flex items-center">
+                                        <svg class="shrink-0 h-6 w-6" viewBox="0 0 24 24">
+                                            <path class="fill-current text-gray-600" :class="page.startsWith('team-') && 'text-indigo-500'" d="M18.974 8H22a2 2 0 012 2v6h-2v5a1 1 0 01-1 1h-2a1 1 0 01-1-1v-5h-2v-6a2 2 0 012-2h.974zM20 7a2 2 0 11-.001-3.999A2 2 0 0120 7zM2.974 8H6a2 2 0 012 2v6H6v5a1 1 0 01-1 1H3a1 1 0 01-1-1v-5H0v-6a2 2 0 012-2h.974zM4 7a2 2 0 11-.001-3.999A2 2 0 014 7z" />
+                                            <path class="fill-current text-gray-400" :class="page.startsWith('team-') && 'text-indigo-300'" d="M12 6a3 3 0 110-6 3 3 0 010 6zm2 18h-4a1 1 0 01-1-1v-6H6v-6a3 3 0 013-3h6a3 3 0 013 3v6h-3v6a1 1 0 01-1 1z" />
+                                        </svg>
+                                        <span class="text-sm font-medium ml-3 lg:opacity-0 lg:sidebar-expanded:opacity-100 2xl:opacity-100 duration-200">Manage Users</span>
+                                    </div>
+                                </a>
+                            </li>
+                        <?php endif; ?>
+                        
+                        <?php else: ?>
+                            <?php if( $admin["only_chat"] != "1" ): ?>
+                                <?php if (strtolower($active) === "users") : ?>
+                                    <li class="px-3 py-2 rounded-sm mb-0.5 last:mb-0 bg-gray-900">
+                                        <a class="block text-gray-50 hover:text-white truncate transition duration-150" href="users.php">
+                                            <div class="flex items-center">
+                                                <svg class="shrink-0 h-6 w-6" viewBox="0 0 24 24">
+                                                    <path class="fill-current text-gray-600 text-indigo-500" d="M18.974 8H22a2 2 0 012 2v6h-2v5a1 1 0 01-1 1h-2a1 1 0 01-1-1v-5h-2v-6a2 2 0 012-2h.974zM20 7a2 2 0 11-.001-3.999A2 2 0 0120 7zM2.974 8H6a2 2 0 012 2v6H6v5a1 1 0 01-1 1H3a1 1 0 01-1-1v-5H0v-6a2 2 0 012-2h.974zM4 7a2 2 0 11-.001-3.999A2 2 0 014 7z"></path>
+                                                    <path class="fill-current text-gray-400 text-indigo-300" d="M12 6a3 3 0 110-6 3 3 0 010 6zm2 18h-4a1 1 0 01-1-1v-6H6v-6a3 3 0 013-3h6a3 3 0 013 3v6h-3v6a1 1 0 01-1 1z"></path>
+                                                </svg>
+                                                <span class="text-sm font-medium ml-3 lg:opacity-0 lg:sidebar-expanded:opacity-100 2xl:opacity-100 duration-200">Manage Users</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                <?php else : ?>
+                                    <li class="px-3 py-2 rounded-sm mb-0.5 last:mb-0">
+                                        <a class="block text-gray-50 hover:text-white truncate transition duration-150" href="users.php">
+                                            <div class="flex items-center">
+                                                <svg class="shrink-0 h-6 w-6" viewBox="0 0 24 24">
+                                                    <path class="fill-current text-gray-600" :class="page.startsWith('team-') && 'text-indigo-500'" d="M18.974 8H22a2 2 0 012 2v6h-2v5a1 1 0 01-1 1h-2a1 1 0 01-1-1v-5h-2v-6a2 2 0 012-2h.974zM20 7a2 2 0 11-.001-3.999A2 2 0 0120 7zM2.974 8H6a2 2 0 012 2v6H6v5a1 1 0 01-1 1H3a1 1 0 01-1-1v-5H0v-6a2 2 0 012-2h.974zM4 7a2 2 0 11-.001-3.999A2 2 0 014 7z" />
+                                                    <path class="fill-current text-gray-400" :class="page.startsWith('team-') && 'text-indigo-300'" d="M12 6a3 3 0 110-6 3 3 0 010 6zm2 18h-4a1 1 0 01-1-1v-6H6v-6a3 3 0 013-3h6a3 3 0 013 3v6h-3v6a1 1 0 01-1 1z" />
+                                                </svg>
+                                                <span class="text-sm font-medium ml-3 lg:opacity-0 lg:sidebar-expanded:opacity-100 2xl:opacity-100 duration-200">Manage Users</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                <?php endif; ?>
+                            <?php endif; ?>
                     <?php endif; ?>
 
-                    <?php if (strtolower($active) === "message") : ?>
-                        <li class="px-3 py-2 rounded-sm mb-0.5 last:mb-0 bg-gray-900">
-                            <a class="block text-gray-50 hover:text-white truncate transition duration-150" href="message.php">
-                                <div class="flex items-center">
-                                    <svg class="shrink-0 h-6 w-6" viewBox="0 0 24 24">
-                                        <path class="fill-current text-gray-600 text-indigo-500" d="M16 13v4H8v-4H0l3-9h18l3 9h-8Z"></path>
-                                        <path class="fill-current text-gray-400 text-indigo-300" :class="page === 'inbox' &amp;&amp; 'text-indigo-300'" d="m23.72 12 .229.686A.984.984 0 0 1 24 13v8a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1v-8c0-.107.017-.213.051-.314L.28 12H8v4h8v-4H23.72ZM13 0v7h3l-4 5-4-5h3V0h2Z"></path>
-                                    </svg>
-                                    <span class="text-sm font-medium ml-3 lg:opacity-0 lg:sidebar-expanded:opacity-100 2xl:opacity-100 duration-200">Messages</span>
-                                </div>
-                            </a>
-                        </li>
+                    <?php if ($LOGGED_ADMIN['type'] == "HIGH") : ?>
+                        <?php if (strtolower($active) === "message") : ?>
+                            <li class="px-3 py-2 rounded-sm mb-0.5 last:mb-0 bg-gray-900">
+                                <a class="block text-gray-50 hover:text-white truncate transition duration-150" href="message.php">
+                                    <div class="flex items-center">
+                                        <svg class="shrink-0 h-6 w-6" viewBox="0 0 24 24">
+                                            <path class="fill-current text-gray-600 text-indigo-500" d="M16 13v4H8v-4H0l3-9h18l3 9h-8Z"></path>
+                                            <path class="fill-current text-gray-400 text-indigo-300" :class="page === 'inbox' &amp;&amp; 'text-indigo-300'" d="m23.72 12 .229.686A.984.984 0 0 1 24 13v8a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1v-8c0-.107.017-.213.051-.314L.28 12H8v4h8v-4H23.72ZM13 0v7h3l-4 5-4-5h3V0h2Z"></path>
+                                        </svg>
+                                        <span class="text-sm font-medium ml-3 lg:opacity-0 lg:sidebar-expanded:opacity-100 2xl:opacity-100 duration-200">Messages</span>
+                                    </div>
+                                </a>
+                            </li>
 
+                        <?php else : ?>
+                            <li class="px-3 py-2 rounded-sm mb-0.5 last:mb-0">
+                                <a class="block text-gray-50 hover:text-white truncate transition duration-150" href="message.php">
+                                    <div class="flex items-center">
+                                        <svg class="shrink-0 h-6 w-6" viewBox="0 0 24 24">
+                                            <path class="fill-current text-gray-600" d="M16 13v4H8v-4H0l3-9h18l3 9h-8Z"></path>
+                                            <path class="fill-current text-gray-400" :class="page === 'inbox' &amp;&amp; 'text-indigo-300'" d="m23.72 12 .229.686A.984.984 0 0 1 24 13v8a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1v-8c0-.107.017-.213.051-.314L.28 12H8v4h8v-4H23.72ZM13 0v7h3l-4 5-4-5h3V0h2Z"></path>
+                                        </svg>
+                                        <span class="text-sm font-medium ml-3 lg:opacity-0 lg:sidebar-expanded:opacity-100 2xl:opacity-100 duration-200">Messages</span>
+                                    </div>
+                                </a>
+                            </li>
+                        <?php endif; ?>
                     <?php else : ?>
-                        <li class="px-3 py-2 rounded-sm mb-0.5 last:mb-0">
-                            <a class="block text-gray-50 hover:text-white truncate transition duration-150" href="message.php">
-                                <div class="flex items-center">
-                                    <svg class="shrink-0 h-6 w-6" viewBox="0 0 24 24">
-                                        <path class="fill-current text-gray-600" d="M16 13v4H8v-4H0l3-9h18l3 9h-8Z"></path>
-                                        <path class="fill-current text-gray-400" :class="page === 'inbox' &amp;&amp; 'text-indigo-300'" d="m23.72 12 .229.686A.984.984 0 0 1 24 13v8a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1v-8c0-.107.017-.213.051-.314L.28 12H8v4h8v-4H23.72ZM13 0v7h3l-4 5-4-5h3V0h2Z"></path>
-                                    </svg>
-                                    <span class="text-sm font-medium ml-3 lg:opacity-0 lg:sidebar-expanded:opacity-100 2xl:opacity-100 duration-200">Messages</span>
-                                </div>
-                            </a>
-                        </li>
+                        <?php if ($admin['only_chat'] == "1") : ?>
+                            <?php if (strtolower($active) === "message") : ?>
+                                <li class="px-3 py-2 rounded-sm mb-0.5 last:mb-0 bg-gray-900">
+                                    <a class="block text-gray-50 hover:text-white truncate transition duration-150" href="message.php">
+                                        <div class="flex items-center">
+                                            <svg class="shrink-0 h-6 w-6" viewBox="0 0 24 24">
+                                                <path class="fill-current text-gray-600 text-indigo-500" d="M16 13v4H8v-4H0l3-9h18l3 9h-8Z"></path>
+                                                <path class="fill-current text-gray-400 text-indigo-300" :class="page === 'inbox' &amp;&amp; 'text-indigo-300'" d="m23.72 12 .229.686A.984.984 0 0 1 24 13v8a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1v-8c0-.107.017-.213.051-.314L.28 12H8v4h8v-4H23.72ZM13 0v7h3l-4 5-4-5h3V0h2Z"></path>
+                                            </svg>
+                                            <span class="text-sm font-medium ml-3 lg:opacity-0 lg:sidebar-expanded:opacity-100 2xl:opacity-100 duration-200">Messages</span>
+                                        </div>
+                                    </a>
+                                </li>
+
+                            <?php else : ?>
+                                <li class="px-3 py-2 rounded-sm mb-0.5 last:mb-0">
+                                    <a class="block text-gray-50 hover:text-white truncate transition duration-150" href="message.php">
+                                        <div class="flex items-center">
+                                            <svg class="shrink-0 h-6 w-6" viewBox="0 0 24 24">
+                                                <path class="fill-current text-gray-600" d="M16 13v4H8v-4H0l3-9h18l3 9h-8Z"></path>
+                                                <path class="fill-current text-gray-400" :class="page === 'inbox' &amp;&amp; 'text-indigo-300'" d="m23.72 12 .229.686A.984.984 0 0 1 24 13v8a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1v-8c0-.107.017-.213.051-.314L.28 12H8v4h8v-4H23.72ZM13 0v7h3l-4 5-4-5h3V0h2Z"></path>
+                                            </svg>
+                                            <span class="text-sm font-medium ml-3 lg:opacity-0 lg:sidebar-expanded:opacity-100 2xl:opacity-100 duration-200">Messages</span>
+                                        </div>
+                                    </a>
+                                </li>
+                            <?php endif; ?>
+                        <?php endif; ?>
                     <?php endif; ?>
                 </ul>
             </div>
@@ -235,13 +303,13 @@
         <div class="pt-3 hidden lg:inline-flex 2xl:hidden justify-end mt-auto">
             <div class="px-3 py-2">
                 <button @click="sidebarExpanded = !sidebarExpanded">
-                    <span class="sr-only">Expand / collapse sidebar</span> 
+                    <span class="sr-only">Expand / collapse sidebar</span>
                     <svg class="w-6 h-6 fill-current sidebar-expanded:rotate-180" viewBox="0 0 24 24">
                         <path class="text-gray-400" d="M19.586 11l-5-5L16 4.586 23.414 12 16 19.414 14.586 18l5-5H7v-2z" />
                         <path class="text-gray-600" d="M3 23H1V1h2z" />
                     </svg>
                 </button>
-            </div>  
+            </div>
         </div>
     </div>
 <?php endif; ?>

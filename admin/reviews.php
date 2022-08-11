@@ -1,11 +1,13 @@
 <?php require_once("./addons/models.php"); ?>
 
 <?php
-$active = $title = "Review";
-$type = $_GET['type'] ?? "text";
-$reviews = new Review($connect);
-$users = new User($connect);
-$REVIEWS = $reviews->getOneTypeReview($type);
+    if($LOGGED_ADMIN['type'] != "HIGH") header("Location: ./dashboard.php");
+    
+    $active = $title = "Review";
+    $type = $_GET['type'] ?? "text";
+    $reviews = new Review($connect);
+    $users = new User($connect);
+    $REVIEWS = $reviews->getOneTypeReview($type);
 ?>
 
 <!doctype html>

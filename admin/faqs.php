@@ -2,6 +2,7 @@
 <?php require_once("./addons/models.php"); ?>
 
 <?php 
+    if($LOGGED_ADMIN['type'] != "HIGH") header("Location: ./dashboard.php");
     $faqs = new FAQs($connect); 
 ?>
 

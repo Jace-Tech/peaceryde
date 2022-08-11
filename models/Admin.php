@@ -152,13 +152,14 @@ class Admin {
     {
         extract($admin);
 
-        $query = "INSERT INTO `sub_admin`(`services`, `countries`, `admin_id`, `status`) VALUES (:service, :country, :admin_id, :status)";
+        $query = "INSERT INTO `sub_admin`(`services`, `countries`, `admin_id`, `status`, `only_chat`) VALUES (:service, :country, :admin_id, :status, :chat)";
         $result = $this->connection->prepare($query);
         $result->execute([
             'service' => json_encode($services),
             'country' => json_encode($countries),
             'admin_id' => $admin_id,
-            'status' => $status 
+            'status' => $status,
+            'chat' => $chat ?? 0
         ]);
 
         return $result;

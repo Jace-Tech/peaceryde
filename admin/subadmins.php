@@ -2,10 +2,11 @@
 
 
 <?php
-$admin = new Admin($connect);
-$service = new Service($connect);
+    if($LOGGED_ADMIN['type'] != "HIGH") header("Location: ./dashboard.php");
+    $admin = new Admin($connect);
+    $service = new Service($connect);
 
-$active = $title = "Manage";
+    $active = $title = "Manage";
 ?>
 
 <!doctype html>

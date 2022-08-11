@@ -104,6 +104,18 @@ function addSubAdminUserAlt ($connect, $user, $admin) {
     }
 }
 
+function getNotications ($connect, $id) {
+    try {
+        $query = "SELECT * FROM `notification` WHERE `admin_id` = ?";
+        $result = $connect->prepare($query);
+        $result->execute([ $id ]);
+
+        return $result->fetchAll();
+    } catch (PDOException $e) {
+        return false;
+    }
+}
+
 function setAdminNotification ($connect, $link, $admin, $message) {
     try {
         $query = "INSERT INTO `notification`(`admin`, `link`, `message`) VALUES (:admin, :link, :message)";
