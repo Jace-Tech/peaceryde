@@ -96,7 +96,7 @@ else {
 										<div class="space-y-3">
 
 											<div>
-												<label class="block text-sm font-medium mb-1" for="title">Title <span class="text-red-500">*</span></label>
+												<label class="block text-sm font-medium mb-1" for="title">Title</label>
 												<select name="title" id="title" class="form-select w-full">
 													<option value="" selected disabled>Title</option>
 													<?php foreach ($titles as $title) : ?>
@@ -463,7 +463,7 @@ else {
 										<div class="space-y-3">
 
 											<div>
-												<label class="block text-sm font-medium mb-1" for="title">Title <span class="text-red-500">*</span></label>
+												<label class="block text-sm font-medium mb-1" for="title">Title</label>
 												<select name="title" id="title" class="form-select w-full">
 													<option value="" selected disabled>Title</option>
 													<?php foreach ($titles as $title) : ?>
