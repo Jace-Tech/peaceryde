@@ -39,7 +39,7 @@ if(count($NOTIFICATIONS)) {
                             <?php if(count($UNREAD_NOTIFICATIONS)): ?>
                                 <?php foreach($UNREAD_NOTIFICATIONS as $notice): ?>
                                     <li class="border-b border-gray-200 last:border-0">
-                                        <a class="block py-2 px-4 hover:bg-gray-50" href="<?= $notice['link']; ?>" @click="open = false" @focus="open = true" @focusout="open = false">
+                                        <a class="block py-2 px-4 hover:bg-gray-50" href="<?= $notice['link']; ?>&not_id=<?= $notice['id']; ?>" @click="open = false" @focus="open = true" @focusout="open = false">
                                             <span class="block text-sm mb-2">📣 
                                                 <span class="font-medium text-gray-800"><?= $notice['message']; ?></span> 
                                             </span> 

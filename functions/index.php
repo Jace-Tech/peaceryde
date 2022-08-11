@@ -125,6 +125,22 @@ function getNotications ($connect, $id) {
     }
 }
 
+function markNotificationAsSeen ($connect, $id) {
+    try {
+        $query = "UPDATE `notification` SET `isRead` = :read WHERE `id` = :id";
+        $result = $connect->prepare($query);
+        $result->execute([
+            "read" => 1,
+            "id" => $id
+        ]);
+
+        return $result;
+
+    } catch (PDOException $e) {
+        return false;
+    }
+}
+
 function setAdminNotification ($connect, $link, $admin, $message) {
     try {
         $query = "INSERT INTO `notification`(`admin`, `link`, `message`) VALUES (:admin, :link, :message)";
