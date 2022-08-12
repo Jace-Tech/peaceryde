@@ -853,6 +853,7 @@
     display: block;
   }
 
+
   .mt-5 {
     width: 400px;
   }
@@ -1976,6 +1977,20 @@ width: 100%;
     height: 266px;
     margin-left: 12%;
   }
+  .makereviewcard {
+    width: 393px;
+    margin-left: 6%;
+}
+.makereviewp {
+  font-family: Ubuntu;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  padding-left: 110px;
+  padding-top: 29px;
+}
 
   .contactus {
     font-size: 40px;
@@ -3516,9 +3531,14 @@ width: 100%;
     padding-left: 35px;
   }
 
+  .rating {
+
+    margin-left:5%
+
+}
   .makereviewcard {
-    width: 320px;
-    margin-left: 0px;
+    width: 90%;
+    margin-left: 4%;
   }
 
   .makereviewp {
@@ -3528,7 +3548,7 @@ width: 100%;
     line-height: 24px;
     letter-spacing: 0em;
     text-align: left;
-    padding-left: 49px;
+    padding-left: 90px;
     padding-top: 29px;
   }
 
@@ -3539,23 +3559,17 @@ width: 100%;
     line-height: 24px;
     letter-spacing: 0em;
     text-align: left;
-    padding-left: 29px;
+    padding-left: 49px;
     padding-top: 29px;
   }
 
   .reviewtextarea {
-    width: 300px;
+    width: 80%;
     height: 184px;
-    margin-left: 8px;
-    margin-top: 26px;
-    font-family: Ubuntu;
-    font-size: 13px;
-    font-weight: 400;
-    line-height: 24px;
-    letter-spacing: 0em;
+    margin-left: 10%;
     text-align: left;
-    color: #888888;
-    border: 1px solid #555555;
+    padding-left: 5%;
+    padding-right: 5%;
   }
 
   .sbpage {
@@ -3778,7 +3792,7 @@ width: 100%;
   }
 
   .reviewpage {
-    margin-top: 255px;
+    margin-top: 155px;
   }
 
   .servicebtn {
@@ -5266,10 +5280,14 @@ width: 100%;
 
     padding-left: 35px;
   }
+  .rating {
 
+    margin-left:5%
+
+}
   .makereviewcard {
-    width: 320px;
-    margin-left: 0px;
+    width: 90%;
+    margin-left: 4%;
   }
 
   .makereviewp {
@@ -5279,7 +5297,7 @@ width: 100%;
     line-height: 24px;
     letter-spacing: 0em;
     text-align: left;
-    padding-left: 49px;
+    padding-left: 90px;
     padding-top: 29px;
   }
 
@@ -5290,23 +5308,17 @@ width: 100%;
     line-height: 24px;
     letter-spacing: 0em;
     text-align: left;
-    padding-left: 29px;
+    padding-left: 49px;
     padding-top: 29px;
   }
 
   .reviewtextarea {
-    width: 300px;
+    width: 80%;
     height: 184px;
-    margin-left: 8px;
-    margin-top: 26px;
-    font-family: Ubuntu;
-    font-size: 13px;
-    font-weight: 400;
-    line-height: 24px;
-    letter-spacing: 0em;
+    margin-left: 10%;
     text-align: left;
-    color: #888888;
-    border: 1px solid #555555;
+    padding-left: 5%;
+    padding-right: 5%;
   }
 
   .sbpage {
@@ -5538,8 +5550,12 @@ width: 100%;
   }
 
   .reviewpage {
-    margin-top: 255px;
+    margin-top: 155px;
   }
+  /* .moverating
+  {
+    margin-left: 5%;
+  } */
 
   .nbitext {
     font-family: 'Ubuntu';
@@ -7059,7 +7075,7 @@ width: 100%;
 
   .makereviewcard {
     width: 320px;
-    margin-left: 0px;
+    margin-left: 10px;
   }
 
   .makereviewp {
@@ -7085,9 +7101,9 @@ width: 100%;
   }
 
   .reviewtextarea {
-    width: 300px;
+    width: 80%;
     height: 184px;
-    margin-left: 8px;
+    margin-left: 10%;
     margin-top: 26px;
     font-family: Ubuntu;
     font-size: 13px;
@@ -8793,7 +8809,7 @@ width: 100%;
 
   .makereviewcard {
     width: 320px;
-    margin-left: 0px;
+    margin-left: 5px;
   }
 
   .makereviewp {
@@ -8819,9 +8835,9 @@ width: 100%;
   }
 
   .reviewtextarea {
-    width: 300px;
+    width: 80%;
     height: 184px;
-    margin-left: 8px;
+    margin-left: 10%;
     margin-top: 26px;
     font-family: Ubuntu;
     font-size: 13px;
@@ -10516,9 +10532,9 @@ width: 100%;
   }
 
   .reviewtextarea {
-    width: 250px;
+    width: 80%;
     height: 184px;
-    margin-left: 28px;
+    margin-left: 10%;
     margin-top: 26px;
     font-family: Ubuntu;
     font-size: 13px;
@@ -13777,9 +13793,9 @@ width: 100%;
   }
 
   .reviewtextarea {
-    width: 207px;
+    width: 80%;
     height: 184px;
-    margin-left: 20px;
+    margin-left: 10%;
     margin-top: 26px;
     font-family: Ubuntu;
     font-size: 13px;

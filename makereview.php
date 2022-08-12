@@ -110,6 +110,7 @@
                     <div class="col-md-4">
                         <form action="./handlers/review_handler.php" method="post" enctype="multipart/form-data" class="card makereviewcard">
                             <p class="makereviewp">Rate Your Experience</p>
+                            <div class="moverating">
                             <fieldset class="rating">
                                 <input type="radio" id="star5" name="rating" value="5" /><label class="full" for="star5" title="Awesome - 5 stars" style="margin-right: 110px;"></label>
                                 <input type="radio" id="star4half" name="rating" value="4.5" /><label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
@@ -122,6 +123,8 @@
                                 <input type="radio" id="star1" name="rating" value="1" /><label class="full" for="star1" title="Sucks big time - 1 star"></label>
                                 <input type="radio" id="starhalf" name="rating" value="0.5" /><label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
                             </fieldset>
+                            </div>
+                            
                             <p class="reviewfieldsetp" style=" padding: 0; text-align: center; ">Video Clip</p>
                             <div style="padding: .3rem 2rem;">
                                 <input name="video" type="file" />
@@ -129,7 +132,7 @@
                             <p class="reviewfieldsetp">Tell us about your expeience</p>
                             <textarea class="reviewtextarea" name="review"  placeholder="This is where you write your review.explain what happend, keep your feedback honest, helpfyl, and constructive"></textarea>
                             <div class="mt-4 p-4 text-right">
-                                <button name="add" type="submit" class="btn btn-block border-0" style="background-color: #a0bd1c;">Post review</button>
+                                <button name="add" type="submit" class="btn btn-block border-0" style="background-color: #a0bd1c; color:white">Post review</button>
                             </div>
                         </form>
                     </div>
