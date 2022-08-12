@@ -18,16 +18,28 @@ function triggerHtmlEvent(element, eventName) {
     }
   }
 
-  jQuery('.lang-select').click(function(e) {
-    e.preventDefault();
-    var theLang = jQuery(this).attr('data-lang');
-    jQuery('.goog-te-combo').val(theLang);
-    document.querySelectorAll(".langName").forEach(item => {
-        item.innerHTML = jQuery(this).html();
+  document.querySelectorAll(".lang-select").forEach(lang => {
+    lang.addEventListener("click", (e) => {
+        e.preventDefault();
+        var theLang = jQuery(this).attr('data-lang');
+        jQuery('.goog-te-combo').val(theLang);
+        document.querySelectorAll(".langName").forEach(item => {
+            item.innerHTML = jQuery(this).html();
+        })
     })
+  })
 
-    //alert(jQuery(this).attr('href'));
-    window.location = jQuery(this).attr('href');
-    location.reload();
+//   jQuery('.lang-select').click(function(e) {
+//     console.log(e)
+//     e.preventDefault();
+//     var theLang = jQuery(this).attr('data-lang');
+//     jQuery('.goog-te-combo').val(theLang);
+//     document.querySelectorAll(".langName").forEach(item => {
+//         item.innerHTML = jQuery(this).html();
+//     })
 
-  });
+//     //alert(jQuery(this).attr('href'));
+//     window.location = jQuery(this).attr('href');
+//     location.reload();
+
+//   });
