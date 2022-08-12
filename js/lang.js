@@ -18,7 +18,8 @@ function triggerHtmlEvent(element, eventName) {
     }
   }
 
-  jQuery('.lang-select').click(function() {
+  jQuery('.lang-select').click(function(e) {
+    e.preventDefault();
     var theLang = jQuery(this).attr('data-lang');
     jQuery('.goog-te-combo').val(theLang);
     document.querySelectorAll(".langName").forEach(item => {
