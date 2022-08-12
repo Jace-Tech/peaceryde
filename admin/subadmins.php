@@ -186,6 +186,7 @@ $active = $title = "Manage";
                             <tbody class="text-sm divide-y divide-gray-200">
                                 <?php foreach ($admin->getAllSubAdmins() as $subadmin) : extract($subadmin); ?>
                                     <tr>
+                                        <!-- Name Column -->
                                         <td class="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap">
                                             <div class="flex items-center">
                                                 <div class="w-10 h-10 shrink-0 mr-2 sm:mr-3">
@@ -197,16 +198,19 @@ $active = $title = "Manage";
                                             </div>
                                         </td>
 
+                                        <!-- Email Column -->
                                         <td class="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap">
                                             <div class="text-left"><?= $email; ?></div>
                                         </td>
 
+                                        <!-- Service Column -->
                                         <td class="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap">
                                             <div class="text-left flex items-center">
                                                 <?php if(getSubAdminService($connect, $admin_id)['services'] == "*"): ?>
                                                     <span class="text-sm">All Services</span>
                                                 <?php else: ?>
-                                                    <?php $adminServices = json_decode(getSubAdminService($connect, $admin_id)['services'], true); ?>
+                                                    <?php $adminServices = is_array(json_decode(getSubAdminService($connect, $admin_id)['services'], true)) ? 
+                                                        json_decode(getSubAdminService($connect, $admin_id)['services'], true) : []; ?>
                                                     <?php if (count($adminServices)) : ?>
                                                         <ul>
                                                             <?php foreach ($adminServices as $role) : ?>
@@ -220,6 +224,7 @@ $active = $title = "Manage";
                                             </div>
                                         </td>
 
+                                        <!-- Country Column -->
                                         <td class="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap">
                                             <?php if($admin->getSubAdmin($admin_id)['countries'] == "*"): ?>
                                                 <span class="text-sm">All countries</span>
@@ -230,6 +235,7 @@ $active = $title = "Manage";
                                             <?php endif; ?>
                                         </td>
 
+                                        <!-- Status Column -->
                                         <td class="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap">
                                             <?php if ($admin->getStatus($admin_id) == "active") : ?>
                                                 <div class="inline-flex font-medium bg-green-100 text-green-600 rounded-full text-xs text-center px-2.5 py-0.5" style="text-transform: capitalize;">
@@ -242,6 +248,7 @@ $active = $title = "Manage";
                                             <?php endif; ?>
                                         </td>
 
+                                        <!-- Options Column  -->
                                         <td class="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap w-px">
                                             <div class="flex">
                                                 <?php if ($admin->getStatus($admin_id) == "active") : ?>
