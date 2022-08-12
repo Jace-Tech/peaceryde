@@ -139,7 +139,10 @@
                     </li>
                     <li class="corp layout fs-13 ">
                       info@peacerydeafrica.com</li>
+
                   </ul>
+                  <br>
+                  <i>... Peace begin with a smile </i>
                 </div>
               </div>
             </div>
@@ -218,7 +221,7 @@
             <p class="adp"><a class="locaddress" href="Index.php"> &copy; &nbsp;
                 2022 PeaceRyde Africa LLC</a></p>
           </div>
-          <div class="col-md-5 col-sm-12 col-xs-12">
+          <div class="col-md-9 col-sm-12 col-xs-12">
             <p class="shorttest">PeaceRyde Africa LLC is Registered with the state of Delaware USA
               under the File Number 6549846</p>
           </div>
@@ -250,5 +253,3 @@
   })();
 </script>
 <!--End of Tawk.to Script-->
-<script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-<script src="./js/lang.js"></script>
