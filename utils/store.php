@@ -205,32 +205,39 @@ function getSubAdminWithSameService ($connect, $userId) {
     $userServices = getUserServices($connect, $userId);
     $getAllSubAdmins = getAllSubAdmins($connect);
 
+    // If there are subadmins
     if(is_array($getAllSubAdmins) && count($getAllSubAdmins)) {
+        // Loop through the subadmins
         foreach($getAllSubAdmins as $subAdmin) {
+            // Get the service of each of the subadmins
             $adminService = getSubAdminService($connect, $subAdmin['admin_id'])["services"];
-
+            // If there's a service set for the subadmin
             if($adminService){
+                // Convert the service to an array
                 $parsedService = json_decode(getSubAdminService($connect, $subAdmin['admin_id'])["services"], true);
+
+                // Check if it's an array
                 if(is_array($parsedService) && count($parsedService)) {
+                    // Check if it's all service
                     if(in_array("*", $parsedService)) {
                         return $subAdmin;
                     }
                     else {
+                        // Check if users service is an array
                         if(is_array($userServices) && count($userServices)) {
+                            // Loop through all the users service
                             foreach($userServices as $userService) {
+                                // Get the user of the user
                                 $service_user = $userService['service_id'];
+                                // Check whether the service exists in the subadmins own
                                 if(in_array($service_user, $adminService)) {
                                     return $subAdmin;
-                                    break;
                                 }
-                                return false;
                             }
                         }
-                        return false;
                     }
                 }
             }
-            return false;
         }
     }
     return false;
