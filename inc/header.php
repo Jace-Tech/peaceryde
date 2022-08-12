@@ -112,13 +112,16 @@
               <path fill-rule="evenodd" clip-rule="evenodd" d="M0.450806 9.04171C0.450806 8.71954 0.711973 8.45837 1.03414 8.45837H11.9658C12.288 8.45837 12.5491 8.71954 12.5491 9.04171C12.5491 9.36387 12.288 9.62504 11.9658 9.62504H1.03414C0.711973 9.62504 0.450806 9.36387 0.450806 9.04171Z" fill="#080C58"/>
               <path fill-rule="evenodd" clip-rule="evenodd" d="M0.450806 4.95833C0.450806 4.63617 0.711973 4.375 1.03414 4.375H11.9658C12.288 4.375 12.5491 4.63617 12.5491 4.95833C12.5491 5.2805 12.288 5.54167 11.9658 5.54167H1.03414C0.711973 5.54167 0.450806 5.2805 0.450806 4.95833Z" fill="#080C58"/>
               </svg>
-              &nbsp;<span>English |</span></a>
+              &nbsp;<span class="langName">English |</span></a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
             <li><a href="#googtrans(en|en)" class="dropdown-item  lang-select" data-lang="en" style="color: black; font-size: 15px; padding-bottom: 10px;">English </a></li>
             <li><a class=" dropdown-item lang-select" href="#googtrans(en|es)" data-lang="es" style="color: black; font-size: 15px; padding-bottom: 10px;">Espanol</a></li>
+            <li><a class=" dropdown-item lang-select" href="#googtrans(en|hi)" data-lang="hi" style="color: black; font-size: 15px; padding-bottom: 10px;">	Hindi</a></li>
+            <li><a class=" dropdown-item lang-select" href="#googtrans(en|pt)" data-lang="pt" style="color: black; font-size: 15px; padding-bottom: 10px;">	Portuguese</a></li>
+            <li><a class=" dropdown-item lang-select" href="#googtrans(en|ko)" data-lang="ko" style="color: black; font-size: 15px; padding-bottom: 10px;">	Korean</a></li>
             <li><a class=" dropdown-item lang-select"  href="#googtrans(en|fr)" data-lang="fr" style="color: black; font-size: 15px; padding-bottom: 10px;">French</a> </li>
             <li><a class="dropdown-item lang-select" href="#googtrans(en|zh-CN)" data-lang="zh-CN" style="color: black; font-size: 15px; padding-bottom: 10px;">Chinese</a> </li>
-            <li><a class=" dropdown-item lang-select" href="#googtrans(en|ja)" data-lang="ja" style="color: black; font-size: 15px; padding-bottom: 10px;">Japanese</a> </li>
+            <li><a class=" dropdown-item lang-select" href="#googtrans(en|ru)" data-lang="ru" style="color: black; font-size: 15px; padding-bottom: 10px;">Russian</a> </li>
           </ul>
         </div>
         <li>
@@ -159,27 +162,16 @@
           <li class=" nav-item dropdown lang">
             <a class="nav-link dropdown-toggle nav english" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false"
               >
-              <img src="assets/image_2022-02-27_16-21-31.png" width="17" style="margin-top:-4px;font-size: 14px;">&nbsp;<span>English |</span></a>
+              <img src="assets/image_2022-02-27_16-21-31.png" width="17" style="margin-top:-4px;font-size: 14px;">&nbsp;<span class="langName">English |</span></a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <li><a class="dropdown-item" href="NBV.php"
-                  style="color: black; font-size: 15px; padding-bottom: 10px;">Nigeria
-                </a></li>
-              <li><a class=" dropdown-item" href="NTWP.php"
-                  style="color: black; font-size: 15px; padding-bottom: 10px;">Nigeria</a>
-              </li>
-              <li><a class=" dropdown-item" href="#"
-                  style="color: black; font-size: 15px; padding-bottom: 10px;">Nigeria</a>
-              </li>
-              <li><a class="dropdown-item" href="#"
-                  style="color: black; font-size: 15px; padding-bottom: 10px;">Nigeria</a>
-              </li>
-              <li><a class=" dropdown-item" href="#"
-                  style="color: black; font-size: 15px; padding-bottom: 10px;">Nigeria</a>
-              </li>
-              <li><a class=" dropdown-item" href="#"
-                  style="color: black; font-size: 15px; padding-bottom: 10px;">Nigeria</a>
-              </li>
-
+            <li><a href="#googtrans(en|en)" class="dropdown-item  lang-select" data-lang="en" style="color: black; font-size: 15px; padding-bottom: 10px;">English </a></li>
+            <li><a class=" dropdown-item lang-select" href="#googtrans(en|es)" data-lang="es" style="color: black; font-size: 15px; padding-bottom: 10px;">Espanol</a></li>
+            <li><a class=" dropdown-item lang-select" href="#googtrans(en|hi)" data-lang="hi" style="color: black; font-size: 15px; padding-bottom: 10px;">	Hindi</a></li>
+            <li><a class=" dropdown-item lang-select" href="#googtrans(en|pt)" data-lang="pt" style="color: black; font-size: 15px; padding-bottom: 10px;">	Portuguese</a></li>
+            <li><a class=" dropdown-item lang-select" href="#googtrans(en|ko)" data-lang="ko" style="color: black; font-size: 15px; padding-bottom: 10px;">	Korean</a></li>
+            <li><a class=" dropdown-item lang-select"  href="#googtrans(en|fr)" data-lang="fr" style="color: black; font-size: 15px; padding-bottom: 10px;">French</a> </li>
+            <li><a class="dropdown-item lang-select" href="#googtrans(en|zh-CN)" data-lang="zh-CN" style="color: black; font-size: 15px; padding-bottom: 10px;">Chinese</a> </li>
+            <li><a class=" dropdown-item lang-select" href="#googtrans(en|ru)" data-lang="ru" style="color: black; font-size: 15px; padding-bottom: 10px;">Russian</a> </li>
             </ul>
           </li>
           <li>

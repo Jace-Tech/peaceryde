@@ -1,6 +1,6 @@
 function googleTranslateElementInit () {
     new google.translate.TranslateElement({
-        pageLanguage: 'en', includedLanguages: 'en,es,pl,pt,zh-CN,zh-TW,ar,so,ru,hy,ko,vi',
+        pageLanguage: 'en', includedLanguages: 'en,es,hi,pl,pt,zh-CN,zh-TW,ar,so,ru,hy,ko,fr,vi',
         layout: google.translate.TranslateElement.InlineLayout.SIMPLE
     }, 'google_translate_element');
 }
@@ -21,6 +21,9 @@ function triggerHtmlEvent(element, eventName) {
   jQuery('.lang-select').click(function() {
     var theLang = jQuery(this).attr('data-lang');
     jQuery('.goog-te-combo').val(theLang);
+    document.querySelectorAll(".langName").forEach(item => {
+        item.innerHTML = jQuery(this).html();
+    })
 
     //alert(jQuery(this).attr('href'));
     window.location = jQuery(this).attr('href');
