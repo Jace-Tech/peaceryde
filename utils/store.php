@@ -172,19 +172,25 @@ function getUserServices ($connect, $id) {
 }
 
 function getUsersWithSameServiceAsSubAdmin ($connect, $adminId) {
-    $services = json_decode(getSubAdminService($connect, $adminId)['services'], true);
-    $users = getAllUsers($connect);
-    return array_filter($users, function ($user) {
-        global $services;
-        global $connect;
+    if(getSubAdminService($connect, $adminId)['services']) {
+        $services = json_decode(getSubAdminService($connect, $adminId)['services'], true);
+        $users = getAllUsers($connect);
+        return array_filter($users, function ($user) {
+            global $services;
+            global $connect;
 
-        $userServices = getUserServices($connect, $user['user_id']);
-        foreach ($userServices as $userService) {
-            if(in_array($userService['service_id'], $services)) {
-                return $user;
+            $userServices = getUserServices($connect, $user['user_id']);
+            foreach ($userServices as $userService) {
+                if(in_array($userService['service_id'], $services)) {
+                    return $user;
+                }
             }
-        }
-    });
+        });
+    }
+    else {
+        return [];
+    }
+    
 }
 
 function getUsersWithSameCountryAsSubAdmin ($connect, $adminId) {
