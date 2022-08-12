@@ -24,7 +24,7 @@ if($LOGGED_ADMIN['type'] != "HIGH") {
 
 			// Get users based of service
 			$usersByService = getUsersWithSameServiceAsSubAdmin($connect, $LOGGED_ADMIN['admin_id']);
-			$SUBADMIN_USERS = array_merge($assignedUsers, $usersByCountry);
+			$SUBADMIN_USERS = array_merge($assignedUsers, $usersByService);
 
 		}
 

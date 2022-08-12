@@ -8,6 +8,43 @@
 	$reviews = new Review($connect);
 
 	assignAutomatically($connect);
+	if($LOGGED_ADMIN['type'] != "HIGH") {
+		if(getSubAdminService($connect, $LOGGED_ADMIN['admin_id'])['services']){
+			$subAdminServices = json_decode(getSubAdminService($connect, $LOGGED_ADMIN['admin_id'])['services'], true);
+	
+			if(in_array("*", $subAdminServices)) {
+				$SUBADMIN_USERS = $users->get_all_users();
+			}
+			else {
+				$usersId = getSubAdminUsers($connect, $LOGGED_ADMIN['admin_id']);
+	
+				// Get admin assigned users
+				$assignedUsers = array_map(function ($item){
+					global $connect;
+					$user = getUser($connect, $item['user']);
+					return $user;
+				}, $usersId);
+	
+				// Get users based of service
+				$usersByService = getUsersWithSameServiceAsSubAdmin($connect, $LOGGED_ADMIN['admin_id']);
+				$SUBADMIN_USERS = array_merge($assignedUsers, $usersByService);
+	
+			}
+	
+			if (isset($_GET['q'])) {
+				$searchResult = array_filter($SUBADMIN_USERS, function ($item) {
+					$query = $_GET['q'];
+					return preg_match("/.*[$query].*/", $item['firstname'])
+					|| preg_match("/.*[$query].*/", $item['lastname']) 
+					|| preg_match("/.*[$query].*/", $item['email'])
+					|| preg_match("/.*[$query].*/", $item['phone']);
+				});
+			}
+	
+		} else {
+			$SUBADMIN_USERS = [];
+		}
+	}
 
 ?>
 
@@ -64,6 +101,7 @@
 					</div>
 					<div class="grid grid-cols-12 gap-6">
 						<!-- All Users -->
+						
 						<div class="flex flex-col col-span-full sm:col-span-6 xl:col-span-4 bg-white shadow-lg rounded-sm border border-gray-200">
 							<a href="./users.php" class="px-5 pt-5 block">
 								<header class="flex justify-between items-start mb-2">
@@ -72,41 +110,47 @@
 								</header>
 								<div class="flex items-start my-8">
 									<div class="text-3xl font-bold text-gray-800 mr-2">
-										<?= count($users->get_all_users()); ?>
+										<?php if($LOGGED_ADMIN['type'] == "HIGH"): ?>
+											<?= count($users->get_all_users()); ?>
+										<?php else: ?>
+											<?= $SUBADMIN_USERS; ?>
+										<?php endif; ?>
 									</div>
 								</div>
 							</a>
 						</div>
 
-						<!-- All SubAdmins -->
-						<div class="flex flex-col col-span-full sm:col-span-6 xl:col-span-4 bg-white shadow-lg rounded-sm border border-gray-200">
-							<a href="./subadmins.php" class="px-5 pt-5 block">
-								<header class="flex justify-between items-start mb-2">
-									<img src="images/icon-02.svg" width="32" height="32" alt="Icon 02" />
-									<h2 class="text-lg font-semibold text-gray-800 mb-2">No of sub-admins</h2>
-								</header>
-								<div class="flex items-start my-8">
-									<div class="text-3xl font-bold text-gray-800 mr-2">
-										<?= count($subadmins->getAllSubAdmins()) ?>
+						<?php if($LOGGED_ADMIN['type'] == "HIGH"): ?>
+							<!-- All SubAdmins -->
+							<div class="flex flex-col col-span-full sm:col-span-6 xl:col-span-4 bg-white shadow-lg rounded-sm border border-gray-200">
+								<a href="./subadmins.php" class="px-5 pt-5 block">
+									<header class="flex justify-between items-start mb-2">
+										<img src="images/icon-02.svg" width="32" height="32" alt="Icon 02" />
+										<h2 class="text-lg font-semibold text-gray-800 mb-2">No of sub-admins</h2>
+									</header>
+									<div class="flex items-start my-8">
+										<div class="text-3xl font-bold text-gray-800 mr-2">
+											<?= count($subadmins->getAllSubAdmins()) ?>
+										</div>
 									</div>
-								</div>
-							</a>
-						</div>
+								</a>
+							</div>
 
-						<!-- All  -->
-						<div class="flex flex-col col-span-full sm:col-span-6 xl:col-span-4 bg-white shadow-lg rounded-sm border border-gray-200">
-							<a href="./reviews.php" class="px-5 pt-5 block">
-								<header class="flex justify-between items-start mb-2">
-									<img src="images/icon-03.svg" width="32" height="32" alt="Icon 03" />
-									<h2 class="text-lg font-semibold text-gray-800 mb-2">No of reviews</h2>
-								</header>
-								<div class="flex items-start my-8">
-									<div class="text-3xl font-bold text-gray-800 mr-2">
-										<?= count($reviews->getAllReviews()); ?>
+							<!-- All  -->
+							<div class="flex flex-col col-span-full sm:col-span-6 xl:col-span-4 bg-white shadow-lg rounded-sm border border-gray-200">
+								<a href="./reviews.php" class="px-5 pt-5 block">
+									<header class="flex justify-between items-start mb-2">
+										<img src="images/icon-03.svg" width="32" height="32" alt="Icon 03" />
+										<h2 class="text-lg font-semibold text-gray-800 mb-2">No of reviews</h2>
+									</header>
+									<div class="flex items-start my-8">
+										<div class="text-3xl font-bold text-gray-800 mr-2">
+											<?= count($reviews->getAllReviews()); ?>
+										</div>
 									</div>
-								</div>
-							</a>
-						</div>
+								</a>
+							</div>
+						<?php endif; ?>
 					</div>
 				</div>
 			</main>
