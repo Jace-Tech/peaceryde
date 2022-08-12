@@ -250,3 +250,5 @@
   })();
 </script>
 <!--End of Tawk.to Script-->
+<script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<script src="./js/lang.js"></script>

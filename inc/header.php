@@ -1,4 +1,58 @@
 <?php include("./inc/alert.php"); ?>
+<style>
+  div#google_translate_element div.goog-te-gadget-simple {
+            border: none;
+            background-color: transparent;
+            /*background-color: #17548d;*/ /*#e3e3ff*/
+        }
+
+        div#google_translate_element div.goog-te-gadget-simple a.goog-te-menu-value:hover {
+            text-decoration: none;
+        }
+
+        div#google_translate_element div.goog-te-gadget-simple a.goog-te-menu-value span {
+            color: #aaa;
+        }
+
+        div#google_translate_element div.goog-te-gadget-simple a.goog-te-menu-value span:hover {
+            color: white;
+        }
+        
+        .goog-te-gadget-icon {
+            display: none !important;
+            /*background: url("url for the icon") 0 0 no-repeat !important;*/
+        }
+
+        /* Remove the down arrow */
+        /* when dropdown open */
+        div#google_translate_element div.goog-te-gadget-simple a.goog-te-menu-value span[style="color: rgb(213, 213, 213);"] {
+            display: none;
+        }
+        /* after clicked/touched */
+        div#google_translate_element div.goog-te-gadget-simple a.goog-te-menu-value span[style="color: rgb(118, 118, 118);"] {
+            display: none;
+        }
+        /* on page load (not yet touched or clicked) */
+        div#google_translate_element div.goog-te-gadget-simple a.goog-te-menu-value span[style="color: rgb(155, 155, 155);"] {
+            display: none;
+        }
+
+        /* Remove span with left border line | (next to the arrow) in Chrome & Firefox */
+        div#google_translate_element div.goog-te-gadget-simple a.goog-te-menu-value span[style="border-left: 1px solid rgb(187, 187, 187);"] {
+            display: none;
+        }
+        /* Remove span with left border line | (next to the arrow) in Edge & IE11 */
+        div#google_translate_element div.goog-te-gadget-simple a.goog-te-menu-value span[style="border-left-color: rgb(187, 187, 187); border-left-width: 1px; border-left-style: solid;"] {
+            display: none;
+        }
+        /* HIDE the google translate toolbar */
+        .goog-te-banner-frame.skiptranslate {
+            display: none !important;
+        }
+        body {
+            top: 0px !important;
+        }
+</style>
 <section class="new-section1__section1 layout">
   <div class="fixed-top">
     <div class="new-section1__block21 layout">
@@ -49,8 +103,8 @@
       <div class="container-fluid cf cfheight">
         <a class="navbar-brand brand" href="Index.php"><img src="assets/logo.png" class="logoimg" width="164"></a>
         <div class=" nav-item dropdown mobilelang">
-          <a class="nav-link dropdown-toggle nav english" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false"
-            >
+          <div id="google_translate_element"></div>
+          <a class="nav-link dropdown-toggle nav english" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false" >
             <svg width="20" height="20" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd" clip-rule="evenodd" d="M0.083313 7.00004C0.083313 3.45612 2.95606 0.583374 6.49998 0.583374C10.0439 0.583374 12.9166 3.45612 12.9166 7.00004C12.9166 10.544 10.0439 13.4167 6.49998 13.4167C2.95606 13.4167 0.083313 10.544 0.083313 7.00004ZM6.49998 1.75004C3.6004 1.75004 1.24998 4.10046 1.24998 7.00004C1.24998 9.89962 3.6004 12.25 6.49998 12.25C9.39956 12.25 11.75 9.89962 11.75 7.00004C11.75 4.10046 9.39956 1.75004 6.49998 1.75004Z" fill="#080C58"/>
               <path fill-rule="evenodd" clip-rule="evenodd" d="M6.73049 0.731373C6.98705 0.536518 7.35299 0.586539 7.54785 0.843098L7.0833 1.19591C7.54785 0.843098 7.54771 0.842914 7.54785 0.843098L7.54843 0.843869L7.54917 0.844854L7.55114 0.847464L7.55693 0.855236L7.5757 0.880901C7.5913 0.902475 7.61293 0.932948 7.63972 0.972048C7.69328 1.05023 7.76758 1.16303 7.85561 1.30828C8.03155 1.59859 8.26313 2.01976 8.49387 2.55432C8.95493 3.62243 9.41664 5.15269 9.41664 7.00008C9.41664 8.84747 8.95493 10.3777 8.49387 11.4458C8.26313 11.9804 8.03155 12.4016 7.85561 12.6919C7.76758 12.8371 7.69328 12.9499 7.63972 13.0281C7.61293 13.0672 7.5913 13.0977 7.5757 13.1193L7.55693 13.1449L7.55114 13.1527L7.54917 13.1553L7.54843 13.1563C7.54829 13.1565 7.54785 13.1571 7.0833 12.8042L7.54785 13.1571C7.35299 13.4136 6.98705 13.4636 6.73049 13.2688C6.47424 13.0742 6.42403 12.7089 6.61805 12.4524C6.61811 12.4523 6.61847 12.4518 6.61853 12.4517C6.61861 12.4516 6.61845 12.4518 6.61853 12.4517L6.61971 12.4501L6.63021 12.4358C6.64025 12.4219 6.65622 12.3994 6.67728 12.3687C6.71942 12.3072 6.78185 12.2126 6.85788 12.0872C7.01006 11.8361 7.21598 11.4625 7.42274 10.9835C7.83668 10.0245 8.24997 8.65269 8.24997 7.00008C8.24997 5.34747 7.83668 3.97565 7.42274 3.01668C7.21598 2.5377 7.01006 2.16407 6.85788 1.91297C6.78185 1.78752 6.71942 1.69296 6.67728 1.63147C6.65622 1.60073 6.64025 1.57828 6.63021 1.56439L6.61971 1.55003L6.61853 1.54842C6.42395 1.29188 6.47403 0.92615 6.73049 0.731373Z" fill="#080C58"/>
@@ -60,25 +114,11 @@
               </svg>
               &nbsp;<span>English |</span></a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <li><a class="dropdown-item" href="NBV.php"
-                style="color: black; font-size: 15px; padding-bottom: 10px;">Nigeria
-              </a></li>
-            <li><a class=" dropdown-item" href="NTWP.php"
-                style="color: black; font-size: 15px; padding-bottom: 10px;">Nigeria</a>
-            </li>
-            <li><a class=" dropdown-item" href="#"
-                style="color: black; font-size: 15px; padding-bottom: 10px;">Nigeria</a>
-            </li>
-            <li><a class="dropdown-item" href="#"
-                style="color: black; font-size: 15px; padding-bottom: 10px;">Nigeria</a>
-            </li>
-            <li><a class=" dropdown-item" href="#"
-                style="color: black; font-size: 15px; padding-bottom: 10px;">Nigeria</a>
-            </li>
-            <li><a class=" dropdown-item" href="#"
-                style="color: black; font-size: 15px; padding-bottom: 10px;">Nigeria</a>
-            </li>
-
+            <li><a href="#googtrans(en|en)" class="dropdown-item  lang-select" data-lang="en" style="color: black; font-size: 15px; padding-bottom: 10px;">English </a></li>
+            <li><a class=" dropdown-item lang-select" href="#googtrans(en|es)" data-lang="es" style="color: black; font-size: 15px; padding-bottom: 10px;">Espanol</a></li>
+            <li><a class=" dropdown-item lang-select"  href="#googtrans(en|fr)" data-lang="fr" style="color: black; font-size: 15px; padding-bottom: 10px;">French</a> </li>
+            <li><a class="dropdown-item lang-select" href="#googtrans(en|zh-CN)" data-lang="zh-CN" style="color: black; font-size: 15px; padding-bottom: 10px;">Chinese</a> </li>
+            <li><a class=" dropdown-item lang-select" href="#googtrans(en|ja)" data-lang="ja" style="color: black; font-size: 15px; padding-bottom: 10px;">Japanese</a> </li>
           </ul>
         </div>
         <li>
