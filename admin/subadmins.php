@@ -203,6 +203,10 @@ $active = $title = "Manage";
                                             <div class="text-left"><?= $email; ?></div>
                                         </td>
 
+                                        <td>
+                                            <?= print_r(getSubAdminService($connect, $admin_id)['services']); ?>
+                                        </td>
+
                                         <!-- Service Column -->
                                         <td class="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap">
                                             <div class="text-left flex items-center">
