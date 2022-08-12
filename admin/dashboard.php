@@ -113,7 +113,7 @@
 										<?php if($LOGGED_ADMIN['type'] == "HIGH"): ?>
 											<?= count($users->get_all_users()); ?>
 										<?php else: ?>
-											<?= $SUBADMIN_USERS; ?>
+											<?= count($SUBADMIN_USERS); ?>
 										<?php endif; ?>
 									</div>
 								</div>

@@ -180,8 +180,9 @@ function getUsersWithSameServiceAsSubAdmin ($connect, $adminId) {
         }
         else {
             return array_filter($users, function ($user) {
-                global $services;
+                global $adminId;
                 global $connect;
+                $services = json_decode(getSubAdminService($connect, $adminId)['services'], true);
 
                 $userServices = getUserServices($connect, $user['user_id']);
                 foreach ($userServices as $userService) {
