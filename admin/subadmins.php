@@ -203,14 +203,10 @@ $active = $title = "Manage";
                                             <div class="text-left"><?= $email; ?></div>
                                         </td>
 
-                                        <td>
-                                            <?= print_r(getSubAdminService($connect, $admin_id)['services']); ?>
-                                        </td>
-
                                         <!-- Service Column -->
                                         <td class="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap">
                                             <div class="text-left flex items-center">
-                                                <?php if(getSubAdminService($connect, $admin_id)['services'] == "*"): ?>
+                                                <?php if(getSubAdminService($connect, $admin_id)['services'] == "[\"*\"]"): ?>
                                                     <span class="text-sm">All Services</span>
                                                 <?php else: ?>
                                                     <?php $adminServices = is_array(json_decode(getSubAdminService($connect, $admin_id)['services'], true)) ? 
@@ -230,7 +226,7 @@ $active = $title = "Manage";
 
                                         <!-- Country Column -->
                                         <td class="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap">
-                                            <?php if($admin->getSubAdmin($admin_id)['countries'] == "*"): ?>
+                                            <?php if($admin->getSubAdmin($admin_id)['countries'] == "[\"*\"]"): ?>
                                                 <span class="text-sm">All countries</span>
                                             <?php else: ?>
                                                 <div class="text-left" style="text-transform: capitalize;">
