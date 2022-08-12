@@ -10,7 +10,7 @@ if($LOGGED_ADMIN['type'] != "HIGH") {
 		$subAdminServices = json_decode(getSubAdminService($connect, $LOGGED_ADMIN['admin_id'])['services'], true);
 
 		if(in_array("*", $subAdminServices)) {
-			$SUBADMIN_USERS = $users->get_all_users();
+			$SUBADMIN_USERS = $user->get_all_users();
 		}
 		else {
 			$usersId = getSubAdminUsers($connect, $LOGGED_ADMIN['admin_id']);
