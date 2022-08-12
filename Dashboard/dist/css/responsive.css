@@ -85,27 +85,27 @@
 }
 .firstname
 {
-  width:100%; height:43px;border:1px solid #555555;font-size: 13px;border-radius: 10px;
+  width:100%; height:43px;border:1px solid #555555;font-size: 13px;
 }
 .middlename
 {
-  width:100%;height:43px;border:1px solid #555555;font-size: 13px;border-radius: 10px;
+  width:100%;height:43px;border:1px solid #555555;font-size: 13px;
 }
 .lastname
 {
-  width:100%;height:43px;border:1px solid #555555;font-size: 13px;border-radius: 10px;
+  width:100%;height:43px;border:1px solid #555555;font-size: 13px;
 }
 .dob
 {
-  width:100%; height:43px;border:1px solid #555555;font-size: 13px;border-radius: 10px;
+  width:100%; height:43px;border:1px solid #555555;font-size: 13px;
 }
 .email
 {
-  width:100%; height:43px;border:1px solid #555555;font-size: 13px;border-radius: 10px;
+  width:100%; height:43px;border:1px solid #555555;font-size: 13px;
 }
 .passno
 {
-  width:100%;height:43px;border:1px solid #555555;font-size: 13px;border-radius: 10px;
+  width:100%;height:43px;border:1px solid #555555;font-size: 13px;
 }
 .code
 {
@@ -117,11 +117,12 @@
 }
 .mobileno
 {
-  width:100%;height:43px;border:1px solid #555555;font-size: 13px;border-radius: 10px;
+  width:100%;height:43px;border:1px solid #555555;font-size: 13px;
 }
 .mobileno2
 {
-  width:100%;height:43px;border:1px solid #555555;font-size: 13px;border-radius: 10px;
+  width:100%;height:43px;border:1px solid #555555;font-size: 13px;
+ 
 }
 .please
 {
@@ -129,7 +130,7 @@
 }
 .nationality
 {
-  border: 1px solid #555555; width:100%; height: 44px; margin-top:27px;color: #5A5A5A;border-radius: 10px;
+  border: 1px solid #555555; width:100%; height: 44px; margin-top:27px;color: #5A5A5A;
 }
   /*UPLOAD*/ 
   .drop-zone {
@@ -702,27 +703,27 @@
 }
 .firstname
 {
-  width:486px; height:43px;border:1px solid #555555;font-size: 13px;border-radius: 10px;
+  width:486px; height:43px;border:1px solid #555555;font-size: 13px;
 }
 .middlename
 {
-  width:486px;height:43px;border:1px solid #555555;font-size: 13px;border-radius: 10px;
+  width:486px;height:43px;border:1px solid #555555;font-size: 13px;
 }
 .lastname
 {
-  width:486px;height:43px;border:1px solid #555555;font-size: 13px;border-radius: 10px;
+  width:486px;height:43px;border:1px solid #555555;font-size: 13px;
 }
 .dob
 {
-  width:486px; height:43px;border:1px solid #555555;font-size: 13px;border-radius: 10px;
+  width:486px; height:43px;border:1px solid #555555;font-size: 13px;
 }
 .email
 {
-  width:486px; height:43px;border:1px solid #555555;font-size: 13px;border-radius: 10px;
+  width:486px; height:43px;border:1px solid #555555;font-size: 13px;
 }
 .passno
 {
-  width:486px;height:43px;border:1px solid #555555;font-size: 13px;border-radius: 10px;
+  width:486px;height:43px;border:1px solid #555555;font-size: 13px;
 }
 .code
 {
@@ -730,11 +731,12 @@
 }
 .mobileno
 {
-  width:486px;height:43px;border:1px solid #555555;font-size: 13px;margin-top: -20px;border-radius: 10px;
+  width:486px;height:43px;border:1px solid #555555;font-size: 13px;margin-top: -20px;
 }
 .mobileno2
 {
-  width:396px;height:43px;border:1px solid #555555;font-size: 13px;border-radius: 10px;
+  width:396px;height:43px;border:1px solid #555555;font-size: 13px;
+  
 }
 .please
 {
@@ -742,7 +744,7 @@
 }
 .nationality
 {
-  border: 1px solid #555555; width:486px; height: 44px; margin-top:27px;color: #5A5A5A;border-radius: 10px;
+  border: 1px solid #555555; width:486px; height: 44px; margin-top:27px;color: #5A5A5A;
 }                     
 .left-sidebar a:hover {
   color: #f1f1f1;
@@ -1306,39 +1308,40 @@
 }
 .firstname
 {
-  width:486px; height:43px;border:1px solid #555555;font-size: 13px;border-radius: 10px;
+  width:486px; height:43px;border:1px solid #555555;font-size: 13px;
 }
 .middlename
 {
-  width:486px;height:43px;border:1px solid #555555;font-size: 13px;border-radius: 10px;
+  width:486px;height:43px;border:1px solid #555555;font-size: 13px;
 }
 .lastname
 {
-  width:486px;height:43px;border:1px solid #555555;font-size: 13px;border-radius: 10px;
+  width:486px;height:43px;border:1px solid #555555;font-size: 13px;
 }
 .dob
 {
-  width:486px; height:43px;border:1px solid #555555;font-size: 13px;border-radius: 10px;
+  width:486px; height:43px;border:1px solid #555555;font-size: 13px;
 }
 .email
 {
-  width:486px; height:43px;border:1px solid #555555;font-size: 13px;border-radius: 10px;
+  width:486px; height:43px;border:1px solid #555555;font-size: 13px;
 }
 .passno
 {
-  width:486px;height:43px;border:1px solid #555555;font-size: 13px;border-radius: 10px;
+  width:486px;height:43px;border:1px solid #555555;font-size: 13px;
 }
 .code
 {
-  color: #5A5A5A;border: 1px solid #555555; width:486px; height: 44px;border-radius: 10px;
+  color: #5A5A5A;border: 1px solid #555555; width:486px; height: 44px;
 }
 .mobileno
 {
-  width:486px;height:43px;border:1px solid #555555;font-size: 13px;margin-top: -25px;border-radius: 10px;
+  width:486px;height:43px;border:1px solid #555555;font-size: 13px;margin-top: -25px;
 }
 .mobileno2
 {
-  width:398px;height:43px;border:1px solid #555555;font-size: 13px;border-radius: 10px;
+  width:398px;height:43px;border:1px solid #555555;font-size: 13px;
+ 
 }
 .please
 {
@@ -1346,7 +1349,7 @@
 }
 .nationality
 {
-  border: 1px solid #555555; width:486px; height: 44px; margin-top:27px;color: #5A5A5A;border-radius: 10px;
+  border: 1px solid #555555; width:486px; height: 44px; margin-top:27px;color: #5A5A5A;
 }
   /*Track progress*/
   .add
@@ -1883,27 +1886,27 @@
 }
 .firstname
 {
-  width:400px; height:43px;border:1px solid #555555;font-size: 13px;border-radius: 10px;
+  width:400px; height:43px;border:1px solid #555555;font-size: 13px;
 }
 .middlename
 {
-  width:400px;height:43px;border:1px solid #555555;font-size: 13px;margin-top:17px;border-radius: 10px;
+  width:400px;height:43px;border:1px solid #555555;font-size: 13px;margin-top:17px;
 }
 .lastname
 {
-  width:400px;height:43px;border:1px solid #555555;font-size: 13px;margin-top:17px;border-radius: 10px;
+  width:400px;height:43px;border:1px solid #555555;font-size: 13px;margin-top:17px;
 }
 .dob
 {
-  width:400px; height:43px;border:1px solid #555555;font-size: 13px;border-radius: 10px;
+  width:400px; height:43px;border:1px solid #555555;font-size: 13px;
 }
 .email
 {
-  width:400px; height:43px;border:1px solid #555555;font-size: 13px;border-radius: 10px;
+  width:400px; height:43px;border:1px solid #555555;font-size: 13px;
 }
 .passno
 {
-  width:400px;height:43px;border:1px solid #555555;font-size: 13px; margin-top:17px;border-radius: 10px;
+  width:400px;height:43px;border:1px solid #555555;font-size: 13px; margin-top:17px;
 }
 .code
 {
@@ -1911,11 +1914,12 @@
 }
 .mobileno
 {
-  width:400px;height:43px;border:1px solid #555555;font-size: 13px; margin-top:-25px;border-radius: 10px;
+  width:400px;height:43px;border:1px solid #555555;font-size: 13px; margin-top:-25px;
 }
 .mobileno2
 {
-  width:305px;height:43px;border:1px solid #555555;font-size: 13px;border-radius: 10px;
+  width:305px;height:43px;border:1px solid #555555;font-size: 13px;
+  
 }
 .please
 {
@@ -1923,7 +1927,7 @@
 }
 .nationality
 {
-  border: 1px solid #555555; width:400px; height: 44px; margin-top:27px;color: #5A5A5A;border-radius: 10px;
+  border: 1px solid #555555; width:400px; height: 44px; margin-top:27px;color: #5A5A5A;
 }
   /*Track progress*/
   .add
@@ -2482,27 +2486,27 @@
 }
 .firstname
 {
-  width:307px; height:43px;border:1px solid #555555;font-size: 13px;border-radius: 10px;
+  width:307px; height:43px;border:1px solid #555555;font-size: 13px;
 }
 .middlename
 {
-  width:307px;height:43px;border:1px solid #555555;font-size: 13px;border-radius: 10px;
+  width:307px;height:43px;border:1px solid #555555;font-size: 13px;
 }
 .lastname
 {
-  width:307px;height:43px;border:1px solid #555555;font-size: 13px;border-radius: 10px;
+  width:307px;height:43px;border:1px solid #555555;font-size: 13px;
 }
 .dob
 {
-  width:307px; height:43px;border:1px solid #555555;font-size: 13px;border-radius: 10px;
+  width:307px; height:43px;border:1px solid #555555;font-size: 13px;
 }
 .email
 {
-  width:307px; height:43px;border:1px solid #555555;font-size: 13px;border-radius: 10px;
+  width:307px; height:43px;border:1px solid #555555;font-size: 13px;
 }
 .passno
 {
-  width:307px;height:43px;border:1px solid #555555;font-size: 13px;border-radius: 10px;
+  width:307px;height:43px;border:1px solid #555555;font-size: 13px;
 }
 .code
 {
@@ -2510,11 +2514,12 @@
 }
 .mobileno
 {
-  width:307px;height:43px;border:1px solid #555555;font-size: 13px; margin-top: -20px;border-radius: 10px;
+  width:307px;height:43px;border:1px solid #555555;font-size: 13px; margin-top: -20px;
 }
 .mobileno2
 {
-  width:212;height:43px;border:1px solid #555555;font-size: 13px;border-radius: 10px;
+  width:212;height:43px;border:1px solid #555555;font-size: 13px;
+  
 }
 .please
 {
@@ -2522,7 +2527,7 @@
 }
 .nationality
 {
-  border: 1px solid #555555; width:307px; height: 44px; margin-top:27px;color: #5A5A5A;border-radius: 10px;
+  border: 1px solid #555555; width:307px; height: 44px; margin-top:27px;color: #5A5A5A;
 }
   /*Track progress*/
   #sidebar
@@ -3093,27 +3098,27 @@
 }
 .firstname
 {
-  width:100%; height:43px;border:1px solid #555555;font-size: 13px;border-radius: 10px;
+  width:100%; height:43px;border:1px solid #555555;font-size: 13px;
 }
 .middlename
 {
-  width:100%;height:43px;border:1px solid #555555;font-size: 13px;border-radius: 10px;
+  width:100%;height:43px;border:1px solid #555555;font-size: 13px;
 }
 .lastname
 {
-  width:100%;height:43px;border:1px solid #555555;font-size: 13px;border-radius: 10px;
+  width:100%;height:43px;border:1px solid #555555;font-size: 13px;
 }
 .dob
 {
-  width:100%; height:43px;border:1px solid #555555;font-size: 13px;border-radius: 10px;
+  width:100%; height:43px;border:1px solid #555555;font-size: 13px;
 }
 .email
 {
-  width:100%; height:43px;border:1px solid #555555;font-size: 13px;border-radius: 10px;
+  width:100%; height:43px;border:1px solid #555555;font-size: 13px;
 }
 .passno
 {
-  width:100%;height:43px;border:1px solid #555555;font-size: 13px;border-radius: 10px;
+  width:100%;height:43px;border:1px solid #555555;font-size: 13px;
 }
 .code
 {
@@ -3121,11 +3126,12 @@
 }
 .mobileno
 {
-  width:100%;height:43px;border:1px solid #555555;font-size: 13px;margin-top: -25px;border-radius: 10px;
+  width:100%;height:43px;border:1px solid #555555;font-size: 13px;margin-top: -25px;
 }
 .mobileno2
 {
-  width:100%;height:43px;border:1px solid #555555;font-size: 13px;border-radius: 10px;
+  width:100%;height:43px;border:1px solid #555555;font-size: 13px;
+
 }
 .please
 {
@@ -3133,7 +3139,7 @@
 }
 .nationality
 {
-  border: 1px solid #555555; width:100%; height: 44px; margin-top:27px;color: #5A5A5A;border-radius: 10px;
+  border: 1px solid #555555; width:100%; height: 44px; margin-top:27px;color: #5A5A5A;
 }
   .add
 {

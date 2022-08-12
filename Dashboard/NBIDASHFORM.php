@@ -82,7 +82,7 @@
                 </svg>
             </span>
             <div class="container">
-                <div class="card">
+                <div class="card" style="background-color: whitesmoke;">
                 <div class="align-self-center">                       
                 <h3 class="page-title title">Nigeria Business Incorporation </h3>  
                 <p class="fill">Fill the Form Below</p>   

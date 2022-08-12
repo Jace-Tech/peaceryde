@@ -84,7 +84,7 @@
                 </svg>
             </span>
             <div class="container">
-                <div class="card">
+                <div class="card" style="background-color: whitesmoke;">
                 <div class="align-self-center">
                 <h3 class="page-title title">Nigeria Temporary Work Permit</h3>
                 <p class="fill">Fill the Form Below</p>
