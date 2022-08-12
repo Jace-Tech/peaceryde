@@ -119,7 +119,7 @@ $active = $title = "Manage";
                                         <div class="relative flex flex-col">
                                             <?php if (count($country_fee)) : ?>
                                                 <select class="form-control" name="country[]" multiple="multiple">
-                                                    <option value="*">All countries</option>
+                                                    <option value="*">All Countries</option>
                                                     <?php foreach ($country_fee as $country => $value) : ?>
                                                         <!-- <?php //if (!array_search($country, $admin->getTakenCountries())) : ?> -->
                                                             <div class="m-3">
@@ -231,7 +231,7 @@ $active = $title = "Manage";
                                             <?php if(strtolower(strval($admin->getSubAdmin($admin_id)['countries'])) == "null"): ?>
                                                 <span class="text-sm">NULL</span>
                                             <?php elseif($admin->getSubAdmin($admin_id)['countries'] == "[\"*\"]"): ?>
-                                                <span class="text-sm">All countries</span>
+                                                <span class="text-sm">All Countries</span>
                                             <?php else: ?>
                                                 <div class="text-left" style="text-transform: capitalize;">
                                                     <?= formatCountryArray($admin->getSubAdmin($admin_id)['countries']); ?>
@@ -360,7 +360,7 @@ $active = $title = "Manage";
                                                                             <?php if (count($country_fee)) : ?>
                                                                                 <select class="form-control" name="country[]" multiple="multiple">
                                                                                     <option value="" disabled>Choose country</option>
-                                                                                    <option value="*">All Country</option>
+                                                                                    <option value="*">All Countries</option>
                                                                                     <?php if($admin->getSubAdmin($admin_id)['countries'] != "*"): ?>
                                                                                         <?php foreach ($country_fee as $country => $value) : ?>
                                                                                             <?php if (in_array($country, json_decode($admin->getSubAdmin($admin_id)['countries'], true))) : ?>
