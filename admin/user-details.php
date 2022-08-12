@@ -150,93 +150,95 @@ if(isset($_GET['_tification_id'])) {
         </div>
 
         <!-- SUBADMINS -->
-        <div class="mt-16">
-            <h3 class="mt-2 text-gray-600 font-bold text-md uppercase">Sub Admin</h3>
-            <div class="mt-4">
-                <div class="overflow-x-auto">
-                    <table class="table-auto w-full">
-                        <?php if ($USERS_ADMIN) : ?>
-                            <thead class="text-xs font-semibold uppercase text-gray-500 bg-gray-50 border-t border-b border-gray-200">
-                                <tr>
-                                    <th class="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap">
-                                        <div class="font-semibold text-left">Admin Name</div>
-                                    </th>
+        <?php if ($LOGGED_ADMIN['type'] == "HIGH") :?>
+            <div class="mt-16">
+                <h3 class="mt-2 text-gray-600 font-bold text-md uppercase">Sub Admin</h3>
+                <div class="mt-4">
+                    <div class="overflow-x-auto">
+                        <table class="table-auto w-full">
+                            <?php if ($USERS_ADMIN) : ?>
+                                <thead class="text-xs font-semibold uppercase text-gray-500 bg-gray-50 border-t border-b border-gray-200">
+                                    <tr>
+                                        <th class="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap">
+                                            <div class="font-semibold text-left">Admin Name</div>
+                                        </th>
 
-                                    <th class="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap">
-                                        <span class="sr-only">Menu</span>
-                                    </th>
-                                </tr>
-                            </thead>
+                                        <th class="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap">
+                                            <span class="sr-only">Menu</span>
+                                        </th>
+                                    </tr>
+                                </thead>
 
-                            <tbody class="text-sm divide-y divide-gray-200">
-                                <tr>
-                                    <td class="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap">
-                                        <div class="flex items-center">
-                                            <div class="font-medium text-gray-800">
-                                                <a href="../Dashboard/upload/<?= $USERS_ADMIN['admin_id']; ?>" class="text-indigo-500 text-sm font-medium">
-                                                    <?= $USERS_ADMIN['name']; ?>
-                                                </a>
+                                <tbody class="text-sm divide-y divide-gray-200">
+                                    <tr>
+                                        <td class="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap">
+                                            <div class="flex items-center">
+                                                <div class="font-medium text-gray-800">
+                                                    <a href="../Dashboard/upload/<?= $USERS_ADMIN['admin_id']; ?>" class="text-indigo-500 text-sm font-medium">
+                                                        <?= $USERS_ADMIN['name']; ?>
+                                                    </a>
+                                                </div>
                                             </div>
-                                        </div>
-                                    </td>
+                                        </td>
 
-                                    <td class="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap">
-                                        <?php if (isset($_GET['change_admin'])) : ?>
+                                        <td class="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap">
+                                            <?php if (isset($_GET['change_admin'])) : ?>
+                                                <form action="./handler/user_handler.php" method="post">
+                                                    <div class="flex">
+                                                        <select name="subadmin" class="form-select text-sm" id="">
+                                                            <?php foreach (getAllSubAdmins($connect) as $admin) : ?>
+                                                                <option <?= $admin['admin_id'] === $USERS_ADMIN['admin_id'] ? " selected" : "" ?> value="<?= $admin['admin_id'] ?>">
+                                                                    <?= $admin['name']; ?>
+                                                                </option>
+                                                            <?php endforeach; ?>
+                                                        </select>
+                                                        <input type="hidden" name="id" value="<?= $admin['admin_id'] ?>">
+                                                        <input type="hidden" name="user" value="<?= $_GET['user'] ?>">
+                                                        <button name="change_admin" class="btn bg-indigo-500 hover:bg-indigo-600 text-white">Change</button>
+                                                    </div>
+                                                </form>
+                                            <?php else : ?>
+                                                <a href="?user=<?= $_GET['user'] ?>&change_admin=<?= $USERS_ADMIN['admin_id'] ?>" class="text-indigo-500 inline-block">Change subadmin</a>
+                                            <?php endif; ?>
+                                        </td>
+                                    </tr>
+                                </tbody>
+
+                            <?php else : ?>
+                                <tr>
+                                    <td class="">
+                                        <?php if (isset($_GET['add_admin'])) : ?>
                                             <form action="./handler/user_handler.php" method="post">
                                                 <div class="flex">
-                                                    <select name="subadmin" class="form-select text-sm" id="">
-                                                        <?php foreach (getAllSubAdmins($connect) as $admin) : ?>
-                                                            <option <?= $admin['admin_id'] === $USERS_ADMIN['admin_id'] ? " selected" : "" ?> value="<?= $admin['admin_id'] ?>">
-                                                                <?= $admin['name']; ?>
-                                                            </option>
-                                                        <?php endforeach; ?>
+                                                    <select name="subadmin" class="form-select text-sm rounded-r-none" id="">
+                                                        <option value="" selected disabled>Choose subadmin</option>
+                                                        <?php if (count(getAllSubAdmins($connect))) : ?>
+                                                            <?php foreach (getAllSubAdmins($connect) as $admin) : ?>
+                                                                <option value="<?= $admin['admin_id'] ?>">
+                                                                    <?= $admin['name']; ?>
+                                                                </option>
+                                                            <?php endforeach; ?>
+                                                        <?php endif; ?>
                                                     </select>
-                                                    <input type="hidden" name="id" value="<?= $admin['admin_id'] ?>">
                                                     <input type="hidden" name="user" value="<?= $_GET['user'] ?>">
-                                                    <button name="change_admin" class="btn bg-indigo-500 hover:bg-indigo-600 text-white">Change</button>
+                                                    <button name="assign" class="btn btn-sm bg-indigo-500 hover:bg-indigo-600 text-white">Assign</button>
+                                                    <a href="?user=<?= $_GET['user'] ?>" class="btn btn-sm bg-red-500 hover:bg-red-600 text-white">Cancel</a>
                                                 </div>
                                             </form>
                                         <?php else : ?>
-                                            <a href="?user=<?= $_GET['user'] ?>&change_admin=<?= $USERS_ADMIN['admin_id'] ?>" class="text-indigo-500 inline-block">Change subadmin</a>
+                                            <div class="py-2 flex align-center ">
+                                                <h4 class="text-blue-500 text-sm">No subadmin assigned.</h4>
+                                                <a href="?user=<?= $_GET['user'] ?>&add_admin" class="inline-block ml-2 text-sm font-medium text-indigo-500">Click to assign subadmin</a>
+                                            </div>
                                         <?php endif; ?>
                                     </td>
                                 </tr>
-                            </tbody>
-
-                        <?php else : ?>
-                            <tr>
-                                <td class="">
-                                    <?php if (isset($_GET['add_admin'])) : ?>
-                                        <form action="./handler/user_handler.php" method="post">
-                                            <div class="flex">
-                                                <select name="subadmin" class="form-select text-sm rounded-r-none" id="">
-                                                    <option value="" selected disabled>Choose subadmin</option>
-                                                    <?php if (count(getAllSubAdmins($connect))) : ?>
-                                                        <?php foreach (getAllSubAdmins($connect) as $admin) : ?>
-                                                            <option value="<?= $admin['admin_id'] ?>">
-                                                                <?= $admin['name']; ?>
-                                                            </option>
-                                                        <?php endforeach; ?>
-                                                    <?php endif; ?>
-                                                </select>
-                                                <input type="hidden" name="user" value="<?= $_GET['user'] ?>">
-                                                <button name="assign" class="btn btn-sm bg-indigo-500 hover:bg-indigo-600 text-white">Assign</button>
-                                                <a href="?user=<?= $_GET['user'] ?>" class="btn btn-sm bg-red-500 hover:bg-red-600 text-white">Cancel</a>
-                                            </div>
-                                        </form>
-                                    <?php else : ?>
-                                        <div class="py-2 flex align-center ">
-                                            <h4 class="text-blue-500 text-sm">No subadmin assigned.</h4>
-                                            <a href="?user=<?= $_GET['user'] ?>&add_admin" class="inline-block ml-2 text-sm font-medium text-indigo-500">Click to assign subadmin</a>
-                                        </div>
-                                    <?php endif; ?>
-                                </td>
-                            </tr>
-                        <?php endif; ?>
-                    </table>
+                            <?php endif; ?>
+                        </table>
+                    </div>
                 </div>
             </div>
-        </div>
+        <?php endif; ?>
 
         <!-- SERVICES -->
         <div class="mt-16">
