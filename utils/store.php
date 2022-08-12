@@ -192,20 +192,6 @@ function getUsersWithSameServiceAsSubAdmin ($connect, $adminId) {
             }
 
             return $arr;
-
-
-            // return array_filter($users, function ($user) {
-            //     global $adminId;
-            //     global $connect;
-            //     $services = json_decode(getSubAdminService($connect, $adminId)['services'], true);
-
-            //     $userServices = getUserServices($connect, $user['user_id']);
-            //     foreach ($userServices as $userService) {
-            //         if(in_array($userService['service_id'], $services)) {
-            //             return $user;
-            //         }
-            //     }
-            // });
         }
     }
     else {
@@ -213,6 +199,43 @@ function getUsersWithSameServiceAsSubAdmin ($connect, $adminId) {
     }
     
 }
+
+
+function getSubAdminWithSameService ($connect, $userId) {
+    $userServices = getUserServices($connect, $userId);
+    $getAllSubAdmins = getAllSubAdmins($connect);
+
+    if(is_array($getAllSubAdmins) && count($getAllSubAdmins)) {
+        foreach($getAllSubAdmins as $subAdmin) {
+            $adminService = getSubAdminService($connect, $subAdmin['admin_id'])["services"];
+
+            if($adminService){
+                $parsedService = json_decode(getSubAdminService($connect, $subAdmin['admin_id'])["services"], true);
+                if(is_array($parsedService) && count($parsedService)) {
+                    if(in_array("*", $parsedService)) {
+                        return $subAdmin;
+                    }
+                    else {
+                        if(is_array($userServices) && count($userServices)) {
+                            foreach($userServices as $userService) {
+                                $service_user = $userService['service_id'];
+                                if(in_array($service_user, $adminService)) {
+                                    return $subAdmin;
+                                    break;
+                                }
+                                return false;
+                            }
+                        }
+                        return false;
+                    }
+                }
+            }
+            return false;
+        }
+    }
+    return false;
+}
+
 
 function getUsersWithSameCountryAsSubAdmin ($connect, $adminId) {
     $countries = getSubAdminCountries($connect, $adminId);

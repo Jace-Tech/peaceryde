@@ -19,7 +19,8 @@ if(isset($_GET['_tification_id'])) {
     $USER_SERVICES = $userServices->getAllUserServices($_GET['user']);
     $USERS_DOCS = getUsersUploads($connect, $_GET['user']);
     $USER_SUB_ADMIN = getUsersSubAdmin($connect, $_GET['user']);
-    $USERS_ADMIN = getSubAdmin($connect, $USER_SUB_ADMIN['sub_admin']);
+    $USERS_ADMIN = getSubAdmin($connect, $USER_SUB_ADMIN['sub_admin']) ?? getSubAdminWithSameService($connect, $_GET['user']);
+
 ?>
 
 <!doctype html>
