@@ -2965,9 +2965,10 @@ width: 100%;
   .firstname {
     border: 1px solid #555555;
     font-family: ubuntu;
-    margin-top: 27px;
+    margin-top: 7px;
     height: 44px;
     width: 227px;
+    margin-right: 10%;
   }
 
   .firstname2 {
@@ -2981,19 +2982,21 @@ width: 100%;
   .middlename {
     border: 1px solid #555555;
     font-family: ubuntu;
-    margin-top: 17px;
+    margin-top: 7px;
     height: 44px;
     width: 227px;
     margin-left: 0px;
+    margin-right: 10%;
   }
 
   .lastname {
     border: 1px solid #555555;
     font-family: ubuntu;
-    margin-top: 17px;
+    margin-top: 7px;
     height: 44px;
     width: 227px;
     margin-left: 0px;
+    margin-right: 10%;
   }
 
   .gender {
@@ -3016,9 +3019,10 @@ width: 100%;
   .select {
     border: 1px solid #555555;
     height: 44px;
-    margin-top: 17px;
+    margin-top: 7px;
     width: 307px;
     font-family: ubuntu;
+    margin-right: 10%;
   }
 
   .vsbheight {
@@ -4703,9 +4707,10 @@ width: 100%;
   .firstname {
     border: 1px solid #555555;
     font-family: ubuntu;
-    margin-top: 27px;
+    margin-top: 7px;
     height: 44px;
     width: 300px;
+    margin-right: 10%;
   }
 
   .firstname2 {
@@ -4714,24 +4719,27 @@ width: 100%;
     margin-top: 0px;
     height: 44px;
     width: 300px;
+    margin-right: 10%;
   }
 
   .middlename {
     border: 1px solid #555555;
     font-family: ubuntu;
-    margin-top: 17px;
+    margin-top: 7px;
     height: 44px;
     width: 300px;
     margin-left: 0px;
+    margin-right: 10%;
   }
 
   .lastname {
     border: 1px solid #555555;
     font-family: ubuntu;
-    margin-top: 17px;
+    margin-top: 7px;
     height: 44px;
     width: 300px;
     margin-left: 0px;
+    margin-right: 10%;
   }
 
   .gender {
@@ -4754,9 +4762,10 @@ width: 100%;
   .select {
     border: 1px solid #555555;
     height: 44px;
-    margin-top: 17px;
+    margin-top: 7px;
     width: 307px;
     font-family: ubuntu;
+    margin-right: 10%;
   }
 
   .vsbheight {
@@ -6470,8 +6479,9 @@ width: 100%;
   .firstname {
     border: 1px solid #555555;
     font-family: ubuntu;
-    margin-top: 27px;
+    margin-top: 7px;
     height: 44px;
+    margin-right: 10%;
     width: 300px;
   }
 
@@ -6481,24 +6491,27 @@ width: 100%;
     margin-top: 0px;
     height: 44px;
     width: 300px;
+    margin-right: 10%;
   }
 
   .middlename {
     border: 1px solid #555555;
     font-family: ubuntu;
-    margin-top: 17px;
+    margin-top: 7px;
     height: 44px;
     width: 300px;
     margin-left: 0px;
+    margin-right: 10%;
   }
 
   .lastname {
     border: 1px solid #555555;
     font-family: ubuntu;
-    margin-top: 17px;
+    margin-top: 7px;
     height: 44px;
     width: 300px;
     margin-left: 0px;
+    margin-right: 10%;
   }
 
   .gender {
@@ -6521,9 +6534,10 @@ width: 100%;
   .select {
     border: 1px solid #555555;
     height: 44px;
-    margin-top: 17px;
+    margin-top: 7px;
     width: 307px;
     font-family: ubuntu;
+    margin-right: 10%;
   }
 
   .vsbheight {
@@ -8200,7 +8214,8 @@ width: 100%;
   .firstname {
     border: 1px solid #555555;
     font-family: ubuntu;
-    margin-top: 27px;
+    margin-top: 7px;
+    margin-right: 10%;
     height: 44px;
     width: 300px;
   }
@@ -8216,18 +8231,20 @@ width: 100%;
   .middlename {
     border: 1px solid #555555;
     font-family: ubuntu;
-    margin-top: 17px;
+    margin-top: 7px;
     height: 44px;
     width: 300px;
     margin-left: 0px;
+    margin-right: 10%;
   }
 
   .lastname {
     border: 1px solid #555555;
     font-family: ubuntu;
-    margin-top: 17px;
+    margin-top: 7px;
     height: 44px;
     width: 300px;
+    margin-right: 10%;
     margin-left: 0px;
   }
 
@@ -8251,7 +8268,8 @@ width: 100%;
   .select {
     border: 1px solid #555555;
     height: 44px;
-    margin-top: 17px;
+    margin-top: 7px;
+    margin-right: 10%;
     width: 307px;
     font-family: ubuntu;
   }
@@ -9948,7 +9966,8 @@ width: 100%;
   .firstname {
     border: 1px solid #555555;
     font-family: ubuntu;
-    margin-top: 27px;
+    margin-top: 7px;
+    margin-right: 10%;
     height: 44px;
     width: 300px;
   }
@@ -9964,7 +9983,8 @@ width: 100%;
   .middlename {
     border: 1px solid #555555;
     font-family: ubuntu;
-    margin-top: 17px;
+    margin-top: 7px;
+    margin-right: 10%;
     height: 44px;
     width: 300px;
     margin-left: 0px;
@@ -9973,7 +9993,8 @@ width: 100%;
   .lastname {
     border: 1px solid #555555;
     font-family: ubuntu;
-    margin-top: 17px;
+    margin-top: 7px;
+    margin-right: 10%;
     height: 44px;
     width: 300px;
     margin-left: 0px;
@@ -9999,7 +10020,8 @@ width: 100%;
   .select {
     border: 1px solid #555555;
     height: 44px;
-    margin-top: 17px;
+    margin-top: 7px;
+    margin-right: 10%;
     width: 307px;
     font-family: ubuntu;
   }
@@ -11592,6 +11614,7 @@ width: 100%;
     border: 1px solid #555555;
     font-family: ubuntu;
     margin-top: 7px;
+    margin-right: 10%;
     height: 44px;
     width: 250px;
   }
@@ -11608,12 +11631,14 @@ width: 100%;
     margin-top: 0px;
     height: 44px;
     width: 250px;
+    
   }
 
   .middlename {
     border: 1px solid #555555;
     font-family: ubuntu;
-    margin-top: 17px;
+    margin-top: 7px;
+    margin-right: 10%;
     height: 44px;
     width: 250px;
     margin-left: 0px;
@@ -11622,8 +11647,9 @@ width: 100%;
   .lastname {
     border: 1px solid #555555;
     font-family: ubuntu;
-    margin-top: 17px;
+    margin-top: 7px;
     height: 44px;
+    margin-right: 10%;
     width: 250px;
     margin-left: 0px;
   }
@@ -11648,7 +11674,8 @@ width: 100%;
   .select {
     border: 1px solid #555555;
     height: 44px;
-    margin-top: 17px;
+    margin-top: 7px;
+    margin-right: 10%;
     width: 250px;
     font-family: ubuntu;
   }
@@ -13222,6 +13249,9 @@ width: 100%;
     display: block;
     padding: 0px 0.5rem 0px 8px;
   }
+  /* .signinpage {
+    margin-top: 95px;
+} */
 
   .welcome {
     font-family: Rubik;
@@ -13299,6 +13329,7 @@ width: 100%;
     border: 1px solid #555555;
     font-family: ubuntu;
     margin-top: 7px;
+    margin-right: 10%;
     height: 44px;
     width: 220px;
   }
@@ -13320,7 +13351,8 @@ width: 100%;
   .middlename {
     border: 1px solid #555555;
     font-family: ubuntu;
-    margin-top: 17px;
+    margin-top: 7px;
+    margin-right: 10%;
     height: 44px;
     width: 220px;
     margin-left: 0px;
@@ -13329,9 +13361,10 @@ width: 100%;
   .lastname {
     border: 1px solid #555555;
     font-family: ubuntu;
-    margin-top: 17px;
+    margin-top: 7px;
     height: 44px;
     width: 220px;
+    margin-right: 10%;
     margin-left: 0px;
   }
 
@@ -13355,7 +13388,8 @@ width: 100%;
   .select {
     border: 1px solid #555555;
     height: 44px;
-    margin-top: 17px;
+    margin-top: 7px;
+    margin-right: 10%;
     width: 220px;
     font-family: ubuntu;
   }

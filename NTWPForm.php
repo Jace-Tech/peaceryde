@@ -50,7 +50,7 @@
     <!-- ======= section1 ======= -->
     <?php include("./inc/header.php"); ?>
     <section class=" new-section2__group layout2 nbvformheight" style="background-color: #f8f6f6;">
-      <div class="new-section1__cover-block layout signinpage">
+      <div class="new-section1__cover-block layout">
         <h2 class="welcome"> Welcome!</h2>
         <p class="formtext">The first step in applying for a <span style="font-size: 20px; font-weight: 500;">Nigeria Temporary Work Permit</span> is to fill the form below
                  <span>It takes less than 5 minutes to do this. &nbsp; &nbsp; After you submit your application, you can</span>
