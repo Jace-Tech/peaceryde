@@ -121,13 +121,13 @@ $active = $title = "Manage";
                                                 <select class="form-control" name="country[]" multiple="multiple">
                                                     <option value="*">All countries</option>
                                                     <?php foreach ($country_fee as $country => $value) : ?>
-                                                        <?php if (!array_search($country, $admin->getTakenCountries())) : ?>
+                                                        <!-- <?php //if (!array_search($country, $admin->getTakenCountries())) : ?> -->
                                                             <div class="m-3">
                                                                 <option value="<?= $country; ?>">
                                                                     <?= $country; ?>
                                                                 </option>
                                                             </div>
-                                                        <?php endif;  ?>
+                                                        <?php //endif;  ?>
                                                     <?php endforeach  ?>
                                                 </select>
                                             <?php endif; ?>
@@ -152,6 +152,7 @@ $active = $title = "Manage";
                 <h2 class="font-semibold text-gray-800">Sub Admins <span class="text-gray-400 font-medium"><?= count($admin->getAllAdmins()) - 1; ?></span></h2>
             </header>
 
+            <!-- LISTING SUB ADMINS -->
             <div x-data="handleSelect">
                 <div class="overflow-x-auto">
                     <table class="table-auto w-full">
@@ -252,6 +253,8 @@ $active = $title = "Manage";
                                                         <button name="unSuspendAdmin" value="<?= $admin_id; ?>" class="btn text-green-600 text-xs bg-green-100 btn-sm">Unsuspend</button>
                                                     </form>
                                                 <?php endif; ?>
+
+                                                <!-- EDIT SUB ADMIN -->
                                                 <div x-data="{ modalOpen: false }">
                                                     <button href="" class="btn bg-blue-100 btn-sm text-xs text-blue-600 ml-2" @click.prevent="modalOpen = true" aria-controls="feedback-modal-<?= $admin_id; ?>">Edit</button>
                                                     <div class="fixed inset-0 bg-gray-900 bg-opacity-30 z-50 transition-opacity" x-show="modalOpen" x-transition:enter="transition ease-out duration-200" x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100" x-transition:leave="transition ease-out duration-100" x-transition:leave-start="opacity-100" x-transition:leave-end="opacity-0" aria-hidden="true" x-cloak></div>
@@ -298,7 +301,8 @@ $active = $title = "Manage";
                                                                         </div>
                                                                         <div class="relative flex flex-col mt-1">
                                                                             <select name="service[]" multiple id="service">
-                                                                                <option value="" selected disabled>Choose services</option>
+                                                                                <option value="" disabled>Choose services</option>
+                                                                                <option value="*">All services</option>
 
                                                                                 <?php if(getSubAdminService($connect, $admin_id)['services'] != "*"): ?>
                                                                                     <?php if (count($service->getAllServices())) : ?>
@@ -344,6 +348,8 @@ $active = $title = "Manage";
                                                                         <div class="relative flex flex-col">
                                                                             <?php if (count($country_fee)) : ?>
                                                                                 <select class="form-control" name="country[]" multiple="multiple">
+                                                                                    <option value="" disabled>Choose country</option>
+                                                                                    <option value="*">All Country</option>
                                                                                     <?php if($admin->getSubAdmin($admin_id)['countries'] != "*"): ?>
                                                                                         <?php foreach ($country_fee as $country => $value) : ?>
                                                                                             <?php if (in_array($country, json_decode($admin->getSubAdmin($admin_id)['countries'], true))) : ?>

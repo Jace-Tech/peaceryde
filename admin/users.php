@@ -98,7 +98,7 @@ else {
 											<div>
 												<label class="block text-sm font-medium mb-1" for="title">Title</label>
 												<select name="title" id="title" class="form-select w-full">
-													<option value="" selected disabled>Title</option>
+													<option value="" selected>Title</option>
 													<?php foreach ($titles as $title) : ?>
 														<option value="<?= $title ?>">
 															<?= $title ?>

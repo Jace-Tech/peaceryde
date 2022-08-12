@@ -203,22 +203,22 @@ class Admin {
         return $status;
     }
 
-    public function getTakenCountries () {
-        $query = "SELECT countries FROM `sub_admin`";
-        $result = $this->connection->prepare($query);
-        $result->execute();
+    // public function getTakenCountries () {
+    //     $query = "SELECT countries FROM `sub_admin`";
+    //     $result = $this->connection->prepare($query);
+    //     $result->execute();
 
-        $countries = [];
+    //     $countries = [];
 
-        while ($row = $result->fetch()) {
-            $_countries = json_decode($row['countries']);
+    //     while ($row = $result->fetch()) {
+    //         $_countries = json_decode($row['countries']);
 
-            foreach ($_countries as $country) {
-                array_push($countries, $country);
-            }
+    //         foreach ($_countries as $country) {
+    //             array_push($countries, $country);
+    //         }
 
-        }
+    //     }
 
-        return $countries;
-    }
+    //     return $countries;
+    // }
 }
