@@ -179,18 +179,33 @@ function getUsersWithSameServiceAsSubAdmin ($connect, $adminId) {
             return $users;
         }
         else {
-            return array_filter($users, function ($user) {
-                global $adminId;
-                global $connect;
-                $services = json_decode(getSubAdminService($connect, $adminId)['services'], true);
-
+            $arr = [];
+            foreach($users as $user) {
                 $userServices = getUserServices($connect, $user['user_id']);
-                foreach ($userServices as $userService) {
-                    if(in_array($userService['service_id'], $services)) {
-                        return $user;
+                if(is_array($userServices) && count($userServices)) {
+                    foreach($userServices as $userService) {
+                        if(in_array($userService['service_id'], $services)) {
+                            array_push($arr, $user);
+                        }
                     }
                 }
-            });
+            }
+
+            return $arr;
+
+
+            // return array_filter($users, function ($user) {
+            //     global $adminId;
+            //     global $connect;
+            //     $services = json_decode(getSubAdminService($connect, $adminId)['services'], true);
+
+            //     $userServices = getUserServices($connect, $user['user_id']);
+            //     foreach ($userServices as $userService) {
+            //         if(in_array($userService['service_id'], $services)) {
+            //             return $user;
+            //         }
+            //     }
+            // });
         }
     }
     else {
