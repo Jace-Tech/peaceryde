@@ -68,7 +68,6 @@ function getUserMessagers ($connect, $user) {
 
         if($result->rowCount()) {
             $messages = $result->fetchAll();
-            print_r($messages);
 
             if(count($messages)) {
                 foreach($messages as $message) {
@@ -77,6 +76,7 @@ function getUserMessagers ($connect, $user) {
                     $_result->execute([$message['sender_id']]);
 
                     $admin = $_result->fetch();
+                    print_r($admin);
                     array_push($messagers, $admin);
                 }
             }
