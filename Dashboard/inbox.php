@@ -204,7 +204,7 @@ $messagers = getUserMessagers($connect, $USER_ID);
                                                         <div class="d-flex align-items-center g-2" style="max-height: 30px;">
                                                             <?php foreach ($attachments as $attachment) : ?>
                                                                 <a download="<?= $attachment; ?>" href="../attachment/<?= $attachment ?>" class="rounded d-flex p-2">
-                                                                    <svg class="w-6 h-6 fill-current text-gray-400 flex-shrink-0 mr-3" viewBox="0 0 12 12">
+                                                                    <svg class="w-2 h-2 fill-current text-gray-400 flex-shrink-0 mr-3" viewBox="0 0 12 12">
                                                                         <path d="M15 15V5l-5-5H2c-.6 0-1 .4-1 1v14c0 .6.4 1 1 1h12c.6 0 1-.4 1-1zM3 2h6v4h4v8H3V2z"></path>
                                                                     </svg>
                                                                     <span class="text-secondary">
