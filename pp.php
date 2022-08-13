@@ -43,48 +43,68 @@
             <div class="new-section1__cover-block layout signinpage">
 
               <div style="width: 100%; height: 200px; background-color: #ADC92E;">                      
-                  <h2 class="pptext"><b>Privacy & Cookie Policy</b></h2>
+                  <h2 class="pptext"><b>Privacy Policy</b></h2>
               </div>
                
               <div class="card ppcard">
                   <div class="row">
 
-                      <div class="col-md-12">
-                          <p class="pptext2">
-                              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas arcu sed libero
-                              velit
-                              porttitor et. Blandit in sed donec gravida amet urna. Proin feugiat viverra nec
-                              amet
-                              lectus semper molestie aenean. Enim mattis integer risus amet tellus mauris. Sed
-                              sit
-                              pretium aliquam turpis. Pulvinar et mauris porta risus sed eleifend sed dapibus
-                              sociis.
-                              Sit vel, amet, nec vulputate vel pretium dignissim tincidunt risus. Ac eget dui
-                              lobortis
-                              enim, dui imperdiet consectetur aliquam. Nibh eget etiam mi dictumst. Amet elit
-                              nunc
-                              senectus vel proin quam a mattis. Vitae sit integer nunc id ullamcorper aliquet
-                              euismod.
-                              Nisi nunc morbi parturient quam faucibus eu ullamcorper gravida. Massa, velit
-                              dictumst
-                              cras leo elit venenatis. Commodo, gravida nam neque egestas. Et rhoncus urna
-                              nunc,
-                              egestas ullamcorper purus hac placerat. Fermentum tellus pulvinar gravida ut
-                              eget nisi.
-                              Fermentum cursus aliquam aenean urna luctus et volutpat sit. Commodo tellus
-                              aliquet
-                              donec varius sapien dui tincidunt gravida ullamcorper. Sit sagittis vitae mi hac
-                              adipiscing.
-                              Dictum turpis nunc consequat tincidunt feugiat. Quis a et diam dictum ac. Sapien
-                              nullam
-                              sed nisi, commodo pellentesque nisl dictum. Eget nisl, quis gravida sed aliquam
-                              lorem
-                              sit donec adipiscing. Nec fames odio ultrices amet, consectetur eget urna
-                              dapibus. Lorem
-                              diam duis quam facilisi tortor mauris. Faucibus in ullamcorper nulla maecenas
-                              viverra
-                              quisque. Lorem ultricies morbi in tellus.-
+                      <div class="col-md-12" style="margin-bottom: 70px;margin-top: 70px;">
+                          
+                            <h1 class="policyh1"><b>Introduction</b></h1>
+                            <p class="pptext2" style="padding-top:8px;padding-bottom:6px;text-align: left;"><br><br>This privacy policy tells you about the information we collect from you when you use our website. In collecting this information, we are acting as a data processor to Nigerian Government (the data controller) by law, we are required to provide you with information about us, about why and how we use your data, and about the rights you have over your data.
+                            <br><br>At PeaceRyde Africa LLC we recognise how much you value your privacy and our aim is to maintain and protect your privacy on our website.
+                            <br><br>Personal information we collect about you includes your full name, gender, title, date of birth, passport number, nationality, email address and phone number (s). We may also collect other information you provide on our website such as your company's name and address, your position in the company, and the company's telephone number. The information we collect about you will be used for the purposes of processing your application. 
+                            <br><br>PeaceRyde Africa LLC is fully compliant with the data protection act currently in force in the UK and the EU GDPR. 
+                            
+                            <br><br>By providing us with your information on our website and through our email, you will be deemed to have read and accepted our privacy policy, and you will be deemed to be consenting to PeaceRyde Africa LLC using your information and passing on your personal data as described in this document.
+</p>
+                            <br><br>
+                            <h1 class="policyh1"><b>The peacerydeafrica.com website uses cookies</b></h1>
+                            <p class="pptext2" style="padding-top:8px;padding-bottom:6px;text-align: left;"><br><br>
+                          
+By using our website and agreeing to this policy, you consent to our use of cookies in accordance with the terms of this policy.
+
                           </p>
+                          <br><br>
+                          <h1 class="policyh1"><b>A Cookie</b></h1>
+                          <p class="pptext2" style="padding-top:8px;padding-bottom:6px;text-align: left;"><br><br>
+                            A cookie is a file containing an identifier (a string of letters and numbers) that is sent by a web server to a web browser and is stored by the browser. The identifier is then sent back to the server each time the browser requests a page from the server. 
+<br><br>
+Cookies can be used by web servers to identity and track users as they navigate different pages on a website and identify users returning to a website.
+                            </p>
+                            <br><br>
+                            <h1 class="policyh1"><b>Our Cookies</b></h1>
+                          <p class="pptext2" style="padding-top:8px;padding-bottom:6px;text-align: left;"><br><br>
+                            We use cookie to determine your location and to be able to localize your viewing to your locale. In addition, we use Google Analytics to analyse the use of this website.<br><br> Google Analytics generates statistical and other information about website use by means of cookies, which are stored on users' computers. 
+<br><br>The information generated relating to our website is used to create reports about the use of the website. Google will store this information. Google's privacy policy is available at: http://www.google.com/privacypolicy.htm
+
+                            </p>
+                            <br><br>
+                            <h1 class="policyh1"><b>Cookies and personal information</b></h1>
+                          <p class="pptext2" style="padding-top:8px;padding-bottom:6px;text-align: left;"><br><br>
+                            
+Cookies do not contain any information that personally identifies you, but personal information that we store about you may be linked, by us, to the information stored in and obtained from cookies.
+
+                            </p class="pptext2" style="padding-top:8px; padding-bottom:6px;text-align: left;"><br><br>
+                            
+                            <h1 class="policyh1"><b>Contact Us</b></h1>
+                          <p class="pptext2" style="padding-top:8px;padding-bottom:6px;text-align: left;"><br><br>
+                            This website is owned and operated by PeaceRyde Africa LLC. 
+<br>
+If you have any questions about our cookies or this privacy policy, please contact us: 
+<br>
+(a) by email: info@peacerydeafrica.com <br>
+(b) by telephone: +1 (708) 318-0273, +234 (903) 795-5511 <br>
+(c) by post to our address: 441 Granville Avenue, Hillside Illinois 60162 USA; 30 Bishop Oluwole Street Victoria Island, Lagos Nigeria. 
+                            </p>
+                            <br><br>
+                            <h1 class="policyh1"><b>Updates to this privacy policy</b></h1>
+                          <p class="pptext2" style="padding-top:8px;padding-bottom:6px;text-align: left;"><br><br>
+                            We regularly review and, if appropriate, update this privacy policy from time to time, and as our services and use of personal data evolves. If we want to make use of your personal data in a way that we haven’t previously identified, we will contact you to provide information about this and, if necessary, to ask for your consent.
+We will update the version number and date of this document each time it is changed
+
+                            </p>
                       </div>
                       
                   </div>
