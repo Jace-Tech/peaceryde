@@ -75,7 +75,8 @@ function getUserMessagers ($connect, $user) {
                     $_result = $connect->prepare($_query);
                     $_result->execute([$message['sender_id']]);
 
-                    array_push($messagers, $_result->fetch());
+                    $admin = $_result->fetch();
+                    array_push($messagers, $admin);
                 }
             }
 
@@ -105,7 +106,8 @@ function getAdminMessagers ($connect, $admin) {
                     $_result = $connect->prepare($_query);
                     $_result->execute([$message['sender_id']]);
 
-                    array_push($messagers, $_result->fetch());
+                    $user = $_result->fetch();
+                    array_push($messagers,$user );
                 }
             }
 
