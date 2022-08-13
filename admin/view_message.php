@@ -213,9 +213,9 @@ if($LOGGED_ADMIN['type'] != "HIGH") {
                     <?php for ($i = 0; $i < count($conversation); $i++) : ?>
                         <?php extract($conversation[$i]); ?>
                         <?php $messages->mark_read($message_id); ?>
-                        <?= var_dump($attachments); ?>
-                        <?php if(!is_null($attachments)): ?>
-                            <?php $_attachments = json_decode($attachments, true); ?>
+                        <?= var_dump($attachment); ?>
+                        <?php if(!is_null($attachment)): ?>
+                            <?php $_attachments = json_decode($attachment, true); ?>
                                 <div class="flex items-start mb-4 last:mb-0" style="flex-direction: <?= $style = $sender_id === $LOGGED_ADMIN['admin_id'] ? "row-reverse" : "row"; ?>">
                                     <div class="flex shadow-sm <?= $margin = $sender_id === $LOGGED_ADMIN['admin_id'] ? "ml-2" : "mr-2" ?> items-center justify-center bg-gray-200 rounded-full w-10 h-10 text-sm font-semibold uppercase text-gray-500">
                                         <?= $name = $sender_id === $LOGGED_ADMIN['admin_id'] ? getSubName($LOGGED_ADMIN['name']) : getSubName($user->get_user($_GET['msg'])['firstname'] . " " . $user->get_user($_GET['msg'])['lastname']); ?>
