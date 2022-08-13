@@ -13,7 +13,7 @@ if(isset($_POST['send'])){
     // ATTACHMENT
     $files = $_FILES['attachment'];
 
-    if($files['error']) {
+    if($files['error'][0]) {
         // send normal message
         $result = $messages->send_message($reciever, $sender, $message);
     }
