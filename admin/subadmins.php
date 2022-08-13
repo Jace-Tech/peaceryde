@@ -315,7 +315,7 @@ $active = $title = "Manage";
                                                                                 <option value="" disabled>Choose services</option>
                                                                                 <option value="*">All services</option>
 
-                                                                                <?php if(getSubAdminService($connect, $admin_id)['services'] != "*"): ?>
+                                                                                <?php if(getSubAdminService($connect, $admin_id)['services'] != "[\"*\"]"): ?>
                                                                                     <?php if (count($service->getAllServices())) : ?>
                                                                                         <?php foreach ($service->getAllServices() as $service_item) : ?>
                                                                                             <?php if (in_array($service_item['service_id'], json_decode(getSubAdminService($connect, $admin_id)['services'], true))) : ?>
