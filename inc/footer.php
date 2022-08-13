@@ -139,11 +139,10 @@
                     </li>
                     <li class="corp layout fs-13 ">
                       info@peacerydeafrica.com</li>
-
                   </ul>
                   <br>
                   <br>
-                  <i class="fs-13"> ...Peace begins with a smile <img src="assets/smiley.png" style="width: 20px; height: 20px;"> </i>
+                  <i class="fs-13" style="margin-top:10px"> ...Peace begins with a smile <img src="assets/smiley.png" style="width: 20px; height: 20px;"> </i>
                 </div>
               </div>
             </div>
