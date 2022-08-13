@@ -201,7 +201,7 @@ $messagers = getUserMessagers($connect, $USER_ID);
                                                     <!-- Attachment -->
                                                     <?php if ($__message['attachment']) : ?>
                                                         <?php $attachments = json_decode($__message['attachment'], true); ?>
-                                                        <div class="d-flex align-items-center g-2" style="max-height: 30px;">
+                                                        <div class="<?= $USER_ID == $__message['sender_id'] ? "chat-message-right" : "chat-message-left" ?> d-flex align-items-center g-2" style="max-height: 30px;">
                                                             <?php foreach ($attachments as $attachment) : ?>
                                                                 <a download="<?= $attachment; ?>" href="../attachment/<?= $attachment ?>" class="rounded d-flex p-2">
                                                                     <svg class="fill-current text-muted flex-shrink-0 mr-3" style="height: 20px; height: 20px;" viewBox="0 0 12 12">
