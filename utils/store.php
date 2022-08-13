@@ -229,12 +229,13 @@ function getSubAdminWithSameService ($connect, $userId) {
                             foreach($userServices as $userService) {
                                 // Get the user of the user
                                 $service_user = $userService['service_id'];
-                                print_r($service_user);
+                                if(is_string($service_user)) {
+                                    // Check whether the service exists in the subadmins own
+                                    if(in_array($service_user, $adminService)) {
+                                        return $subAdmin;
+                                    }
+                                }
 
-                                // Check whether the service exists in the subadmins own
-                                // if(in_array($service_user, $adminService)) {
-                                //     return $subAdmin;
-                                // }
                             }
                         }
                     }
@@ -246,22 +247,68 @@ function getSubAdminWithSameService ($connect, $userId) {
 }
 
 
-function getUsersWithSameCountryAsSubAdmin ($connect, $adminId) {
-    $countries = getSubAdminCountries($connect, $adminId);
-    $query = "SELECT * FROM users WHERE ";
-    for ($count = 0; $count < count($countries); $count++) { 
-        $country = $countries[$count];
+function getAdminWithSameCountryAsUser ($connect, $userId) {
+    $allSubAdmins = getAllSubAdmins($connect);
+    $userCountry = getUser($connect, $userId)['country'];
 
-        if($count == count($countries) - 1) {
-            $query .= "country = '$country'";
-        }
-        else {
-            $query .= "country = '$country' OR ";
+    $theAdmins = [];
+
+    if(is_array($allSubAdmins) && count($allSubAdmins)) {
+        foreach($allSubAdmins as $subAdmin) {
+            // Get the admin country
+            $subAdminCountry = getSubAdminService($connect, $subAdmin['admin_id']);
+            if($subAdminCountry) {
+                if($subAdminCountry == "[\"*\"]") {
+                    array_push($theAdmins, $subAdmin);
+                }
+                else {
+                    $_countries = json_decode($subAdminCountry, true);
+
+                    if($userCountry) {
+                        if(in_array($userCountry, $_countries)) {
+                            array_push($theAdmins, $subAdmin);
+                        }
+                    }
+                }
+            }
         }
     }
-    $result = $connect->query($query);
-    $result->execute();
-    return $result->fetchAll();
+    
+    return $theAdmins;
+}
+
+function getUsersWithSameCountryAsSubAdmin ($connect, $adminId) {
+    $countries = getSubAdminCountries($connect, $adminId);
+    $query = "SELECT * FROM users";
+    $result = $connect->prepare($query);
+    $users = $result->fetchAll();
+
+    $matchedUsers = []; 
+
+    if($countries) {
+        if($countries == "[\"*\"]") {
+            $matchedUsers = $users;
+        }
+        else {
+            $_countries = json_decode($countries, true);
+
+            if(is_array($users)) {
+                if(count($users)) {
+                    foreach ($users as $user) {
+                        $usersCountry = $user['country'];
+                        if($usersCountry) {
+                            if(in_array($usersCountry, $_countries)) {
+                                array_push($matchedUsers, $user);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    return $matchedUsers;
+
 }
 
 function getAllServices($connect) {

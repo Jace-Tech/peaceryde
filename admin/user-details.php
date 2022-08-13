@@ -3,29 +3,44 @@
 <?php
 if (!isset($_GET['user'])) header('Location: ./users.php');
 
-if(isset($_GET['_tification_id'])) {
+if (isset($_GET['_tification_id'])) {
     markNotificationAsSeen($connect, $_GET['_tification_id']);
 }
 ?>
 
 <?php
-    $active = $title = "users";
-    $users = new User($connect);
-    $userServices = new UserService($connect);
-    $services = new Service($connect);
-    $trackings = new Tracking($connect);
+$active = $title = "users";
+$users = new User($connect);
+$userServices = new UserService($connect);
+$services = new Service($connect);
+$trackings = new Tracking($connect);
 
-    $USER = $users->get_user($_GET['user']);
-    $USER_SERVICES = $userServices->getAllUserServices($_GET['user']);
-    $USERS_DOCS = getUsersUploads($connect, $_GET['user']);
-    $USER_SUB_ADMIN = getUsersSubAdmin($connect, $_GET['user']);
-    if($USER_SUB_ADMIN) {
-        $USERS_ADMIN = getSubAdmin($connect, $USER_SUB_ADMIN['sub_admin']);
-    }
-    else {
-        $USERS_ADMIN = getSubAdminWithSameService($connect, $_GET['user']);
-    }
+$USER = $users->get_user($_GET['user']);
+$USER_SERVICES = $userServices->getAllUserServices($_GET['user']);
+$USERS_DOCS = getUsersUploads($connect, $_GET['user']);
 
+$USERS_ADMIN = [];
+// Users subadmin based on the country
+$theAdmin = getAdminWithSameCountryAsUser($connect, $_GET['user']);
+if (is_array($theAdmin) && count($theAdmin)) {
+    foreach ($theAdmin as $admin) {
+        array_push($USERS_ADMIN, $admin);
+    }
+}
+
+// Users subadmin based on service
+$subAdminWithService = getSubAdminWithSameService($connect, $_GET['user']);
+if ($subAdminWithService) {
+    array_push($USERS_ADMIN, $subAdminWithService);
+}
+
+// Users subadmin based on assignment
+$USER_SUB_ADMIN = getUsersSubAdmin($connect, $_GET['user']);
+if ($USER_SUB_ADMIN) {
+    array_push($USERS_ADMIN, $USER_SUB_ADMIN);
+}
+
+$USERS_ADMIN = array_unique($USERS_ADMIN);
 ?>
 
 <!doctype html>
@@ -51,7 +66,7 @@ if(isset($_GET['_tification_id'])) {
         <div class="mt-16">
             <div class="flex items-center justify-between flex-wrap g-3">
                 <h3 class="mt-2 text-gray-600 font-bold text-md uppercase">Profile</h3>
-                <?php if(!isset($_GET['edit'])): ?>
+                <?php if (!isset($_GET['edit'])) : ?>
                     <a href="./user-details.php?user=<?= $_GET['user']; ?>&edit=<?= $_GET['user']; ?>" class="btn btn-sm bg-indigo-500 hover:bg-indigo-600 text-white">Edit</a>
                 <?php endif; ?>
             </div>
@@ -137,7 +152,7 @@ if(isset($_GET['_tification_id'])) {
                                     <option value="" disabled>Choose gender</option>
                                     <option value="male">Male</option>
                                     <option value="female">Female</option>
-                                </select> 
+                                </select>
                             </div>
 
                             <div class="col-span-full md:col-span-6">
@@ -155,13 +170,13 @@ if(isset($_GET['_tification_id'])) {
         </div>
 
         <!-- SUBADMINS -->
-        <?php if ($LOGGED_ADMIN['type'] == "HIGH") :?>
+        <?php if ($LOGGED_ADMIN['type'] == "HIGH") : ?>
             <div class="mt-16">
                 <h3 class="mt-2 text-gray-600 font-bold text-md uppercase">Sub Admin</h3>
                 <div class="mt-4">
                     <div class="overflow-x-auto">
                         <table class="table-auto w-full">
-                            <?php if ($USERS_ADMIN) : ?>
+                            <?php if ($USERS_ADMIN && count($USERS_ADMIN)) : ?>
                                 <thead class="text-xs font-semibold uppercase text-gray-500 bg-gray-50 border-t border-b border-gray-200">
                                     <tr>
                                         <th class="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap">
@@ -175,38 +190,40 @@ if(isset($_GET['_tification_id'])) {
                                 </thead>
 
                                 <tbody class="text-sm divide-y divide-gray-200">
-                                    <tr>
-                                        <td class="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap">
-                                            <div class="flex items-center">
-                                                <div class="font-medium text-gray-800">
-                                                    <a href="../Dashboard/upload/<?= $USERS_ADMIN['admin_id']; ?>" class="text-indigo-500 text-sm font-medium">
-                                                        <?= $USERS_ADMIN['name']; ?>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </td>
-
-                                        <td class="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap">
-                                            <?php if (isset($_GET['change_admin'])) : ?>
-                                                <form action="./handler/user_handler.php" method="post">
-                                                    <div class="flex">
-                                                        <select name="subadmin" class="form-select text-sm" id="">
-                                                            <?php foreach (getAllSubAdmins($connect) as $admin) : ?>
-                                                                <option <?= $admin['admin_id'] === $USERS_ADMIN['admin_id'] ? " selected" : "" ?> value="<?= $admin['admin_id'] ?>">
-                                                                    <?= $admin['name']; ?>
-                                                                </option>
-                                                            <?php endforeach; ?>
-                                                        </select>
-                                                        <input type="hidden" name="id" value="<?= $admin['admin_id'] ?>">
-                                                        <input type="hidden" name="user" value="<?= $_GET['user'] ?>">
-                                                        <button name="change_admin" class="btn bg-indigo-500 hover:bg-indigo-600 text-white">Change</button>
+                                    <?php foreach ($USERS_ADMIN as $userAdmin_) : ?>
+                                        <tr>
+                                            <td class="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap">
+                                                <div class="flex items-center">
+                                                    <div class="font-medium text-gray-800">
+                                                        <a href="../Dashboard/upload/<?= $userAdmin_['admin_id']; ?>" class="text-indigo-500 text-sm font-medium">
+                                                            <?= $userAdmin_['name']; ?>
+                                                        </a>
                                                     </div>
-                                                </form>
-                                            <?php else : ?>
-                                                <a href="?user=<?= $_GET['user'] ?>&change_admin=<?= $USERS_ADMIN['admin_id'] ?>" class="text-indigo-500 inline-block">Change subadmin</a>
-                                            <?php endif; ?>
-                                        </td>
-                                    </tr>
+                                                </div>
+                                            </td>
+
+                                            <td class="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap">
+                                                <?php if (isset($_GET['change_admin'])) : ?>
+                                                    <form action="./handler/user_handler.php" method="post">
+                                                        <div class="flex">
+                                                            <select name="subadmin" class="form-select text-sm" id="">
+                                                                <?php foreach (getAllSubAdmins($connect) as $admin) : ?>
+                                                                    <option <?= $admin['admin_id'] === $userAdmin_['admin_id'] ? " selected" : "" ?> value="<?= $admin['admin_id'] ?>">
+                                                                        <?= $admin['name']; ?>
+                                                                    </option>
+                                                                <?php endforeach; ?>
+                                                            </select>
+                                                            <input type="hidden" name="id" value="<?= $admin['admin_id'] ?>">
+                                                            <input type="hidden" name="user" value="<?= $_GET['user'] ?>">
+                                                            <button name="change_admin" class="btn bg-indigo-500 hover:bg-indigo-600 text-white">Change</button>
+                                                        </div>
+                                                    </form>
+                                                <?php else : ?>
+                                                    <a href="?user=<?= $_GET['user'] ?>&change_admin=<?= $userAdmin_['admin_id'] ?>" class="text-indigo-500 inline-block">Change subadmin</a>
+                                                <?php endif; ?>
+                                            </td>
+                                        </tr>
+                                    <?php endforeach; ?>
                                 </tbody>
 
                             <?php else : ?>
