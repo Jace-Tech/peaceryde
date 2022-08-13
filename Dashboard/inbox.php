@@ -149,7 +149,7 @@ if (isset($_GET['message'])) {
                                     </div>
                                 </div>
 
-                                <?php if(count($main_admin)): ?>
+                                <?php if (count($main_admin)) : ?>
                                     <a href="?message=<?= "MAIN_ADMIN"; ?>" class="list-group-item <?= "MAIN_ADMIN" == $_GET['message'] ? "bg-light" : "" ?> list-group-item-action border-0">
                                         <!-- <div class="badge bg-success float-right">5</div> -->
                                         <div class="d-flex align-items-start">
@@ -160,7 +160,7 @@ if (isset($_GET['message'])) {
                                             </div>
                                         </div>
                                     </a>
-                                <?php else: ?>
+                                <?php else : ?>
                                     <p class="text-muted text-sm">No user found</p>
                                 <?php endif; ?>
 
@@ -195,12 +195,14 @@ if (isset($_GET['message'])) {
                                             <?php if (count($USER_MESSAGES)) : ?>
                                                 <?php foreach ($USER_MESSAGES as $__message) : ?>
 
-                                                    <?php if($__message['attachment']): ?>
+                                                    <?php if ($__message['attachment']) : ?>
                                                         <?php $attachments = json_decode($__message['attachment'], true); ?>
                                                         <div class="d-flex align-items-center g-2">
-                                                            <?php foreach ($attachments as $attachment): ?>
+                                                            <?php foreach ($attachments as $attachment) : ?>
                                                                 <a download="<?= $attachment; ?>" href="../attachment/<?= $attachment ?>" class="rounded d-flex p-2">
-                                                                    <svg class="w-6 h-6 fill-current text-gray-400 flex-shrink-0 mr-3" viewBox="0 0 24 24"><path d="M15 15V5l-5-5H2c-.6 0-1 .4-1 1v14c0 .6.4 1 1 1h12c.6 0 1-.4 1-1zM3 2h6v4h4v8H3V2z"></path></svg>
+                                                                    <svg class="w-6 h-6 fill-current text-gray-400 flex-shrink-0 mr-3" viewBox="0 0 24 24">
+                                                                        <path d="M15 15V5l-5-5H2c-.6 0-1 .4-1 1v14c0 .6.4 1 1 1h12c.6 0 1-.4 1-1zM3 2h6v4h4v8H3V2z"></path>
+                                                                    </svg>
                                                                     <span class="text-secondary">
                                                                         <?= $attachment; ?>
                                                                     </span>
@@ -236,7 +238,7 @@ if (isset($_GET['message'])) {
                                                                 <?= $__message['message']; ?>
                                                             </div>
                                                         </div>
-                                                    <?php else: ?>
+                                                    <?php else : ?>
                                                         <!-- Admin -->
                                                         <div class="chat-message-left pb-4">
                                                             <div>
@@ -286,6 +288,33 @@ if (isset($_GET['message'])) {
         </div>
 
     </div>
+    <script>
+        const fileBtn = document.querySelector("#fileBtn")
+        const fileInput = document.querySelector("#hiddenInput")
+        const filesScreen = document.querySelector("#filesScreen")
+
+        fileBtn.addEventListener("click", (e) => {
+            e.preventDefault();
+            fileInput.click();
+        })
+
+        fileInput.addEventListener("change", (e) => {
+            const files = [...e.target.files]
+            filesScreen.innerHTML = ""
+
+            if (files.length) {
+                files.forEach(file => {
+                    const div = document.createElement('div');
+                    div.className = "flex items-center p-2 g-2"
+                    div.innerHTML = `
+                                    <svg class="w-4 h-4 fill-current text-gray-400 flex-shrink-0 mr-3" viewBox="0 0 16 16"><path d="M15 15V5l-5-5H2c-.6 0-1 .4-1 1v14c0 .6.4 1 1 1h12c.6 0 1-.4 1-1zM3 2h6v4h4v8H3V2z"></path></svg>
+                                    <span class="text-gray-500 text-sm">${file.name}</span>
+                                `
+                    filesScreen.appendChild(div)
+                })
+            }
+        })
+    </script>
     <script>
         function openForm() {
             document.getElementById("myForm").style.display = "block";

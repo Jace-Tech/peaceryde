@@ -52,11 +52,11 @@ if(isset($_POST['send'])){
 
 
     if($result){
-        header("Location: ../message.php?msg=$reciever");
+        header("Location: ../view_message.php?msg=$reciever");
     }
     else{
         setAdminAlert("Something went wrong", 'error');
-        header("Location: ../message.php");
+        header("Location: ../view_message.php");
     }
 
 }
@@ -78,6 +78,6 @@ if (isset($_POST['broadcast'])) {
 
     if($final_result){
         setAdminAlert("Message Broadcasted!", 'success');
-        header("Location: ../message.php");
+        header("Location: ../view_message.php");
     }
 }
