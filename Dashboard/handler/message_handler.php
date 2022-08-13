@@ -19,7 +19,7 @@ if(isset($_POST['send'])) {
         ];
         $_SESSION['ALERT'] = json_encode($alert);
 
-        header("Location: ../chat.php");
+        header("Location:" . $_SERVER['HTTP_REFERER']);
     }
     else {
         $alert = [
@@ -28,9 +28,9 @@ if(isset($_POST['send'])) {
         ];
         $_SESSION['ALERT'] = json_encode($alert);
 
-        header("Location: ../chat.php");
+        header("Location:" . $_SERVER['HTTP_REFERER']);
     }
 }
 else {
-    header("Location: ../chat.php");
+    header("Location:" . $_SERVER['HTTP_REFERER']);
 }
