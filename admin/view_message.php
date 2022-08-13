@@ -303,7 +303,7 @@ if($LOGGED_ADMIN['type'] != "HIGH") {
                                 div.className = "flex items-center p-2 g-2"
                                 div.innerHTML = `
                                     <svg class="w-4 h-4 fill-current text-gray-400 flex-shrink-0 mr-3" viewBox="0 0 16 16"><path d="M15 15V5l-5-5H2c-.6 0-1 .4-1 1v14c0 .6.4 1 1 1h12c.6 0 1-.4 1-1zM3 2h6v4h4v8H3V2z"></path></svg>
-                                    <span class="text-gray-300 text-sm">${file.name}</span>
+                                    <span class="text-gray-500 text-sm">${file.name}</span>
                                 `
                                 filesScreen.appendChild(div)
                             })
