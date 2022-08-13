@@ -193,6 +193,7 @@
                         </div>
                             
                             <p class="leadtext">Daniella Iyore Uwagboe is the Group Manager for Financial Shared Services & Account Executive for PeaceRyde Africa LLC. Daniella brings a wealth of experience in efficiently and successfully resolving customers complaints, recorded successes in effectively closing-out customers’ accounts reconciliations, corporate tax filings, and other financial related shared services for PeaceRyde Africa LLC and its affiliate companies.</p>
+                            <br>
                             <span>You may contact Daniella via email <a class="maillink" href="mailto:daniella@peacerydeafrica.com">(daniella@peacerydeafrica.com)</a></span>
                            
                             <!-- <p class="leadtext">You may contact Daniella @ billing@peacerydeafrica.com</p> -->
