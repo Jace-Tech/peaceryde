@@ -7,8 +7,8 @@ $messages = new Message($connect);
 if (isset($_GET['message'])) {
     $id = $_GET['message'];
     $USER_MESSAGES = $messages->get_conversation($USER_ID, $id);
-    $messagers = getUserMessagers($connect, $USER_ID);
 }
+$messagers = getUserMessagers($connect, $USER_ID);
 
 // $isUnread = count($messages->get_user_unread_messages($USER_ID));
 ?>
