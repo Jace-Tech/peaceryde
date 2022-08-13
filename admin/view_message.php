@@ -278,6 +278,17 @@ if($LOGGED_ADMIN['type'] != "HIGH") {
                         </form>
                     </div>
                 </div>
+
+                <script src="">
+                    const fileBtn = document.querySelector("#fileBtn")
+                    const fileInput = document.querySelector("#hiddenInput")
+
+                    fileBtn.addEventListener("click", (e) => {
+                        e.preventDefault();
+                        console.log("TESTING")
+                        fileInput.click();
+                    })
+                </script>
             <?php else : ?>
                 <div class="w-full h-full text-md text-gray-400" style="display: flex; align-items: center; justify-content: center;">
                     <p>Click on a message to view</p>
@@ -288,17 +299,6 @@ if($LOGGED_ADMIN['type'] != "HIGH") {
 </main>
 </div>
 </div>
-
-<script src="">
-    const fileBtn = document.querySelector("#fileBtn")
-    const fileInput = document.querySelector("#hiddenInput")
-
-    fileBtn.addEventListener("click", (e) => {
-        e.preventDefault();
-        console.log("TESTING")
-        fileInput.click();
-    })
-</script>
 
 <script src="main.75545896273710c7378c.js"></script>
 </body>
