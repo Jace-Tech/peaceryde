@@ -280,7 +280,7 @@ if($LOGGED_ADMIN['type'] != "HIGH") {
                     </div>
                 </div>
 
-                <script src="">
+                <script>
                     const fileBtn = document.querySelector("#fileBtn")
                     const fileInput = document.querySelector("#hiddenInput")
                     console.log(fileBtn)
