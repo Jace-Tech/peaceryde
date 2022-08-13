@@ -76,7 +76,6 @@ function getUserMessagers ($connect, $user) {
                     $_result->execute([ $message['sender_id'] ]);
 
                     $admin = $_result->fetch();
-                    print_r($admin);
                     array_push($messagers, $admin);
                 }
             }

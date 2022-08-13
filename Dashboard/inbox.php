@@ -10,8 +10,6 @@ if (isset($_GET['message'])) {
 }
 $messagers = getUserMessagers($connect, $USER_ID);
 
-print_r($messagers);
-
 // $isUnread = count($messages->get_user_unread_messages($USER_ID));
 ?>
 
