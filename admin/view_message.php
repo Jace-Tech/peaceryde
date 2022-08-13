@@ -283,6 +283,8 @@ if($LOGGED_ADMIN['type'] != "HIGH") {
                 <script src="">
                     const fileBtn = document.querySelector("#fileBtn")
                     const fileInput = document.querySelector("#hiddenInput")
+                    console.log(fileBtn)
+                    console.log(fileInput)
 
                     fileBtn.addEventListener("click", (e) => {
                         e.preventDefault();
