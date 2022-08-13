@@ -294,7 +294,7 @@ if($LOGGED_ADMIN['type'] != "HIGH") {
                     })
 
                     fileInput.addEventListener("change", (e) => {
-                        const files = e.target.files
+                        const files = [...e.target.files]
                         filesScreen.innerHTML = ""
 
                         if(files.length) {
