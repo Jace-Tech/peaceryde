@@ -295,6 +295,7 @@ if($LOGGED_ADMIN['type'] != "HIGH") {
 
     fileBtn.addEventListener("click", (e) => {
         e.preventDefault();
+        console.log("TESTING")
         fileInput.click();
     })
 </script>
