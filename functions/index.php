@@ -82,7 +82,7 @@ function getUserMessagers ($connect, $user) {
 
         }
 
-        return array_unique($messagers);
+        return array_unique($messagers, SORT_REGULAR);
     } catch (PDOException $e) {
         return [];
     }
