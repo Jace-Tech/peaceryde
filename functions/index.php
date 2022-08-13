@@ -68,6 +68,7 @@ function getUserMessagers ($connect, $user) {
 
         if($result->rowCount()) {
             $messages = $result->fetchAll();
+            print_r($messages);
 
             if(count($messages)) {
                 foreach($messages as $message) {
