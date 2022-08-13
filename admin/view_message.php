@@ -270,7 +270,7 @@ if($LOGGED_ADMIN['type'] != "HIGH") {
                                 <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12C23.98 5.38 18.62.02 12 0zm6 13h-5v5h-2v-5H6v-2h5V6h2v5h5v2z"></path>
                             </svg>
                         </button>
-                        <form class="grow flex" method="post" action="./handler/message_handler.php">
+                        <form class="grow flex" method="post" action="./handler/message_handler.php" enctype="multipart/form-data">
                             <div class="grow mr-3">
                                 <label for="message-input" class="sr-only">Type a message</label>
                                 <input type="hidden" name="reciever" value="<?= $_GET['msg']; ?>">
