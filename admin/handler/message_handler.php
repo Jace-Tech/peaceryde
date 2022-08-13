@@ -10,7 +10,46 @@ if(isset($_POST['send'])){
     $sender = $_POST['sender'];
     $reciever = $_POST['reciever'];
 
-    $result = $messages->send_message($reciever, $sender, $message);
+    // ATTACHMENT
+    $files = $_FILES['attachment'];
+
+    if($files['error']) {
+        // send normal message
+        $result = $messages->send_message($reciever, $sender, $message);
+    }
+    else {
+        $attachments = [];
+        // Upload the attachment
+        for($num = 0; $num < count($files['name']); $num++) {
+            $filearray = explode(".", $files['name'][$num]);
+            $filename = $filearray[0];
+            $extension = end($filearray);
+
+            // Max file size for
+            $size = $files['size'][$num];
+            $MAX_FILE_SIZE = 2 * 1024 * 1024;
+
+            // Check for file size
+            if($size > $MAX_FILE_SIZE) {
+                setAdminAlert("File too large", "error");
+                header("Location:". $_SERVER['HTTP_REFERER']);
+                exit();
+            }
+
+            $time = time();
+            $newFilename = "$filename-$time.$extension";
+
+            $tempFile = $files['tmp_name'][$num];
+            $destination = "../../attachment/$newFilename";
+
+            if(move_uploaded_file($tempFile, $destination)) {
+                array_push($attachments, $newFilename);
+            }
+        }
+
+        $result = $messages->send_message($reciever, $sender, $message, json_encode($attachments));
+    }
+
 
     if($result){
         header("Location: ../message.php?msg=$reciever");

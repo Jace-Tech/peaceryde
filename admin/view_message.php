@@ -7,19 +7,34 @@
     $user = new User($connect);
     $active = $title = "Message";
 
-    if($LOGGED_ADMIN['type'] != "HIGH") {
-        $usersId = getSubAdminUsers($connect, $LOGGED_ADMIN['admin_id']);
-        // Get admin assigned users
-        $assignedUsers = array_map(function ($item){
-            global $connect;
-            $user = getUser($connect, $item['user']);
-            return $user;
-        }, $usersId);
+    
+if($LOGGED_ADMIN['type'] != "HIGH") {
+    if (getSubAdminService($connect, $LOGGED_ADMIN['admin_id'])['services']) {
+        $subAdminServices = json_decode(getSubAdminService($connect, $LOGGED_ADMIN['admin_id'])['services'], true);
 
-        // Get users based of service
-        $usersByService = getUsersWithSameServiceAsSubAdmin($connect, $LOGGED_ADMIN['admin_id']);
-        $SUBADMIN_USERS = array_merge($assignedUsers, $usersByCountry);
+        if (in_array("*", $subAdminServices)) {
+            $SUBADMIN_USERS = $user->get_all_users();
+        } else {
+            $usersId = getSubAdminUsers($connect, $LOGGED_ADMIN['admin_id']);
+
+            // Get admin assigned users
+            $assignedUsers = array_map(function ($item) {
+                global $connect;
+                $user = getUser($connect, $item['user']);
+                return $user;
+            }, $usersId);
+
+            // Get users based of service
+            $usersByService = getUsersWithSameServiceAsSubAdmin($connect, $LOGGED_ADMIN['admin_id']);
+
+            // get users by country
+            $usersByCountry = getUsersWithSameCountryAsSubAdmin($connect, $LOGGED_ADMIN['admin_id']);
+            $SUBADMIN_USERS = array_unique(array_merge($assignedUsers, $usersByService, $usersByCountry));
+        }
+    } else {
+        $SUBADMIN_USERS = [];
     }
+}
 ?>
 
 
@@ -194,10 +209,39 @@
                     </div>
                 </div>
                 <div class="grow px-4 sm:px-6 md:px-5 py-6">
-                    <?php $conversation = $messages->get_conversation($LOGGED_ADMIN['admin_id'], $user_id); ?>
+                    <?php $conversation = $messages->get_conversation($LOGGED_ADMIN['admin_id'], $_GET['msg']); ?>
                     <?php for ($i = 0; $i < count($conversation); $i++) : ?>
                         <?php extract($conversation[$i]); ?>
                         <?php $messages->mark_read($message_id); ?>
+
+                        <?php if($attachments): ?>
+                            <?php $_attachments = json_decode($attachments, true); ?>
+                                <div class="flex items-start mb-4 last:mb-0" style="flex-direction: <?= $style = $sender_id === $LOGGED_ADMIN['admin_id'] ? "row-reverse" : "row"; ?>">
+                                    <div class="flex shadow-sm <?= $margin = $sender_id === $LOGGED_ADMIN['admin_id'] ? "ml-2" : "mr-2" ?> items-center justify-center bg-gray-200 rounded-full w-10 h-10 text-sm font-semibold uppercase text-gray-500">
+                                        <?= $name = $sender_id === $LOGGED_ADMIN['admin_id'] ? getSubName($LOGGED_ADMIN['name']) : getSubName($user->get_user($_GET['msg'])['firstname'] . " " . $user->get_user($_GET['msg'])['lastname']); ?>
+                                    </div>
+                                    <div>
+                                        <?php foreach($_attachments as $attachment): ?>
+                                            <div class="flex items-center mb-2 p-2 rounded-2 bg-indigo-200">
+                                                <svg class="w-6 h-6 fill-current text-gray-400 flex-shrink-0 mr-3" viewBox="0 0 24 24"><path d="M15 15V5l-5-5H2c-.6 0-1 .4-1 1v14c0 .6.4 1 1 1h12c.6 0 1-.4 1-1zM3 2h6v4h4v8H3V2z"></path></svg>
+                                                <a href="../attachment/<?= $attachment ?>" class="text-sm text-indigo-500 font-semibold flex-1">
+                                                    <?= $attachment ?>
+                                                </a>
+                                            </div>
+                                        <?php endforeach; ?>
+
+                                        <div class="text-sm <?= $theme =  $sender_id === $LOGGED_ADMIN['admin_id'] ? "bg-indigo-500 text-white" : "bg-white text-gray-800" ?> p-3 rounded-lg border border-transparent shadow-md mb-1" style="border-top-right-radius: 0;">
+                                            <?= $message ?>
+                                        </div>
+                                        <div class="flex items-center justify-between">
+                                            <div class="text-xs text-gray-500 font-medium" title="<?= date("l j, M Y H:i A", strtotime($date)) ?>">
+                                                <?= date("D, H:i A", strtotime($date)); ?>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                        <?php endif; ?>
+
                         <div class="flex items-start mb-4 last:mb-0" style="flex-direction: <?= $style = $sender_id === $LOGGED_ADMIN['admin_id'] ? "row-reverse" : "row"; ?>">
                             <div class="flex shadow-sm <?= $margin = $sender_id === $LOGGED_ADMIN['admin_id'] ? "ml-2" : "mr-2" ?> items-center justify-center bg-gray-200 rounded-full w-10 h-10 text-sm font-semibold uppercase text-gray-500">
                                 <?= $name = $sender_id === $LOGGED_ADMIN['admin_id'] ? getSubName($LOGGED_ADMIN['name']) : getSubName($user->get_user($_GET['msg'])['firstname'] . " " . $user->get_user($_GET['msg'])['lastname']); ?>
@@ -217,11 +261,18 @@
                 </div>
                 <div class="sticky bottom-0">
                     <div class="flex items-center justify-between bg-white border-t border-gray-200 px-4 sm:px-6 md:px-5 h-16">
+                        <button id="fileBtn" class="shrink-0 text-gray-400 hover:text-gray-500 mr-3">
+                            <span class="sr-only">Attachment</span> 
+                            <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
+                                <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12C23.98 5.38 18.62.02 12 0zm6 13h-5v5h-2v-5H6v-2h5V6h2v5h5v2z"></path>
+                            </svg>
+                        </button>
                         <form class="grow flex" method="post" action="./handler/message_handler.php">
                             <div class="grow mr-3">
                                 <label for="message-input" class="sr-only">Type a message</label>
                                 <input type="hidden" name="reciever" value="<?= $_GET['msg']; ?>">
                                 <input type="hidden" name="sender" value="<?= $LOGGED_ADMIN['admin_id']; ?>">
+                                <input type="file" name="attachment[]" multiple id="hiddenInput" hidden>
                                 <input id="message-input" name="message" class="form-input w-full bg-gray-100 border-transparent focus:bg-white focus:border-gray-300" placeholder="Aa" />
                             </div>
                             <button type="submit" name="send" class="btn bg-indigo-500 hover:bg-indigo-600 text-white whitespace-nowrap">Send -&gt;</button>
@@ -238,6 +289,16 @@
 </main>
 </div>
 </div>
+
+<script src="">
+    const fileBtn = document.querySelector("#fileBtn")
+    const fileInput = document.querySelector("#hiddenInput")
+
+    fileBtn.addEventListener("click", (e) => {
+        e.preventDefault();
+        fileInput.click();
+    })
+</script>
 
 <script src="main.75545896273710c7378c.js"></script>
 </body>

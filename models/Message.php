@@ -19,16 +19,17 @@ class Message {
         return $message_id;
     }
 
-    public function send_message($reciever, $from, $message)
+    public function send_message($reciever, $from, $message, $attachment = NULL)
     {
         // try{
-            $query = "INSERT INTO `messages` (`message_id`, `user_id`, `sender_id`, `message`, `is_read`) 
-                VALUES (:message_id, :user, :sender, :message, :is_read)";
+            $query = "INSERT INTO `messages` (`message_id`, `user_id`, `sender_id`, `attachment`, `message`, `is_read`) 
+                VALUES (:message_id, :user, :sender, :attachment, :message, :is_read)";
             $result = $this->connection->prepare($query);
             $result->execute([
                 'message_id' => $this->generate_message_id(),
                 'user' => $reciever,
                 'sender' => $from,
+                'attachment' => $attachment,
                 'message' => $message,
                 'is_read' => 0
             ]);

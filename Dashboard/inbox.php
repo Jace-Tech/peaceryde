@@ -194,6 +194,21 @@ if (isset($_GET['message'])) {
 
                                             <?php if (count($USER_MESSAGES)) : ?>
                                                 <?php foreach ($USER_MESSAGES as $__message) : ?>
+
+                                                    <?php if($__message['attachment']): ?>
+                                                        <?php $attachments = json_decode($__message['attachment'], true); ?>
+                                                        <div class="d-flex align-items-center g-2">
+                                                            <?php foreach ($attachments as $attachment): ?>
+                                                                <a href="" class="rounded d-flex p-2">
+                                                                    <svg class="w-6 h-6 fill-current text-gray-400 flex-shrink-0 mr-3" viewBox="0 0 24 24"><path d="M15 15V5l-5-5H2c-.6 0-1 .4-1 1v14c0 .6.4 1 1 1h12c.6 0 1-.4 1-1zM3 2h6v4h4v8H3V2z"></path></svg>
+                                                                    <span class="text-secondary">
+                                                                        <?= $attachment; ?>
+                                                                    </span>
+                                                                </a>
+                                                            <?php endforeach; ?>
+                                                        </div>
+                                                    <?php endif; ?>
+
                                                     <?php if ($__message['sender_id'] == $USER_ID) : ?>
                                                         <!-- User -->
                                                         <div class="chat-message-right pb-4">
