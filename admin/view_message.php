@@ -214,6 +214,8 @@ if($LOGGED_ADMIN['type'] != "HIGH") {
                     <?php for ($i = 0; $i < count($conversation); $i++) : ?>
                         <?php extract($conversation[$i]); ?>
                         <?php $messages->mark_read($message_id); ?>
+
+                        <!-- Attachments -->
                         <?php if(!is_null($attachment)): ?>
                             <?php $_attachments = json_decode($attachment, true); ?>
                                 <div class="flex items-start mb-4 last:mb-0" style="flex-direction: <?= $style = $sender_id === $LOGGED_ADMIN['admin_id'] ? "row-reverse" : "row"; ?>">
@@ -224,7 +226,7 @@ if($LOGGED_ADMIN['type'] != "HIGH") {
                                         <?php foreach($_attachments as $attachment): ?>
                                             <div class="flex items-center mb-2 p-2 rounded-2 bg-indigo-200">
                                                 <svg class="w-6 h-6 fill-current text-gray-400 flex-shrink-0 mr-3" viewBox="0 0 24 24"><path d="M15 15V5l-5-5H2c-.6 0-1 .4-1 1v14c0 .6.4 1 1 1h12c.6 0 1-.4 1-1zM3 2h6v4h4v8H3V2z"></path></svg>
-                                                <a href="../attachment/<?= $attachment ?>" class="text-sm text-indigo-500 font-semibold flex-1">
+                                                <a download="<?= $attachment; ?>" href="../attachment/<?= $attachment ?>" class="text-sm text-indigo-500 font-semibold flex-1">
                                                     <?= $attachment ?>
                                                 </a>
                                             </div>
@@ -283,12 +285,9 @@ if($LOGGED_ADMIN['type'] != "HIGH") {
                 <script>
                     const fileBtn = document.querySelector("#fileBtn")
                     const fileInput = document.querySelector("#hiddenInput")
-                    console.log(fileBtn)
-                    console.log(fileInput)
 
                     fileBtn.addEventListener("click", (e) => {
                         e.preventDefault();
-                        console.log("TESTING")
                         fileInput.click();
                     })
                 </script>
