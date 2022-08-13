@@ -1,6 +1,5 @@
 <?php 
 
-
 function getAllUsers($connect) {
     $query = "SELECT * FROM users";
     $result = $connect->prepare($query);
@@ -141,7 +140,6 @@ function assignAutomatically($connect) {
     }
 }
 
-
 function getSubAdminUsers ($connect, $adminId) {
     $query = "SELECT * FROM sub_admin_users WHERE sub_admin = ?";
     $result = $connect->prepare($query);
@@ -200,7 +198,6 @@ function getUsersWithSameServiceAsSubAdmin ($connect, $adminId) {
     
 }
 
-
 function getSubAdminWithSameService ($connect, $userId) {
     $userServices = getUserServices($connect, $userId);
     $getAllSubAdmins = getAllSubAdmins($connect);
@@ -214,7 +211,7 @@ function getSubAdminWithSameService ($connect, $userId) {
             // If there's a service set for the subadmin
             if($adminService){
                 // Convert the service to an array
-                $parsedService = json_decode(getSubAdminService($connect, $subAdmin['admin_id'])["services"], true);
+                $parsedService = json_decode($adminService, true);
 
                 // Check if it's an array
                 if(is_array($parsedService) && count($parsedService)) {
@@ -231,7 +228,7 @@ function getSubAdminWithSameService ($connect, $userId) {
                                 $service_user = $userService['service_id'];
                                 if(is_string($service_user)) {
                                     // Check whether the service exists in the subadmins own
-                                    if(in_array($service_user, $adminService)) {
+                                    if(in_array($service_user, $parsedService)) {
                                         return $subAdmin;
                                     }
                                 }
@@ -245,7 +242,6 @@ function getSubAdminWithSameService ($connect, $userId) {
     }
     return false;
 }
-
 
 function getAdminWithSameCountryAsUser ($connect, $userId) {
     $allSubAdmins = getAllSubAdmins($connect);
@@ -262,13 +258,15 @@ function getAdminWithSameCountryAsUser ($connect, $userId) {
                     array_push($theAdmins, $subAdmin);
                 }
                 else {
-                    $_countries = json_decode($subAdminCountry, true);
-
-                    if($userCountry) {
-                        if(in_array($userCountry, $_countries)) {
-                            array_push($theAdmins, $subAdmin);
+                    if(is_string($subAdminCountry)) {
+                        $_countries = json_decode($subAdminCountry, true);
+                        if($userCountry) {
+                            if(in_array($userCountry, $_countries)) {
+                                array_push($theAdmins, $subAdmin);
+                            }
                         }
                     }
+
                 }
             }
         }
