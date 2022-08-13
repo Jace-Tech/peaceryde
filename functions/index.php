@@ -82,7 +82,7 @@ function getUserMessagers ($connect, $user) {
 
         }
 
-        return $messagers;
+        return array_unique($messagers);
     } catch (PDOException $e) {
         return [];
     }
@@ -113,7 +113,7 @@ function getAdminMessagers ($connect, $admin) {
 
         }
 
-        return $messagers;
+        return array_unique($messagers);
     } catch (PDOException $e) {
         return [];
     }
