@@ -265,13 +265,16 @@ if (isset($_GET['message'])) {
                                         </div>
                                     </div>
 
-                                    <form action="./handler/message_handler.php" method="post" class="flex-grow-0 py-3 px-4 border-top">
+                                    <form action="./handler/message_handler.php" method="post" enctype="multipart/form-data" class="flex-grow-0 py-3 px-4 border-top">
                                         <div class="input-group">
                                             <input type="hidden" name="sender" value="<?= $USER_ID ?>">
                                             <input type="hidden" name="reciever" value="<?= $_GET['message']; ?>">
                                             <input type="text" name="message" class="form-control" placeholder="Type your message">
+                                            <input type="file" name="attachment[]" id="hiddenInput" hidden>
+                                            <button id="fileBtn" type="button" class="btn btn-primary">Files</button>
                                             <button name="send" type="submit" class="btn btn-primary">Send</button>
                                         </div>
+                                        <div id="filesScreen"></div>
                                     </form>
 
                                 </div>
