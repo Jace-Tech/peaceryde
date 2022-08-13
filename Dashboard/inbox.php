@@ -7,6 +7,7 @@ $messages = new Message($connect);
 if (isset($_GET['message'])) {
     $id = $_GET['message'];
     $USER_MESSAGES = $messages->get_conversation($USER_ID, $id);
+    $messagers = getUserMessagers($connect, $USER_ID);
 }
 
 // $isUnread = count($messages->get_user_unread_messages($USER_ID));
@@ -149,19 +150,21 @@ if (isset($_GET['message'])) {
                                     </div>
                                 </div>
 
-                                <?php if (count($main_admin)) : ?>
-                                    <a href="?message=<?= "MAIN_ADMIN"; ?>" class="list-group-item <?= "MAIN_ADMIN" == $_GET['message'] ? "bg-light" : "" ?> list-group-item-action border-0">
-                                        <!-- <div class="badge bg-success float-right">5</div> -->
-                                        <div class="d-flex align-items-start">
-                                            <img src="./pic/index.png" class="rounded-circle mr-1" alt="<?= $main_admin['name']; ?>" width="40" height="40">
-                                            <div class="flex-grow-1 ml-3">
-                                                <?= $main_admin['name']; ?>
-                                                <!-- <div class="small"><span class="fas fa-circle chat-online"></span> Online</div> -->
+                                <?php if (count($messagers)) : ?>
+                                    <?php foreach ($messagers as $messager): ?>
+                                        <a href="?message=<?= $messager['admin_id']; ?>" class="list-group-item <?= $messager['admin_id'] == $_GET['message'] ? "bg-light" : "" ?> list-group-item-action border-0">
+                                            <!-- <div class="badge bg-success float-right">5</div> -->
+                                            <div class="d-flex align-items-start">
+                                                <img src="./pic/index.png" class="rounded-circle mr-1" alt="<?= $main_admin['name']; ?>" width="40" height="40">
+                                                <div class="flex-grow-1 ml-3">
+                                                    <?= $messager['name']; ?>
+                                                    <!-- <div class="small"><span class="fas fa-circle chat-online"></span> Online</div> -->
+                                                </div>
                                             </div>
-                                        </div>
-                                    </a>
+                                        </a>
+                                    <?php endforeach; ?>
                                 <?php else : ?>
-                                    <p class="text-muted text-sm">No user found</p>
+                                    <p class="text-muted text-sm">No messager found</p>
                                 <?php endif; ?>
 
                                 <hr class="d-block d-lg-none mt-1 mb-0">
@@ -240,6 +243,7 @@ if (isset($_GET['message'])) {
                                                         </div>
                                                     <?php else : ?>
                                                         <!-- Admin -->
+                                                        <?php $_admin = getAdmin($connect, $_GET['message']); ?>
                                                         <div class="chat-message-left pb-4">
                                                             <div>
                                                                 <img src="./pic/index.png" class="rounded-circle mr-1" alt="Sharon Lessman" width="40" height="40">
@@ -247,7 +251,7 @@ if (isset($_GET['message'])) {
                                                             </div>
                                                             <div class="flex-shrink-1 bg-light rounded py-2 px-3 ml-3">
                                                                 <div class="font-weight-bold mb-1">
-                                                                    <?= getSubAdmin($connect, $_GET['message'])['name']; ?>
+                                                                    <?= $_admin['name']; ?>
                                                                 </div>
                                                                 <?= $__message['message']; ?>
                                                             </div>
@@ -264,7 +268,7 @@ if (isset($_GET['message'])) {
                                     <form action="./handler/message_handler.php" method="post" class="flex-grow-0 py-3 px-4 border-top">
                                         <div class="input-group">
                                             <input type="hidden" name="sender" value="<?= $USER_ID ?>">
-                                            <input type="hidden" name="reciever" value="<?= "MAIN_ADMIN"; ?>">
+                                            <input type="hidden" name="reciever" value="<?= $_GET['message']; ?>">
                                             <input type="text" name="message" class="form-control" placeholder="Type your message">
                                             <button name="send" type="submit" class="btn btn-primary">Send</button>
                                         </div>

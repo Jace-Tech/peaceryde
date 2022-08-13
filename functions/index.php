@@ -58,6 +58,74 @@ function getGreeting()
 
 }
 
+function getUserMessagers ($connect, $user) {
+    try {
+        $query = "SELECT * FROM `messages` WHERE `user_id` = ?";
+        $result = $connect->prepare($query);
+        $result->execute([$user]);
+
+        $messagers = [];
+
+        if($result->rowCount()) {
+            $messages = $result->fetchAll();
+
+            if(count($messages)) {
+                foreach($messages as $message) {
+                    $_query = "SELECT * FROM `admin` WHERE `admin_id` = ?";
+                    $_result = $connect->prepare($_query);
+                    $_result->execute([$message['sender_id']]);
+
+                    array_push($messagers, $_result->fetch());
+                }
+            }
+
+        }
+
+        return $messagers;
+    } catch (PDOException $e) {
+        return [];
+    }
+
+}
+
+function getAdminMessagers ($connect, $admin) {
+    try {
+        $query = "SELECT * FROM `messages` WHERE `user_id` = ?";
+        $result = $connect->prepare($query);
+        $result->execute([$admin]);
+
+        $messagers = [];
+
+        if($result->rowCount()) {
+            $messages = $result->fetchAll();
+
+            if(count($messages)) {
+                foreach($messages as $message) {
+                    $_query = "SELECT * FROM `users` WHERE `user_id` = ?";
+                    $_result = $connect->prepare($_query);
+                    $_result->execute([$message['sender_id']]);
+
+                    array_push($messagers, $_result->fetch());
+                }
+            }
+
+        }
+
+        return $messagers;
+    } catch (PDOException $e) {
+        return [];
+    }
+
+}
+
+function getAdmin ($connect, $id) {
+    $query = "SELECT * FROM `admin` WHERE `admin_id` = ?";
+    $result = $connect->prepare($query);
+    $result->execute([$id]);
+
+    return $result->fetch();
+}
+
 function formatCountryArray($country) 
 {
     $countries = json_decode($country, true);
