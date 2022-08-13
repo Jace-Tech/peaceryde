@@ -198,9 +198,10 @@ $messagers = getUserMessagers($connect, $USER_ID);
                                             <?php if (count($USER_MESSAGES)) : ?>
                                                 <?php foreach ($USER_MESSAGES as $__message) : ?>
 
+                                                    <!-- Attachment -->
                                                     <?php if ($__message['attachment']) : ?>
                                                         <?php $attachments = json_decode($__message['attachment'], true); ?>
-                                                        <div class="d-flex align-items-center g-2">
+                                                        <div class="d-flex align-items-center g-2" style="max-height: 30px;">
                                                             <?php foreach ($attachments as $attachment) : ?>
                                                                 <a download="<?= $attachment; ?>" href="../attachment/<?= $attachment ?>" class="rounded d-flex p-2">
                                                                     <svg class="w-6 h-6 fill-current text-gray-400 flex-shrink-0 mr-3" viewBox="0 0 24 24">
