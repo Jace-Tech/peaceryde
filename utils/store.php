@@ -229,10 +229,12 @@ function getSubAdminWithSameService ($connect, $userId) {
                             foreach($userServices as $userService) {
                                 // Get the user of the user
                                 $service_user = $userService['service_id'];
+                                print_r($service_user);
+
                                 // Check whether the service exists in the subadmins own
-                                if(in_array($service_user, $adminService)) {
-                                    return $subAdmin;
-                                }
+                                // if(in_array($service_user, $adminService)) {
+                                //     return $subAdmin;
+                                // }
                             }
                         }
                     }
