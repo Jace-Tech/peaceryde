@@ -262,6 +262,7 @@ if($LOGGED_ADMIN['type'] != "HIGH") {
                     <?php endfor; ?>
                 </div>
                 <div class="sticky bottom-0">
+                    <div id="filesScreen"></div>
                     <div class="flex items-center justify-between bg-white border-t border-gray-200 px-4 sm:px-6 md:px-5 h-16">
                         <button id="fileBtn" class="shrink-0 text-gray-400 hover:text-gray-500 mr-3">
                             <span class="sr-only">Attachment</span> 
@@ -285,10 +286,28 @@ if($LOGGED_ADMIN['type'] != "HIGH") {
                 <script>
                     const fileBtn = document.querySelector("#fileBtn")
                     const fileInput = document.querySelector("#hiddenInput")
+                    const filesScreen = document.querySelector("#filesScreen")
 
                     fileBtn.addEventListener("click", (e) => {
                         e.preventDefault();
                         fileInput.click();
+                    })
+
+                    fileInput.addEventListener("change", (e) => {
+                        const files = e.target.files
+                        filesScreen.innerHTML = ""
+
+                        if(files.length) {
+                            files.forEach(file => {
+                                const div = document.createElement('div');
+                                div.className = "flex items-center p-2 g-2"
+                                div.innerHTML = `
+                                    <svg class="w-4 h-4 fill-current text-gray-400 flex-shrink-0 mr-3" viewBox="0 0 16 16"><path d="M15 15V5l-5-5H2c-.6 0-1 .4-1 1v14c0 .6.4 1 1 1h12c.6 0 1-.4 1-1zM3 2h6v4h4v8H3V2z"></path></svg>
+                                    <span class="text-gray-300 text-sm">${file.name}</span>
+                                `
+                                filesScreen.appendChild(div)
+                            })
+                        }
                     })
                 </script>
             <?php else : ?>
