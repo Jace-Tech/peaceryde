@@ -204,7 +204,7 @@ $messagers = getUserMessagers($connect, $USER_ID);
                                                         <div class="d-flex align-items-center g-2" style="max-height: 30px;">
                                                             <?php foreach ($attachments as $attachment) : ?>
                                                                 <a download="<?= $attachment; ?>" href="../attachment/<?= $attachment ?>" class="rounded d-flex p-2">
-                                                                    <svg class="fill-current text-muted flex-shrink-0 mr-3" style="height: 16px; height: 16px;" viewBox="0 0 12 12">
+                                                                    <svg class="fill-current text-muted flex-shrink-0 mr-3" style="height: 20px; height: 20px;" viewBox="0 0 12 12">
                                                                         <path d="M15 15V5l-5-5H2c-.6 0-1 .4-1 1v14c0 .6.4 1 1 1h12c.6 0 1-.4 1-1zM3 2h6v4h4v8H3V2z"></path>
                                                                     </svg>
                                                                     <span class="text-secondary">
@@ -272,7 +272,9 @@ $messagers = getUserMessagers($connect, $USER_ID);
                                             <input type="hidden" name="reciever" value="<?= $_GET['message']; ?>">
                                             <input type="text" name="message" class="form-control" placeholder="Type your message">
                                             <input type="file" name="attachment[]" multiple id="hiddenInput" hidden>
-                                            <button id="fileBtn" type="button" class="btn btn-secondary">Files</button>
+                                            <button id="fileBtn" type="button" class="btn btn-secondary">Files  <svg class="fill-current text-muted flex-shrink-0 mr-3" style="height: 20px; fill: #ccc; height: 20px;" viewBox="0 0 12 12">
+                                        <path d="M15 15V5l-5-5H2c-.6 0-1 .4-1 1v14c0 .6.4 1 1 1h12c.6 0 1-.4 1-1zM3 2h6v4h4v8H3V2z"></path>
+                                    </svg></button>
                                             <button name="send" type="submit" class="btn btn-primary">Send</button>
                                         </div>
                                         <div id="filesScreen"></div>
@@ -315,7 +317,9 @@ $messagers = getUserMessagers($connect, $USER_ID);
                     const div = document.createElement('div');
                     div.className = "flex items-center p-2 g-2"
                     div.innerHTML = `
-                                    <svg class="w-4 h-4 fill-current text-gray-400 flex-shrink-0 mr-3" viewBox="0 0 16 16"><path d="M15 15V5l-5-5H2c-.6 0-1 .4-1 1v14c0 .6.4 1 1 1h12c.6 0 1-.4 1-1zM3 2h6v4h4v8H3V2z"></path></svg>
+                                    <svg class="fill-current text-muted flex-shrink-0 mr-3" style="height: 20px; height: 20px;" viewBox="0 0 12 12">
+                                        <path d="M15 15V5l-5-5H2c-.6 0-1 .4-1 1v14c0 .6.4 1 1 1h12c.6 0 1-.4 1-1zM3 2h6v4h4v8H3V2z"></path>
+                                    </svg>
                                     <span class="text-gray-500 text-sm">${file.name}</span>
                                 `
                     filesScreen.appendChild(div)

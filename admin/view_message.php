@@ -264,9 +264,7 @@ if($LOGGED_ADMIN['type'] != "HIGH") {
                     <div class="flex items-center justify-between bg-white border-t border-gray-200 px-4 sm:px-6 md:px-5 h-16">
                         <button id="fileBtn" class="shrink-0 text-gray-400 hover:text-gray-500 mr-3">
                             <span class="sr-only">Attachment</span> 
-                            <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
-                                <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12C23.98 5.38 18.62.02 12 0zm6 13h-5v5h-2v-5H6v-2h5V6h2v5h5v2z"></path>
-                            </svg>
+                            <svg class="w-4 h-4 fill-current text-gray-400 flex-shrink-0 mr-3" viewBox="0 0 16 16"><path d="M15 15V5l-5-5H2c-.6 0-1 .4-1 1v14c0 .6.4 1 1 1h12c.6 0 1-.4 1-1zM3 2h6v4h4v8H3V2z"></path></svg>
                         </button>
                         <form class="grow flex" method="post" action="./handler/message_handler.php" enctype="multipart/form-data">
                             <div class="grow mr-3">

@@ -10,7 +10,7 @@ $messages = new Message($connect);
 
 if(isset($_POST['send'])) {
     $message = filter_var($_POST['message'], FILTER_SANITIZE_STRING);
-    $files = $_FILES['attachments'];
+    $files = $_FILES['attachment'];
 
     if($files['error'][0]) {
         $result = $messages->send_message($_POST['reciever'], $_POST['sender'], $message);
