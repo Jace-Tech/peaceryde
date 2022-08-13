@@ -214,7 +214,7 @@ if($LOGGED_ADMIN['type'] != "HIGH") {
                         <?php extract($conversation[$i]); ?>
                         <?php $messages->mark_read($message_id); ?>
                         <?= var_dump($attachments); ?>
-                        <?php if($attachments): ?>
+                        <?php if(!is_null($attachments)): ?>
                             <?php $_attachments = json_decode($attachments, true); ?>
                                 <div class="flex items-start mb-4 last:mb-0" style="flex-direction: <?= $style = $sender_id === $LOGGED_ADMIN['admin_id'] ? "row-reverse" : "row"; ?>">
                                     <div class="flex shadow-sm <?= $margin = $sender_id === $LOGGED_ADMIN['admin_id'] ? "ml-2" : "mr-2" ?> items-center justify-center bg-gray-200 rounded-full w-10 h-10 text-sm font-semibold uppercase text-gray-500">
