@@ -11,6 +11,8 @@
     if($LOGGED_ADMIN['type'] != "HIGH") {
         $admin = getSubAdminService($connect, $LOGGED_ADMIN['admin_id']);
     }
+
+    $messages = new Message($connect);
 ?>
 
 <?php if (isset($active)) : ?>
