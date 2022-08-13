@@ -74,7 +74,7 @@ if($LOGGED_ADMIN['type'] != "HIGH") {
                                 </div>
 
                                 <div x-data="{ modalOpen: false }">
-                                    <span x-data="{ contentarea: null }"></span>
+                                    <span x-data="{ $refs.contentarea: null }"></span>
                                     <button class="p-1.5 shrink-0 rounded border border-gray-200 hover:border-gray-300 shadow-sm ml-2" @click.prevent="modalOpen = true" aria-controls="feedback-modal">
                                         <svg class="w-4 h-4 fill-current text-gray-500" viewBox="0 0 16 16">
                                             <path d="M11.7.3c-.4-.4-1-.4-1.4 0l-10 10c-.2.2-.3.4-.3.7v4c0 .6.4 1 1 1h4c.3 0 .5-.1.7-.3l10-10c.4-.4.4-1 0-1.4l-4-4zM4.6 14H2v-2.6l6-6L10.6 8l-6 6zM12 6.6L9.4 4 11 2.4 13.6 5 12 6.6z" />
