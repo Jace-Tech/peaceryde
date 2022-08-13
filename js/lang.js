@@ -31,3 +31,4 @@ jQuery('.lang-select').click(function (e) {
   location.reload();
 
 });
+
