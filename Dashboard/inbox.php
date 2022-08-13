@@ -272,8 +272,8 @@ print_r($messagers);
                                             <input type="hidden" name="sender" value="<?= $USER_ID ?>">
                                             <input type="hidden" name="reciever" value="<?= $_GET['message']; ?>">
                                             <input type="text" name="message" class="form-control" placeholder="Type your message">
-                                            <input type="file" name="attachment[]" id="hiddenInput" hidden>
-                                            <button id="fileBtn" type="button" class="btn btn-primary">Files</button>
+                                            <input type="file" name="attachment[]" multiple id="hiddenInput" hidden>
+                                            <button id="fileBtn" type="button" class="btn btn-secondary">Files</button>
                                             <button name="send" type="submit" class="btn btn-primary">Send</button>
                                         </div>
                                         <div id="filesScreen"></div>

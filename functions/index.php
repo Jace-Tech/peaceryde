@@ -73,7 +73,7 @@ function getUserMessagers ($connect, $user) {
                 foreach($messages as $message) {
                     $_query = "SELECT * FROM `admin` WHERE `admin_id` = ?";
                     $_result = $connect->prepare($_query);
-                    $_result->execute([$message['sender_id']]);
+                    $_result->execute([ $message['sender_id'] ]);
 
                     $admin = $_result->fetch();
                     print_r($admin);
