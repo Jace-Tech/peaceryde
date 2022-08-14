@@ -79,7 +79,7 @@
                   <li class="new-section8__text-body5 layout fs-13"><a class="fs-13" href="SBForm.php" style=" text-decoration: none;">Nigeria Custom
                       Brokerage Services</a>
                   </li>
-                  <li class="new-section8__text-body5 layout fs-13"><a class="fs-13" href="SBForm.php" style=" text-decoration: none;">Nigerian Upstream Petroleum Regulatory Commission (NUPRC) Permits Consultancy Services</a>
+                  <li class="new-section8__text-body5 layout fs-13"><a class="fs-13" href="SBForm.php" style=" text-decoration: none;">Nigerian Upstream Petroleum Regulatory Commission (NUPRC)</a>
                   </li>
                   <li class="new-section8__text-body5 layout fs-13"><a class="fs-13" href="SBForm.php" style=" text-decoration: none;">Nigeria Maritime and Safety Agency Cabotage Consultancy Services</a>
                   </li>

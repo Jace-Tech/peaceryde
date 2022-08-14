@@ -95,8 +95,8 @@ Cookies do not contain any information that personally identifies you, but perso
 If you have any questions about our cookies or this privacy policy, please contact us: 
 <br>
 (a) by email: info@peacerydeafrica.com <br>
-(b) by telephone: +1 (302) 703-9867, +234 (903) 795-5511 <br>
-(c) by post to our address: 433 W Harrison St #5409 Chicago, IL 60699; 30 Bishop Oluwole Street, Victoria Island Lagos State. Nigeria 
+(b) by telephone:UK: +44 7418371490 , USA: +234 (903) 795-5511, Nigeria: +1 (302) 703-9867<br>
+(c) by post to our address: Office 1651 182-184 High Street North, East Ham, London E6 2JA. United Kingdom, 433 W Harrison St #5409 Chicago, IL 60699; 30 Bishop Oluwole Street, Victoria Island Lagos State. Nigeria 
                             </p>
                             <br><br>
                             <h1 class="policyh1"><b>Updates to this privacy policy</b></h1>
