@@ -40,7 +40,7 @@ else {
 
 			// $SUBADMIN_USERS = array_unique(array_merge($assignedUsers, $usersByService, $usersByCountry));
 			$_USERS_ = array_merge($usersByService, $usersByCountry);
-			$SUBADMIN_USERS = array_unique($_USERS_);
+			$SUBADMIN_USERS = array_unique($_USERS_, SORT_REGULAR);
 			print_r($SUBADMIN_USERS);
 		}
 
