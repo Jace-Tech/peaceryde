@@ -22,7 +22,7 @@
                     <path d="M10.7 18.7l1.4-1.4L7.8 13H20v-2H7.8l4.3-4.3-1.4-1.4L4 12z" />
                 </svg></button>
             <a class="block" href="">
-                <img src="../assets/peace.jpeg" class="logo" alt="logo">
+                <img src="../assets/icon.png" class="logo" alt="logo">
             </a>
         </div>
         <div class="space-y-8">
