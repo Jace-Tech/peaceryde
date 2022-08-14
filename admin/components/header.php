@@ -38,7 +38,7 @@ $UNREAD_NOTIFICATIONS = getUnReadNotications($connect, $LOGGED_ADMIN['admin_id']
                                                 <span class="font-medium text-gray-800"><?= $notice['message']; ?></span> 
                                             </span> 
                                             <span class="block text-xs font-medium text-gray-400">
-                                                <?= date("M d, Y", strtotime($notice['date'])); ?>
+                                                <?= date("M d, Y h:i a", strtotime($notice['date'])); ?>
                                             </span>
                                         </a>
                                     </li>
@@ -75,7 +75,7 @@ $UNREAD_NOTIFICATIONS = getUnReadNotications($connect, $LOGGED_ADMIN['admin_id']
                                                 <?= $text = (strlen($msg['message']) <= 30) ? $msg['message'] : substr($msg['message'], 0, 30) . "...";  ?>
                                             </span> 
                                             <span class="block text-xs font-medium text-gray-400">
-                                                <?= date("M d, Y", strtotime($msg['date'])); ?>
+                                                <?= date("M d, Y h:i a", strtotime($msg['date'])); ?>
                                             </span>
                                         </a>
                                     </li>
