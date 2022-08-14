@@ -52,7 +52,7 @@ $isUnread = count($messages->get_user_unread_messages($USER_ID));
         {
             .breadcrumb
             {
-                margin-top: -120px;
+                margin-top: -90px;
                 margin-left: 758px;
             }
             .mobile
@@ -64,7 +64,7 @@ $isUnread = count($messages->get_user_unread_messages($USER_ID));
         {
             .breadcrumb
             {
-                margin-top: -120px;
+                margin-top: -90px;
                 margin-left: 658px;
             }
             .mobile
@@ -76,7 +76,7 @@ $isUnread = count($messages->get_user_unread_messages($USER_ID));
         {
             .breadcrumb
             {
-                margin-top: -130px;
+                margin-top: -100px;
                 margin-left: 558px;
             }
             .mobile
@@ -88,7 +88,7 @@ $isUnread = count($messages->get_user_unread_messages($USER_ID));
         {
             .breadcrumb
             {
-                margin-top: -130px;
+                margin-top: -100px;
                 margin-left: 458px;
             }
             .mobile
@@ -98,19 +98,19 @@ $isUnread = count($messages->get_user_unread_messages($USER_ID));
         }
         @media only screen and (max-width: 1024px){
             .breadcrumb {
-                margin-top: -130px;
+                margin-top: -100px;
                 margin-left: 338px;
             }
         }
         @media only screen and (max-width: 900px){
             .breadcrumb {
-                margin-top: -130px;
+                margin-top: -100px;
                 margin-left: 200px;
             }
         }
         @media only screen and (max-width: 853px){
             .breadcrumb {
-                margin-top: -130px;
+                margin-top: -100px;
                 margin-left: 150px;
             }
         }
@@ -120,7 +120,7 @@ $isUnread = count($messages->get_user_unread_messages($USER_ID));
         {
             .breadcrumb
             {
-                margin-top: -130px;
+                margin-top: -100px;
                 margin-left: 98px;
             }
             .mobile
@@ -132,7 +132,7 @@ $isUnread = count($messages->get_user_unread_messages($USER_ID));
         {
             .breadcrumb
             {
-                margin-top: -130px;
+                margin-top: -100px;
                 margin-left: 74px;
             }
             .mobile
@@ -147,7 +147,7 @@ $isUnread = count($messages->get_user_unread_messages($USER_ID));
             }
             .breadcrumb
             {
-                margin-top: -130px;
+                margin-top: -100px;
                 margin-left: 74px;
             }
             .mobile
@@ -169,7 +169,7 @@ $isUnread = count($messages->get_user_unread_messages($USER_ID));
                 padding: 70px 35px 0;
             }
             .breadcrumb {
-                margin-top: -170px;
+                margin-top: -140px;
                 margin-left: 114px;
             }
             .example {
@@ -191,7 +191,7 @@ $isUnread = count($messages->get_user_unread_messages($USER_ID));
                 padding: 70px 35px 0;
             }
             .breadcrumb {
-                margin-top: -170px;
+                margin-top: -140px;
                 margin-left: 54px;
             }
             .example {
@@ -203,7 +203,7 @@ $isUnread = count($messages->get_user_unread_messages($USER_ID));
         {
             .breadcrumb
             {
-                margin-top: -170px;
+                margin-top: -140px;
                 margin-left: 14px;
             }
             .account{
@@ -230,7 +230,7 @@ $isUnread = count($messages->get_user_unread_messages($USER_ID));
         {
             .breadcrumb
             {
-                margin-top: -170px;
+                margin-top: -140px;
                 margin-left: 14px;
             }
             .account{
@@ -257,7 +257,7 @@ $isUnread = count($messages->get_user_unread_messages($USER_ID));
         {
             .breadcrumb
             {
-                margin-top: -170px;
+                margin-top: -140px;
                 margin-left: 14px;
             }
             .account{
@@ -288,7 +288,7 @@ $isUnread = count($messages->get_user_unread_messages($USER_ID));
         {
             .breadcrumb
             {
-                margin-top: -170px;
+                margin-top: -140px;
                 margin-left: 14px;
             }
             .page-breadcrumb .breadcrumb
@@ -301,7 +301,7 @@ $isUnread = count($messages->get_user_unread_messages($USER_ID));
         {
             .breadcrumb
             {
-                margin-top: -170px;
+                margin-top: -140px;
                 margin-left: 4px;
                 width: 280px;
             }
@@ -313,9 +313,9 @@ $isUnread = count($messages->get_user_unread_messages($USER_ID));
         @media only screen and (max-width: 280px)
         {
             .breadcrumb {
-                margin-top: -100px;
-                margin-left: 4px;
-                width: 270px;
+                margin-top: -145px;
+                margin-left: 94px;
+                width: 300px;
             }
             .mobile
             {
@@ -396,15 +396,6 @@ $isUnread = count($messages->get_user_unread_messages($USER_ID));
                                     </li>
                                 <?php endif; ?>
                                 
-                                <!-- <li class="breadcrumb-item">
-                                    <a href="./inbox.php" id="top" class="" onclick="openForm()" style="background-color: transparent;
-                                    border: transparent;
-                                    color: #080C58;">
-                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M17.5 1.25C17.8315 1.25 18.1495 1.3817 18.3839 1.61612C18.6183 1.85054 18.75 2.16848 18.75 2.5V12.5C18.75 12.8315 18.6183 13.1495 18.3839 13.3839C18.1495 13.6183 17.8315 13.75 17.5 13.75H5.5175C4.85451 13.7501 4.21873 14.0136 3.75 14.4825L1.25 16.9825V2.5C1.25 2.16848 1.3817 1.85054 1.61612 1.61612C1.85054 1.3817 2.16848 1.25 2.5 1.25H17.5ZM2.5 0C1.83696 0 1.20107 0.263392 0.732233 0.732233C0.263392 1.20107 0 1.83696 0 2.5L0 18.4913C2.62686e-05 18.6149 0.0367407 18.7358 0.105497 18.8386C0.174252 18.9414 0.271959 19.0215 0.386249 19.0687C0.50054 19.116 0.626276 19.1282 0.747545 19.104C0.868814 19.0797 0.980163 19.0201 1.0675 18.9325L4.63375 15.3663C4.86812 15.1318 5.18601 15.0001 5.5175 15H17.5C18.163 15 18.7989 14.7366 19.2678 14.2678C19.7366 13.7989 20 13.163 20 12.5V2.5C20 1.83696 19.7366 1.20107 19.2678 0.732233C18.7989 0.263392 18.163 0 17.5 0L2.5 0Z" fill="#080C58" />
-                                        </svg>
-                                        Send a Message
-                                    </a> -->
 
                                 <li class="breadcrumb-item logoutlaptop" style="margin-top: 1px;">
                                     <form action="./handler/logout_handler.php" method="post" style="display: inline-block">
