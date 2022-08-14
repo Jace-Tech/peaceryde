@@ -62,9 +62,9 @@ if(isset($_POST['send'])){
 }
 
 if (isset($_POST['broadcast'])) {
-    $all_users = $user->get_all_users();
-    $message = filter_field($_POST['message']);
     $sender = $_POST['sender'];
+    $all_users = messageableUsers($connect, $sender);
+    $message = filter_field($_POST['message']);
 
     $final_result = false;
 

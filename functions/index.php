@@ -19,6 +19,43 @@ function filter_field($input, $type = 'string')
     return $filtered_input;
 }
 
+function messageableUsers ($connect, $id) {
+    $users = getAllUsers($connect);
+    $USERS = [];
+
+    if($id == "MAIN_ADMIN") {
+        $USERS = $users;
+    }
+    else {
+        if(getSubAdminService($connect, $id)['services']){
+            $subAdminServices = json_decode(getSubAdminService($connect, $id)['services'], true);
+
+            if(in_array("*", $subAdminServices)) {
+                $USERS = $users->get_all_users();
+            }
+            else {
+                $usersId = getSubAdminUsers($connect, $id);
+
+                // Get admin assigned users
+                $assignedUsers = array_map(function ($item){
+                    global $connect;
+                    $user = getUser($connect, $item['user']);
+                    return $user;
+                }, $usersId);
+
+                // Get users based of service
+                $usersByService = getUsersWithSameServiceAsSubAdmin($connect, $id);
+
+                // get users by country
+                $usersByCountry = getUsersWithSameCountryAsSubAdmin($connect, $id);
+                $USERS = array_unique(array_merge($assignedUsers, $usersByService, $usersByCountry));
+            }
+        }
+    }
+
+    return $USERS;
+}
+
 
 function generateTransactionId (int $length = 11) {
     $id = "trx-ref_";
