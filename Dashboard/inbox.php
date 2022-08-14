@@ -7,10 +7,10 @@ $messages = new Message($connect);
 if (isset($_GET['message'])) {
     $id = $_GET['message'];
     $USER_MESSAGES = $messages->get_conversation($USER_ID, $id);
+
 }
 $messagers = getUserMessagers($connect, $USER_ID);
 
-// print_r($messages->get_user_unread_messages($USER_ID));
 ?>
 
 
@@ -212,6 +212,7 @@ $messagers = getUserMessagers($connect, $USER_ID);
 
                                             <?php if (count($USER_MESSAGES)) : ?>
                                                 <?php foreach ($USER_MESSAGES as $__message) : ?>
+                                                    <?php $messages->mark_read($__message['message_id'], $USER_ID); ?>
 
                                                     <!-- Attachment -->
                                                     <?php if ($__message['attachment']) : ?>
