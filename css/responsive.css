@@ -1222,7 +1222,7 @@ width: 100%;
 }
   .cardform {
     border: 1px solid #ffffff;
-    height: 1425px;
+    height: 1500px;
   }
 
   .formh1 {
@@ -1267,6 +1267,7 @@ width: 100%;
 
   .formml {
     margin-left: 31px;
+    margin-right: 31px;
   }
 
   .firstname {
@@ -2924,7 +2925,7 @@ width: 100%;
 
   .cardform {
     border: 1px solid #ffffff;
-    height: 1425px;
+    height: 1500px;
   }
 
   .formh1 {
@@ -2964,6 +2965,7 @@ width: 100%;
 
   .formml {
     margin-left: 31px;
+    margin-right: 31px;
   }
 
   .firstname {
@@ -4665,7 +4667,7 @@ width: 100%;
 }
   .cardform {
     border: 1px solid #ffffff;
-    height: 1425px;
+    height: 1500px;
   }
 
   .formh1 {
@@ -4706,6 +4708,7 @@ width: 100%;
 
   .formml {
     margin-left: 11px;
+    margin-right: 11px;
   }
 
   .firstname {
@@ -6437,7 +6440,7 @@ width: 100%;
 
   .cardform {
     border: 1px solid #ffffff;
-    height: 1425px;
+    height: 1500px;
   }
 
   .formh1 {
@@ -6478,6 +6481,7 @@ width: 100%;
 
   .formml {
     margin-left: 11px;
+    margin-right: 11px;
   }
 
   .firstname {
@@ -8172,7 +8176,7 @@ width: 100%;
 
   .cardform {
     border: 1px solid #ffffff;
-    height: 1425px;
+    height: 1500px;
   }
 
   .formh1 {
@@ -8213,6 +8217,7 @@ width: 100%;
 
   .formml {
     margin-left: 11px;
+    margin-right: 11px;
   }
 
   .firstname {
@@ -9917,7 +9922,7 @@ width: 100%;
 
   .cardform {
     border: 1px solid #ffffff;
-    height: 1425px;
+    height: 1500px;
   }
 
   .formh1 {
@@ -9965,6 +9970,7 @@ width: 100%;
 
   .formml {
     margin-left: 11px;
+    margin-right: 11px;
   }
 
   .firstname {
@@ -11566,7 +11572,7 @@ width: 100%;
 
   .cardform {
     border: 1px solid #ffffff;
-    height: 1400px;
+    height: 1490px;
   }
 
   .formh1 {
@@ -11610,7 +11616,8 @@ width: 100%;
   }
 
   .formml {
-    margin-left: 10px;
+    margin-left: 11px;
+    margin-right: 11px;
   }
 
 
@@ -13327,6 +13334,7 @@ width: 100%;
 
   .formml {
     margin-left: 11px;
+    margin-right: 11px;
   }
 
   .firstname {
