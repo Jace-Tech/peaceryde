@@ -221,7 +221,8 @@ function getNotications ($connect, $id) {
         $result->execute([ $id ]);
 
         if($result->rowCount()) {
-            return array_filter($result->fetchAll(), function ($item) {
+            $nots = $result->fetchAll();
+            return array_filter($nots, function ($item) {
                 global $id;
                 $arr = json_decode($item['admin'], true);
                 return in_array($id, $arr);
