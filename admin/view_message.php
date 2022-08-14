@@ -1,6 +1,4 @@
 <?php $title = "dashboard"; ?>
-
-<?php if(!isset($_GET['msg'])) header("location: ./message.php"); ?>
 <?php require_once("./addons/models.php"); ?>
 
 <?php
