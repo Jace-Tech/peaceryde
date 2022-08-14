@@ -250,7 +250,7 @@ function getUnReadNotications ($connect, $id) {
             // print_r($nots);
 
             foreach ($nots as $not) {
-                $setIDs = json_decode($not, true);
+                $setIDs = json_decode($not['admin'], true);
 
                 if(is_array($setIDs)) {
                     foreach($setIDs as $setID) {
