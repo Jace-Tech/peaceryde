@@ -191,6 +191,7 @@ $USERS_ADMIN = array_unique($USERS_ADMIN);
 
                                 <tbody class="text-sm divide-y divide-gray-200">
                                     <?php foreach ($USERS_ADMIN as $userAdmin_) : ?>
+                                        <?php print_r($userAdmin_) ?>
                                         <tr>
                                             <td class="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap">
                                                 <div class="flex items-center">
