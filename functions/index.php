@@ -249,8 +249,10 @@ function getUnReadNotications ($connect, $id) {
 
             return array_filter($nots, function ($item) {
                 global $id;
-                $arr = json_decode($item['admin'], true);
-                return in_array($id, $arr);
+                $arr = array_map(function ($_id) {
+                    return strval($_id);
+                }, json_decode($item['admin'], true));
+                return in_array("$id", $arr);
             });
         }
         else {
