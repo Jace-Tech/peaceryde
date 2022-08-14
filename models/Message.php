@@ -62,14 +62,15 @@ class Message {
         }
     }
 
-    public function mark_read($message_id)
+    public function mark_read($message_id, $id)
     {
         try{
-            $query = "UPDATE `messages` SET `is_read` = :is_read WHERE `message_id` = :message_id";
+            $query = "UPDATE `messages` SET `is_read` = :is_read WHERE `message_id` = :message_id AND `user_id` = :user";
             $result = $this->connection->prepare($query);
             $result->execute([
                 'is_read' => 1,
-                'message_id' => $message_id
+                'message_id' => $message_id,
+                'user' => $id
             ]);
     
             return $result;

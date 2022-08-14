@@ -213,7 +213,7 @@ if($LOGGED_ADMIN['type'] != "HIGH") {
                     <?php $conversation = $messages->get_conversation($LOGGED_ADMIN['admin_id'], $_GET['msg']); ?>
                     <?php for ($i = 0; $i < count($conversation); $i++) : ?>
                         <?php extract($conversation[$i]); ?>
-                        <?php $messages->mark_read($message_id); ?>
+                        <?php $messages->mark_read($message_id, $LOGGED_ADMIN['admin_id']); ?>
 
                         <!-- Attachments -->
                         <?php if(!is_null($attachment)): ?>
