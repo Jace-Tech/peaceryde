@@ -34,21 +34,22 @@ function messageableUsers ($connect, $id) {
                 $USERS = $users->get_all_users();
             }
             else {
-                $usersId = getSubAdminUsers($connect, $id);
+                // $usersId = getSubAdminUsers($connect, $id);
 
-                // Get admin assigned users
-                $assignedUsers = array_map(function ($item){
-                    global $connect;
-                    $user = getUser($connect, $item['user']);
-                    return $user;
-                }, $usersId);
+                // // Get admin assigned users
+                // $assignedUsers = array_map(function ($item){
+                //     global $connect;
+                //     $user = getUser($connect, $item['user']);
+                //     return $user;
+                // }, $usersId);
 
                 // Get users based of service
                 $usersByService = getUsersWithSameServiceAsSubAdmin($connect, $id);
 
                 // get users by country
                 $usersByCountry = getUsersWithSameCountryAsSubAdmin($connect, $id);
-                $USERS = array_unique(array_merge($assignedUsers, $usersByService, $usersByCountry));
+                // $USERS = array_unique(array_merge($assignedUsers, $usersByService, $usersByCountry));
+                $USERS = array_unique(array_merge($usersByService, $usersByCountry));
             }
         }
     }

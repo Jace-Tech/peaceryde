@@ -13,21 +13,22 @@ if($LOGGED_ADMIN['type'] != "HIGH") {
         if (in_array("*", $subAdminServices)) {
             $SUBADMIN_USERS = $user->get_all_users();
         } else {
-            $usersId = getSubAdminUsers($connect, $LOGGED_ADMIN['admin_id']);
+            // $usersId = getSubAdminUsers($connect, $LOGGED_ADMIN['admin_id']);
 
-            // Get admin assigned users
-            $assignedUsers = array_map(function ($item) {
-                global $connect;
-                $user = getUser($connect, $item['user']);
-                return $user;
-            }, $usersId);
+            // // Get admin assigned users
+            // $assignedUsers = array_map(function ($item) {
+            //     global $connect;
+            //     $user = getUser($connect, $item['user']);
+            //     return $user;
+            // }, $usersId);
 
             // Get users based of service
             $usersByService = getUsersWithSameServiceAsSubAdmin($connect, $LOGGED_ADMIN['admin_id']);
 
             // get users by country
             $usersByCountry = getUsersWithSameCountryAsSubAdmin($connect, $LOGGED_ADMIN['admin_id']);
-            $SUBADMIN_USERS = array_unique(array_merge($assignedUsers, $usersByService, $usersByCountry));
+            // $SUBADMIN_USERS = array_unique(array_merge($assignedUsers, $usersByService, $usersByCountry));
+            $SUBADMIN_USERS = array_unique(array_merge($usersByService, $usersByCountry));
         }
     } else {
         $SUBADMIN_USERS = [];
@@ -38,7 +39,7 @@ if($LOGGED_ADMIN['type'] != "HIGH") {
 
 <!doctype html>
 <html lang="en">
-<?php include('./components/main_header.php'); ?>
+<?php include("./components/main_header.php"); ?>
 <script>
     window.addEventListener("load", () => {
         console.clear()
@@ -95,7 +96,7 @@ if($LOGGED_ADMIN['type'] != "HIGH") {
                                                 <div class="px-5 py-4">
                                                     <div class="space-y-3">
                                                         <div><label class="block text-sm font-medium mb-1" for="feedback">Users <span class="text-red-500">*</span></label>
-                                                            <select name="to[]" required id="">
+                                                            <select name="to[]" class="w-full border-gray-300" required id="">
                                                                 <option value="" disabled>Choose users</option>
                                                                 <option value="*">All users</option>
 
