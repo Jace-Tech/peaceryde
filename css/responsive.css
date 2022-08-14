@@ -387,6 +387,10 @@
     background-color: #a0bd1c;
     color: white;
   }
+  .mt10
+{
+  margin-top:5px;
+}
 
   .lang {
     display: none;

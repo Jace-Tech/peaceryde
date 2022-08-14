@@ -467,7 +467,7 @@ $isUnread = count($messages->get_user_unread_messages($USER_ID));
                                     </li>
                                 <?php endif; ?>
                                 
-                                <li class="breadcrumb-item">
+                                /* <li class="breadcrumb-item">
                                     <a href="./inbox.php" id="top" class="" onclick="openForm()" style="background-color: transparent;
                                     border: transparent;
                                     color: #080C58;">
@@ -476,6 +476,7 @@ $isUnread = count($messages->get_user_unread_messages($USER_ID));
                                         </svg>
                                         Send a Message
                                     </a>
+                                </li> */
 
                                 <li class="breadcrumb-item logoutlaptop" style="margin-top: 1px;">
                                     <form action="./handler/logout_handler.php" method="post" style="display: inline-block">
