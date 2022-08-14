@@ -34,6 +34,7 @@ else {
 
 			// Get users based of service
 			$usersByService = getUsersWithSameServiceAsSubAdmin($connect, $LOGGED_ADMIN['admin_id']);
+			print_r($usersByService);
 
 			// get users by country
 			$usersByCountry = getUsersWithSameCountryAsSubAdmin($connect, $LOGGED_ADMIN['admin_id']);
