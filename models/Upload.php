@@ -13,9 +13,9 @@ class Upload {
     {
         // extract($file);
 
-        $file_name = $file['name'];
+        $file_name = explode(".", $file['name'])[0];
         $file_size = $file['size'];
-        $file = $file['tmp_name'];
+        $tep_file = $file['tmp_name'];
         $file_ext = end(explode('.', $file['name']));
 
         $extensions = array("image/jpeg", "image/jpg", "image/png", "application/pdf");
@@ -36,10 +36,10 @@ class Upload {
             exit();
         }
 
-        $file_name = time() . "_" . explode(".", $file_name)[0] . "." . $file_ext;
+        $file_name .= "-" . time() . "." . $file_ext;
         $file_path = $des . $file_name;
 
-        if(move_uploaded_file($file, $file_path)){
+        if(move_uploaded_file($tep_file, $file_path)){
             return [
                 'status' => 'success',
                 'message' => 'File uploaded successfully.',
