@@ -9,41 +9,7 @@
 
 	assignAutomatically($connect);
 	if($LOGGED_ADMIN['type'] != "HIGH") {
-		if(getSubAdminService($connect, $LOGGED_ADMIN['admin_id'])['services']){
-			$subAdminServices = json_decode(getSubAdminService($connect, $LOGGED_ADMIN['admin_id'])['services'], true);
-	
-			if(in_array("*", $subAdminServices)) {
-				$SUBADMIN_USERS = $users->get_all_users();
-			}
-			else {
-				$usersId = getSubAdminUsers($connect, $LOGGED_ADMIN['admin_id']);
-	
-				// Get admin assigned users
-				$assignedUsers = array_map(function ($item){
-					global $connect;
-					$user = getUser($connect, $item['user']);
-					return $user;
-				}, $usersId);
-	
-				// Get users based of service
-				$usersByService = getUsersWithSameServiceAsSubAdmin($connect, $LOGGED_ADMIN['admin_id']);
-				$SUBADMIN_USERS = array_merge($assignedUsers, $usersByService);
-	
-			}
-	
-			if (isset($_GET['q'])) {
-				$searchResult = array_filter($SUBADMIN_USERS, function ($item) {
-					$query = $_GET['q'];
-					return preg_match("/.*[$query].*/", $item['firstname'])
-					|| preg_match("/.*[$query].*/", $item['lastname']) 
-					|| preg_match("/.*[$query].*/", $item['email'])
-					|| preg_match("/.*[$query].*/", $item['phone']);
-				});
-			}
-	
-		} else {
-			$SUBADMIN_USERS = [];
-		}
+		$SUBADMIN_USERS = messageableUsers($connect, $LOGGED_ADMIN['admin_id']);
 	}
 
 ?>
