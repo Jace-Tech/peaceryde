@@ -191,7 +191,7 @@ $USERS_ADMIN = array_unique($USERS_ADMIN);
 
                                 <tbody class="text-sm divide-y divide-gray-200">
                                     <?php foreach ($USERS_ADMIN as $userAdmin_) : ?>
-                                        <?php $__admin = getSubAdmin($connect, $userAdmin_['sub_admin']); ?>  ?>
+                                        <?php $__admin = getSubAdmin($connect, $userAdmin_['sub_admin']); ?>
                                         <tr>
                                             <td class="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap">
                                                 <div class="flex items-center">
