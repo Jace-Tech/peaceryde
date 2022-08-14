@@ -7,32 +7,7 @@
 
     
 if($LOGGED_ADMIN['type'] != "HIGH") {
-    if (getSubAdminService($connect, $LOGGED_ADMIN['admin_id'])['services']) {
-        $subAdminServices = json_decode(getSubAdminService($connect, $LOGGED_ADMIN['admin_id'])['services'], true);
-
-        if (in_array("*", $subAdminServices)) {
-            $SUBADMIN_USERS = $user->get_all_users();
-        } else {
-            // $usersId = getSubAdminUsers($connect, $LOGGED_ADMIN['admin_id']);
-
-            // // Get admin assigned users
-            // $assignedUsers = array_map(function ($item) {
-            //     global $connect;
-            //     $user = getUser($connect, $item['user']);
-            //     return $user;
-            // }, $usersId);
-
-            // Get users based of service
-            $usersByService = getUsersWithSameServiceAsSubAdmin($connect, $LOGGED_ADMIN['admin_id']);
-
-            // get users by country
-            $usersByCountry = getUsersWithSameCountryAsSubAdmin($connect, $LOGGED_ADMIN['admin_id']);
-            // $SUBADMIN_USERS = array_unique(array_merge($assignedUsers, $usersByService, $usersByCountry));
-            $SUBADMIN_USERS = array_unique(array_merge($usersByService, $usersByCountry));
-        }
-    } else {
-        $SUBADMIN_USERS = [];
-    }
+    $SUBADMIN_USERS = messageableUsers($connect, $LOGGED_ADMIN['admin_id']);
 }
 ?>
 
