@@ -76,7 +76,7 @@
 
                 <div class="form-row mt-15 formml">
                   <div class="row">
-                    <div class="col-md-4">
+                    <div class="col-md-3">
                       <div class="form-group">
                         <label class="form-label">First Name</label>
                         <div class="input-group mb-3 biwidth"> 
@@ -84,7 +84,7 @@
                   </div>
                       </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-3">
                       <div class="form-group">
                         <label class="form-label">Middle Name</label>
                         <div class="input-group mb-3 biwidth"> 
@@ -92,7 +92,7 @@
                       </div>
                   </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-3">
                       <div class="form-group" style="margin-right: 0px;">
                         <label class="form-label">Last Name</label>
                         <div class="input-group mb-3 biwidth"> 
