@@ -39,7 +39,8 @@ else {
 			$usersByCountry = getUsersWithSameCountryAsSubAdmin($connect, $LOGGED_ADMIN['admin_id']);
 
 			// $SUBADMIN_USERS = array_unique(array_merge($assignedUsers, $usersByService, $usersByCountry));
-			$SUBADMIN_USERS = array_merge($usersByService, $usersByCountry);
+			$_USERS_ = array_merge($usersByService, $usersByCountry);
+			$SUBADMIN_USERS = array_unique($_USERS_);
 			print_r($SUBADMIN_USERS);
 		}
 
