@@ -6,15 +6,7 @@ $messages = new Message($connect);
 $users = new User($connect);
 
 $ADMIN_UNREAD_MESSAGE = $messages->get_user_unread_messages($LOGGED_ADMIN['admin_id']);
-$NOTIFICATIONS = getUnReadNotications($connect, $LOGGED_ADMIN['admin_id']);
-
-$UNREAD_NOTIFICATIONS = [];
-print_r($NOTIFICATIONS);
-if(count($NOTIFICATIONS)) {
-	$UNREAD_NOTIFICATIONS = array_filter($NOTIFICATIONS, function ($notification) {
-		return $notification['isRead'] == "0";
-	});
-}
+$UNREAD_NOTIFICATIONS = getUnReadNotications($connect, $LOGGED_ADMIN['admin_id']);
 
 ?>
 <header class="sticky top-0 bg-white border-b border-gray-200 z-30" style="background-color:  #1161d9;">
