@@ -5,9 +5,6 @@
     $user = new User($connect);
     $active = $title = "Message";
 
-
-    print_r($user->get_all_users());
-
     
 if($LOGGED_ADMIN['type'] != "HIGH") {
     if (getSubAdminService($connect, $LOGGED_ADMIN['admin_id'])['services']) {
@@ -99,13 +96,13 @@ if($LOGGED_ADMIN['type'] != "HIGH") {
                                                 <div class="px-5 py-4">
                                                     <div class="space-y-3">
                                                         <div><label class="block text-sm font-medium mb-1" for="feedback">Users <span class="text-red-500">*</span></label>
-                                                            <select name="to[]" class="w-full border-gray-300" required id="">
+                                                            <select name="to[]" class="w-full border-gray-300" multiple required id="">
                                                                 <option value="" disabled>Choose users</option>
                                                                 <option value="*">All users</option>
 
-                                                                <?php foreach($user->get_all_users() as $user): ?>
-                                                                    <option value="<?= $user['user_id'] ?>">
-                                                                        <?= $user['firstname'] . " " . $user["lastname"]; ?>
+                                                                <?php foreach($user->get_all_users() as $_user): ?>
+                                                                    <option value="<?= $_user['user_id'] ?>">
+                                                                        <?= $_user['firstname'] . " " . $_user["lastname"]; ?>
                                                                     </option>
                                                                 <?php endforeach; ?>
                                                             </select>
