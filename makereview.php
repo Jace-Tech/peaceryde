@@ -130,9 +130,9 @@
                                 <input name="video" type="file" />
                             </div>
                             <p class="reviewfieldsetp">Tell us about your expeience</p>
-                            <textarea class="reviewtextarea" name="review"  placeholder="This is where you write your review.explain what happend, keep your feedback honest, helpfyl, and constructive"></textarea>
+                            <textarea class="reviewtextarea" name="review"  placeholder="This is where you write your review.explain what happend, keep your feedback honest, helpful, and constructive"></textarea>
                             <div class="mt-4 p-4 text-right">
-                                <button name="add" type="submit" class="btn btn-block border-0" style="background-color: #a0bd1c; color:white">Post review</button>
+                                <button name="add" type="submit" class="btn btn-block border-0" style="background-color: #a0bd1c; margin-bottom: 1.5rem; color:white">Post review</button>
                             </div>
                         </form>
                     </div>
