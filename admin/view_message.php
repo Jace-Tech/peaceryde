@@ -92,7 +92,7 @@ if($LOGGED_ADMIN['type'] != "HIGH") {
                                                     </button>
                                                 </div>
                                             </div>
-                                            <?php if($LOGGED_ADMIN['type'] == "MAIN_ADMIN"): ?>
+                                            <?php if($LOGGED_ADMIN['type'] == "HIGH"): ?>
                                                 <div class="px-5 py-4">
                                                     <div class="space-y-3">
                                                         <div><label class="block text-sm font-medium mb-1" for="feedback">Users <span class="text-red-500">*</span></label>
