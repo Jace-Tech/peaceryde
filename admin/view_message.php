@@ -272,7 +272,7 @@ if($LOGGED_ADMIN['type'] != "HIGH") {
                                 <input type="hidden" name="reciever" value="<?= $_GET['msg']; ?>">
                                 <input type="hidden" name="sender" value="<?= $LOGGED_ADMIN['admin_id']; ?>">
                                 <input type="file" name="attachment[]" multiple id="hiddenInput" hidden>
-                                <input id="message-input" name="message" class="form-input w-full bg-gray-100 border-transparent focus:bg-white focus:border-gray-300" placeholder="Aa" />
+                                <input id="message-input" required name="message" class="form-input w-full bg-gray-100 border-transparent focus:bg-white focus:border-gray-300" placeholder="Aa" />
                             </div>
                             <button type="submit" name="send" class="btn bg-indigo-500 hover:bg-indigo-600 text-white whitespace-nowrap">Send -&gt;</button>
                         </form>
