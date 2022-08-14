@@ -5,6 +5,9 @@
     $user = new User($connect);
     $active = $title = "Message";
 
+
+    print_r($user->get_all_users());
+
     
 if($LOGGED_ADMIN['type'] != "HIGH") {
     if (getSubAdminService($connect, $LOGGED_ADMIN['admin_id'])['services']) {
