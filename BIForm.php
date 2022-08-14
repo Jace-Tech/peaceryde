@@ -378,7 +378,7 @@
                                 <div class="form-check form-check-inline"style="padding-left: 0px; padding-top: 5px;">
                                   <div class="custom-control custom-radio">
                                     <label class="custom-control-label" for="customControlValidation3">Yes</label>
-                                      <input type="radio" class="custom-control-input" value="1" onclick="onYes()" id="customControlValidation3"
+                                      <input type="radio" class="custom-control-input" value="1" onclick="onYes()" id="modal-yes"
                                           name="radio-stacked">
                                   </div>
                               </div>
