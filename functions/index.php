@@ -216,7 +216,7 @@ function addSubAdminUserAlt ($connect, $user, $admin) {
 
 function getNotications ($connect, $id) {
     try {
-        $query = "SELECT * FROM `notification`";
+        $query = "SELECT * FROM `notification` ORDER BY `date` DESC";
         $result = $connect->prepare($query);
         $result->execute();
 
@@ -239,7 +239,7 @@ function getNotications ($connect, $id) {
 
 function getUnReadNotications ($connect, $id) {
     try {
-        $query = "SELECT * FROM `notification` WHERE `isRead` = ?";
+        $query = "SELECT * FROM `notification` WHERE `isRead` = ? ORDER BY `date` DESC";
         $result = $connect->prepare($query);
         $result->execute([0]);
 
