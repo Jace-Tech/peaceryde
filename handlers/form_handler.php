@@ -29,7 +29,6 @@ if(isset($_POST['twp'])) {
         "passport" => $passport,
         "phone" => $countryCode . $phone
     ];
-    // https://ryde.peacerydeafrica.com/admin/user-details.php?user=
 
 
     if(isset($_SESSION['LOGGED_USER'])) {
