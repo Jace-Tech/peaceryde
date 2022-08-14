@@ -157,9 +157,8 @@ $messagers = getUserMessagers($connect, $USER_ID);
                                             <div class="d-flex align-items-start">
                                                 <img src="./pic/index.png" class="rounded-circle mr-1" alt="<?= $main_admin['name']; ?>" width="40" height="40">
                                                 <div class="flex-grow-1 ml-3">
-                                                    <p> 
+                                                    <p class="mb-0 d-flex"> 
                                                         <?= $messager['name']; ?> 
-
                                                         <div class="ml-2">
                                                             <?php if(count($messages->get_unread_messages($messager['admin_id'], $USER_ID))): ?>
                                                                 <div class="badge badge-danger">
@@ -168,7 +167,7 @@ $messagers = getUserMessagers($connect, $USER_ID);
                                                             <?php endif; ?>
                                                         </div>
                                                     </p>
-                                                    <div class="text-muted text-sm font-weight-light">
+                                                    <div class="text-muted mt-1 text-xs font-weight-light">
                                                         <?= $messager['admin_id'] == "MAIN_ADMIN" ? "Admin" : "Sub admin" ?>
                                                     </div>
                                                 </div>
