@@ -944,7 +944,7 @@
     margin-top: 7px;
     height: 44px;
     width: 200px;
-    margin-left: 40px;
+    margin-left: 0px;
   }
 
   .lastname {
@@ -953,7 +953,7 @@
     margin-top: 7px;
     height: 44px;
     width: 200px;
-    margin-left: 80px;
+    margin-left: 0px;
   }
 
   .gender {
@@ -2349,7 +2349,7 @@
     margin-top: 7px;
     height: 44px;
     width: 200px;
-    margin-left: 40px;
+    margin-left: 0px;
   }
 
   .lastname {
@@ -2358,7 +2358,7 @@
     margin-top: 7px;
     height: 44px;
     width: 200px;
-    margin-left: 80px;
+    margin-left: 0px;
   }
 
   .gender {
@@ -3761,7 +3761,7 @@
     margin-top: 7px;
     height: 44px;
     width: 200px;
-    margin-left: 40px;
+    margin-left: 0px;
   }
 
   .lastname {
@@ -3770,7 +3770,7 @@
     margin-top: 7px;
     height: 44px;
     width: 200px;
-    margin-left: 80px;
+    margin-left: 0px;
   }
 
   .gender {
@@ -5137,14 +5137,14 @@
     font-size: 12px;
     height: 44px;
     width: 170px;
-    margin-left: 40px;
+    margin-left: 0px;
   }
 
   .lastname {
     font-size: 12px;
     height: 44px;
     width: 170px;
-    margin-left: 80px;
+    margin-left: 0px;
   }
 
   .gender {
