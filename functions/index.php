@@ -245,6 +245,7 @@ function getUnReadNotications ($connect, $id) {
 
         if($result->rowCount()) {
             $nots = $result->fetchAll();
+            print_r($nots);
 
             return array_filter($nots, function ($item) {
                 global $id;
