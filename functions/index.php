@@ -247,12 +247,10 @@ function getUnReadNotications ($connect, $id) {
             $nots = $result->fetchAll();
             // print_r($nots);
 
-            $items =  array_filter($nots, function ($item) {
+            $items = array_filter($nots, function ($item) {
                 global $id;
-                $arr = array_map(function ($_id) {
-                    return strval($_id);
-                }, json_decode($item['admin'], true));
-                return in_array("$id", $arr);
+                $arr = json_decode($item['admin'], true);
+                return in_array("$id", $arr, true);
             });
 
             return $items;
