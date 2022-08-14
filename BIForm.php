@@ -62,7 +62,7 @@
                           </div>
                           
                           <div>
-                              <form>
+                              <form method="post" action="./handlers/form_handler.php">
                                 <div class="form-row mt-15 formml">
                                   <div class="row">
                                     <div class="col-md-5">
@@ -384,7 +384,7 @@
                               </div>
                             </div>
                                 <div class="bibtn">
-                                    <button type="submit" class="btn proceed">Proceed to payment</button>
+                                    <button type="submit" name="bi" class="btn proceed">Proceed to payment</button>
                                 </div>
                               </form>
                           </div>
