@@ -220,7 +220,7 @@ if($LOGGED_ADMIN['type'] != "HIGH") {
                                 <?= $name = $sender_id === $LOGGED_ADMIN['admin_id'] ? getSubName($LOGGED_ADMIN['name']) : getSubName($user->get_user($_GET['msg'])['firstname'] . " " . $user->get_user($_GET['msg'])['lastname']); ?>
                             </div>
                             <div>
-                                <?php if(!is_null($attachment)): ?>
+                                <?php if(strtolower(strval($attachment)) != "null"): ?>
                                     <?php foreach($_attachments as $attachment): ?>
                                         <div class="flex items-center">
                                             <svg class="w-6 h-6 fill-current text-gray-400 flex-shrink-0 mr-3" viewBox="0 0 24 24"><path d="M15 15V5l-5-5H2c-.6 0-1 .4-1 1v14c0 .6.4 1 1 1h12c.6 0 1-.4 1-1zM3 2h6v4h4v8H3V2z"></path></svg>
