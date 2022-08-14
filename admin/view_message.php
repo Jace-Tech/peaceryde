@@ -131,7 +131,7 @@ if($LOGGED_ADMIN['type'] != "HIGH") {
                                     <?php if (count($user->get_all_users())) : ?>
                                         <?php foreach ($user->get_all_users() as $_user) : extract($_user); ?>
                                             <li class="-mx-2 mb-2">
-                                                <a href="./view_message.php?msg=<?= $user_id; ?>" class="flex items-center justify-between w-full p-2 rounded <?= $active = $user_id == $_GET['msg'] ? "bg-indigo-100" : "bg-gray-100"; ?>" @click="msgSidebarOpen = false; $refs.contentarea.scrollTop = 99999999;">
+                                                <a href="./view_message.php?msg=<?= $user_id; ?>" class="flex items-center justify-between w-full p-2 rounded <?= $_GET['msg'] ? (($user_id == $_GET['msg']) ? "bg-indigo-100" : "bg-gray-100") : ("bg-gray-100"); ?>" @click="msgSidebarOpen = false; $refs.contentarea.scrollTop = 99999999;">
                                                     <div class="flex items-center truncate">
                                                         <div class="flex shadow-sm mr-2 items-center justify-center <?= $active = $user_id == $_GET['msg'] ? "bg-gray-100" : "bg-gray-200"; ?> rounded-full w-8 h-8 text-xs font-semibold uppercase text-gray-500">
                                                             <?= getSubName("$firstname $lastname") ?>
