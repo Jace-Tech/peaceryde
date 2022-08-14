@@ -97,7 +97,7 @@
 
           <p class="dropfilep"><span class="drop-zone__prompt">Drop file here</span></p>
           <p class="dropfilep2"><span class="drop-zone__prompt">or browse file from your computer</span></p>
-          <input type="file" multiple name="myFile" class="drop-zone__input">
+          <input type="file" multiple name="myFile[]" class="drop-zone__input">
         </div>
         <div class="mt-4 p-4 text-right">
           <button name="upload" type="submit" class="btn border-0" style="background-color: #a0bd1c; color: #fff;">Upload file</button>
