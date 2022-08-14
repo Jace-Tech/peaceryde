@@ -53,7 +53,7 @@
       <div class="new-section1__cover-block layout">
         <h2 class="welcome"> Welcome!</h2>
         <p class="formtext">The first step in applying for a <span style="font-size: 20px; font-weight: 500;">Nigeria Temporary Work Permit</span> is to fill the form below
-                 <span>It takes less than 5 minutes to do this. &nbsp; &nbsp; After you submit your application, you can</span>
+                 <span>It takes less than 5 minutes to do this. After you submit your application, you can</span>
                  <span> move on to the next step to make payment</span>.</p>
         <div class="topdiv">
           <div class="card cardform">
