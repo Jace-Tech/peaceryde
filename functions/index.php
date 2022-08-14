@@ -243,21 +243,26 @@ function getUnReadNotications ($connect, $id) {
         $result = $connect->prepare($query);
         $result->execute([0]);
 
+        $unread = [];
+
         if($result->rowCount()) {
             $nots = $result->fetchAll();
             // print_r($nots);
 
-            $items = array_filter($nots, function ($item) {
-                global $id;
-                $arr = json_decode($item['admin'], true);
-                return in_array("$id", $arr, true);
-            });
+            foreach ($nots as $not) {
+                $setIDs = json_decode($not, true);
 
-            return $items;
+                if(is_array($setIDs)) {
+                    foreach($setIDs as $setID) {
+                        if($id == $setID) {
+                            array_push($unread, $not);
+                        }
+                    }
+                }
+            }
         }
-        else {
-            return [];
-        }
+
+        return $unread;
     } catch (PDOException $e) {
         return false;
     }
