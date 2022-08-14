@@ -46,7 +46,7 @@ class Message {
     {
         try{
 
-            $query = "SELECT * FROM `messages` WHERE `user_id` = :user AND`sender_id` = :sender AND `is_read` = :is_read";
+            $query = "SELECT * FROM `messages` WHERE `user_id` = :user AND`sender_id` = :sender AND `is_read` = :is_read ORDER BY `date` DESC";
             $result = $this->connection->prepare($query);
             $result->execute([
                 'user' => $user,
@@ -84,7 +84,7 @@ class Message {
     public function get_user_unread_messages($user_id)
     {
         try {
-            $query = "SELECT * FROM `messages` WHERE `user_id` = ? AND `is_read` = ?";
+            $query = "SELECT * FROM `messages` WHERE `user_id` = ? AND `is_read` = ? ORDER BY `date` DESC";
             $result = $this->connection->prepare($query);
             $result->execute([$user_id, 0]);
 
@@ -99,7 +99,7 @@ class Message {
     public function get_user_messages($user_id)
     {
         try {
-            $query = "SELECT * FROM `messages` WHERE `user_id` = ?";
+            $query = "SELECT * FROM `messages` WHERE `user_id` = ? ORDER BY `date` DESC";
             $result = $this->connection->prepare($query);
             $result->execute([$user_id]);
 
@@ -151,7 +151,7 @@ class Message {
     public function get_message($message_id)
     {
         try{
-            $query = "SELECT * FROM `messages` WHERE `message_id` = ?";
+            $query = "SELECT * FROM `messages` WHERE `message_id` = ? ";
             $result = $this->connection->prepare($query);
             $result->execute([$message_id]);
 
