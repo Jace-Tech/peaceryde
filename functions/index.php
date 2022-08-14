@@ -220,15 +220,14 @@ function getNotications ($connect, $id) {
         $result = $connect->prepare($query);
         $result->execute();
 
-        print_r($id);
-
         if($result->rowCount()) {
             $nots = $result->fetchAll();
 
-            print_r($nots);
             return array_filter($nots, function ($item) {
                 global $id;
                 $arr = json_decode($item['admin'], true);
+
+                print_r($arr);
                 return in_array($id, $arr);
             });
         }
