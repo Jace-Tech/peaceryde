@@ -237,6 +237,29 @@ function getNotications ($connect, $id) {
     }
 }
 
+function getUnReadNotications ($connect, $id) {
+    try {
+        $query = "SELECT * FROM `notification` WHERE `isRead` = ?";
+        $result = $connect->prepare($query);
+        $result->execute([0]);
+
+        if($result->rowCount()) {
+            $nots = $result->fetchAll();
+
+            return array_filter($nots, function ($item) {
+                global $id;
+                $arr = json_decode($item['admin'], true);
+                return in_array($id, $arr);
+            });
+        }
+        else {
+            return [];
+        }
+    } catch (PDOException $e) {
+        return false;
+    }
+}
+
 function markNotificationAsSeen ($connect, $id) {
     try {
         $query = "UPDATE `notification` SET `isRead` = :read WHERE `id` = :id";
