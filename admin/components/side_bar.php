@@ -2,25 +2,29 @@
     .logo {
         width: 55px;
         height: 55px;
+
         border-radius: 50%;
-        object-fit: contain;
+        object-fit: cover;
     }
 </style>
 
-<?php  
-    if($LOGGED_ADMIN['type'] != "HIGH") {
-        $admin = getSubAdminService($connect, $LOGGED_ADMIN['admin_id']);
-    }
+<?php
+if ($LOGGED_ADMIN['type'] != "HIGH") {
+    $admin = getSubAdminService($connect, $LOGGED_ADMIN['admin_id']);
+}
 
-    $messages = new Message($connect);
+$messages = new Message($connect);
 ?>
 
 <?php if (isset($active)) : ?>
     <div id="sidebar" class="flex flex-col absolute z-40 left-0 top-0 lg:static lg:left-auto lg:top-auto lg:translate-x-0 transform h-screen overflow-y-scroll lg:overflow-y-auto no-scrollbar w-64 lg:w-20 lg:sidebar-expanded:!w-64 2xl:!w-64 shrink-0 bg-gray-800 p-4 transition-all duration-200 ease-in-out" :class="sidebarOpen ? 'translate-x-0' : '-translate-x-64'" @click.outside="sidebarOpen = false" @keydown.escape.window="sidebarOpen = false" x-cloak="lg" style="overflow-x: hidden;">
         <div class="flex justify-between mb-10 pr-3 sm:px-2">
-            <button class="lg:hidden text-gray-500 hover:text-gray-400" @click.stop="sidebarOpen = !sidebarOpen" aria-controls="sidebar" :aria-expanded="sidebarOpen"><span class="sr-only">Close sidebar</span> <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <button class="lg:hidden text-gray-500 hover:text-gray-400" @click.stop="sidebarOpen = !sidebarOpen" aria-controls="sidebar" :aria-expanded="sidebarOpen">
+                <span class="sr-only">Close sidebar</span> 
+                <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <path d="M10.7 18.7l1.4-1.4L7.8 13H20v-2H7.8l4.3-4.3-1.4-1.4L4 12z" />
-                </svg></button>
+                </svg>
+            </button>
             <a class="block" href="">
                 <img src="../assets/icon.png" class="logo" alt="logo">
             </a>
@@ -91,7 +95,7 @@
                                     </div>
                                 </a>
                             </li>
-                        <?php endif; ?> 
+                        <?php endif; ?>
                     <?php endif; ?>
 
                     <!-- SERVICES -->
@@ -183,9 +187,9 @@
                                             <path class="fill-current text-gray-400" :class="page === 'inbox' &amp;&amp; 'text-indigo-300'" d="m23.72 12 .229.686A.984.984 0 0 1 24 13v8a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1v-8c0-.107.017-.213.051-.314L.28 12H8v4h8v-4H23.72ZM13 0v7h3l-4 5-4-5h3V0h2Z"></path>
                                         </svg>
                                         <span class="text-sm font-medium ml-3 lg:opacity-0 lg:sidebar-expanded:opacity-100 2xl:opacity-100 duration-200">Messages</span>
-                                        <?php if (count( $messages->get_user_unread_messages($LOGGED_ADMIN['admin_id']))) : ?>
+                                        <?php if (count($messages->get_user_unread_messages($LOGGED_ADMIN['admin_id']))) : ?>
                                             <div class="text-xs inline-flex font-medium bg-indigo-400 text-white rounded-full text-center leading-5 ml-2 px-2">
-                                                <?= count( $messages->get_user_unread_messages($LOGGED_ADMIN['admin_id'])) ?>
+                                                <?= count($messages->get_user_unread_messages($LOGGED_ADMIN['admin_id'])) ?>
                                             </div>
                                         <?php endif; ?>
                                     </div>
