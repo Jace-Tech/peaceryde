@@ -218,7 +218,9 @@ function getNotications ($connect, $id) {
     try {
         $query = "SELECT * FROM `notification`";
         $result = $connect->prepare($query);
-        $result->execute([ $id ]);
+        $result->execute();
+
+        print_r($id);
 
         if($result->rowCount()) {
             $nots = $result->fetchAll();
