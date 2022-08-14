@@ -382,7 +382,7 @@
                             </optgroup>
                           </select>
                       </div>
-                      <input type="text" name="phone" class="form-control firstname" value="" placeholder="country code (Mobile number)" >
+                      <input type="text" name="phone" class="form-control firstname" value="" placeholder="070XXXXXXXX" >
                       <input required type="hidden" name="service" value="srvs-002">
                       <input required type="hidden" name="nbv" value="">
                     </div>
