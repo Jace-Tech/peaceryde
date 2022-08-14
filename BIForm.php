@@ -62,7 +62,7 @@
                           </div>
                           
                           <div>
-                              <form method="post" action="./handlers/form_handler.php">
+                              <form data-form method="post" action="./handlers/form_handler.php">
                                 <div class="form-row mt-15 formml">
                                   <div class="row">
                                     <div class="col-md-5">
