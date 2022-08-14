@@ -227,8 +227,14 @@ function getNotications ($connect, $id) {
                 global $id;
                 $arr = json_decode($item['admin'], true);
 
-                print_r($arr);
-                return in_array($id, $arr);
+                foreach ($arr as $adminId) {
+                    if($adminId == $id) {
+                        return true;
+                    }
+                    else {
+                        return false;
+                    }
+                }
             });
         }
         else {
