@@ -45,11 +45,13 @@ function messageableUsers ($connect, $id) {
 
                 // Get users based of service
                 $usersByService = getUsersWithSameServiceAsSubAdmin($connect, $id);
-
+			
                 // get users by country
                 $usersByCountry = getUsersWithSameCountryAsSubAdmin($connect, $id);
-                // $USERS = array_unique(array_merge($assignedUsers, $usersByService, $usersByCountry));
-                $USERS = array_unique(array_merge($usersByService, $usersByCountry));
+
+                // $SUBADMIN_USERS = array_unique(array_merge($assignedUsers, $usersByService, $usersByCountry));
+                $_USERS_ = array_merge($usersByService, $usersByCountry);
+                $USERS = array_unique($_USERS_, SORT_REGULAR);
             }
         }
     }
