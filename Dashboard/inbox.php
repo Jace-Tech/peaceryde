@@ -10,7 +10,7 @@ if (isset($_GET['message'])) {
 }
 $messagers = getUserMessagers($connect, $USER_ID);
 
-print_r($messages->get_user_unread_messages($USER_ID));
+// print_r($messages->get_user_unread_messages($USER_ID));
 ?>
 
 
@@ -157,9 +157,22 @@ print_r($messages->get_user_unread_messages($USER_ID));
                                             <div class="d-flex align-items-start">
                                                 <img src="./pic/index.png" class="rounded-circle mr-1" alt="<?= $main_admin['name']; ?>" width="40" height="40">
                                                 <div class="flex-grow-1 ml-3">
-                                                    <?= $messager['name']; ?>
-                                                    <!-- <div class="small"><span class="fas fa-circle chat-online"></span> Online</div> -->
+                                                    <p> 
+                                                        <?= $messager['name']; ?> 
+
+                                                        <div class="ml-2">
+                                                            <?php if(count($messages->get_unread_messages($messager['admin_id'], $USER_ID))): ?>
+                                                                <div class="badge badge-danger">
+                                                                    <?=  count($messages->get_unread_messages($messager['admin_id'], $USER_ID)) ?>
+                                                                </div>
+                                                            <?php endif; ?>
+                                                        </div>
+                                                    </p>
+                                                    <div class="text-muted text-sm font-weight-light">
+                                                        <?= $_GET['message'] == "MAIN_ADMIN" ? "Admin" : "Sub admin" ?>
+                                                    </div>
                                                 </div>
+
                                             </div>
                                         </a>
                                     <?php endforeach; ?>
@@ -176,7 +189,7 @@ print_r($messages->get_user_unread_messages($USER_ID));
                                         <div class="d-flex align-items-center py-1">
                                             <div class="position-relative">
                                                 <?php if (0) : ?>
-                                                    <img src="./pic/<?= $USER_PROFILE_PIC; ?>" class="rounded-circle mr-1" alt="Chris Wood" width="40" height="40">
+                                                    <img src="./pic/<?= $USER_PROFILE_PIC; ?>" class="rounded-circle mr-1" alt="" width="40" height="40">
                                                 <?php else : ?>
                                                     <div class="avater">
                                                         <?= getSubName(getSubAdmin($connect, $_GET['message'])['name']); ?>
@@ -187,7 +200,9 @@ print_r($messages->get_user_unread_messages($USER_ID));
                                                 <strong>
                                                     <?= getSubAdmin($connect, $_GET['message'])['name'];  ?>
                                                 </strong>
-                                                <!-- <div class="text-muted small"><em>Typing...</em></div> -->
+                                                <div class="text-muted small"><em>
+                                                    <?= $_GET['message'] == "MAIN_ADMIN" ? "Admin" : "Sub admin" ?>
+                                                </em></div>
                                             </div>
                                         </div>
                                     </div>
