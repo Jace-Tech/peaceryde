@@ -225,6 +225,7 @@ function getNotications ($connect, $id) {
 
             return array_filter($nots, function ($item) {
                 global $id;
+                print_r($id);
                 $arr = json_decode($item['admin'], true);
 
                 foreach ($arr as $adminId) {
