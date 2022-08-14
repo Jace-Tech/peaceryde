@@ -169,7 +169,7 @@ $messagers = getUserMessagers($connect, $USER_ID);
                                                         </div>
                                                     </p>
                                                     <div class="text-muted text-sm font-weight-light">
-                                                        <?= $_GET['message'] == "MAIN_ADMIN" ? "Admin" : "Sub admin" ?>
+                                                        <?= $$messager['sender_id'] == "MAIN_ADMIN" ? "Admin" : "Sub admin" ?>
                                                     </div>
                                                 </div>
 
