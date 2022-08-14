@@ -65,19 +65,40 @@ if (isset($_POST['broadcast'])) {
     $sender = $_POST['sender'];
     $all_users = messageableUsers($connect, $sender);
     $message = filter_field($_POST['message']);
+    $to = $_POST['to'];
 
-    $final_result = false;
+    if(count($to)) {
+        if(in_array("*", $to)) {
+            $final_result = false;
 
-    foreach($all_users as $user) {
-        extract($user);
+            foreach($all_users as $user) {
+                extract($user);
 
-        $result = $messages->send_message($user_id, $sender, $message);
-        if($result) $final_result = true;
-        else $final_result = false;
-    }
+                $result = $messages->send_message($user_id, $sender, $message);
+                if($result) $final_result = true;
+                else $final_result = false;
+            }
 
-    if($final_result){
-        setAdminAlert("Message Broadcasted!", 'success');
-        header("Location: ../view_message.php");
+            if($final_result){
+                setAdminAlert("Message Broadcasted!", 'success');
+                header("Location: ../view_message.php");
+            }
+        } 
+        else {
+            $final_result = false;
+            
+            foreach($to as $user) {
+    
+                $result = $messages->send_message($user, $sender, $message);
+                if($result) $final_result = true;
+                else $final_result = false;
+            }
+
+            if($final_result){
+                setAdminAlert("Message Broadcasted!", 'success');
+                header("Location: ../view_message.php");
+            }
+        }
+
     }
 }

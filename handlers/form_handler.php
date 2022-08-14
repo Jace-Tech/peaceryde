@@ -5,6 +5,8 @@ include("../db/config.php");
 include("../models/User.php");
 include("../models/BI.php");
 include("../utils/country_fee.php");
+include("../functions/index.php");
+include("../utils/store.php");
 
 $users = new User($connect);
 $bis = new BI($connect);
@@ -27,6 +29,8 @@ if(isset($_POST['twp'])) {
         "passport" => $passport,
         "phone" => $countryCode . $phone
     ];
+    // https://ryde.peacerydeafrica.com/admin/user-details.php?user=
+
 
     if(isset($_SESSION['LOGGED_USER'])) {
         $LOGGED_USER = json_decode($_SESSION['LOGGED_USER'], true);
@@ -42,6 +46,11 @@ if(isset($_POST['twp'])) {
         // Generate a session with user ID
         $_SESSION['REG_NO'] = $result['userId'];
         $_SESSION["SERVICE_ID"] = $result['id']; 
+
+        $admin = getSubAdmin($connect, "MAIN_ADMIN");
+
+        setAdminNotification($connect, "./user-details.php?user=" . $result['userId'], "MAIN_ADMIN", "A new user was added, click to view"); 
+        sendMail("New User", "<p>A new user <strong>$firstname</strong> was added</p>", "billing@peacerydeafrica.com", $admin['email'], true);
     }
 
     // Get TWP Calculations
@@ -87,6 +96,11 @@ if(isset($_POST['nbv'])) {
         // Generate a session with user ID
         $_SESSION['REG_NO'] = $result['userId'];
         $_SESSION["SERVICE_ID"] = $result['id']; 
+
+        $admin = getSubAdmin($connect, "MAIN_ADMIN");
+
+        setAdminNotification($connect, "./user-details.php?user=" . $result['userId'], "MAIN_ADMIN", "A new user was added, click to view"); 
+        sendMail("New User", "<p>A new user <strong>$firstname</strong> was added</p>", "billing@peacerydeafrica.com", $admin['email'], true);
     }
     
     // Get TWP Calculations
@@ -145,6 +159,12 @@ if(isset($_POST['bi'])) {
             'companyName' => $companyName,
             'coperateAddress' => $coperateAddress,
         ];
+
+
+        $admin = getSubAdmin($connect, "MAIN_ADMIN");
+
+        setAdminNotification($connect, "./user-details.php?user=" . $result['userId'], "MAIN_ADMIN", "A new user was added, click to view"); 
+        sendMail("New User", "<p>A new user <strong>$firstname</strong> was added</p>", "billing@peacerydeafrica.com", $admin['email'], true);
 
         $bis->addBI($bi_options);
     }

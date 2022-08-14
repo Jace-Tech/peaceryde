@@ -93,6 +93,42 @@ if($LOGGED_ADMIN['type'] != "HIGH") {
                                                     </button>
                                                 </div>
                                             </div>
+                                            <?php if($LOGGED_ADMIN['type'] == "MAIN_ADMIN"): ?>
+                                                <div class="px-5 py-4">
+                                                    <div class="space-y-3">
+                                                        <div><label class="block text-sm font-medium mb-1" for="feedback">Users <span class="text-red-500">*</span></label>
+                                                            <select name="to[]" required id="">
+                                                                <option value="" disabled>Choose users</option>
+                                                                <option value="*">All users</option>
+
+                                                                <?php foreach($user->get_all_users() as $user): ?>
+                                                                    <option value="<?= $user['user_id'] ?>">
+                                                                        <?= $user['firstname'] . " " . $user["lastname"]; ?>
+                                                                    </option>
+                                                                <?php endforeach; ?>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            <?php else: ?>
+                                                <div class="px-5 py-4">
+                                                    <div class="space-y-3">
+                                                        <div><label class="block text-sm font-medium mb-1" for="feedback">Users <span class="text-red-500">*</span></label>
+                                                            <select name="to[]" required id="">
+                                                                <option value="" disabled>Choose users</option>
+                                                                <option value="*">All users</option>
+
+                                                                <?php foreach($SUBADMIN_USERS as $user): ?>
+                                                                    <option value="<?= $user['user_id'] ?>">
+                                                                        <?= $user['firstname'] . " " . $user["lastname"]; ?>
+                                                                    </option>
+                                                                <?php endforeach; ?>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            <?php endif; ?>
+                                           
                                             <div class="px-5 py-4">
                                                 <div class="space-y-3">
                                                     <div><label class="block text-sm font-medium mb-1" for="feedback">Message <span class="text-red-500">*</span></label>
