@@ -226,7 +226,7 @@ function getNotications ($connect, $id) {
             return array_filter($nots, function ($item) {
                 global $id;
                 $arr = json_decode($item['admin'], true);
-                return !in_array($id, $arr);
+                return in_array($id, $arr);
             });
         }
         else {
