@@ -1,4 +1,5 @@
 <?php  
+    
     $isUnread = $messages->get_user_unread_messages($USER_ID);
 ?>
 <aside class="left-sidebar" data-sidebarbg="skin6" id="sidebar">

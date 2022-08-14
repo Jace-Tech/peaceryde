@@ -1,5 +1,7 @@
 <?php include("./inc/check_session.php"); ?>
-
+<?php 
+  $messages = new Message($connect); 
+?>
 
 
 <!DOCTYPE html>
