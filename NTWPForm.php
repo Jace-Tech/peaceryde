@@ -53,7 +53,7 @@
       <div class="new-section1__cover-block layout">
         <h2 class="welcome"> Welcome!</h2>
         <p class="formtext">The first step in applying for a <span style="font-size: 20px; font-weight: 500;">Nigeria Temporary Work Permit</span> is to fill the form below
-                 <span>It takes less than 5 minutes to do this. &nbsp; &nbsp; After you submit your application, you can</span>
+                 <span>It takes less than 5 minutes to do this. After you submit your application, you can</span>
                  <span> move on to the next step to make payment</span>.</p>
         <div class="topdiv">
           <div class="card cardform">
@@ -76,7 +76,7 @@
 
                 <div class="form-row mt-15 formml">
                   <div class="row">
-                    <div class="col-md-4">
+                    <div class="col-md-3">
                       <div class="form-group">
                         <label class="form-label">First Name</label>
                         <div class="input-group mb-3 biwidth"> 
@@ -84,7 +84,7 @@
                   </div>
                       </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-3">
                       <div class="form-group">
                         <label class="form-label">Middle Name</label>
                         <div class="input-group mb-3 biwidth"> 
@@ -92,7 +92,7 @@
                       </div>
                   </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-3">
                       <div class="form-group" style="margin-right: 0px;">
                         <label class="form-label">Last Name</label>
                         <div class="input-group mb-3 biwidth"> 
