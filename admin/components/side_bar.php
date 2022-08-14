@@ -1,9 +1,8 @@
 <style>
     .logo {
-        width: 55px;
-        height: 55px;
-
-        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        border-radius: 50% !important;
         object-fit: cover;
     }
 </style>
