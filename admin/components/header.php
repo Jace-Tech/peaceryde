@@ -7,8 +7,10 @@ $users = new User($connect);
 
 $ADMIN_UNREAD_MESSAGE = $messages->get_user_unread_messages($LOGGED_ADMIN['admin_id']);
 $NOTIFICATIONS = getNotications($connect, $LOGGED_ADMIN['admin_id']);
+
 $UNREAD_NOTIFICATIONS = [];
 if(count($NOTIFICATIONS)) {
+	print_r($NOTIFICATIONS);
 	$UNREAD_NOTIFICATIONS = array_filter($NOTIFICATIONS, function ($notification) {
 		return $notification['isRead'] == "0";
 	});
