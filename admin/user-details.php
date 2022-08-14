@@ -191,13 +191,13 @@ $USERS_ADMIN = array_unique($USERS_ADMIN);
 
                                 <tbody class="text-sm divide-y divide-gray-200">
                                     <?php foreach ($USERS_ADMIN as $userAdmin_) : ?>
-                                        <?php print_r($userAdmin_) ?>
+                                        <?php $__admin = getSubAdmin($connect, $userAdmin_['sub_admin']); ?>  ?>
                                         <tr>
                                             <td class="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap">
                                                 <div class="flex items-center">
                                                     <div class="font-medium text-gray-800">
-                                                        <a href="../Dashboard/upload/<?= $userAdmin_['admin_id']; ?>" class="text-indigo-500 text-sm font-medium">
-                                                            <?= $userAdmin_['name']; ?>
+                                                        <a href="../Dashboard/upload/<?= $__admin['admin_id']; ?>" class="text-indigo-500 text-sm font-medium">
+                                                            <?= $__admin['name']; ?>
                                                         </a>
                                                     </div>
                                                 </div>
@@ -209,7 +209,7 @@ $USERS_ADMIN = array_unique($USERS_ADMIN);
                                                         <div class="flex">
                                                             <select name="subadmin" class="form-select text-sm" id="">
                                                                 <?php foreach (getAllSubAdmins($connect) as $admin) : ?>
-                                                                    <option <?= $admin['admin_id'] === $userAdmin_['admin_id'] ? " selected" : "" ?> value="<?= $admin['admin_id'] ?>">
+                                                                    <option <?= $admin['admin_id'] === $__admin['admin_id'] ? " selected" : "" ?> value="<?= $admin['admin_id'] ?>">
                                                                         <?= $admin['name']; ?>
                                                                     </option>
                                                                 <?php endforeach; ?>
@@ -220,7 +220,7 @@ $USERS_ADMIN = array_unique($USERS_ADMIN);
                                                         </div>
                                                     </form>
                                                 <?php else : ?>
-                                                    <a href="?user=<?= $_GET['user'] ?>&change_admin=<?= $userAdmin_['admin_id'] ?>" class="text-indigo-500 inline-block">Change subadmin</a>
+                                                    <a href="?user=<?= $_GET['user'] ?>&change_admin=<?= $__admin['admin_id'] ?>" class="text-indigo-500 inline-block">Change subadmin</a>
                                                 <?php endif; ?>
                                             </td>
                                         </tr>
