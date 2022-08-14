@@ -282,6 +282,13 @@ function getLinkColor ($link)
     endif;
 }
 
+function setUserAlert ($msg, $type) {
+    $_SESSION['ALERT'] = json_encode([
+        "message" => $msg,
+        "type" => $type
+    ]);
+}
+
 function slugify($string)
 {
     $text = explode(' ', $string);

@@ -268,6 +268,7 @@ if($LOGGED_ADMIN['type'] != "HIGH") {
                             </div>
                         </div>
                     <?php endfor; ?>
+                    <div id="scrollToView"></div>
                 </div>
                 <div class="sticky bottom-0">
                     <div id="filesScreen"></div>
@@ -327,6 +328,10 @@ if($LOGGED_ADMIN['type'] != "HIGH") {
 </div>
 </div>
 
+<script>
+    const scrollToView = document.querySelector("#scrollToView");
+    scrollToView.scrollIntoView({ behavior: "smooth" });
+</script>
 <script src="main.75545896273710c7378c.js"></script>
 </body>
 

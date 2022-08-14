@@ -7,15 +7,21 @@ include("../../db/config.php");
 include("../../models/Upload.php");
 
 $uploads = new Upload($connect);
-
 if(isset($_POST['upload'])) {
     $id = $_POST['id'];
     $service = "NULL";
     $name = $_POST['name'];
 
-    // print_r($_FILES);
-    // die();
-    $fileUpload = $uploads->uploadFile($_FILES["myFile"], "../upload/");
+    $file = $_FILES["myFile"];
+
+    // Check if there's eror uploading file
+    if($file["error"][0]) {
+        setUserAlert("Error uploading file", "error");
+        header("Location: ./upload.php");
+        exit();
+    }
+
+    
 
     // print_r($fileUpload);
     if($fileUpload['status'] == "success") {

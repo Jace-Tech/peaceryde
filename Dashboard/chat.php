@@ -484,7 +484,7 @@
                       <div class="direct-chat-messages">
                         <?php if(count($USER_MESSAGES)): ?>
                         <?php foreach($USER_MESSAGES as $message): ?>
-							<?php $messages->mark_read($message['message_id']); ?>
+							<?php $messages->mark_read($message['message_id'], $USER_ID); ?>
                             <!--   SENDER  -->
 							<?php if($message['sender_id'] == $USER_ID): ?>
                                 <div class="direct-chat-msg right">

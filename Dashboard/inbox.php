@@ -7,7 +7,6 @@ $messages = new Message($connect);
 if (isset($_GET['message'])) {
     $id = $_GET['message'];
     $USER_MESSAGES = $messages->get_conversation($USER_ID, $id);
-
 }
 $messagers = getUserMessagers($connect, $USER_ID);
 
@@ -151,21 +150,21 @@ $messagers = getUserMessagers($connect, $USER_ID);
                                 </div>
 
                                 <?php if (count($messagers)) : ?>
-                                    <?php foreach ($messagers as $messager): ?>
+                                    <?php foreach ($messagers as $messager) : ?>
                                         <a href="?message=<?= $messager['admin_id']; ?>" class="list-group-item <?= $messager['admin_id'] == $_GET['message'] ? "bg-light" : "" ?> list-group-item-action border-0">
                                             <!-- <div class="badge bg-success float-right">5</div> -->
                                             <div class="d-flex align-items-start">
                                                 <img src="./pic/index.png" class="rounded-circle mr-1" alt="<?= $main_admin['name']; ?>" width="40" height="40">
                                                 <div class="flex-grow-1 ml-3">
-                                                    <p class="mb-0 d-flex"> 
-                                                        <?= $messager['name']; ?> 
-                                                        <div class="ml-2">
-                                                            <?php if(count($messages->get_unread_messages($messager['admin_id'], $USER_ID))): ?>
-                                                                <div class="badge badge-danger">
-                                                                    <?=  count($messages->get_unread_messages($messager['admin_id'], $USER_ID)) ?>
-                                                                </div>
-                                                            <?php endif; ?>
-                                                        </div>
+                                                    <p class="mb-0 d-flex">
+                                                        <?= $messager['name']; ?>
+                                                    <div class="ml-2">
+                                                        <?php if (count($messages->get_unread_messages($messager['admin_id'], $USER_ID))) : ?>
+                                                            <div class="badge badge-danger">
+                                                                <?= count($messages->get_unread_messages($messager['admin_id'], $USER_ID)) ?>
+                                                            </div>
+                                                        <?php endif; ?>
+                                                    </div>
                                                     </p>
                                                     <div class="text-muted mt-1 text-xs font-weight-light">
                                                         <?= $messager['admin_id'] == "MAIN_ADMIN" ? "Admin" : "Sub admin" ?>
@@ -200,8 +199,8 @@ $messagers = getUserMessagers($connect, $USER_ID);
                                                     <?= getSubAdmin($connect, $_GET['message'])['name'];  ?>
                                                 </strong>
                                                 <div class="text-muted small"><em>
-                                                    <?= $_GET['message'] == "MAIN_ADMIN" ? "Admin" : "Sub admin" ?>
-                                                </em></div>
+                                                        <?= $_GET['message'] == "MAIN_ADMIN" ? "Admin" : "Sub admin" ?>
+                                                    </em></div>
                                             </div>
                                         </div>
                                     </div>
@@ -274,6 +273,7 @@ $messagers = getUserMessagers($connect, $USER_ID);
                                                         </div>
                                                     <?php endif; ?>
                                                 <?php endforeach; ?>
+                                                <div id="scrollToView"></div>
                                             <?php else : ?>
                                                 <div class="text-sm text-muted text-center">No messages yet</div>
                                             <?php endif; ?>
@@ -287,9 +287,9 @@ $messagers = getUserMessagers($connect, $USER_ID);
                                             <input type="hidden" name="reciever" value="<?= $_GET['message']; ?>">
                                             <input type="text" name="message" class="form-control" placeholder="Type your message">
                                             <input type="file" name="attachment[]" multiple id="hiddenInput" hidden>
-                                            <button id="fileBtn" type="button" class="btn btn-secondary">Files  <svg class="fill-current text-muted flex-shrink-0 mr-3" style="height: 20px; fill: #ccc; height: 20px;" viewBox="0 0 12 12">
-                                        <path d="M15 15V5l-5-5H2c-.6 0-1 .4-1 1v14c0 .6.4 1 1 1h12c.6 0 1-.4 1-1zM3 2h6v4h4v8H3V2z"></path>
-                                    </svg></button>
+                                            <button id="fileBtn" type="button" class="btn btn-secondary">Files <svg class="fill-current text-muted flex-shrink-0 mr-3" style="height: 20px; fill: #ccc; height: 20px;" viewBox="0 0 12 12">
+                                                    <path d="M15 15V5l-5-5H2c-.6 0-1 .4-1 1v14c0 .6.4 1 1 1h12c.6 0 1-.4 1-1zM3 2h6v4h4v8H3V2z"></path>
+                                                </svg></button>
                                             <button name="send" type="submit" class="btn btn-primary">Send</button>
                                         </div>
                                         <div id="filesScreen"></div>
@@ -313,6 +313,12 @@ $messagers = getUserMessagers($connect, $USER_ID);
         </div>
 
     </div>
+    <script>
+        const scrollToView = document.querySelector("#scrollToView");
+        scrollToView.scrollIntoView({
+            behavior: "smooth"
+        });
+    </script>
     <script>
         const fileBtn = document.querySelector("#fileBtn")
         const fileInput = document.querySelector("#hiddenInput")
