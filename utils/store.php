@@ -284,9 +284,8 @@ function getUsersWithSameCountryAsSubAdmin ($connect, $adminId) {
     $matchedUsers = []; 
 
     if(count($countries)) {
-        if(in_array("*", $countries)) {
-            return $users;
-            exit();
+        if($countries[0] == "*") {
+            $matchedUsers = $users;
         }
         else {
             if(is_array($users)) {
