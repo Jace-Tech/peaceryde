@@ -245,15 +245,17 @@ function getUnReadNotications ($connect, $id) {
 
         if($result->rowCount()) {
             $nots = $result->fetchAll();
-            print_r($nots);
+            // print_r($nots);
 
-            return array_filter($nots, function ($item) {
+            $items =  array_filter($nots, function ($item) {
                 global $id;
                 $arr = array_map(function ($_id) {
                     return strval($_id);
                 }, json_decode($item['admin'], true));
                 return in_array("$id", $arr);
             });
+
+            return $items;
         }
         else {
             return [];
