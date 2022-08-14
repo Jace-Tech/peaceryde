@@ -77,3 +77,31 @@ p {
     </article>
 </body>
 </html> -->
+
+
+                        <!-- Attachments -->
+                        <?php //if(!is_null($attachment)): ?>
+                            <?php //$_attachments = json_decode($attachment, true); ?>
+                                <!-- <div class="flex items-start mb-4 last:mb-0" style="flex-direction: <?php // $style = $sender_id === $LOGGED_ADMIN['admin_id'] ? "row-reverse" : "row"; ?>"> -->
+                                    <!-- <div class="flex shadow-sm <?php // $margin = $sender_id === $LOGGED_ADMIN['admin_id'] ? "ml-2" : "mr-2" ?> items-center justify-center bg-gray-200 rounded-full w-10 h-10 text-sm font-semibold uppercase text-gray-500"> -->
+                                        <?php // $name = $sender_id === $LOGGED_ADMIN['admin_id'] ? getSubName($LOGGED_ADMIN['name']) : getSubName($user->get_user($_GET['msg'])['firstname'] . " " . $user->get_user($_GET['msg'])['lastname']); ?>
+                                    <!-- </div>
+                                    <div>
+                                        <div class="text-sm <?php // $theme =  $sender_id === $LOGGED_ADMIN['admin_id'] ? "bg-indigo-500 text-white" : "bg-white text-gray-800" ?> p-3 rounded-lg border border-transparent shadow-md mb-1" style="border-top-right-radius: 0;"> -->
+                                            <?php // foreach($_attachments as $attachment): ?>
+                                                <!-- <div class="flex items-center">
+                                                    <svg class="w-6 h-6 fill-current text-gray-400 flex-shrink-0 mr-3" viewBox="0 0 24 24"><path d="M15 15V5l-5-5H2c-.6 0-1 .4-1 1v14c0 .6.4 1 1 1h12c.6 0 1-.4 1-1zM3 2h6v4h4v8H3V2z"></path></svg>
+                                                    <a download="<?php // $attachment; ?>" href="../attachment/<?php // $attachment ?>" class="text-sm underline <?php // $sender_id === $LOGGED_ADMIN['admin_id'] ? "text-gray-200" : "text-gray-500" ?> font-semibold flex-1">
+                                                        <?php // $attachment ?>
+                                                    </a>
+                                                </div> -->
+                                            <!-- <?php // endforeach; ?>
+                                        </div>
+                                        <div class="flex items-center justify-between">
+                                            <div class="text-xs text-gray-500 font-medium" title="<?php // date("l j, M Y H:i A", strtotime($date)) ?>">
+                                                <?php // date("D, H:i A", strtotime($date)); ?>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> -->
+                        <?php // endif; ?>
