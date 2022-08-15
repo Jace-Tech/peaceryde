@@ -31,7 +31,7 @@ if(isset($_POST['update'])) {
         $filename = "$name-$time.$extension";
 
         $tepFile = $file['tmp_name'];
-        $destination = "../upload/$filename";
+        $destination = "../pic/$filename";
     
         $uploaded = move_uploaded_file($tepFile, $destination);
     
@@ -102,7 +102,7 @@ if(isset($_POST['update'])) {
         $result->execute([
             "title" => $title,
             "firstname" => $firstname,
-            "middle_name" => $middle_name,
+            "middle_name" => $middlename,
             "lastname" => $lastname,
             "email" => $email,
             "phone" => $phone,
