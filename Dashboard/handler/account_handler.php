@@ -6,6 +6,7 @@ include("../../db/config.php");
 // include("../../db/conf.php");
 include("../../models/Upload.php");
 include("../../models/ResetUserPassword.php");
+include("../../utils/store.php");
 
 $uploads = new Upload($connect);
 $resetPassword = new ResetUserPassword($connect);
@@ -43,7 +44,7 @@ if(isset($_POST['update'])) {
             $query = "INSERT INTO `uploads`(`user_id`, `name`, `file`, `service_id`, `status`) VALUES (:userid, :name, :filename, :service, :status)";
             $result = $connect->prepare($query);
             $result->execute([
-                'userid' => $id,
+                'userid' => $USER_ID,
                 'name' => "PROFILE",
                 'filename' => json_encode($filename),
                 'service' => "PROFILE",
