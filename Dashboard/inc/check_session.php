@@ -36,6 +36,4 @@ if(!isset($_SESSION["LOGGED_USER"])) header("Location: ../signin.php");
 
     $USER = $users->get_user($USER_ID);
     $USER_PROFILE_PIC = getProfilePic($connect, $USER_ID);
-
-    print_r($USER_PROFILE_PIC ?? "NO PROFILE")
 ?>
