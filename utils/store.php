@@ -33,7 +33,7 @@ function getServicePayment($connect, $userId, $id) {
 }
 
 function getUsersUploads($connect, $userId) {
-    $query = "SELECT * FROM uploads WHERE `user_id` = ?";
+    $query = "SELECT * FROM uploads WHERE `user_id` = ? AND `service_id` != 'PROFILE'";
     $result = $connect->prepare($query);
     $result->execute([$userId]);
 
