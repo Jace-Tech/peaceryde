@@ -434,9 +434,9 @@ $isUnread = count($messages->get_user_unread_messages($USER_ID));
             <div class="page-breadcrumb">
                 <div class="row">
                     <div class="align-self-center">
-                        <div class="row mobile acc">
+                        <div class="row mobile acc" style="align-items: center;">
                             <div class="ima">
-                                <img src="./pic/<?= $USER_PROFILE_PIC != "" || $USER_PROFILE_PIC != NULL ? $USER_PROFILE_PIC :  "index.png" ?>" style="width: 90px; height: 90px; border-radius: 50%;" class="account-img">
+                                <img src="./pic/<?= $USER_PROFILE_PIC != "" || $USER_PROFILE_PIC != NULL ? $USER_PROFILE_PIC :  "index.png" ?>" style="width: 120px; height: 120px; border-radius: 50%;" class="account-img">
                             </div>
                             <div class="name">
                                 <h3 class="page-title text-truncate mb-1 account">My Account</h3>
