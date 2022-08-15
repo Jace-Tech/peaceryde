@@ -97,7 +97,13 @@
                 <div class="form-row accountrow">
                     <div class="form-group">
                         <p class="accountfirst">Title</p>
-                        <input type="text" name="title" value="<?= $USER['title'] ?? "" ?>" class="form-control accountinput" placeholder="John">
+                        <select name="title" value="<?= $USER['title'] ?? "" ?>">
+                            <option value="" disabled>Select title</option>
+                            <option value="Mr">Mr</option>
+                            <option value="Mrs">Mrs</option>
+                            <option value="Master">Master</option>
+                            <option value="Miss">Miss</option>
+                        </select>
                     </div>
                     <div class="form-group">
                         <p class="accountfirst">First Name</p>
