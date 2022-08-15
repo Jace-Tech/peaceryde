@@ -102,9 +102,6 @@
                             <?php foreach($titles as $title): ?>
                                 <option value="<?= $title ?>" <?= strtolower($title) == strtolower($USER['title']) ? "selected" : ""; ?> ><?= $title ?></option>
                             <?php endforeach; ?>
-                            <option value="Mrs">Mrs</option>
-                            <option value="Master">Master</option>
-                            <option value="Miss">Miss</option>
                         </select>
                     </div>
                     <div class="form-group">
