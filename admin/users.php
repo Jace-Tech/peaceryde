@@ -220,7 +220,7 @@ else {
 											<div class="flex justify-center mb-2">
 												<a class="relative inline-flex items-start" href="./user-details.php?user=<?= $user['user_id']; ?>">
 													<?php if($PROFILE_PIC != "" || $PROFILE_PIC != NULL || $PROFILE_PIC): ?>
-														<img class="rounded-full" src="../Dashboard/pic/<?= $PROFILE_PIC ?>" alt="<?= $user["firstname"] ?>" style="width: 64px; height: 64px; object-fit: contain; border: 1px solid #eee;" width="64" height="64">
+														<img class="rounded-full bg-gray-200" src="../Dashboard/pic/<?= $PROFILE_PIC ?>" alt="<?= $user["firstname"] ?>" style="width: 48px; height: 48px; object-fit: contain; border: 1px solid #eee;" width="48" height="48">
 													<?php else: ?>
 														<div class="flex shadow-sm mr-2 items-center bg-gray-200 justify-center rounded-full w-12 h-12 text-md font-semibold uppercase text-gray-500">
 															<?= getSubName($user['firstname'] . " " .  $user['lastname']) ?>
@@ -393,7 +393,7 @@ else {
 												<a class="relative inline-flex items-start" href="#0">
 
 													<?php if($PROFILE_PIC != "" || $PROFILE_PIC != NULL || $PROFILE_PIC): ?>
-														<img class="rounded-full" src="../Dashboard/pic/<?= $PROFILE_PIC ?>" alt="<?= $user["firstname"] ?>" style="width: 64px; height: 64px; object-fit: contain; border: 1px solid #eee;" width="64" height="64">
+														<img class="rounded-full bg-gray-200" src="../Dashboard/pic/<?= $PROFILE_PIC ?>" alt="<?= $user["firstname"] ?>" style="width: 48px; height: 48px; object-fit: contain; border: 1px solid #eee;" width="48" height="48">
 													<?php else: ?>
 														<div class="flex shadow-sm mr-2 items-center bg-gray-200 justify-center rounded-full w-12 h-12 text-md font-semibold uppercase text-gray-500">
 															<?= getSubName($user['firstname'] . " " .  $user['lastname']) ?>
@@ -597,7 +597,7 @@ else {
 											<div class="flex justify-center mb-2">
 												<a class="relative inline-flex items-start" href="./user-details.php?user=<?= $user['user_id']; ?>">
 													<?php if($PROFILE_PIC != "" || $PROFILE_PIC != NULL || $PROFILE_PIC): ?>
-														<img class="rounded-full" src="../Dashboard/pic/<?= $PROFILE_PIC ?>" alt="<?= $user["firstname"] ?>" style="width: 64px; height: 64px; object-fit: contain; border: 1px solid #eee;" width="64" height="64">
+														<img class="rounded-full bg-gray-200" src="../Dashboard/pic/<?= $PROFILE_PIC ?>" alt="<?= $user["firstname"] ?>" style="width: 48px; height: 48px; object-fit: contain; border: 1px solid #eee;" width="48" height="48">
 													<?php else: ?>
 														<div class="flex shadow-sm mr-2 items-center bg-gray-200 justify-center rounded-full w-12 h-12 text-md font-semibold uppercase text-gray-500">
 															<?= getSubName($user['firstname'] . " " .  $user['lastname']) ?>
@@ -769,7 +769,7 @@ else {
 											<div class="flex justify-center mb-2">
 												<a class="relative inline-flex items-start" href="#0">
 													<?php if($PROFILE_PIC != "" || $PROFILE_PIC != NULL || $PROFILE_PIC): ?>
-														<img class="rounded-full" src="../Dashboard/pic/<?= $PROFILE_PIC ?>" alt="<?= $user["firstname"] ?>" style="width: 64px; height: 64px; object-fit: contain; border: 1px solid #eee;" width="64" height="64">
+														<img class="rounded-full bg-gray-200" src="../Dashboard/pic/<?= $PROFILE_PIC ?>" alt="<?= $user["firstname"] ?>" style="width: 48px; height: 48px; object-fit: contain; border: 1px solid #eee;" width="48" height="48">
 													<?php else: ?>
 														<div class="flex shadow-sm mr-2 items-center bg-gray-200 justify-center rounded-full w-12 h-12 text-md font-semibold uppercase text-gray-500">
 															<?= getSubName($user['firstname'] . " " .  $user['lastname']) ?>
