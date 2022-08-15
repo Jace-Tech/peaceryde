@@ -38,9 +38,6 @@ if(isset($_POST['upload'])) {
 
         array_push($filenames, $filename);
     }
-    print_r($filenames);
-    print_r($uploaded);
-    die();
 
     if(!$uploaded) {
         setUserAlert("Error uploading file", "error");
@@ -48,23 +45,30 @@ if(isset($_POST['upload'])) {
         exit();
     }
 
-    $pushed = $uploads->uploadToDB($id, json_encode($filenames), $name, $service);
-    if($pushed) {
-        $alert = [
-            "status" => "success",
-            "message" => "File uploaded successfully"
-        ];
+    try {
+        $query = "INSERT INTO `uploads`(`user_id`, `name`, `service_id`, `file`, `status`) VALUES (:userid, :name, :kind, :filename, :status)";
+        $result = $this->connection->prepare($query);
+        $result->execute([
+            'userid' => $userid,
+            'name' => $name,
+            'kind' => $kind,
+            'filename' => $file,
+            'status' => "Awaiting approval"
+        ]);
 
-        $_SESSION['ALERT'] = json_encode($alert);
-        header("Location: ../upload.php");
+        if($result) {
+            setUserAlert("File upload success", "success");
+            header("Location: ../upload.php");
+        }
+    } catch (PDOException $e) {
+        print_r($e);
     }
-    else {
-        $alert = [
-            "status" => "error",
-            "message" => "Upload failed"
-        ];
 
-        $_SESSION['ALERT'] = json_encode($alert);
-        header("Location: ../upload.php");
-    }
+    // $alert = [
+    //     "status" => "error",
+    //     "message" => "Upload failed"
+    // ];
+
+    // $_SESSION['ALERT'] = json_encode($alert);
+    // header("Location: ../upload.php");
 }
