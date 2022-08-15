@@ -77,6 +77,15 @@ $messagers = getUserMessagers($connect, $USER_ID);
             padding-top: 1rem !important;
             padding-bottom: 1rem !important;
         }
+        .bg-light
+        {
+            background-color:#1161D9;
+            border-radius:11px;
+            color:white;
+        }
+        .font-weight-bold {
+            font-weight: 500!important;
+        }
 
         .px-4 {
             padding-right: 1.5rem !important;
@@ -277,6 +286,7 @@ $messagers = getUserMessagers($connect, $USER_ID);
                                                 <div class="text-sm text-muted text-center">No messages yet</div>
                                             <?php endif; ?>
 
+                                            <div id="scrollToView"></div>
                                         </div>
                                     </div>
 
@@ -293,7 +303,7 @@ $messagers = getUserMessagers($connect, $USER_ID);
                                         </div>
                                         <div id="filesScreen"></div>
                                     </form>
-                                    <div id="scrollToView"></div>
+
                                 </div>
                             <?php else : ?>
                                 <div class="col-md-7 col-lg-7 col-xl-9">
@@ -314,7 +324,6 @@ $messagers = getUserMessagers($connect, $USER_ID);
     </div>
     <script>
         const scrollToView = document.querySelector("#scrollToView");
-        console.log(scrollToView);
         scrollToView.scrollIntoView({
             behavior: "smooth"
         });

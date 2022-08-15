@@ -67,7 +67,7 @@ $isUnread = $messages->get_user_unread_messages($USER_ID) ?? [];
             display: flex;
             align-items: center;
             cursor: pointer;
-            border: 1px solid #555555;
+            
         }
 
         .question::after {

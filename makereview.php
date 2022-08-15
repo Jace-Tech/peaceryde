@@ -126,7 +126,7 @@
                             </div>
                             
                             <p class="reviewfieldsetp" style=" padding: 0; text-align: center; ">Video Clip</p>
-                            <div style="padding: .3rem 2rem;">
+                            <div style="padding: .3rem 6rem;">
                                 <input name="video" type="file" />
                             </div>
                             <p class="reviewfieldsetp">Tell us about your expeience</p>

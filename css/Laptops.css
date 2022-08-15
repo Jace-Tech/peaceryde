@@ -559,12 +559,14 @@ button:focus:not(:focus-visible) {
   letter-spacing: 0em;
   text-align: left;
   color: #888888;
+  border-radius: 15px;
+  padding: 15px;
   border: 1px solid #555555;
 }
 
 .makereviewcard {
   width: 393px;
-  color: #0A0E69;
+  
 }
 
 .forgot {
