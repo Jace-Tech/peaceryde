@@ -96,20 +96,28 @@
 
                 <div class="form-row accountrow">
                     <div class="form-group">
+                        <p class="accountfirst">Title</p>
+                        <input type="text" name="title" value="<?= $USER['title'] ?? "" ?>" class="form-control accountinput" placeholder="John">
+                    </div>
+                    <div class="form-group">
                         <p class="accountfirst">First Name</p>
-                        <input type="text" name="firstname" value="<?= $USER['firstname'] ?>" class="form-control accountinput" placeholder="John">
+                        <input type="text" name="firstname" value="<?= $USER['firstname'] ?? "" ?>" class="form-control accountinput" placeholder="John">
+                    </div>
+                    <div class="form-group">
+                        <p class="accountfirst">Middle Name</p>
+                        <input type="text" name="middlename" value="<?= $USER['middle_name'] ?? "" ?>" class="form-control accountinput" placeholder="Raph">
                     </div>
                     <div class="form-group">
                         <p class="accountfirst">Last Name</p>
-                        <input type="text" name="lastname" class="form-control accountinput" value="<?= $USER['lastname'] ?>" placeholder="Joe">
+                        <input type="text" name="lastname" class="form-control accountinput" value="<?= $USER['lastname'] ?? "" ?>" placeholder="Joe">
                     </div>
                     <div class="form-group">
                         <p class="accountfirst">Mobile Number</p>
-                        <input type="text" name="phone" class="form-control accountinput" value="<?= $USER['phone'] ?>" placeholder="123-45-67-89">
+                        <input type="text" name="phone" class="form-control accountinput" value="<?= $USER['phone'] ?? "" ?>" placeholder="123-45-67-89">
                     </div>
                     <div class="form-group">
                         <p class="accountfirst">Email Address</p>
-                        <input type="text" name="email" class="form-control accountinput" value="<?= $USER['email'] ?>" placeholder="johndoe@gmail.com">
+                        <input type="text" name="email" class="form-control accountinput" value="<?= $USER['email'] ?? "" ?>" placeholder="johndoe@gmail.com">
                     </div>
                     <div class="form-group">
                         <p class="accountfirst">Password</p>

@@ -27,7 +27,7 @@ if(isset($_POST['twp'])) {
         "country" => $country,
         "serviceId" => $service,
         "passport" => $passport,
-        "phone" => $countryCode . $phone
+        "phone" => "+". $countryCode . $phone
     ];
 
 
@@ -78,7 +78,7 @@ if(isset($_POST['nbv'])) {
         "country" => $country,
         "serviceId" => $service,
         "passport" => $passport,
-        "phone" => $countryCode . $phone
+        "phone" => "+". $countryCode . $phone
     ];
 
 
@@ -121,7 +121,7 @@ if(isset($_POST['bi'])) {
         "firstname" => $firstname,
         "email" => $email,
         "lastname" => $lastname,
-        "phone" => $countryCode . $phone,
+        "phone" => "+". $countryCode . $phone,
         "serviceId" => $service,
     ];
 
