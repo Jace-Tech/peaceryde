@@ -240,9 +240,19 @@ if($LOGGED_ADMIN['type'] != "HIGH") {
                         <?php if(!is_null($attachment)): ?>
                             <?php $_attachments = json_decode($attachment, true); ?>
                                 <div class="flex items-start mb-4 last:mb-0" style="flex-direction: <?= $style = $sender_id === $LOGGED_ADMIN['admin_id'] ? "row-reverse" : "row"; ?>">
-                                    <div class="flex shadow-sm <?= $margin = $sender_id === $LOGGED_ADMIN['admin_id'] ? "ml-2" : "mr-2" ?> items-center justify-center bg-gray-200 rounded-full w-10 h-10 text-sm font-semibold uppercase text-gray-500">
-                                        <?= $name = $sender_id === $LOGGED_ADMIN['admin_id'] ? getSubName($LOGGED_ADMIN['name']) : getSubName($user->get_user($_GET['msg'])['firstname'] . " " . $user->get_user($_GET['msg'])['lastname']); ?>
-                                    </div>
+                                    <?php if($sender_id === $LOGGED_ADMIN['admin_id']): ?>
+                                        <div class="flex shadow-sm ml-2 items-center justify-center bg-gray-200 rounded-full w-10 h-10 text-sm font-semibold uppercase text-gray-500">
+                                            <?=  getSubName($LOGGED_ADMIN['name']); ?>
+                                        </div>
+                                    <?php else: ?>
+                                        <?php if($PROFILE_PIC != "" || $PROFILE_PIC != NULL || $PROFILE_PIC): ?>
+                                            <img class="w-8 h-8 rounded-full mr-2" src="../Dashboard/pic/<?= $PROFILE_PIC; ?>" alt="<?= $user->get_user($_GET['msg'])['firstname'] ?>" width="32" height="32">
+                                        <?php else: ?>
+                                            <div class="flex shadow-sm mr-2 items-center justify-center bg-gray-200 rounded-full w-10 h-10 text-sm font-semibold uppercase text-gray-500">
+                                                <?= getSubName($user->get_user($_GET['msg'])['firstname'] . " " . $user->get_user($_GET['msg'])['lastname']); ?>
+                                            </div>
+                                        <?php endif; ?>
+                                    <?php endif; ?>
                                     <div>
                                         <div class="text-sm <?= $theme =  $sender_id === $LOGGED_ADMIN['admin_id'] ? "bg-indigo-500 text-white" : "bg-white text-gray-800" ?> p-3 rounded-lg border border-transparent shadow-md mb-1" style="border-top-right-radius: 0;">
                                             <?php foreach($_attachments as $attachment): ?>
