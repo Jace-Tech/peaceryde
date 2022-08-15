@@ -10,7 +10,7 @@ if(isset($_POST['feature'])) {
 
     if($result) {
         setAdminAlert("Review added to feature", 'success');
-        header("Location: ../reviews.php");
+        header("Location: " . $_SERVER['HTTP_REFERER']);
     }
 }
 
@@ -20,6 +20,6 @@ if(isset($_POST['unfeature'])) {
 
     if($result) {
         setAdminAlert("Review removed from featured", 'success');
-        header("Location: ../reviews.php");
+        header("Location: " . $_SERVER['HTTP_REFERER']);
     }
 }
