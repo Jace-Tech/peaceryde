@@ -55,7 +55,7 @@ if(isset($_POST['add'])) {
         ];
         $firstname = getUser($connect, $USER_ID)['firstname'];
         $lastname = getUser($connect, $USER_ID)['lastname'];
-        setAdminNotification($connect, "./reviews.php", json_encode(["MAIN_ADMIN"]), "<strong>$firstname $lastname</strong> posted a review");
+        setAdminNotification($connect, "./reviews.php?", json_encode(["MAIN_ADMIN"]), "<strong>$firstname $lastname</strong> posted a review");
         $_SESSION['ALERT'] = json_encode($alert);
         header('Location: ../makereview.php');
     }
