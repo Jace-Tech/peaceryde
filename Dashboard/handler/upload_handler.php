@@ -39,6 +39,7 @@ if(isset($_POST['upload'])) {
         array_push($filenames, $filename);
     }
     print_r($filenames);
+    print_r($uploaded);
     die();
 
     if(!$uploaded) {
