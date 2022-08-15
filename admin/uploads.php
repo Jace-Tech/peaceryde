@@ -70,7 +70,7 @@ if (isset($_GET['id'])) {
 									<td class="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap">
 										<?php if ($file['status'] == "approved") : ?>
 											<div class="inline-flex font-medium bg-green-100 text-green-600 rounded-full text-xs text-center px-2.5 py-0.5" style="text-transform: capitalize;">
-												<?= $file['status']; ?>
+												<?= $file['	']; ?>
 											</div>
 										<?php else : ?>
 											<div class="inline-flex font-medium bg-gray-100 text-gray-600 rounded-full text-xs text-center px-2.5 py-0.5" style="text-transform: capitalize;">
@@ -82,7 +82,7 @@ if (isset($_GET['id'])) {
 									<td class="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap w-px">
 										<div class="flex">
 											<a download="<?= $file['name'] ?>" href="../Dashboard/upload/<?= json_decode($file['file'], true)[0]; ?>" class="btn btn-sm btn-primary mr-2">View</a>
-											<?php if ($status == "approved") : ?>
+											<?php if ($file['status'] == "approved") : ?>
 												<form action="./handler/uploads_handler.php" method="post">
 													<input type="hidden" name="user" value="<?= $user_id; ?>" />
 													<input type="hidden" name="id" value="<?= $file['id']; ?>" />
