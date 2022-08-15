@@ -7,7 +7,7 @@ if(isset($_SESSION['ALERT'])) {
         $type = $alert['status'];
     ?>
         <script> 
-            swal('<?= $message ?>', '', '<?= $type ?>');
+            swal("<?= $message ?>', '', '<?= $type ?>");
         </script>
     <?php
 
