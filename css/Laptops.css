@@ -564,6 +564,7 @@ button:focus:not(:focus-visible) {
 
 .makereviewcard {
   width: 393px;
+  color: #0A0E69;
 }
 
 .forgot {

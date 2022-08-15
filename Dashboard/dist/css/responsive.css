@@ -38,14 +38,14 @@
 }
 .fill
 {
-  padding: 0px 30px 25px;
-    /* padding-left: 204px; */
-    font-family: Ubuntu;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 200;
-    color: #0A0E69;
-    text-align: center;
+  padding: 0px 55px 20px;
+  /* padding-left: 204px; */
+  font-family: Ubuntu;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 200;
+  color: #0A0E69;
+  text-align: left;
 }
 .personal
 {
@@ -134,7 +134,7 @@
 }
   /*UPLOAD*/ 
   .drop-zone {
-    width: 527px;
+    width: 770px;
     height: 360px;
     margin-top: 30px;
     margin-left: 51px;
@@ -181,21 +181,6 @@
   padding: 16px;
 }
 
-.drop-zone {
-  width: 827px;
-  height: 360px;
-  margin-top: 30px;
-  margin-left:23px;
-  display: flex;
-  font-family: Rubik;
-  font-weight: 500;
-  font-size: 20px;
-  cursor: pointer;
-  color: #cccccc;
-  background-color: #ffffff;
-  border: 1px dashed #0A0E69;
-  border-radius: 10px;
-}
 
 .drop-zone--over {
   border-style: solid;
@@ -259,7 +244,7 @@
 }
 .drop-zonep
 {
-  margin-left: 370px; margin-top:94px
+  margin-left: 340px; margin-top:94px
 }
 .dropfilep
 {
@@ -2287,9 +2272,9 @@
     padding: 16px;
   }
   .drop-zone {
-    width: 100%;
+    width: 80%;
     height: 100%;
-    margin: 30px auto;
+    margin: 30px 51px;
     display: flex;
     font-family: Rubik;
     font-weight: 500;
@@ -2307,7 +2292,7 @@
     /* border:1px solid #555555; */
     font-size: 13px;
     margin-top: 50px;
-    margin-left: 20px;
+    margin-left: 51px;
   }   
   
   .drop-zone--over {
@@ -2358,7 +2343,7 @@
     font-style: normal;
     font-weight: 400;
     padding-top:10px;
-    padding-left: 18px;color:#0A0E69;
+    padding-left: 51px;color:#0A0E69;
   }
   .pleaseupload
   {
@@ -2367,12 +2352,12 @@
     font-style: normal;
     font-weight: 400;
     padding-top:2px;
-    padding-left: 18px;color:#000000;
+    padding-left: 51px;color:#000000;
                   
   }
   .drop-zonep
   {
-    margin-left: 170px;
+    margin-left: 35%;
     margin-top: 54px;
   }
   .dropfilep
