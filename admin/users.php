@@ -149,6 +149,7 @@ else {
 					</div>
 					<?php if (count($users->get_all_users())) : ?>
 						<?php foreach ($users->get_all_users() as $user) :  ?>
+							<?php $PROFILE_PIC = getProfilePic($connect, $user['user_id'])['file']; ?>
 							<div class="col-span-full sm:col-span-6 xl:col-span-3 bg-white shadow-lg rounded-sm border border-gray-200">
 								<div class="flex flex-col h-full">
 									<div class="grow p-5">
@@ -218,9 +219,13 @@ else {
 										<header>
 											<div class="flex justify-center mb-2">
 												<a class="relative inline-flex items-start" href="./user-details.php?user=<?= $user['user_id']; ?>">
-													<div class="flex shadow-sm mr-2 items-center bg-gray-200 justify-center rounded-full w-12 h-12 text-md font-semibold uppercase text-gray-500">
-														<?= getSubName($user['firstname'] . " " .  $user['lastname']) ?>
-													</div>
+													<?php if($PROFILE_PIC != "" || $PROFILE_PIC != NULL || $PROFILE_PIC): ?>
+														<img class="rounded-full" src="../Dashboard/pic/<?= $PROFILE_PIC ?>" alt="<?= $user["firstname"] ?>" width="64" height="64">
+													<?php else: ?>
+														<div class="flex shadow-sm mr-2 items-center bg-gray-200 justify-center rounded-full w-12 h-12 text-md font-semibold uppercase text-gray-500">
+															<?= getSubName($user['firstname'] . " " .  $user['lastname']) ?>
+														</div>
+													<?php endif; ?>
 												</a>
 											</div>
 
@@ -316,6 +321,7 @@ else {
 					</div>
 					<?php if (count($searchResult)) : ?>
 						<?php foreach ($searchResult as $user) : ?>
+							<?php $PROFILE_PIC = getProfilePic($connect, $user['user_id'])['file']; ?>
 							<div class="col-span-full sm:col-span-6 xl:col-span-3 bg-white shadow-lg rounded-sm border border-gray-200">
 								<div class="flex flex-col h-full">
 									<div class="grow p-5">
@@ -385,9 +391,14 @@ else {
 										<header>
 											<div class="flex justify-center mb-2">
 												<a class="relative inline-flex items-start" href="#0">
-													<div class="flex shadow-sm mr-2 items-center bg-gray-200 justify-center rounded-full w-12 h-12 text-md font-semibold uppercase text-gray-500">
-														<?= getSubName($user['firstname'] . " " .  $user['lastname']) ?>
-													</div>
+
+													<?php if($PROFILE_PIC != "" || $PROFILE_PIC != NULL || $PROFILE_PIC): ?>
+														<img class="rounded-full" src="../Dashboard/pic/<?= $PROFILE_PIC ?>" alt="<?= $user["firstname"] ?>" width="64" height="64">
+													<?php else: ?>
+														<div class="flex shadow-sm mr-2 items-center bg-gray-200 justify-center rounded-full w-12 h-12 text-md font-semibold uppercase text-gray-500">
+															<?= getSubName($user['firstname'] . " " .  $user['lastname']) ?>
+														</div>
+													<?php endif; ?>
 												</a>
 											</div>
 
@@ -515,6 +526,7 @@ else {
 					</div>
 					<?php if (count($SUBADMIN_USERS)) : ?>
 						<?php foreach ($SUBADMIN_USERS as $user) :  ?>
+							<?php $PROFILE_PIC = getProfilePic($connect, $user['user_id'])['file'];?>
 							<div class="col-span-full sm:col-span-6 xl:col-span-3 bg-white shadow-lg rounded-sm border border-gray-200">
 								<div class="flex flex-col h-full">
 									<div class="grow p-5">
@@ -584,9 +596,13 @@ else {
 										<header>
 											<div class="flex justify-center mb-2">
 												<a class="relative inline-flex items-start" href="./user-details.php?user=<?= $user['user_id']; ?>">
-													<div class="flex shadow-sm mr-2 items-center bg-gray-200 justify-center rounded-full w-12 h-12 text-md font-semibold uppercase text-gray-500">
-														<?= getSubName($user['firstname'] . " " .  $user['lastname']) ?>
-													</div>
+													<?php if($PROFILE_PIC != "" || $PROFILE_PIC != NULL || $PROFILE_PIC): ?>
+														<img class="rounded-full" src="../Dashboard/pic/<?= $PROFILE_PIC ?>" alt="<?= $user["firstname"] ?>" width="64" height="64">
+													<?php else: ?>
+														<div class="flex shadow-sm mr-2 items-center bg-gray-200 justify-center rounded-full w-12 h-12 text-md font-semibold uppercase text-gray-500">
+															<?= getSubName($user['firstname'] . " " .  $user['lastname']) ?>
+														</div>
+													<?php endif; ?>
 												</a>
 											</div>
 
@@ -682,6 +698,7 @@ else {
 					</div>
 					<?php if (count($searchResult)) : ?>
 						<?php foreach ($searchResult as $user) : ?>
+							<?php $PROFILE_PIC = getProfilePic($connect, $user['user_id'])['file']; ?>
 							<div class="col-span-full sm:col-span-6 xl:col-span-3 bg-white shadow-lg rounded-sm border border-gray-200">
 								<div class="flex flex-col h-full">
 									<div class="grow p-5">
@@ -751,9 +768,13 @@ else {
 										<header>
 											<div class="flex justify-center mb-2">
 												<a class="relative inline-flex items-start" href="#0">
-													<div class="flex shadow-sm mr-2 items-center bg-gray-200 justify-center rounded-full w-12 h-12 text-md font-semibold uppercase text-gray-500">
-														<?= getSubName($user['firstname'] . " " .  $user['lastname']) ?>
-													</div>
+													<?php if($PROFILE_PIC != "" || $PROFILE_PIC != NULL || $PROFILE_PIC): ?>
+														<img class="rounded-full" src="../Dashboard/pic/<?= $PROFILE_PIC ?>" alt="<?= $user["firstname"] ?>" width="64" height="64">
+													<?php else: ?>
+														<div class="flex shadow-sm mr-2 items-center bg-gray-200 justify-center rounded-full w-12 h-12 text-md font-semibold uppercase text-gray-500">
+															<?= getSubName($user['firstname'] . " " .  $user['lastname']) ?>
+														</div>
+													<?php endif; ?>
 												</a>
 											</div>
 
