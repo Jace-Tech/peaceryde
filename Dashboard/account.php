@@ -97,7 +97,7 @@
                 <div class="form-row accountrow">
                     <div class="form-group">
                         <p class="accountfirst">Title</p>
-                        <select name="title" value="<?= $USER['title'] ?? "" ?>">
+                        <select class="form-control accountinput" name="title" value="<?= $USER['title'] ?? "" ?>">
                             <option value="" disabled>Select title</option>
                             <option value="Mr">Mr</option>
                             <option value="Mrs">Mrs</option>
