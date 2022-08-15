@@ -9,6 +9,7 @@ require_once("../db/config.php");
 // require_once("../db/conf.php");
 require_once("../models/Review.php");
 require_once("../functions/index.php");
+require_once("../utils/store.php");
 
 
 
@@ -52,7 +53,9 @@ if(isset($_POST['add'])) {
             "status" => "success",
             "message" => "Review added successfully"
         ];
-
+        $firstname = getUser($connect, $USER_ID)['firstname'];
+        $lastname = getUser($connect, $USER_ID)['lastname'];
+        setAdminNotification($connect, "./reviews.php", json_encode(["MAIN_ADMIN"]), "<strong>$firstname $lastname</strong> posted a review");
         $_SESSION['ALERT'] = json_encode($alert);
         header('Location: ../makereview.php');
     }
