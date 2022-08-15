@@ -6,6 +6,7 @@ session_start();
 include("../../db/config.php");
 include("../../models/Upload.php");
 include("../../functions/index.php");
+include("../../utils/store.php");
 
 $uploads = new Upload($connect);
 if(isset($_POST['upload'])) {
