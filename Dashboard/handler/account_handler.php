@@ -7,6 +7,8 @@ include("../../db/config.php");
 include("../../models/Upload.php");
 include("../../models/ResetUserPassword.php");
 include("../../utils/store.php");
+include("../../functions/index.php");
+
 
 $uploads = new Upload($connect);
 $resetPassword = new ResetUserPassword($connect);
