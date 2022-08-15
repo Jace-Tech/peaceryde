@@ -55,7 +55,7 @@ $messagers = getUserMessagers($connect, $USER_ID);
             display: flex;
             flex-direction: column;
             max-height: 800px;
-            overflow-y: scroll
+            overflow-y: hidden;
         }
 
         .chat-message-left,
