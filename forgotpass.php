@@ -62,7 +62,7 @@
               <div class="form-row rpml">
                 <div class="form-group inputdiv">
                   <p class="fpp">Email Address</p>
-                  <input type="text" class="form-control rpinput" placeholder="" />
+                  <input type="text" name="email" class="form-control rpinput" placeholder="" />
                 </div>
               </div>
               <div class="row buttonrow">
@@ -81,7 +81,7 @@
               <div class="form-row rpml">
                 <div class="form-group inputdiv">
                   <p class="fpp">Enter Pin</p>
-                  <input type="text" class="form-control rpinput" placeholder="pin" />
+                  <input type="text" name="pin" class="form-control rpinput" placeholder="pin" />
                 </div>
               </div>
               <div class="row buttonrow">
