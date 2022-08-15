@@ -21,8 +21,8 @@ if(isset($_POST['add'])) {
 
     extract($POST);
 
-    if(!$rating || is_null($rating) || $rating != "") {
-        setUserAlert("You didn't add a rating", "info");
+    if(!$rating) {
+        setUserAlert("You didn't add a rating", "error");
         header("Location: ../makereview.php");
         exit();
     } 
