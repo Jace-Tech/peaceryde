@@ -140,12 +140,17 @@ if($LOGGED_ADMIN['type'] != "HIGH") {
                                 <?php if ($LOGGED_ADMIN['type'] == "HIGH") : ?>
                                     <?php if (count($user->get_all_users())) : ?>
                                         <?php foreach ($user->get_all_users() as $_user) : extract($_user); ?>
+                                            <?php $PROFILE_PIC = getProfilePic($connect, $user_id)['file']; ?>
                                             <li class="-mx-2 mb-2">
                                                 <a href="./view_message.php?msg=<?= $user_id; ?>" class="flex items-center justify-between w-full p-2 rounded <?= $_GET['msg'] ? (($user_id == $_GET['msg']) ? "bg-indigo-100" : "bg-gray-100") : ("bg-gray-100"); ?>" @click="msgSidebarOpen = false; $refs.contentarea.scrollTop = 99999999;">
                                                     <div class="flex items-center truncate">
-                                                        <div class="flex shadow-sm mr-2 items-center justify-center <?= $_GET["msg"] ? ($user_id == $_GET['msg'] ? "bg-gray-100" : "bg-gray-200") : "bg-gray-200"; ?> rounded-full w-8 h-8 text-xs font-semibold uppercase text-gray-500">
-                                                            <?= getSubName("$firstname $lastname") ?>
-                                                        </div>
+                                                        <?php if($PROFILE_PIC != "" || $PROFILE_PIC != NULL || $PROFILE_PIC): ?>
+                                                            <img class="w-8 h-8 rounded-full mr-2" src="../Dashboard/pic/<?= $PROFILE_PIC; ?>" alt="<?= $firstname ?>" width="32" height="32">
+                                                        <?php else: ?>
+                                                            <div class="flex shadow-sm mr-2 items-center justify-center <?= $active = $user_id == $_GET['msg'] ? "bg-gray-100" : "bg-gray-200"; ?> rounded-full w-8 h-8 text-xs font-semibold uppercase text-gray-500">
+                                                                <?= getSubName("$firstname $lastname") ?>
+                                                            </div>
+                                                        <?php endif; ?>
                                                         <div class="truncate">
                                                             <span class="text-sm font-medium text-gray-800 ">
                                                                 <?= "$firstname $lastname" ?>
@@ -169,12 +174,17 @@ if($LOGGED_ADMIN['type'] != "HIGH") {
                                 <?php else : ?>
                                     <?php if (count($SUBADMIN_USERS)) : ?>
                                         <?php foreach ($SUBADMIN_USERS as $_user) : extract($_user); ?>
+                                            <?php $PROFILE_PIC = getProfilePic($connect, $user_id)['file']; ?>
                                             <li class="-mx-2 mb-2">
                                                 <a href="./view_message.php?msg=<?= $user_id; ?>" class="flex items-center justify-between w-full p-2 rounded <?= $active = $user_id == $_GET['msg'] ? "bg-indigo-100" : "bg-gray-100"; ?>" @click="msgSidebarOpen = false; $refs.contentarea.scrollTop = 99999999;">
                                                     <div class="flex items-center truncate">
-                                                        <div class="flex shadow-sm mr-2 items-center justify-center <?= $active = $user_id == $_GET['msg'] ? "bg-gray-100" : "bg-gray-200"; ?> rounded-full w-8 h-8 text-xs font-semibold uppercase text-gray-500">
-                                                            <?= getSubName("$firstname $lastname") ?>
-                                                        </div>
+                                                        <?php if($PROFILE_PIC != "" || $PROFILE_PIC != NULL || $PROFILE_PIC): ?>
+                                                            <img class="w-8 h-8 rounded-full mr-2" src="../Dashboard/pic/<?= $PROFILE_PIC; ?>" alt="<?= $firstname ?>" width="32" height="32">
+                                                        <?php else: ?>
+                                                            <div class="flex shadow-sm mr-2 items-center justify-center <?= $active = $user_id == $_GET['msg'] ? "bg-gray-100" : "bg-gray-200"; ?> rounded-full w-8 h-8 text-xs font-semibold uppercase text-gray-500">
+                                                                <?= getSubName("$firstname $lastname") ?>
+                                                            </div>
+                                                        <?php endif; ?>
                                                         <div class="truncate">
                                                             <span class="text-sm font-medium text-gray-800 ">
                                                                 <?= "$firstname $lastname" ?>
@@ -204,6 +214,7 @@ if($LOGGED_ADMIN['type'] != "HIGH") {
         </div>
         <div class="grow flex flex-col md:translate-x-0 transform transition-transform duration-300 ease-in-out" :class="msgSidebarOpen ? 'translate-x-1/3' : 'translate-x-0'">
             <?php if (isset($_GET['msg'])) : ?>
+                <?php $PROFILE_PIC = getProfilePic($connect, $_GET['msg'])['file']; ?>
                 <div class="sticky top-16">
                     <div class="flex items-center justify-between bg-white border-b border-gray-200 px-4 sm:px-6 md:px-5 h-16">
                         <div class="flex items-center">
@@ -253,9 +264,19 @@ if($LOGGED_ADMIN['type'] != "HIGH") {
                         <?php endif; ?>
 
                         <div class="flex items-start mb-4 last:mb-0" style="flex-direction: <?= $style = $sender_id === $LOGGED_ADMIN['admin_id'] ? "row-reverse" : "row"; ?>">
-                            <div class="flex shadow-sm <?= $margin = $sender_id === $LOGGED_ADMIN['admin_id'] ? "ml-2" : "mr-2" ?> items-center justify-center bg-gray-200 rounded-full w-10 h-10 text-sm font-semibold uppercase text-gray-500">
-                                <?= $name = $sender_id == $LOGGED_ADMIN['admin_id'] ? getSubName($LOGGED_ADMIN['name']) : getSubName(getUser($connect, $_GET['msg'])['firstname'] . " " . getUser($connect, $_GET['msg'])['lastname']); ?>
-                            </div>
+                            <?php if($sender_id === $LOGGED_ADMIN['admin_id']): ?>
+                                <div class="flex shadow-sm ml-2 items-center justify-center bg-gray-200 rounded-full w-10 h-10 text-sm font-semibold uppercase text-gray-500">
+                                    <?=  getSubName($LOGGED_ADMIN['name']); ?>
+                                </div>
+                            <?php else: ?>
+                                <?php if($PROFILE_PIC != "" || $PROFILE_PIC != NULL || $PROFILE_PIC): ?>
+                                    <img class="w-8 h-8 rounded-full mr-2" src="../Dashboard/pic/<?= $PROFILE_PIC; ?>" alt="<?= $user->get_user($_GET['msg'])['firstname'] ?>" width="32" height="32">
+                                <?php else: ?>
+                                    <div class="flex shadow-sm mr-2 items-center justify-center bg-gray-200 rounded-full w-10 h-10 text-sm font-semibold uppercase text-gray-500">
+                                        <?= getSubName($user->get_user($_GET['msg'])['firstname'] . " " . $user->get_user($_GET['msg'])['lastname']); ?>
+                                    </div>
+                                <?php endif; ?>
+                            <?php endif; ?>
                             <div>
                                 <div class="text-sm <?= $theme =  $sender_id === $LOGGED_ADMIN['admin_id'] ? "bg-indigo-500 text-white" : "bg-white text-gray-800" ?> p-3 rounded-lg border border-transparent shadow-md mb-1" style="border-top-right-radius: 0;">
                                     <?= $message ?>
