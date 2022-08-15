@@ -85,7 +85,7 @@
                                 </div>
 
                             </div>
-                            <p class="small click" data-click>Click here to upload picture</p>
+                            <p class="small click" style="cursor: pointer;" data-click>Click here to upload picture</p>
                         </div>
                     </div>
                 </div>
