@@ -50,6 +50,61 @@
             transition: margin-left .5s;
             padding: 16px;
         }
+        .overlay {
+  position: absolute;
+  top: -300px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);  
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+  top:0px;
+}
+
+.popup {
+  margin: 70px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 30%;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+
+.popup h2 {
+  margin-top: 0;
+  color: #333;
+  font-family: Tahoma, Arial, sans-serif;
+}
+
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+  
+}
+
+.popup .close:hover {
+  color: white;
+  transform: rotate(90deg);
+}
+
+.popup .content {
+  max-height: 30%;
+  overflow: auto;
+}
     </style>
 </head>
 
@@ -95,14 +150,14 @@
                     </svg>
                     <span class="debittext">Add New Debit/ Credit Card</span>
                 </p>
-                <p class="add">Tap to Add</p>
+                <p class="add"><a href="#popup1">Tap to Add</a></p>
             </div>
+
+            <!-- <div style="margin-top:62px">
+                <button type="submit" class="btn btn-button debitcard">Add Debit/ Credit Card</button>
+            </div> -->
 
             <div style="margin-top:62px">
-                <button type="submit" class="btn btn-button debitcard">Add Debit/ Credit Card</button>
-            </div>
-
-            <div style="margin-top:34px">
                 <button type="submit" class="btn btn-button cancelbutton">Cancel</button>
             </div>
 
@@ -110,6 +165,15 @@
             <!-- <footer class="footer text-center text-muted">
                 All Rights Reserved by t</a>.
             </footer> -->
+        </div>
+        <div id="popup1" class="overlay">
+            <div class="popup">
+                <h2>Notice</h2>
+                <a class="close" href="#">×</a>
+                <div class="content">
+                This feature is not available at the moment. We are working on it
+                </div>
+            </div>
         </div>
     </div>
     <script>
