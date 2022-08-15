@@ -10,8 +10,6 @@ if (isset($_GET['id'])) {
 	$user_id = $_GET['id'];
 	$USER = $users->get_user($user_id);
 	$FILES = $files->getUserUploads($user_id);
-
-	print_r($FILES);
 } else {
 	header("Location: ../users.php");
 }
@@ -83,7 +81,7 @@ if (isset($_GET['id'])) {
 
 									<td class="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap w-px">
 										<div class="flex">
-											<a href="../Dashboard/upload/<?= $file['files'] ?>" class="btn btn-sm btn-primary mr-2">View</a>
+											<a download="<?= $file['name'] ?>" href="../Dashboard/upload/<?= json_decode($file['file'], true)[0]; ?>" class="btn btn-sm btn-primary mr-2">View</a>
 											<?php if ($status == "approved") : ?>
 												<form action="./handler/uploads_handler.php" method="post">
 													<input type="hidden" name="user" value="<?= $user_id; ?>" />
