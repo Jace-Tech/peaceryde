@@ -83,16 +83,16 @@ if (isset($_GET['id'])) {
 										<div class="flex">
 											<a download="<?= $file['name'] ?>" href="../Dashboard/upload/<?= json_decode($file['file'], true)[0]; ?>" class="btn btn-sm btn-primary mr-2">View</a>
 											<?php if ($file['status'] == "approved") : ?>
-												<form action="./handler/uploads_handler.php" method="post">
+												<form action="./handler/upload_handler.php" method="post">
 													<input type="hidden" name="user" value="<?= $user_id; ?>" />
 													<input type="hidden" name="id" value="<?= $file['id']; ?>" />
 													<button name="disapprove" class="btn text-red-600 text-xs bg-red-100 btn-sm">Disapprove</button>
 												</form>
 											<?php else : ?>
-												<form action="./handler/uploads_handler.php" method="post">
+												<form action="./handler/upload_handler.php" method="post">
 													<input type="hidden" name="user" value="<?= $user_id; ?>" />
 													<input type="hidden" name="id" value="<?= $file['id']; ?>" />
-													<button name="approve" class="btn text-green-600 text-xs bg-green-100 btn-sm">Disapprove</button>
+													<button name="approve" class="btn text-green-600 text-xs bg-green-100 btn-sm">Approve</button>
 												</form>
 											<?php endif; ?>
 
