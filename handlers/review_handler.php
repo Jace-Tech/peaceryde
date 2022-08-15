@@ -11,6 +11,7 @@ require_once("../models/Review.php");
 require_once("../functions/index.php");
 
 
+
 $reviews = new Review($connect);
 
 if(isset($_POST['add'])) {
@@ -19,10 +20,11 @@ if(isset($_POST['add'])) {
 
     extract($POST);
 
-    if(isset($file)) {
+    if(!($file['error'])) {
         $result = uploadFile("../reviews/", $file);
 
         if(!$result) {
+            setUserAlert("Upload Failed", "error");
             header("Location: ../makereview.php");
             exit();
         }
