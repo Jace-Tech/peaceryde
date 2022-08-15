@@ -342,9 +342,9 @@
                                     </div>
                                     <div class="col-md-5">
                                       <div class="form-group">           
-                                        <label class="form-label">Coporate Address</label>  
+                                        <label class="form-label">Corporate Address</label>  
                                         <div class="input-group mb-3 biwidth">                    
-                                          <input type="text" name="coperateAddress" class="form-control firstname2" placeholder="Coporate Address" >
+                                          <input type="text" name="coperateAddress" class="form-control firstname2" placeholder="Corporate Address" >
                                         </div>
                                     </div>
                                     </div>

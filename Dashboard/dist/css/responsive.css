@@ -13,7 +13,7 @@
   font-size: 30px;
   font-style: normal;
   color:#0F1377;
-  padding-top:20px;padding-left:51px
+  padding-top:20px;padding-left:21px
 }
 .logoutmobile
 {
@@ -137,7 +137,7 @@
     width: 527px;
     height: 360px;
     margin-top: 30px;
-    margin-left: 23px;
+    margin-left: 51px;
     display: flex;
     font-family: Rubik;
     font-weight: 500;
@@ -154,7 +154,7 @@
   /* border:1px solid #555555; */
   font-size: 13px;
   margin-top: 50px;
-  margin-left: 20px;
+  margin-left: 51px;
 }   
 .add
 {
@@ -245,7 +245,7 @@
   font-style: normal;
   font-weight: 400;
   padding-top:10px;
-  padding-left: 128px;color:#0A0E69;
+  padding-left: 51px;color:#0A0E69;
 }
 .pleaseupload
 {
@@ -254,7 +254,7 @@
   font-style: normal;
   font-weight: 400;
   padding-top:2px;
-  padding-left: 128px;color:#000000;
+  padding-left: 51px;color:#000000;
                
 }
 .drop-zonep
@@ -363,13 +363,13 @@
   line-height: 1.5rem;
   }
   .containerques {
-  background-color: white;
-  color: #0A0E69;
-  border-radius: 10px;
-  width: 622px;
-  margin: 20px 0;
-  
-  box-shadow: 0 5px 10px 0 rgb(0,0,0,0.25);
+    background-color: white;
+    color: #0A0E69;
+    border: 1px solid #0A0E69;
+    border-radius: 20px;
+    width: 622px;
+    margin: 20px 82px;
+    box-shadow: 0 5px 10px 0 rgb(0 0 0 / 25%);
   }
   .servicesh3
   {
@@ -770,10 +770,10 @@
   padding: 16px;
 }
 .drop-zone {
-  width: 657px;
+  width: 85%;
   height: 360px;
   margin-top: 30px;
-  margin-left:23px;
+  margin-left:51px;
   display: flex;
   font-family: Rubik;
   font-weight: 500;
@@ -791,7 +791,7 @@
   /* border:1px solid #555555; */
   font-size: 13px;
   margin-top: 50px;
-  margin-left: 20px;
+  margin-left: 51px;
 }   
 
 .drop-zone--over {
@@ -833,7 +833,7 @@
   font-size: 30px;
   font-style: normal;
   color:#000000;
-  padding-top:0px;padding-left:91px;
+  padding-top:0px;padding-left:51px;
 }
 .uploadtext
 {
@@ -842,7 +842,7 @@
   font-style: normal;
   font-weight: 400;
   padding-top:10px;
-  padding-left: 91px;color:#0A0E69;
+  padding-left: 51px;color:#0A0E69;
 }
 .pleaseupload
 {
@@ -851,12 +851,12 @@
   font-style: normal;
   font-weight: 400;
   padding-top:2px;
-  padding-left: 91px;color:#000000;
+  padding-left: 51px;color:#000000;
                
 }
 .drop-zonep
 {
-  margin-left: 270px; margin-top:94px
+  margin-left: 40%; margin-top:94px
 }
 .dropfilep
 {
@@ -974,13 +974,13 @@
   line-height: 1.5rem;
   }
   .containerques {
-  background-color: white;
-  color: #0A0E69;
-  border-radius: 10px;
-  width: 100%;
-  margin: 20px 0;
- 
-  box-shadow: 0 5px 10px 0 rgb(0,0,0,0.25);
+    background-color: white;
+    border: 1px solid #0A0E69;
+    color: #0A0E69;
+    border-radius: 10px;
+    width: 80%;
+    margin: 20px 82px;
+    box-shadow: 0 5px 10px 0 rgb(0 0 0 / 25%);
   }
   .servicesh3
   {
@@ -1423,9 +1423,9 @@
     background-color: white;
     color: #0A0E69;
     border-radius: 10px;
-    width: 100%;
-    margin: 20px 0;
-    
+    border: 1px solid #0A0E69;
+    width: 80%;
+    margin: 20px 82px;
     box-shadow: 0 5px 10px 0 rgb(0 0 0 / 25%);
 }
   .servicesh3
@@ -1703,7 +1703,7 @@
     padding: 16px;
   }
   .drop-zone {
-    width: 100%;
+    width: 80%;
     height: 100%;
     margin: 30px auto;
     display: flex;
@@ -1723,7 +1723,7 @@
     /* border:1px solid #555555; */
     font-size: 13px;
     margin-top: 50px;
-    margin-left: 20px;
+    margin-left: 50px;
   }   
   
   .drop-zone--over {
@@ -1788,8 +1788,8 @@
   }
   .drop-zonep
   {
-    margin-left: 230px;
-    margin-top: 94px;
+    margin-left: 40%;
+    margin-top: 54px;
   }
   .dropfilep
   {
@@ -1940,11 +1940,11 @@
 } 
   .progresscard
   {
-    width: 100%;
+    width: 90%;
     height: 440px;
     background-color: #f7f7f7;
     margin-top: 28px;
-    margin-left: 7px;
+    margin-left: 5%;
     overflow-x: auto;
   }
   .progressservice
@@ -2005,9 +2005,9 @@
     background-color: white;
     color: #0A0E69;
     border-radius: 10px;
-    width: 100%;
-    margin: 20px 0;
-    /* margin-left: 23px; */
+    border: 1px solid #0A0E69;
+    width: 80%;
+    margin: 20px 82px;
     box-shadow: 0 5px 10px 0 rgb(0 0 0 / 25%);
 }
   .servicesh3
@@ -2544,11 +2544,11 @@
 } 
   .progresscard
   {
-    width: 100%;
+    width: 90%;
     height: 440px;
     background-color: #f7f7f7;
     margin-top: 28px;
-    margin-left: 7px;
+    margin-left: 5%;
     overflow-x: auto;
   }
   .progressservice
@@ -2609,8 +2609,9 @@
     background-color: white;
     color: #0A0E69;
     border-radius: 10px;
-    width: 100%;
-    margin: 20px 0;
+    width: 80%;
+    margin: 10px 29px;
+    border: 1px solid #0A0E69;
     /* margin-left: 23px; */
     box-shadow: 0 5px 10px 0 rgb(0 0 0 / 25%);
 }
@@ -3156,11 +3157,11 @@
   }
   .progresscard
   {
-    width: 100%;
+    width: 90%;
     height: 440px;
     background-color: #f7f7f7;
-    margin-top: 58px;
-    margin-left: 7px;
+    margin-top: 28px;
+    margin-left: 5%;
     overflow-x: auto;
   }
   .progressservice
@@ -3225,8 +3226,9 @@
     background-color: white;
     color: #0A0E69;
     border-radius: 10px;
-    width: 100%;
-    margin: 20px 0;
+    width: 80%;
+    border: 1px solid #0A0E69;
+    margin: 10px 29px;
     /* margin-left: 23px; */
     box-shadow: 0 5px 10px 0 rgb(0 0 0 / 25%);
 }
