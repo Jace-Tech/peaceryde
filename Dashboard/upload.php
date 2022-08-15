@@ -70,7 +70,7 @@
           <div class="align-self-center">
             <div class="row">
               <div class="">
-                <h3 class="page-title text-truncate mb-1 documentext">My Document</h3>
+                <h3 class="page-title text-truncate mb-1 documentext">My Documents</h3>
 
               </div>
             </div>
@@ -100,7 +100,7 @@
           <input type="file" required multiple name="myFile[]" class="drop-zone__input">
         </div>
         <div class="mt-4 p-4 text-left">
-          <button name="upload" type="submit" class="btn border-0" style="background-color: #a0bd1c; color: #fff;">Upload file</button>
+          <button name="upload" type="submit" class="btn border-0" style="background-color: #a0bd1c; color: #fff; margin-left: 31px;">Upload file</button>
         </div>
       </form>
 
