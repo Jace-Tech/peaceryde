@@ -59,18 +59,19 @@ if(isset($_POST['upload'])) {
         ]);
 
         if($result) {
+            $subAdmin = fetchUsersSubAdmins($connect, $id);
+            array_push($subAdmin, "MAIN_ADMIN");
+            $user = getUser($connect, $id);
+
+            $firstname = $user["firstname"];
+            $lastname = $user["lastname"];
+
+            setAdminNotification($connect, "./user-details.php#document?user=$id", json_encode($subAdmin), "<strong>$firstname $lastname</strong> just uploaded a new file");
             setUserAlert("File upload success", "success");
             header("Location: ../upload.php");
         }
     } catch (PDOException $e) {
-        print_r($e);
+        setUserAlert("Upload failed", "error");
+        header("Location: ../upload.php");
     }
-
-    // $alert = [
-    //     "status" => "error",
-    //     "message" => "Upload failed"
-    // ];
-
-    // $_SESSION['ALERT'] = json_encode($alert);
-    // header("Location: ../upload.php");
 }

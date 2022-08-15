@@ -303,7 +303,7 @@ $USERS_ADMIN = fetchUsersSubAdmins($connect, $_GET['user']);
         </div>
 
         <!-- DOCUMENTS -->
-        <div class="mt-16">
+        <div class="mt-16" id="document">
             <h3 class="mt-2 text-gray-600 font-bold text-md uppercase">Documents</h3>
             <div class="mt-4">
                 <div class="overflow-x-auto">
