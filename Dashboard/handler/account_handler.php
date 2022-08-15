@@ -18,7 +18,7 @@ $USER_ID = $LOGGED_USER['user_id'];
 if(isset($_POST['update'])) {
     $POST = filter_var_array($_POST, FILTER_SANITIZE_STRING);
     $file = $_FILES['image'];
-
+    extract($POST);
 
     if(!$file['error']) {
         $uploaded = true;
