@@ -53,7 +53,7 @@ if(isset($_POST['update'])) {
             if($result->rowCount()) {
                 $prevData = $result->fetch();
                 // Delete file
-                $fileToDelete = json_decode($prevData['file'], true)[0];
+                $fileToDelete = $prevData['file'];
                 if(unlink("../pic/$fileToDelete")){
                     // Update Profile Info
                     $query = "UPDATE `uploads` SET `file` = :filename WHERE `id` = :id";
