@@ -19,28 +19,7 @@ $USER = $users->get_user($_GET['user']);
 $USER_SERVICES = $userServices->getAllUserServices($_GET['user']);
 $USERS_DOCS = getUsersUploads($connect, $_GET['user']);
 
-$USERS_ADMIN = [];
-// Users subadmin based on the country
-$theAdmin = getAdminWithSameCountryAsUser($connect, $_GET['user']);
-if (is_array($theAdmin) && count($theAdmin)) {
-    foreach ($theAdmin as $admin) {
-        array_push($USERS_ADMIN, $admin);
-    }
-}
-
-// Users subadmin based on service
-$subAdminWithService = getSubAdminWithSameService($connect, $_GET['user']);
-if ($subAdminWithService) {
-    array_push($USERS_ADMIN, $subAdminWithService);
-}
-
-// Users subadmin based on assignment
-$USER_SUB_ADMIN = getUsersSubAdmin($connect, $_GET['user']);
-if ($USER_SUB_ADMIN) {
-    array_push($USERS_ADMIN, $USER_SUB_ADMIN);
-}
-
-$USERS_ADMIN = array_unique($USERS_ADMIN, SORT_REGULAR);
+$USERS_ADMIN = fetchUsersSubAdmins($connect, $_GET['user']);
 ?>
 
 <!doctype html>
@@ -350,7 +329,7 @@ $USERS_ADMIN = array_unique($USERS_ADMIN, SORT_REGULAR);
                                         <td class="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap">
                                             <div class="flex items-center">
                                                 <div class="font-medium text-gray-800">
-                                                    <a href="../Dashboard/upload/<?= $document['file']; ?>" class="text-indigo-500 text-sm font-medium">
+                                                    <a download="<?= $document['name']; ?>" href="../Dashboard/upload/<?= json_decode($document['file'], true)[0]; ?>" class="text-indigo-500 text-sm font-medium">
                                                         <?= $document['name']; ?>
                                                     </a>
                                                 </div>

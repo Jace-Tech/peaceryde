@@ -84,6 +84,31 @@ function getSubAdminCountries ($connect, $adminId) {
     }
 }
 
+function fetchUsersSubAdmins ($connect, $user) {
+    $USERS_ADMIN = [];
+    // Users subadmin based on the country
+    $theAdmin = getAdminWithSameCountryAsUser($connect, $user);
+    if (is_array($theAdmin) && count($theAdmin)) {
+        foreach ($theAdmin as $admin) {
+            array_push($USERS_ADMIN, $admin);
+        }
+    }
+
+    // Users subadmin based on service
+    $subAdminWithService = getSubAdminWithSameService($connect, $user);
+    if ($subAdminWithService) {
+        array_push($USERS_ADMIN, $subAdminWithService);
+    }
+
+    // Users subadmin based on assignment
+    $USER_SUB_ADMIN = getUsersSubAdmin($connect, $user);
+    if ($USER_SUB_ADMIN) {
+        array_push($USERS_ADMIN, $USER_SUB_ADMIN);
+    }
+
+    return $USERS_ADMIN = array_unique($USERS_ADMIN, SORT_REGULAR);
+}
+
 
 function checkAdminCountry ($connect, $country) {
     $admins = getAllSubAdmins($connect);
