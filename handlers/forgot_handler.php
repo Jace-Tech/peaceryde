@@ -80,7 +80,7 @@ if(isset($_POST['verify'])) {
 }
 
 if(isset($_POST['change'])) {
-    $password = $_POST['password'];
+    $password = md5($_POST['password']);
     $RESET_ID = $_SESSION['RESET_ID'];
 
     $result = $resetMainPassword->getResetInfo($RESET_ID);
