@@ -278,7 +278,6 @@ $messagers = getUserMessagers($connect, $USER_ID);
                                             <?php endif; ?>
 
                                         </div>
-                                        <div id="scrollToView"></div>
                                     </div>
 
                                     <form action="./handler/message_handler.php" method="post" enctype="multipart/form-data" class="flex-grow-0 py-3 px-4 border-top">
@@ -294,7 +293,7 @@ $messagers = getUserMessagers($connect, $USER_ID);
                                         </div>
                                         <div id="filesScreen"></div>
                                     </form>
-
+                                    <div id="scrollToView"></div>
                                 </div>
                             <?php else : ?>
                                 <div class="col-md-7 col-lg-7 col-xl-9">
