@@ -49,13 +49,13 @@ if(isset($_POST['upload'])) {
     }
 
     try {
-        $query = "INSERT INTO `uploads`(`user_id`, `name`, `file`, `service_id`, `status`) VALUES (:userid, :name, :service, :filename, :status)";
+        $query = "INSERT INTO `uploads`(`user_id`, `name`, `file`, `service_id`, `status`) VALUES (:userid, :name, :filename, :service, :status)";
         $result = $connect->prepare($query);
         $result->execute([
             'userid' => $id,
             'name' => $name,
-            'service' => "FILE",
             'filename' => json_encode($filenames),
+            'service' => "FILE",
             'status' => "Awaiting approval"
         ]);
 
