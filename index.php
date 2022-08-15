@@ -416,7 +416,7 @@ $uploads = new Upload($connect);
             <?php foreach ($reviews->getAllFeaturedReviews("text") as $review) : ?>
               <div class="col-md-2 mag chee">
                 <div class="review-card">
-                  <?php if (isset($uploads->getUsersProfile($review["user_id"])["files"])) : ?>
+                  <?php if (isset(getProfilePic($connect, $review["user_id"])["file"])) : ?>
                     <img src="./Dashboard/upload/<?= $uploads->getUsersProfile($review["user_id"])["files"] ?>" width="50" class="rounded-circle" style=" margin-bottom: 13px;">
                   <?php else : ?>
                     <h2 class="avater">
