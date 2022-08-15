@@ -12,6 +12,7 @@ if(isset($_POST['upload'])) {
     $service = "NULL";
     $name = $_POST['name'];
 
+
     $file = $_FILES["myFile"];
 
     // Check if there's eror uploading file
@@ -46,13 +47,12 @@ if(isset($_POST['upload'])) {
     }
 
     try {
-        $query = "INSERT INTO `uploads`(`user_id`, `name`, `service_id`, `file`, `status`) VALUES (:userid, :name, :kind, :filename, :status)";
-        $result = $this->connection->prepare($query);
+        $query = "INSERT INTO `uploads`(`user_id`, `name`, `file`, `status`) VALUES (:userid, :name, :filename, :status)";
+        $result = $connect->prepare($query);
         $result->execute([
-            'userid' => $userid,
+            'userid' => $id,
             'name' => $name,
-            'kind' => $kind,
-            'filename' => $file,
+            'filename' => json_encode($filenames),
             'status' => "Awaiting approval"
         ]);
 
