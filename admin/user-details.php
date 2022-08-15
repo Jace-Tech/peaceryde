@@ -40,7 +40,7 @@ if ($USER_SUB_ADMIN) {
     array_push($USERS_ADMIN, $USER_SUB_ADMIN);
 }
 
-$USERS_ADMIN = array_unique($USERS_ADMIN);
+$USERS_ADMIN = array_unique($USERS_ADMIN, SORT_REGULAR);
 ?>
 
 <!doctype html>
