@@ -104,8 +104,8 @@
         </div>
       </form>
 
-      <div class="row">
-        <div class="col-md-6 h3div">
+      <!-- <div class="row"> -->
+        <!-- <div class="col-md-6 h3div">
           <h3 class="h3doc">Document</h3>
           <p class="h3p">Please see the list of documents below that we need in order <br>to process your application </p>
         </div>
@@ -123,8 +123,8 @@
                             font-weight: 400;
                             ">0 out of 5 file uploaded</span>
           </p>
-        </div>
-      </div>
+        </div> -->
+      <!-- </div> -->
 
       <!-- <div class="card tablecard">
                 <table class="table table-borderless">
