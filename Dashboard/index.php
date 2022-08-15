@@ -580,7 +580,7 @@ $isUnread = count($messages->get_user_unread_messages($USER_ID));
                                                     </p>
                                                 </div>
                                                 <?php if ($USER_PROFILE_PIC) : ?>
-                                                    <div><img src="./pic/<?= $USER_PROFILE_PIC; ?>" width="30" class="img9" /></div>
+                                                    <div><img src="./pic/<?= $USER_PROFILE_PIC; ?>" width="50" height="50" style="border-radius: 50% ;" class="img9" /></div>
                                                 <?php else : ?>
                                                     <div class="avatar">
                                                         <?= getSubName($USER['firstname'] . ' ' . $USER['lastname']); ?>
