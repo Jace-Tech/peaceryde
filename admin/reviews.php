@@ -8,7 +8,14 @@
     $reviews = new Review($connect);
     $users = new User($connect);
     $REVIEWS = $reviews->getOneTypeReview($type);
+
+    if (isset($_GET['_tification_id'])) {
+        markNotificationAsSeen($connect, $_GET['_tification_id']);
+    }
+    
 ?>
+
+
 
 <!doctype html>
 <html lang="en">

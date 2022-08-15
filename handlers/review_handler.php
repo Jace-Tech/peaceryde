@@ -5,10 +5,6 @@ session_start();
 $LOGGED_USER = json_decode($_SESSION['LOGGED_USER'], true);
 $USER_ID = $LOGGED_USER['user_id'];
 
-if (isset($_GET['_tification_id'])) {
-    markNotificationAsSeen($connect, $_GET['_tification_id']);
-}
-
 require_once("../db/config.php");
 // require_once("../db/conf.php");
 require_once("../models/Review.php");
@@ -24,6 +20,12 @@ if(isset($_POST['add'])) {
     $file = $_FILES['video'];
 
     extract($POST);
+
+    if(!$rating || is_null($rating) || $rating != "") {
+        setUserAlert("You didn't add a rating", "info");
+        header("Location: ../makereview.php");
+        exit();
+    } 
 
     if(!($file['error'])) {
         $result = uploadFile("../reviews/", $file);
