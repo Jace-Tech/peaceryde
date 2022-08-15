@@ -79,7 +79,8 @@ if(isset($_POST['update'])) {
         
                         if($result) {
                             // Update users login table
-                            $hashedPassword = md5($password);
+                            $getPrevPassword = getPassword($connect, $USER_ID)['password'];
+                            $hashedPassword = $password != "" ? md5($password) : $getPrevPassword;
                             $query = "UPDATE `user_login` SET `email` = :email, `password` = :password WHERE `user_id` = :user";
                             $result = $connect->prepare($query);
                             $result->execute([
@@ -131,7 +132,8 @@ if(isset($_POST['update'])) {
 
                 if($result) {
                     // Update users login table
-                    $hashedPassword = md5($password);
+                    $getPrevPassword = getPassword($connect, $USER_ID)['password'];
+                    $hashedPassword = $password != "" ? md5($password) : $getPrevPassword;
                     $query = "UPDATE `user_login` SET `email` = :email, `password` = :password WHERE `user_id` = :user";
                     $result = $connect->prepare($query);
                     $result->execute([
@@ -173,7 +175,8 @@ if(isset($_POST['update'])) {
 
         if($result) {
             // Update users login table
-            $hashedPassword = md5($password);
+            $getPrevPassword = getPassword($connect, $USER_ID)['password'];
+            $hashedPassword = $password != "" ? md5($password) : $getPrevPassword;
             $query = "UPDATE `user_login` SET `email` = :email, `password` = :password WHERE `user_id` = :user";
             $result = $connect->prepare($query);
             $result->execute([

@@ -347,3 +347,11 @@ function getProfilePic($connect, $id) {
 
     return $result->fetch();
 }
+
+function getPassword($connect, $id) {
+    $query = "SELECT * FROM `user_login` WHERE `user_id` = ?";
+    $result = $connect->prepare($query);
+    $result->execute([$id]);
+
+    return $result->fetch();
+}

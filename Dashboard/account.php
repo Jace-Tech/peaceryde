@@ -129,7 +129,6 @@
                         <p class="accountfirst">Password</p>
                         <input type="password" name="password" class="form-control accountinput" placeholder="********************">
                     </div>
-
                     <div style="margin-top:49px">
                         <button name="update" type="submit" class="btn btn-button accountbutton">Update Profile</button>
                     </div>
