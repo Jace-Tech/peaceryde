@@ -65,14 +65,14 @@ $isUnread = count($messages->get_user_unread_messages($USER_ID));
             }
 
             .breadcrumb {
-                margin-top: -215px;
+                margin-top: -180px;
                 margin-left: 58px;
             }
         }
 
         @media only screen and (max-width: 1600px) {
             .breadcrumb {
-                margin-top: -215px;
+                margin-top: -180px;
                 margin-left: 158px;
             }
 
@@ -83,7 +83,7 @@ $isUnread = count($messages->get_user_unread_messages($USER_ID));
 
         @media only screen and (max-width: 1440px) {
             .breadcrumb {
-                margin-top: -215px;
+                margin-top: -180px;
                 margin-left: 58px;
             }
 
@@ -94,7 +94,7 @@ $isUnread = count($messages->get_user_unread_messages($USER_ID));
 
         @media only screen and (max-width: 1366px) {
             .breadcrumb {
-                margin-top: -215px;
+                margin-top: -180px;
                 margin-left: 58px;
             }
 
@@ -106,7 +106,7 @@ $isUnread = count($messages->get_user_unread_messages($USER_ID));
 
         @media only screen and (max-width: 1280px) {
             .breadcrumb {
-                margin-top: -215px;
+                margin-top: -180px;
                 margin-left: 58px;
             }
 
@@ -117,35 +117,35 @@ $isUnread = count($messages->get_user_unread_messages($USER_ID));
 
         @media only screen and (max-width: 1024px) {
             .breadcrumb {
-                margin-top: -355px;
+                margin-top: -410px;
                 margin-left: 300px;
             }
         }
 
         @media only screen and (max-width: 900px) {
             .breadcrumb {
-                margin-top: -355px;
+                margin-top: -410px;
                 margin-left: 200px;
             }
         }
 
         @media only screen and (max-width: 853px) {
             .breadcrumb {
-                margin-top: -355px;
+                margin-top: -410px;
                 margin-left: 150px;
             }
         }
 
         @media only screen and (max-width: 800px) {
             .breadcrumb {
-                margin-top: -355px;
+                margin-top: -410px;
                 margin-left: 100px;
             }
 
         }
         @media only screen and (max-width: 768px) {
             .breadcrumb {
-                margin-top: -300px;
+                margin-top: -410px;
                 margin-left: 74px;
             }
 
@@ -156,7 +156,7 @@ $isUnread = count($messages->get_user_unread_messages($USER_ID));
 
         @media only screen and (max-width: 603px) {
             .breadcrumb {
-                margin-top: -220px;
+                margin-top: -290px;
                 margin-left: 4px;
             }
 
@@ -173,7 +173,7 @@ $isUnread = count($messages->get_user_unread_messages($USER_ID));
             }
 
             .breadcrumb {
-                margin-top: -270px;
+                margin-top: -290px;
                 margin-left: 154px;
             }
 
@@ -202,7 +202,7 @@ $isUnread = count($messages->get_user_unread_messages($USER_ID));
             }
 
             .breadcrumb {
-                margin-top: -270px;
+                margin-top: -290px;
                 margin-left: 114px;
             }
 
@@ -214,7 +214,7 @@ $isUnread = count($messages->get_user_unread_messages($USER_ID));
 
         @media only screen and (max-width: 480px) {
             .breadcrumb {
-                margin-top: -270px;
+                margin-top: -290px;
                 margin-left: 14px;
             }
 
@@ -241,7 +241,7 @@ $isUnread = count($messages->get_user_unread_messages($USER_ID));
 
         @media only screen and (max-width: 428px) {
             .breadcrumb {
-                margin-top: -270px;
+                margin-top: -290px;
                 margin-left: 44px;
             }
 
@@ -268,7 +268,7 @@ $isUnread = count($messages->get_user_unread_messages($USER_ID));
 
         @media only screen and (max-width: 414px) {
             .breadcrumb {
-                margin-top: -270px;
+                margin-top: -290px;
                 margin-left: 6px;
             }
 
