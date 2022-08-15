@@ -23,6 +23,8 @@ if(isset($_POST['upload'])) {
 
     $uploaded = true;
     $filenames = [];
+    print_r($file);
+    die();
     for($num = 0; $num < count($file['name']); $num++) {
         $fileNameArray = explode(".", $file['name'][$num]);
         $extension = end($fileNameArray);
