@@ -417,7 +417,7 @@ $uploads = new Upload($connect);
               <div class="col-md-2 mag chee">
                 <div class="review-card">
                   <?php if (isset(getProfilePic($connect, $review["user_id"])["file"])) : ?>
-                    <img src="./Dashboard/pic/<?= getProfilePic($connect, $review["user_id"])["file"]; ?>" width="50" class="rounded-circle" style=" margin-bottom: 13px;">
+                    <img src="./Dashboard/pic/<?= getProfilePic($connect, $review["user_id"])["file"]; ?>"  class="rounded-circle" style="width: 60px; height: 60px; object-fit: cover; margin-bottom: 13px;">
                   <?php else : ?>
                     <h2 class="avater">
                       <?= getSubName($users->get_user($review["user_id"])['firstname'] . " " . $users->get_user($review["user_id"])["lastname"]); ?>

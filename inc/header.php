@@ -90,7 +90,7 @@
             <input type="text" class="form-control formobile" placeholder=" search business name here">
           </div>
           <div class="column">
-            <button class="btn hiddenbutton">SEARCH</button>
+            <a href="https://search.cac.gov.ng/home" class="btn hiddenbutton">SEARCH</a>
           </div>
           <div class="column call">
             <a href="+1 (302) 703-9867" class="mobphone">+1 (302) 703-9867</a>
