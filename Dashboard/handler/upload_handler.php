@@ -60,14 +60,24 @@ if(isset($_POST['upload'])) {
         ]);
 
         if($result) {
-            $subAdmin = fetchUsersSubAdmins($connect, $id);
-            array_push($subAdmin, "MAIN_ADMIN");
+            $notices = [];
+
+            // Notify main admin
+            array_push($notices, "MAIN_ADMIN");
+
+            // Get Sub Admins
+            $subAdmins = fetchUsersSubAdmins($connect, $id);
             $user = getUser($connect, $id);
+
+            // Notify subAdmins
+            foreach($subAdmins as $subAdmin) {
+                array_push($notices, $subAdmin['admin_id']);
+            }
 
             $firstname = $user["firstname"];
             $lastname = $user["lastname"];
 
-            setAdminNotification($connect, "./user-details.php#document?user=$id", json_encode($subAdmin), "<strong>$firstname $lastname</strong> just uploaded a new file");
+            setAdminNotification($connect, "./user-details.php?user=$id", json_encode($notices), "<strong>$firstname $lastname</strong> just uploaded a new file");
             setUserAlert("File upload success", "success");
             header("Location: ../upload.php");
         }
