@@ -86,7 +86,7 @@
         </div>
         <div class="form-group">
           <input type="hidden" name="id" value="<?= $USER_ID ?>">
-          <input name="name" type="text" class="form-control upload-input" placeholder="Document Name">
+          <input name="name" type="text" required class="form-control upload-input" placeholder="Document Name">
         </div>
         <div class="drop-zone">
           <p class="drop-zonep"><svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -97,7 +97,7 @@
 
           <p class="dropfilep"><span class="drop-zone__prompt">Drop file here</span></p>
           <p class="dropfilep2"><span class="drop-zone__prompt">or browse file from your computer</span></p>
-          <input type="file" multiple name="myFile[]" class="drop-zone__input">
+          <input type="file" required multiple name="myFile[]" class="drop-zone__input">
         </div>
         <div class="mt-4 p-4 text-right">
           <button name="upload" type="submit" class="btn border-0" style="background-color: #a0bd1c; color: #fff;">Upload file</button>
