@@ -277,8 +277,8 @@ $messagers = getUserMessagers($connect, $USER_ID);
                                                 <div class="text-sm text-muted text-center">No messages yet</div>
                                             <?php endif; ?>
 
-                                            <div id="scrollToView"></div>
                                         </div>
+                                        <div id="scrollToView"></div>
                                     </div>
 
                                     <form action="./handler/message_handler.php" method="post" enctype="multipart/form-data" class="flex-grow-0 py-3 px-4 border-top">
@@ -315,6 +315,7 @@ $messagers = getUserMessagers($connect, $USER_ID);
     </div>
     <script>
         const scrollToView = document.querySelector("#scrollToView");
+        console.log(scrollToView);
         scrollToView.scrollIntoView({
             behavior: "smooth"
         });
