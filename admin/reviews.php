@@ -43,6 +43,7 @@
                 </div>
                 <?php if (count($REVIEWS)) : ?>
                     <?php foreach ($REVIEWS as $review) : ?>
+                        <?php $PROFILE_PIC = getProfilePic($connect, $review['user_id'])['file']; ?>
                         <div class="col-span-full sm:col-span-6 xl:col-span-4 bg-white shadow-lg rounded-sm border border-gray-200">
                             <div class="flex flex-col h-full">
                                 <div class="grow p-5">
@@ -57,9 +58,13 @@
                                                             </svg>
                                                         </div>
                                                     <?php endif; ?>
-                                                    <div class="flex items-center justify-center bg-gray-200 rounded-full w-16 h-16 text-lg font-semibold uppercase text-gray-500">
-                                                        <?= getSubName($users->get_user($review['user_id'])['firstname'] . " " . $users->get_user($review['user_id'])['lastname']) ?>
-                                                    </div>
+                                                    <?php if($PROFILE_PIC != "" || $PROFILE_PIC != NULL || $PROFILE_PIC): ?>
+                                                        <img class="w-16 h-16 rounded-full mr-2" src="../Dashboard/pic/<?= $PROFILE_PIC; ?>" alt="<?= getUser($connect, $review['user_id'])['firstname']; ?>" width="64" height="64">
+                                                    <?php else: ?>
+                                                        <div class="flex items-center justify-center bg-gray-200 rounded-full w-16 h-16 text-lg font-semibold uppercase text-gray-500">
+                                                            <?= getSubName($users->get_user($review['user_id'])['firstname'] . " " . $users->get_user($review['user_id'])['lastname']) ?>
+                                                        </div>
+                                                    <?php endif; ?>
                                                 </a>
                                                 <div class="mt-1 pr-1"><a class="inline-flex text-gray-800 hover:text-gray-900" href="#0">
                                                         <h2 class="text-xl leading-snug justify-center font-semibold">
