@@ -96,9 +96,9 @@
     <?php include("./inc/footer.php"); ?>
 
     <script>
-      const input = document.querySelector("[name=confirm]")
+      const input = document.querySelector("[name=password]")
       const small = document.querySelector("#small")
-      const inputVerify = document.querySelector("[name=password]")
+      const inputVerify = document.querySelector("[name=confirm]")
       
       small.style.display = "none"
       small.style.color = "red"
