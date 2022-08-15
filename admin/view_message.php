@@ -246,10 +246,10 @@ if($LOGGED_ADMIN['type'] != "HIGH") {
                                         </div>
                                     <?php else: ?>
                                         <?php if($PROFILE_PIC != "" || $PROFILE_PIC != NULL || $PROFILE_PIC): ?>
-                                            <img class="w-8 h-8 rounded-full mr-2" src="../Dashboard/pic/<?= $PROFILE_PIC; ?>" alt="<?= $user->get_user($_GET['msg'])['firstname'] ?>" width="32" height="32">
+                                            <img class="w-8 h-8 rounded-full mr-2" src="../Dashboard/pic/<?= $PROFILE_PIC; ?>" alt="<?= getUser($connect, $_GET['msg'])['firstname'] ?>" width="32" height="32">
                                         <?php else: ?>
                                             <div class="flex shadow-sm mr-2 items-center justify-center bg-gray-200 rounded-full w-10 h-10 text-sm font-semibold uppercase text-gray-500">
-                                                <?= getSubName($user->get_user($_GET['msg'])['firstname'] . " " . $user->get_user($_GET['msg'])['lastname']); ?>
+                                                <?= getSubName(getUser($connect, $_GET['msg'])['firstname'] . " " . getUser($connect, $_GET['msg'])['lastname']); ?>
                                             </div>
                                         <?php endif; ?>
                                     <?php endif; ?>
@@ -280,10 +280,10 @@ if($LOGGED_ADMIN['type'] != "HIGH") {
                                 </div>
                             <?php else: ?>
                                 <?php if($PROFILE_PIC != "" || $PROFILE_PIC != NULL || $PROFILE_PIC): ?>
-                                    <img class="w-8 h-8 rounded-full mr-2" src="../Dashboard/pic/<?= $PROFILE_PIC; ?>" alt="<?= $user->get_user($_GET['msg'])['firstname'] ?>" width="32" height="32">
+                                    <img class="w-8 h-8 rounded-full mr-2" src="../Dashboard/pic/<?= $PROFILE_PIC; ?>" alt="<?= getUser($connect, $_GET['msg'])['firstname'] ?>" width="32" height="32">
                                 <?php else: ?>
                                     <div class="flex shadow-sm mr-2 items-center justify-center bg-gray-200 rounded-full w-10 h-10 text-sm font-semibold uppercase text-gray-500">
-                                        <?= getSubName($user->get_user($_GET['msg'])['firstname'] . " " . $user->get_user($_GET['msg'])['lastname']); ?>
+                                        <?= getSubName(getUser($connect, $_GET['msg'])['firstname'] . " " . getUser($connect, $_GET['msg'])['lastname']); ?>
                                     </div>
                                 <?php endif; ?>
                             <?php endif; ?>
