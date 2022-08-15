@@ -99,7 +99,9 @@
                         <p class="accountfirst">Title</p>
                         <select class="form-control accountinput" name="title" value="<?= $USER['title'] ?? "" ?>">
                             <option value="" disabled>Select title</option>
-                            <option value="Mr">Mr</option>
+                            <?php foreach($titles as $title): ?>
+                                <option value="<?= $title ?>" <?= strtolower($title) == strtolower($USER['title']) ? "selected" : ""; ?> ><?= $title ?></option>
+                            <?php endforeach; ?>
                             <option value="Mrs">Mrs</option>
                             <option value="Master">Master</option>
                             <option value="Miss">Miss</option>
