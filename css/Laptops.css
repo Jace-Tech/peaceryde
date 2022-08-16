@@ -7479,8 +7479,9 @@ p,a,h1,h2,h3,h4 {
   }
 
   .reviews {
-    margin: 89px 400px;
-  }
+    margin: 89px 250px;
+    width: 100%;
+}
 
   .btn-review {
     margin: 11px 720px;
@@ -8832,7 +8833,7 @@ p,a,h1,h2,h3,h4 {
   }
 
   .reviews {
-    margin: 89px 360px;
+    margin: 89px 250px;
   }
 
   /*Review*/
@@ -10221,7 +10222,7 @@ p,a,h1,h2,h3,h4 {
   }
 
   .reviews {
-    margin: 89px 85px 72px 310px;
+    margin: 89px 85px 72px 210px;
   }
 
   .btn-review {

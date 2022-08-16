@@ -466,7 +466,7 @@ $uploads = new Upload($connect);
                   <?php else : ?>
                     <div class="col-md-1"></div>
                   <?php endif;  ?>
-
+                    
                   <div class="col-md-2 mag">
                     <video src="./reviews/<?= $videoReview['file'] ?>" loop="" controls="" class="mobilevideo" style="width: 200px;height: 200px; "></video>
                   </div>
@@ -485,7 +485,9 @@ $uploads = new Upload($connect);
                   <?php else : ?>
                     <div class="col-md-1"></div>
                   <?php endif;  ?>
-                  <video src="./reviews/<?= $videoReview['file'] ?>" loop="" controls="" class="mobilevideo" style="width: 200px;height: 200px; "></video>
+                  <div class="col-md-2 mag">
+                    <video src="./reviews/<?= $videoReview['file'] ?>" loop="" controls="" class="mobilevideo" style="width: 200px;height: 200px; "></video>
+                  </div>
               </div>
               <?php $i++; ?>
             <?php endforeach; ?>

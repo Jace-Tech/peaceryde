@@ -277,6 +277,7 @@
   }
   .mag{
     width: 20%;
+    height: 350px;
   }
 
   .nbiimage {
@@ -920,6 +921,7 @@
   .reviews {
     width: 1020px;
     margin-left: 180px;
+    flex-direction: column;
   }
 
   .btn-review {
@@ -9685,7 +9687,7 @@ width: 100%;
   }
 
   .mt-99 {
-    margin-top: 129px;
+    margin-top: 9px;
   }
 
   .to {
