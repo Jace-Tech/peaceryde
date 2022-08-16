@@ -6659,7 +6659,7 @@
     height: 6500px;
   }
   .laptopvideo{
-    display: none;
+    display: block;
   }
 .mobilevideo
 {
