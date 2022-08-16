@@ -453,7 +453,7 @@ $uploads = new Upload($connect);
             <?php endforeach; ?>
           </div>
           <?php if (count($reviews->getAllFeaturedReviews("video")) >= 3) : ?>
-            <div class="">
+            
               <h1 class="laptopvideo laptopvideoh1">
                 Customer's video reviews
               </h1>
@@ -466,7 +466,7 @@ $uploads = new Upload($connect);
                   <?php else : ?>
                     <div class="col-md-1"></div>
                   <?php endif;  ?>
-                    
+                  <div class="col-md-1"></div>
                   <div class="col-md-2 mag">
                     <video src="./reviews/<?= $videoReview['file'] ?>" loop="" controls="" class="mobilevideo" style="width: 200px;height: 200px; "></video>
                   </div>
@@ -485,13 +485,14 @@ $uploads = new Upload($connect);
                   <?php else : ?>
                     <div class="col-md-1"></div>
                   <?php endif;  ?>
+                  <div class="col-md-1"></div>
                   <div class="col-md-2 mag">
                     <video src="./reviews/<?= $videoReview['file'] ?>" loop="" controls="" class="mobilevideo" style="width: 200px;height: 200px; "></video>
                   </div>
               </div>
               <?php $i++; ?>
             <?php endforeach; ?>
-            </div>
+            
             <a href="./review.php" class="btn btn-review" style="border: 1px solid #a0bd1c;  background-color: transparent; color: #a0bd1c;">See More
               Reviews
             </a>
