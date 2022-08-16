@@ -148,7 +148,7 @@ $REVIEW = new Review($connect);
 
                             <?php endforeach; ?>
                         <?php else : ?>
-                            <div class="p-5 text-center text-muted">No reviews yet</div>
+                            <div class="p-5 text-center text-muted">No reviews</div>
                         <?php endif; ?>
                     </div>
 
