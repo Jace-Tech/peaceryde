@@ -65,7 +65,7 @@
                     <?php if(count($FAQ->get_all_questions())): ?>
                         <?php $counter = 1;  ?>
                         <?php foreach($FAQ->get_all_questions() as $faq):  ?>
-                            <div class="containerques" style="margin-top: 83px;">
+                            <div class="containerques" <?= $counter == 1 ? "style='margin-top: 83px;'" : "" ?>>
                                 <div class="question">
                                    <?= $faq['question']; ?>
                                 </div>
