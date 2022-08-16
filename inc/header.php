@@ -1,7 +1,8 @@
 <?php include("./inc/alert.php"); ?>
 <style>
   div#google_translate_element {
-    visibility: hidden;
+    /* visibility: hidden; */
+    display: none;
   }
   div#google_translate_element div.goog-te-gadget-simple {
             border: none;
