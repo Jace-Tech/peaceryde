@@ -6,18 +6,18 @@ function googleTranslateElementInit() {
   }, 'google_translate_element');
 }
 
-function triggerHtmlEvent(element, eventName) {
-  var event;
-  if (document.createEvent) {
-    event = document.createEvent('HTMLEvents');
-    event.initEvent(eventName, true, true);
-    element.dispatchEvent(event);
-  } else {
-    event = document.createEventObject();
-    event.eventType = eventName;
-    element.fireEvent('on' + event.eventType, event);
-  }
-}
+// function triggerHtmlEvent(element, eventName) {
+//   var event;
+//   if (document.createEvent) {
+//     event = document.createEvent('HTMLEvents');
+//     event.initEvent(eventName, true, true);
+//     element.dispatchEvent(event);
+//   } else {
+//     event = document.createEventObject();
+//     event.eventType = eventName;
+//     element.fireEvent('on' + event.eventType, event);
+//   }
+// }
 
 
 jQuery('.lang-select').click(function (e) {
