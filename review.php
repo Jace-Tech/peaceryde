@@ -130,7 +130,7 @@ $REVIEW = new Review($connect);
                                                     <div class="col-md-10">
                                                     </div>
                                                     <div class="col-md-2">
-                                                        <p><?= date("M d, Y", strtotime($REVIEW['date'])); ?></p>
+                                                        <p><?= date("M d, Y", strtotime($review['date'])); ?></p>
                                                     </div>
                                                 </div>
                                                 <!-- <p class="reviewservice">Business Visa On Arrival was approved in 2 month</p> -->
@@ -148,6 +148,7 @@ $REVIEW = new Review($connect);
 
                             <?php endforeach; ?>
                         <?php else : ?>
+                            <div class="p-5 text-center text-muted">No reviews yet</div>
                         <?php endif; ?>
                     </div>
 

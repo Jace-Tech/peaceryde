@@ -452,7 +452,6 @@ $uploads = new Upload($connect);
               <div class="col-md-1"></div>
             <?php endforeach; ?>
           </div>
-            <?php count($reviews->getAllFeaturedReviews("video")); ?>
           <?php if (count($reviews->getAllFeaturedReviews("video")) >= 3) : ?>
             <div class="">
               <h1 class="laptopvideo laptopvideoh1">
