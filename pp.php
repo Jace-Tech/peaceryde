@@ -117,7 +117,7 @@ We will update the version number and date of this document each time it is chan
             </div>
         </section>
 
-        <?php include("./inc/footer.php"); ?>
+               <?php include("./inc/footer.php"); ?><?php include("./inc/langChange.php") ?>
             <!-- ======= End section8 ======= -->
 
     </main>

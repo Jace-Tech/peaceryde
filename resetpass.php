@@ -93,7 +93,7 @@
       </div>
     </section>
 
-    <?php include("./inc/footer.php"); ?>
+           <?php include("./inc/footer.php"); ?><?php include("./inc/langChange.php") ?>
 
     <script>
       const input = document.querySelector("[name=password]")

@@ -28,7 +28,7 @@
     <script type="text/javascript" src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script type="text/javascript" src="https://unpkg.com/headroom.js@0.12.0/dist/headroom.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/px2code/posize/build/v1.00.3.js"></script>
-    
+
     <!-- get jquery link -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <style>
@@ -88,7 +88,7 @@
         </section>
         <comment content="======= End section7 =======" break="true"></comment>
         <!-- ======= section8 ======= -->
-        <?php include("./inc/footer.php"); ?>
+               <?php include("./inc/footer.php"); ?><?php include("./inc/langChange.php") ?>
         <!-- ======= End section8 ======= -->
 
     </main>

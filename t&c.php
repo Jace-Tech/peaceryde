@@ -411,7 +411,8 @@
                 </div>
             </section>
 
-        <?php include("./inc/footer.php"); ?>
+               <?php include("./inc/footer.php"); ?>
+               <?php include("./inc/langChange.php") ?>
             <!-- ======= End section8 ======= -->
 
     </main>
