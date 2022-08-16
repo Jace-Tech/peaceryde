@@ -8710,14 +8710,14 @@
 @media (max-width: 800px) {
   .new-section6__hero-title1.layout {
 
-    margin: 32px 40px 0px;
+    margin: 32px -40px 0px;
   }
 }
 
 @media (max-width: 768px) {
   .new-section6__hero-title1.layout {
 
-    margin: 32px 29px 0px
+    margin: 32px -59px 0px
   }
 }
 

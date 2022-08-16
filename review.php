@@ -156,7 +156,7 @@ $REVIEW = new Review($connect);
 
                 </div>
             </section>
-        <?php include("./inc/footer.php"); ?>
+       
         <!-- ======= End section8 ======= -->
 
     </main>

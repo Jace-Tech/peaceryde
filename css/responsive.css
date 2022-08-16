@@ -62,7 +62,7 @@
   .english {
     font-size: 14px;
     color: #080C58;
-    margin-left: 110px;
+    margin-left: 0px;
     margin-top: -10px;
   }
 
@@ -274,6 +274,9 @@
 
   .nbiheight {
     height: 1200px;
+  }
+  .mag{
+    width: 20%;
   }
 
   .nbiimage {
@@ -1771,7 +1774,7 @@ width: 100%;
   .english {
     font-size: 14px;
     color: #080C58;
-    margin-left: 110px;
+    margin-left: 0px;
     margin-top: -10px;
 
   }
@@ -1968,6 +1971,9 @@ width: 100%;
     font-weight: 300;
     padding: 78px 48px 86px 48px;
   }
+  .mt-99 {
+    margin-top: 9px;
+}
 
   .nbiheight {
     height: 1200px;
@@ -3487,7 +3493,7 @@ width: 100%;
   .english {
     font-size: 14px;
     color: #080C58;
-    margin-left: 60px;
+    margin-left: 0px;
     margin-top: -10px;
 
   }
@@ -3794,7 +3800,7 @@ width: 100%;
     width: 320px;
     height: 266px;
     margin-left: 10%;
-    margin-top: -1160px;
+    margin-top: -1110px;
   }
 
   .mt-75 {
@@ -4274,8 +4280,12 @@ width: 100%;
   .reviews {
     width: 1020px;
     margin-left: 120px;
+    flex-direction: column;
   }
-
+.chee
+{
+  margin-top:10%;
+}
   .btn-review {
     margin: 0px 135px 100px;
   }
@@ -5545,7 +5555,7 @@ width: 100%;
     width: 320px;
     height: 266px;
     margin-left: 30px;
-    margin-top: -1250px;
+    margin-top: -1220px;
   }
 
   .whoweare {
@@ -5811,7 +5821,7 @@ width: 100%;
   }
 
   .mobphone {
-    font-size: 14px;
+    font-size: 13px;
     padding-top: 10px;
     color: #ffffff;
     text-decoration: none;
