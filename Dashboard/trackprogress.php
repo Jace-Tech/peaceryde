@@ -192,7 +192,7 @@ $isUnread = count($messages->get_user_unread_messages($USER_ID));
             }
             .breadcrumb {
                 margin-top: -170px;
-                margin-left: 54px;
+                margin-left: 154px;
             }
             .example {
                 margin-left: 7px;
@@ -204,7 +204,7 @@ $isUnread = count($messages->get_user_unread_messages($USER_ID));
             .breadcrumb
             {
                 margin-top: -170px;
-                margin-left: 14px;
+                margin-left: 164px;
             }
             .account{
                 padding-top: 0px;
@@ -231,7 +231,7 @@ $isUnread = count($messages->get_user_unread_messages($USER_ID));
             .breadcrumb
             {
                 margin-top: -170px;
-                margin-left: 14px;
+                margin-left: 164px;
             }
             .account{
                 padding-top: 0px;
@@ -258,7 +258,7 @@ $isUnread = count($messages->get_user_unread_messages($USER_ID));
             .breadcrumb
             {
                 margin-top: -170px;
-                margin-left: 14px;
+                margin-left: 124px;
             }
             .account{
                 padding-top: 0px;
@@ -288,8 +288,9 @@ $isUnread = count($messages->get_user_unread_messages($USER_ID));
         {
             .breadcrumb
             {
-                margin-top: -170px;
-                margin-left: 14px;
+                margin-top: -215px;
+                margin-left: 104px;
+                width: 280px;
             }
             .page-breadcrumb .breadcrumb
             {
@@ -301,8 +302,8 @@ $isUnread = count($messages->get_user_unread_messages($USER_ID));
         {
             .breadcrumb
             {
-                margin-top: -170px;
-                margin-left: 4px;
+                margin-top: -215px;
+                margin-left: 104px;
                 width: 280px;
             }
             .mobile
@@ -313,7 +314,7 @@ $isUnread = count($messages->get_user_unread_messages($USER_ID));
         @media only screen and (max-width: 280px)
         {
             .breadcrumb {
-                margin-top: -175px;
+                margin-top: -150px;
                 margin-left: 94px;
                 width: 300px;
             }
@@ -376,7 +377,7 @@ $isUnread = count($messages->get_user_unread_messages($USER_ID));
                     </div>
                     <div class="align-self-center">
                         <div class="customize-input">
-                        <ol class="breadcrumb mb-2"id="ol" style="margin-top: -100px;">
+                        <ol class="breadcrumb mb-2"id="ol" style="">
                                 <?php if ($isUnread) : ?>
                                     <li class="breadcrumb-item" style="margin-top: 1px;">
                                         <a href="./inbox.php" style="color: #080C58;"><svg width="22" height="20" style="margin-top: -5px;" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -409,7 +410,7 @@ $isUnread = count($messages->get_user_unread_messages($USER_ID));
                                     </form>
                                 </li>
                       
-                                <li class="breadcrumb-item logoutmobile" style="margin-top: 10px;">
+                                <li class="breadcrumb-item logoutmobile" style="margin-top: 0px;">
                                 <form action="./handler/logout_handler.php" method="post" style="display: inline-block">
                                 <button style="background-color: transparent; border: none; color: #080C58;" name="logout" href="javascript:void(0)">
                                  <svg width="18" height="18" style="margin-top: -5px;" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">

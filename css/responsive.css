@@ -63,7 +63,7 @@
     font-size: 14px;
     color: #080C58;
     margin-left: 0px;
-    margin-top: -30px;
+    margin-top: -10px;
   }
 
   #content2 {
@@ -1538,12 +1538,13 @@ width: 100%;
 
   /*Review*/
   .reviewheight {
-    height: 1800px;
+    height: 6500px;
   }
 
   .reviewh2 {
     padding-top: 68px;
-    padding-left: 180px;
+    padding-left: 0px;
+    text-align: center;
     font-family: 'Ubuntu';
     font-style: normal;
     font-weight: 500;
@@ -1554,13 +1555,13 @@ width: 100%;
   .reviewcard {
     border-radius: 10px;
     border-color: transparent;
-    width: 350px;
+    width: 90%;
     background-color: #ffffff;
-    margin: 32px 25px;
+    margin: 32px 5%;
   }
 
   .reviewml {
-    margin-left: 27px;
+    margin-left: 0px;
   }
 
   .reviewmt {
@@ -1777,7 +1778,7 @@ width: 100%;
     font-size: 14px;
     color: #080C58;
     margin-left: 0px;
-    margin-top: -30px;
+    margin-top: -10px;
 
   }
 
@@ -3197,12 +3198,13 @@ width: 100%;
 
   /*Review*/
   .reviewheight {
-    height: 1800px;
+    height: 6500px;
   }
 
   .reviewh2 {
     padding-top: 68px;
-    padding-left: 180px;
+    padding-left: 0px;
+    text-align: center;
     font-family: 'Ubuntu';
     font-style: normal;
     font-weight: 500;
@@ -3213,13 +3215,13 @@ width: 100%;
   .reviewcard {
     border-radius: 10px;
     border-color: transparent;
-    width: 350px;
+    width: 90%;
     background-color: #ffffff;
-    margin: 32px 25px;
+    margin: 32px 5%;
   }
 
   .reviewml {
-    margin-left: 27px;
+    margin-left: 0px;
   }
 
   .reviewmt {
@@ -3496,7 +3498,7 @@ width: 100%;
     font-size: 14px;
     color: #080C58;
     margin-left: 0px;
-    margin-top: -30px;
+    margin-top: -10px;
 
   }
 
@@ -4999,12 +5001,13 @@ width: 100%;
 
   /*Review*/
   .reviewheight {
-    height: 1800px;
+    height: 6500px;
   }
 
   .reviewh2 {
     padding-top: 68px;
-    padding-left: 150px;
+    padding-left: 0px;
+    text-align: center;
     font-family: 'Ubuntu';
     font-style: normal;
     font-weight: 500;
@@ -5015,13 +5018,13 @@ width: 100%;
   .reviewcard {
     border-radius: 10px;
     border-color: transparent;
-    width: 330px;
+    width: 90%;
     background-color: #ffffff;
-    margin: 32px 10px;
+    margin: 32px 5%;
   }
 
   .reviewml {
-    margin-left: 17px;
+    margin-left: 0px;
   }
 
   .reviewmt {
@@ -5256,7 +5259,7 @@ width: 100%;
     font-size: 14px;
     color: #080C58;
     margin-left: 0px;
-    margin-top: -30px;
+    margin-top: -10px;
 
   }
 
@@ -6773,12 +6776,13 @@ width: 100%;
 
   /*Review*/
   .reviewheight {
-    height: 1800px;
+    height: 6500px;
   }
 
   .reviewh2 {
     padding-top: 68px;
-    padding-left: 150px;
+    padding-left: 0px;
+    text-align: center;
     font-family: 'Ubuntu';
     font-style: normal;
     font-weight: 500;
@@ -6789,13 +6793,13 @@ width: 100%;
   .reviewcard {
     border-radius: 10px;
     border-color: transparent;
-    width: 330px;
+    width: 90%;
     background-color: #ffffff;
-    margin: 32px 10px;
+    margin: 32px 5%;
   }
 
   .reviewml {
-    margin-left: 17px;
+    margin-left: 0px;
   }
 
   .reviewmt {
@@ -7039,7 +7043,7 @@ width: 100%;
     font-size: 14px;
     color: #080C58;
     margin-left: -20px;
-    margin-top: -30px;
+    margin-top: -10px;
   }
 
   .hiddenbutton {
@@ -8503,12 +8507,13 @@ width: 100%;
 
   /*Review*/
   .reviewheight {
-    height: 1800px;
+    height: 6500px;
   }
 
   .reviewh2 {
     padding-top: 68px;
-    padding-left: 150px;
+    padding-left: 0px;
+    text-align: center;
     font-family: 'Ubuntu';
     font-style: normal;
     font-weight: 500;
@@ -8519,13 +8524,13 @@ width: 100%;
   .reviewcard {
     border-radius: 10px;
     border-color: transparent;
-    width: 330px;
+    width: 90%;
     background-color: #ffffff;
-    margin: 32px 10px;
+    margin: 32px 5%;
   }
 
   .reviewml {
-    margin-left: 17px;
+    margin-left: 0px;
   }
 
   .reviewmt {
@@ -8767,7 +8772,7 @@ width: 100%;
     font-size: 14px;
     color: #080C58;
     margin-left: 0px;
-    margin-top: -30px;
+    margin-top: -10px;
   }
 
   .hiddenbutton {
@@ -10255,12 +10260,13 @@ width: 100%;
 
   /*Review*/
   .reviewheight {
-    height: 1800px;
+    height: 6500px;
   }
 
   .reviewh2 {
     padding-top: 68px;
-    padding-left: 150px;
+    padding-left: 0px;
+    text-align: center;
     font-family: 'Ubuntu';
     font-style: normal;
     font-weight: 500;
@@ -10271,13 +10277,13 @@ width: 100%;
   .reviewcard {
     border-radius: 10px;
     border-color: transparent;
-    width: 330px;
+    width: 90%;
     background-color: #ffffff;
-    margin: 32px 10px;
+    margin: 32px 5%;
   }
 
   .reviewml {
-    margin-left: 17px;
+    margin-left: 0px;
   }
 
   .reviewmt {
@@ -10507,7 +10513,7 @@ width: 100%;
     font-size: 14px;
     color: #080C58;
     margin-left: -30px;
-    margin-top: -30px;
+    margin-top: -10px;
   }
 
   .formobile {
@@ -12006,12 +12012,13 @@ width: 100%;
 
   /*Review*/
   .reviewheight {
-    height: 1800px;
+    height: 6500px;
   }
 
   .reviewh2 {
     padding-top: 68px;
-    padding-left: 150px;
+    padding-left: 0px;
+    text-align: center;
     font-family: 'Ubuntu';
     font-style: normal;
     font-weight: 500;
@@ -12022,13 +12029,13 @@ width: 100%;
   .reviewcard {
     border-radius: 10px;
     border-color: transparent;
-    width: 330px;
+    width: 90%;
     background-color: #ffffff;
-    margin: 32px 10px;
+    margin: 32px 5%;
   }
 
   .reviewml {
-    margin-left: 17px;
+    margin-left: 0px;
   }
 
   .reviewmt {
@@ -13712,12 +13719,13 @@ width: 100%;
 
   /*Review*/
   .reviewheight {
-    height: 1000px;
+    height: 6000px;
   }
 
   .reviewh2 {
     padding-top: 68px;
-    padding-left: 100px;
+    padding-left: 0px;
+    text-align: center;
     font-family: 'Ubuntu';
     font-style: normal;
     font-weight: 500;
@@ -13728,13 +13736,13 @@ width: 100%;
   .reviewcard {
     border-radius: 10px;
     border-color: transparent;
-    width: 260px;
+    width: 90%;
     background-color: #ffffff;
-    margin: 32px 5px;
+    margin: 32px 5%;
   }
 
   .reviewml {
-    margin-left: 10px;
+    margin-left: 0px;
   }
 
   .reviewmt {
