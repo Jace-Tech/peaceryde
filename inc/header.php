@@ -73,13 +73,13 @@
         <div class="new-section1__flex1-spacer"></div>
         <div class="new-section1__flex1-item">
           <input type="text" class="form-control form" placeholder=" search business name here">
-          <button class="btn hiddenbutton">SEARCH</button>
+          <a href="https://search.cac.gov.ng/home" class="btn hiddenbutton">SEARCH</a>
           <a href="+1 (302) 703-9867" class="hiddenphone ">+1 (302) 703-9867</a>
         </div>
         <div class="new-section1__flex1-spacer1"></div>
         <div class="new-section1__flex1-item1">
           <div class="">
-            <button class="btn buttons btnsearch">SEARCH</button>
+            <a href="https://search.cac.gov.ng/home" class="btn buttons btnsearch">SEARCH</a>
 
           </div>
         </div>
