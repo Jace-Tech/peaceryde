@@ -238,5 +238,4 @@
 
 
 </section>
-    <?php include("./inc/langChange.php") ?>
 <!--End of Tawk.to Script-->
