@@ -542,7 +542,7 @@ $isUnread = $messages->get_user_unread_messages($USER_ID) ?? [];
                                     </form>
                                 </li>
 
-                                <li class="breadcrumb-item logoutmobile" style="margin-top: 10px;">
+                                <li class="breadcrumb-item logoutmobile" style="margin-top: 0px;">
                                     <form action="./handler/logout_handler.php" method="post" style="display: inline-block">
                                         <button style="background-color: transparent; border: none; color: #080C58;" name="logout" href="javascript:void(0)">
                                             <svg width="18" height="18" style="margin-top: -5px;" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
