@@ -9509,9 +9509,10 @@
 
   .reviewh2 {
     padding-top: 68px;
-    padding-left: 280px;
-
+    padding-left: 0px;
+    text-align: center;
   }
+
   .reviewvideo {
     width: 400px;
     height: 200px;
@@ -9525,7 +9526,7 @@
   }
 
   .reviewml {
-    margin-left: 57px;
+    margin-left: 0px;
   }
 
   .reviewtext {

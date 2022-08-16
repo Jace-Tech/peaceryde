@@ -1543,7 +1543,8 @@ width: 100%;
 
   .reviewh2 {
     padding-top: 68px;
-    padding-left: 180px;
+    padding-left: 0px;
+    text-align: center;
     font-family: 'Ubuntu';
     font-style: normal;
     font-weight: 500;
@@ -1560,7 +1561,7 @@ width: 100%;
   }
 
   .reviewml {
-    margin-left: 27px;
+    margin-left: 0px;
   }
 
   .reviewmt {
@@ -3202,7 +3203,8 @@ width: 100%;
 
   .reviewh2 {
     padding-top: 68px;
-    padding-left: 180px;
+    padding-left: 0px;
+    text-align: center;
     font-family: 'Ubuntu';
     font-style: normal;
     font-weight: 500;
@@ -3219,7 +3221,7 @@ width: 100%;
   }
 
   .reviewml {
-    margin-left: 27px;
+    margin-left: 0px;
   }
 
   .reviewmt {
@@ -5004,7 +5006,8 @@ width: 100%;
 
   .reviewh2 {
     padding-top: 68px;
-    padding-left: 150px;
+    padding-left: 0px;
+    text-align: center;
     font-family: 'Ubuntu';
     font-style: normal;
     font-weight: 500;
@@ -5021,7 +5024,7 @@ width: 100%;
   }
 
   .reviewml {
-    margin-left: 17px;
+    margin-left: 0px;
   }
 
   .reviewmt {
@@ -6778,7 +6781,8 @@ width: 100%;
 
   .reviewh2 {
     padding-top: 68px;
-    padding-left: 150px;
+    padding-left: 0px;
+    text-align: center;
     font-family: 'Ubuntu';
     font-style: normal;
     font-weight: 500;
@@ -6795,7 +6799,7 @@ width: 100%;
   }
 
   .reviewml {
-    margin-left: 17px;
+    margin-left: 0px;
   }
 
   .reviewmt {
@@ -8508,7 +8512,8 @@ width: 100%;
 
   .reviewh2 {
     padding-top: 68px;
-    padding-left: 150px;
+    padding-left: 0px;
+    text-align: center;
     font-family: 'Ubuntu';
     font-style: normal;
     font-weight: 500;
@@ -8525,7 +8530,7 @@ width: 100%;
   }
 
   .reviewml {
-    margin-left: 17px;
+    margin-left: 0px;
   }
 
   .reviewmt {
@@ -10260,7 +10265,8 @@ width: 100%;
 
   .reviewh2 {
     padding-top: 68px;
-    padding-left: 150px;
+    padding-left: 0px;
+    text-align: center;
     font-family: 'Ubuntu';
     font-style: normal;
     font-weight: 500;
@@ -10277,7 +10283,7 @@ width: 100%;
   }
 
   .reviewml {
-    margin-left: 17px;
+    margin-left: 0px;
   }
 
   .reviewmt {
@@ -12011,7 +12017,8 @@ width: 100%;
 
   .reviewh2 {
     padding-top: 68px;
-    padding-left: 150px;
+    padding-left: 0px;
+    text-align: center;
     font-family: 'Ubuntu';
     font-style: normal;
     font-weight: 500;
@@ -12028,7 +12035,7 @@ width: 100%;
   }
 
   .reviewml {
-    margin-left: 17px;
+    margin-left: 0px;
   }
 
   .reviewmt {
@@ -13717,7 +13724,8 @@ width: 100%;
 
   .reviewh2 {
     padding-top: 68px;
-    padding-left: 100px;
+    padding-left: 0px;
+    text-align: center;
     font-family: 'Ubuntu';
     font-style: normal;
     font-weight: 500;
@@ -13734,7 +13742,7 @@ width: 100%;
   }
 
   .reviewml {
-    margin-left: 10px;
+    margin-left: 0px;
   }
 
   .reviewmt {
