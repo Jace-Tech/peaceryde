@@ -39,8 +39,7 @@ jQuery('.lang-select').click(function() {
   jQuery('.goog-te-combo').val(theLang);
 
   localStorage.setItem('lang', theLang);
-
-  window.location = jQuery(this).attr('href');
+//   window.location = jQuery(this).attr('href');
   location.reload();
 });
 
@@ -48,6 +47,7 @@ window.addEventListener("load", () => {
     const lang = localStorage.getItem('lang');
     if (lang) {
         jQuery('.goog-te-combo').val(lang);
+        location.reload();
     }
 }, { once: true });
 
