@@ -43,13 +43,12 @@ jQuery('.lang-select').click(function() {
   location.reload();
 });
 
-window.addEventListener("load", () => {
+window.addEventListener("beforeload", () => {
     const lang = localStorage.getItem('lang');
     if (lang) {
         jQuery('.goog-te-combo').val(lang);
-        location.reload();
     }
-}, { once: true });
+}, false);
 
 
 </script> 
