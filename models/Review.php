@@ -67,7 +67,7 @@ class Review {
 
     public function getAllReviews()
     {
-        $query = "SELECT * FROM `review`";
+        $query = "SELECT * FROM `review` ORDER BY `date` DESC";
         $result = $this->connection->prepare($query);
         $result->execute();
 

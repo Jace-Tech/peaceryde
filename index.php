@@ -445,13 +445,14 @@ $uploads = new Upload($connect);
                 </div>
                 <div class="new-section6__paragraph-body-box layout">
                   <p class="new-section6__paragraph-body review-text">
-                      <?= trim($review['review']);  ?>
+                      <?= strlen($review['review']) > 300 ? substr(trim($review['review']), 0, 300) . "..." : substr(trim($review['review']), 0, 300);  ?>
                   </p>
                 </div>
               </div>
               <div class="col-md-1"></div>
             <?php endforeach; ?>
           </div>
+            <?php count($reviews->getAllFeaturedReviews("video")); ?>
           <?php if (count($reviews->getAllFeaturedReviews("video")) >= 3) : ?>
             <div class="">
               <h1 class="laptopvideo laptopvideoh1">
@@ -490,9 +491,9 @@ $uploads = new Upload($connect);
               <?php $i++; ?>
             <?php endforeach; ?>
             </div>
-            <button class="btn btn-review" style="border: 1px solid #a0bd1c;  background-color: transparent; color: #a0bd1c;">See More
+            <a href="./review.php" class="btn btn-review" style="border: 1px solid #a0bd1c;  background-color: transparent; color: #a0bd1c;">See More
               Reviews
-            </button>
+            </a>
         </div>
       <?php endif; ?>
       </div>
