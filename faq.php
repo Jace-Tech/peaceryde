@@ -75,7 +75,7 @@
                                     </div>
                                 </div>
                             </div>
-                        <?php endforeach; ?>
+                        <?php $counter++; endforeach; ?>
                     <?php else:?>
                         <p class="text-center text-muted p-5">No FAQ available</p>
                     <?php endif; ?>
