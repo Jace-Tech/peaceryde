@@ -76,7 +76,7 @@
       </span>
       <div class="container">
         <div class="card">
-        <div class="align-self-center">
+        <div style="align-self: start">
         <h3 class="page-title title">Service Booking Form </h3>
         <p class="fill">Please fill this form to indicate your interest in any of our services and we will contact you within 24hrs</p>
       </div>

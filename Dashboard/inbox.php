@@ -77,7 +77,7 @@ $messagers = getUserMessagers($connect, $USER_ID);
             padding-top: 1rem !important;
             padding-bottom: 1rem !important;
         }
-        .bg-light
+        .bg-colored
         {
             background-color:#1161D9;
             border-radius:11px;
@@ -160,7 +160,7 @@ $messagers = getUserMessagers($connect, $USER_ID);
 
                                 <?php if (count($messagers)) : ?>
                                     <?php foreach ($messagers as $messager) : ?>
-                                        <a href="?message=<?= $messager['admin_id']; ?>" class="list-group-item <?= $messager['admin_id'] == $_GET['message'] ? "bg-light" : "" ?> list-group-item-action border-0">
+                                        <a href="?message=<?= $messager['admin_id']; ?>" class="list-group-item <?= $messager['admin_id'] == $_GET['message'] ? "bg-colored" : "" ?> list-group-item-action border-0">
                                             <!-- <div class="badge bg-success float-right">5</div> -->
                                             <div class="d-flex align-items-start">
                                                 <img src="./pic/index.png" class="rounded-circle mr-1" alt="<?= $main_admin['name']; ?>" width="40" height="40">
@@ -224,7 +224,7 @@ $messagers = getUserMessagers($connect, $USER_ID);
                                                     <!-- Attachment -->
                                                     <?php if ($__message['attachment']) : ?>
                                                         <?php $attachments = json_decode($__message['attachment'], true); ?>
-                                                        <div class="<?= $USER_ID == $__message['sender_id'] ? "chat-message-right" : "chat-message-left" ?> d-flex align-items-center p-1 mb-2 bg-light g-2" style="max-height: 50px; text-decoration: underline;">
+                                                        <div class="<?= $USER_ID == $__message['sender_id'] ? "chat-message-right" : "chat-message-left" ?> d-flex align-items-center p-1 mb-2 bg-colored g-2" style="max-height: 50px; text-decoration: underline;">
                                                             <?php foreach ($attachments as $attachment) : ?>
                                                                 <a download="<?= $attachment; ?>" href="../attachment/<?= $attachment ?>" class="rounded d-flex p-2">
                                                                     <svg class="fill-current text-muted flex-shrink-0 mr-3" style="height: 20px; height: 20px;" viewBox="0 0 12 12">
@@ -260,7 +260,7 @@ $messagers = getUserMessagers($connect, $USER_ID);
                                                                 </div>
                                                             <?php endif; ?>
 
-                                                            <div class="flex-shrink-1 bg-light rounded py-2 px-3 mr-3">
+                                                            <div class="flex-shrink-1 bg-colored rounded py-2 px-3 mr-3">
                                                                 <div class="font-weight-bold mb-1">You</div>
                                                                 <?= $__message['message']; ?>
                                                             </div>
@@ -273,7 +273,7 @@ $messagers = getUserMessagers($connect, $USER_ID);
                                                                 <img src="./pic/index.png" class="rounded-circle mr-1" alt="Sharon Lessman" width="40" height="40">
                                                                 <?= date("D, h:i a", strtotime($__message['date'])); ?>
                                                             </div>
-                                                            <div class="flex-shrink-1 bg-light rounded py-2 px-3 ml-3">
+                                                            <div class="flex-shrink-1 bg-colored rounded py-2 px-3 ml-3">
                                                                 <div class="font-weight-bold mb-1">
                                                                     <?= $_admin['name']; ?>
                                                                 </div>
