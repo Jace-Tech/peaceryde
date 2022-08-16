@@ -135,7 +135,7 @@ $REVIEW = new Review($connect);
                                                     <div class="col-md-10">
                                                     </div>
                                                     <div class="col-md-2">
-                                                        <p style="color: #0A0E69"><?= date("M d, Y", strtotime($review['date'])); ?></p>
+                                                        <p style="color: #0A0E69;padding-left:5%;"><?= date("M d, Y", strtotime($review['date'])); ?></p>
                                                     </div>
                                                 </div>
                                                 <!-- <p class="reviewservice">Business Visa On Arrival was approved in 2 month</p> -->
