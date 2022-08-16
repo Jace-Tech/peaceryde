@@ -4286,7 +4286,7 @@ width: 100%;
   }
 .chee
 {
-  margin-top:10%;
+  margin-top:0%;
 }
   .btn-review {
     margin: 0px 135px 100px;
@@ -10047,7 +10047,9 @@ width: 100%;
     width: 307px;
     font-family: ubuntu;
   }
-
+  .chee {
+    margin-top: 0%;
+}
   .vsbheight {
     position: relative;
     height: 1384px;
@@ -11933,6 +11935,9 @@ width: 100%;
     text-align: center;
     font-size: 24px;
   }
+  .chee {
+    margin-top: 0%;
+}
 
   .applyh22 {
     text-align: center;
