@@ -8990,7 +8990,7 @@
 
 @media (max-width: 2390px) {
   .new-section6__flex18-item {
-    flex: 0 0 120px;
+    flex: 0 0 60px;
   }
 }
 
@@ -9240,7 +9240,7 @@
   font: 14px/1.2 "Roboto", Helvetica, Arial, serif;
   color: #060a5c;
   letter-spacing: 0.02px;
-  white-space: pre-wrap;
+  white-space: inherit;
 }
 
 @media (max-width: 991px) {

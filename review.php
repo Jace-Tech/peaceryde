@@ -49,7 +49,9 @@ $REVIEW = new Review($connect);
     }
 
     .responsive-vid {
+        margin-top: 30px;
         width: 70%;
+        margin-left: 10%;
         height: 300px;
         object-fit: cover;
     }
@@ -92,11 +94,11 @@ $REVIEW = new Review($connect);
                                         <div class="form-group4 reviewmt">
                                             <div class="row">
                                                 <?php if (isset(getProfilePic($connect, $review["user_id"])["file"])) : ?>
-                                                    <div class="col-md-1">
+                                                    <div class="col-md-2">
                                                         <img src="./Dashboard/pic/<?= getProfilePic($connect, $review["user_id"])["file"]; ?>"  class="rounded-circle" style="width: 75px; height: 75px; object-fit: cover; margin-bottom: 13px;">
                                                     </div>
                                                 <?php else : ?>
-                                                    <div class="col-md-1">
+                                                    <div class="col-md-2">
                                                         <h2 class="avater">
                                                             <?= getSubName($users->get_user($review["user_id"])['firstname'] . " " . $users->get_user($review["user_id"])["lastname"]); ?>
                                                         </h2>
