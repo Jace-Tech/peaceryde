@@ -472,23 +472,7 @@ $uploads = new Upload($connect);
                 <?php endforeach; ?>
               </div>
 
-              <!-- <h1 style="text-align: center; font-family: Rubik; font-style: normal; font-weight: normal; font-size: 30px; line-height: 41px; color: #060a5c;" class="mobilevideo">
-                Customer's video reviews
-              </h1>
-              <div class="row reviews mt-99 mobilevideo">
-                <?php $i = 0; ?>
-                <?php foreach ($reviews->getAllFeaturedReviews("video") as $videoReview) : ?>
-                  <?php if ($i == 0) :  ?>
-                    <div class="col-md-2 hide"></div>
-                  <?php else : ?>
-                    <div class="col-md-1"></div>
-                  <?php endif;  ?>
-                  
-                  <div class="col-md-3">
-                    <video src="./reviews/<?= $videoReview['file'] ?>" loop="" controls="" class="mobilevideo" style="width: 200px;height: 200px; "></video>
-                  </div>
-              </div>-->
-             
+              
             
             <a href="./review.php" class="btn btn-review" style="border: 1px solid #a0bd1c;  background-color: transparent; color: #a0bd1c;">See More
               Reviews
