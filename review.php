@@ -83,7 +83,10 @@ $REVIEW = new Review($connect);
         <?php include("./inc/header.php"); ?>
             <section class=" new-section2__group layout2 reviewheight" style="background-color: #f8f6f6;">
                 <div class="new-section1__cover-block layout signinpage">
-                    <h2 class="reviewh2">Review </h2>
+                    <!-- <h2 class="reviewh2">Review </h2> -->
+                    <h1 class="whoweare">
+                    Reviews
+                    </h1>
 
                     <div class="">
                         <?php if (count($REVIEW->getAllReviews())) : ?>
@@ -92,7 +95,7 @@ $REVIEW = new Review($connect);
                                 <div class="card reviewcard">
                                     <div class="reviewml">
                                         <div class="form-group4 reviewmt">
-                                            <div class="row">
+                                            <div class="row" style="margin-left:5%;">
                                                 <?php if (isset(getProfilePic($connect, $review["user_id"])["file"])) : ?>
                                                     <div class="col-md-2">
                                                         <img src="./Dashboard/pic/<?= getProfilePic($connect, $review["user_id"])["file"]; ?>"  class="rounded-circle" style="width: 75px; height: 75px; object-fit: cover; margin-bottom: 13px;">
@@ -114,7 +117,7 @@ $REVIEW = new Review($connect);
                                                                 </span> 1 review</p>
                                                         </div> -->
                                                         <div class="col-md-2">
-                                                            <p>
+                                                            <p style="color: #0A0E69">
                                                                 <span><svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                                         <path d="M7.42285 3.03418C6.95312 3.03418 6.49394 3.13548 6.10337 3.32528C5.71281 3.51507 5.4084 3.78484 5.22864 4.10045C5.04888 4.41607 5.00185 4.76337 5.09349 5.09843C5.18513 5.43348 5.41132 5.74126 5.74347 5.98282C6.07562 6.22438 6.49881 6.38889 6.95951 6.45554C7.42022 6.52218 7.89775 6.48798 8.33173 6.35724C8.7657 6.22651 9.13662 6.00512 9.39759 5.72107C9.65856 5.43703 9.79785 5.10307 9.79785 4.76145C9.79714 4.30351 9.54668 3.86448 9.10144 3.54066C8.6562 3.21685 8.05252 3.0347 7.42285 3.03418ZM7.42285 5.62509C7.18799 5.62509 6.9584 5.57444 6.76311 5.47954C6.56783 5.38464 6.41562 5.24976 6.32575 5.09195C6.23587 4.93414 6.21235 4.76049 6.25817 4.59297C6.30399 4.42544 6.41709 4.27155 6.58316 4.15077C6.74924 4.02999 6.96083 3.94773 7.19118 3.91441C7.42154 3.88109 7.6603 3.89819 7.87729 3.96356C8.09428 4.02892 8.27974 4.13962 8.41022 4.28164C8.54071 4.42367 8.61035 4.59064 8.61035 4.76145C8.60999 4.99042 8.48476 5.20994 8.26214 5.37184C8.03952 5.53375 7.73769 5.62482 7.42285 5.62509Z" fill="#080C58" />
                                                                         <path d="M11.9868 1.43983C10.8584 0.619387 9.35214 0.13201 7.7587 0.0717643C6.16527 0.0115185 4.59763 0.382675 3.35834 1.1136C2.11905 1.84452 1.29597 2.8834 1.04795 4.02973C0.79993 5.17605 1.14455 6.34856 2.01531 7.32096L6.50208 12.3304C6.60193 12.4419 6.73845 12.5335 6.89927 12.5969C7.06009 12.6603 7.24012 12.6935 7.42304 12.6935C7.60597 12.6935 7.786 12.6603 7.94682 12.5969C8.10763 12.5335 8.24415 12.4419 8.344 12.3304L12.8309 7.32096C13.6389 6.41892 13.9959 5.34231 13.8423 4.27157C13.6886 3.20084 13.0335 2.20107 11.9868 1.43983ZM11.8359 6.84955L7.42306 11.7763L3.01013 6.84955C1.65936 5.34145 1.94907 3.32324 3.69899 2.0505C4.18804 1.69482 4.76863 1.41268 5.4076 1.22019C6.04658 1.02769 6.73143 0.928617 7.42306 0.928617C8.11469 0.928617 8.79954 1.02769 9.43852 1.22019C10.0775 1.41268 10.6581 1.69482 11.1471 2.0505C12.8971 3.32324 13.1867 5.34145 11.8359 6.84955Z" fill="#080C58" />
@@ -132,7 +135,7 @@ $REVIEW = new Review($connect);
                                                     <div class="col-md-10">
                                                     </div>
                                                     <div class="col-md-2">
-                                                        <p><?= date("M d, Y", strtotime($review['date'])); ?></p>
+                                                        <p style="color: #0A0E69"><?= date("M d, Y", strtotime($review['date'])); ?></p>
                                                     </div>
                                                 </div>
                                                 <!-- <p class="reviewservice">Business Visa On Arrival was approved in 2 month</p> -->

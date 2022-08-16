@@ -267,8 +267,8 @@
     color: #ffffff;
   }
   .laptopvideoh1 {
-    text-align: justify;
-    padding-left: 260px;
+    text-align: center;
+    padding-left: 0px;
 }
   .text {
     width: 249px;
@@ -1178,7 +1178,7 @@
 }
   .reviewname {
     font-family: Rubik;
-    color: #080C58;
+    color: #0A0E69;
     font-size: 16px;
     font-weight: 500;
   }
@@ -1188,7 +1188,7 @@
     font-size: 16px;
     font-weight: 500;
     margin-top: 21px;
-    color: #000000;
+    color: #0A0E69;
 
   }
 
@@ -1198,7 +1198,7 @@
     margin-top: 14px;
     font-size: 14px;
     font-weight: 400;
-    color: #000000
+    color: #0A0E69;
   }
 
   /*Payment*/
@@ -1883,7 +1883,7 @@
     margin-top: 23px;
     margin-left: 32px;
     width: 117px;
-    height: 43px;
+    height: 43px;     
     padding: 10px 23px;
   }
 
@@ -2578,7 +2578,7 @@
 
   .reviewname {
     font-family: Rubik;
-    color: #080C58;
+    color: #0A0E69;
     font-size: 16px;
     font-weight: 500;
   }
@@ -2588,7 +2588,7 @@
     font-size: 16px;
     font-weight: 500;
     margin-top: 21px;
-    color: #000000;
+    color: #0A0E69;
 
   }
 
@@ -2598,7 +2598,7 @@
     margin-top: 14px;
     font-size: 14px;
     font-weight: 400;
-    color: #000000
+    color: #0A0E69;
   }
 
   /*Payment*/
@@ -3992,7 +3992,7 @@
 
   .reviewname {
     font-family: Rubik;
-    color: #080C58;
+    color: #0A0E69;
     font-size: 16px;
     font-weight: 500;
   }
@@ -4002,7 +4002,7 @@
     font-size: 16px;
     font-weight: 500;
     margin-top: 21px;
-    color: #000000;
+    color: #0A0E69;
 
   }
 
@@ -4012,7 +4012,7 @@
     margin-top: 14px;
     font-size: 14px;
     font-weight: 400;
-    color: #000000
+    color: #0A0E69;
   }
 
   /*Payment*/
@@ -5350,7 +5350,7 @@
 
   .reviewname {
     font-family: Rubik;
-    color: #080C58;
+    color: #0A0E69;
     font-size: 16px;
     font-weight: 500;
   }
@@ -5360,7 +5360,7 @@
     font-size: 16px;
     font-weight: 500;
     margin-top: 21px;
-    color: #000000;
+    color: #0A0E69;
 
   }
 
@@ -5370,7 +5370,7 @@
     margin-top: 14px;
     font-size: 14px;
     font-weight: 400;
-    color: #000000
+    color: #0A0E69;
   }
 
   /*Payment*/
@@ -6693,7 +6693,7 @@
 
   .reviewname {
     font-family: Rubik;
-    color: #080C58;
+    color: #0A0E69;
     font-size: 16px;
     font-weight: 500;
   }
@@ -6703,7 +6703,7 @@
     font-size: 16px;
     font-weight: 500;
     margin-top: 21px;
-    color: #000000;
+    color: #0A0E69;
 
   }
 
@@ -6713,7 +6713,7 @@
     margin-top: 14px;
     font-size: 14px;
     font-weight: 400;
-    color: #000000
+    color: #0A0E69;
   }
 
   /*Payment*/

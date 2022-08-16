@@ -196,7 +196,7 @@ button:focus:not(:focus-visible) {
 .star-rating {
   line-height: 32px;
   font-size: 1.25em;
-  /* margin-left: 30px; */
+  margin-left: -15px;
   margin-bottom: 15px;
 }
 
@@ -1984,7 +1984,7 @@ p,a,h1,h2,h3,h4 {
 
   .reviewname {
     font-family: Rubik;
-    color: #080C58;
+    color: #0A0E69;
     font-size: 16px;
     font-weight: 500;
   }
@@ -1994,7 +1994,7 @@ p,a,h1,h2,h3,h4 {
     font-size: 16px;
     font-weight: 500;
     margin-top: 21px;
-    color: #000000;
+    color: #0A0E69;
 
   }
 
@@ -2004,7 +2004,7 @@ p,a,h1,h2,h3,h4 {
     margin-top: 14px;
     font-size: 14px;
     font-weight: 400;
-    color: #000000
+    color: #0A0E69
   }
 
   /*Payment*/
@@ -3402,7 +3402,7 @@ p,a,h1,h2,h3,h4 {
 
   .reviewname {
     font-family: Rubik;
-    color: #080C58;
+    color: #0A0E69;
     font-size: 16px;
     font-weight: 500;
   }
@@ -3412,7 +3412,7 @@ p,a,h1,h2,h3,h4 {
     font-size: 16px;
     font-weight: 500;
     margin-top: 21px;
-    color: #000000;
+  
 
   }
 
@@ -3422,7 +3422,7 @@ p,a,h1,h2,h3,h4 {
     margin-top: 14px;
     font-size: 14px;
     font-weight: 400;
-    color: #000000
+  
   }
 
   /*Payment*/
@@ -4772,21 +4772,6 @@ p,a,h1,h2,h3,h4 {
     margin-top: 45px
   }
 
-  .reviewname {
-    font-family: Rubik;
-    color: #080C58;
-    font-size: 16px;
-    font-weight: 500;
-  }
-
-  .reviewservice {
-    font-family: Ubuntu;
-    font-size: 16px;
-    font-weight: 500;
-    margin-top: 21px;
-    color: #000000;
-
-  }
 
   .reviewtext {
     font-family: Ubuntu;
@@ -4794,7 +4779,7 @@ p,a,h1,h2,h3,h4 {
     margin-top: 14px;
     font-size: 14px;
     font-weight: 400;
-    color: #000000
+    
   }
 
   /*Payment*/
@@ -6141,21 +6126,6 @@ p,a,h1,h2,h3,h4 {
     margin-top: 45px
   }
 
-  .reviewname {
-    font-family: Rubik;
-    color: #080C58;
-    font-size: 16px;
-    font-weight: 500;
-  }
-
-  .reviewservice {
-    font-family: Ubuntu;
-    font-size: 16px;
-    font-weight: 500;
-    margin-top: 21px;
-    color: #000000;
-
-  }
 
   .reviewtext {
     font-family: Ubuntu;
@@ -6163,7 +6133,7 @@ p,a,h1,h2,h3,h4 {
     margin-top: 14px;
     font-size: 14px;
     font-weight: 400;
-    color: #000000
+    
   }
 
   /*Payment*/
@@ -7519,30 +7489,7 @@ p,a,h1,h2,h3,h4 {
     margin-top: 45px
   }
 
-  .reviewname {
-    font-family: Rubik;
-    color: #080C58;
-    font-size: 16px;
-    font-weight: 500;
-  }
 
-  .reviewservice {
-    font-family: Ubuntu;
-    font-size: 16px;
-    font-weight: 500;
-    margin-top: 21px;
-    color: #000000;
-
-  }
-
-  .reviewtext {
-    font-family: Ubuntu;
-    width: 759px;
-    margin-top: 14px;
-    font-size: 14px;
-    font-weight: 400;
-    color: #000000
-  }
 
   /*Payment*/
   .paymentlogoimg {
@@ -8867,30 +8814,7 @@ p,a,h1,h2,h3,h4 {
     margin-top: 45px
   }
 
-  .reviewname {
-    font-family: Rubik;
-    color: #080C58;
-    font-size: 16px;
-    font-weight: 500;
-  }
 
-  .reviewservice {
-    font-family: Ubuntu;
-    font-size: 16px;
-    font-weight: 500;
-    margin-top: 21px;
-    color: #000000;
-
-  }
-
-  .reviewtext {
-    font-family: Ubuntu;
-    width: 759px;
-    margin-top: 14px;
-    font-size: 14px;
-    font-weight: 400;
-    color: #000000
-  }
 
   /*Payment*/
   .paymentlogoimg {
@@ -10261,30 +10185,7 @@ p,a,h1,h2,h3,h4 {
     margin-top: 45px
   }
 
-  .reviewname {
-    font-family: Rubik;
-    color: #080C58;
-    font-size: 16px;
-    font-weight: 500;
-  }
-
-  .reviewservice {
-    font-family: Ubuntu;
-    font-size: 16px;
-    font-weight: 500;
-    margin-top: 21px;
-    color: #000000;
-
-  }
-
-  .reviewtext {
-    font-family: Ubuntu;
-    width: 759px;
-    margin-top: 14px;
-    font-size: 14px;
-    font-weight: 400;
-    color: #000000
-  }
+ 
 
   /*Payment*/
   .paymentlogoimg {
@@ -11614,21 +11515,7 @@ p,a,h1,h2,h3,h4 {
     margin-top: 45px
   }
 
-  .reviewname {
-    font-family: Rubik;
-    color: #080C58;
-    font-size: 16px;
-    font-weight: 500;
-  }
 
-  .reviewservice {
-    font-family: Ubuntu;
-    font-size: 16px;
-    font-weight: 500;
-    margin-top: 21px;
-    color: #000000;
-
-  }
 
   .reviews {
     margin: 89px 85px 72px 280px;
@@ -11639,14 +11526,7 @@ p,a,h1,h2,h3,h4 {
     width: 160px;
   }
 
-  .reviewtext {
-    font-family: Ubuntu;
-    width: 759px;
-    margin-top: 14px;
-    font-size: 14px;
-    font-weight: 400;
-    color: #000000
-  }
+ 
 
   /*Payment*/
   .paymentlogoimg {
@@ -12734,34 +12614,12 @@ p,a,h1,h2,h3,h4 {
     margin-top: 45px
   }
 
-  .reviewname {
-    font-family: Rubik;
-    color: #080C58;
-    font-size: 16px;
-    font-weight: 500;
-  }
-
-  .reviewservice {
-    font-family: Ubuntu;
-    font-size: 16px;
-    font-weight: 500;
-    margin-top: 21px;
-    color: #000000;
-
-  }
 
   .reviews {
     margin: 89px 85px 72px 240px;
   }
 
-  .reviewtext {
-    font-family: Ubuntu;
-    width: 759px;
-    margin-top: 14px;
-    font-size: 14px;
-    font-weight: 400;
-    color: #000000
-  }
+
 
   /*Payment*/
   .paymentlogoimg {
@@ -14068,30 +13926,8 @@ p,a,h1,h2,h3,h4 {
     margin-top: 45px
   }
 
-  .reviewname {
-    font-family: Rubik;
-    color: #080C58;
-    font-size: 16px;
-    font-weight: 500;
-  }
 
-  .reviewservice {
-    font-family: Ubuntu;
-    font-size: 16px;
-    font-weight: 500;
-    margin-top: 21px;
-    color: #000000;
 
-  }
-
-  .reviewtext {
-    font-family: Ubuntu;
-    width: 759px;
-    margin-top: 14px;
-    font-size: 14px;
-    font-weight: 400;
-    color: #000000
-  }
 
   /*Payment*/
   .paymentlogoimg {

@@ -465,7 +465,7 @@ $uploads = new Upload($connect);
                     <div class="col-md-1"></div>
                   <?php endif;  ?>
                  
-                  <div class="col-md-2 mag">
+                  <div class="col-md-2">
                     <video src="./reviews/<?= $videoReview['file'] ?>" loop="" controls="" class="mobilevideo" style="width: 200px;height: 200px; "></video>
                   </div>
                   <?php $i++; ?>
