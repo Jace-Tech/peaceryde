@@ -474,7 +474,7 @@ $isUnread = $messages->get_user_unread_messages($USER_ID) ?? [];
         <!-- Sidebar -->
 
 
-        <div class="page-wrapper" id="main">
+        <div class="page-wrapper" id="main" style="background-color:white; display:block; height:100vh">
             <span style="font-size:30px;cursor:pointer" onclick="openNav()">
                 <svg width="19" height="15" viewBox="0 0 19 15" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-bottom: 10px;
                 margin-top: 50px;">
@@ -492,7 +492,7 @@ $isUnread = $messages->get_user_unread_messages($USER_ID) ?? [];
                                 font-size: 30px;
                                 font-style: normal;
                                 color:#0F1377;
-                                padding-top:20px;padding-left:51px font-weight:500;
+                                padding-top:20px;padding-left:51px; font-weight:500;
                                 ">My Documents</h3>
 
                             </div>
