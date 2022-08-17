@@ -46,7 +46,7 @@
 
     <section class=" new-section2__group layout2 aboutpageheight" style="background-color: #f8f6f6;">
       <div class="container new-section1__cover-block layout divcover">
-          <h1 class="whoweare">
+          <h1 class="whoweare" style="margin-top:150px">
               Who We Are
           </h1>
           <div class="row">
