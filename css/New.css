@@ -8629,7 +8629,7 @@
   .new-section6__hero-title1.layout {
     position: relative;
     margin-top: 94px;
-    margin-left: 940px;
+    margin-left: 840px;
   }
 }
 
@@ -8637,14 +8637,14 @@
   .new-section6__hero-title1.layout {
     position: relative;
     margin-top: 94px;
-    margin-left: 640px;
+    margin-left: 540px;
   }
 }
 
 @media(max-width: 1680px) {
   .new-section6__hero-title1.layout {
     position: relative;
-    margin: 94px 500px 0;
+    margin: 94px 400px 0;
   }
 }
 
@@ -8658,7 +8658,7 @@
 @media(max-width: 1536px) {
   .new-section6__hero-title1.layout {
     position: relative;
-    margin: 94px 425px 0px;
+    margin: 94px 325px 0px;
   }
 }
 
@@ -8672,14 +8672,14 @@
 @media(max-width: 1366px) {
   .new-section6__hero-title1.layout {
     position: relative;
-    margin: 94px 347px 0px;
+    margin: 94px 247px 0px;
   }
 }
 
 @media(max-width: 1280px) {
   .new-section6__hero-title1.layout {
     position: relative;
-    margin: 94px 305px 0px;
+    margin: 94px 205px 0px;
   }
 }
 

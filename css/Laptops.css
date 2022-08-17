@@ -584,9 +584,10 @@ button:focus:not(:focus-visible) {
         padding-top: 150px;
         font-style: normal;
         font-weight: normal;
-        font-size: 30px;
+        font-size: 35px;
         line-height: 41px;
         color: #060a5c;
+
 }
 .policy {
   margin-top: -2px;
