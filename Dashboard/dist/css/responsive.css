@@ -9,11 +9,17 @@
 }
 .trackh3
 {
+
+    font-weight: 500;
   font-family: Ubuntu;
   font-size: 30px;
   font-style: normal;
   color:#0F1377;
   padding-top:20px;padding-left:21px
+}
+.documentext
+{
+  font-weight: 500;
 }
 .logoutmobile
 {
@@ -220,7 +226,7 @@
   font-family: Rubik;
   font-size: 30px;
   font-style: normal;
-  color:#000000;
+  color:#0F1377;
   padding-top:0px;padding-left:51px;
 }
 .uploadtext
@@ -421,6 +427,7 @@
   .bankh3
   {
     font-family: Ubuntu;
+    font-weight: 500;
     font-size: 30px;
     font-style: normal;
     color:#0F1377;
@@ -548,6 +555,7 @@
         font-family: Ubuntu;
         font-size: 30px;
         font-style: normal;
+        font-weight: 500;
         color: #0F1377;
         padding-top: 20px;
         text-align: center;
@@ -817,7 +825,7 @@
   font-family: Rubik;
   font-size: 30px;
   font-style: normal;
-  color:#000000;
+  color:#0F1377;
   padding-top:0px;padding-left:51px;
 }
 .uploadtext
@@ -1032,6 +1040,7 @@
   .bankh3
   {
     font-family: Ubuntu;
+    font-weight: 500;
     font-size: 30px;
     font-style: normal;
     color: #0F1377;
@@ -1157,6 +1166,7 @@
       .profile{
           font-family: Ubuntu;
           font-size: 30px;
+          font-weight: 500;
           font-style: normal;
           color:#0F1377;
           padding-top:20px;padding-left:281px;
@@ -1478,6 +1488,7 @@
   .bankh3
   {
     font-family: Ubuntu;
+    font-weight: 500;
     font-size: 30px;
     font-style: normal;
     color: #0F1377;
@@ -1604,6 +1615,7 @@
         font-size: 30px;
         font-style: normal;
         color: #0F1377;
+        font-weight: 500;
         padding-top: 10px;
         padding-bottom: 20px;
         padding-left: 191px;
@@ -1749,7 +1761,7 @@
     font-family: Rubik;
     font-size: 30px;
     font-style: normal;
-    color:#000000;
+    color:#0F1377;
     padding-top:0px;padding-left:51px;
   }
   .uploadtext
@@ -2061,6 +2073,7 @@
   {
     font-family: Ubuntu;
     font-size: 30px;
+    font-weight: 500;
     font-style: normal;
     color: #0F1377;
     padding-top: 20px;
@@ -2186,6 +2199,7 @@
         font-family: Ubuntu;
         font-size: 30px;
         font-style: normal;
+        font-weight: 500;
         color: #0F1377;
         padding-top: 10px;
         padding-bottom: 20px;
@@ -2333,7 +2347,7 @@
     font-family: Rubik;
     font-size: 30px;
     font-style: normal;
-    color:#000000;
+    color:#0F1377;
     padding-top:0px;padding-left:51px;
   }
   .uploadtext
@@ -2668,6 +2682,7 @@
     font-family: Ubuntu;
     font-size: 30px;
     font-style: normal;
+    font-weight: 500;
     color: #0F1377;
     padding-top: 20px;
     text-align: center;                            
@@ -2791,6 +2806,7 @@
       .profile {
         font-family: Ubuntu;
         font-size: 30px;
+        font-weight: 500;
         font-style: normal;
         color: #0F1377;
         padding-top: 10px;
@@ -2940,7 +2956,7 @@
     font-family: Rubik;
     font-size: 30px;
     font-style: normal;
-    color:#000000;
+    color:#0F1377;
     padding-top:0px;padding-left:51px;
   }
   .uploadtext
@@ -3286,6 +3302,7 @@
     font-size: 30px;
     font-style: normal;
     color: #0F1377;
+    font-weight: 500;
     padding-top: 20px;
     text-align: center;                            
   }
@@ -3409,6 +3426,7 @@
         font-family: Ubuntu;
     font-size: 20px;
     font-style: normal;
+    font-weight: 500;
     color: #0F1377;
     padding-top: 10px;
     padding-bottom: 20px;
@@ -3559,7 +3577,7 @@
     font-family: Rubik;
     font-size: 30px;
     font-style: normal;
-    color:#000000;
+    color:#0F1377;
     padding-top:0px;padding-left:51px;
   }
   .uploadtext

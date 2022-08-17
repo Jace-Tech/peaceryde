@@ -13121,6 +13121,7 @@ p,a,h1,h2,h3,h4 {
   .laptopvideoh1 {
     text-align: justify;
     padding-left: 320px;
+    padding-top: 80px;
 }
 
   .shop {
@@ -13289,9 +13290,19 @@ p,a,h1,h2,h3,h4 {
 
   .reviews {
     width: 1020px;
-    margin: 72px 150px;
+    margin: 72px 150px 200px;
   }
-
+  .laptopvideoh1 {
+    text-align: center;
+    font-family: Rubik;
+    margin-left: -40%;
+    padding-top: 0px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 41px;
+    color: #060a5c;
+}
   .btn-review {
     margin: 11px 435px 70px;
     width: 160px;

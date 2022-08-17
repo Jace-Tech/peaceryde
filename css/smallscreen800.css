@@ -267,8 +267,8 @@
     color: #ffffff;
   }
   .laptopvideoh1 {
-    text-align: center;
-    padding-left: 0px;
+    text-align: left;
+    padding-left: 18%;
 }
   .text {
     width: 249px;
@@ -1935,6 +1935,17 @@
     width: 1550px;
     margin-left: 75px;
   }
+  .laptopvideoh1 {
+    text-align: center;
+    font-family: Rubik;
+    margin-left: -0%;
+    padding-top: 0px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 41px;
+    color: #060a5c;
+}
 
   .mt-5 {
     width: 250px;
@@ -3348,6 +3359,17 @@
     width: 1520px;
     margin-left: 50px;
   }
+  .laptopvideoh1 {
+    text-align: center;
+    font-family: Rubik;
+    margin-left: 0%;
+    padding-top: 0px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 41px;
+    color: #060a5c;
+}
 
   .mt-5 {
     width: 250px;
@@ -5744,7 +5766,7 @@
   }
 
   .get {
-    margin-left: 220px;
+    margin-left: 250px;
   }
 
   .successcard {
@@ -6081,7 +6103,8 @@
 
   .reviews {
     width: 1300px;
-    margin-left: 270px;
+    margin-left: 250px;
+    flex-direction:column;
   }
 
   .btn-review {
@@ -6089,6 +6112,8 @@
   }
 
   .mag {
+    width: 20%;
+    height: 350px;
     margin-bottom: 50px;
   }
 
@@ -7440,6 +7465,7 @@
   .reviews {
     width: 1020px;
     margin-left: 220px;
+    flex-direction:column;
   }
 
   .btn-review {
@@ -7447,6 +7473,8 @@
   }
 
   .mag {
+    width: 20%;
+    height: 350px;
     margin-bottom: 50px;
   }
 
@@ -7603,8 +7631,18 @@
   }
 
   .get {
-    margin: 10px 180px;
+    margin: 10px 200px;
   }
+  .laptopvideoh1 {
+    text-align: center;
+    font-family: Rubik;
+    padding-top: 0px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 41px;
+    color: #060a5c;
+}
 
   .customers {
     width: 480px;
@@ -8916,6 +8954,7 @@
   .reviews {
     width: 1020px;
     margin: 100px 210px 40px;
+    flex-direction:column;
   }
 
   .btn-review {
@@ -8923,6 +8962,8 @@
   }
 
   .mag {
+    width: 20%;
+    height: 350px;
     margin-bottom: 50px;
   }
 
@@ -8931,7 +8972,6 @@
     text-align: justify;
     color: #F1F5F6;
     margin-left: 80px;
-
   }
 
   .img2h4 {
@@ -9534,8 +9574,6 @@
     width: 359px;
     margin-top: 14px;
     font-size: 14px;
-
-
   }
 
   /*Payment*/

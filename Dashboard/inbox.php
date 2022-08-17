@@ -144,7 +144,7 @@ $messagers = getUserMessagers($connect, $USER_ID);
             <main class="content">
                 <div class="container-fluid p-0">
 
-                    <h1 class="h3 mb-3">Messages</h1>
+                    <h1 class="h3 mb-3" style="font-family: Ubuntu;font-size: 30px;font-style: normal;color: #0F1377;font-weight: 500;">Messages</h1>
 
                     <div class="card">
                         <div class="row g-0">

@@ -492,7 +492,7 @@ $isUnread = $messages->get_user_unread_messages($USER_ID) ?? [];
                                 font-size: 30px;
                                 font-style: normal;
                                 color:#0F1377;
-                                padding-top:20px;padding-left:51px
+                                padding-top:20px;padding-left:51px font-weight:500;
                                 ">My Documents</h3>
 
                             </div>
