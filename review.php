@@ -84,7 +84,7 @@ $REVIEW = new Review($connect);
             <section class=" new-section2__group layout2 reviewheight" style="background-color: #f8f6f6;">
                 <div class="new-section1__cover-block layout signinpage">
                     <!-- <h2 class="reviewh2">Review </h2> -->
-                    <h1 class="whoweare">
+                    <h1 class="whoweare" style="margin-top:150px">
                     Reviews
                     </h1>
 
