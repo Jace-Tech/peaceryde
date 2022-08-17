@@ -2,9 +2,11 @@
 .dropdown:hover .dropdown-menu {
   display: block;
 }
+
 .vid{
   margin-left: 10%;
 }
+
 .mt10
 {
   margin-top:10px;
@@ -13,16 +15,18 @@
 .body {
   overflow-x: hidden;
 }
+
 .paybtn
 {
   width:200px;
   height: 200px;
 }
+
 .movements {
   margin-left: 16%;
   justify-content: center;
-
 }
+
 .new-section2__group.layout2 {
   position: relative;
  

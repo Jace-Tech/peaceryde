@@ -457,7 +457,7 @@ $uploads = new Upload($connect);
                 Customer's video reviews
               </h1>
               <div class="row reviews mt-99 laptopvideo" >
-                <div class="vid">
+               
                   <?php $i = 0; ?>
                   <?php foreach ($reviews->getAllFeaturedReviews("video") as $videoReview) : ?>
 
@@ -472,7 +472,7 @@ $uploads = new Upload($connect);
                     </div>
                     <?php $i++; ?>
                   <?php endforeach; ?>
-                </div>
+                
               </div>
 
               
