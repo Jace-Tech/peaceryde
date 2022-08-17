@@ -1,5 +1,9 @@
+
 .dropdown:hover .dropdown-menu {
   display: block;
+}
+.vid{
+  margin-left: 10%;
 }
 .mt10
 {

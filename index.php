@@ -409,6 +409,7 @@ $uploads = new Upload($connect);
           What customers say about us
           </h1>
           <div class="row reviews mt-99">
+           
             <div class="col-md-2 hide"></div>
             <?php  ?>
             <?php foreach ($reviews->getAllFeaturedReviews("text") as $review) : ?>
@@ -455,21 +456,23 @@ $uploads = new Upload($connect);
               <h1 class="laptopvideo laptopvideoh1">
                 Customer's video reviews
               </h1>
-              <div class="row reviews mt-99 laptopvideo">
-                <?php $i = 0; ?>
-                <?php foreach ($reviews->getAllFeaturedReviews("video") as $videoReview) : ?>
+              <div class="row reviews mt-99 laptopvideo" >
+                <div class="vid">
+                  <?php $i = 0; ?>
+                  <?php foreach ($reviews->getAllFeaturedReviews("video") as $videoReview) : ?>
 
-                  <?php if ($i == 0) :  ?>
-                    <div class="col-md-2 hide"></div>
-                  <?php else : ?>
-                    <div class="col-md-1"></div>
-                  <?php endif;  ?>
-                 
-                  <div class="col-md-2">
-                    <video src="./reviews/<?= $videoReview['file'] ?>" loop="" controls="" class="mobilevideo" style="width: 200px;height: 200px; "></video>
-                  </div>
-                  <?php $i++; ?>
-                <?php endforeach; ?>
+                    <?php if ($i == 0) :  ?>
+                      <div class="col-md-2 hide"></div>
+                    <?php else : ?>
+                      <div class="col-md-1"></div>
+                    <?php endif;  ?>
+                  
+                    <div class="col-md-2">
+                      <video src="./reviews/<?= $videoReview['file'] ?>" loop="" controls="" class="mobilevideo" style="width: 200px;height: 200px; "></video>
+                    </div>
+                    <?php $i++; ?>
+                  <?php endforeach; ?>
+                </div>
               </div>
 
               
