@@ -56,7 +56,7 @@
                     </h2>
                     <p class="everythingtext">
                         Everything you need to know
-                        about your Visa
+                        about PeaceRyde Africa LLC
                     </p>
                 </div>
                 <div>

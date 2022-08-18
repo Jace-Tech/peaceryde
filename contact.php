@@ -65,7 +65,7 @@
                     <p style="padding-top: 21px;">phone: <a href="" style="font-size: 18px; color: #080C58; ">+234 (903) 795 5511</a>
                     </p>
                     <br>
-                    <h2 style="font-size: 20px; color: #080C58; font-weight: 500; padding-top: 34px;">e-Mail Address</h2>
+                    <h2 style="font-size: 20px; color: #080C58; font-weight: 500; padding-top: 34px;">E-Mail Address</h2>
                     <p style="font-size: 18px; color: #080C58; padding-top: 21px;">info@peacerydeafrica.com</p>
 
                 </div>
@@ -88,7 +88,12 @@
                             <br>
                             <label style="font-size: 18px;">Please Enter Your Message</label>
                             <br>
-                            <input type="text" class="form-control" style="border-top:transparent;border-left: transparent;border-right: transparent; border-bottom:1px solid #000000;margin-top: -10px;">
+                            <input type="text" class="form-control" style="    border-top: 1px solid #000000;
+    border-left: 1px solid #000000;
+    border-right: 1px solid #000000;
+    height: 150px;
+    border-bottom: 1px solid #000000;
+    margin-top: 20px;">
                             <br>
                             <br>
                             <button class="btn btn-primary" style="width: 100%; border-radius: 10px; margin-top: 30px; height: 50px;font-size: 18px;">

@@ -184,7 +184,7 @@ $messagers = getUserMessagers($connect, $USER_ID);
                                         </a>
                                     <?php endforeach; ?>
                                 <?php else : ?>
-                                    <p class="text-muted text-sm">No messager found</p>
+                                    <p class="text-muted text-sm">No messages found</p>
                                 <?php endif; ?>
 
                                 <hr class="d-block d-lg-none mt-1 mb-0">
