@@ -153,7 +153,7 @@
                         <div class="col-md-4 col-lg-3 col-xl-3">
                             <div class="form-group">
                                 <label class="form-label">Date of Birth</label>
-                                <input type="date" id="datepicker" name="dob" class="form-control dob" placeholder="Date of birth">
+                                <input type="text" id="datepicker" name="dob" class="form-control dob" placeholder="dd/mm/yyyy">
                             </div>
                         </div>
 

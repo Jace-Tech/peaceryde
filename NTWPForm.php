@@ -132,7 +132,7 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
                       <div class="form-group">
                         <label class="form-label">Date of Birth</label>
                         <div class="input-group mb-3 biwidth">
-                          <input type="date" required name="dob" id="datepicker" class="form-control firstname" placeholder="dd/mm/yyyy">
+                          <input type="text" required name="dob" id="datepicker" class="form-control firstname" placeholder="dd/mm/yyyy">
                         </div>
                       </div>
                     </div>
