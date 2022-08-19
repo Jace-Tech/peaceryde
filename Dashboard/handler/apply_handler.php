@@ -39,22 +39,22 @@ if(isset($_POST['apply'])) {
         ];
 
         $_SESSION['ALERT'] = json_encode($alert);
-        header("Location: ../index.php");
+        header("Location: ../index");
     }
     else {
         $_SESSION['APPLY_FORM_DATA'] = json_encode($POST);
 
         switch ($POST['service']) {
             case "srvs-001":
-                header("Location: ../NTWPDASHFORM.php");
+                header("Location: ../NTWPDASHFORM");
                 break;
                 
             case "srvs-002":
-                header("Location: ../NBVADASHFORM.php");
+                header("Location: ../NBVADASHFORM");
                 break;
 
             case "srvs-003":
-                header("Location: ../NBIDASHFORM.php");
+                header("Location: ../NBIDASHFORM");
                 break;
         }
     }

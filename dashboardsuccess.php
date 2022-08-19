@@ -99,9 +99,9 @@
                         </div>
                         <div class="successbutton">
                             <?php if(isset($_SESSION['LOGGED_USER'])): ?>
-                                <a href="./Dashboard/index.php" class="btn proceed">Return to Account</a>
+                                <a href="./Dashboard/" class="btn proceed">Return to Account</a>
                             <?php else: ?>
-                                <a href="signin.php" class="btn proceed">Login</a>
+                                <a href="signin" class="btn proceed">Login</a>
                             <?php endif; ?>
                         </div>
                     </div>

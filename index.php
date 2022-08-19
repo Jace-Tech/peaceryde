@@ -106,7 +106,7 @@ $uploads = new Upload($connect);
             Made easy, fast and convenient!
           </h2>
           <div class="new-section1__block11 layout applys">
-            <a href="SBForm.php" class="btn applybtn">Apply NOW</a>
+            <a href="./SBForm" class="btn applybtn">Apply NOW</a>
 
             <!-- <h5 class="new-section1__highlights1 layout">Apply NOW</h5> -->
           </div>
@@ -139,7 +139,7 @@ $uploads = new Upload($connect);
                   <pre class="new-section2__paragraph-body1">Business VOA is required for persons of legal age intending to come to Nigeria for business, meeting, conference etc. The Business VOA immigration approval is needed for visa issuance in Nigeria.</pre>
                 </div>
                 <div class="new-section2__block13a layout">
-                  <a href="NBVForm.php" class="btn" style="font-family: Ubuntu;
+                  <a href="./NBVForm" class="btn" style="font-family: Ubuntu;
                   font-style: normal;
                   font-weight: normal;
                   font-size: 14px;
@@ -167,7 +167,7 @@ $uploads = new Upload($connect);
                   <pre class="new-section2__paragraph-body1">TWP is required for persons of legal age intending to work in Nigeria. The TWP immigration approval is a prerequisite for issuance of a TWP visa in a Nigerian embassy abroad.</pre>
                 </div>
                 <div class="new-section2__block13 layout">
-                  <a href="NTWPForm.php" class="btn" style="font-family: Ubuntu;
+                  <a href="./NTWPForm" class="btn" style="font-family: Ubuntu;
                   font-style: normal;
                   font-weight: normal;
                   font-size: 14px;
@@ -195,7 +195,7 @@ $uploads = new Upload($connect);
                   <pre class="new-section2__paragraph-body1">This is applicable to anyone of legal age intending to register a business in Nigeria.</pre>
                 </div>
                 <div class="new-section2__block13b layout">
-                  <a href="BIForm.php" class="btn" style="font-family: Ubuntu;
+                  <a href="./BIForm" class="btn" style="font-family: Ubuntu;
                   font-style: normal;
                   font-weight: normal;
                   font-size: 14px;
@@ -477,7 +477,7 @@ $uploads = new Upload($connect);
 
               
             
-            <a href="./review.php" class="btn btn-review" style="border: 1px solid #a0bd1c;  background-color: transparent; color: #a0bd1c;">See More
+            <a href="./review" class="btn btn-review" style="border: 1px solid #a0bd1c;  background-color: transparent; color: #a0bd1c;">See More
               Reviews
             </a>
         </div>

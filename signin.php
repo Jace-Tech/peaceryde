@@ -81,7 +81,7 @@
 
             </form>
           </div>
-          <p><a href="forgotpass.php" class="forgot">Forgot your password ?</a></p>
+          <p><a href="./forgotpass" class="forgot">Forgot your password ?</a></p>
         </div>
 
       </div>

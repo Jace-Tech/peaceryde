@@ -20,7 +20,7 @@ if(isset($_POST['upload'])) {
     // Check if there's eror uploading file
     if($file["error"][0]) {
         setUserAlert("Error uploading file", "error");
-        header("Location: ./upload.php");
+        header("Location: ./upload");
         exit();
     }
 
@@ -44,7 +44,7 @@ if(isset($_POST['upload'])) {
 
     if(!$uploaded) {
         setUserAlert("Error uploading file", "error");
-        header("Location: ./upload.php");
+        header("Location: ./upload");
         exit();
     }
 
@@ -79,10 +79,10 @@ if(isset($_POST['upload'])) {
 
             setAdminNotification($connect, "./user-details.php?user=$id", json_encode($notices), "<strong>$firstname $lastname</strong> just uploaded a new file");
             setUserAlert("File upload success", "success");
-            header("Location: ../upload.php");
+            header("Location: ../upload");
         }
     } catch (PDOException $e) {
         setUserAlert("Upload failed", "error");
-        header("Location: ../upload.php");
+        header("Location: ../upload");
     }
 }

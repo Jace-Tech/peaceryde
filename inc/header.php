@@ -147,17 +147,17 @@
         <div class="collapse navbar-collapse" id="collapsibleNavbar">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link nav link home" href="index.php">Home</a>
+              <a class="nav-link nav link home" href="/">Home</a>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link link services" href="SBForm.php"> Services</a>
+              <a class="nav-link link services" href="SBForm"> Services</a>
             </li>
             <li class=" nav-item">
-              <a class="nav-link link home" href="leaders.php">Leadership</a>
+              <a class="nav-link link home" href="leaders">Leadership</a>
             </li>
 
             <li class=" nav-item">
-              <a class="nav-link link contact" href="about.php">About Us</a>
+              <a class="nav-link link contact" href="about">About Us</a>
             </li>
             
         

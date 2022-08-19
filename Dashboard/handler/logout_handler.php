@@ -4,7 +4,7 @@ session_start();
 
 if(isset($_POST["logout"])) {
     session_destroy();
-    header("Location: ../../signin.php");
+    header("Location: ../../signin");
 }else{
-    header("Location: ../index.php");
+    header("Location: ../index");
 }

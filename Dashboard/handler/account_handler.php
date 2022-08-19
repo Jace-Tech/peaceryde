@@ -37,7 +37,7 @@ if(isset($_POST['update'])) {
     
         if(!$uploaded) {
             setUserAlert("Error uploading file", "error");
-            header("Location: ./upload.php");
+            header("Location: ./upload");
             exit();
         }
 
@@ -91,11 +91,11 @@ if(isset($_POST['update'])) {
         
                             if($result) {
                                 setUserAlert("Profile updated successfully", 'success');
-                                header("Location: ../account.php");
+                                header("Location: ../account");
                             }
                             else {
                                 setUserAlert("Profile failed to update", "error");
-                                header("Location: ../upload.php");
+                                header("Location: ../upload");
                             }
         
                         }
@@ -144,18 +144,18 @@ if(isset($_POST['update'])) {
 
                     if($result) {
                         setUserAlert("Profile updated successfully", 'success');
-                        header("Location: ../account.php");
+                        header("Location: ../account");
                     }
                     else {
                         setUserAlert("Profile failed to update", "error");
-                        header("Location: ../upload.php");
+                        header("Location: ../upload");
                     }
 
                 }
             }
         } catch (PDOException $e) {
             setUserAlert("Profile failed to update", "error");
-            header("Location: ../upload.php");
+            header("Location: ../upload");
         }
         exit();
     }
@@ -187,16 +187,16 @@ if(isset($_POST['update'])) {
 
             if($result) {
                 setUserAlert("Profile updated successfully", 'success');
-                header("Location: ../account.php");
+                header("Location: ../account");
             }
             else {
                 setUserAlert("Profile failed to update", "error");
-                header("Location: ../upload.php");
+                header("Location: ../upload");
             }
 
         }
     } catch (PDOException $e) {
         setUserAlert("Profile failed to update", "error");
-        header("Location: ../upload.php");
+        header("Location: ../upload");
     }
 }
