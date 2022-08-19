@@ -74,21 +74,21 @@
                         <h2 style="padding-top:53px; font-size: 20px; text-align: center; color: #000000; font-weight: 500;">
                             Contact Us Form
                         </h2>
-                        <form class="contactform">
+                        <form class="contactform" action="./handlers/contact_handler.php">
                             <label style="font-size: 18px;">Name</label>
                             <br>
-                            <input type="text" class="form-control" style="border-top:transparent;border-left: transparent;border-right: transparent; border-bottom:1px solid #000000;margin-top: -10px;">
+                            <input required name="name" type="text" class="form-control" style="border-top:transparent;border-left: transparent;border-right: transparent; border-bottom:1px solid #000000;margin-top: -10px;">
                             <br>
                             <label style="font-size: 18px;">Phone Number</label>
-                            <input type="text" class="form-control" style="border-top:transparent;border-left: transparent;border-right: transparent; border-bottom:1px solid #000000; margin-top: -10px;">
+                            <input required name="phone" type="text" class="form-control" style="border-top:transparent;border-left: transparent;border-right: transparent; border-bottom:1px solid #000000; margin-top: -10px;">
                             <br>
                             <label style="font-size: 18px;">Email Address</label>
                             <br>
-                            <input type="text" class="form-control" style="border-top:transparent;border-left: transparent;border-right: transparent; border-bottom:1px solid #000000;margin-top: -10px;">
+                            <input required name="email" type="text" class="form-control" style="border-top:transparent;border-left: transparent;border-right: transparent; border-bottom:1px solid #000000;margin-top: -10px;">
                             <br>
                             <label style="font-size: 18px;">Please Enter Your Message</label>
                             <br>
-                            <input type="text" class="form-control" style="    border-top: 1px solid #000000;
+                            <input required name="message" type="text" class="form-control" style=" border-top: 1px solid #000000;
     border-left: 1px solid #000000;
     border-right: 1px solid #000000;
     height: 150px;
@@ -96,7 +96,7 @@
     margin-top: 20px;">
                             <br>
                             <br>
-                            <button class="btn btn-primary" style="width: 100%; border-radius: 10px; margin-top: 30px; height: 50px;font-size: 18px;">
+                            <button name="contact" class="btn btn-primary" style="width: 100%; border-radius: 10px; margin-top: 30px; height: 50px;font-size: 18px;">
                                 Submit
                             </button>
                         </form>
