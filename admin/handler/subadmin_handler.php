@@ -46,7 +46,7 @@ if(isset($_POST['addAdmin'])){
             $message .= "<p>You've been successfully added as a sub admin at Peacerydeafrica </p>";
             $message .= "<p>Your default password is $password </p>";
     
-            sendMail($subject, $message, "billing@peacerydeafrica.com", $email);
+            sendMail($subject, $message, "noreply@peacerydeafrica.com", $email);
             header('Location: ../subadmins.php');
         }
     }

@@ -30,7 +30,29 @@
     <!-- Custom CSS -->
     <link href="./dist/css/style.min.css" rel="stylesheet">
     <link href="./dist/css/responsive.css" rel="stylesheet">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            const MIN_AGE = 18
+            const offset = +(new Date().getFullYear()) - MIN_AGE
+            $( ".datepicker" ).datepicker({
+                changeMonth: true,
+                changeYear: true,
+                yearRange: `${1950 + (MIN_AGE / 2)}:${offset}`,
+                defaultDate: new Date(),
+                showAnim: "blind"
+            });
+        });
+    </script>
     <style>
+        .error {
+            border-color: red;
+        }
+
         .left-sidebar a:hover {
             color: #f1f1f1;
         }
@@ -88,14 +110,14 @@
                 <p class="fill">Fill the Form Below</p>   
                 <p class="personal">Your personal details</p>                                          
             </div>
-            <form class="formml" method="post" action="../handlers/form_handler.php">
+            <form class="formml" data-form method="post" action="../handlers/form_handler.php">
                 <div class="form-body">
                     <div class="row" style="margin-top: 25px;">
                         <div class="col-md-5 col-lg-4 col-xl-3">
                             <div class="form-group">
                                 <label class="form-label">First Name</label>
                                 <div class="input-group mb-3 biwidth">
-                                <input required name="firstname" type="text" value="<?= $FORM_APPLY['firstname'] ?? ""; ?>" class="form-control dob" placeholder="First Name">
+                                <input required name="firstname" type="text" data-length value="<?= $FORM_APPLY['firstname'] ?? ""; ?>" class="form-control dob" placeholder="First Name">
                                 </div>
                             </div>
                         </div>
@@ -103,7 +125,7 @@
                         <div class="col-md-5 col-lg-4 col-xl-3">
                             <div class="form-group">
                                 <label class="form-label">Last Name</label>
-                                <input required name="lastname" value="<?= $FORM_APPLY['lastname'] ?? ""; ?>" type="text" class="form-control dob" placeholder="Last Name">
+                                <input required name="lastname" data-length value="<?= $FORM_APPLY['lastname'] ?? ""; ?>" type="text" class="form-control dob" placeholder="Last Name">
                             </div>
                         </div>
                         
@@ -340,7 +362,7 @@
                                                 <option data-countryCode="ZW" value="263">Zimbabwe (+263)</option>
                                               </optgroup>
                                         </select>
-                                        <input required name="phone" type="text" class="form-control mobileno2" placeholder="Mobile Number">
+                                        <input required name="phone" data-length type="tel" class="form-control mobileno2" placeholder="Mobile Number">
                                     </div>
                                    
                                 </div>
@@ -354,13 +376,13 @@
                         <div class="col-md-5 col-lg-4 col-xl-3">
                             <div class="form-group">
                                 <label class="form-label">Company Name</label>
-                                <input name="companyName" required type="text" name="" class="form-control firstname" placeholder="Company Name">
+                                <input name="companyName" data-length required type="text" name="" class="form-control firstname" placeholder="Company Name">
                             </div>
                         </div>
                         <div class="col-md-5 col-lg-4 col-xl-3">
                             <div class="form-group">
                                 <label class="form-label">No of Shares</label>
-                                <input name="shares" required type="text" class="form-control middlename" placeholder="No of shares">
+                                <input name="shares" required type="number" class="form-control middlename" placeholder="No of shares">
                             </div>
                         </div>
                         
@@ -375,31 +397,6 @@
                         </div>
                         
                     </div>
-
-                    <!-- <div class="row" style="margin-top: 25px;">
-                        <div class="col-md-5 col-lg-4 col-xl-3">
-                            <div class="form-group">
-                                <label class="form-label">Website</label>
-                                <input name="website" type="text" class="form-control dob" placeholder="Website">
-                            </div>
-                        </div>
-                        
-                        <div class="col-md-5 col-lg-4 col-xl-3">
-                            <div class="form-group">
-                                <label class="form-label">No of Employees </label>
-                                <input name="employeeNo" type="text" class="form-control dob" placeholder="No of Employees">
-                            </div>
-                        </div>
-                        
-                    </div> -->
-                    <!-- <p style="font-family: Ubuntu;font-size: 14px;font-style: normal;font-weight: 400; padding-top:27px;
-                    ">Message</p>
-                    <div class="row">
-                        <div class="col-md-8 col-lg-6 col-xl-4">
-                            <textarea name="message" style="width: 100%;margin-top:21; height: 150px;margin-bottom: 65px; border: 1px solid #555555;"></textarea>
-                        </div>
-                    </div> -->
-                    
                 </div>
                 <div class="divbtn">
                     <button type="submit" name="bi" class="btn btnproceed">Proceed to Payment</button>
@@ -411,6 +408,54 @@
         </div>
 
     </div>
+
+    <script>
+        const formElement = document.querySelector('[data-form]')
+        const inputElements = document.querySelectorAll('[data-length]')
+
+        inputElements.forEach((element) => {
+            element.addEventListener('keydown', () => {
+                const value = element.value
+                if (value.trim().length > 2) {
+                    if (element.classList.contains('error')) {
+                        element.classList.remove('error')
+                    }
+                }
+            })
+
+            element.addEventListener("blur", () => {
+                const value = element.value
+                if (value.trim().length < 3) {
+                    element.classList.add('error')
+                }
+                else {
+                    if (element.classList.contains('error')) {
+                        element.classList.remove('error')
+                    }
+                }
+            })
+        })
+
+
+        formElement.addEventListener('submit', (e) => {
+            e.preventDefault();
+
+            const inputElements = document.querySelectorAll('[data-length]')
+            inputElements.forEach(inputElement => {
+                const elementValue = inputElement.value
+
+                if (elementValue.trim().length < 3) {
+                elementValue.classList.add("error");
+                inputElement.scrollIntoView({
+                    behavior: "smooth"
+                })
+                return
+                }
+            })
+
+            formElement.submit()
+        })
+    </script>
     <script>
         console.clear();
         const storedUser = localStorage.getItem("USER_REG");

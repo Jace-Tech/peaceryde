@@ -347,8 +347,8 @@ function sendMail ($subject, $_message, $from, $to, $fullHTML = false)
     $headers .= 'Content-type: text/html; charset=UTF-8' . "\r\n";
     
     // Create email headers
-    $headers .= "From: PeaceRydeAfrica<billing@peacerydeafrica.com>\r\n";
-    $headers .= "Reply-to: billing@peacerydeafrica.com\r\n";
+    $headers .= "From: PeaceRyde Africa LLC<$from>\r\n";
+    $headers .= "Reply-to: $from\r\n";
 
     
     if(!$fullHTML) {
@@ -367,7 +367,7 @@ function sendMail ($subject, $_message, $from, $to, $fullHTML = false)
 
     
     // Sending email
-    return mail($to, $subject, $message, $headers, "-fbilling@peacerydeafrica.com");
+    return mail($to, $subject, $message, $headers, "-f$from");
 }
 
 
@@ -383,6 +383,7 @@ function setAdminAlert ($message, $type) {
 function sendNBVReceipt ($price, $name, $subject, $to, $from) {
     $PRICE = array_map("roundUp", $price);
     extract($PRICE);
+    $year = date("Y");
 
     $message = "<!DOCTYPE html>
     <html lang='en' xmlns='http://www.w3.org/1999/xhtml' xmlns:v='urn:schemas-microsoft-com:vml'
@@ -793,7 +794,7 @@ function sendNBVReceipt ($price, $name, $subject, $to, $from) {
                         style='margin: auto;'>
                         <tr>
                             <td class='bg_white' style='text-align: center;'>
-                                <p>Copyright &copy; Peacerydeafrica @2022 </p>
+                                <p> PeaceRyde Africa LLC © $year </p>
                             </td>
                         </tr>
                     </table>
@@ -809,6 +810,7 @@ function sendNBVReceipt ($price, $name, $subject, $to, $from) {
 function sendTWPReceipt ($price, $name, $subject, $to, $from) {
     $PRICE = array_map("roundUp", $price);
     extract($PRICE);
+    $year = date("Y");
 
     $message = "<!DOCTYPE html>
     <html lang='en' xmlns='http://www.w3.org/1999/xhtml' xmlns:v='urn:schemas-microsoft-com:vml'
@@ -1194,7 +1196,7 @@ function sendTWPReceipt ($price, $name, $subject, $to, $from) {
                         style='margin: auto;'>
                         <tr>
                             <td class='bg_white' style='text-align: center;'>
-                                <p>Copyright &copy; Peacerydeafrica @2022 </p>
+                                <p> PeaceRyde Africa LLC © $year </p>
                             </td>
                         </tr>
                     </table>
@@ -1240,6 +1242,7 @@ function uploadFile ($des, $file) {
 function sendBIReceipt ($_price, $name, $subject, $to, $from) {
     $PRICE = array_map("roundUp", $_price);
     extract($PRICE);
+    $year = date("Y");
 
     $message = "<!DOCTYPE html>
     <html lang='en' xmlns='http://www.w3.org/1999/xhtml' xmlns:v='urn:schemas-microsoft-com:vml'
@@ -1625,7 +1628,7 @@ function sendBIReceipt ($_price, $name, $subject, $to, $from) {
                         style='margin: auto;'>
                         <tr>
                             <td class='bg_white' style='text-align: center;'>
-                                <p>Copyright &copy; Peacerydeafrica @2022 </p>
+                                <p> PeaceRyde Africa LLC © $year </p>
                             </td>
                         </tr>
                     </table>

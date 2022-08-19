@@ -49,7 +49,7 @@ if(isset($_POST['twp'])) {
         $admin = getSubAdmin($connect, "MAIN_ADMIN");
 
         setAdminNotification($connect, "./user-details.php?user=" . $result['userId'], json_encode(["MAIN_ADMIN"]), "A new user was added, click to view"); 
-        sendMail("New User", "<p>A new user <strong>$firstname</strong> was added</p>", "billing@peacerydeafrica.com", $admin['email'], true);
+        sendMail("New User", "<p>A new user <strong>$firstname</strong> was added</p>", "noreply@peacerydeafrica.com", $admin['email'], true);
     }
 
     // Get TWP Calculations
@@ -99,7 +99,7 @@ if(isset($_POST['nbv'])) {
         $admin = getSubAdmin($connect, "MAIN_ADMIN");
 
         setAdminNotification($connect, "./user-details.php?user=" . $result['userId'], json_encode(["MAIN_ADMIN"]), "A new user was added, click to view"); 
-        sendMail("New User", "<p>A new user <strong>$firstname</strong> was added</p>", "billing@peacerydeafrica.com", $admin['email'], true);
+        sendMail("New User", "<p>A new user <strong>$firstname</strong> was added</p>", "noreply@peacerydeafrica.com", $admin['email'], true);
     }
     
     // Get TWP Calculations
@@ -163,7 +163,7 @@ if(isset($_POST['bi'])) {
         $admin = getSubAdmin($connect, "MAIN_ADMIN");
 
         setAdminNotification($connect, "./user-details.php?user=" . $result['userId'], json_encode(["MAIN_ADMIN"]), "A new user was added, click to view"); 
-        sendMail("New User", "<p>A new user <strong>$firstname</strong> was added</p>", "billing@peacerydeafrica.com", $admin['email'], true);
+        sendMail("New User", "<p>A new user <strong>$firstname</strong> was added</p>", "noreply@peacerydeafrica.com", $admin['email'], true);
 
         $bis->addBI($bi_options);
     }

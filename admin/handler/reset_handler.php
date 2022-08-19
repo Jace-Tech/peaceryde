@@ -28,7 +28,7 @@ if(isset($_POST['reset'])) {
             $message = "<p>Hi $name</p>";
             $message .= "<p>Your reset pin is <strong>$pin</strong></p>";
 
-            sendMail($subject, $message, "billing@peacerydeafrica.com", $email);
+            sendMail($subject, $message, "noreply@peacerydeafrica.com", $email);
 
             // Generate a file
             $file_handler = fopen("pin.txt", "a+");

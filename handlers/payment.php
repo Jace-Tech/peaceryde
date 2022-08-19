@@ -8,6 +8,7 @@ include("../models/User.php");
 include("../models/Card.php");
 include("../models/UserLogin.php");
 include("../models/Payment.php");
+include("../models/Message.php");
 include("../models/UserService.php");
 include ("../payment/Paystack.php");
 include("../functions/index.php");
@@ -18,6 +19,7 @@ $userServices = new UserService($connect);
 $cards = new Card($connect);
 $userLogins = new UserLogin($connect);
 $payments = new Payment($connect);
+$messages = new Message($connect);
 
 $paystackPayment = new PaystackPayment("sk_test_93c9b32d64e89a668f17a1f7a2376a35aaaaeff1");
 $id = $_SESSION['REG_NO'];
@@ -114,7 +116,7 @@ if(isset($_GET["reference"])) {
         // Update Payments table
         $payments->updatePayment($ref, "success");
 
-        $from = "billing@peacerydeafrica.com";
+        $from = "noreply@peacerydeafrica.com";
         $to = $user['email'];
 
         if(!isset($_SESSION['LOGGED_USER'])) {
@@ -147,12 +149,24 @@ if(isset($_GET["reference"])) {
             $message .= "<p>Here's your login information </p>";
             $message .= "<p> Username / Email : <b>" . $user['email'] . "</b> <br /> Password: <b>$password</b></p>";
 
-            $from = "billing@peacerydeafrica.com";
+            $from = "noreply@peacerydeafrica.com";
             $to = $user['email'];
 
             // Send Login Details
             sendMail($subject, $message, $from, $to);
+            
+            // Send message to user
+            $USERS_ADMINS = fetchUsersSubAdmins($connect, $_SESSION['REG_NO']);
+            $SENDERS = ["MAIN_ADMIN"];
+            $_message = "Welcome to PeaceRyde Africa. Please feel free to reach out to us if you need anything as it pertains to the service you paid for. Thank you";
 
+            foreach ($USERS_ADMINS as $_admin) {
+                array_push($SENDERS, $_admin['admin_id']);
+            }
+
+            foreach ($SENDERS as $sender) {
+                $messages->send_message($_SESSION['REG_NO'], $sender, $_message);
+            }
         }
 
         // Send Reciept

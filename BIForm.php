@@ -38,6 +38,24 @@
     <script type="text/javascript" src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script type="text/javascript" src="https://unpkg.com/headroom.js@0.12.0/dist/headroom.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/px2code/posize/build/v1.00.3.js"></script>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+
+    <script>
+      $(document).ready(function(){
+          const MIN_AGE = 18
+          const offset = +(new Date().getFullYear()) - MIN_AGE
+          $( ".datepicker" ).datepicker({
+              changeMonth: true,
+              changeYear: true,
+              yearRange: `${1950 + (MIN_AGE / 2)}:${offset}`,
+              defaultDate: new Date(),
+              showAnim: "blind"
+          });
+      });
+    </script>
     
 </head>
 
@@ -69,7 +87,7 @@
                                       <div class="form-group">    
                                         <label class="form-label">First Name</label> 
                                         <div class="input-group mb-3 biwidth">                            
-                                          <input type="text" name="firstname" value="<?= $FORM_APPY['firstname'] ?? "" ?>" class="form-control firstname2" placeholder="First Name" >
+                                          <input type="text" data-length name="firstname" value="<?= $FORM_APPY['firstname'] ?? "" ?>" class="form-control firstname2" placeholder="First Name" >
                                         </div>
                                       </div>
                                     </div>
@@ -77,7 +95,7 @@
                                       <div class="form-group">
                                         <label class="form-label">Last Name</label>
                                         <div class="input-group mb-3 biwidth">
-                                          <input type="text" name="lastname" class="form-control firstname2" value="<?= $FORM_APPY['lastname'] ?? "" ?>" placeholder="Last Name" >
+                                          <input type="text" data-length name="lastname" class="form-control firstname2" value="<?= $FORM_APPY['lastname'] ?? "" ?>" placeholder="Last Name" >
                                         </div>
                                       </div>
                                     </div>
@@ -323,7 +341,7 @@
                                                   </optgroup>
                                                 </select>
                                             </div>
-                                            <input type="text" name="phone"  value="<?= $FORM_APPY['phone'] ?? "" ?>" class="form-control firstname" placeholder="070XXXXXXXX" >
+                                            <input type="tel" required name="phone" value="<?= $FORM_APPY['phone'] ?? "" ?>" class="form-control firstname" placeholder="070XXXXXXXX" >
                                           </div>
                                         </div> 
                                       </div>
@@ -336,7 +354,7 @@
                                       <div class="form-group">              
                                         <label class="form-label">Company Name</label> 
                                         <div class="input-group mb-3 biwidth">                  
-                                          <input type="text" name="companyName" class="form-control firstname2" placeholder="Company Name" >
+                                          <input type="text" name="companyName" data-length class="form-control firstname2" placeholder="Company Name" >
                                         </div>
                                       </div>
                                     </div>
@@ -357,7 +375,7 @@
                                       <div class="form-group">
                                       <label class="form-label">No of Shares</label>
                                         <div class="input-group mb-3 biwidth">
-                                        <input type="text" name="shares" class="form-control firstname2" placeholder="No of Shares" >
+                                        <input type="number" name="shares" class="form-control firstname2" placeholder="No of Shares" >
                                         </div>
                                       </div>
                                     </div>
@@ -461,9 +479,47 @@
 
 <script>
     const formElement = document.querySelector('[data-form]')
+    const inputElements = document.querySelectorAll('[data-length]')
+
+    inputElements.forEach((element) => {
+      element.addEventListener('keydown', () => {
+        const value = element.value
+        if (value.trim().length > 2) {
+          if (element.classList.contains('error')) {
+            element.classList.remove('error')
+          }
+        }
+      })
+
+      element.addEventListener("blur", () => {
+        const value = element.value
+        if (value.trim().length < 3) {
+          element.classList.add('error')
+        }else {
+          if (element.classList.contains('error')) {
+            element.classList.remove('error')
+          }
+        }
+      })
+    })
+
 
     formElement.addEventListener('submit', (e) => {
       e.preventDefault();
+
+      const inputElements = document.querySelectorAll('[data-length]')
+      inputElements.forEach(inputElement => {
+        const elementValue = inputElement.value
+
+        if (elementValue.trim().length < 3) {
+          elementValue.classList.add("error");
+          inputElement.scrollIntoView({
+            behavior: "smooth"
+          })
+          return
+        }
+      })
+      
       if (document.querySelector("#modal-yes").checked) {
         onYes()
       } else {

@@ -40,6 +40,24 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
 
   <!-- jquery CDN google -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+
+  <script>
+    $(document).ready(function(){
+        const MIN_AGE = 18
+        const offset = +(new Date().getFullYear()) - MIN_AGE
+        $( ".datepicker" ).datepicker({
+            changeMonth: true,
+            changeYear: true,
+            yearRange: `${1950 + (MIN_AGE / 2)}:${offset}`,
+            defaultDate: new Date(),
+            showAnim: "blind"
+        });
+    });
+  </script>
   <style>
 
     .error {
@@ -85,7 +103,7 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
                       <div class="form-group">
                         <label class="form-label">First Name</label>
                         <div class="input-group mb-3 biwidth">
-                          <input type="text" required type="text" name="firstname" value="<?= $FORM_APPY['firstname'] ?? "" ?>" class="form-control firstname" placeholder="First Name (as on passport)">
+                          <input type="text" data-length required type="text" name="firstname" value="<?= $FORM_APPY['firstname'] ?? "" ?>" class="form-control firstname" placeholder="First Name (as on passport)">
                         </div>
                       </div>
                     </div>
@@ -93,7 +111,7 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
                       <div class="form-group">
                         <label class="form-label">Middle Name</label>
                         <div class="input-group mb-3 biwidth">
-                          <input type="text" required type="text" name="middlename" class="form-control middlename" placeholder="Middle Name (as on passport)">
+                          <input type="text" data-length required type="text" name="middlename" class="form-control middlename" placeholder="Middle Name (as on passport)">
                         </div>
                       </div>
                     </div>
@@ -101,7 +119,7 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
                       <div class="form-group" style="margin-right: 0px;">
                         <label class="form-label">Last Name</label>
                         <div class="input-group mb-3 biwidth">
-                          <input type="text" required type="text" name="lastname" value="<?= $FORM_APPY['lastname'] ?? "" ?>" class="form-control lastname" placeholder="Last Name (as on passport)">
+                          <input type="text" data-length required type="text" name="lastname" value="<?= $FORM_APPY['lastname'] ?? "" ?>" class="form-control lastname" placeholder="Last Name (as on passport)">
                         </div>
                       </div>
                     </div>
@@ -114,7 +132,7 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
                       <div class="form-group">
                         <label class="form-label">Date of Birth</label>
                         <div class="input-group mb-3 biwidth">
-                          <input type="date" required name="dob" class="form-control firstname" placeholder="Date of Birth">
+                          <input type="date" required name="dob" class="form-control firstname" placeholder="dd/mm/yyyy">
                         </div>
                       </div>
                     </div>
@@ -157,7 +175,7 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
                       <div class="form-group">
                         <label class="form-label">Passport No.</label>
                         <div class="input-group mb-3 biwidth">
-                          <input required type="text" name="passport" class="form-control firstname2" placeholder="Passport No">
+                          <input required type="text" name="passport" data-length class="form-control firstname2" placeholder="Passport No">
                         </div>
                       </div>
                     </div>
@@ -390,7 +408,7 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
                           </optgroup>
                         </select>
                       </div>
-                      <input type="text" name="phone" class="form-control firstname" value="" placeholder="070XXXXXXXX">
+                      <input type="tel" required name="phone" class="form-control firstname" data-length placeholder="070XXXXXXXX">
                       <input required type="hidden" name="service" value="srvs-001">
                       <input required type="hidden" name="twp" value="">
                     </div>
@@ -536,9 +554,45 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
   </script>
   <script>
     const formElement = document.querySelector('[data-form]')
+    const inputElements = document.querySelectorAll('[data-length]')
+
+    inputElements.forEach((element) => {
+      element.addEventListener('keydown', () => {
+        const value = element.value
+        if(value.trim().length > 2) {
+          if(element.classList.contains('error')) {
+            element.classList.remove('error')
+          }
+        }
+      })
+
+      element.addEventListener("blur", () => {
+        const value = element.value
+        if(value.trim().length < 3) {
+          element.classList.add('error')
+        }else {
+          if (element.classList.contains('error')) {
+            element.classList.remove('error')
+          }
+        }
+      })
+    })
+
 
     formElement.addEventListener('submit', (e) => {
       e.preventDefault();
+
+      const inputElements = document.querySelectorAll('[data-length]')
+      inputElements.forEach(inputElement => {
+        const elementValue = inputElement.value  
+
+        if(elementValue.trim().length < 3) {
+          elementValue.classList.add("error");
+          inputElement.scrollIntoView({ behavior: "smooth" })
+          return
+        }
+      })
+
       if (document.querySelector("#modal-yes").checked) {
         onYes()
       } else {
