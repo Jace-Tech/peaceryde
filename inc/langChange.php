@@ -44,16 +44,6 @@ jQuery('.lang-select').click(function() {
   location.reload();
 });
 
-// window.addEventListener("beforeload", () => {
-//     const lang = localStorage.getItem('lang');
-//     const langFunc = localStorage.getItem('lang');
-//     if (lang) {
-//         jQuery('.goog-te-combo').val(lang);
-//         window.location = langFunc
-//     }
-
-// }, false);
-
 
 </script> 
 <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
