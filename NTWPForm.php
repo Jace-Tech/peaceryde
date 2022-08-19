@@ -49,7 +49,7 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
     $(document).ready(function(){
         const MIN_AGE = 18
         const offset = +(new Date().getFullYear()) - MIN_AGE
-        $( ".datepicker" ).datepicker({
+        $( "#datepicker" ).datepicker({
             changeMonth: true,
             changeYear: true,
             yearRange: `${1950 + (MIN_AGE / 2)}:${offset}`,
@@ -132,7 +132,7 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
                       <div class="form-group">
                         <label class="form-label">Date of Birth</label>
                         <div class="input-group mb-3 biwidth">
-                          <input type="date" required name="dob" class="form-control firstname" placeholder="dd/mm/yyyy">
+                          <input type="date" required name="dob" id="datepicker" class="form-control firstname" placeholder="dd/mm/yyyy">
                         </div>
                       </div>
                     </div>

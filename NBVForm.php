@@ -46,7 +46,7 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
     $(document).ready(function(){
         const MIN_AGE = 18
         const offset = +(new Date().getFullYear()) - MIN_AGE
-        $( ".datepicker" ).datepicker({
+        $("#datepicker" ).datepicker({
             changeMonth: true,
             changeYear: true,
             yearRange: `${1950 + (MIN_AGE / 2)}:${offset}`,
