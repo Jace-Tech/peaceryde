@@ -42,7 +42,7 @@ if(isset($_POST['reset'])) {
 
             $_SESSION['ADMIN_ALERT'] = json_encode($alert);
 
-            header("location: ../verify.php");
+            header("location: ../verify");
         }
         
     }
@@ -55,7 +55,7 @@ if(isset($_POST['reset'])) {
         session_start();
         $_SESSION['ADMIN_ALERT'] = json_encode($alert);
 
-        header("Location: ../reset-password.php");
+        header("Location: ../reset-password");
     }
     
 }
@@ -65,7 +65,7 @@ if(isset($_POST['verify'])){
     $id = $_COOKIE['RESET'];
     
     if($reset_password->verifyPin($id, $pin)){
-        header("location: ../change-password.php");
+        header("location: ../change-password");
     }
 }
 
@@ -84,7 +84,7 @@ if(isset($_POST['change'])) {
             $time = time() - strtotime("1hr");
             setcookie("RESET", "destroy", $time, '/');
             setAdminAlert("Password Changed", "success");
-            header("Location: ../index.php");
+            header("Location: ../index");
         }
     }
 }

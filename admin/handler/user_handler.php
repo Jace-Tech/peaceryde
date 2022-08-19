@@ -272,7 +272,7 @@ if(isset($_GET['delete_id'])) {
     }
     catch (PDOException $e) {
         setAdminAlert("Something went wrong", "error");
-        header("Location: ../users.php");
+        header("Location: ../users");
         die();
     }
 
@@ -291,7 +291,7 @@ if(isset($_GET['delete_id'])) {
     }
     catch (PDOException $e) {
         setAdminAlert("Something went wrong", "error");
-        header("Location: ../users.php");
+        header("Location: ../users");
         die();
     }
 
@@ -310,7 +310,7 @@ if(isset($_GET['delete_id'])) {
     }
     catch (PDOException $e) {
         setAdminAlert("Something went wrong", "error");
-        header("Location: ../users.php");
+        header("Location: ../users");
         die();
     }
 
@@ -329,7 +329,7 @@ if(isset($_GET['delete_id'])) {
     }
     catch (PDOException $e) {
         setAdminAlert("Something went wrong", "error");
-        header("Location: ../users.php");
+        header("Location: ../users");
         die();
     }
 
@@ -348,7 +348,7 @@ if(isset($_GET['delete_id'])) {
     }
     catch (PDOException $e) {
         setAdminAlert("Something went wrong", "error");
-        header("Location: ../users.php");
+        header("Location: ../users");
         die();
     }
 
@@ -367,7 +367,7 @@ if(isset($_GET['delete_id'])) {
     }
     catch (PDOException $e) {
         setAdminAlert("Something went wrong", "error");
-        header("Location: ../users.php");
+        header("Location: ../users");
         die();
     }
 
@@ -386,7 +386,7 @@ if(isset($_GET['delete_id'])) {
     }
     catch (PDOException $e) {
         setAdminAlert("Something went wrong", "error");
-        header("Location: ../users.php");
+        header("Location: ../users");
         die();
     }
 
@@ -405,7 +405,7 @@ if(isset($_GET['delete_id'])) {
     }
     catch (PDOException $e) {
         setAdminAlert("Something went wrong", "error");
-        header("Location: ../users.php");
+        header("Location: ../users");
         die();
     }
 
@@ -424,7 +424,7 @@ if(isset($_GET['delete_id'])) {
     }
     catch (PDOException $e) {
         setAdminAlert("Something went wrong", "error");
-        header("Location: ../users.php");
+        header("Location: ../users");
         die();
     }
 

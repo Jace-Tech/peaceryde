@@ -56,7 +56,7 @@ if(isset($_POST['send'])){
     }
     else{
         setAdminAlert("Something went wrong", 'error');
-        header("Location: ../view_message.php");
+        header("Location: ../view_message");
     }
 
 }
@@ -81,7 +81,7 @@ if (isset($_POST['broadcast'])) {
 
             if($final_result){
                 setAdminAlert("Message Broadcasted!", 'success');
-                header("Location: ../view_message.php");
+                header("Location: ../view_message");
             }
         } 
         else {
@@ -96,7 +96,7 @@ if (isset($_POST['broadcast'])) {
 
             if($final_result){
                 setAdminAlert("Message Broadcasted!", 'success');
-                header("Location: ../view_message.php");
+                header("Location: ../view_message");
             }
         }
 

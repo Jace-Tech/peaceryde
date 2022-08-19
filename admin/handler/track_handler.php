@@ -13,10 +13,10 @@ if(isset($_POST['tracking'])) {
 
     if($result) {
         setAdminAlert("Track Updated successfully", "success");
-        header("Location: ../users.php");
+        header("Location: ../users");
     } 
     else {
         setAdminAlert("Something went wrong", "error");
-        header("Location: ../users.php");
+        header("Location: ../users");
     }
 }
