@@ -31,8 +31,32 @@
   <script type="text/javascript" src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script type="text/javascript" src="https://unpkg.com/headroom.js@0.12.0/dist/headroom.min.js"></script>
   <script src="https://cdn.jsdelivr.net/gh/px2code/posize/build/v1.00.3.js"></script>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
 
+  <script>
+    $(document).ready(function(){
+        const MIN_AGE = 18
+        const offset = +(new Date().getFullYear()) - MIN_AGE
+        $( "#datepicker" ).datepicker({
+            changeMonth: true,
+            changeYear: true,
+            yearRange: `${1950 + (MIN_AGE / 2)}:${offset}`,
+            defaultDate: new Date(),
+            showAnim: "blind"
+        });
+    });
+  </script>
+  <style>
+
+    .error {
+      border-color: #f00;
+    }
+  </style>
 </head>
+
 
 
 <body style="overflow-x: hidden;" class="body">
@@ -46,10 +70,10 @@
             <h2 class="applyh22">Service Booking Form</h2>
             <p class="applyh2p">Plesae fill this form to indicate your interest in any of our services and we will contact you within 24hrs</p>
           </div>
-          <form method="post" action="./handlers/apply_handler.php">
-            <input type="text" class="form-control vsbform" placeholder="First Name" required name="firstname">
-            <input type="text" class="form-control vsbform vsbmt" placeholder="Last Name" required name="lastname">
-            <input type="text" class="form-control vsbform vsbmt" placeholder="Email" required name="email">
+          <form method="post" data-form action="./handlers/apply_handler.php">
+            <input type="text" data-length class="form-control vsbform" placeholder="First Name" required name="firstname">
+            <input type="text" data-length class="form-control vsbform vsbmt" placeholder="Last Name" required name="lastname">
+            <input type="text" data-length class="form-control vsbform vsbmt" placeholder="Email" required name="email">
 
             <div class="row vsbform2">
               <div class="input-group" style="padding-left: 0px; padding-right: 0px;">
@@ -291,6 +315,7 @@
             </select>
 
             <p class="vsbformp">Message</p>
+            <input type="hidden" name="apply" value="">
             <textarea class="vsbformtextarea" name="message"></textarea>
             <button name="apply" class="btn servicebtn">Apply</button>
           </form>
@@ -303,6 +328,59 @@
     <!-- ======= End section8 ======= -->
 
   </main>
+  <script>
+    const formElement = document.querySelector('[data-form]')
+    const inputElements = document.querySelectorAll('[data-length]')
+
+    inputElements.forEach((element) => {
+      element.addEventListener('keydown', () => {
+        const value = element.value
+        if(value.trim().length > 2) {
+          if(element.classList.contains('error')) {
+            element.classList.remove('error')
+          }
+        }
+      })
+
+      element.addEventListener("blur", () => {
+        const value = element.value
+        if(value.trim().length < 3) {
+          element.classList.add('error')
+        }else {
+          if (element.classList.contains('error')) {
+            element.classList.remove('error')
+          }
+        }
+      })
+    })
+
+
+    formElement.addEventListener('submit', (e) => {
+      e.preventDefault();
+
+      const inputElements = document.querySelectorAll('[data-length]')
+      inputElements.forEach(inputElement => {
+        const elementValue = inputElement.value  
+
+        if(elementValue.trim().length < 3) {
+          elementValue.classList.add("error");
+          inputElement.scrollIntoView({ behavior: "smooth" })
+          return
+        }
+      })
+
+      if (document.querySelector("#modal-yes").checked) {
+        onYes()
+      } else {
+        if (localStorage.getItem("USER_REG")) {
+          localStorage.removeItem("USER_REG");
+          <?php unset($_SESSION["REG_MODE"]); ?>
+        }
+        formElement.submit()
+
+      }
+    })
+  </script>
   <script type="text/javascript">
     AOS.init();
   </script>
