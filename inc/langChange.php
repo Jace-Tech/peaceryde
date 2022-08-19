@@ -38,15 +38,20 @@ jQuery('.lang-select').click(function() {
   var theLang = jQuery(this).attr('data-lang');
   jQuery('.goog-te-combo').val(theLang);
 
+  window.location = jQuery(this).attr('href')
   localStorage.setItem('lang', theLang);
+  localStorage.setItem('langFunc', `${jQuery(this).attr('href')}`);
   location.reload();
 });
 
 window.addEventListener("beforeload", () => {
     const lang = localStorage.getItem('lang');
+    const langFunc = localStorage.getItem('lang');
     if (lang) {
         jQuery('.goog-te-combo').val(lang);
+        window.location = langFunc
     }
+
 }, false);
 
 
