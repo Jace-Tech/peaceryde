@@ -11,7 +11,7 @@ if (isset($_GET['id'])) {
 	$USER = $users->get_user($user_id);
 	$FILES = $files->getUserUploads($user_id);
 } else {
-	header("Location: ../users.php");
+	header("Location: ../users");
 }
 ?>
 

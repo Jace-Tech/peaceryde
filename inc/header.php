@@ -162,8 +162,8 @@
             
         
             <li class="nav-item apply ml-118">
-              <a href="SBForm.php" class="btn button btn-outline-light appbtn" type="button">Apply</a>
-              <a href="signin.php" class="btn button2 sign" type="button">Sign In</a>
+              <a href="./SBForm" class="btn button btn-outline-light appbtn" type="button">Apply</a>
+              <a href="./signin" class="btn button2 sign" type="button">Sign In</a>
             </li>
           
           <li class=" nav-item dropdown lang">

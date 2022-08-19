@@ -1,7 +1,7 @@
 <?php require_once("./addons/models.php"); ?>
 
 <?php
-if (!isset($_GET['subadmin'])) header('Location: ./subadmins.php');
+if (!isset($_GET['subadmin'])) header('Location: ./subadmins');
 ?>
 
 <?php
@@ -26,7 +26,7 @@ $ADMIN_USERS = getSubAdminUsers($connect, $_GET['subadmin']);
         <div class="sm:flex sm:justify-between sm:items-center mb-8 border-b pb-2">
             <div class="mb-4 sm:mb-0 flex items-center">
                 <div class="mr-2">
-                    <a href="./subadmins.php">
+                    <a href="./subadmins">
                         <svg class="w-6 h-6 fill-current sidebar-expanded:rotate-180" viewBox="0 0 24 24">
                             <path class="text-gray-600" d="M19.586 11l-5-5L16 4.586 23.414 12 16 19.414 14.586 18l5-5H7v-2z"></path>
                         </svg>

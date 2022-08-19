@@ -47,7 +47,7 @@
 					<div class="min-h-screen h-full flex flex-col after:flex-1">
 						<div class="flex-1 mt-2">
 							<div class="flex items-center justify-between h-16 px-4 sm:px-6 lg:px-8">
-								<a class="block" href="index.php">
+								<a class="block" href="./">
 									<img src="../assets/peace.jpeg" class="logo" alt="logo">
 								</a>
 							</div>
@@ -67,7 +67,7 @@
 								</div>
 								<div class="flex items-center justify-between mt-6">
 									<div class="mr-1">
-										<a class="text-sm underline hover:no-underline" href="reset-password.php">Forgot Password?</a>
+										<a class="text-sm underline hover:no-underline" href="./reset-password">Forgot Password?</a>
 									</div>
 									<button type="submit" name="login" class="btn bg-indigo-500 hover:bg-indigo-600 text-white ml-3">Sign In</button>
 								</div>

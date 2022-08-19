@@ -215,7 +215,7 @@ if($LOGGED_ADMIN['type'] != "HIGH") {
                                 </svg>
                             </button>
                             <div class="flex -space-x-3 -ml-px">
-                                <a class="btn btn-sm border-indigo-200 text-indigo-600" href="./message.php">&lt;- </a>
+                                <a class="btn btn-sm border-indigo-200 text-indigo-600" href="./message">&lt;- </a>
                             </div>
                         </div>
                     </div>

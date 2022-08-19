@@ -69,7 +69,7 @@
 						<!-- All Users -->
 						
 						<div class="flex flex-col col-span-full sm:col-span-6 xl:col-span-4 bg-white shadow-lg rounded-sm border border-gray-200">
-							<a href="./users.php" class="px-5 pt-5 block">
+							<a href="./users" class="px-5 pt-5 block">
 								<header class="flex justify-between items-start mb-2">
 									<img src="images/icon-01.svg" width="32" height="32" alt="Icon 01" />
 									<h2 class="text-lg font-semibold text-gray-800 mb-2">No of users</h2>
@@ -89,7 +89,7 @@
 						<?php if($LOGGED_ADMIN['type'] == "HIGH"): ?>
 							<!-- All SubAdmins -->
 							<div class="flex flex-col col-span-full sm:col-span-6 xl:col-span-4 bg-white shadow-lg rounded-sm border border-gray-200">
-								<a href="./subadmins.php" class="px-5 pt-5 block">
+								<a href="./subadmins" class="px-5 pt-5 block">
 									<header class="flex justify-between items-start mb-2">
 										<img src="images/icon-02.svg" width="32" height="32" alt="Icon 02" />
 										<h2 class="text-lg font-semibold text-gray-800 mb-2">No of sub-admins</h2>
@@ -104,7 +104,7 @@
 
 							<!-- All  -->
 							<div class="flex flex-col col-span-full sm:col-span-6 xl:col-span-4 bg-white shadow-lg rounded-sm border border-gray-200">
-								<a href="./reviews.php" class="px-5 pt-5 block">
+								<a href="./reviews" class="px-5 pt-5 block">
 									<header class="flex justify-between items-start mb-2">
 										<img src="images/icon-03.svg" width="32" height="32" alt="Icon 03" />
 										<h2 class="text-lg font-semibold text-gray-800 mb-2">No of reviews</h2>
