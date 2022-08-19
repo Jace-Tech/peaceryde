@@ -170,7 +170,7 @@
             <a class="nav-link dropdown-toggle nav english" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false"
               >
               <img src="assets/image_2022-02-27_16-21-31.png" width="17" style="margin-top:-4px;font-size: 14px;">&nbsp;<span class="langName">English |</span></a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style="overflow-y: scroll;height: 350px;">
               <li><a class="dropdown-item lang-select" href="#googtrans(en|ar)" data-lang="ar" style="color: black; font-size: 15px; padding-bottom: 10px;">Arabic </a></li>
               <li><a class="dropdown-item lang-select" href="#googtrans(en|bn)" data-lang="bn" style="color: black; font-size: 15px; padding-bottom: 10px;">Bengali (Bangla) </a></li>
               <li><a class="dropdown-item lang-select" href="#googtrans(en|zh-CN)" data-lang="zh-CN" style="color: black; font-size: 15px; padding-bottom: 10px;">Chinese</a> </li>
