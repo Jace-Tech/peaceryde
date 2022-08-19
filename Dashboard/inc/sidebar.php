@@ -2,6 +2,7 @@
     $messages = new Message($connect);
     $isUnread = $messages->get_user_unread_messages($USER_ID);
 ?>
+<?php include("../inc/langChange.php"); ?>
 <aside class="left-sidebar" data-sidebarbg="skin6" id="sidebar">
 
 
