@@ -1,4 +1,15 @@
 <?php include("./inc/alert.php"); ?>
+<script>
+  window.addEventListener("beforeload", () => {
+      const lang = localStorage.getItem('lang');
+      const langFunc = localStorage.getItem('lang');
+      if (lang) {
+          jQuery('.goog-te-combo').val(lang);
+          window.location = langFunc
+      }
+
+  }, false);
+</script>
 <style>
   div#google_translate_element {
     visibility: hidden;
