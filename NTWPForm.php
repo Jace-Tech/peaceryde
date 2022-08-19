@@ -453,9 +453,9 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
       <div class="modal-content">
         <div class="modal-header">
           <h5 class="modal-title" id="exampleModalLabel">Login</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
-          </button>
+          </button> -->
         </div>
         <div class="modal-body">
           <form action="./handlers/login.php" method="post">
@@ -469,10 +469,10 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
             <button type="submit" name="login" class="btn btn-secondary" style="margin-left: 400; background-color: #1161D9; color:#ffffff">SIGN IN</button>
           </form>
         </div>
-        <div class="modal-footer">
+        <!-- <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
 
-        </div>
+        </div> -->
       </div>
     </div>
   </div>
