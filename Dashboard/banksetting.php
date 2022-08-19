@@ -15,7 +15,7 @@
 
     <!-- Favicon icon -->
     <link rel="icon" type="image/png" sizes="16x16" href="./dist/image/icon.png">
-    <title>PeaceRyde</title>
+    <title>PeaceRyde Africa LLC</title>
 
     <!-- Custom CSS -->
     <link href="./assets/extra-libs/c3/c3.min.css" rel="stylesheet">

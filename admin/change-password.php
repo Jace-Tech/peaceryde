@@ -5,7 +5,7 @@
 
 	<head>
 		<meta charset="utf-8">
-		<title>Peace Ryde - Change Password</title>
+		<title>PeaceRyde Africa LLC - Change Password</title>
 		<meta name="viewport" content="width=device-width,initial-scale=1">
 		<link href="style.311cc0a03ae53c54945b.css" rel="stylesheet">
 	</head>

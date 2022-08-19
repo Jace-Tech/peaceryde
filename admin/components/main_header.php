@@ -2,7 +2,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>PeaceRyde - <?= $title ? $title : 'Admin Dashboard' ?></title>
+    <title>PeaceRyde Africa LLC - <?= $title ? $title : 'Admin Dashboard' ?></title>
    <link rel="shortcut icon" href="../assets/icon.png" >
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link href="style.311cc0a03ae53c54945b.css" rel="stylesheet">

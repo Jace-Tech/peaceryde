@@ -15,7 +15,7 @@
 
 	<head>
 		<meta charset="utf-8">
-		<title>PeaceRyde - Sign up</title>
+		<title>PeaceRyde Africa LLC - Sign up</title>
 		<link rel="shortcut icon" href="../assets/icon.png" />
 		<meta name="viewport" content="width=device-width,initial-scale=1">
 		<link href="style.311cc0a03ae53c54945b.css" rel="stylesheet">

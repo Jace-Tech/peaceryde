@@ -12,6 +12,7 @@ include("../models/Message.php");
 include("../models/UserService.php");
 include ("../payment/Paystack.php");
 include("../functions/index.php");
+include("../utils/store.php");
 
 
 $users = new User($connect);
