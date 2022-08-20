@@ -694,7 +694,7 @@ function sendNBVReceipt ($price, $name, $subject, $to, $from) {
                                     <tr>
                                         <td class='logo' style='text-align: left;'>
                                             <a href='https://peacerydeafrica.com'>
-                                                <img src='https://ryde.peacerydeafrica.com/assets/logo.png' class='logo'
+                                                <img src='https://peacerydeafrica.com/assets/logo.png' class='logo'
                                                     alt='' />
                                             </a>
                                         </td>
@@ -1123,7 +1123,7 @@ function sendTWPReceipt ($price, $name, $subject, $to, $from) {
                                 <tr>
                                     <td class='logo' style='text-align: left;'>
                                         <a href='https://peacerydeafrica.com'>
-                                            <img src='https://ryde.peacerydeafrica.com/assets/logo.png' class='logo'
+                                            <img src='https://peacerydeafrica.com/assets/logo.png' class='logo'
                                                 alt='' />
                                         </a>
                                     </td>
@@ -1555,7 +1555,7 @@ function sendBIReceipt ($_price, $name, $subject, $to, $from) {
                                 <tr>
                                     <td class='logo' style='text-align: left;'>
                                         <a href='https://peacerydeafrica.com'>
-                                            <img src='https://ryde.peacerydeafrica.com/assets/logo.png' class='logo'
+                                            <img src='https://peacerydeafrica.com/assets/logo.png' class='logo'
                                                 alt='' />
                                         </a>
                                     </td>

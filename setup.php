@@ -1,4 +1,4 @@
 <?php 
 
-define('FROM', "billing@peacerydeafrica.com");
-define('APP_NAME', "Peacerydeafrica");
+define('FROM', "noreply@peacerydeafrica.com");
+define('APP_NAME', "PeaceRyde Africa LLC");
