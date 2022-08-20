@@ -57,14 +57,13 @@
                     </h2>
                     <p class="everythingtext">
                         Everything you need to know
-                        about PeaceRyde Africa LLC
+                        about PeaceRyde Africa LLC and our services
                     </p>
                 </div>
                 <div>
                     <p class="everythingtext2">
-                        Everything you need to know
-                        about processing your
-                        Nigerian Visas and payment.
+                    Everything you need to know
+                        about PeaceRyde Africa LLC and our services
                     </p>
                     <?php if(count($FAQ->get_all_questions())): ?>
                         <?php $counter = 1;  ?>
