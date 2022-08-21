@@ -53,7 +53,8 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
         showOtherMonths: true,
         selectOtherMonths: true,
         showAnim: "blind",
-        maxDate: new Date(offset, 0, 0)
+        maxDate: new Date(offset, 0, 0),
+        dateFormat: "dd-mm-yy"
       });
 
       $("#datepicker").click(function() {

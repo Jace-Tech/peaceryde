@@ -460,7 +460,8 @@
           yearRange: `${1950 + (MIN_AGE / 2)}:${offset}`,
           defaultDate: new Date(),
           showAnim: "blind",
-          maxDate: new Date(offset, 0, 0)
+          maxDate: new Date(offset, 0, 0),
+          dateFormat: "dd-mm-yy"
       });
 
       $("#datepicker").click(function() {
