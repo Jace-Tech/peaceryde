@@ -142,7 +142,7 @@ if(isset($_GET["reference"])) {
             $subject = "Registration successful";
             $message = "<div>
                             <a href='https://peacerydeafrica.com'>
-                                <img src='http://ryde.peacerydeafrica.com/assets/logo.png' style='height: 80px; object-fit: contain;'
+                                <img src='https://peacerydeafrica.com/assets/logo.png' style='height: 80px; object-fit: contain;'
                                     alt='' />
                             </a>
                         </div>";
