@@ -48,12 +48,17 @@
       $(document).ready(function(){
           const MIN_AGE = 18
           const offset = +(new Date().getFullYear()) - MIN_AGE
-          $( "#datepicker" ).datepicker({
+          $("#datepicker").datepicker({
               changeMonth: true,
               changeYear: true,
               yearRange: `${1950 + (MIN_AGE / 2)}:${offset}`,
               defaultDate: new Date(),
-              showAnim: "blind"
+              showAnim: "blind",
+              maxDate: new Date(offset, 0, 0)
+          });
+
+          $("#datepicker").click(function() {
+              $(this).val("");
           });
       });
     </script>
@@ -79,7 +84,6 @@
                               <h2 class="formh1">Fill the form below</h2>
                               <p class="formp">Your personal details</p>
                           </div>
-                          
                           <div>
                               <form data-form method="post" action="./handlers/form_handler.php">
                                 <div class="form-row mt-15 formml">
@@ -88,7 +92,7 @@
                                       <div class="form-group">    
                                         <label class="form-label">First Name</label> 
                                         <div class="input-group mb-3 biwidth">                            
-                                          <input type="text" data-length name="firstname" value="<?= $FORM_APPY['firstname'] ?? "" ?>" class="form-control firstname2" placeholder="First Name" >
+                                          <input type="text" required data-length name="firstname" value="<?= $FORM_APPY['firstname'] ?? "" ?>" class="form-control firstname2" placeholder="First Name" >
                                         </div>
                                       </div>
                                     </div>
@@ -96,7 +100,7 @@
                                       <div class="form-group">
                                         <label class="form-label">Last Name</label>
                                         <div class="input-group mb-3 biwidth">
-                                          <input type="text" data-length name="lastname" class="form-control firstname2" value="<?= $FORM_APPY['lastname'] ?? "" ?>" placeholder="Last Name" >
+                                          <input type="text" required data-length name="lastname" class="form-control firstname2" value="<?= $FORM_APPY['lastname'] ?? "" ?>" placeholder="Last Name" >
                                         </div>
                                       </div>
                                     </div>
@@ -120,7 +124,7 @@
                                           <label style="margin-top:27px">Mobile Number</label>
                                           <div class="input-group mb-3 biwidth">
                                             <div class="input-group-prepend">
-                                              <select name="countryCode" id="" class="form-select code"
+                                              <select required name="countryCode" id="" class="form-select code"
                                                 aria-label="Default select example">
                                               
                                                   <optgroup label="Country Code">
@@ -355,7 +359,7 @@
                                       <div class="form-group">              
                                         <label class="form-label">Company Name</label> 
                                         <div class="input-group mb-3 biwidth">                  
-                                          <input type="text" name="companyName" data-length class="form-control firstname2" placeholder="Company Name" >
+                                          <input type="text" required name="companyName" data-length class="form-control firstname2" placeholder="Company Name" >
                                         </div>
                                       </div>
                                     </div>
@@ -363,7 +367,7 @@
                                       <div class="form-group">           
                                         <label class="form-label">Corporate Address</label>  
                                         <div class="input-group mb-3 biwidth">                    
-                                          <input type="text" name="coperateAddress" class="form-control firstname2" placeholder="Corporate Address" >
+                                          <input type="text" required name="coperateAddress" class="form-control firstname2" placeholder="Corporate Address" >
                                         </div>
                                     </div>
                                     </div>
@@ -385,7 +389,7 @@
                                       <div class="form-group">
                                       <label class="form-label">No of Shares</label>
                                         <div class="input-group mb-3 biwidth">
-                                        <input type="number" name="shares" class="form-control firstname2" placeholder="No of Shares" >
+                                        <input type="number" required name="shares" class="form-control firstname2" placeholder="No of Shares" >
                                         </div>
                                       </div>
                                     </div>

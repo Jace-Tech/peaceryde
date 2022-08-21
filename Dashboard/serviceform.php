@@ -153,13 +153,13 @@
           <div class="row" style="margin-top: 25px;">
             <div class="col-md-6 col-lg-5 col-xl-5">
               <div class="form-group">
-                <input type="text" required name="firstname" class="form-control dob" placeholder="first Name">
+                <input type="text" required name="firstname" value="<?= $USER['firstname'] ?? ""; ?>" class="form-control dob" placeholder="first Name">
               </div>
             </div>
 
             <div class="col-md-6 col-lg-5 col-xl-5">
               <div class="form-group">
-                <input type="text" required name="lastname" class="form-control dob" placeholder="Last Name">
+                <input type="text" required name="lastname" value="<?= $USER['lastname'] ?? ""; ?>" class="form-control dob" placeholder="Last Name">
               </div>
             </div>
 
@@ -167,7 +167,7 @@
           <div class="row" style="margin-top: 25px;">
             <div class="col-md-6 col-lg-5 col-xl-5">
               <div class="form-group">
-                <input type="text" required name="email" class="form-control mobileno" placeholder="Email">
+                <input type="text" required name="email" value="<?= $USER['email'] ?? ""; ?>" class="form-control mobileno" placeholder="Email">
               </div>
             </div>
             <div class="col-md-6 col-lg-5 col-xl-5">
@@ -393,7 +393,7 @@
                         <option data-countryCode="ZW" value="263">Zimbabwe (+263)</option>
                       </optgroup>
                     </select>
-                    <input type="text" required name="phone" class="form-control mobileno2" placeholder="Mobile Number">
+                    <input type="tel" required name="phone" class="form-control mobileno2" value="<?= $USER['phone'] ?? ""; ?>" placeholder="Mobile Number">
                   </div>
 
                 </div>
@@ -450,6 +450,23 @@
     </div>
 
   </div>
+  <script>
+
+      const MIN_AGE = 18
+      const offset = +(new Date().getFullYear()) - MIN_AGE
+      $("#datepicker").datepicker({
+          changeMonth: true,
+          changeYear: true,
+          yearRange: `${1950 + (MIN_AGE / 2)}:${offset}`,
+          defaultDate: new Date(),
+          showAnim: "blind",
+          maxDate: new Date(offset, 0, 0)
+      });
+
+      $("#datepicker").click(function() {
+          $(this).val("");
+      });
+    </script>
   <script>
     function openNav() {
 

@@ -36,19 +36,7 @@
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
 
-    <script>
-        $(document).ready(function(){
-            const MIN_AGE = 18
-            const offset = +(new Date().getFullYear()) - MIN_AGE
-            $( "#datepicker" ).datepicker({
-                changeMonth: true,
-                changeYear: true,
-                yearRange: `${1950 + (MIN_AGE / 2)}:${offset}`,
-                defaultDate: new Date(),
-                showAnim: "blind"
-            });
-        });
-    </script>
+    
     <style>
 	div#google_translate_element {
 		visibility: hidden;
@@ -522,6 +510,22 @@
             
         </div>
     </div>
+    <script>
+        const MIN_AGE = 18
+        const offset = +(new Date().getFullYear()) - MIN_AGE
+        $("#datepicker").datepicker({
+            changeMonth: true,
+            changeYear: true,
+            yearRange: `${1950 + (MIN_AGE / 2)}:${offset}`,
+            defaultDate: new Date(),
+            showAnim: "blind",
+            maxDate: new Date(offset, 0, 0)
+        });
+
+        $("#datepicker").click(function() {
+            $(this).val("");
+        });
+    </script>
     <script>
         const formElement = document.querySelector('[data-form]')
         const inputElements = document.querySelectorAll('[data-length]')

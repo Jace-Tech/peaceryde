@@ -44,7 +44,6 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
   <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
 
   <script>
-    $(document).ready(function() {
       const MIN_AGE = 18
       const offset = +(new Date().getFullYear()) - MIN_AGE
       $("#datepicker").datepicker({
@@ -53,9 +52,13 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
         yearRange: `${1950 + (MIN_AGE / 2)}:${offset}`,
         showOtherMonths: true,
         selectOtherMonths: true,
-        showAnim: "blind"
+        showAnim: "blind",
+        maxDate: new Date(offset, 0, 0)
       });
-    });
+
+      $("#datepicker").click(function() {
+          $(this).val("");
+      });
   </script>
 
   <style>
