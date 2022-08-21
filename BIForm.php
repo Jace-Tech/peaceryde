@@ -378,16 +378,20 @@
                                
                                 <div class="form-row formml">
                                   <div class="row">
-                                  <div class="col-md-5">
+                                  <div class="col-md-7">
                                     <div class="form-group">
                                       <label class="form-label">Date of Birth</label>
                                       <div class="input-group mb-3 biwidth">
                                         <input type="text" readonly required name="dob" class="form-control firstname2" placeholder="dd/mm/yyyy" id="datepicker">
-                                        <p class="yourname">You must be at least 18 years old to use this website.</p>
+                                        <p style="color: #C8730F;
+    font-family: Ubuntu;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;">You must be at least 18 years old to use this website.</p>
                                       </div>
                                     </div>
                                   </div>
-                                    <div class="col-md-6">
+                                    <div class="col-md-4">
                                       <div class="form-group">
                                       <label class="form-label">No of Shares</label>
                                         <div class="input-group mb-3 biwidth">
