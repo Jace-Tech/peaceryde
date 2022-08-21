@@ -626,7 +626,7 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
             changeYear: true,
             yearRange: `${1950 + (MIN_AGE / 2)}:${offset}`,
             showAnim: "blind",
-            maxDate: new Date(offset, 0, 0)
+            maxDate: new Date(offset + 1, 0, 0)
         });
 
         $("#datepicker").click(function() {

@@ -120,6 +120,14 @@ if(isset($_GET["reference"])) {
         $from = "noreply@peacerydeafrica.com";
         $to = $user['email'];
 
+        // USERS ADMINS
+        $USERS_ADMINS = fetchUsersSubAdmins($connect, $_SESSION['REG_NO']);
+        $SENDERS = ["MAIN_ADMIN"];
+
+        foreach ($USERS_ADMINS as $_admin) {
+            array_push($SENDERS, $_admin['admin_id']);
+        }
+
         if(!isset($_SESSION['LOGGED_USER'])) {
             // Generate Login Credientials
             $password = $userLogins->generatePassword();
@@ -157,14 +165,7 @@ if(isset($_GET["reference"])) {
             sendMail($subject, $message, $from, $to);
             
             // Send message to user
-            $USERS_ADMINS = fetchUsersSubAdmins($connect, $_SESSION['REG_NO']);
-            $SENDERS = ["MAIN_ADMIN"];
             $_message = "Welcome to PeaceRyde Africa. Please feel free to reach out to us if you need anything as it pertains to the service you paid for. Thank you";
-
-            foreach ($USERS_ADMINS as $_admin) {
-                array_push($SENDERS, $_admin['admin_id']);
-            }
-
             foreach ($SENDERS as $sender) {
                 $messages->send_message($_SESSION['REG_NO'], $sender, $_message);
             }
@@ -177,21 +178,41 @@ if(isset($_GET["reference"])) {
         // Send Receipt
         $service = $_SESSION['SERVICE'];
         $PRICE = json_decode($_SESSION['PRICE'], true);
-
-        if ($service == "srvs-002") {
-            sendNBVReceipt($PRICE, $name, $subject, $to, $from);
-        }
-
+        $adminEmail = getSubAdmin($connect, "MAIN_ADMIN")['email'];
+        
+        
         if ($service == "srvs-001") {
             sendTWPReceipt($PRICE, $name, $subject, $to, $from);
+        }
+        
+        if ($service == "srvs-002") {
+            sendNBVReceipt($PRICE, $name, $subject, $to, $from);
         }
 
         if ($service == "srvs-003") {
             sendBIReceipt($PRICE, $name, $subject, $to, $from);
         }
-
+        
         $_SESSION["REF"] = $ref;
+        
+        // Send Email to Admin 
+        $serviceName = getService($connect, $service)['service'];
+        $subject = "New Service Payment";
+        $message = "<div>
+                        <a href='https://peacerydeafrica.com'>
+                            <img src='https://peacerydeafrica.com/assets/logo.png' style='height: 80px; object-fit: contain;'
+                                alt='' />
+                        </a>
+                    </div>";
+        $message .= "<p> <strong>$name</strong> just paid for $serviceName</p>";
 
+        $from = "noreply@peacerydeafrica.com";
+        sendMail($subject, $message, $from, $adminEmail);
+
+
+        // Set Notifiication 
+        setAdminNotification($connect, "./user-details?user=$id", json_encode($SENDERS), "<strong>$name</strong> just paid for $serviceName");
+        
         // Redirect to Success Page
         header("Location: ../dashboardsuccess");
 
