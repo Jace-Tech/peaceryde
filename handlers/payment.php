@@ -10,7 +10,7 @@ include("../models/UserLogin.php");
 include("../models/Payment.php");
 include("../models/Message.php");
 include("../models/UserService.php");
-include ("../payment/Paystack.php");
+include ("../payments/Paystack.php");
 include("../functions/index.php");
 include("../utils/store.php");
 

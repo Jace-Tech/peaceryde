@@ -26,4 +26,4 @@ require_once("../../models/UserLogin.php");
 require_once("../../models/SubadminUsers.php");
 require_once("../../models/UserService.php");
 
-require_once("../../payment/Paystack.php");
+require_once("../../payments/Paystack.php");

@@ -23,7 +23,7 @@ include("../models/Review.php");
 include("../models/Admin.php");
 include("../models/ResetUserPassword.php");
 
-include("../payment/Paystack.php");
+include("../payments/Paystack.php");
 
 if(!isset($_SESSION["LOGGED_USER"])) header("Location: ../signin.php");
 ?>
