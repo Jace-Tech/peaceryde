@@ -47,7 +47,7 @@ if(isset($_POST['reset'])){
             "status" => "info"
         ]);
 
-        header("Location: ../forgotpass.php?verify");
+        header("Location: ../forgotpass?verify");
 
     }
     else {
@@ -55,7 +55,7 @@ if(isset($_POST['reset'])){
             "message" => "something went wrong",
             "status" => "error"
         ]);
-        header("Location: ../forgotpass.php?verify");
+        header("Location: ../forgotpass?verify");
 
     }
 
@@ -67,7 +67,7 @@ if(isset($_POST['verify'])) {
 
     $result = $resetMainPassword->verifyPin($RESET_ID, $pin);
     if($result) {
-        header('Location: ../resetpass.php');
+        header('Location: ../resetpass');
     }
     else {
         $_SESSION['ALERT'] = json_encode([
@@ -75,7 +75,7 @@ if(isset($_POST['verify'])) {
             "status" => "error"
         ]);
 
-        header("Location: ../forgotpass.php?verify");
+        header("Location: ../forgotpass?verify");
     }
 }
 

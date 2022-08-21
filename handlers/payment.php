@@ -46,7 +46,7 @@ if(isset($_POST['pay'])){
     }
 
     // If successful
-    $url = $_SERVER['HTTP_ORIGIN'] . "/handlers/payment.php";
+    $url = $_SERVER['HTTP_ORIGIN'] . "/handlers/payment";
     $service = $_SESSION['SERVICE'];
     $total_price = 0;
 
@@ -193,7 +193,7 @@ if(isset($_GET["reference"])) {
         $_SESSION["REF"] = $ref;
 
         // Redirect to Success Page
-        header("Location: ../dashboardsuccess.php");
+        header("Location: ../dashboardsuccess");
 
     }
     else {
@@ -207,7 +207,7 @@ if(isset($_GET["reference"])) {
         ]);
 
         // Redirect to Index Page with alert
-        header("Location: ../index.php");
+        header("Location: ../");
     }
 
 }
