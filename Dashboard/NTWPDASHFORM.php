@@ -186,19 +186,19 @@
                         <div class="col-md-4 col-lg-3 col-xl-3">
                             <div class="form-group">
                                 <label class="form-label">First Name</label>
-                                <input name="firstname" data-length type="text"  value="<?= $USER['firstname'] ?? ""; ?>" class="form-control firstname" placeholder="First Name (as on passport)">
+                                <input name="firstname" required data-length type="text"  value="<?= $USER['firstname'] ?? ""; ?>" class="form-control firstname" placeholder="First Name (as on passport)">
                             </div>
                         </div>
                         <div class="col-md-4 col-lg-3 col-xl-3">
                             <div class="form-group">
                                 <label class="form-label">Middle Name</label>
-                                <input name="middlename" data-length type="text"  value="<?= $USER['middle_name'] ?? ""; ?>" class="form-control middlename" placeholder="Middle Name (as on passport)">
+                                <input name="middlename" required data-length type="text"  value="<?= $USER['middle_name'] ?? ""; ?>" class="form-control middlename" placeholder="Middle Name (as on passport)">
                             </div>
                         </div>
                         <div class="col-md-4 col-lg-3 col-xl-3">
                             <div class="form-group">
                                 <label class="form-label">Last Name</label>
-                                <input name="lastname" data-length type="text"  value="<?= $USER['lastname'] ?? ""; ?>" class="form-control lastname" placeholder="Last Name (as on passport)">
+                                <input name="lastname" required data-length type="text"  value="<?= $USER['lastname'] ?? ""; ?>" class="form-control lastname" placeholder="Last Name (as on passport)">
                             </div>
                         </div>
 
@@ -207,7 +207,7 @@
                         <div class="col-md-4 col-lg-3 col-xl-3">
                             <div class="form-group">
                                 <label class="form-label">Date of Birth</label>
-                                <input type="text" readonly id="datepicker" name="dob" class="form-control dob" placeholder="dd/mm/yyyy">
+                                <input type="text" required readonly id="datepicker" name="dob" class="form-control dob" placeholder="dd/mm/yyyy">
                             </div>
                         </div>
 
@@ -233,15 +233,16 @@
                         <div class="col-md-4 col-xl-3">
                             <div class="form-group">
                                 <label class="form-label">Email Address</label>
-                                <input type="email" class="form-control email" name="email" value="<?= $LOGGED_USER['email']; ?>" placeholder="Email address">
+                                <input type="email" required class="form-control email" name="email" value="<?= $LOGGED_USER['email']; ?>" placeholder="Email address">
                             </div>
                         </div>
 
                         <div class="col-md-4 col-xl-3">
                             <div class="form-group">
                                 <input type="hidden" name="service" value="srvs-001">
+                                <input type="hidden" name="twp">
                                 <label class="form-label">Passport No</label>
-                                <input type="text" name="passport" class="form-control passno" placeholder="Passport No">
+                                <input type="text" required name="passport" class="form-control passno" placeholder="Passport No">
                             </div>
                         </div>
                     </div>
@@ -500,7 +501,7 @@
 
                 </div>
                 <div class="divbtn">
-                    <button data-btn type="submit" class="btn btnproceed">Proceed to Payment</button>
+                    <button data-btn type="submit" name="twp" class="btn btnproceed">Proceed to Payment</button>
                 </div>
 
             </form>

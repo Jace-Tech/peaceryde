@@ -190,6 +190,7 @@
                                 <label class="form-label">Email Address</label>
                                 <input required type="text" name="email" value="<?= $USER['email'] ?? ""; ?>" class="form-control mobileno" placeholder="Email">
                                 <input required type="hidden" name="service" value="srvs-003">
+                                <input required type="hidden" name="bi">
                             </div>
                         </div> 
                         <div class="col-md-5 col-lg-4 col-xl-4">
