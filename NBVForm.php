@@ -131,7 +131,7 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
                 
                 <div class="formml">
                   <div class="row">
-                    <div class="col-md-6">
+                    <div class="col-md-5">
                       <div class="form-group">
                         <label class="form-label">Date of Birth</label>
                         <div class="input-group mb-3 biwidth">
