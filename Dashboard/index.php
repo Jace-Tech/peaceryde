@@ -29,6 +29,11 @@ $isUnread = count($messages->get_user_unread_messages($USER_ID));
     <link href="./assets/extra-libs/jvector/jquery-jvectormap-2.0.2.css" rel="stylesheet" />
     <link href="./dist/css/style.min.css" rel="stylesheet">
     <link href="./dist/css/responsive.css" rel="stylesheet">
+    <!-- Latest compiled and minified CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Latest compiled JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <script>
         const isOld = localStorage.getItem("USER_REG")
         if (isOld) {
@@ -551,7 +556,7 @@ $isUnread = count($messages->get_user_unread_messages($USER_ID));
                                 </li>
 
                                 <li class="breadcrumb-item logoutlaptop" style="margin-top: 1px;">
-                                    <div class=" nav-item dropdown mobilelang">
+                                    <div class=" nav-item dropdown mobilelang" style="margin-top:-29px">
                                         <div id="google_translate_element"></div>
                                         <a class="nav-link dropdown-toggle nav english" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                             <svg width="20" height="20" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
