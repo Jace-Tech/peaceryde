@@ -145,7 +145,7 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
     font-weight: 400;">You must be at least 18 years old to use this website.</p>
                       </div>
                     </div>
-                    <div class="col-md-4 genderwidth">
+                    <div class="col-md-5 genderwidth">
                       <div class="row">
                         <div class="col-md-12" style="margin-top: 25px;">
                           <label class="gender">Gender</label>
@@ -169,7 +169,7 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
                   </div>
                 </div>
               
-                <div class="form-row formml">
+                <div class="form-row formml" style="margin-top:17px">
                   <div class="row">
                     <div class="col-md-5">
                       <div class="form-group">
