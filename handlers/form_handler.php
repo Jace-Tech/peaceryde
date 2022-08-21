@@ -51,7 +51,8 @@ if(isset($_POST['twp'])) {
         setAdminNotification($connect, "./user-details.php?user=" . $result['userId'], json_encode(["MAIN_ADMIN"]), "A new user was added, click to view"); 
         sendMail("New User", "<p>A new user <strong>$firstname</strong> was added</p>", "noreply@peacerydeafrica.com", $admin['email'], true);
     }
-
+    echo ($country);
+    die();
     // Get TWP Calculations
     $fees = get_twp($country);
     $_SESSION["PRICE"] = json_encode($fees);
