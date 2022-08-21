@@ -73,7 +73,7 @@
                   </li>
                   <li class="new-section8__text-body5 layout fs-13"><a class="fs-13" href="SBForm.php" style=" text-decoration: none;">Africa Travels
                       & Tours</a></li>
-                  <li class="new-section8__text-body5 layout fs-13"><a class="fs-13" href="SBForm.php" style=" text-decoration: none;">Nigerian
+                  <li class="new-section8__text-body5 layout fs-13"><a class="fs-13" href="SBForm.php" style=" text-decoration: none;">Nigeria
                       Immigration
                       Consultancy</a></li>
                   <li class="new-section8__text-body5 layout fs-13"><a class="fs-13" href="SBForm.php" style=" text-decoration: none;">Nigeria Custom
