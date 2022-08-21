@@ -53,7 +53,7 @@ if(isset($_POST['twp'])) {
     }
 
     // Get TWP Calculations
-    $fees = get_twp($country);
+    $fees = get_twp();
     $_SESSION["PRICE"] = json_encode($fees);
     $_SESSION['SERVICE'] = $service;
 

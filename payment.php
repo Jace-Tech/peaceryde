@@ -11,6 +11,8 @@ $service = $userServices->getService($userId);
 $service_name = $services->getUserService($service['service_id'])['service'];
 
 $PRICE = json_decode($_SESSION["PRICE"], true);
+
+print_r($_SESSION["PRICE"]);
 ?>
 
 
