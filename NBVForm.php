@@ -615,6 +615,24 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
       }
     })
   </script>
+
+<script>
+    $(document).ready(function(){
+        const MIN_AGE = 18
+        const offset = +(new Date().getFullYear()) - MIN_AGE
+        $( "#datepicker" ).datepicker({
+            changeMonth: true,
+            changeYear: true,
+            yearRange: `${1950 + (MIN_AGE / 2)}:${offset}`,
+            showAnim: "blind",
+            maxDate: new Date(offset, 0, 0)
+        });
+
+        $("#datepicker").click(function() {
+            $(this).val("");
+        });
+    });
+  </script>
 </body>
 
 </html>
