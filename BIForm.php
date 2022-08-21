@@ -63,6 +63,39 @@
           });
       });
     </script>
+
+    <style>
+       @media only screen and (max-width: 2560px){
+        .cardform {
+            border: 1px solid #ffffff;
+            height: 900px;
+        }
+      }
+      @media only screen and (max-width: 900px){
+        .cardform {
+            border: 1px solid #ffffff;
+            height: 950px;
+        }
+      }
+      @media only screen and (max-width: 720px){
+        .cardform {
+            border: 1px solid #ffffff;
+            height: 1350px;
+        }
+      }
+      @media only screen and (max-width: 600px){
+        .cardform {
+            border: 1px solid #ffffff;
+            height: 1300px;
+        }
+      }
+      @media only screen and (max-width: 540px){
+        .cardform {
+            border: 1px solid #ffffff;
+            height: 1350px;
+        }
+      }
+    </style>
     
 </head>
 

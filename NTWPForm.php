@@ -134,22 +134,23 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
                 
                 <div class="formml">
                   <div class="row">
-                    <div class="col-md-6">
+                    <div class="col-md-5">
                       <div class="form-group">
                         <label class="form-label">Date of Birth</label>
                         <div class="input-group mb-3 biwidth">
                           <input type="text" required name="dob" value="<?= $FORM_APPY["dob"] ?? "" ?>" readonly id="datepicker" class="form-control firstname" placeholder="dd/mm/yyyy">
-                          <p style="color: #C8730F;
+                          
+                        </div>
+                        <p style="color: #C8730F;
     font-family: Ubuntu;
     font-size: 13px;
     font-style: normal;
     font-weight: 400;">You must be at least 18 years old to use this website.</p>
-                        </div>
                       </div>
                     </div>
                     <div class="col-md-5 genderwidth">
                       <div class="row">
-                        <div class="col-md-12" style="margin-top: 25px;">
+                        <div class="col-md-12" style="margin-top: 35px;">
 
                           <label class="gender">Gender</label>
                           <br>
@@ -172,7 +173,7 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
                   </div>
                 </div>
                
-                <div class="form-row formml">
+                <div class="form-row formml" style="margin-top:17px">
                   <div class="row">
                     <div class="col-md-5">
                       <div class="form-group">
