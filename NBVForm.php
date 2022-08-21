@@ -44,16 +44,17 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
   <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
 
   <script>
-    $(document).ready(function(){
-        const MIN_AGE = 18
-        const offset = +(new Date().getFullYear()) - MIN_AGE
-        $("#datepicker" ).datepicker({
-            changeMonth: true,
-            changeYear: true,
-            yearRange: `${1950 + (MIN_AGE / 2)}:${offset}`,
-            defaultDate: new Date(),
-            showAnim: "blind"
-        });
+    $(document).ready(function() {
+      const MIN_AGE = 18
+      const offset = +(new Date().getFullYear()) - MIN_AGE
+      $("#datepicker").datepicker({
+        changeMonth: true,
+        changeYear: true,
+        yearRange: `${1950 + (MIN_AGE / 2)}:${offset}`,
+        showOtherMonths: true,
+        selectOtherMonths: true,
+        showAnim: "blind"
+      });
     });
   </script>
 
@@ -130,7 +131,7 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
                       <div class="form-group">
                         <label class="form-label">Date of Birth</label>
                         <div class="input-group mb-3 biwidth">
-                          <input type="text" readonly required name="dob" class="form-control firstname" placeholder="dd/mm/yyyy" id="datepicker">
+                          <input type="text" readonly required name="dob" value="<?= $FORM_APPY["dob"] ?? "" ?>" class="form-control firstname" placeholder="dd/mm/yyyy" id="datepicker">
                         </div>
                       </div>
                     </div>
@@ -569,8 +570,7 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
         const value = element.value
         if (value.trim().length < 3) {
           element.classList.add('error')
-        }
-        else {
+        } else {
           if (element.classList.contains('error')) {
             element.classList.remove('error')
           }

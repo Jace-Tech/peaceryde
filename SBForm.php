@@ -37,14 +37,15 @@
   <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
 
   <script>
-    $(document).ready(function(){
+   $(document).ready(function(){
         const MIN_AGE = 18
         const offset = +(new Date().getFullYear()) - MIN_AGE
         $( "#datepicker" ).datepicker({
             changeMonth: true,
             changeYear: true,
             yearRange: `${1950 + (MIN_AGE / 2)}:${offset}`,
-            defaultDate: new Date(),
+            showOtherMonths: true,
+            selectOtherMonths: true,
             showAnim: "blind"
         });
     });

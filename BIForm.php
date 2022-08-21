@@ -46,16 +46,17 @@
 
     <script>
       $(document).ready(function(){
-          const MIN_AGE = 18
-          const offset = +(new Date().getFullYear()) - MIN_AGE
-          $( "#datepicker" ).datepicker({
-              changeMonth: true,
-              changeYear: true,
-              yearRange: `${1950 + (MIN_AGE / 2)}:${offset}`,
-              defaultDate: new Date(),
-              showAnim: "blind"
-          });
-      });
+        const MIN_AGE = 18
+        const offset = +(new Date().getFullYear()) - MIN_AGE
+        $( "#datepicker" ).datepicker({
+            changeMonth: true,
+            changeYear: true,
+            yearRange: `${1950 + (MIN_AGE / 2)}:${offset}`,
+            showOtherMonths: true,
+            selectOtherMonths: true,
+            showAnim: "blind"
+        });
+    });
     </script>
     
 </head>
@@ -377,7 +378,7 @@
                                     <div class="form-group">
                                       <label class="form-label">Date of Birth</label>
                                       <div class="input-group mb-3 biwidth">
-                                        <input type="text" readonly required name="dob" class="form-control firstname" placeholder="dd/mm/yyyy" id="datepicker">
+                                        <input type="text" readonly required name="dob" class="form-control firstname" value="<?= $FORM_APPY["dob"] ?? "" ?>" placeholder="dd/mm/yyyy" id="datepicker">
                                       </div>
                                     </div>
                                   </div>

@@ -34,7 +34,7 @@ class User {
             'firstname' => $firstname,
             'middle_name' => $middle_name ?? "",
             'lastname' => $lastname,
-            'date_of_birth' => $dob ?? "",
+            'date_of_birth' => $dob ?? NULL,
             'gender' => $gender ?? "",
             'email' => $email ?? "",
             'passport' => $passport ?? "",

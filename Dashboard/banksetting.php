@@ -106,6 +106,74 @@
   overflow: auto;
 }
     </style>
+    <style>
+	div#google_translate_element {
+		visibility: hidden;
+		position: absolute;
+		z-index: -1;
+		/* display: none; */
+	}
+
+	div#google_translate_element div.goog-te-gadget-simple {
+		border: none;
+		background-color: transparent;
+		/*background-color: #17548d;*/
+		/*#e3e3ff*/
+
+	}
+
+	div#google_translate_element div.goog-te-gadget-simple a.goog-te-menu-value:hover {
+		text-decoration: none;
+	}
+
+	div#google_translate_element div.goog-te-gadget-simple a.goog-te-menu-value span {
+		color: #aaa;
+	}
+
+	div#google_translate_element div.goog-te-gadget-simple a.goog-te-menu-value span:hover {
+		color: white;
+	}
+
+	.goog-te-gadget-icon {
+		display: none !important;
+		/*background: url("url for the icon") 0 0 no-repeat !important;*/
+	}
+
+	/* Remove the down arrow */
+	/* when dropdown open */
+	div#google_translate_element div.goog-te-gadget-simple a.goog-te-menu-value span[style="color: rgb(213, 213, 213);"] {
+		display: none;
+	}
+
+	/* after clicked/touched */
+	div#google_translate_element div.goog-te-gadget-simple a.goog-te-menu-value span[style="color: rgb(118, 118, 118);"] {
+		display: none;
+	}
+
+	/* on page load (not yet touched or clicked) */
+	div#google_translate_element div.goog-te-gadget-simple a.goog-te-menu-value span[style="color: rgb(155, 155, 155);"] {
+		display: none;
+	}
+
+	/* Remove span with left border line | (next to the arrow) in Chrome & Firefox */
+	div#google_translate_element div.goog-te-gadget-simple a.goog-te-menu-value span[style="border-left: 1px solid rgb(187, 187, 187);"] {
+		display: none;
+	}
+
+	/* Remove span with left border line | (next to the arrow) in Edge & IE11 */
+	div#google_translate_element div.goog-te-gadget-simple a.goog-te-menu-value span[style="border-left-color: rgb(187, 187, 187); border-left-width: 1px; border-left-style: solid;"] {
+		display: none;
+	}
+
+	/* HIDE the google translate toolbar */
+	.goog-te-banner-frame.skiptranslate {
+		display: none !important;
+	}
+
+	body {
+		top: 0px !important;
+	}
+</style>
 </head>
 
 <body>

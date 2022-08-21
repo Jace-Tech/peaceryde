@@ -54,7 +54,8 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
             changeMonth: true,
             changeYear: true,
             yearRange: `${1950 + (MIN_AGE / 2)}:${offset}`,
-            defaultDate: new Date(),
+            showOtherMonths: true,
+            selectOtherMonths: true,
             showAnim: "blind"
         });
     });
@@ -134,7 +135,7 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
                       <div class="form-group">
                         <label class="form-label">Date of Birth</label>
                         <div class="input-group mb-3 biwidth">
-                          <input type="text" required name="dob" readonly id="datepicker" class="form-control firstname" placeholder="dd/mm/yyyy">
+                          <input type="text" required name="dob" value="<?= $FORM_APPY["dob"] ?? "" ?>" readonly id="datepicker" class="form-control firstname" placeholder="dd/mm/yyyy">
                         </div>
                       </div>
                     </div>
