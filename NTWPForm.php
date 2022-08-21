@@ -150,7 +150,7 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
                     </div>
                     <div class="col-md-5 genderwidth">
                       <div class="row">
-                        <div class="col-md-12" style="margin-top: 25px;">
+                        <div class="col-md-12" style="margin-top: 35px;">
 
                           <label class="gender">Gender</label>
                           <br>
