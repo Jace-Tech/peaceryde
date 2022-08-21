@@ -1,6 +1,6 @@
 <?php include("./inc/check_session.php") ?>
 
-<?php if(!isset($_SESSION["REF"])) header("Location: ./index.php"); ?>
+<?php if(!isset($_SESSION["REF"])) header("Location: ./"); ?>
 <?php 
     $users = new User($connect);
     $userServices = new UserService($connect);

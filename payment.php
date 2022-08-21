@@ -1,7 +1,7 @@
 <?php include("./inc/check_session.php") ?>
 
 <?php
-if (!isset($_SESSION["PRICE"])) header("Location: ./index.php");
+if (!isset($_SESSION["PRICE"])) header("Location: ./");
 $userServices = new UserService($connect);
 $services = new Service($connect);
 

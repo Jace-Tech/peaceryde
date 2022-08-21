@@ -1,7 +1,7 @@
 <?php 
 
 session_start();
-if(!isset($_SESSION['PRICE'])) header("location: ./index.php");
+if(!isset($_SESSION['PRICE'])) header("location: ./");
 
 include("../db/config.php");
 include("../models/User.php");

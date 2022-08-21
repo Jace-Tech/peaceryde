@@ -25,7 +25,7 @@ if(isset($_POST['reset'])){
             "message" => "User does not exist"
         ];
         $_SESSION['ALERT'] = json_encode($alert);
-        header("Location: ../forgotpass.php");
+        header("Location: ../forgotpass");
         exit();
     }
 
@@ -97,7 +97,7 @@ if(isset($_POST['change'])) {
 
             unset($_SESSION['RESET_PIN']);
 
-            header("Location: ../signin.php");
+            header("Location: ../signin");
         }
         else {
             $_SESSION['ALERT'] = json_encode([
@@ -105,7 +105,7 @@ if(isset($_POST['change'])) {
                 "status" => "error"
             ]);
 
-            header("Location: ../resetpass.php");
+            header("Location: ../resetpass");
         }
     }
     else {
@@ -114,7 +114,7 @@ if(isset($_POST['change'])) {
             "status" => "error"
         ]);
 
-        header("Location: ../resetpass.php");
+        header("Location: ../resetpass");
     }
 
 }

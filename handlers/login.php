@@ -24,7 +24,7 @@ if(isset($_POST["login"])) {
             header("Location: $redirect");
         }
         else {
-            header("Location: ../signin.php");
+            header("Location: ../signin");
         }
     }
     else {
@@ -40,6 +40,6 @@ if(isset($_POST["login"])) {
         ];
 
         $_SESSION['LOGGED_USER'] = json_encode($data);
-        header("Location: ../Dashboard/index.php");
+        header("Location: ../Dashboard/");
     }
 }

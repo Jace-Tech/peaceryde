@@ -1,7 +1,7 @@
 <?php require_once("./addons/models.php"); ?>
 
 <?php
-    if($LOGGED_ADMIN['type'] != "HIGH") header("Location: ./dashboard.php");
+    if($LOGGED_ADMIN['type'] != "HIGH") header("Location: ./dashboard");
     
     $active = $title = "Review";
     $type = $_GET['type'] ?? "text";

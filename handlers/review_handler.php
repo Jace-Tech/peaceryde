@@ -23,7 +23,7 @@ if(isset($_POST['add'])) {
 
     if(!$rating) {
         setUserAlert("You didn't add a rating", "error");
-        header("Location: ../makereview.php");
+        header("Location: ../makereview");
         exit();
     } 
 
@@ -32,7 +32,7 @@ if(isset($_POST['add'])) {
 
         if(!$result) {
             setUserAlert("Upload Failed", "error");
-            header("Location: ../makereview.php");
+            header("Location: ../makereview");
             exit();
         }
 
@@ -61,9 +61,9 @@ if(isset($_POST['add'])) {
         ];
         $firstname = getUser($connect, $USER_ID)['firstname'];
         $lastname = getUser($connect, $USER_ID)['lastname'];
-        setAdminNotification($connect, "./reviews.php?", json_encode(["MAIN_ADMIN"]), "<strong>$firstname $lastname</strong> posted a review");
+        setAdminNotification($connect, "./reviews?", json_encode(["MAIN_ADMIN"]), "<strong>$firstname $lastname</strong> posted a review");
         $_SESSION['ALERT'] = json_encode($alert);
-        header('Location: ../makereview.php');
+        header('Location: ../makereview');
     }
     else {
         $alert = [
@@ -72,9 +72,9 @@ if(isset($_POST['add'])) {
         ];
 
         $_SESSION['ALERT'] = json_encode($alert);
-        header('Location: ../makereview.php');
+        header('Location: ../makereview');
     }
 }
 else {
-    header("Location: ../makereview.php");
+    header("Location: ../makereview");
 }

@@ -38,15 +38,15 @@ $isUnread = count($messages->get_user_unread_messages($USER_ID));
 
             switch (mode) {
                 case "NBV":
-                    window.location.href = "./NBVADASHFORM.php"
+                    window.location.href = "./NBVADASHFORM"
                     break;
 
                 case "BI":
-                    window.location.href = "./NBIDASHFORM.php"
+                    window.location.href = "./NBIDASHFORM"
                     break;
 
                 case "TWP":
-                    window.location.href = "./NTWPDASHFORM.php"
+                    window.location.href = "./NTWPDASHFORM"
                     break;
 
                 default:

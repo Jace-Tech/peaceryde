@@ -7,15 +7,15 @@ if (isset($_POST["apply"])) {
 
   switch ($type) {
     case 'TWP':
-      header("Location: ./NTWPForm.php");
+      header("Location: ./NTWPForm");
       break;
 
     case 'NBV':
-      header("Location: ./NBVForm.php");
+      header("Location: ./NBVForm");
       break;
 
     case 'NBI':
-      header("Location: ./BIForm.php");
+      header("Location: ./BIForm");
       break;
 
     default:

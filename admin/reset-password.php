@@ -1,5 +1,5 @@
 <?php  session_start(); ?>
-<?php  if(isset($_COOKIE['RESET'])) header("location: ./verify.php");  ?>
+<?php  if(isset($_COOKIE['RESET'])) header("location: ./verify");  ?>
 
 <!doctype html>
 <html lang="en">

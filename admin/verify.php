@@ -1,5 +1,5 @@
 <?php  session_start(); ?>
-<?php if(!isset($_COOKIE['RESET'])) header("location: ./index.php"); ?>
+<?php if(!isset($_COOKIE['RESET'])) header("location: ./"); ?>
 
 <!doctype html>
 <html lang="en">
