@@ -185,6 +185,7 @@
 
                         <div class="col-md-4 col-xl-3">
                             <div class="form-group">
+                                <input type="hidden" name="service" value="srvs-001">
                                 <label class="form-label">Passport No</label>
                                 <input type="text" name="passport" class="form-control passno" placeholder="Passport No">
                             </div>
