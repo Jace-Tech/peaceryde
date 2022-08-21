@@ -161,11 +161,11 @@
             </span>
             <div class="container">
                 <div class="card" style="background-color: whitesmoke;">
-                <div class="align-self-center">
+                <div style="align-self: start">
                 <h3 class="page-title title">Nigeria Business Visa on Arrival </h3>
                 <p class="fill">Fill the Form Below</p>
                 <p class="personal">Your personal details</p>
-            </div>
+               </div>
             <form action="../handlers/form_handler.php" method="post" class="formml" data-form>
                 <div class="form-body">
                     <div class="row">

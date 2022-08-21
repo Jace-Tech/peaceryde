@@ -33,7 +33,7 @@
 /**/
 .title
 {
-  padding: 50px;
+  padding: 5%;
   /* padding-left: 204px; */
   font-family: Ubuntu;
   font-size: 30px;
@@ -44,7 +44,7 @@
 }
 .fill
 {
-  padding: 0px 55px 20px;
+  padding: 0px 5% 20px;
   /* padding-left: 204px; */
   font-family: Ubuntu;
   font-size: 20px;
@@ -634,7 +634,7 @@
   /*UPLOAD*/       
   .title
 {
-  padding: 30px;
+  padding: 5%;
   /* padding-left: 204px; */
   font-family: Ubuntu;
   font-size: 30px;
@@ -649,7 +649,7 @@
 }
 .fill
 {
-  padding: 0px 30px 25px;
+  padding: 0px 5% 25px;
     /* padding-left: 204px; */
     font-family: Ubuntu;
     font-size: 20px;
@@ -667,7 +667,7 @@
     font-style: normal;
     font-weight: 500;
     color: #0A0E69;
-    text-align: center;
+    padding-left: 5%;
 }
 .formml
 {
@@ -696,27 +696,27 @@
 }
 .firstname
 {
-  width:486px; height:43px;border:1px solid #555555;font-size: 13px;
+  width:100%; height:43px;border:1px solid #555555;font-size: 13px;
 }
 .middlename
 {
-  width:486px;height:43px;border:1px solid #555555;font-size: 13px;
+  width:100%;height:43px;border:1px solid #555555;font-size: 13px;
 }
 .lastname
 {
-  width:486px;height:43px;border:1px solid #555555;font-size: 13px;
+  width:100%;height:43px;border:1px solid #555555;font-size: 13px;
 }
 .dob
 {
-  width:486px; height:43px;border:1px solid #555555;font-size: 13px;
+  width:100%; height:43px;border:1px solid #555555;font-size: 13px;
 }
 .email
 {
-  width:486px; height:43px;border:1px solid #555555;font-size: 13px;
+  width:100%; height:43px;border:1px solid #555555;font-size: 13px;
 }
 .passno
 {
-  width:486px;height:43px;border:1px solid #555555;font-size: 13px;
+  width:100%;height:43px;border:1px solid #555555;font-size: 13px;
 }
 .code
 {
@@ -728,7 +728,7 @@
 }
 .mobileno2
 {
-  width:396px;height:43px;border:1px solid #555555;font-size: 13px;
+  width:326px;height:43px;border:1px solid #555555;font-size: 13px;
   
 }
 .please
@@ -737,7 +737,7 @@
 }
 .nationality
 {
-  border: 1px solid #555555; width:486px; height: 44px; margin-top:27px;color: #5A5A5A;
+  border: 1px solid #555555; width:100%; height: 44px; margin-top:27px;color: #5A5A5A;
 }                     
 .left-sidebar a:hover {
   color: #f1f1f1;
@@ -1240,7 +1240,7 @@
 @media(min-width:600px) and (max-width: 719px) {
   .title
 {
-  padding: 30px;
+  padding: 5%;
   /* padding-left: 204px; */
   font-family: Ubuntu;
   font-size: 30px;
@@ -1251,7 +1251,7 @@
 }
 .fill
 {
-  padding: 0px 30px 25px;
+  padding: 0px 5% 25px;
     /* padding-left: 204px; */
     font-family: Ubuntu;
     font-size: 20px;
@@ -1274,7 +1274,7 @@
     font-style: normal;
     font-weight: 500;
     color: #0A0E69;
-    text-align: center;
+    padding-left: 5%;
 }
 .formml
 {
@@ -1303,27 +1303,27 @@
 }
 .firstname
 {
-  width:486px; height:43px;border:1px solid #555555;font-size: 13px;
+  width:100%; height:43px;border:1px solid #555555;font-size: 13px;
 }
 .middlename
 {
-  width:486px;height:43px;border:1px solid #555555;font-size: 13px;
+  width:100%;height:43px;border:1px solid #555555;font-size: 13px;
 }
 .lastname
 {
-  width:486px;height:43px;border:1px solid #555555;font-size: 13px;
+  width:100%;height:43px;border:1px solid #555555;font-size: 13px;
 }
 .dob
 {
-  width:486px; height:43px;border:1px solid #555555;font-size: 13px;
+  width:100%; height:43px;border:1px solid #555555;font-size: 13px;
 }
 .email
 {
-  width:486px; height:43px;border:1px solid #555555;font-size: 13px;
+  width:100%; height:43px;border:1px solid #555555;font-size: 13px;
 }
 .passno
 {
-  width:486px;height:43px;border:1px solid #555555;font-size: 13px;
+  width:100%;height:43px;border:1px solid #555555;font-size: 13px;
 }
 .code
 {
@@ -1335,7 +1335,7 @@
 }
 .mobileno2
 {
-  width:398px;height:43px;border:1px solid #555555;font-size: 13px;
+  width:358px;height:43px;border:1px solid #555555;font-size: 13px;
  
 }
 .please
@@ -1344,7 +1344,7 @@
 }
 .nationality
 {
-  border: 1px solid #555555; width:486px; height: 44px; margin-top:27px;color: #5A5A5A;
+  border: 1px solid #555555; width:100%; height: 44px; margin-top:27px;color: #5A5A5A;
 }
   /*Track progress*/
   .add
@@ -1833,12 +1833,12 @@
 @media(min-width:480px) and (max-width: 599px) {
   .title
 {
-    font-size: 30px;
+    font-size: 5%;
     font-style: normal;
     font-family: Ubuntu;
     font-weight: 500;
     color: #0A0E69;
-    padding-left: 10px;
+    padding-left: 5%;
     text-align: left;
 }
 .fill
@@ -1850,11 +1850,11 @@
     font-style: normal;
     font-weight: 200;
     color: #0A0E69;
-    text-align: left;
+    padding-left: 5%;
 }
 .personal
 {
-  font-family: Ubuntu;text-align: center;font-size: 18px;font-style: normal;font-weight: 400;padding-top:12px;color:#0A0E69;
+  font-family: Ubuntu;padding-left: 5%;font-size: 18px;font-style: normal;font-weight: 400;padding-top:12px;color:#0A0E69;
 }
 .formml
 {
@@ -1883,27 +1883,27 @@
 }
 .firstname
 {
-  width:400px; height:43px;border:1px solid #555555;font-size: 13px;
+  width:100%; height:43px;border:1px solid #555555;font-size: 13px;
 }
 .middlename
 {
-  width:400px;height:43px;border:1px solid #555555;font-size: 13px;margin-top:17px;
+  width:100%;height:43px;border:1px solid #555555;font-size: 13px;margin-top:17px;
 }
 .lastname
 {
-  width:400px;height:43px;border:1px solid #555555;font-size: 13px;margin-top:17px;
+  width:100%;height:43px;border:1px solid #555555;font-size: 13px;margin-top:17px;
 }
 .dob
 {
-  width:400px; height:43px;border:1px solid #555555;font-size: 13px;
+  width:100%; height:43px;border:1px solid #555555;font-size: 13px;
 }
 .email
 {
-  width:400px; height:43px;border:1px solid #555555;font-size: 13px;
+  width:100%; height:43px;border:1px solid #555555;font-size: 13px;
 }
 .passno
 {
-  width:400px;height:43px;border:1px solid #555555;font-size: 13px; margin-top:17px;
+  width:100%;height:43px;border:1px solid #555555;font-size: 13px; margin-top:17px;
 }
 .code
 {
@@ -1915,7 +1915,7 @@
 }
 .mobileno2
 {
-  width:305px;height:43px;border:1px solid #555555;font-size: 13px;
+  width:285px;height:43px;border:1px solid #555555;font-size: 13px;
   
 }
 .please
@@ -1924,7 +1924,7 @@
 }
 .nationality
 {
-  border: 1px solid #555555; width:400px; height: 44px; margin-top:27px;color: #5A5A5A;
+  border: 1px solid #555555; width:100%; height: 44px; margin-top:27px;color: #5A5A5A;
 }
   /*Track progress*/
   .add
@@ -2427,7 +2427,7 @@
  
   .title
 {
-  padding: 30px;
+  padding: 5%;
   /* padding-left: 204px; */
   font-family: Ubuntu;
   font-size: 30px;
@@ -2438,7 +2438,7 @@
 }
 .fill
 {
-  padding: 0px 30px 25px;
+  padding: 0px 5% 25px;
     /* padding-left: 204px; */
     font-family: Ubuntu;
     font-size: 20px;
@@ -2456,7 +2456,8 @@
     font-style: normal;
     font-weight: 500;
     color: #0A0E69;
-    text-align: center;
+    text-align: left;
+    padding-left: 5%;
 }
 .formml
 {
@@ -2485,27 +2486,27 @@
 }
 .firstname
 {
-  width:307px; height:43px;border:1px solid #555555;font-size: 13px;
+  width:100%; height:43px;border:1px solid #555555;font-size: 13px;
 }
 .middlename
 {
-  width:307px;height:43px;border:1px solid #555555;font-size: 13px;
+  width:100%;height:43px;border:1px solid #555555;font-size: 13px;
 }
 .lastname
 {
-  width:307px;height:43px;border:1px solid #555555;font-size: 13px;
+  width:100%;height:43px;border:1px solid #555555;font-size: 13px;
 }
 .dob
 {
-  width:307px; height:43px;border:1px solid #555555;font-size: 13px;
+  width:100%; height:43px;border:1px solid #555555;font-size: 13px;
 }
 .email
 {
-  width:307px; height:43px;border:1px solid #555555;font-size: 13px;
+  width:100%; height:43px;border:1px solid #555555;font-size: 13px;
 }
 .passno
 {
-  width:307px;height:43px;border:1px solid #555555;font-size: 13px;
+  width:100%;height:43px;border:1px solid #555555;font-size: 13px;
 }
 .code
 {
@@ -2517,7 +2518,7 @@
 }
 .mobileno2
 {
-  width:212;height:43px;border:1px solid #555555;font-size: 13px;
+  width:202;height:43px;border:1px solid #555555;font-size: 13px;
   
 }
 .please
@@ -2526,7 +2527,7 @@
 }
 .nationality
 {
-  border: 1px solid #555555; width:307px; height: 44px; margin-top:27px;color: #5A5A5A;
+  border: 1px solid #555555; width:100%; height: 44px; margin-top:27px;color: #5A5A5A;
 }
   /*Track progress*/
   #sidebar
@@ -3042,18 +3043,18 @@
   }
   .title
 {
-  padding: 30px;
+  padding: 5%;
   /* padding-left: 204px; */
   font-family: Ubuntu;
   font-size: 30px;
   font-style: normal;
   font-weight: 500;
   color: #0A0E69;
-  text-align: center;
+  text-align: left;
 }
 .fill
 {
-  padding: 0px 30px 25px;
+  padding: 0px 5% 25px;
     /* padding-left: 204px; */
     font-family: Ubuntu;
     font-size: 20px;
@@ -3071,7 +3072,8 @@
     font-style: normal;
     font-weight: 500;
     color: #0A0E69;
-    text-align: center;
+    text-align: left;
+    padding-left: 5%;
 }
 .formml
 {
