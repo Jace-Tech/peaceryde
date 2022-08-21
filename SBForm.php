@@ -36,20 +36,7 @@
   <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
   <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
 
-  <script>
-   $(document).ready(function(){
-        const MIN_AGE = 18
-        const offset = +(new Date().getFullYear()) - MIN_AGE
-        $( "#datepicker" ).datepicker({
-            changeMonth: true,
-            changeYear: true,
-            yearRange: `${1950 + (MIN_AGE / 2)}:${offset}`,
-            showAnim: "blind"
-        });
-    });
-  </script>
   <style>
-
     .error {
       border-color: #f00;
     }
@@ -74,7 +61,7 @@
             <input type="text" data-length class="form-control vsbform vsbmt" placeholder="Last Name" required name="lastname">
             <input type="text" data-length class="form-control vsbform vsbmt" placeholder="Email" required name="email">
             <input type="text" readonly required name="dob" data-length class="form-control vsbform" placeholder="dd/mm/yyyy" id="datepicker">
-             
+
             <p class="vsbform" style="
     color: #C8730F;
     font-family: Ubuntu;
@@ -341,8 +328,8 @@
     inputElements.forEach((element) => {
       element.addEventListener('keydown', () => {
         const value = element.value
-        if(value.trim().length > 2) {
-          if(element.classList.contains('error')) {
+        if (value.trim().length > 2) {
+          if (element.classList.contains('error')) {
             element.classList.remove('error')
           }
         }
@@ -350,9 +337,9 @@
 
       element.addEventListener("blur", () => {
         const value = element.value
-        if(value.trim().length < 3) {
+        if (value.trim().length < 3) {
           element.classList.add('error')
-        }else {
+        } else {
           if (element.classList.contains('error')) {
             element.classList.remove('error')
           }
@@ -366,11 +353,13 @@
 
       const inputElements = document.querySelectorAll('[data-length]')
       inputElements.forEach(inputElement => {
-        const elementValue = inputElement.value  
+        const elementValue = inputElement.value
 
-        if(elementValue.trim().length < 3) {
+        if (elementValue.trim().length < 3) {
           elementValue.classList.add("error");
-          inputElement.scrollIntoView({ behavior: "smooth" })
+          inputElement.scrollIntoView({
+            behavior: "smooth"
+          })
           return
         }
       })
@@ -387,10 +376,27 @@
       }
     })
   </script>
+
+  <script>
+    const MIN_AGE = 18
+    const offset = +(new Date().getFullYear()) - MIN_AGE
+    $("#datepicker").datepicker({
+      changeMonth: true,
+      changeYear: true,
+      yearRange: `${1950 + (MIN_AGE / 2)}:${offset}`,
+      defaultDate: new Date(),
+      showAnim: "blind",
+      maxDate: new Date(offset, 0, 0)
+    });
+
+    $("#datepicker").click(function() {
+      $(this).val("");
+    });
+  </script>
   <script type="text/javascript">
     AOS.init();
   </script>
-     <?php include("./inc/langChange.php") ?>
+  <?php include("./inc/langChange.php") ?>
 </body>
 
 </html>
