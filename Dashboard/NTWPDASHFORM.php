@@ -471,7 +471,6 @@
                                         <option data-countryCode="ZW" value="263">Zimbabwe (+263)</option>
                                     </optgroup>
                                     </select>
-                                    <input type="hidden" name="nbv" value="">
                                     <input type="text" required name="phone" class="form-control mobileno2" placeholder="Mobile Number">
                                 </div>
 
