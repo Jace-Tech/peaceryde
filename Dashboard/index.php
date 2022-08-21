@@ -29,6 +29,7 @@ $isUnread = count($messages->get_user_unread_messages($USER_ID));
     <link href="./assets/extra-libs/jvector/jquery-jvectormap-2.0.2.css" rel="stylesheet" />
     <link href="./dist/css/style.min.css" rel="stylesheet">
     <link href="./dist/css/responsive.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <!-- Latest compiled and minified CSS -->
   <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"> -->
 
@@ -779,6 +780,45 @@ $isUnread = count($messages->get_user_unread_messages($USER_ID));
 
         }
     </script>
+
+
+
+
+<script>
+  function googleTranslateElementInit() {
+  new google.translate.TranslateElement({
+    pageLanguage: 'en',
+    includedLanguages: 'en,bn,de,ur,el,cs,vi,ta,nl,it,ja,es,hi,pl,pt,zh-CN,zh-TW,ar,so,ru,hy,ko,fr,hu',
+    layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+  }, 'google_translate_element');
+}
+
+function triggerHtmlEvent(element, eventName) {
+  var event;
+  if (document.createEvent) {
+    event = document.createEvent('HTMLEvents');
+    event.initEvent(eventName, true, true);
+    element.dispatchEvent(event);
+  } else {
+    event = document.createEventObject();
+    event.eventType = eventName;
+    element.fireEvent('on' + event.eventType, event);
+  }
+}
+
+jQuery('.lang-select').click(function() {
+  var theLang = jQuery(this).attr('data-lang');
+  jQuery('.goog-te-combo').val(theLang);
+
+  window.location = jQuery(this).attr('href')
+  localStorage.setItem('lang', theLang);
+  localStorage.setItem('langFunc', `${jQuery(this).attr('href')}`);
+  location.reload();
+});
+
+
+</script> 
+<script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
     <script src="./assets/libs/jquery/dist/jquery.min.js"></script>
     <script src="./assets/libs/popper.js/dist/umd/popper.min.js"></script>
     <script src="./assets/libs/bootstrap/dist/js/bootstrap.min.js"></script>
