@@ -492,7 +492,7 @@ $isUnread = count($messages->get_user_unread_messages($USER_ID));
                                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M0.450806 4.95833C0.450806 4.63617 0.711973 4.375 1.03414 4.375H11.9658C12.288 4.375 12.5491 4.63617 12.5491 4.95833C12.5491 5.2805 12.288 5.54167 11.9658 5.54167H1.03414C0.711973 5.54167 0.450806 5.2805 0.450806 4.95833Z" fill="#080C58" />
                                             </svg>
                                             &nbsp;<span class="langName">English |</span></a>
-                                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style="overflow-y: scroll;height: 350px;">
                                             <li><a class="dropdown-item lang-select" href="#googtrans(en|ar)" data-lang="ar" style="color: black; font-size: 15px; padding-bottom: 10px;">Arabic </a></li>
                                             <li><a class="dropdown-item lang-select" href="#googtrans(en|bn)" data-lang="bn" style="color: black; font-size: 15px; padding-bottom: 10px;">Bengali (Bangla) </a></li>
                                             <li><a class="dropdown-item lang-select" href="#googtrans(en|zh-CN)" data-lang="zh-CN" style="color: black; font-size: 15px; padding-bottom: 10px;">Chinese</a> </li>
