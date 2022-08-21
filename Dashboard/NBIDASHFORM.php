@@ -447,7 +447,7 @@
                     <div class="row" style="margin-top: 15px;">
                         <div class="col-md-6 col-lg-4 col-xl-3">
                             <div class="form-group">
-                                <input type="text" name="coperateAddress" class="form-control dob" placeholder="Coperate Address">
+                                <input type="text" required name="coperateAddress" class="form-control dob" placeholder="Coperate Address">
                             </div>
                         </div>
                         
@@ -536,12 +536,6 @@
             form.elements.lastname.value = lastname
             form.elements.shares.value = shares
             form.elements.coperateAddress.value = coperateAddress
-            // form.elements.phone.value = phone
-            // form.elements.passport.value = passport
-            // Array.from(form.elements.title.children).filter(item => item.value == title)[0].selected = true
-            // Array.from(form.elements.country.children).filter(item => item.value == country)[0].selected = true
-            // Array.from(form.elements.country_code.children).filter(item => item.value == countryCode)[0].selected = true
-            // Array.from(form.elements.gender).filter(item => item.value == gender)[0].checked = true
         }
 
         document.querySelector("[data-btn]")
