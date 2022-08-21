@@ -507,7 +507,7 @@
       const countryCode = form.countryCode.value
       const email = form.email.value
       const coperateAddress = form.coperateAddress.value
-      const coperateName = form.coperateName.value
+      const companyName = form.companyName.value
       const service = form.service.value
 
       const mode = "BI"
