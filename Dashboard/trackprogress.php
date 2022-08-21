@@ -468,6 +468,19 @@ $isUnread = count($messages->get_user_unread_messages($USER_ID));
                                 
 
                                 <li class="breadcrumb-item logoutlaptop" style="margin-top: 1px;">
+                                    <form action="./handler/logout_handler.php" method="post" style="display: inline-block">
+                                        <button style="background-color: transparent; border: none; color: #080C58;" name="logout" href="javascript:void(0)">
+                                            <svg width="18" height="18" style="margin-top: -5px;" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M13.0625 2.58789L12.4375 3.66914C13.7482 4.42585 14.7725 5.5939 15.3517 6.99212C15.9308 8.39034 16.0324 9.94059 15.6407 11.4024C15.249 12.8643 14.3859 14.1561 13.1852 15.0774C11.9846 15.9987 10.5134 16.4981 9 16.4981C7.48658 16.4981 6.01545 15.9987 4.81477 15.0774C3.61409 14.1561 2.75097 12.8643 2.35926 11.4024C1.96756 9.94059 2.06917 8.39034 2.64833 6.99212C3.22749 5.5939 4.25184 4.42585 5.5625 3.66914L4.9375 2.58789C3.38854 3.48219 2.17795 4.8626 1.49348 6.51504C0.809018 8.16749 0.688934 9.99961 1.15186 11.7273C1.61478 13.4549 2.63483 14.9815 4.05382 16.0703C5.4728 17.1592 7.21141 17.7493 9 17.7493C10.7886 17.7493 12.5272 17.1592 13.9462 16.0703C15.3652 14.9815 16.3852 13.4549 16.8482 11.7273C17.3111 9.99961 17.191 8.16749 16.5065 6.51504C15.8221 4.8626 14.6115 3.48219 13.0625 2.58789Z" fill="#E80F0F" />
+                                                <path d="M8.375 0.25H9.625V9H8.375V0.25Z" fill="#E80F0F" />
+                                            </svg>
+                                            &nbsp; &nbsp; Logout
+                                        </button>
+                                    </form>
+                                </li>
+                      
+
+                                <li class="breadcrumb-item logoutlaptop" style="margin-top: 1px;">
                                     <div class=" nav-item dropdown mobilelang" style="margin-top:-29px">
                                         <div id="google_translate_element"></div>
                                         <a class="nav-link dropdown-toggle nav english" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -508,19 +521,6 @@ $isUnread = count($messages->get_user_unread_messages($USER_ID));
                                     </div>
                                 </li>
                                 
-
-                                <li class="breadcrumb-item logoutlaptop" style="margin-top: 1px;">
-                                    <form action="./handler/logout_handler.php" method="post" style="display: inline-block">
-                                        <button style="background-color: transparent; border: none; color: #080C58;" name="logout" href="javascript:void(0)">
-                                            <svg width="18" height="18" style="margin-top: -5px;" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M13.0625 2.58789L12.4375 3.66914C13.7482 4.42585 14.7725 5.5939 15.3517 6.99212C15.9308 8.39034 16.0324 9.94059 15.6407 11.4024C15.249 12.8643 14.3859 14.1561 13.1852 15.0774C11.9846 15.9987 10.5134 16.4981 9 16.4981C7.48658 16.4981 6.01545 15.9987 4.81477 15.0774C3.61409 14.1561 2.75097 12.8643 2.35926 11.4024C1.96756 9.94059 2.06917 8.39034 2.64833 6.99212C3.22749 5.5939 4.25184 4.42585 5.5625 3.66914L4.9375 2.58789C3.38854 3.48219 2.17795 4.8626 1.49348 6.51504C0.809018 8.16749 0.688934 9.99961 1.15186 11.7273C1.61478 13.4549 2.63483 14.9815 4.05382 16.0703C5.4728 17.1592 7.21141 17.7493 9 17.7493C10.7886 17.7493 12.5272 17.1592 13.9462 16.0703C15.3652 14.9815 16.3852 13.4549 16.8482 11.7273C17.3111 9.99961 17.191 8.16749 16.5065 6.51504C15.8221 4.8626 14.6115 3.48219 13.0625 2.58789Z" fill="#E80F0F" />
-                                                <path d="M8.375 0.25H9.625V9H8.375V0.25Z" fill="#E80F0F" />
-                                            </svg>
-                                            &nbsp; &nbsp; Logout
-                                        </button>
-                                    </form>
-                                </li>
-                      
                                 <li class="breadcrumb-item logoutmobile" style="margin-top: 0px;">
                                 <form action="./handler/logout_handler.php" method="post" style="display: inline-block">
                                 <button style="background-color: transparent; border: none; color: #080C58;" name="logout" href="javascript:void(0)">
