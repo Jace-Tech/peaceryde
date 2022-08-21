@@ -60,14 +60,15 @@
             <input type="text" data-length class="form-control vsbform" placeholder="First Name" required name="firstname">
             <input type="text" data-length class="form-control vsbform vsbmt" placeholder="Last Name" required name="lastname">
             <input type="text" data-length class="form-control vsbform vsbmt" placeholder="Email" required name="email">
-            <input type="text" readonly required name="dob" data-length class="form-control vsbform" placeholder="dd/mm/yyyy" id="datepicker">
-
-            <p class="vsbform" style="
-    color: #C8730F;
-    font-family: Ubuntu;
-    font-size: 13px;
-    font-style: normal;
-    font-weight: 400;">You must be at least 18 years old to use this website.</p>
+            <!-- <input type="text" readonly required name="dob" data-length class="form-control vsbform" placeholder="dd/mm/yyyy" id="datepicker"> -->
+            <input type="text" readonly required name="dob" data-length class="form-control vsbform vsbmt" placeholder="dd/mm/yyyy" id="datepicker">
+             
+             <p class="vsbform vsbmt" style="border:none;
+     color: #C8730F;
+     font-family: Ubuntu;
+     font-size: 13px;
+     font-style: normal;
+     font-weight: 400;">You must be at least 18 years old to use this website.</p>
             <div class="row vsbform2">
               <div class="input-group" style="padding-left: 0px; padding-right: 0px;">
                 <div class="input-group-prepend">
