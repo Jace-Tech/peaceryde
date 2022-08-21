@@ -171,7 +171,7 @@
                     <div class="row">
                         <div class="col-md-4 col-lg-4 col-xl-4">
                             <label class="form-label">Title</label>
-                            <select class="form-select fmselect" name="title" aria-label="Default select example">
+                            <select required class="form-select fmselect" name="title" aria-label="Default select example">
                                 <option selected>Title</option>
                                 <?php foreach ($titles as $title) : ?>
                                     <option value="<?= $title ?>"><?= $title ?></option>
@@ -186,20 +186,20 @@
                         <div class="col-md-4 col-lg-4 col-xl-4">
                             <div class="form-group">
                                 <label class="form-label">First Name</label>
-                                <input name="firstname" type="text" value="<?= $USER['firstname'] ?? ""; ?>" class="form-control firstname" placeholder="First Name (as on passport)">
+                                <input required name="firstname" type="text" value="<?= $USER['firstname'] ?? ""; ?>" class="form-control firstname" placeholder="First Name (as on passport)">
                             </div>
                         </div>
                         <div class="col-md-4 col-lg-4 col-xl-4">
                             <div class="form-group">
                                 <label class="form-label">Middle Name</label>
-                                <input name="middlename" type="text"  value="<?= $USER['middle_name'] ?? ""; ?>" class="form-control middlename" placeholder="Middle Name (as on passport)">
+                                <input required name="middlename" type="text"  value="<?= $USER['middle_name'] ?? ""; ?>" class="form-control middlename" placeholder="Middle Name (as on passport)">
                             </div>
                         </div>
                         <div class="col-md-4 col-lg-4 col-xl-4">
                             <div class="form-group">
                                 <label class="form-label">Last Name</label>
                                 <input type="hidden" name="service" value="srvs-002">
-                                <input name="lastname" type="text" value="<?= $USER['lastname'] ?? ""; ?>" class="form-control lastname" placeholder="Last Name (as on passport)">
+                                <input required name="lastname" type="text" value="<?= $USER['lastname'] ?? ""; ?>" class="form-control lastname" placeholder="Last Name (as on passport)">
                             </div>
                         </div>
 
@@ -208,7 +208,7 @@
                         <div class="col-md-4 col-lg-4 col-xl-4">
                             <div class="form-group">
                                 <label class="form-label">Date of Birth</label>
-                                <input type="text" readonly name="dob" id="datepicker" class="form-control dob" placeholder="dd/mm/yyyy">
+                                <input required type="text" readonly name="dob" id="datepicker" class="form-control dob" placeholder="dd/mm/yyyy">
                             </div>
                         </div>
 
@@ -234,14 +234,14 @@
                         <div class="col-md-4 col-xl-4">
                             <div class="form-group">
                                 <label class="form-label">Email Address</label>
-                                <input type="email" class="form-control email" value="<?= $USER['email'] ?? ""; ?>" name="email" value="<?= $LOGGED_USER['email']; ?>" placeholder="Email address">
+                                <input required type="email" class="form-control email" value="<?= $USER['email'] ?? ""; ?>" name="email" value="<?= $LOGGED_USER['email']; ?>" placeholder="Email address">
                             </div>
                         </div>
 
                         <div class="col-md-4 col-xl-4">
                             <div class="form-group">
                                 <label class="form-label">Passport No.</label>
-                                <input type="text" name="passport" class="form-control passno" value="<?= $USER['passport'] ?? ""; ?>" placeholder="Passport No">
+                                <input required type="text" name="passport" class="form-control passno" value="<?= $USER['passport'] ?? ""; ?>" placeholder="Passport No">
                             </div>
                         </div>
                     </div>
@@ -251,7 +251,7 @@
                             <div class="form-group">
                                 <div class="input-group mb-3">
                                 <div class="input-group-prepend">
-                                    <select class="custom-select" required name="countryCode" id="inputGroupSelect01" style="width: 100px;height:43px; background-color: #ADC92E; color: #F9FFFF; font-size:11px;">
+                                    <select  class="custom-select" required name="countryCode" id="inputGroupSelect01" style="width: 100px;height:43px; background-color: #ADC92E; color: #F9FFFF; font-size:11px;">
                                     <optgroup label="Country Code">
 
                                         <option data-countryCode="DZ" value="213">Algeria (+213)</option>
@@ -484,7 +484,7 @@
                     <p class="please">Please select below your Nationality (as on passport)</p>
                     <div class="row">
                         <div class="col-md-4 col-xl-3">
-                            <select name="country" class="form-select nationality" aria-label="Default select example">
+                            <select required name="country" class="form-select nationality" aria-label="Default select example">
                                 <option selected>Select Country</option>
                                 <?php foreach ($country_fee as $key => $value) : ?>
                                     <?php if ($key == "united states") : ?>

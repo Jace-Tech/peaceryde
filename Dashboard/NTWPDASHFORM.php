@@ -171,7 +171,7 @@
                     <div class="row">
                         <div class="col-md-4 col-lg-3 col-xl-3">
                             <label class="form-label">Title</label>
-                            <select class="form-select fmselect" aria-label="Default select example" name="title">
+                            <select required class="form-select fmselect" aria-label="Default select example" name="title">
                                 <option selected>Title</option>
                                 <?php foreach ($titles as $title) : ?>
                                     <option value="<?= $title ?>"><?= $title ?></option>
@@ -481,7 +481,7 @@
                     <div class="row">
                         <div class="col-md-4 col-xl-3">
                             <label class="form-label">Country</label>
-                            <select name="country" class="form-select nationality" aria-label="Default select example">
+                            <select required name="country" class="form-select nationality" aria-label="Default select example">
                                 <option selected>Select Country</option>
                                 <?php foreach ($country_fee as $key => $value) : ?>
                                     <?php if ($key == "united states") : ?>
