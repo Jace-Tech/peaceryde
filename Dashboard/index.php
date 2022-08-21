@@ -551,7 +551,7 @@ $isUnread = count($messages->get_user_unread_messages($USER_ID));
                                 </li>
 
                                 <li class="breadcrumb-item logoutlaptop" style="margin-top: 1px;">
-                                    <div class=" nav-item dropdown mobilelang">
+                                    <div class=" nav-item dropdown mobilelang" style="margin-top:-29px">
                                         <div id="google_translate_element"></div>
                                         <a class="nav-link dropdown-toggle nav english" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                             <svg width="20" height="20" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
