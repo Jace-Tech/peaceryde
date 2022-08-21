@@ -2,7 +2,7 @@
 
 <?php  
     if(isset($_SESSION['APPLY_FORM_DATA'])) {
-        $FORM_APPLY = json_decode($_SESSION['APPLY_FORM_DATA'], true);
+        $USER = json_decode($_SESSION['APPLY_FORM_DATA'], true);
     }
 ?>
 
@@ -171,7 +171,7 @@
                             <div class="form-group">
                                 <label class="form-label">First Name</label>
                                 <div class="input-group mb-3 biwidth">
-                                <input required name="firstname" type="text" data-length value="<?= $FORM_APPLY['firstname'] ?? ""; ?>" class="form-control dob" placeholder="First Name">
+                                <input required name="firstname" type="text" data-length value="<?= $USER['firstname'] ?? ""; ?>" class="form-control dob" placeholder="First Name">
                                 </div>
                             </div>
                         </div>
@@ -179,7 +179,7 @@
                         <div class="col-md-5 col-lg-4 col-xl-3">
                             <div class="form-group">
                                 <label class="form-label">Last Name</label>
-                                <input required name="lastname" data-length value="<?= $FORM_APPLY['lastname'] ?? ""; ?>" type="text" class="form-control dob" placeholder="Last Name">
+                                <input required name="lastname" data-length value="<?= $USER['lastname'] ?? ""; ?>" type="text" class="form-control dob" placeholder="Last Name">
                             </div>
                         </div>
                         
@@ -188,7 +188,7 @@
                         <div class="col-md-5 col-lg-4 col-xl-3">
                             <div class="form-group">
                                 <label class="form-label">Email Address</label>
-                                <input required type="text" name="email" value="<?= $FORM_APPLY['email'] ?? ""; ?>" class="form-control mobileno" placeholder="Email">
+                                <input required type="text" name="email" value="<?= $USER['email'] ?? ""; ?>" class="form-control mobileno" placeholder="Email">
                                 <input required type="hidden" name="service" value="srvs-003">
                             </div>
                         </div> 

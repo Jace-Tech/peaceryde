@@ -3,7 +3,7 @@
 
 <?php  
     if(isset($_SESSION['APPLY_FORM_DATA'])) {
-        $FORM_APPLY = json_decode($_SESSION['APPLY_FORM_DATA'], true);
+        $USER = json_decode($_SESSION['APPLY_FORM_DATA'], true);
     }
 ?>
 
@@ -186,20 +186,20 @@
                         <div class="col-md-4 col-lg-4 col-xl-4">
                             <div class="form-group">
                                 <label class="form-label">First Name</label>
-                                <input name="firstname" type="text" value="<?= $FORM_APPLY['firstname'] ?? ""; ?>" class="form-control firstname" placeholder="First Name (as on passport)">
+                                <input name="firstname" type="text" value="<?= $USER['firstname'] ?? ""; ?>" class="form-control firstname" placeholder="First Name (as on passport)">
                             </div>
                         </div>
                         <div class="col-md-4 col-lg-4 col-xl-4">
                             <div class="form-group">
                                 <label class="form-label">Middle Name</label>
-                                <input name="middlename" type="text" class="form-control middlename" placeholder="Middle Name (as on passport)">
+                                <input name="middlename" type="text"  value="<?= $USER['middle_name'] ?? ""; ?>" class="form-control middlename" placeholder="Middle Name (as on passport)">
                             </div>
                         </div>
                         <div class="col-md-4 col-lg-4 col-xl-4">
                             <div class="form-group">
                                 <label class="form-label">Last Name</label>
                                 <input type="hidden" name="service" value="srvs-002">
-                                <input name="lastname" type="text" value="<?= $FORM_APPLY['lastname'] ?? ""; ?>" class="form-control lastname" placeholder="Last Name (as on passport)">
+                                <input name="lastname" type="text" value="<?= $USER['lastname'] ?? ""; ?>" class="form-control lastname" placeholder="Last Name (as on passport)">
                             </div>
                         </div>
 
@@ -234,14 +234,14 @@
                         <div class="col-md-4 col-xl-4">
                             <div class="form-group">
                                 <label class="form-label">Email Address</label>
-                                <input type="email" class="form-control email" value="<?= $FORM_APPLY['email'] ?? ""; ?>" name="email" value="<?= $LOGGED_USER['email']; ?>" placeholder="Email address">
+                                <input type="email" class="form-control email" value="<?= $USER['email'] ?? ""; ?>" name="email" value="<?= $LOGGED_USER['email']; ?>" placeholder="Email address">
                             </div>
                         </div>
 
                         <div class="col-md-4 col-xl-4">
                             <div class="form-group">
                                 <label class="form-label">Passport No.</label>
-                                <input type="text" name="passport" class="form-control passno" placeholder="Passport No">
+                                <input type="text" name="passport" class="form-control passno" value="<?= $USER['passport'] ?? ""; ?>" placeholder="Passport No">
                             </div>
                         </div>
                     </div>
