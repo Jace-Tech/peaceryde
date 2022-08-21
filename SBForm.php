@@ -44,8 +44,6 @@
             changeMonth: true,
             changeYear: true,
             yearRange: `${1950 + (MIN_AGE / 2)}:${offset}`,
-            showOtherMonths: true,
-            selectOtherMonths: true,
             showAnim: "blind"
         });
     });

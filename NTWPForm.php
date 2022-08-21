@@ -54,8 +54,6 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
             changeMonth: true,
             changeYear: true,
             yearRange: `${1950 + (MIN_AGE / 2)}:${offset}`,
-            showOtherMonths: true,
-            selectOtherMonths: true,
             showAnim: "blind"
         });
     });
@@ -411,7 +409,7 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
                           </optgroup>
                         </select>
                       </div>
-                      <input type="tel" required name="phone" class="form-control firstname" data-length placeholder="070XXXXXXXX">
+                      <input type="tel" required name="phone" class="form-control firstname" data-length placeholder="70XXXXXXXX">
                       <input required type="hidden" name="service" value="srvs-001">
                       <input required type="hidden" name="twp" value="">
                     </div>
