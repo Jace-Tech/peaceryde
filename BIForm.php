@@ -46,15 +46,16 @@
 
     <script>
       $(document).ready(function(){
-        const MIN_AGE = 18
-        const offset = +(new Date().getFullYear()) - MIN_AGE
-        $( "#datepicker" ).datepicker({
-            changeMonth: true,
-            changeYear: true,
-            yearRange: `${1950 + (MIN_AGE / 2)}:${offset}`,
-            showAnim: "blind"
-        });
-    });
+          const MIN_AGE = 18
+          const offset = +(new Date().getFullYear()) - MIN_AGE
+          $( "#datepicker" ).datepicker({
+              changeMonth: true,
+              changeYear: true,
+              yearRange: `${1950 + (MIN_AGE / 2)}:${offset}`,
+              defaultDate: new Date(),
+              showAnim: "blind"
+          });
+      });
     </script>
     
 </head>
@@ -87,7 +88,7 @@
                                       <div class="form-group">    
                                         <label class="form-label">First Name</label> 
                                         <div class="input-group mb-3 biwidth">                            
-                                          <input type="text" data-length name="firstname" value="<?= $FORM_APPY['firstname'] ?? "" ?>" required class="form-control firstname2" placeholder="First Name" >
+                                          <input type="text" data-length name="firstname" value="<?= $FORM_APPY['firstname'] ?? "" ?>" class="form-control firstname2" placeholder="First Name" >
                                         </div>
                                       </div>
                                     </div>
@@ -95,7 +96,7 @@
                                       <div class="form-group">
                                         <label class="form-label">Last Name</label>
                                         <div class="input-group mb-3 biwidth">
-                                          <input type="text" data-length name="lastname" class="form-control firstname2" required value="<?= $FORM_APPY['lastname'] ?? "" ?>" placeholder="Last Name" >
+                                          <input type="text" data-length name="lastname" class="form-control firstname2" value="<?= $FORM_APPY['lastname'] ?? "" ?>" placeholder="Last Name" >
                                         </div>
                                       </div>
                                     </div>
@@ -109,7 +110,7 @@
                                         <input type="hidden" name="bi">                               
                                         <input type="hidden" name="service" value="srvs-003">
                                         <div class="input-group mb-3 biwidth">                               
-                                          <input type="email" class="form-control firstname2" required name="email" value="<?= $FORM_APPY['email'] ?? "" ?>" placeholder="Email" >
+                                          <input type="email" class="form-control firstname2" name="email" value="<?= $FORM_APPY['email'] ?? "" ?>" placeholder="Email" >
                                         </div>
                                     </div>
                                     </div>
@@ -341,7 +342,7 @@
                                                   </optgroup>
                                                 </select>
                                             </div>
-                                            <input type="tel" required name="phone" value="<?= $FORM_APPY['phone'] ?? "" ?>" class="form-control firstname" placeholder="70XXXXXXXX" >
+                                            <input type="tel" required name="phone" value="<?= $FORM_APPY['phone'] ?? "" ?>" class="form-control firstname" placeholder="070XXXXXXXX" >
                                           </div>
                                         </div> 
                                       </div>
@@ -354,7 +355,7 @@
                                       <div class="form-group">              
                                         <label class="form-label">Company Name</label> 
                                         <div class="input-group mb-3 biwidth">                  
-                                          <input type="text" name="companyName" required data-length class="form-control firstname2" placeholder="Company Name" >
+                                          <input type="text" name="companyName" data-length class="form-control firstname2" placeholder="Company Name" >
                                         </div>
                                       </div>
                                     </div>
@@ -362,21 +363,21 @@
                                       <div class="form-group">           
                                         <label class="form-label">Corporate Address</label>  
                                         <div class="input-group mb-3 biwidth">                    
-                                          <input type="text" name="coperateAddress" required class="form-control firstname2" placeholder="Corporate Address" >
+                                          <input type="text" name="coperateAddress" class="form-control firstname2" placeholder="Corporate Address" >
                                         </div>
                                     </div>
                                     </div>
                                   </div> 
                                 </div>
                                 
-                                <p class="yourname">You must be at least 18 years old to use this website.</p>
+                               
                                 <div class="form-row formml">
                                   <div class="row">
                                   <div class="col-md-5">
                                     <div class="form-group">
                                       <label class="form-label">Date of Birth</label>
                                       <div class="input-group mb-3 biwidth">
-                                        <input type="text" readonly required name="dob" class="form-control firstname" value="<?= $FORM_APPY["dob"] ?? "" ?>" placeholder="dd/mm/yyyy" id="datepicker">
+                                        <input type="text" readonly required name="dob" class="form-control firstname2" placeholder="dd/mm/yyyy" id="datepicker">
                                       </div>
                                     </div>
                                   </div>
@@ -384,13 +385,13 @@
                                       <div class="form-group">
                                       <label class="form-label">No of Shares</label>
                                         <div class="input-group mb-3 biwidth">
-                                        <input type="number" name="shares" required class="form-control firstname2" placeholder="No of Shares" >
+                                        <input type="number" name="shares" class="form-control firstname2" placeholder="No of Shares" >
                                         </div>
                                       </div>
                                     </div>
                                   </div> 
                                 </div>
-                                
+                                <p class="yourname">You must be at least 18 years old to use this website.</p>
                               
                                 <div class=" formml" style="margin-top: 27px;">
                                   <label>Are you a returning customer ? (do you have an account with us on this website)</label>
