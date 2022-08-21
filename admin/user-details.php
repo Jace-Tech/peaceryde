@@ -329,7 +329,7 @@ $USERS_ADMIN = fetchUsersSubAdmins($connect, $_GET['user']);
                                         <td class="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap">
                                             <div class="flex items-center">
                                                 <div class="font-medium text-gray-800">
-                                                    <a download="<?= $document['name']; ?>" href="../Dashboard/upload/<?= json_decode($document['file'], true)[0]; ?>" class="text-indigo-500 text-sm font-medium">
+                                                    <a download="<?= $document['name']; ?>" href="../Dashboard/uploads/<?= json_decode($document['file'], true)[0]; ?>" class="text-indigo-500 text-sm font-medium">
                                                         <?= $document['name']; ?>
                                                     </a>
                                                 </div>

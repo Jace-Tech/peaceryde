@@ -33,7 +33,7 @@ if(isset($_POST['upload'])) {
         $filename = "$name-$time.$extension";
 
         $tepFile = $file['tmp_name'][$num];
-        $destination = "../upload/$filename";
+        $destination = "../uploads/$filename";
 
         if(!move_uploaded_file($tepFile, $destination)) {
             $uploaded = false;

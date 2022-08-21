@@ -647,7 +647,7 @@ $isUnread = $messages->get_user_unread_messages($USER_ID) ?? [];
                                     <?php foreach ($UPLOADS as $UPLOAD) : ?>
                                         <tr>
                                             <th scope="row" style="padding-top:48px;padding-left:36px;color:#5A5A5A;font-family: Ubuntu;font-size: 16px;font-style: normal;font-weight: 400;">
-                                                <a download="<?=  json_decode($UPLOAD['file'], true)[0]; ?>" class="text-primary" href="./upload/<?= json_decode($UPLOAD['file'], true)[0]; ?>">
+                                                <a download="<?=  json_decode($UPLOAD['file'], true)[0]; ?>" class="text-primary" href="./uploads/<?= json_decode($UPLOAD['file'], true)[0]; ?>">
                                                     <?= $UPLOAD['name'] ?>
                                                 </a>
                                             </th>
