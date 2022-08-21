@@ -136,6 +136,7 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
                         <label class="form-label">Date of Birth</label>
                         <div class="input-group mb-3 biwidth">
                           <input type="text" readonly required name="dob" value="<?= $FORM_APPY["dob"] ?? "" ?>" class="form-control firstname" placeholder="dd/mm/yyyy" id="datepicker">
+                          <p class="yourname">You must be at least 18 years old to use this website.</p>
                         </div>
                       </div>
                     </div>
@@ -162,7 +163,7 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
                     <div class="col-md-3"></div>
                   </div>
                 </div>
-                <p class="yourname">You must be at least 18 years old to use this website.</p>
+              
                 <div class="form-row formml">
                   <div class="row">
                     <div class="col-md-5">
