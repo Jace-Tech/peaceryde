@@ -1188,7 +1188,7 @@ width: 100%;
 
   .nbvformheight {
     position: relative;
-    height: 2000px;
+    height: 2300px;
     top: 145px;
   }
 
@@ -1231,7 +1231,7 @@ width: 100%;
 }
   .cardform {
     border: 1px solid #ffffff;
-    height: 1500px;
+    height: 1700px;
   }
 
   .formh1 {
@@ -1282,7 +1282,7 @@ width: 100%;
   .firstname {
     border: 1px solid #555555;
     font-family: ubuntu;
-    margin-top: 27px;
+    margin-top: 7px;
     height: 44px;
     width: 227px;
   }
@@ -1311,7 +1311,7 @@ width: 100%;
   .middlename {
     border: 1px solid #555555;
     font-family: ubuntu;
-    margin-top: 17px;
+    margin-top: 7px;
     height: 44px;
     width: 227px;
     margin-left: 0px;
@@ -1320,7 +1320,7 @@ width: 100%;
   .lastname {
     border: 1px solid #555555;
     font-family: ubuntu;
-    margin-top: 17px;
+    margin-top: 7px;
     height: 44px;
     width: 227px;
     margin-left: 0px;
@@ -2198,7 +2198,7 @@ width: 100%;
 
   .nbvformheight {
     position: relative;
-    height: 2000px;
+    height: 2300px;
     top: 115px;
   }
 
@@ -2939,7 +2939,7 @@ width: 100%;
 
   .cardform {
     border: 1px solid #ffffff;
-    height: 1500px;
+    height: 1700px;
   }
 
   .formh1 {
@@ -3477,7 +3477,7 @@ width: 100%;
 
   .nbvformheight {
     position: relative;
-    height: 2000px;
+    height: 2300px;
     top: 145px;
   }
 
@@ -4687,7 +4687,7 @@ width: 100%;
 }
   .cardform {
     border: 1px solid #ffffff;
-    height: 1500px;
+    height: 1700px;
   }
 
   .formh1 {
@@ -6176,7 +6176,7 @@ width: 100%;
 
   .nbvformheight {
     position: relative;
-    height: 2000px;
+    height: 2300px;
     top: 45px;
   }
 
@@ -6462,7 +6462,7 @@ width: 100%;
 
   .cardform {
     border: 1px solid #ffffff;
-    height: 1510px;
+    height: 1710px;
   }
 
   .formh1 {
@@ -8200,7 +8200,7 @@ width: 100%;
 
   .cardform {
     border: 1px solid #ffffff;
-    height: 1500px;
+    height: 1700px;
   }
 
   .formh1 {
@@ -8226,7 +8226,7 @@ width: 100%;
     border: 1px solid #555555;
     width: 300px;
     margin-left: 11px;
-    margin-top: 72px;
+    margin-top: 42px;
   }
 
   .yourname {
@@ -8670,7 +8670,7 @@ width: 100%;
 
   .nbvformheight {
     position: relative;
-    height: 2000px;
+    height: 2300px;
     top: 145px;
   }
 
@@ -9903,7 +9903,7 @@ width: 100%;
 
   .nbvformheight {
     position: relative;
-    height: 1900px;
+    height: 2100px;
     top: 145px;
   }
 
@@ -9948,7 +9948,7 @@ width: 100%;
 
   .cardform {
     border: 1px solid #ffffff;
-    height: 1500px;
+    height: 1700px;
   }
 
   .formh1 {
@@ -9981,7 +9981,7 @@ width: 100%;
     border: 1px solid #555555;
     width: 300px;
     margin-left: 11px;
-    margin-top: 72px;
+    margin-top: 42px;
   }
 
   .yourname {
@@ -11558,7 +11558,7 @@ width: 100%;
 
   .nbvformheight {
     position: relative;
-    height: 2000px;
+    height: 2300px;
     top: 145px;
   }
 
@@ -11602,7 +11602,7 @@ width: 100%;
 
   .cardform {
     border: 1px solid #ffffff;
-    height: 1490px;
+    height: 1690px;
   }
 
   .formh1 {
@@ -11632,7 +11632,7 @@ width: 100%;
     border: 1px solid #555555;
     width: 250px;
     margin-left: 15px;
-    margin-top: 72px;
+    margin-top: 42px;
   }
 
   .yourname {
@@ -13262,7 +13262,7 @@ width: 100%;
 
   .form-group {
     padding: 5px;
-    width: 50%;
+    width: 100%;
   }
 
   /* .form-group input {
@@ -13285,7 +13285,7 @@ width: 100%;
 
   .nbvformheight {
     position: relative;
-    height: 2000px;
+    height: 2300px;
     top: 145px;
   }
 
@@ -13329,7 +13329,7 @@ width: 100%;
 }
   .cardform {
     border: 1px solid #ffffff;
-    height: 1380px;
+    height: 1580px;
   }
 
   .formh1 {

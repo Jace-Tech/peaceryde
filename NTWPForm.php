@@ -126,7 +126,7 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
                   </div>
                 </div>
 
-                <p class="yourname">You must be at least 18 years old to use this website.</p>
+                
                 <div class="formml">
                   <div class="row">
                     <div class="col-md-3">
@@ -161,7 +161,7 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
                     <div class="col-md-3"></div>
                   </div>
                 </div>
-
+                <p class="yourname">You must be at least 18 years old to use this website.</p>
                 <div class="form-row formml">
                   <div class="row">
                     <div class="col-md-5">
