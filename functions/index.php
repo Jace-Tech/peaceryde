@@ -744,7 +744,7 @@ function sendNBVReceipt ($price, $name, $subject, $to, $from) {
         
                                 <tr style='border-bottom: 1px solid rgba(0,0,0,.05);'>
                                     <td valign='middle' style='text-align:left; padding: 0 2.5em;'>
-                                        Immigration Fee
+                                        Processing Fee
                                     </td>
                                     <td valign='middle' style='text-align:right; padding: 0 2.5em;'>
                                         <span class='price' style='color: #000; font-size: 16px;'>\$$Immgration</span>
@@ -1136,7 +1136,7 @@ function sendTWPReceipt ($price, $name, $subject, $to, $from) {
                                         <td style='padding: 0 2.5em; text-align: left;'>
                                             <div class='text'>
                                                 <h3>Hi $name, </h3>
-                                                <div style='color: #333;'>Here's your payment receipt for <p style='color: #1161d9'>Nigerian Temporary Work Permit</p></div>
+                                                <div style='color: #333;'>Here's your payment receipt for <p style='color: #1161d9'>Nigeria Temporary Work Permit</p></div>
                                             </div>
                                         </td>
                                     </tr>
@@ -1154,7 +1154,7 @@ function sendTWPReceipt ($price, $name, $subject, $to, $from) {
         
                                 <tr style='border-bottom: 1px solid rgba(0,0,0,.05);'>
                                     <td valign='middle' style='text-align:left; padding: 0 2.5em;'>
-                                        Approval Fee
+                                        Processing Fee
                                     </td>
                                     <td valign='middle' style='text-align:right; padding: 0 2.5em;'>
                                         <span class='price' style='color: #000; font-size: 16px;'>\$$approval</span>
@@ -1567,7 +1567,7 @@ function sendBIReceipt ($_price, $name, $subject, $to, $from) {
                                         <td style='padding: 0 2.5em; text-align: left;'>
                                             <div class='text'>
                                                 <h3>Hi $name, </h3>
-                                                <div style='color: #333;'>Here's your payment receipt for <p style='color: #1161d9'>Nigerian Business Incorporation</p></div>
+                                                <div style='color: #333;'>Here's your payment receipt for <p style='color: #1161d9'>Nigeria Business Incorporation</p></div>
                                             </div>
                                         </td>
                                     </tr>

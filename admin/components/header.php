@@ -242,6 +242,7 @@ $UNREAD_NOTIFICATIONS = getUnReadNotications($connect, $LOGGED_ADMIN['admin_id']
 			event = document.createEvent('HTMLEvents');
 			event.initEvent(eventName, true, true);
 			element.dispatchEvent(event);
+			
 		} else {
 			event = document.createEventObject();
 			event.eventType = eventName;

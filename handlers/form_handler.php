@@ -41,6 +41,17 @@ if(isset($_POST['twp'])) {
 
     }
     else {
+        // Check if user exists 
+        $query = "SELECT * FROM users WHERE email = ?";
+        $checkResult = $connect->prepare($query);
+        $checkResult->execute([$email]);
+
+        if($checkResult->rowCount()) {
+            setUserAlert("Email already exists", "error");
+            header("Location: " . $_SERVER['HTTP_REFERER']);
+            exit();
+        }
+
         $result = $users->add_new_user($user);
         // Generate a session with user ID
         $_SESSION['REG_NO'] = $result['userId'];
@@ -91,6 +102,17 @@ if(isset($_POST['nbv'])) {
         $_SESSION["SERVICE_ID"] = $serviceResult['id']; 
     }
     else {
+        // Check if user exists 
+        $query = "SELECT * FROM users WHERE email = ?";
+        $checkResult = $connect->prepare($query);
+        $checkResult->execute([$email]);
+
+        if($checkResult->rowCount()) {
+            setUserAlert("Email already exists", "error");
+            header("Location: " . $_SERVER['HTTP_REFERER']);
+            exit();
+        }
+
         $result = $users->add_new_user($user);
         // Generate a session with user ID
         $_SESSION['REG_NO'] = $result['userId'];
@@ -147,6 +169,17 @@ if(isset($_POST['bi'])) {
         $bis->addBI($bi_options);
     }
     else {
+        // Check if user exists 
+        $query = "SELECT * FROM users WHERE email = ?";
+        $checkResult = $connect->prepare($query);
+        $checkResult->execute([$email]);
+
+        if($checkResult->rowCount()) {
+            setUserAlert("Email already exists", "error");
+            header("Location: " . $_SERVER['HTTP_REFERER']);
+            exit();
+        }
+        
         $result = $users->add_new_user($user);
         // Generate a session with user ID
         $_SESSION['REG_NO'] = $result['userId'];
