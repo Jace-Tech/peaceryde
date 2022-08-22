@@ -294,31 +294,27 @@ $PRICE = json_decode($_SESSION["PRICE"], true);
                         <input type="radio" name="payment_option" value="paystack" checked="checked" class="radioo">&nbsp; Paystack <br>
                         <input type="radio" name="payment_option" value="flutter" class="radioo"> &nbsp; Flutterwave <br>
                         <div class="hidden-box">
-                            <p class="cardname">Name of card</p>
-                            <input type="text" name="card_name" class="form-control cardinput" placeholder="John Doe">
-
-                            <p class="cardnumber">Card Number</p>
-                            <input type="text" name="card_no" class="form-control cardinput" placeholder="000 000 000 000 000">
-
-                            <div class="row">
-                                <div class="col-md-4" style="margin-top: 6px;">
-                                    <div class="form-group2">
-                                        <p class="expiry">Expiry</p>
-                                        <input type="month" name="card_expiry" class="form-control expiryinput" placeholder="DD/ MM/ YY">
-                                    </div>
+                        <p class="cardname">Name of card</p>
+                        <input type="text" name="card_name" class="form-control cardinput" placeholder="John Doe">
+                        <p class="cardnumber">Card Number</p>
+                        <input type="text" name="card_no" class="form-control cardinput" placeholder="000 000 000 000 000">
+                        <div class="row">
+                            <div class="col-md-4" style="margin-top: 6px;">
+                                <div class="form-group2">
+                                    <p class="expiry">Expiry</p>
+                                    <input type="month" name="card_expiry" class="form-control expiryinput" placeholder="DD/ MM/ YY">
                                 </div>
-                                <div class="col-md-1">
-
-                                </div>
-                                <div class="col-md-4" style="margin-top: 6px;">
-                                    <div class="form-group2">
-                                        <p class="expiry">CVV</p>
-                                        <input type="text" name="card_cvv" class="form-control expiryinput" placeholder="123">
-                                    </div>
+                            </div>
+                            <div class="col-md-1">
+                            </div>
+                            <div class="col-md-4" style="margin-top: 6px;">
+                                <div class="form-group2">
+                                    <p class="expiry">CVV</p>
+                                    <input type="text" name="card_cvv" class="form-control expiryinput" placeholder="123">
                                 </div>
                             </div>
                         </div>
-
+                        </div>
                     </div>
                     <div class="divbutton">
                         <button type="submit" name="pay" class="btn proceed">Pay</button>
@@ -326,7 +322,6 @@ $PRICE = json_decode($_SESSION["PRICE"], true);
                 </form>
             </div>
         </div>
-
     </div>
 
     <script>

@@ -88,7 +88,7 @@
                           <span class="speciality">FOUNDER / MANAGING DIRECTOR</span>
                         </div>
                             
-                            <p class="leadtext">Socrates Limejuice Bobmanuel is the founder and Managing Director / Chief Executive Officer of PeaceRyde Africa LLC (A member of Limejuice Group), a travel, and tours immigration, and consultancy services company providing a secure and user friendly online digital platform that serves to make processing of business incorporation, and visa services for Nigeria quick, easy, and seamless with just a click of a button. 
+                            <p class="leadtext">Socrates Limejuice Bobmanuel is the founder and Managing Director / Chief Executive Officer of PeaceRyde Africa LLC (A member of Limejuice Group), a travel and tours, immigration, and consultancy services company providing a secure and user friendly online digital platform that serves to make processing of business incorporation, and visa services for Nigeria quick, easy, and seamless with just a click of a button. 
                               </p>
                             <br>
                             <p class="leadtext">Socrates has over a decade of experience in processing Nigeria visa approvals, travel consultancy, and general logistics services for several local and international clients.</p>
