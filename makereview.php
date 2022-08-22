@@ -131,7 +131,7 @@
                                 <input name="video" type="file" />
                             </div>
                             <p class="reviewfieldsetp">Tell us about your expeience</p>
-                            <textarea class="reviewtextarea" name="review"  placeholder="This is where you write your review.explain what happend, keep your feedback honest, helpful, and constructive"></textarea>
+                            <textarea class="reviewtextarea" name="review"  placeholder="This is where you write your review. We would like to know your experience with our website and our services. We would appreciate an honest feedback to enable us continually improve to serve you better"></textarea>
                             <div class="mt-4 p-4 text-right">
                                 <button name="add" type="submit" class="btn btn-block border-0" style="background-color: #a0bd1c; margin-bottom: 1.5rem; color:white">Post review</button>
                             </div>

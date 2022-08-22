@@ -405,7 +405,7 @@
           </div>
 
           <p style="font-family: Ubuntu;font-size: 14px;font-style: normal;font-weight: 400; padding-top:27px;
-                      ">Which of our services are you applying For?</p>
+                      ">Which of our services are you applying for?</p>
           <div class="row" style="margin-top: 5px;">
 
             <div class="col-md-6 col-lg-5 col-xl-5">

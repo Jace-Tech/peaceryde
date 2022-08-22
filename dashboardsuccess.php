@@ -87,12 +87,13 @@
 
                     </div>
                     <div class="row">
-                        <div class="col-md-6 col-sm-6 col-xs-6">
+                        <div class="col-md-6 col-sm-6 col-xs-6 col-6">
                             <p class="amountpaid">Total Amount Paid</p>
+                            
                               <p class="paidby">Paid by</p>
                                 <p class="transdate">Transaction date</p>
                         </div>
-                        <div class="col-md-6 col-sm-6 col-xs-6">
+                        <div class="col-md-6 col-sm-6 col-xs-6 col-6">
                             <p class="money"><?php round($total_price, 2); ?> (NGN <?= number_format(round($paystackPayment->convertToNaira($total_price), 2)); ?>)</p>
                               <p class="successname"><?= $user["firstname"]; ?></p>
                                 <p class="successdate"><?= date("d F Y", strtotime($payment["date"]));  ?></p>
