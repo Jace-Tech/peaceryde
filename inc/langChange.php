@@ -14,36 +14,44 @@
 </script>
 <script>
   function googleTranslateElementInit() {
-  new google.translate.TranslateElement({
-    pageLanguage: 'en',
-    includedLanguages: 'en,bn,de,ur,el,cs,vi,ta,nl,it,ja,es,hi,pl,pt,zh-CN,zh-TW,ar,so,ru,hy,ko,fr,hu',
-    layout: google.translate.TranslateElement.InlineLayout.SIMPLE
-  }, 'google_translate_element');
-}
-
-function triggerHtmlEvent(element, eventName) {
-  var event;
-  if (document.createEvent) {
-    event = document.createEvent('HTMLEvents');
-    event.initEvent(eventName, true, true);
-    element.dispatchEvent(event);
-  } else {
-    event = document.createEventObject();
-    event.eventType = eventName;
-    element.fireEvent('on' + event.eventType, event);
+    new google.translate.TranslateElement({
+      pageLanguage: 'en',
+      includedLanguages: 'en,bn,de,ur,el,cs,vi,ta,nl,it,ja,es,hi,pl,pt,zh-CN,zh-TW,ar,so,ru,hy,ko,fr,hu',
+      layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+    }, 'google_translate_element');
   }
-}
 
-jQuery('.lang-select').click(function() {
-  var theLang = jQuery(this).attr('data-lang');
-  jQuery('.goog-te-combo').val(theLang);
+  function triggerHtmlEvent(element, eventName) {
+    var event;
+    if (document.createEvent) {
+      event = document.createEvent('HTMLEvents');
+      event.initEvent(eventName, true, true);
+      element.dispatchEvent(event);
+    } else {
+      event = document.createEventObject();
+      event.eventType = eventName;
+      element.fireEvent('on' + event.eventType, event);
+    }
+  }
 
-  window.location = jQuery(this).attr('href')
-  localStorage.setItem('lang', theLang);
-  localStorage.setItem('langFunc', `${jQuery(this).attr('href')}`);
-  location.reload();
-});
+  jQuery('.lang-select').click(function() {
+    var theLang = jQuery(this).attr('data-lang');
+    jQuery('.goog-te-combo').val(theLang);
 
+    window.location = jQuery(this).attr('href')
+    if(theLang == "en") {
+        // clear cookie googtrans
+        document.cookie = 'googtrans=/en/en; expires=Thu, 01 Jan 1970 00:00:00 UTC';
+    }
+    setCookie('googtrans', `/en/${theLang}`, 2);
+    location.reload();
+  });
 
-</script> 
+  function setCookie(cName, cValue, expDays) {
+    let date = new Date();
+    date.setTime(date.getTime() + (expDays * 24 * 60 * 60 * 1000));
+    const expires = "expires=" + date.toUTCString();
+    document.cookie = cName + "=" + cValue + "; " + expires + "; path=/";
+  }
+</script>
 <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
