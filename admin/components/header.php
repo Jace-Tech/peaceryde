@@ -97,7 +97,7 @@ $UNREAD_NOTIFICATIONS = getUnReadNotications($connect, $LOGGED_ADMIN['admin_id']
 							<div class="absolute top-0 right-0 w-2.5 h-2.5 bg-red-500 border-2 border-white rounded-full"></div>
 						<?php endif; ?>
 					</button>
-					<div class="origin-top-right z-10 absolute top-full right-0 -mr-48 sm:mr-0 min-w-80 bg-white border border-gray-200 py-1.5 overflow-y-scroll max-h-[400px] rounded shadow-lg overflow-hidden mt-1"  style="max-height: 400px;" @click.outside="open = false" @keydown.escape.window="open = false" x-show="open" x-transition:enter="transition ease-out duration-200 transform" x-transition:enter-start="opacity-0 -translate-y-2" x-transition:enter-end="opacity-100 translate-y-0" x-transition:leave="transition ease-out duration-200" x-transition:leave-start="opacity-100" x-transition:leave-end="opacity-0" x-cloak>
+					<div class="origin-top-right z-10 absolute top-full right-0 -mr-48 sm:mr-0 min-w-80 bg-white border border-gray-200 py-1.5 overflow-y-scroll max-h-[400px] rounded shadow-lg overflow-hidden mt-1" style="max-height: 400px;" @click.outside="open = false" @keydown.escape.window="open = false" x-show="open" x-transition:enter="transition ease-out duration-200 transform" x-transition:enter-start="opacity-0 -translate-y-2" x-transition:enter-end="opacity-100 translate-y-0" x-transition:leave="transition ease-out duration-200" x-transition:leave-start="opacity-100" x-transition:leave-end="opacity-0" x-cloak>
 						<div class="text-xs font-semibold text-gray-400 uppercase pt-1.5 pb-2 px-4">Notifications</div>
 						<ul>
 							<?php if (count($UNREAD_NOTIFICATIONS)) : ?>
@@ -133,7 +133,7 @@ $UNREAD_NOTIFICATIONS = getUnReadNotications($connect, $LOGGED_ADMIN['admin_id']
 							<div class="absolute top-0 right-0 w-2.5 h-2.5 bg-red-500 border-2 border-white rounded-full"></div>
 						<?php endif; ?>
 					</button>
-					<div class="origin-top-right z-10 absolute top-full right-0 -mr-48 sm:mr-0 min-w-80 bg-white border border-gray-200 py-1.5 overflow-y-scroll max-h-[400px] rounded shadow-lg overflow-hidden mt-1"  style="max-height: 400px;" @click.outside="open = false" @keydown.escape.window="open = false" x-show="open" x-transition:enter="transition ease-out duration-200 transform" x-transition:enter-start="opacity-0 -translate-y-2" x-transition:enter-end="opacity-100 translate-y-0" x-transition:leave="transition ease-out duration-200" x-transition:leave-start="opacity-100" x-transition:leave-end="opacity-0" x-cloak>
+					<div class="origin-top-right z-10 absolute top-full right-0 -mr-48 sm:mr-0 min-w-80 bg-white border border-gray-200 py-1.5 overflow-y-scroll max-h-[400px] rounded shadow-lg overflow-hidden mt-1" style="max-height: 400px;" @click.outside="open = false" @keydown.escape.window="open = false" x-show="open" x-transition:enter="transition ease-out duration-200 transform" x-transition:enter-start="opacity-0 -translate-y-2" x-transition:enter-end="opacity-100 translate-y-0" x-transition:leave="transition ease-out duration-200" x-transition:leave-start="opacity-100" x-transition:leave-end="opacity-0" x-cloak>
 						<div class="text-xs font-semibold text-gray-400 uppercase pt-1.5 pb-2 px-4">Messages</div>
 						<ul>
 							<?php if (count($ADMIN_UNREAD_MESSAGE)) : ?>
@@ -254,9 +254,30 @@ $UNREAD_NOTIFICATIONS = getUnReadNotications($connect, $LOGGED_ADMIN['admin_id']
 		jQuery('.goog-te-combo').val(theLang);
 
 		window.location = jQuery(this).attr('href')
-		localStorage.setItem('lang', theLang);
-		localStorage.setItem('langFunc', `${jQuery(this).attr('href')}`);
+
+		if (theLang == "en") {
+			const prevLang = localStorage.getItem('lang');
+			if (prevLang) {
+				// clear cookie googtrans
+				document.cookie = `googtrans=/en/${prevLang}; expires=Thu, 01 Jan 1970 00:00:00 UTC; domain=.peacerydeafrica.com; path=/`;
+				document.cookie = `googtrans=/en/${prevLang}; expires=Thu, 01 Jan 1970 00:00:00 UTC; domain=peacerydeafrica.com; path=/`;
+			} else {
+				// clear cookie googtrans
+				document.cookie = `googtrans=/en/en; expires=Thu, 01 Jan 1970 00:00:00 UTC; domain=.peacerydeafrica.com; path=/`;
+				document.cookie = `googtrans=/en/en; expires=Thu, 01 Jan 1970 00:00:00 UTC; domain=peacerydeafrica.com; path=/`;
+			}
+		} else {
+			setCookie('googtrans', `/en/${theLang}`, 2);
+		}
 		location.reload();
 	});
+
+	function setCookie(cName, cValue, expDays) {
+		let date = new Date();
+		date.setTime(date.getTime() + (expDays * 24 * 60 * 60 * 1000));
+		const expires = "expires=" + date.toUTCString();
+		document.cookie = cName + "=" + cValue + "; " + expires + "; domain=.peacerydeafrica.com; path=/";
+		document.cookie = cName + "=" + cValue + "; " + expires + "; domain=peacerydeafrica.com; path=/";
+	}
 </script>
 <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>

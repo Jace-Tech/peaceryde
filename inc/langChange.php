@@ -39,10 +39,19 @@
     jQuery('.goog-te-combo').val(theLang);
 
     window.location = jQuery(this).attr('href')
+    
     if(theLang == "en") {
-        // clear cookie googtrans
-        document.cookie = 'googtrans=/en/en; expires=Thu, 01 Jan 1970 00:00:00 UTC; domain=.peacerydeafrica.com; path=/';
-        document.cookie = 'googtrans=/en/en; expires=Thu, 01 Jan 1970 00:00:00 UTC; domain=peacerydeafrica.com; path=/';
+        const prevLang = localStorage.getItem('lang');
+        if(prevLang) {
+          // clear cookie googtrans
+          document.cookie = `googtrans=/en/${prevLang}; expires=Thu, 01 Jan 1970 00:00:00 UTC; domain=.peacerydeafrica.com; path=/`;
+          document.cookie = `googtrans=/en/${prevLang}; expires=Thu, 01 Jan 1970 00:00:00 UTC; domain=peacerydeafrica.com; path=/`;
+        }
+        else {
+          // clear cookie googtrans
+          document.cookie = `googtrans=/en/en; expires=Thu, 01 Jan 1970 00:00:00 UTC; domain=.peacerydeafrica.com; path=/`;
+          document.cookie = `googtrans=/en/en; expires=Thu, 01 Jan 1970 00:00:00 UTC; domain=peacerydeafrica.com; path=/`;
+        }
     }else {
       setCookie('googtrans', `/en/${theLang}`, 2);
     }

@@ -688,15 +688,36 @@ function triggerHtmlEvent(element, eventName) {
 }
 
 jQuery('.lang-select').click(function() {
-  var theLang = jQuery(this).attr('data-lang');
-  jQuery('.goog-te-combo').val(theLang);
+    var theLang = jQuery(this).attr('data-lang');
+    jQuery('.goog-te-combo').val(theLang);
 
-  window.location = jQuery(this).attr('href')
-  localStorage.setItem('lang', theLang);
-  localStorage.setItem('langFunc', `${jQuery(this).attr('href')}`);
-  location.reload();
-});
+    window.location = jQuery(this).attr('href')
+    
+    if(theLang == "en") {
+        const prevLang = localStorage.getItem('lang');
+        if(prevLang) {
+          // clear cookie googtrans
+          document.cookie = `googtrans=/en/${prevLang}; expires=Thu, 01 Jan 1970 00:00:00 UTC; domain=.peacerydeafrica.com; path=/`;
+          document.cookie = `googtrans=/en/${prevLang}; expires=Thu, 01 Jan 1970 00:00:00 UTC; domain=peacerydeafrica.com; path=/`;
+        }
+        else {
+          // clear cookie googtrans
+          document.cookie = `googtrans=/en/en; expires=Thu, 01 Jan 1970 00:00:00 UTC; domain=.peacerydeafrica.com; path=/`;
+          document.cookie = `googtrans=/en/en; expires=Thu, 01 Jan 1970 00:00:00 UTC; domain=peacerydeafrica.com; path=/`;
+        }
+    }else {
+      setCookie('googtrans', `/en/${theLang}`, 2);
+    }
+    location.reload();
+  });
 
+  function setCookie(cName, cValue, expDays) {
+    let date = new Date();
+    date.setTime(date.getTime() + (expDays * 24 * 60 * 60 * 1000));
+    const expires = "expires=" + date.toUTCString();
+    document.cookie = cName + "=" + cValue + "; " + expires + "; domain=.peacerydeafrica.com; path=/";
+    document.cookie = cName + "=" + cValue + "; " + expires + "; domain=peacerydeafrica.com; path=/";
+  }
 
 </script> 
 <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
