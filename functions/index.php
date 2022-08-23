@@ -723,6 +723,15 @@ function sendNBVReceipt ($price, $name, $subject, $to, $from) {
                                     <th
                                         style='text-align:right; padding: 0 2.5em; color: #000; padding-bottom: 20px'>Price</th>
                                 </tr>
+
+                                <tr style='border-bottom: 1px solid rgba(0,0,0,.05);'>
+                                    <td valign='middle' style='text-align:left; padding: 0 2.5em;'>
+                                        Processing Fee
+                                    </td>
+                                    <td valign='middle' style='text-align:right; padding: 0 2.5em;'>
+                                        <span class='price' style='color: #000; font-size: 16px;'>\$$Immgration</span>
+                                    </td>
+                                </tr>
         
                                 <tr style='border-bottom: 1px solid rgba(0,0,0,.05);'>
                                     <td valign='middle' style='text-align:left; padding: 0 2.5em;'>
@@ -739,15 +748,6 @@ function sendNBVReceipt ($price, $name, $subject, $to, $from) {
                                     </td>
                                     <td valign='middle' style='text-align:right; padding: 0 2.5em;'>
                                         <span class='price' style='color: #000; font-size: 16px;'>\$$bio</span>
-                                    </td>
-                                </tr>
-        
-                                <tr style='border-bottom: 1px solid rgba(0,0,0,.05);'>
-                                    <td valign='middle' style='text-align:left; padding: 0 2.5em;'>
-                                        Processing Fee
-                                    </td>
-                                    <td valign='middle' style='text-align:right; padding: 0 2.5em;'>
-                                        <span class='price' style='color: #000; font-size: 16px;'>\$$Immgration</span>
                                     </td>
                                 </tr>
         
