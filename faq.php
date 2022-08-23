@@ -73,9 +73,9 @@
                                    <?= $faq['question']; ?>
                                 </div>
                                 <div class="answercont">
-                                    <div class="answer">
-                                        <?= $faq['answer']; ?>
-                                    </div>
+                                    <?php foreach(explode("\n", $faq['answer']) as $line):  ?>
+                                        <div class="answer"> <?= $line; ?> </div>
+                                    <?php endforeach; ?>
                                 </div>
                             </div>
                         <?php $counter++; endforeach; ?>
