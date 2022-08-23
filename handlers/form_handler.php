@@ -142,7 +142,7 @@ if(isset($_POST['bi'])) {
     $user = [
         "firstname" => $firstname,
         "email" => $email,
-        "dob" => $dob ?? NULL,
+        "dob" => $dob,
         "lastname" => $lastname,
         "phone" => "+". $countryCode . $phone,
         "serviceId" => $service,

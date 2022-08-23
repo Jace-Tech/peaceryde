@@ -445,7 +445,7 @@
 
                     <!-- <p class="please">Coperate Address</p> -->
                     <div class="row" style="margin-top: 15px;">
-                    <div class="col-md-4 col-lg-4 col-xl-4">
+                        <div class="col-md-4 col-lg-4 col-xl-4">
                             <div class="form-group">
                                 <label class="form-label">Date of Birth</label>
                                 <input required type="text" readonly name="dob" id="datepicker" class="form-control dob" placeholder="dd/mm/yyyy">
