@@ -143,7 +143,7 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
                       <div class="form-group">
                         <label class="form-label">Date of Birth</label>
                         <div class="input-group mb-3 biwidth">
-                          <input type="text" required name="dob" value="<?= $FORM_APPY["dob"] ?? "" ?>" readonly id="datepicker" class="form-control firstname" placeholder="dd/mm/yyyy">
+                          <input type="text" required name="dob" value="<?= $FORM_APPY["dob"] ?? "" ?>" readonly id="datepicker" class="form-control firstname" placeholder="dd-mm-yyyy">
                           
                         </div>
                         <p style="color: #C8730F;
