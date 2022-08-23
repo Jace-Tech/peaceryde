@@ -381,7 +381,7 @@
                                 </p>
                                 <br>
                                 <ol class="list" type="1">
-                                    <li>1. A right of access to a copy of your personal data, popularly known as 'subject access request'. Subject Access Request should be made to info@peacerydeafrica.com by email or by post to, PeaceRyde Africa LLC, 441 Granville Avenue Hillside Illinois 60162 USA</li>
+                                    <li>1. A right of access to a copy of your personal data, popularly known as 'subject access request'. Subject Access Request should be made to info@peacerydeafrica.com by email or by post to, PeaceRyde Africa LLC, 433 W Harrison St #5409 Chicago, IL 60699 USA</li>
                                     <li>2. A right to object to processing your personal data in a way that is likely to cause damage or distress to you</li>
                                     <li>3. A right to prevent processing your personal data in a way that is incompatible to the original purpose or purposes</li>
                                     <li>4. A right to object to decisions being taken by automated means;</li>

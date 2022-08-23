@@ -88,7 +88,7 @@
         </section>
         <comment content="======= End section7 =======" break="true"></comment>
         <!-- ======= section8 ======= -->
-               <?php include("./inc/footer.php"); ?><?php include("./inc/langChange.php") ?>
+               <?php include("./inc/langChange.php") ?>
         <!-- ======= End section8 ======= -->
 
     </main>
