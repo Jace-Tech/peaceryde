@@ -218,11 +218,11 @@ $uploads = new Upload($connect);
     <section class="">
       <div class="p-2" style="background-color: #1161D9;">
         <h1 style="font-size: 2rem; text-align: center; color: white; padding-top:90px; font-weight:400; font-family: Rubik, Helvetica, Arial, serif;">
-          How does the Visa Process work?
+          How does the Approval Process work?
         </h1>
 
         <h4 style=" text-align: center; color: white; font-family: rubik; padding-top: 13px; font-size: 16px; font-weight: 300;" class="">
-          Only 5 simple steps to process your Nigeria Visa
+          Only 5 simple steps to process your approval
         </h4>
         <div class="container-fluid" style="margin-bottom: 137px">
           <div class="movement">
@@ -310,7 +310,7 @@ $uploads = new Upload($connect);
                   </h1>
 
                   <h4 class="mt-2 img5h4">Get
-                    your Visa</h4>
+                    your Approval</h4>
                 </div>
               </li>
             </ul>
