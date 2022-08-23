@@ -54,7 +54,7 @@
         <div class="card applycard">
           <div style="margin-top: 65px;">
             <h2 class="applyh22">Service Booking Form</h2>
-            <p class="applyh2p">Plesae fill this form to indicate your interest in any of our services and we will contact you within 24hrs</p>
+            <p class="applyh2p">Please fill this form to indicate your interest in any of our services and we will contact you within 24hrs.</p>
           </div>
           <form method="post" data-form action="./handlers/apply_handler.php">
             <input type="text" data-length class="form-control vsbform" placeholder="First Name" required name="firstname">

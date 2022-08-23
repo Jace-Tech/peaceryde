@@ -309,8 +309,7 @@ $uploads = new Upload($connect);
                     5
                   </h1>
 
-                  <h4 class="mt-2 img5h4">Get
-                    your Approval</h4>
+                  <h4 class="mt-2 img5h4">Get Approval</h4>
                 </div>
               </li>
             </ul>
