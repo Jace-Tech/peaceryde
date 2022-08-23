@@ -568,6 +568,8 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
     const formElement = document.querySelector('[data-form]')
     const inputElements = document.querySelectorAll('[data-length]')
 
+
+
     inputElements.forEach((element) => {
       element.addEventListener('keydown', () => {
         const value = element.value

@@ -47,7 +47,7 @@ if(isset($_POST['twp'])) {
         $checkResult->execute([$email]);
 
         if($checkResult->rowCount()) {
-            setUserAlert("Email already exists", "error");
+            setUserAlert("User account already exist", "error", "Please login or do a password reset");
             header("Location: " . $_SERVER['HTTP_REFERER']);
             exit();
         }
@@ -108,7 +108,7 @@ if(isset($_POST['nbv'])) {
         $checkResult->execute([$email]);
 
         if($checkResult->rowCount()) {
-            setUserAlert("Email already exists", "error");
+            setUserAlert("User account already exist", "error", "Please login or do a password reset");
             header("Location: " . $_SERVER['HTTP_REFERER']);
             exit();
         }
@@ -175,7 +175,7 @@ if(isset($_POST['bi'])) {
         $checkResult->execute([$email]);
 
         if($checkResult->rowCount()) {
-            setUserAlert("Email already exists", "error");
+            setUserAlert("User account already exist", "error", "Please login or do a password reset");
             header("Location: " . $_SERVER['HTTP_REFERER']);
             exit();
         }

@@ -315,10 +315,11 @@ function getLinkColor ($link)
     endif;
 }
 
-function setUserAlert ($msg, $type) {
+function setUserAlert ($msg, $type, $text = "") {
     $_SESSION['ALERT'] = json_encode([
         "message" => $msg,
-        "status" => $type
+        "status" => $type,
+        "text" => $text,
     ]);
 }
 
