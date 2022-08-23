@@ -137,7 +137,7 @@ $uploads = new Upload($connect);
                 </div>
 
                 <div class="new-section2__paragraph-body1-box layout">
-                  <pre class="new-section2__paragraph-body1">Business VOA is required for persons of legal age intending to come to Nigeria for business, meeting, conference etc. The Business VOA immigration approval is needed for visa issuance in Nigeria.</pre>
+                  <pre class="new-section2__paragraph-body1">Business VOA is required for persons of legal age intending to travel to Nigeria for business, meeting, conference etc. The Business VOA immigration approval is needed for visa issuance in Nigeria.</pre>
                 </div>
                 <div class="new-section2__block13a layout">
                   <a href="./NBVForm" class="btn" style="font-family: Ubuntu;
