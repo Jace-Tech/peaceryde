@@ -408,7 +408,7 @@
         }
       })
 
-      // Country Code
+      // Service
       const serviceValue = document.querySelector("[name=service]")
       if (!serviceValue.value) {
         serviceValue.classList.add("error")
@@ -421,6 +421,40 @@
         if (serviceValue.value) {
           if (serviceValue.classList.contains('error')) {
             serviceValue.classList.remove('error');
+          }
+        }
+      })
+
+       // Country Code
+       const countryCodeValue = document.querySelector("[name=countryCode]")
+      if(!countryCodeValue.value) {
+        countryCodeValue.classList.add("error")
+        countryCodeValue.scrollIntoView()
+        countryCodeValue.title = "Country code is required"
+        isValid = false
+      }
+
+      countryCodeValue.addEventListener("change", () => {
+        if (countryCodeValue.value) {
+          if (countryCodeValue.classList.contains('error')) {
+            countryCodeValue.classList.remove('error');
+          }
+        }
+      })
+
+      // Phone
+      const phoneValue = document.querySelector("[name=phone]")
+      if (!phoneValue.value.trim() || phoneValue.value.trim().length < 3) {
+        phoneValue.classList.add("error")
+        phoneValue.scrollIntoView()
+        phoneValue.title = "Phone is required"
+        isValid = false
+      }
+
+      phoneValue.addEventListener("keyup", () => {
+        if (phoneValue.value.trim().length >= 3) {
+          if (phoneValue.classList.contains('error')) {
+            phoneValue.classList.remove('error');
           }
         }
       })

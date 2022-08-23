@@ -657,6 +657,15 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
                 isValid = false
             }
 
+
+            countryCodeValue.addEventListener("change", () => {
+                if (countryCodeValue.value) {
+                    if (countryCodeValue.classList.contains('error')) {
+                        countryCodeValue.classList.remove('error');
+                    }
+                }
+            })
+
             // Country 
             const countryValue = document.querySelector("[name=country]")
             if (!countryValue.value) {
@@ -665,6 +674,14 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
                 countryValue.title = "country is required"
                 isValid = false
             }
+
+            countryValue.addEventListener("change", () => {
+                if (countryValue.value) {
+                    if (countryValue.classList.contains('error')) {
+                        countryValue.classList.remove('error');
+                    }
+                }
+            })
 
             const inputElements = document.querySelectorAll('[data-length]')
             inputElements.forEach(inputElement => {

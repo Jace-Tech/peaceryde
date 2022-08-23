@@ -44,22 +44,22 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
   <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
 
   <script>
-      const MIN_AGE = 18
-      const offset = +(new Date().getFullYear()) - MIN_AGE
-      $("#datepicker").datepicker({
-        changeMonth: true,
-        changeYear: true,
-        yearRange: `${1950 + (MIN_AGE / 2)}:${offset}`,
-        showOtherMonths: true,
-        selectOtherMonths: true,
-        showAnim: "blind",
-        maxDate: new Date(offset + 1, 0, 0),
-        dateFormat: "dd-mm-yy"
-      });
+    const MIN_AGE = 18
+    const offset = +(new Date().getFullYear()) - MIN_AGE
+    $("#datepicker").datepicker({
+      changeMonth: true,
+      changeYear: true,
+      yearRange: `${1950 + (MIN_AGE / 2)}:${offset}`,
+      showOtherMonths: true,
+      selectOtherMonths: true,
+      showAnim: "blind",
+      maxDate: new Date(offset + 1, 0, 0),
+      dateFormat: "dd-mm-yy"
+    });
 
-      $("#datepicker").click(function() {
-          $(this).val("");
-      });
+    $("#datepicker").click(function() {
+      $(this).val("");
+    });
   </script>
 
   <style>
@@ -101,7 +101,7 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
                 <p class="yourname">Your name must be entered in English as it appears on your passport.</p>
 
                 <div class="form-row mt-15 formml">
-                <div id="error-message" class="w-100 alert alert-dark text-sm">
+                  <div id="error-message" class="w-100 alert alert-dark text-sm">
                     All the fields are required!
                   </div>
                   <div class="row">
@@ -131,7 +131,7 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
                     </div>
                   </div>
                 </div>
-                
+
                 <div class="formml">
                   <div class="row">
                     <div class="col-md-5">
@@ -139,7 +139,7 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
                         <label class="form-label">Date of Birth</label>
                         <div class="input-group mb-3 biwidth">
                           <input type="text" readonly required name="dob" value="<?= $FORM_APPY["dob"] ?? "" ?>" class="form-control firstname" placeholder="dd/mm/yyyy" id="datepicker">
-                          
+
                         </div>
                         <p style="color: #C8730F;
     font-family: Ubuntu;
@@ -171,7 +171,7 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
                     <div class="col-md-3"></div>
                   </div>
                 </div>
-              
+
                 <div class="form-row formml" style="margin-top:17px">
                   <div class="row">
                     <div class="col-md-5">
@@ -597,13 +597,13 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
 
     formElement.addEventListener('submit', (e) => {
       e.preventDefault();
-      
+
       // Check if the inputs are filled 
       let isValid = true;
 
       // Firstname
       const firstNameValue = document.querySelector("[name=firstname]")
-      if(!firstNameValue.value.trim() || firstNameValue.value.trim().length < 3) {
+      if (!firstNameValue.value.trim() || firstNameValue.value.trim().length < 3) {
         firstNameValue.classList.add("error")
         firstNameValue.scrollIntoView()
         firstNameValue.title = "Firstname is required"
@@ -611,8 +611,8 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
       }
 
       firstNameValue.addEventListener("keyup", () => {
-        if(firstNameValue.value.trim().length >= 3) {
-          if(firstNameValue.classList.contains('error')) {
+        if (firstNameValue.value.trim().length >= 3) {
+          if (firstNameValue.classList.contains('error')) {
             firstNameValue.classList.remove('error');
           }
         }
@@ -620,7 +620,7 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
 
       // Lastname
       const lastnameValue = document.querySelector("[name=lastname]")
-      if(!lastnameValue.value.trim() || lastnameValue.value.trim().length < 3) {
+      if (!lastnameValue.value.trim() || lastnameValue.value.trim().length < 3) {
         lastnameValue.classList.add("error")
         lastnameValue.scrollIntoView()
         lastnameValue.title = "Lastname is required"
@@ -628,8 +628,8 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
       }
 
       lastnameValue.addEventListener("keyup", () => {
-        if(lastnameValue.value.trim().length >= 3) {
-          if(lastnameValue.classList.contains('error')) {
+        if (lastnameValue.value.trim().length >= 3) {
+          if (lastnameValue.classList.contains('error')) {
             lastnameValue.classList.remove('error');
           }
         }
@@ -637,7 +637,7 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
 
       // Phone
       const phoneValue = document.querySelector("[name=phone]")
-      if(!phoneValue.value.trim() || phoneValue.value.trim().length < 3) {
+      if (!phoneValue.value.trim() || phoneValue.value.trim().length < 3) {
         phoneValue.classList.add("error")
         phoneValue.scrollIntoView()
         phoneValue.title = "Phone is required"
@@ -645,8 +645,8 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
       }
 
       phoneValue.addEventListener("keyup", () => {
-        if(phoneValue.value.trim().length >= 3) {
-          if(phoneValue.classList.contains('error')) {
+        if (phoneValue.value.trim().length >= 3) {
+          if (phoneValue.classList.contains('error')) {
             phoneValue.classList.remove('error');
           }
         }
@@ -654,7 +654,7 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
 
       // Email
       const emailValue = document.querySelector("[name=email]")
-      if(!emailValue.value.trim() || emailValue.value.trim().length < 3) {
+      if (!emailValue.value.trim() || emailValue.value.trim().length < 3) {
         emailValue.classList.add("error")
         emailValue.scrollIntoView()
         emailValue.title = "Lastname is required"
@@ -664,8 +664,8 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
       const emailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/
 
       emailValue.addEventListener("keyup", () => {
-        if(emailValue.value.trim().length >= 3 && emailRegex.test(emailValue.value.trim())) {
-          if(emailValue.classList.contains('error')) {
+        if (emailValue.value.trim().length >= 3 && emailRegex.test(emailValue.value.trim())) {
+          if (emailValue.classList.contains('error')) {
             emailValue.classList.remove('error');
           }
         }
@@ -673,7 +673,7 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
 
       // Passport
       const passportValue = document.querySelector("[name=passport]")
-      if(!passportValue.value.trim() || passportValue.value.trim().length < 3) {
+      if (!passportValue.value.trim() || passportValue.value.trim().length < 3) {
         passportValue.classList.add("error")
         passportValue.scrollIntoView()
         passportValue.title = "Lastname is required"
@@ -681,8 +681,8 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
       }
 
       passportValue.addEventListener("keyup", () => {
-        if(passportValue.value.trim().length >= 3) {
-          if(passportValue.classList.contains('error')) {
+        if (passportValue.value.trim().length >= 3) {
+          if (passportValue.classList.contains('error')) {
             passportValue.classList.remove('error');
           }
         }
@@ -690,30 +690,35 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
 
       // Country Code
       const countryCodeValue = document.querySelector("[name=countryCode]")
-      if(!countryCodeValue.value) {
+      if (!countryCodeValue.value) {
         countryCodeValue.classList.add("error")
         countryCodeValue.scrollIntoView()
         countryCodeValue.title = "Country code is required"
         isValid = false
       }
 
+      countryCodeValue.addEventListener("change", () => {
+        if (countryCodeValue.value) {
+          if (countryCodeValue.classList.contains('error')) {
+            countryCodeValue.classList.remove('error');
+          }
+        }
+      })
+
       // Country 
       const countryValue = document.querySelector("[name=country]")
-      if(!countryValue.value) {
+      if (!countryValue.value) {
         countryValue.classList.add("error")
         countryValue.scrollIntoView()
         countryValue.title = "country is required"
         isValid = false
       }
 
-      const inputElements = document.querySelectorAll('[data-length]')
-      inputElements.forEach(inputElement => {
-        const elementValue = inputElement.value  
-
-        if(elementValue.trim().length < 3) {
-          elementValue.classList.add("error");
-          inputElement.scrollIntoView({ behavior: "smooth" })
-          return
+      countryValue.addEventListener("change", () => {
+        if (countryValue.value) {
+          if (countryValue.classList.contains('error')) {
+            countryValue.classList.remove('error');
+          }
         }
       })
 
@@ -730,7 +735,7 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
         }
       })
 
-      if(!isValid) {
+      if (!isValid) {
         document.querySelector("#error-message").style.display = "block"
         setTimeout(() => {
           document.querySelector("#error-message").style.display = "none"
@@ -751,21 +756,21 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
     })
   </script>
 
-<script>
-    $(document).ready(function(){
-        const MIN_AGE = 18
-        const offset = +(new Date().getFullYear()) - MIN_AGE
-        $( "#datepicker" ).datepicker({
-            changeMonth: true,
-            changeYear: true,
-            yearRange: `${1950 + (MIN_AGE / 2)}:${offset}`,
-            showAnim: "blind",
-            maxDate: new Date(offset + 1, 0, 0)
-        });
+  <script>
+    $(document).ready(function() {
+      const MIN_AGE = 18
+      const offset = +(new Date().getFullYear()) - MIN_AGE
+      $("#datepicker").datepicker({
+        changeMonth: true,
+        changeYear: true,
+        yearRange: `${1950 + (MIN_AGE / 2)}:${offset}`,
+        showAnim: "blind",
+        maxDate: new Date(offset + 1, 0, 0)
+      });
 
-        $("#datepicker").click(function() {
-            $(this).val("");
-        });
+      $("#datepicker").click(function() {
+        $(this).val("");
+      });
     });
   </script>
 </body>
