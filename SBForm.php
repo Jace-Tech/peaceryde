@@ -365,17 +365,6 @@
           return
         }
       })
-
-      if (document.querySelector("#modal-yes").checked) {
-        onYes()
-      } else {
-        if (localStorage.getItem("USER_REG")) {
-          localStorage.removeItem("USER_REG");
-          <?php unset($_SESSION["REG_MODE"]); ?>
-        }
-        formElement.submit()
-
-      }
     })
   </script>
 
