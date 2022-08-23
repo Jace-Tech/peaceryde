@@ -222,7 +222,7 @@ $uploads = new Upload($connect);
         </h1>
 
         <h4 style=" text-align: center; color: white; font-family: rubik; padding-top: 13px; font-size: 16px; font-weight: 300;" class="">
-          Only 5 simple steps to process your Approval
+          Only 5 simple steps to process your approval
         </h4>
         <div class="container-fluid" style="margin-bottom: 137px">
           <div class="movement">
@@ -310,7 +310,7 @@ $uploads = new Upload($connect);
                   </h1>
 
                   <h4 class="mt-2 img5h4">Get
-                    your Visa</h4>
+                    your Approval</h4>
                 </div>
               </li>
             </ul>
