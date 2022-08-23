@@ -418,7 +418,7 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
                           </optgroup>
                         </select>
                       </div>
-                      <input type="tel" name="phone" class="form-control firstname" value="" placeholder="070XXXXXXXX">
+                      <input type="tel" name="phone" data-length class="form-control firstname" value="" placeholder="070XXXXXXXX">
                       <input required type="hidden" name="service" value="srvs-002">
                       <input required type="hidden" name="nbv" value="">
                     </div>
@@ -427,8 +427,8 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
                 </div>
 
                 <p class="formml please">Please select below your Nationality (as on passport)</p>
-                <select required id="country" name="country" class="form-select formml select" aria-label="Default select example">
-                  <option selected>Country </option>
+                <select required id="country" data-length name="country" class="form-select formml select" aria-label="Default select example">
+                  <option>Country </option>
                   <?php foreach ($country_fee as $key => $value) : ?>
                     <option value="<?= $key ?>">
                       <?php if ($key == "united states") : ?>
@@ -445,7 +445,7 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
                   <div class="form-check form-check-inline" style="padding-left: 0px; padding-top: 3px;">
                     <div class="custom-control custom-radio">
                       <label class="custom-control-label" for="customControlValidation2">No</label>
-                      <input type="radio" class="custom-control-input" id="customControlValidation2" name="radio-stacked" required>
+                      <input type="radio" class="custom-control-input" checked id="customControlValidation2" name="radio-stacked" required>
                     </div>
                   </div>
                   <div class="form-check form-check-inline">

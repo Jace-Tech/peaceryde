@@ -485,7 +485,7 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
                             <p class="please">Please select below your Nationality (as on passport)</p>
                             <div class="row">
                                 <div class="col-md-4 col-xl-3">
-                                    <select required name="country" class="form-select nationality" aria-label="Default select example">
+                                    <select required data-length name="country" class="form-select nationality" aria-label="Default select example">
                                         <option>Select Country</option>
                                         <?php foreach ($country_fee as $key => $value) : ?>
                                             <?php if ($key == "united states") : ?>

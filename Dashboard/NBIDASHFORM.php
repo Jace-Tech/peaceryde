@@ -437,7 +437,7 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
                                 <div class="col-md-5 col-lg-4 col-xl-3">
                                     <div class="form-group">
                                         <label class="form-label">No of Shares</label>
-                                        <input name="shares" required type="number" class="form-control middlename" placeholder="No of shares">
+                                        <input name="shares" data-length required type="number" class="form-control middlename" placeholder="No of shares">
                                     </div>
                                 </div>
 
@@ -448,14 +448,14 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
                                 <div class="col-md-4 col-lg-4 col-xl-4">
                                     <div class="form-group">
                                         <label class="form-label">Date of Birth</label>
-                                        <input required type="text" readonly name="dob" id="datepicker" class="form-control dob" placeholder="dd-mm-yyyy">
+                                        <input required type="text" data-length readonly name="dob" id="datepicker" class="form-control dob" placeholder="dd-mm-yyyy">
                                     </div>
                                 </div>
 
                                 <div class="col-md-6 col-lg-4 col-xl-3">
                                     <div class="form-group">
                                         <label class="form-label">Corporate Address</label>
-                                        <input type="text" required name="coperateAddress" class="form-control dob" placeholder="Corporate Address">
+                                        <input type="text" data-length required name="coperateAddress" class="form-control dob" placeholder="Corporate Address">
                                     </div>
                                 </div>
 

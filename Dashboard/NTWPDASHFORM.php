@@ -207,7 +207,7 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
                                 <div class="col-md-4 col-lg-3 col-xl-3">
                                     <div class="form-group">
                                         <label class="form-label">Date of Birth</label>
-                                        <input type="text" required readonly id="datepicker" name="dob" class="form-control dob" placeholder="dd-mm-yyyy">
+                                        <input type="text" data-length required readonly id="datepicker" name="dob" class="form-control dob" placeholder="dd-mm-yyyy">
                                     </div>
                                 </div>
 
@@ -242,7 +242,7 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
                                         <input type="hidden" name="service" value="srvs-001">
                                         <input type="hidden" name="twp">
                                         <label class="form-label">Passport No</label>
-                                        <input type="text" required name="passport" class="form-control passno" value="<?= $USER["passport"] ?? "" ?>" placeholder="Passport No">
+                                        <input type="text" data-length required name="passport" class="form-control passno" value="<?= $USER["passport"] ?? "" ?>" placeholder="Passport No">
                                     </div>
                                 </div>
                             </div>
@@ -471,7 +471,7 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
                                                         <option data-countryCode="ZW" value="263">Zimbabwe (+263)</option>
                                                     </optgroup>
                                                 </select>
-                                                <input type="text" required name="phone" class="form-control mobileno2" placeholder="Mobile Number">
+                                                <input type="text" data-length required name="phone" class="form-control mobileno2" placeholder="Mobile Number">
                                             </div>
                                         </div>
                                     </div>
@@ -481,7 +481,7 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
                             <div class="row">
                                 <div class="col-md-4 col-xl-3">
                                     <label class="form-label">Country</label>
-                                    <select required name="country" class="form-select nationality" aria-label="Default select example">
+                                    <select required data-length name="country" class="form-select nationality" aria-label="Default select example">
                                         <option>Select Country</option>
                                         <?php foreach ($country_fee as $key => $value) : ?>
                                             <?php if ($key == "united states") : ?>
