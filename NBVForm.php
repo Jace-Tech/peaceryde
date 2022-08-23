@@ -101,6 +101,9 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
                 <p class="yourname">Your name must be entered in English as it appears on your passport.</p>
 
                 <div class="form-row mt-15 formml">
+                <div id="error-message" class="w-100 alert alert-dark text-sm">
+                    All the fields are required!
+                  </div>
                   <div class="row">
                     <div class="col-md-3">
                       <div class="form-group">
@@ -442,7 +445,7 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
                   <div class="form-check form-check-inline" style="padding-left: 0px; padding-top: 3px;">
                     <div class="custom-control custom-radio">
                       <label class="custom-control-label" for="customControlValidation2">No</label>
-                      <input type="radio" class="custom-control-input" id="customControlValidation2" name="radio-stacked">
+                      <input type="radio" class="custom-control-input" id="customControlValidation2" name="radio-stacked" required>
                     </div>
                   </div>
                   <div class="form-check form-check-inline">
@@ -505,6 +508,9 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
   </div>
 
   <?php include("./inc/langChange.php") ?>
+  <script>
+    document.querySelector("#error-message").style.display = "none"
+  </script>
 
   <script>
     const passportInput = document.querySelector('[name=passport]');
@@ -591,6 +597,125 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
 
     formElement.addEventListener('submit', (e) => {
       e.preventDefault();
+      
+      // Check if the inputs are filled 
+      let isValid = true;
+
+      // Firstname
+      const firstNameValue = document.querySelector("[name=firstname]")
+      if(!firstNameValue.value.trim() || firstNameValue.value.trim().length < 3) {
+        firstNameValue.classList.add("error")
+        firstNameValue.scrollIntoView()
+        firstNameValue.title = "Firstname is required"
+        isValid = false
+      }
+
+      firstNameValue.addEventListener("keyup", () => {
+        if(firstNameValue.value.trim().length >= 3) {
+          if(firstNameValue.classList.contains('error')) {
+            firstNameValue.classList.remove('error');
+          }
+        }
+      })
+
+      // Lastname
+      const lastnameValue = document.querySelector("[name=lastname]")
+      if(!lastnameValue.value.trim() || lastnameValue.value.trim().length < 3) {
+        lastnameValue.classList.add("error")
+        lastnameValue.scrollIntoView()
+        lastnameValue.title = "Lastname is required"
+        isValid = false
+      }
+
+      lastnameValue.addEventListener("keyup", () => {
+        if(lastnameValue.value.trim().length >= 3) {
+          if(lastnameValue.classList.contains('error')) {
+            lastnameValue.classList.remove('error');
+          }
+        }
+      })
+
+      // Phone
+      const phoneValue = document.querySelector("[name=phone]")
+      if(!phoneValue.value.trim() || phoneValue.value.trim().length < 3) {
+        phoneValue.classList.add("error")
+        phoneValue.scrollIntoView()
+        phoneValue.title = "Phone is required"
+        isValid = false
+      }
+
+      phoneValue.addEventListener("keyup", () => {
+        if(phoneValue.value.trim().length >= 3) {
+          if(phoneValue.classList.contains('error')) {
+            phoneValue.classList.remove('error');
+          }
+        }
+      })
+
+      // Email
+      const emailValue = document.querySelector("[name=email]")
+      if(!emailValue.value.trim() || emailValue.value.trim().length < 3) {
+        emailValue.classList.add("error")
+        emailValue.scrollIntoView()
+        emailValue.title = "Lastname is required"
+        isValid = false
+      }
+
+      const emailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/
+
+      emailValue.addEventListener("keyup", () => {
+        if(emailValue.value.trim().length >= 3 && emailRegex.test(emailValue.value.trim())) {
+          if(emailValue.classList.contains('error')) {
+            emailValue.classList.remove('error');
+          }
+        }
+      })
+
+      // Passport
+      const passportValue = document.querySelector("[name=passport]")
+      if(!passportValue.value.trim() || passportValue.value.trim().length < 3) {
+        passportValue.classList.add("error")
+        passportValue.scrollIntoView()
+        passportValue.title = "Lastname is required"
+        isValid = false
+      }
+
+      passportValue.addEventListener("keyup", () => {
+        if(passportValue.value.trim().length >= 3) {
+          if(passportValue.classList.contains('error')) {
+            passportValue.classList.remove('error');
+          }
+        }
+      })
+
+      // Country Code
+      const countryCodeValue = document.querySelector("[name=countryCode]")
+      if(!countryCodeValue.value) {
+        countryCodeValue.classList.add("error")
+        countryCodeValue.scrollIntoView()
+        countryCodeValue.title = "Country code is required"
+        isValid = false
+      }
+
+      // Country 
+      const countryValue = document.querySelector("[name=country]")
+      if(!countryValue.value) {
+        countryValue.classList.add("error")
+        countryValue.scrollIntoView()
+        countryValue.title = "country is required"
+        isValid = false
+      }
+
+      const inputElements = document.querySelectorAll('[data-length]')
+      inputElements.forEach(inputElement => {
+        const elementValue = inputElement.value  
+
+        if(elementValue.trim().length < 3) {
+          elementValue.classList.add("error");
+          inputElement.scrollIntoView({ behavior: "smooth" })
+          return
+        }
+      })
 
       const inputElements = document.querySelectorAll('[data-length]')
       inputElements.forEach(inputElement => {
@@ -604,6 +729,15 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
           return
         }
       })
+
+      if(!isValid) {
+        document.querySelector("#error-message").style.display = "block"
+        setTimeout(() => {
+          document.querySelector("#error-message").style.display = "none"
+        }, 4000)
+        return
+      }
+
 
       if (document.querySelector("#modal-yes").checked) {
         onYes()

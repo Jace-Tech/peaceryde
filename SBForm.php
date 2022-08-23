@@ -299,7 +299,7 @@
 
             <p class="vsbformp">Which of our services are you applying for?</p>
             <select class="form-select vsbformselect vsbmt" required name="service" aria-label="Default select example">
-              <option value="" selected disabled>Choose service</option>
+              <option value="" disabled>Choose service</option>
               <?php if (count($services)) : ?>
                 <?php foreach ($services as $service) : ?>
                   <option value="<?= $service['service_id'] ?>">
@@ -352,6 +352,78 @@
 
     formElement.addEventListener('submit', (e) => {
       e.preventDefault();
+      // Check if the inputs are filled 
+      let isValid = true;
+
+      // Firstname
+      const firstNameValue = document.querySelector("[name=firstname]")
+      if(!firstNameValue.value.trim() || firstNameValue.value.trim().length < 3) {
+        firstNameValue.classList.add("error")
+        firstNameValue.scrollIntoView()
+        firstNameValue.title = "Firstname is required"
+        isValid = false
+      }
+
+      firstNameValue.addEventListener("keyup", () => {
+        if(firstNameValue.value.trim().length >= 3) {
+          if(firstNameValue.classList.contains('error')) {
+            firstNameValue.classList.remove('error');
+          }
+        }
+      })
+
+      // Lastname
+      const lastnameValue = document.querySelector("[name=lastname]")
+      if(!lastnameValue.value.trim() || lastnameValue.value.trim().length < 3) {
+        lastnameValue.classList.add("error")
+        lastnameValue.scrollIntoView()
+        lastnameValue.title = "Lastname is required"
+        isValid = false
+      }
+
+      lastnameValue.addEventListener("keyup", () => {
+        if(lastnameValue.value.trim().length >= 3) {
+          if(lastnameValue.classList.contains('error')) {
+            lastnameValue.classList.remove('error');
+          }
+        }
+      })
+
+      // Email
+      const emailValue = document.querySelector("[name=email]")
+      if(!emailValue.value.trim() || emailValue.value.trim().length < 3) {
+        emailValue.classList.add("error")
+        emailValue.scrollIntoView()
+        emailValue.title = "Lastname is required"
+        isValid = false
+      }
+
+      const emailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/
+
+      emailValue.addEventListener("keyup", () => {
+        if(emailValue.value.trim().length >= 3 && emailRegex.test(emailValue.value.trim())) {
+          if(emailValue.classList.contains('error')) {
+            emailValue.classList.remove('error');
+          }
+        }
+      })
+
+      // Country Code
+      const serviceValue = document.querySelector("[name=service]")
+      if (!serviceValue.value) {
+        serviceValue.classList.add("error")
+        serviceValue.scrollIntoView()
+        serviceValue.title = "Service is required"
+        isValid = false
+      }
+
+      serviceValue.addEventListener("change", () => {
+        if (serviceValue.value) {
+          if (serviceValue.classList.contains('error')) {
+            serviceValue.classList.remove('error');
+          }
+        }
+      })
 
       const inputElements = document.querySelectorAll('[data-length]')
       inputElements.forEach(inputElement => {
@@ -365,6 +437,16 @@
           return
         }
       })
+
+      if(!isValid) {
+        document.querySelector("#error-message").style.display = "block"
+        setTimeout(() => {
+          document.querySelector("#error-message").style.display = "none"
+        }, 4000)
+        return
+      }
+
+      formElement.submit()
     })
   </script>
 
