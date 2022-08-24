@@ -448,7 +448,7 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
                                 <div class="col-md-4 col-lg-4 col-xl-4">
                                     <div class="form-group">
                                         <label class="form-label">Date of Birth</label>
-                                        <input required type="text"  min="6" minlength="6" readonly name="dob" id="datepicker" class="form-control dob" placeholder="dd-mm-yyyy">
+                                        <input required type="text" data-date readonly name="dob" id="datepicker" class="form-control dob" placeholder="dd-mm-yyyy">
                                     </div>
                                 </div>
 
@@ -498,11 +498,31 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
             })
         })
 
+        const dateInput = document.querySelector("[data-date]")
+        dataInput.addEventListener('change', () => {
+            const value = dateInput.value.trim()
+            console.log(value)
+            if(!value) {
+                dateInput.classList.add("error")
+            }
+            else {
+                if(dateInput.classList.contains("error")) {
+                dateInput.classList.remove("error")
+                }
+            }
+        })
+
 
         formElement.addEventListener('submit', (e) => {
             e.preventDefault();
             // Check if the inputs are filled 
             let isValid = true;
+
+            if(!dateInput.value.trim()) {
+                dateInput.classList.add("error")
+                dateInput.scrollIntoView({ behavior: "smooth" })
+                return
+            }
 
             // Firstname
             const firstNameValue = document.querySelector("[name=firstname]")

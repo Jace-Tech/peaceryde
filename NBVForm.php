@@ -138,7 +138,7 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
                       <div class="form-group">
                         <label class="form-label">Date of Birth</label>
                         <div class="input-group mb-3 biwidth">
-                          <input type="text" readonly required min="6" minlength="6"  name="dob" value="<?= $FORM_APPY["dob"] ?? "" ?>" class="form-control firstname" placeholder="dd-mm-yyyy" id="datepicker">
+                          <input type="text" readonly required data-date name="dob" value="<?= $FORM_APPY["dob"] ?? "" ?>" class="form-control firstname" placeholder="dd-mm-yyyy" id="datepicker">
                         </div>
                         <p style="color: #C8730F; font-family: Ubuntu; font-size: 13px; font-style: normal; font-weight: 400;">You must be at least 18 years old to use this website.</p>
                       </div>
@@ -565,6 +565,7 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
   <script>
     const formElement = document.querySelector('[data-form]')
     const inputElements = document.querySelectorAll('[data-length]')
+    
 
     inputElements.forEach((element) => {
       element.addEventListener('keydown', () => {
@@ -588,12 +589,34 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
       })
     })
 
+    const dateInput = document.querySelector("[data-date]")
+    dataInput.addEventListener('change', () => {
+      const value = dateInput.value.trim()
+      console.log(value)
+      if(!value) {
+        dateInput.classList.add("error")
+      }
+      else {
+        if(dateInput.classList.contains("error")) {
+          dateInput.classList.remove("error")
+        }
+      }
+    })
+
 
     formElement.addEventListener('submit', (e) => {
       e.preventDefault();
 
       // Check if the inputs are filled 
       let isValid = true;
+
+      // DATE INPUT
+    
+      if(!dateInput.value.trim()) {
+        dateInput.classList.add("error")
+        dateInput.scrollIntoView({ behavior: "smooth" })
+        return
+      }
 
       // Firstname
       const firstNameValue = document.querySelector("[name=firstname]")
