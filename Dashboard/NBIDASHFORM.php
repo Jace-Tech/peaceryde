@@ -200,7 +200,7 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
                                             <div class="input-group-prepend">
                                                 <select required name="countryCode" class="custom-select" id="inputGroupSelect01" style="width: 100px;height:43px; background-color: #ADC92E; color: #F9FFFF; font-size:11px;">
                                                     <option value="">Country code</option>    
-                                                <optgroup label="Country Code">
+                                                    <optgroup label="Country Code">
                                                         <option data-countryCode="DZ" value="213">Algeria (+213)</option>
                                                         <option data-countryCode="AD" value="376">Andorra (+376)</option>
                                                         <option data-countryCode="AO" value="244">Angola (+244)</option>
@@ -448,7 +448,7 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
                                 <div class="col-md-4 col-lg-4 col-xl-4">
                                     <div class="form-group">
                                         <label class="form-label">Date of Birth</label>
-                                        <input required type="text" data-length readonly name="dob" id="datepicker" class="form-control dob" placeholder="dd-mm-yyyy">
+                                        <input required type="text"  min="6" minlength="6" readonly name="dob" id="datepicker" class="form-control dob" placeholder="dd-mm-yyyy">
                                     </div>
                                 </div>
 

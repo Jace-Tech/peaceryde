@@ -143,7 +143,7 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
                       <div class="form-group">
                         <label class="form-label">Date of Birth</label>
                         <div class="input-group mb-3 biwidth">
-                          <input type="text" required name="dob" data-length value="<?= $FORM_APPY["dob"] ?? "" ?>" readonly id="datepicker" class="form-control firstname" placeholder="dd-mm-yyyy">
+                          <input type="text" required name="dob" min="6" minlength="6" value="<?= $FORM_APPY["dob"] ?? "" ?>" readonly id="datepicker" class="form-control firstname" placeholder="dd-mm-yyyy">
                         </div>
                         <p style="color: #C8730F; font-family: Ubuntu; font-size: 13px; font-style: normal; font-weight: 400;">You must be at least 18 years old to use this website.</p>
                       </div>
@@ -491,9 +491,9 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
           <form action="./handlers/login.php" method="post">
             <div class="form-row">
               <div class="form-group">
-                <input name="email" type="text" class="form-control" style="border: 1px solid #1161D9; width:470px;font-family:ubuntu;height: 44px; margin-top:27px;  color: #1161D9;" placeholder="Email" />
-                <input type="hidden" name="redirect" value="../NTWPForm.php">
-                <input name="password" type="text" class="form-control" style="border: 1px solid #1161D9; width:470px;font-family:ubuntu;height: 44px; margin-top:27px; color: #1161D9;" placeholder="Password" />
+                <input name="email" required type="text" class="form-control" style="border: 1px solid #1161D9; width:470px;font-family:ubuntu;height: 44px; margin-top:27px;  color: #1161D9;" placeholder="Email" />
+                <input type="hidden" required name="redirect" value="../NTWPForm.php">
+                <input name="password" required type="text" class="form-control" style="border: 1px solid #1161D9; width:470px;font-family:ubuntu;height: 44px; margin-top:27px; color: #1161D9;" placeholder="Password" />
               </div>
             </div>
             <button type="submit" name="login" class="btn btn-secondary" style="margin-left: 400; background-color: #1161D9; color:#ffffff">SIGN IN</button>
