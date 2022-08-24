@@ -562,7 +562,7 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
       })
 
       const dateInput = document.querySelector("[data-date]")
-      dataInput.addEventListener('change', () => {
+      dateInput.addEventListener('change', () => {
         const value = dateInput.value.trim()
         console.log(value)
         if(!value) {
