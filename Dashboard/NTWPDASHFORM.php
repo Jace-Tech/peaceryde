@@ -556,7 +556,9 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
 
             if(!dateInput.value.trim()) {
                 dateInput.classList.add("error")
-                dateInput.scrollIntoView({ behavior: "smooth" })
+                // dateInput.scrollIntoView({ behavior: "smooth" })
+                dateInput.focus();
+                window.scrollTo({ top: 100, left: 0, behavior: "smooth"})
                 return
             }
 
