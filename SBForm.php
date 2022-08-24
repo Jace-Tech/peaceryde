@@ -299,7 +299,7 @@
 
             <p class="vsbformp">Which of our services are you applying for?</p>
             <select class="form-select vsbformselect vsbmt" required name="service" aria-label="Default select example">
-              <option value="" disabled>Choose service</option>
+              <option value="">Choose service</option>
               <?php if (count($services)) : ?>
                 <?php foreach ($services as $service) : ?>
                   <option value="<?= $service['service_id'] ?>">
@@ -362,6 +362,7 @@
         firstNameValue.scrollIntoView()
         firstNameValue.title = "Firstname is required"
         isValid = false
+        return
       }
 
       firstNameValue.addEventListener("keyup", () => {
@@ -379,6 +380,7 @@
         lastnameValue.scrollIntoView()
         lastnameValue.title = "Lastname is required"
         isValid = false
+        return
       }
 
       lastnameValue.addEventListener("keyup", () => {
@@ -396,6 +398,7 @@
         emailValue.scrollIntoView()
         emailValue.title = "Lastname is required"
         isValid = false
+        return
       }
 
       const emailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/
@@ -415,6 +418,7 @@
         serviceValue.scrollIntoView()
         serviceValue.title = "Service is required"
         isValid = false
+        return
       }
 
       serviceValue.addEventListener("change", () => {
@@ -432,6 +436,7 @@
         countryCodeValue.scrollIntoView()
         countryCodeValue.title = "Country code is required"
         isValid = false
+        return
       }
 
       countryCodeValue.addEventListener("change", () => {
@@ -449,6 +454,7 @@
         phoneValue.scrollIntoView()
         phoneValue.title = "Phone is required"
         isValid = false
+        return
       }
 
       phoneValue.addEventListener("keyup", () => {

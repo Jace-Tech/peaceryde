@@ -199,8 +199,8 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
                                             <label class="form-label">Mobile Number</label>
                                             <div class="input-group-prepend">
                                                 <select required name="countryCode" class="custom-select" id="inputGroupSelect01" style="width: 100px;height:43px; background-color: #ADC92E; color: #F9FFFF; font-size:11px;">
-                                                    <optgroup label="Country Code">
-
+                                                    <option value="">Country code</option>    
+                                                <optgroup label="Country Code">
                                                         <option data-countryCode="DZ" value="213">Algeria (+213)</option>
                                                         <option data-countryCode="AD" value="376">Andorra (+376)</option>
                                                         <option data-countryCode="AO" value="244">Angola (+244)</option>
@@ -511,6 +511,7 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
                 firstNameValue.scrollIntoView()
                 firstNameValue.title = "Firstname is required"
                 isValid = false
+                return
             }
 
             firstNameValue.addEventListener("keyup", () => {
@@ -528,6 +529,7 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
                 lastnameValue.scrollIntoView()
                 lastnameValue.title = "Lastname is required"
                 isValid = false
+                return
             }
 
             lastnameValue.addEventListener("keyup", () => {
@@ -545,6 +547,8 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
                 phoneValue.scrollIntoView()
                 phoneValue.title = "Phone is required"
                 isValid = false
+                return
+
             }
 
             phoneValue.addEventListener("keyup", () => {
@@ -562,6 +566,7 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
                 emailValue.scrollIntoView()
                 emailValue.title = "Lastname is required"
                 isValid = false
+                return
             }
 
             const emailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/
@@ -581,6 +586,7 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
                 companyNameValue.scrollIntoView()
                 companyNameValue.title = "Lastname is required"
                 isValid = false
+                return
             }
 
             companyNameValue.addEventListener("keyup", () => {
@@ -598,6 +604,7 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
                 corporateValue.scrollIntoView()
                 corporateValue.title = "Lastname is required"
                 isValid = false
+                return
             }
 
             corporateValue.addEventListener("keyup", () => {
@@ -615,6 +622,8 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
                 sharesValue.scrollIntoView()
                 sharesValue.title = "Lastname is required"
                 isValid = false
+                return
+
             }
 
             sharesValue.addEventListener("keyup", () => {
@@ -632,6 +641,7 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
                 countryCodeValue.scrollIntoView()
                 countryCodeValue.title = "Country code is required"
                 isValid = false
+                return
             }
 
             countryCodeValue.addEventListener("change", () => {
@@ -649,6 +659,7 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
                 dob.scrollIntoView()
                 dob.title = "Date of birth is required"
                 isValid = false
+                return
             }
 
             dob.addEventListener("change", () => {

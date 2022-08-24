@@ -173,7 +173,7 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
                                 <div class="col-md-4 col-lg-4 col-xl-4">
                                     <label class="form-label">Title</label>
                                     <select required class="form-select fmselect" name="title" aria-label="Default select example">
-                                        <option selected>Title</option>
+                                        <option value="">Title</option>
                                         <?php foreach ($titles as $title) : ?>
                                             <option value="<?= $title ?>"><?= $title ?></option>
                                         <?php endforeach; ?>
@@ -218,7 +218,7 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
                                     <br>
                                     <div class="form-check form-check-inline">
                                         <div class="custom-control custom-radio">
-                                            <input type="radio" value="male" class="custom-control-input" id="customControlValidation2" name="gender">
+                                            <input type="radio" value="male" class="custom-control-input" id="customControlValidation2" name="gender" required>
                                             <label class="custom-control-label" for="customControlValidation2">Male</label>
                                         </div>
                                     </div>
@@ -486,7 +486,7 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
                             <div class="row">
                                 <div class="col-md-4 col-xl-3">
                                     <select required data-length name="country" class="form-select nationality" aria-label="Default select example">
-                                        <option>Select Country</option>
+                                        <option value="">Select Country</option>
                                         <?php foreach ($country_fee as $key => $value) : ?>
                                             <?php if ($key == "united states") : ?>
                                                 <option value="<?= $key ?>">United States of America</option>

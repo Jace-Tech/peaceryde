@@ -482,7 +482,7 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
                                 <div class="col-md-4 col-xl-3">
                                     <label class="form-label">Country</label>
                                     <select required data-length name="country" class="form-select nationality" aria-label="Default select example">
-                                        <option>Select Country</option>
+                                        <option value="">Select Country</option>
                                         <?php foreach ($country_fee as $key => $value) : ?>
                                             <?php if ($key == "united states") : ?>
                                                 <option value="<?= $key ?>">United States of America</option>
@@ -549,6 +549,7 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
                 firstNameValue.scrollIntoView()
                 firstNameValue.title = "Firstname is required"
                 isValid = false
+                return
             }
 
             firstNameValue.addEventListener("keyup", () => {
@@ -566,6 +567,7 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
                 lastnameValue.scrollIntoView()
                 lastnameValue.title = "Lastname is required"
                 isValid = false
+                return
             }
 
             lastnameValue.addEventListener("keyup", () => {
@@ -583,6 +585,7 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
                 phoneValue.scrollIntoView()
                 phoneValue.title = "Phone is required"
                 isValid = false
+                return
             }
 
             phoneValue.addEventListener("keyup", () => {
@@ -600,6 +603,7 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
                 emailValue.scrollIntoView()
                 emailValue.title = "Lastname is required"
                 isValid = false
+                return
             }
 
             const emailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/
@@ -619,6 +623,7 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
                 passportValue.scrollIntoView()
                 passportValue.title = "Lastname is required"
                 isValid = false
+                return
             }
 
             passportValue.addEventListener("keyup", () => {
@@ -636,6 +641,7 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
                 countryCodeValue.scrollIntoView()
                 countryCodeValue.title = "Country code is required"
                 isValid = false
+                return
             }
 
             // Country 
@@ -645,6 +651,7 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
                 countryValue.scrollIntoView()
                 countryValue.title = "country is required"
                 isValid = false
+                return
             }
 
             const inputElements = document.querySelectorAll('[data-length]')

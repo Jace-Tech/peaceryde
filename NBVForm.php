@@ -91,7 +91,7 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
             <div>
               <form data-form action="./handlers/form_handler.php" method="post">
                 <select required name="title" class="form-select title" aria-label="Default select example">
-                  <option selected>Title</option>
+                  <option value="">Title</option>
                   <?php foreach ($titles as $title) : ?>
                     <option value="<?= $title ?>">
                       <?= $title ?>
@@ -138,14 +138,10 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
                       <div class="form-group">
                         <label class="form-label">Date of Birth</label>
                         <div class="input-group mb-3 biwidth">
-                          <input type="text" readonly required name="dob" value="<?= $FORM_APPY["dob"] ?? "" ?>" class="form-control firstname" placeholder="dd-mm-yyyy" id="datepicker">
+                          <input type="text" readonly required data-length name="dob" value="<?= $FORM_APPY["dob"] ?? "" ?>" class="form-control firstname" placeholder="dd-mm-yyyy" id="datepicker">
 
                         </div>
-                        <p style="color: #C8730F;
-    font-family: Ubuntu;
-    font-size: 13px;
-    font-style: normal;
-    font-weight: 400;">You must be at least 18 years old to use this website.</p>
+                        <p style="color: #C8730F; font-family: Ubuntu; font-size: 13px; font-style: normal; font-weight: 400;">You must be at least 18 years old to use this website.</p>
                       </div>
                     </div>
                     <div class="col-md-5 genderwidth">
@@ -156,7 +152,7 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
                           <div class="form-check form-check-inline male">
                             <div class="custom-control custom-radio">
                               <label class="custom-control-label" for="customControlValidation2">Male</label>
-                              <input type="radio" class="custom-control-input" id="customControlValidation2" value="male" name="gender">
+                              <input type="radio" class="custom-control-input" id="customControlValidation2" value="male" name="gender" required>
                             </div>
                           </div>
                           <div class="form-check form-check-inline" style="margin-left: -20px;">
@@ -198,9 +194,8 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
                     <div class="input-group mb-3">
                       <div class="input-group-prepend">
                         <select name="countryCode" id="" required name="country_code" aria-label="Default select example" class="form-select code" aria-label="Default select example">
-
+                          <option value="">Country code</option>
                           <optgroup label="Country Code">
-
                             <option data-countryCode="DZ" value="213">Algeria (+213)</option>
                             <option data-countryCode="AD" value="376">Andorra (+376)</option>
                             <option data-countryCode="AO" value="244">Angola (+244)</option>
@@ -418,7 +413,7 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
                           </optgroup>
                         </select>
                       </div>
-                      <input type="tel" name="phone" data-length class="form-control firstname" value="" placeholder="070XXXXXXXX">
+                      <input required type="tel" name="phone" data-length class="form-control firstname" value="" placeholder="070XXXXXXXX">
                       <input required type="hidden" name="service" value="srvs-002">
                       <input required type="hidden" name="nbv" value="">
                     </div>
@@ -428,7 +423,7 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
 
                 <p class="formml please">Please select below your Nationality (as on passport)</p>
                 <select required id="country" data-length name="country" class="form-select formml select" aria-label="Default select example">
-                  <option>Country </option>
+                  <option value="">Country </option>
                   <?php foreach ($country_fee as $key => $value) : ?>
                     <option value="<?= $key ?>">
                       <?php if ($key == "united states") : ?>
@@ -445,7 +440,7 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
                   <div class="form-check form-check-inline" style="padding-left: 0px; padding-top: 3px;">
                     <div class="custom-control custom-radio">
                       <label class="custom-control-label" for="customControlValidation2">No</label>
-                      <input type="radio" class="custom-control-input" checked id="customControlValidation2" name="radio-stacked" required>
+                      <input type="radio" class="custom-control-input" id="customControlValidation2" name="radio-stacked" checked required>
                     </div>
                   </div>
                   <div class="form-check form-check-inline">
@@ -491,9 +486,9 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
           <form action="./handlers/login.php" method="post">
             <div class="form-row">
               <div class="form-group">
-                <input type="text" name="email" class="form-control" style="border: 1px solid #1161D9; width:470px;font-family:ubuntu;height: 44px; margin-top:27px;  color: #1161D9;" placeholder="Email" />
-                <input type="hidden" name="redirect" value="../NBVForm.php">
-                <input type="text" name="password" class="form-control" style="border: 1px solid #1161D9; width:470px;font-family:ubuntu;height: 44px; margin-top:27px; color: #1161D9;" placeholder="Password" />
+                <input type="text" required name="email" class="form-control" style="border: 1px solid #1161D9; width:470px;font-family:ubuntu;height: 44px; margin-top:27px;  color: #1161D9;" placeholder="Email" />
+                <input type="hidden" required name="redirect" value="../NBVForm.php">
+                <input type="text" required name="password" class="form-control" style="border: 1px solid #1161D9; width:470px;font-family:ubuntu;height: 44px; margin-top:27px; color: #1161D9;" placeholder="Password" />
               </div>
             </div>
             <button type="submit" name="login" class="btn btn-secondary" style="margin-left: 400; background-color: #1161D9; color:#ffffff">SIGN IN</button>
@@ -608,6 +603,7 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
         firstNameValue.scrollIntoView()
         firstNameValue.title = "Firstname is required"
         isValid = false
+        return
       }
 
       firstNameValue.addEventListener("keyup", () => {
@@ -625,6 +621,7 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
         lastnameValue.scrollIntoView()
         lastnameValue.title = "Lastname is required"
         isValid = false
+        return
       }
 
       lastnameValue.addEventListener("keyup", () => {
@@ -642,6 +639,7 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
         phoneValue.scrollIntoView()
         phoneValue.title = "Phone is required"
         isValid = false
+        return
       }
 
       phoneValue.addEventListener("keyup", () => {
@@ -659,6 +657,7 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
         emailValue.scrollIntoView()
         emailValue.title = "Lastname is required"
         isValid = false
+        return
       }
 
       const emailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/
@@ -678,6 +677,7 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
         passportValue.scrollIntoView()
         passportValue.title = "Lastname is required"
         isValid = false
+        return
       }
 
       passportValue.addEventListener("keyup", () => {
@@ -695,6 +695,7 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
         countryCodeValue.scrollIntoView()
         countryCodeValue.title = "Country code is required"
         isValid = false
+        return
       }
 
       countryCodeValue.addEventListener("change", () => {
@@ -712,6 +713,7 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
         countryValue.scrollIntoView()
         countryValue.title = "country is required"
         isValid = false
+        return
       }
 
       countryValue.addEventListener("change", () => {

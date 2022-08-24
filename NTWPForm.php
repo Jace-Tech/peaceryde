@@ -93,7 +93,7 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
             <div>
               <form data-form action="./handlers/form_handler.php" method="post">
                 <select class="form-select title" aria-label="Default select example" required class="form-select" name="title">
-                  <option selected>Title</option>
+                  <option value="">Title</option>
                   <?php foreach ($titles as $title) : ?>
                     <option value="<?= $title ?>">
                       <?= $title ?>
@@ -430,7 +430,7 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
 
                 <p class="formml please">Please select below your Nationality (as on passport)</p>
                 <select required data-length name="country" class="form-select formml select" aria-label="Default select example">
-                  <option>Country </option>
+                  <option value="">Country </option>
                   <?php foreach ($country_fee as $key => $value) : ?>
                     <?php if ($key == "united states") : ?>
                       <option value="<?= $key ?>">United States of America</option>

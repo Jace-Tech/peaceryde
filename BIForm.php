@@ -157,7 +157,7 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
                           <input type="hidden" name="bi">
                           <input type="hidden" name="service" value="srvs-003">
                           <div class="input-group mb-3 biwidth">
-                            <input type="email" class="form-control firstname2" name="email" value="<?= $FORM_APPY['email'] ?? "" ?>" placeholder="Email">
+                            <input required type="email" class="form-control firstname2" name="email" value="<?= $FORM_APPY['email'] ?? "" ?>" placeholder="Email">
                           </div>
                         </div>
                       </div>
@@ -168,7 +168,7 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
                             <div class="input-group mb-3 biwidth">
                               <div class="input-group-prepend">
                                 <select required name="countryCode" id="" class="form-select code" aria-label="Default select example">
-
+                                  <option value="">Country code</option>
                                   <optgroup label="Country Code">
 
                                     <option data-countryCode="DZ" value="213">Algeria (+213)</option>
@@ -423,7 +423,7 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
                         <div class="form-group">
                           <label class="form-label">Date of Birth</label>
                           <div class="input-group mb-3 biwidth">
-                            <input type="text" readonly required name="dob" class="form-control firstname2" placeholder="dd/mm/yyyy" id="datepicker">
+                            <input type="text" readonly required name="dob" class="form-control firstname2" placeholder="dd-mm-yyyy" id="datepicker">
 
                           </div>
                           <p style="color: #C8730F; font-family: Ubuntu; font-size: 13px; font-style: normal; font-weight: 400;">You must be at least 18 years old to use this website.</p>
@@ -447,7 +447,7 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
                     <div class="form-check form-check-inline" style="padding-left: 0px; padding-top: 5px;">
                       <div class="custom-control custom-radio">
                         <label class="custom-control-label" for="customControlValidation2">No</label>
-                        <input class="custom-control-input" type="radio" id="customControlValidation2" name="radio-stacked" required>
+                        <input class="custom-control-input" type="radio" id="customControlValidation2" name="radio-stacked" checked required>
                       </div>
                     </div>
                     <div class="form-check form-check-inline" style="padding-left: 0px; padding-top: 5px;">
@@ -484,9 +484,9 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
             <form action="./handlers/login.php" method="post">
               <div class="form-row">
                 <div class="form-group">
-                  <input name="email" type="text" class="form-control" style="border: 1px solid #1161D9; width:470px;font-family:ubuntu;height: 44px; margin-top:27px;  color: #1161D9;" placeholder="Email" />
-                  <input type="hidden" name="redirect" value="../BIForm.php">
-                  <input name="password" type="text" class="form-control" style="border: 1px solid #1161D9; width:470px;font-family:ubuntu;height: 44px; margin-top:27px; color: #1161D9;" placeholder="Password" />
+                  <input name="email" required type="text" class="form-control" style="border: 1px solid #1161D9; width:470px;font-family:ubuntu;height: 44px; margin-top:27px;  color: #1161D9;" placeholder="Email" />
+                  <input required type="hidden" name="redirect" value="../BIForm.php">
+                  <input name="password" required type="text" class="form-control" style="border: 1px solid #1161D9; width:470px;font-family:ubuntu;height: 44px; margin-top:27px; color: #1161D9;" placeholder="Password" />
                 </div>
               </div>
               <button type="submit" name="login" class="btn btn-secondary" style="margin-left: 400; background-color: #1161D9; color:#ffffff">SIGN IN</button>
