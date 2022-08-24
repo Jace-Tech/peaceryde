@@ -37,9 +37,11 @@
                   <li class="new-section8__text-body5 layout fs-13"><a class="fs-13" href="NBVForm" style=" text-decoration: none;">Nigeria Business Visa on
                       Arrival</a></li>
                   <li class="new-section8__text-body5 layout fs-13"><a class="fs-13" href="NTWPForm" style=" text-decoration: none;">Nigeria
-                      Temporary Work Permit</a></li>
-                  <li class="new-section8__text-body5 layout fs-13"><a class="fs-13" href="SBForm" style=" text-decoration: none;">Nigeria
+                      Temporary Work Permit on Arrival</a></li>
+                      <li class="new-section8__text-body5 layout fs-13"><a class="fs-13" href="SBForm" style=" text-decoration: none;">Nigeria
                       Tourist Visa</a></li>
+                  <li class="new-section8__text-body5 layout fs-13"><a class="fs-13" href="SBForm" style=" text-decoration: none;">Nigeria
+                      Immigration Expatriate Quota Processing</a></li>
                   <li class="new-section8__text-body5 layout fs-13"><a class="fs-13" href="SBForm" style=" text-decoration: none;">Nigeria
                       Business Visa
                       Extension</a></li>
@@ -49,8 +51,8 @@
                   <li class="new-section8__text-body5 layout fs-13"><a class="fs-13" href="SBForm" style=" text-decoration: none;">Nigeria
                       Subject To
                       Regularization (STR)</a></li>
-                  <li class="new-section8__text-body5 layout fs-13"><a class="fs-13" href="SBForm" style=" text-decoration: none;">Permit to Land
-                      Immgration Approval For Marine Vessels Foreign Crew</a></li>
+                  <li class="new-section8__text-body5 layout fs-13"><a class="fs-13" href="SBForm" style=" text-decoration: none;">Nigerian
+                      Immgration Permit to Land Approval(PTL)</a></li>
 
                 </ul>
               </div>

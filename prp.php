@@ -62,7 +62,7 @@
                                     PeaceRyde Africa recommends that you do not purchase tickets or make bookings that cannot be canceled without cost prior to the issuance of a visa, except where it is a specific requirement stated as part of the visa application.
                                     <br>
                                     <br>
-                                    These terms contain a disclaimer that limits our liability to our refund policy stated below
+                                    These terms contain a disclaimer that limits our liability to our refund policy stated below.
                                     <br>
                                     <br>
                                     Except were covered in our refund policy below, all fees are non-refundable, and may be retained by us on payment by you, even if you do not make or proceed with a visa application, and whether or not a visa is granted.
@@ -84,7 +84,7 @@
                                 </h1>
                                 <p class="pptext3" style="text-align: left;">
                                     <br>
-                                    These terms and conditions govern your use of the services of the PeaceRyde Africa, all visa applications you make, and all inquiries you make for advice or information concerning Nigerian visas. Each applicant for a visa hereby accepts and confirms that, prior to submitting a visa application, they have read, understood, and agreed to be bound by, without limitation or qualification, all of these terms and conditions. No employee of PeaceRyde Africa has any authority whatsoever to change, amend, amplify or withdraw any or all of these terms and conditions without prior written approval from PeaceRyde Africa
+                                    These terms and conditions govern your use of the services of the PeaceRyde Africa, all visa applications you make, and all inquiries you make for advice or information concerning Nigerian visas. Each applicant for a visa hereby accepts and confirms that, prior to submitting a visa application, they have read, understood, and agreed to be bound by, without limitation or qualification, all of these terms and conditions. No employee of PeaceRyde Africa has any authority whatsoever to change, amend, amplify or withdraw any or all of these terms and conditions without prior written approval from PeaceRyde Africa.
                                 </p>
                                 <br>
                                 <h1 class="policyh1">
@@ -137,7 +137,7 @@
                                 <h2 class="policyh2">4.7 Changes to Procedures and Fees</h2>
                                 <p class="pptext3" style="text-align: left;">
                                     <br>
-                                    The procedures and fees of NIS and the Nigeria High Commission for the processing of visas and related services are outside the control of PeaceRyde Africa and subject to change without prior notice. PeaceRyde Africa does not accept responsibility for any changes in procedures or fees and reserves the right to pass on any increased fees
+                                    The procedures and fees of NIS and the Nigeria High Commission for the processing of visas and related services are outside the control of PeaceRyde Africa and subject to change without prior notice. PeaceRyde Africa does not accept responsibility for any changes in procedures or fees and reserves the right to pass on any increased fees.
                                 </p>
                                 <br>
                                 <h2 class="policyh2">4.8 Cancellation</h2>
@@ -169,7 +169,7 @@
                                     <b>6. Disclaimer</b>
                                 </h1>
                                 <p class="pptext3" style="text-align: left;">
-                                    Except for the refund or reimbursements of fees as stated in the section above, PeaceRyde Africa excludes its liability in connection with any visa applications, including liability in or under contract, negligence, tort, statute, or otherwise howsoever, and including liability for any delay or failure of PeaceRyde Africa in handling or processing visa applications, loss of or delay to passports and other documents, delays involving the Nigeria High Commission and rejections of visa applications for any reason
+                                    Except for the refund or reimbursements of fees as stated in the section above, PeaceRyde Africa excludes its liability in connection with any visa applications, including liability in or under contract, negligence, tort, statute, or otherwise howsoever, and including liability for any delay or failure of PeaceRyde Africa in handling or processing visa applications, loss of or delay to passports and other documents, delays involving the Nigeria High Commission and rejections of visa applications for any reason.
                                 </p>
                                 <h2 class="policyh2">6.1 No Liability for Incorrect Information</h2>
                                 <p class="pptext3" style="text-align: left;">
