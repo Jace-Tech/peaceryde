@@ -253,8 +253,8 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
                                         <div class="input-group mb-3">
                                             <div class="input-group-prepend">
                                                 <select class="custom-select" required name="countryCode" id="inputGroupSelect01" style="width: 100px;height:43px; background-color: #ADC92E; color: #F9FFFF; font-size:11px;">
+                                                        <option value="">Country code</option>
                                                     <optgroup label="Country Code">
-
                                                         <option data-countryCode="DZ" value="213">Algeria (+213)</option>
                                                         <option data-countryCode="AD" value="376">Andorra (+376)</option>
                                                         <option data-countryCode="AO" value="244">Angola (+244)</option>
@@ -481,7 +481,7 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
                             <div class="row">
                                 <div class="col-md-4 col-xl-3">
                                     <label class="form-label">Country</label>
-                                    <select required data-length name="country" class="form-select nationality" aria-label="Default select example">
+                                    <select required name="country" class="form-select nationality" aria-label="Default select example">
                                         <option value="">Select Country</option>
                                         <?php foreach ($country_fee as $key => $value) : ?>
                                             <?php if ($key == "united states") : ?>
