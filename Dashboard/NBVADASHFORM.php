@@ -576,7 +576,7 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
             let isValid = true;
 
             if(!dateInput.value.trim()) {
-                dateInput.classList.add("error")
+                // dateInput.classList.add("error")
                 // dateInput.scrollIntoView({ behavior: "smooth" })
                 dateInput.focus();
                 window.scrollTo({ top: (window.innerHeight / 2) + 150, left: 0, behavior: "smooth"})
