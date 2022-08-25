@@ -434,6 +434,7 @@
               <p style="font-family: Ubuntu;font-size: 14px;font-style: normal;font-weight: 400; padding-top:27px;
                       ">Messages</p>
               <div class="row">
+                <input type="hidden" name="apply">
                 <div class="col-md-8 col-lg-6 col-xl-5">
                   <textarea name="message" style="width: 80%;margin-top:21; height: 150px;margin-bottom: 5px; border: 1px solid #555555;"></textarea>
                 </div>
