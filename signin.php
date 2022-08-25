@@ -65,7 +65,8 @@
                   <p class="fpp">Email Address</p>
                   <input type="email" name="email" class="form-control rpinput" placeholder="" style="margin-top: 6px;" />
                   <p class="fpp" style="padding-top: 27px;">Password</p>
-                  <input type="password" name="password" class="form-control rpinput" style="margin-top: 6px;" placeholder="" />
+                  <input type="password" id="d_password" name="password" class="form-control rpinput" style="margin-top: 6px;" placeholder="" />
+                  <i class="fa fa-eye" id="togglePassword" style="margin-left: -30px; cursor: pointer;"></i>
                 </div>
               </div>
               <div class="row buttonrow2" style="margin-top: 27px;">
@@ -94,6 +95,19 @@
   <!--Start of Tawk.to Script-->
   <?php include("./inc/langChange.php") ?>
   <script>
+     const togglePassword = document.querySelector('#togglePassword');
+  const password = document.querySelector('#id_password');
+
+  togglePassword.addEventListener('click', function (e) {
+    // toggle the type attribute
+    const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
+    password.setAttribute('type', type);
+    // toggle the eye slash icon
+    this.classList.toggle('fa fa-eye-slash');
+});
+  </script>
+  <script>
+   
     function inVisible(element) {
       //Checking if the element is
       //visible in the viewport
