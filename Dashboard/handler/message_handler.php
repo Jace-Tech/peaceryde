@@ -61,7 +61,6 @@ if(isset($_POST['send'])) {
             'status' => 'error'
         ];
         $_SESSION['ALERT'] = json_encode($alert);
-
         header("Location:" . $_SERVER['HTTP_REFERER']);
     }
 }

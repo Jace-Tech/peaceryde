@@ -12,6 +12,8 @@ $users = new User($connect);
 $bis = new BI($connect);
 
 if(isset($_POST['twp'])) {
+    print_r($_POST);
+    die();
     $POST = filter_var_array($_POST, FILTER_SANITIZE_STRING);
     extract($POST);
 
@@ -74,6 +76,8 @@ if(isset($_POST['twp'])) {
 }
 
 if(isset($_POST['nbv'])) {
+    print_r($_POST);
+    die();
     $POST = filter_var_array($_POST, FILTER_SANITIZE_STRING);
     extract($POST);
 
@@ -135,6 +139,8 @@ if(isset($_POST['nbv'])) {
 }
 
 if(isset($_POST['bi'])) {
+    print_r($_POST);
+    die();
     $POST = filter_var_array($_POST, FILTER_SANITIZE_STRING);
     extract($POST);
 
