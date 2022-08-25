@@ -170,7 +170,6 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
                                 <select required name="countryCode" id="" class="form-select code" aria-label="Default select example">
                                   <option value="">Country code</option>
                                   <optgroup label="Country Code">
-
                                     <option data-countryCode="DZ" value="213">Algeria (+213)</option>
                                     <option data-countryCode="AD" value="376">Andorra (+376)</option>
                                     <option data-countryCode="AO" value="244">Angola (+244)</option>
