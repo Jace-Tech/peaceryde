@@ -462,7 +462,7 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
                             </div>
                         </div>
                         <div class="divbtn">
-                            <button type="submit" name="bi" class="btn btnproceed">Proceed to Payment</button>
+                            <button type="submit" data-btn name="bi" class="btn btnproceed">Proceed to Payment</button>
                         </div>
                     </form>
                 </div>
@@ -692,7 +692,6 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
                 }
             })
 
-            const inputElements = document.querySelectorAll('[data-length]')
             inputElements.forEach(inputElement => {
                 const elementValue = inputElement.value
 
@@ -712,19 +711,6 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
                 }, 4000)
                 return
             }
-
-            const inputElements = document.querySelectorAll('[data-length]')
-            inputElements.forEach(inputElement => {
-                const elementValue = inputElement.value
-
-                if (elementValue.trim().length < 3) {
-                    elementValue.classList.add("error");
-                    inputElement.scrollIntoView({
-                        behavior: "smooth"
-                    })
-                    return
-                }
-            })
 
             formElement.submit()
         })
