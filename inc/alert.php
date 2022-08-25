@@ -5,10 +5,10 @@ if(isset($_SESSION['ALERT'])) {
         $alert = json_decode($_SESSION['ALERT'], true);
         $message = $alert['message'];
         $type = $alert['status'];
-        $text = $alert['text'];
+        $textAlert = $alert['text'] ?? "";
     ?>
         <script> 
-            swal("<?= $message ?>", "<?= $text ?>", "<?= $type ?>");
+            swal("<?= $message ?>", "<?= $textAlert ?>", "<?= $type ?>");
         </script>
     <?php
 
