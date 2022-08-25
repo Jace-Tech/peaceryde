@@ -12,8 +12,6 @@ $users = new User($connect);
 $bis = new BI($connect);
 
 if(isset($_POST['twp'])) {
-    print_r($_POST);
-    die();
     $POST = filter_var_array($_POST, FILTER_SANITIZE_STRING);
     extract($POST);
 
