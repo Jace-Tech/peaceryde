@@ -57,13 +57,13 @@
                     </h2>
                     <p class="everythingtext">
                         Everything you need to know
-                        about PeaceRyde Africa LLC
+                        about PeaceRyde Africa LLC.
+                        Questions you may want to ask The PeaceRyde Africa Team
                     </p>
                 </div>
                 <div>
                     <p class="everythingtext2">
-                    Everything you need to know
-                        about PeaceRyde Africa LLC
+                    Questions you may want to ask The PeaceRyde Africa Team
                     </p>
                     <?php if(count($FAQ->get_all_questions())): ?>
                         <?php $counter = 1;  ?>

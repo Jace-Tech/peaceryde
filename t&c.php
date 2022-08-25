@@ -60,11 +60,11 @@
                                 <p class="pptext2" style="padding-top:8px;padding-bottom:6px;text-align: left;">In its everyday business operations PeaceRyde Africa LLC makes use of a variety of data about identifiable individuals, including data about:</p>
                                 <br>
                                 <ol class="list" type="1">
-                                    <li>* Current, past and prospective employees</li>
-                                    <li>* Customers</li>
-                                    <li>* Users of its websites</li>
-                                    <li>* Subscribers</li>
-                                    <li>* Other stakeholders</li>
+                                    <li>* Current, past and prospective employees.</li>
+                                    <li>* Customers.</li>
+                                    <li>* Users of its websites.</li>
+                                    <li>* Subscribers.</li>
+                                    <li>* Other stakeholders.</li>
                                 </ol>
                                 <br>
                                 <p class="pptext2" style="padding-top:8px;padding-bottom:6px;text-align: left;">
@@ -72,7 +72,7 @@
                                     <br>
                                     <p class="pptext2" style="padding-top:8px;padding-bottom:6px;text-align: left;">The purpose of this policy is to set out the relevant legislation and to describe the steps PeaceRyde Africa is taking to ensure that it complies with it.</p>
                                     <br>
-                                    <p class="pptext2" style="padding-top:8px;padding-bottom:6px;text-align: left;">This control applies to all systems, people and processes that constitute the organisation's information systems, including board members, directors, employees, suppliers and other third parties who have access to PeaceRyde Africa systems</p>
+                                    <p class="pptext2" style="padding-top:8px;padding-bottom:6px;text-align: left;">This control applies to all systems, people and processes that constitute the organisation's information systems, including board members, directors, employees, suppliers and other third parties who have access to PeaceRyde Africa systems.</p>
                                     <p class="pptext2" style="padding-top:8px;padding-bottom:6px;text-align: left;">The following policies and procedures are relevant to this document:</p>
                                     <br>
                                     <ol class="list" type="1">
@@ -97,7 +97,7 @@
                                 <br>
                                 <h1 class="policyh1">The EU General Data Protection Regulation - GDPR</h1>
                                 <p class="pptext2" style="padding-top:8px;padding-bottom:6px;text-align: left;">
-                                    The General Data Protection Regulation 2016 (GDPR) is one of the most significant pieces of legislation affecting the way that PeaceRyde Africa carries out its information processing activities. Significant fines are applicable if a breach is deemed to have occurred under the GDPR, which is designed to protect the personal data of citizens of the European Union. It is PeaceRyde Africa policy to ensure that our compliance with the GDPR and other relevant legislation is clear and demonstrable at all times
+                                    The General Data Protection Regulation 2016 (GDPR) is one of the most significant pieces of legislation affecting the way that PeaceRyde Africa carries out its information processing activities. Significant fines are applicable if a breach is deemed to have occurred under the GDPR, which is designed to protect the personal data of citizens of the European Union. It is PeaceRyde Africa policy to ensure that our compliance with the GDPR and other relevant legislation is clear and demonstrable at all times.
                                 </p>
                                 <br>
                                 <br>
@@ -112,13 +112,13 @@
                                     <br>
                                     <p class="pptext2" style="padding-top:8px;padding-bottom:6px;text-align: left;">
                                         <b>'processing' means</b>
-                                        any operation or set of operations which is performed on personal data or on sets of personal data, whether or not by automated means, such as collection, recording, organisation, structuring, storage, adaptation or alteration, retrieval, consultation, use, disclosure by transmission, dissemination or otherwise making available, alignment or combination, restriction, erasure or destruction
+                                        any operation or set of operations which is performed on personal data or on sets of personal data, whether or not by automated means, such as collection, recording, organisation, structuring, storage, adaptation or alteration, retrieval, consultation, use, disclosure by transmission, dissemination or otherwise making available, alignment or combination, restriction, erasure or destruction.
                                     </p>
                                     <br>
                                     <br>
                                     <p class="pptext2" style="padding-top:8px;padding-bottom:6px;text-align: left;">
                                         <b>'controller' means</b>
-                                        the natural or legal person, public authority, agency or other body which, alone or jointly with others, determines the purposes and means of the processing of personal data; where the purposes and means of such processing are determined by Union or Member State law, the controller or the specific criteria for its nomination may be provided for by Union or Member State law
+                                        the natural or legal person, public authority, agency or other body which, alone or jointly with others, determines the purposes and means of the processing of personal data; where the purposes and means of such processing are determined by Union or Member State law, the controller or the specific criteria for its nomination may be provided for by Union or Member State law.
                                     </p>
                                 </p>
                                 <br>
@@ -152,7 +152,7 @@
                                 </p>
                                 <p class="pptext2" style="padding-top:8px;padding-bottom:6px;text-align: left;">
                                     2.The controller shall be responsible for, and be able to demonstrate compliance with, paragraph 1 ('accountability'). 
-                                      PeaceRyde Africa will ensure that it complies with all of these principles both in the processing it currently carries out and as part of the introduction of new methods of processing such as new IT system
+                                      PeaceRyde Africa will ensure that it complies with all of these principles both in the processing it currently carries out and as part of the introduction of new methods of processing such as new IT system.
                                 </p>
                                 <h1 class="policyh1">2.4 Rights of the Individual</h1>
                                 <p class="pptext2" style="padding-top:8px;padding-bottom:6px;text-align: left;">
@@ -160,13 +160,13 @@
                                     <br>
                                     The data subject also has rights under the GDPR. These consist of:
                                     <br>
-                                    The right to be informed 
-                                    The right to access 
-                                    The right to rectification 
-                                    The right to erasure 
-                                    The right to restrict processing 
-                                    The right to data portability 
-                                    The right to object 
+                                    The right to be informed. 
+                                    The right to access.
+                                    The right to rectification. 
+                                    The right to erasure.
+                                    The right to restrict processing.
+                                    The right to data portability.
+                                    The right to object.
                                     Rights in relation to automated decision-making and profiling.
                                 </p>
                                 <br>
@@ -213,7 +213,7 @@
                                             <td>On receipt of objection</td>
                                         </tr>
                                         <tr>
-                                            <td>Rights in relation to automated decision making and profiling.</td>
+                                            <td>Rights in relation to automated decision making and profiling</td>
                                             <td>Not specified</td>
                                         </tr>
                                     </tbody>
@@ -261,7 +261,7 @@
                                 <br>
                                 <h1 class="policyh1">2.5.6 Legitimate Interests</h1>
                                 <p class="pptext2" style="padding-top:8px;padding-bottom:6px;text-align: left;">
-                                    If the processing of specific personal data is in the legitimate interests of PeaceRyde Africa and is judged not to affect the rights and freedoms of the data subject in a significant way, then this may be defined as the lawful reason for the processing. Again, the reasoning behind this view will be documented
+                                    If the processing of specific personal data is in the legitimate interests of PeaceRyde Africa and is judged not to affect the rights and freedoms of the data subject in a significant way, then this may be defined as the lawful reason for the processing. Again, the reasoning behind this view will be documented.
                                 </p>
                                 <br>
                                 <br>
@@ -271,10 +271,10 @@
                                 </p>
                                 <p class="pptext2" style="padding-top: 8px; padding-bottom:6px; text-align:left">
                                     The data protection impact assessment will include:
-                                    Consideration of how personal data will be processed and for what purposes 
-                                    Assessment of whether the proposed processing of personal data is both necessary and proportionate to the purpose (s) 
-                                    Assessment of the risks to individuals in processing the personal data 
-                                    What controls are necessary to address the identified risks and demonstrate compliance with legislation 
+                                    Consideration of how personal data will be processed and for what purposes.
+                                    Assessment of whether the proposed processing of personal data is both necessary and proportionate to the purpose (s).
+                                    Assessment of the risks to individuals in processing the personal data.
+                                    What controls are necessary to address the identified risks and demonstrate compliance with legislation.
                                     Use of techniques such as data minimization and pseudonymisation will be considered where applicable and appropriate.
                                 </p>
                                 <br>
@@ -283,16 +283,16 @@
                                     2.7 Contracts Involving the Processing of Personal Data
                                 </h1>
                                 <p class="pptext2" style="padding-top:8px;padding-bottom:6px;text-align: left;">
-                                    PeaceRyde Africa will ensure that all relationships it enters into that involve the processing of personal data are subject to a documented contract that includes the specific information and terms required by the GDPR. For more information, see the GDPR Controller-Processor Agreement Policy
+                                    PeaceRyde Africa will ensure that all relationships it enters into that involve the processing of personal data are subject to a documented contract that includes the specific information and terms required by the GDPR. For more information, see the GDPR Controller-Processor Agreement Policy.
                                 </p>
                                 <br>
                                 <br>
                                 <h1 class="policyh1">2.8 International Transfers of Personal Data</h1>
                                 <p class="pptext2" style="padding-top:8px;padding-bottom:6px;text-align: left;">
-                                    Transfers of personal data outside the European Union will be carefully reviewed prior to the transfer taking place to ensure that they fall within the limits imposed by the GDPR. This depends partly on the European Commission’s judgement as to the adequacy of the safeguards for personal data applicable in the receiving country and this may change over time
+                                    Transfers of personal data outside the European Union will be carefully reviewed prior to the transfer taking place to ensure that they fall within the limits imposed by the GDPR. This depends partly on the European Commission’s judgement as to the adequacy of the safeguards for personal data applicable in the receiving country and this may change over time.
                                 </p>
                                 <p class="pptext2" style="padding-top:8px;padding-bottom:6px;text-align: left;">
-                                    Intra-group international data transfers will be subject to legally binding agreements referred to as Binding Corporate Rules (BCR) which provide enforceable rights for data subjects
+                                    Intra-group international data transfers will be subject to legally binding agreements referred to as Binding Corporate Rules (BCR) which provide enforceable rights for data subjects.
                                 </p>
                                 <br>
                                 <br>
@@ -304,9 +304,9 @@
                                     Based on these criteria, PeaceRyde Africa appointed Data Protection Officer, below are the contact details:
                                 </p>
                                 <p class="pptext2" style="padding-top:8px;padding-bottom:6px;text-align: left;">
-                                    Name: Eugene Ujukwu 
-                                    Email: eugene@peacerydeafrica.com
-                                    Contact: +234 (803) 340-1937
+                                    Name: Eugene Ujukwu.
+                                    Email: eugene@peacerydeafrica.com.
+                                    Contact: +234 (803) 340-1937.
                                 </p>
                                 <br>
                                 <br>
@@ -321,30 +321,30 @@
                                 <br>
                                 <h1 class="policyh1">2.11 Addressing Compliance to the GDPR</h1>
                                 <p class="pptext2" style="padding-top:8px;padding-bottom:6px;text-align: left;">
-                                    The following actions are undertaken to ensure that PeaceRyde Africa complies at all times with the accountability principle of the GDPR
+                                    The following actions are undertaken to ensure that PeaceRyde Africa complies at all times with the accountability principle of the GDPR:
                                 </p>
                                 <br>
                                 <ol class="list" type="1">
-                                    <li>1. The legal basis for processing personal data is clear and unambiguous</li>
-                                    <li>2. A Data Protection Officer is appointed with specific responsibility for data protection in the organisation (if required)</li>
-                                    <li>3. All staff involved in handling personal data understand their responsibilities for following good data protection practice</li>
-                                    <li>4. Training in data protection has been provided to all staff</li>
-                                    <li>5. Rules regarding consent are followed</li>
-                                    <li>6. Routes are available to data subjects wishing to exercise their rights regarding personal data and such enquiries are handled effectively</li>
-                                    <li>7. Regular reviews of procedures involving personal data are carried out</li>
-                                    <li>8. Privacy by design is adopted for all new or changed systems and processes</li>
+                                    <li>1. The legal basis for processing personal data is clear and unambiguous.</li>
+                                    <li>2. A Data Protection Officer is appointed with specific responsibility for data protection in the organisation (if required).</li>
+                                    <li>3. All staff involved in handling personal data understand their responsibilities for following good data protection practice.</li>
+                                    <li>4. Training in data protection has been provided to all staff.</li>
+                                    <li>5. Rules regarding consent are followed.</li>
+                                    <li>6. Routes are available to data subjects wishing to exercise their rights regarding personal data and such enquiries are handled effectively.</li>
+                                    <li>7. Regular reviews of procedures involving personal data are carried out.</li>
+                                    <li>8. Privacy by design is adopted for all new or changed systems and processes.</li>
                                 </ol>
                                 <p class="pptext2" style="padding-top:8px;padding-bottom:6px;text-align: left;">
                                     The following documentation of processing activities is recorded:
                                 </p>
                                 <ol class="list" type="1">
-                                    <li>1. Organisation name and relevant details</li>
-                                    <li>2. Purposes of the personal data processing</li>
-                                    <li>3. Categories of individuals and personal data processed</li>
-                                    <li>4. Categories of personal data recipients</li>
-                                    <li>5. Agreements and mechanisms for transfers of personal data to non-EU countries including details of controls in place</li>
-                                    <li>6. Personal data retention schedules</li>
-                                    <li>7. Relevant technical and organisational controls in place</li>
+                                    <li>1. Organisation name and relevant details.</li>
+                                    <li>2. Purposes of the personal data processing.</li>
+                                    <li>3. Categories of individuals and personal data processed.</li>
+                                    <li>4. Categories of personal data recipients.</li>
+                                    <li>5. Agreements and mechanisms for transfers of personal data to non-EU countries including details of controls in place.</li>
+                                    <li>6. Personal data retention schedules.</li>
+                                    <li>7. Relevant technical and organisational controls in place.</li>
                                 </ol>
                                 <p class="pptext2" style="padding-top:8px;padding-bottom:6px;text-align: left;">
                                     These actions are reviewed on a regular basis as part of the management process concerned with data protection.
@@ -353,7 +353,7 @@
                                 <br>
                                 <h1 class="policyh1">Data Protection Principles</h1>
                                 <p class="pptext2" style="padding-top:8px;padding-bottom:6px;text-align: left;">
-                                    There are 8 data protection principles which ensure that organisations collect, store and process personal data in a way that protects the confidentiality of customers. These principles are set out in schedule 1 of the Act and are as follows
+                                    There are 8 data protection principles which ensure that organisations collect, store and process personal data in a way that protects the confidentiality of customers. These principles are set out in schedule 1 of the Act and are as follows.
                                 </p>
                                 <p class="pptext2" style="padding-top:8px;padding-bottom:6px;text-align: left;">
                                     i. Data must be handled fairly and lawfully. 
@@ -381,12 +381,12 @@
                                 </p>
                                 <br>
                                 <ol class="list" type="1">
-                                    <li>1. A right of access to a copy of your personal data, popularly known as 'subject access request'. Subject Access Request should be made to info@peacerydeafrica.com by email or by post to, PeaceRyde Africa LLC, 433 W Harrison St #5409 Chicago, IL 60699 USA</li>
-                                    <li>2. A right to object to processing your personal data in a way that is likely to cause damage or distress to you</li>
-                                    <li>3. A right to prevent processing your personal data in a way that is incompatible to the original purpose or purposes</li>
+                                    <li>1. A right of access to a copy of your personal data, popularly known as 'subject access request'. Subject Access Request should be made to info@peacerydeafrica.com by email or by post to, PeaceRyde Africa LLC, 433 W Harrison St #5409 Chicago, IL 60699 USA.</li>
+                                    <li>2. A right to object to processing your personal data in a way that is likely to cause damage or distress to you.</li>
+                                    <li>3. A right to prevent processing your personal data in a way that is incompatible to the original purpose or purposes.</li>
                                     <li>4. A right to object to decisions being taken by automated means;</li>
-                                    <li>5. A right, when appropriate, to have inaccurate personal data rectified, blocked or deleted</li>
-                                    <li>6. A right to claim compensation for damages caused by a breach of the Act</li>
+                                    <li>5. A right, when appropriate, to have inaccurate personal data rectified, blocked or deleted.</li>
+                                    <li>6. A right to claim compensation for damages caused by a breach of the Act.</li>
                                 </ol>
                                 <p class="pptext2" style="padding-top:8px;padding-bottom:6px;text-align: left;">
                                     vii. Personal data security 
@@ -394,9 +394,9 @@
                                 </p>
                                 <br>
                                 <ol class="list" type="1">
-                                    <li>1. Each authorized employee who has access to personal data has his own password which is not shared with other persons,</li>
-                                    <li>2. Approved security software and firewall are used to protect our data,</li>
-                                    <li>3. Printed personal data, not in use are shredded,</li>
+                                    <li>1. Each authorized employee who has access to personal data has his own password which is not shared with other persons.</li>
+                                    <li>2. Approved security software and firewall are used to protect our data.</li>
+                                    <li>3. Printed personal data, not in use are shredded.</li>
                                     <li>4. We discourage personal data being stored on laptops and other mobile devices and media but if they do, should be locked securely and not taken out of the office.</li>
                                 </ol>
                                 <p class="pptext2" style="padding-top:8px;padding-bottom:6px;text-align: left;">

@@ -80,7 +80,7 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
         <h2 class="welcome"> Welcome!</h2>
         <p class="formtext">The first step in applying for a <span style="font-size: 20px; font-weight: 500;">Nigeria Business Visa on Arrival</span> is to fill the form below
           <span>It takes less than 5 minutes to do this. After you submit your application, you can</span>
-          <span> move on to the next step to make payment</span>.
+          <span> move on to the next step to make payment.</span>.
         </p>
         <div class="topdiv">
           <div class="card cardform">
@@ -482,16 +482,18 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
           </button> -->
         </div>
         <div class="modal-body">
-          <form action="./handlers/login.php" method="post">
+        <form action="./handlers/login.php" method="post">
             <div class="form-row">
-              <div class="form-group">
-                <input type="text" required name="email" class="form-control" style="border: 1px solid #1161D9; width:470px;font-family:ubuntu;height: 44px; margin-top:27px;  color: #1161D9;" placeholder="Email" />
+              <div class="form-group" style="width:100%">
+                <input type="text" required name="email" class="form-control" style="border: 1px solid #1161D9; width:100%;font-family:ubuntu;height: 44px; margin-top:27px;  color: #1161D9;" placeholder="Email" />
                 <input type="hidden" required name="redirect" value="../NBVForm.php">
-                <input type="text" required name="password" class="form-control" style="border: 1px solid #1161D9; width:470px;font-family:ubuntu;height: 44px; margin-top:27px; color: #1161D9;" placeholder="Password" />
+                <input type="password" id="id_password" required name="password" class="form-control" style="border: 1px solid #1161D9; width:100%;font-family:ubuntu;height: 44px; margin-top:27px; color: #1161D9;" placeholder="Password" />
+                <i class="fa fa-eye" id="togglePassword" style="margin-left: -30px; cursor: pointer;"></i>
               </div>
             </div>
-            <button type="submit" name="login" class="btn btn-secondary" style="margin-left: 400; background-color: #1161D9; color:#ffffff">SIGN IN</button>
+            <button type="submit" name="login" class="btn btn-secondary" style="margin-left: 400; background-color: #1161D9; color:#ffffff; margin-top:15px; margin-bottom:10px;">SIGN IN</button>
           </form>
+          <p><a href="./forgotpass" style="font-family: Rubik;font-size: 15px;font-weight: 400;color: #555555;text-decoration: none;">Forgot your password ?</a></p>
         </div>
         <!-- <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -502,6 +504,18 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
   </div>
 
   <?php include("./inc/langChange.php") ?>
+  <script>
+     const togglePassword = document.querySelector('#togglePassword');
+  const password = document.querySelector('#id_password');
+
+  togglePassword.addEventListener('click', function (e) {
+    // toggle the type attribute
+    const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
+    password.setAttribute('type', type);
+    // toggle the eye slash icon
+    this.classList.toggle('fa fa-eye-slash');
+});
+  </script>
   <script>
     document.querySelector("#error-message").style.display = "none"
   </script>
