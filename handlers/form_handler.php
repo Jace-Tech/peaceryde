@@ -139,8 +139,6 @@ if(isset($_POST['nbv'])) {
 }
 
 if(isset($_POST['bi'])) {
-    print_r($_POST);
-    die();
     $POST = filter_var_array($_POST, FILTER_SANITIZE_STRING);
     extract($POST);
 
