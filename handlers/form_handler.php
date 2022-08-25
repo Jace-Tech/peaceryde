@@ -74,8 +74,6 @@ if(isset($_POST['twp'])) {
 }
 
 if(isset($_POST['nbv'])) {
-    print_r($_POST);
-    die();
     $POST = filter_var_array($_POST, FILTER_SANITIZE_STRING);
     extract($POST);
 
