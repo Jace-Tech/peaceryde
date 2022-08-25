@@ -759,7 +759,6 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
         document.querySelector("[data-btn]")
             .addEventListener("click", () => {
                 localStorage.removeItem("USER_REG")
-                form.submit()
             })
     </script>
     <script>
