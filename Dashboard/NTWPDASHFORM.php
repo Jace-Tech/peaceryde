@@ -554,7 +554,7 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
             // Check if the inputs are filled 
             let isValid = true;
 
-            if(!dateInput.value.trim()) {
+            if(!dateInput.value.trim() || dateInput.value.trim().length < 2) {
                 // dateInput.classList.add("error")
                 // dateInput.scrollIntoView({ behavior: "smooth" })
                 dateInput.focus();
