@@ -162,7 +162,7 @@
                     <div class="form-group">
                         <p class="accountfirst">Title</p>
                         <select class="form-control accountinput" name="title" value="<?= $USER['title'] ?? "" ?>">
-                            <option value="" disabled>Select title</option>
+                            <option value="" >Select title</option>
                             <?php foreach($titles as $title): ?>
                                 <option value="<?= $title ?>" <?= strtolower($title) == strtolower($USER['title']) ? "selected" : ""; ?> ><?= $title ?></option>
                             <?php endforeach; ?>
@@ -170,15 +170,15 @@
                     </div>
                     <div class="form-group">
                         <p class="accountfirst">First Name</p>
-                        <input type="text" name="firstname" value="<?= $USER['firstname'] ?? "" ?>" class="form-control accountinput" placeholder="John">
+                        <input type="text" name="firstname" value="<?= $USER['firstname'] ?? "" ?>" class="form-control accountinput" placeholder="Firstname">
                     </div>
                     <div class="form-group">
                         <p class="accountfirst">Middle Name</p>
-                        <input type="text" name="middlename" value="<?= $USER['middle_name'] ?? "" ?>" class="form-control accountinput" placeholder="Raph">
+                        <input type="text" name="middlename" value="<?= $USER['middle_name'] ?? "" ?>" class="form-control accountinput" placeholder="Middle name">
                     </div>
                     <div class="form-group">
                         <p class="accountfirst">Last Name</p>
-                        <input type="text" name="lastname" class="form-control accountinput" value="<?= $USER['lastname'] ?? "" ?>" placeholder="Joe">
+                        <input type="text" name="lastname" class="form-control accountinput" value="<?= $USER['lastname'] ?? "" ?>" placeholder="Lastname">
                     </div>
                     <div class="form-group">
                         <p class="accountfirst">Mobile Number</p>
@@ -186,7 +186,7 @@
                     </div>
                     <div class="form-group">
                         <p class="accountfirst">Email Address</p>
-                        <input type="text" name="email" class="form-control accountinput" value="<?= $USER['email'] ?? "" ?>" placeholder="johndoe@gmail.com">
+                        <input type="text" name="email" class="form-control accountinput" value="<?= $USER['email'] ?? "" ?>" placeholder="example@example.com">
                     </div>
                     <div class="form-group">
                         <p class="accountfirst">Password</p>
