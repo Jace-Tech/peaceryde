@@ -30,7 +30,7 @@ if(isset($_POST['apply'])) {
         $message .= "<p>Phone No: <a href='tel:+{$POST['countryCode']}{$POST['phone']}'>+{$POST['countryCode']}{$POST['phone']}</a> </p>";
 
         $to = getSubAdmin($connect, "MAIN_ADMIN")['email'] ?? "theonlyfreddie@gmail.com";
-        sendMail($subject, $message, $POST['email'], $to);
+        sendMail($subject, $message, "noreply@peacerydeafrica.com", $to);
 
         $alert = [
             "message" => "Request sent",
