@@ -257,6 +257,7 @@ $USERS_ADMIN = fetchUsersSubAdmins($connect, $_GET['user']);
 
                                             <td class="px-2 first:pl-5 last:pr-5 py-3 whitespace-nowrap">
                                                 <div class="flex items-center">
+                                                    <?=   $service['id']; ?>
                                                     <div class="font-light text-gray-500 "><?= getServicePayment($connect, $_GET['user'], $service['id'])['status'] ?? "<i>NILL</i>"; ?></div>
                                                 </div>
                                             </td>
