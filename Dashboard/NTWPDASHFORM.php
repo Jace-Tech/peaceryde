@@ -207,7 +207,7 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
                                 <div class="col-md-4 col-lg-3 col-xl-3">
                                     <div class="form-group">
                                         <label class="form-label">Date of Birth</label>
-                                        <input type="text" data-date required readonly id="datepicker" name="dob" class="form-control dob" placeholder="dd-mm-yyyy">
+                                        <input type="text" data-date required readonly id="datepicker" value="<?= strstr(strval($USER['date_of_birth']), "0000") ? "" : date("d-m-Y"); ?>" name="dob" class="form-control dob" placeholder="dd-mm-yyyy">
                                     </div>
                                 </div>
 
