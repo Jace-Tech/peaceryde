@@ -83,7 +83,7 @@ class User {
 
         if($result) {
 
-            $subQuery = "SELECT * FROM `user_services` WHERE `user_id` = '$userId' AND `service_id` = '$serviceId'";
+            $subQuery = "SELECT * FROM `user_services` WHERE `user_id` = '$userId' AND `service_id` = '$serviceId' ORDER BY id DESC";
             $resultQuery = $this->connection->query($subQuery);
             $resultQuery->execute();
             $id = $resultQuery->fetch()['id'];
