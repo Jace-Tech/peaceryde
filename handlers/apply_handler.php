@@ -30,10 +30,6 @@ if(isset($_POST['apply'])) {
         $message .= "<p>Phone No: <a href='tel:+{$POST['countryCode']}{$POST['phone']}'>+{$POST['countryCode']}{$POST['phone']}</a> </p>";
 
         $to = getSubAdmin($connect, "MAIN_ADMIN")['email'] ?? "theonlyfreddie@gmail.com";
-
-        print_r(array_merge($POST, [$to]));
-        die();
-
         sendMail($subject, $message, $POST['email'], $to);
 
         $alert = [
