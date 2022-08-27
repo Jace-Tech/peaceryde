@@ -67,7 +67,10 @@
                   <p class="fpp" style="padding-top: 27px;">Password</p>
                   <div class="input-group mb-3">
                     <input type="password" id="id_password" required name="password" class="form-control rpinput" style="margin-top: 6px;" placeholder="" />
-                    <span class="input-group-text fa fa-eye" id="togglePassword"></span>
+                    <span class="input-group-text fa fa-eye" style="height: 45px;
+    margin-top: 5px;
+    opacity: 0.5;
+    background: white;" id="togglePassword"></span>
                 </div> 
                   
                 </div>

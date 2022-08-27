@@ -54,7 +54,7 @@
                       Subject To
                       Regularization (STR) Visa</a></li>
                   <li class="new-section8__text-body5 layout fs-13"><a class="fs-13" href="SBForm" style=" text-decoration: none;">Nigeria
-                      Immgration Permission to Land Approval(PTL)</a></li>
+                      Immigration Permission to Land Approval (PTL)</a></li>
 
                 </ul>
               </div>
@@ -69,8 +69,7 @@
                   <li class="new-section8__text-body5 layout fs-13"><a class="fs-13" href="SBForm" style=" text-decoration: none;">Hotel Bookings</a>
                   </li>
                   <li class="new-section8__text-body5 layout fs-13"><a class="fs-13" href="SBForm" style=" text-decoration: none;">Real Estate
-                      Cosultancy and
-                      Advisory</a></li>
+                      Consultancy and Advisory</a></li>
                   <li class="new-section8__text-body5 layout fs-13"><a class="fs-13" href="SBForm" style=" text-decoration: none;">Legal Advisory
                       and Consultation</a>
                   </li>
@@ -78,13 +77,13 @@
                       & Tours</a></li>
                   <li class="new-section8__text-body5 layout fs-13"><a class="fs-13" href="SBForm" style=" text-decoration: none;">Nigeria
                       Immigration
-                      Consultancy</a></li>
+                      Consultancy services</a></li>
                   <li class="new-section8__text-body5 layout fs-13"><a class="fs-13" href="SBForm" style=" text-decoration: none;">Nigeria Custom
                       Brokerage Services</a>
                   </li>
                   <li class="new-section8__text-body5 layout fs-13"><a class="fs-13" href="SBForm" style=" text-decoration: none;">Nigerian Upstream Petroleum Regulatory Commission (NUPRC)</a>
                   </li>
-                  <li class="new-section8__text-body5 layout fs-13"><a class="fs-13" href="SBForm" style=" text-decoration: none;">Nigeria Maritime and Safety Agency Cabotage Consultancy Services</a>
+                  <li class="new-section8__text-body5 layout fs-13"><a class="fs-13" href="SBForm" style=" text-decoration: none;">Nigeria Maritime Administration and Safety Agency Consultancy Services</a>
                   </li>
                   <li class="new-section8__text-body5 layout fs-13"><a class="fs-13" href="SBForm" style=" text-decoration: none;">Nigeria Ports Authority Consultancy Services</a></li>
                   <li class="new-section8__text-body5 layout fs-13"><a class="fs-13" href="SBForm" style=" text-decoration: none;">Other Nigerian Government Agencies Consultancy Support Services</a></li>

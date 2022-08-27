@@ -208,7 +208,7 @@
                     <div class="col-xs-12 col-sm-5 col-lg-6 col-xl-4">
                       <div class="single-person laptopshow">
                         <div class="person-image">
-                          <img src="assets/imgg.jpeg" alt="">
+                          <img src="assets/dan.jpeg" alt="">
                          
                         </div>
                         
