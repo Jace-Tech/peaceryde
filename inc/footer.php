@@ -38,10 +38,14 @@
                       Arrival</a></li>
                       <li class="new-section8__text-body5 layout fs-13"><a class="fs-13" href="NTWPForm" style=" text-decoration: none;">Nigeria
                       Temporary Work Permit Approval</a></li>
-                  <li class="new-section8__text-body5 layout fs-13"><a class="fs-13" href="NTWPForm" style=" text-decoration: none;">Nigeria
-                      Temporary Work Permit Visa on Arrival</a></li>
+                      
+                  <!-- <li class="new-section8__text-body5 layout fs-13"><a class="fs-13" href="NTWPForm" style=" text-decoration: none;">Nigeria
+                      Temporary Work Permit Visa on Arrival</a></li> -->
+                      <li class="new-section8__text-body5 layout fs-13"><a class="fs-13" href="NTWPForm" style=" text-decoration: none;">Nigeria Temporary Work Permit Processing</a></li>
+
                       <li class="new-section8__text-body5 layout fs-13"><a class="fs-13" href="SBForm" style=" text-decoration: none;">Nigeria
                       Tourist Visa</a></li>
+                      <li class="new-section8__text-body5 layout fs-13"><a class="fs-13" href="SBForm" style=" text-decoration: none;">Nigeria Tourist Visa Processing</a></li>
                   <li class="new-section8__text-body5 layout fs-13"><a class="fs-13" href="SBForm" style=" text-decoration: none;">Nigeria
                       Immigration Expatriate Quota Processing</a></li>
                   <li class="new-section8__text-body5 layout fs-13"><a class="fs-13" href="SBForm" style=" text-decoration: none;">Nigeria
@@ -50,11 +54,11 @@
                   <li class="new-section8__text-body5 layout fs-13"><a class="fs-13" href="SBForm" style=" text-decoration: none;">Nigeria
                       Temporary Work Permit Visa
                       Extension</a></li>
-                  <li class="new-section8__text-body5 layout fs-13"><a class="fs-13" href="SBForm" style=" text-decoration: none;">Nigeria
-                      Subject To
-                      Regularization (STR) Visa</a></li>
-                  <li class="new-section8__text-body5 layout fs-13"><a class="fs-13" href="SBForm" style=" text-decoration: none;">Nigeria
+                  <li class="new-section8__text-body5 layout fs-13"><a class="fs-13" href="SBForm" style=" text-decoration: none;">Nigeria Subject to Regularization (STR) Visa Processing</a></li>
+                  <li class="new-section8__text-body5 layout fs-13"><a class="fs-13" href="SBForm" style=" text-decoration: none;">Nigeria Immigration Permission to Land (PTL) Processing</a></li>
+                      <li class="new-section8__text-body5 layout fs-13"><a class="fs-13" href="SBForm" style=" text-decoration: none;">Nigeria
                       Immigration Permission to Land Approval (PTL)</a></li>
+                      
 
                 </ul>
               </div>
@@ -77,7 +81,7 @@
                       & Tours</a></li>
                   <li class="new-section8__text-body5 layout fs-13"><a class="fs-13" href="SBForm" style=" text-decoration: none;">Nigeria
                       Immigration
-                      Consultancy services</a></li>
+                      Consultancy Services</a></li>
                   <li class="new-section8__text-body5 layout fs-13"><a class="fs-13" href="SBForm" style=" text-decoration: none;">Nigeria Custom
                       Brokerage Services</a>
                   </li>
