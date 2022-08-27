@@ -79,7 +79,7 @@ $PRICE = json_decode($_SESSION["PRICE"], true);
                 <div class="row paymentdiv">
                     <div class="col-lg-8 col-md-8 col-sm-8">
                         <p class="paymentservices">
-                            <?= "Immigration and agency processing fee"; ?>
+                            <?= "Processing fee"; ?>
                         </p>
                     </div>
                     <div class="col-lg-4 col-md-4 col-sm-4">
@@ -178,7 +178,7 @@ $PRICE = json_decode($_SESSION["PRICE"], true);
 
                 <div class="row paymentdiv">
                     <div class="col-lg-8 col-md-8 col-sm-8">
-                        <p class="paymentservices">Approval processing fee</p>
+                        <p class="paymentservices">Processing fee</p>
                     </div>
                     <div class="col-lg-4 col-md-4 col-sm-4">
                         <p class="paymentprice">
