@@ -5,7 +5,7 @@ const BASE_URL = "https://peacerydeafrica.com/api"
 const getUnreadMessage = async (id) => {
     try {
         const request = await fetch(`${BASE_URL}/messanger.php?messenger=${id}`)
-        const response = await request.json()
+        const response = await request.text()
     
         return response
     } catch (err) {
