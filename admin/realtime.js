@@ -99,6 +99,8 @@ const checkNotifier = async () => {
     notifyContainer.innerHTML = `<li class="px-3 py-2 text-center text-gray-400"> No notification available </li>`
     
     if(result?.length) {
+        notifyContainer.innerHTML = ""
+        
         // Set notification
         notifyNotificon.innerHTML = `
             <span class="sr-only">Notifications</span>
