@@ -17,7 +17,10 @@ const setConvo = async () => {
     const OTHER_ID = document.querySelector("[name=OTHER_ID]").value
     const result = await getConvo(ADMIN_ID, OTHER_ID)
 
-    console.log(result)
+    convoContainer.innerHTML = ""
+    if(result?.length) {
+        
+    }
 }
 
 setInterval(() => {

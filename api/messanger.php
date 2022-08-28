@@ -32,7 +32,8 @@ if(isset($_GET['convo'])) {
 
     foreach ($_messages as $msg) {
         $user = getUser($connect, $msg['sender_id']);
-        $item = array_merge($msg, ["_sender" => $user]);
+        $profilePic = getProfilePic($connect, $msg['sender_id'])['file'];
+        $item = array_merge($msg, ["_sender" => $user, "pic" => "https://peacerydeafrica.com/Dashboard/pic/$profilePic"]);
         array_push($MASSAGES, $item);
     }
     echo json_encode($MASSAGES);
