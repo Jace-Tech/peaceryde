@@ -14,5 +14,9 @@ $messages = new Message($connect);
 if(isset($_GET['messenger'])) {
     $id = $_GET['messenger'];
     $unreadMessages = $messages->get_user_unread_messages($id);
+    if(!$unreadMessages) {
+        echo "[]";
+        exit();
+    }
     echo json_encode($unreadMessages);
 }
