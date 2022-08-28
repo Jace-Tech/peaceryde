@@ -28,6 +28,7 @@ if(isset($_GET['convo'])) {
     $id = $_GET['convo'];
     $other = $_GET['other'];
     $_messages = $messages->get_conversation($id, $other);
+    $messages->get;
     $MASSAGES = [];
 
     foreach ($_messages as $msg) {
