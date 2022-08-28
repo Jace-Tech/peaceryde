@@ -36,6 +36,9 @@ if(isset($_GET['convo'])) {
             $profilePic = getProfilePic($connect, $msg['sender_id'])['file'];
             $item = array_merge($msg, ["_sender" => $user, "pic" => "https://peacerydeafrica.com/Dashboard/pic/$profilePic"]);
         }
+        else {
+            $item = array_merge($msg, ["_sender" => $user]);
+        }
         array_push($MASSAGES, $item);
     }
     echo json_encode($MASSAGES);
