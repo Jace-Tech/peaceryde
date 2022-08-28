@@ -27,13 +27,13 @@ if(isset($_GET['messenger'])) {
 if(isset($_GET['convo'])) {
     $id = $_GET['convo'];
     $other = $_GET['other'];
-    $messages = $messages->get_conversation($id, $other);
-    $messages = [];
+    $_messages = $messages->get_conversation($id, $other);
+    $MASSAGES = [];
 
-    foreach ($unreadMessages as $msg) {
+    foreach ($_messages as $msg) {
         $user = getUser($connect, $msg['sender_id']);
         $item = array_merge($msg, ["_sender" => $user]);
-        array_push($messages, $item);
+        array_push($MASSAGES, $item);
     }
-    echo json_encode($messages);
+    echo json_encode($MASSAGES);
 }
