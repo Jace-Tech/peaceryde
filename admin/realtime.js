@@ -2,6 +2,10 @@ const messageScreen = document.querySelector("[data-message]")
 const messageNotificon = document.querySelector("[data-message-not]")
 const messageContainer = document.querySelector("[data-message-container]")
 
+const notifyScreen = document.querySelector("[data-notify]")
+const notifyNotificon = document.querySelector("[data-notify-not]")
+const notifyContainer = document.querySelector("[data-notify-container]")
+
 const BASE_URL = "https://peacerydeafrica.com/api"
 
 
@@ -85,10 +89,41 @@ const checkNotifier = async () => {
     const ADMIN_ID = document.querySelector("[data-id]").value
     const result = await getNotifications(ADMIN_ID)
 
-    messageScreen.innerHTML = ""
-
+    notifyScreen.innerHTML = ""
+    notifyNotificon.innerHTML = `
+        <span class="sr-only">Notifications</span>
+        <svg class="w-4 h-4" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+            <path class="fill-current text-gray-500" d="M8 0C3.6 0 0 3.6 0 8s3.6 8 8 8 8-3.6 8-8-3.6-8-8-8zm0 12c-.6 0-1-.4-1-1s.4-1 1-1 1 .4 1 1-.4 1-1 1zm1-3H7V4h2v5z"></path>
+        </svg>
+    `
+    notifyContainer.innerHTML = `<li class="px-3 py-2 text-center text-gray-400"> No notification available </li>`
+    
     if(result?.length) {
-       console.log(result)
+        // Set notification
+        notifyNotificon.innerHTML = `
+            <span class="sr-only">Notifications</span>
+            <svg class="w-4 h-4" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                <path class="fill-current text-gray-500" d="M8 0C3.6 0 0 3.6 0 8s3.6 8 8 8 8-3.6 8-8-3.6-8-8-8zm0 12c-.6 0-1-.4-1-1s.4-1 1-1 1 .4 1 1-.4 1-1 1zm1-3H7V4h2v5z"></path>
+            </svg>
+            <div class="absolute top-0 right-0 w-2.5 h-2.5 bg-red-500 border-2 border-white rounded-full"></div>
+        `
+       
+        // List notifications
+        result.forEach(({id, link, message, date}) => {
+            const notifyDate = Date.parse(date)
+            console.log({ notifyDate })
+            const notificationItem = document.createElement("li")
+            notificationItem.className = "border-b border-gray-200 last:border-0"
+        //     notificationItem.innerHTML = `<a class="block py-2 px-4 hover:bg-gray-50" href="${link}&_tification_id=${id}" @click="open = false" @focus="open = true" @focusout="open = false">
+        //     <span class="block text-sm mb-2">📣
+        //         <span class="font-medium text-gray-800">${message}</span>
+        //     </span>
+        //     <span class="block text-xs font-medium text-gray-400">
+                
+        //     </span>
+        // </a>`
+        //     notifyContainer.append()
+        })
     }
 }
 
