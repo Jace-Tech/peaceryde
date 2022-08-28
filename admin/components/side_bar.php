@@ -307,4 +307,3 @@ $messages = new Message($connect);
         </div>
     </div>
 <?php endif; ?>
-<script src="./realtime.js"></script>
