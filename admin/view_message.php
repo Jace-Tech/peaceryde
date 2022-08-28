@@ -230,7 +230,7 @@ if($LOGGED_ADMIN['type'] != "HIGH") {
                         </div>
                     </div>
                 </div>
-                <div class="grow px-4 sm:px-6 md:px-5 py-6">
+                <div class="grow px-4 sm:px-6 md:px-5 py-6" id="convo-container">
                     <?php $conversation = $messages->get_conversation($LOGGED_ADMIN['admin_id'], $_GET['msg']); ?>
                     <?php for ($i = 0; $i < count($conversation); $i++) : ?>
                         <?php extract($conversation[$i]); ?>
@@ -364,6 +364,7 @@ if($LOGGED_ADMIN['type'] != "HIGH") {
     scrollToView.scrollIntoView({ behavior: "smooth" });
 </script>
 <script src="main.75545896273710c7378c.js"></script>
+<script src="./convo.js"></script>
 </body>
 
 </html>
