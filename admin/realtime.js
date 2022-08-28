@@ -40,6 +40,17 @@ const checkMessage = async () => {
     }
 }
 
+const checkNotifier = async () => {
+    const ADMIN_ID = document.querySelector("[data-id]").value
+    const result = await getNotifications(ADMIN_ID)
+
+    messageScreen.innerHTML = ""
+
+    if(result?.length) {
+       console.log(result)
+    }
+}
+
 setInterval(() => {
     checkMessage()
 }, 5000)

@@ -11,5 +11,5 @@ require_once("../utils/store.php");
 if(isset($_GET['notify'])) {
     $id = $_GET['notify'];
     $unreadNotifications = getNotications($connect, $id);
-    return json_encode($unreadNotifications);
+    echo json_encode($unreadNotifications);
 }
