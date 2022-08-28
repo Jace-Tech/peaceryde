@@ -91,7 +91,6 @@ const checkNotifier = async () => {
     const ADMIN_ID = document.querySelector("[data-id]").value
     const result = await getNotifications(ADMIN_ID)
 
-    notifyScreen.innerHTML = ""
     notifyNotificon.innerHTML = `
         <span class="sr-only">Notifications</span>
         <svg class="w-4 h-4" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
