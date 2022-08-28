@@ -13,6 +13,7 @@ const getConvo = async (user, other) => {
 }
 
 const getSubName = (name) => {
+    console.table({name})
     const nameSplit = name.split(" ")
     if(nameSplit.length > 1) {
         return nameSplit.map(_name => _name.substring(0, 1).toUpperCase()).join(" ")
@@ -78,7 +79,7 @@ const setConvo = async () => {
                 : 
                 `
                     ${message?.pic ? 
-                        `
+                    `
                         <img class="w-8 h-8 rounded-full mr-2" src="${message?.pic}" alt="${message?._sender?.firstname}" width="32" height="32">
                     ` : `
                         <div class="flex shadow-sm mr-2 items-center justify-center bg-gray-200 rounded-full w-10 h-10 text-sm font-semibold uppercase text-gray-500">
