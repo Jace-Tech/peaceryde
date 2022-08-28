@@ -100,7 +100,7 @@ const checkNotifier = async () => {
     
     if(result?.length) {
         notifyContainer.innerHTML = ""
-        
+
         // Set notification
         notifyNotificon.innerHTML = `
             <span class="sr-only">Notifications</span>
@@ -132,4 +132,4 @@ const checkNotifier = async () => {
 setInterval(() => {
     checkMessage()
     checkNotifier()
-}, 5000)
+}, 8000)
