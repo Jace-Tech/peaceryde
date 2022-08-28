@@ -3,17 +3,27 @@ const BASE_URL = "https://peacerydeafrica.com/api"
 
 
 const getUnreadMessage = async (id) => {
-    const request = await fetch(`${BASE_URL}/messanger.php?messenger=${id}`)
-    const response = await request.json()
-
-    return response
+    try {
+        const request = await fetch(`${BASE_URL}/messanger.php?messenger=${id}`)
+        const response = await request.json()
+    
+        return response
+    } catch (err) {
+        console.log(err.message)
+        return false
+    }
 }
 
 const getNotifications = async (id) => {
-    const request = await fetch(`${BASE_URL}/notifier.php?notify=${id}`)
-    const response = await request.json()
-
-    return response
+    try{
+        const request = await fetch(`${BASE_URL}/notifier.php?notify=${id}`)
+        const response = await request.json()
+        return response
+    }
+    catch (err) {
+        console.log(err.message)
+        return false
+    }
 }
 
 const checkMessage = async () => {
