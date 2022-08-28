@@ -52,6 +52,7 @@ const checkMessage = async () => {
     messageContainer.innerHTML = `<li class="px-3 py-2 text-center text-gray-400"> No new messages </li>`
 
     console.log(result)
+    messageContainer.innerHTML = ""
     if(result?.length) {
         // Set Notification
         messageNotificon.innerHTML = `
@@ -82,6 +83,8 @@ const checkMessage = async () => {
                         ${months[notifyDate.getMonth()]} ${notifyDate.getDate()}, ${notifyDate.getFullYear()} ${notifyDate.getHours()}:${notifyDate.getMinutes()} ${+notifyDate.getHours() >= 12 ? "pm" : "am"}
                     </span>
                 </a>`
+
+            messageContainer.appendChild(messageInbox)
         })
 
         // Add notification to sidebar
