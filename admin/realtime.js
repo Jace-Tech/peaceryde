@@ -1,10 +1,10 @@
-const messageScreen = document.querySelector("[data-message]")
-const messageNotificon = document.querySelector("[data-message-not]")
-const messageContainer = document.querySelector("[data-message-container]")
+const messageScreen = document.querySelector("#data-message")
+const messageNotificon = document.querySelector("#data-message-not")
+const messageContainer = document.querySelector("#data-message-container")
 
-const notifyScreen = document.querySelector("[data-notify]")
-const notifyNotificon = document.querySelector("[data-notify-not]")
-const notifyContainer = document.querySelector("[data-notify-container]")
+const notifyScreen = document.querySelector("#data-notify")
+const notifyNotificon = document.querySelector("#data-notify-not")
+const notifyContainer = document.querySelector("#data-notify-container")
 
 const BASE_URL = "https://peacerydeafrica.com/api"
 
