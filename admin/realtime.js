@@ -111,19 +111,19 @@ const checkNotifier = async () => {
        
         // List notifications
         result.forEach(({id, link, message, date}) => {
-            const notifyDate = Date.parse(date)
-            console.log({ notifyDate })
+            const notifyDate = new Date(Date.parse(date))
+            const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
             const notificationItem = document.createElement("li")
             notificationItem.className = "border-b border-gray-200 last:border-0"
-        //     notificationItem.innerHTML = `<a class="block py-2 px-4 hover:bg-gray-50" href="${link}&_tification_id=${id}" @click="open = false" @focus="open = true" @focusout="open = false">
-        //     <span class="block text-sm mb-2">📣
-        //         <span class="font-medium text-gray-800">${message}</span>
-        //     </span>
-        //     <span class="block text-xs font-medium text-gray-400">
-                
-        //     </span>
-        // </a>`
-        //     notifyContainer.append()
+            notificationItem.innerHTML = `<a class="block py-2 px-4 hover:bg-gray-50" href="${link}&_tification_id=${id}" @click="open = false" @focus="open = true" @focusout="open = false">
+            <span class="block text-sm mb-2">📣
+                <span class="font-medium text-gray-800">${message}</span>
+            </span>
+            <span class="block text-xs font-medium text-gray-400">
+                ${months[notifyDate.getMonth()]} ${notifyDate.getDate()}, ${notifyDate.getFullYear()} ${notifyDate.getHours()}:${notifyDate.getMinutes()} ${+notifyDate.getHours() >= 12 ? "pm" : "am"}
+            </span>
+        </a>`
+            notifyContainer.append()
         })
     }
 }
