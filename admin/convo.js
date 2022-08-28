@@ -13,7 +13,9 @@ const getConvo = async (user, other) => {
 }
 
 const setConvo = async () => {
-    const result = await getConvo()
+    const ADMIN_ID = document.querySelector("[data-id]").value
+    const OTHER_ID = document.querySelector("[name=OTHER_ID]").value
+    const result = await getConvo(ADMIN_ID, OTHER_ID)
 
     console.log(result)
 }
