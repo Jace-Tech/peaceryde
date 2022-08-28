@@ -14,5 +14,12 @@ $messages = new Message($connect);
 if(isset($_GET['messenger'])) {
     $id = $_GET['messenger'];
     $unreadMessages = $messages->get_user_unread_messages($id);
-    echo json_encode($unreadMessages);
+    $messages = [];
+
+    foreach ($unreadMessages as $msg) {
+        $user = getUser($connect, $msg['sender_id']);
+        $item = array_merge($msg, ["_sender" => $user]);
+        array_push($messages, $item);
+    }
+    echo json_encode($messages);
 }

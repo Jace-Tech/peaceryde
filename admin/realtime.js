@@ -64,11 +64,11 @@ const checkMessage = async () => {
         `
 
         // Set message 
-        result.forEach((message) => {
+        result.forEach(({id, message, message_id, date}) => {
             const messageInbox = document.createElement("li")
             messageInbox.className = "border-b border-gray-200 last:border-0"
             messageInbox.innerHTML = `
-                <a class="block py-2 px-4 hover:bg-gray-50" href="./view_message.php?msg=<?= $msg['message_id']; ?>" @click="open = false" @focus="open = true" @focusout="open = false">
+                <a class="block py-2 px-4 hover:bg-gray-50" href="./view_message.php?msg=${message_id}" @click="open = false" @focus="open = true" @focusout="open = false">
                     <span class="block text-sm mb-2">📣
                         <span class="font-medium text-gray-800">New message from <span class="text-indigo-500"> <?= $users->get_user($msg['sender_id'])['firstname'] . " " . $users->get_user($msg['sender_id'])['lastname']; ?></span> <br></span>
                         <?= $text = (strlen($msg['message']) <= 30) ? $msg['message'] : substr($msg['message'], 0, 30) . "...";  ?>
