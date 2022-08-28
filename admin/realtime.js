@@ -64,17 +64,22 @@ const checkMessage = async () => {
         `
 
         // Set message 
-        result.forEach(({id, message, message_id, date}) => {
+        result.forEach(({id, message, message_id, _sender, date}) => {
             const messageInbox = document.createElement("li")
+            const notifyDate = new Date(Date.parse(date))
+            const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
             messageInbox.className = "border-b border-gray-200 last:border-0"
             messageInbox.innerHTML = `
                 <a class="block py-2 px-4 hover:bg-gray-50" href="./view_message.php?msg=${message_id}" @click="open = false" @focus="open = true" @focusout="open = false">
                     <span class="block text-sm mb-2">📣
-                        <span class="font-medium text-gray-800">New message from <span class="text-indigo-500"> <?= $users->get_user($msg['sender_id'])['firstname'] . " " . $users->get_user($msg['sender_id'])['lastname']; ?></span> <br></span>
-                        <?= $text = (strlen($msg['message']) <= 30) ? $msg['message'] : substr($msg['message'], 0, 30) . "...";  ?>
+                        <span class="font-medium text-gray-800">New message from <span class="text-indigo-500"> 
+                            ${_sender.firstname} ${_sender.lastname}
+                        </span> 
+                    <br></span>
+                        ${message.length <= 30 ? message : message.substring(0, 30) + ("...")}
                     </span>
                     <span class="block text-xs font-medium text-gray-400">
-                        <?= date("M d, Y h:i a", strtotime($msg['date'])); ?>
+                        ${months[notifyDate.getMonth()]} ${notifyDate.getDate()}, ${notifyDate.getFullYear()} ${notifyDate.getHours()}:${notifyDate.getMinutes()} ${+notifyDate.getHours() >= 12 ? "pm" : "am"}
                     </span>
                 </a>`
         })
