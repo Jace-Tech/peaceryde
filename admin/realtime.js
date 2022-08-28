@@ -51,7 +51,6 @@ const checkMessage = async () => {
     // Set message 
     messageContainer.innerHTML = `<li class="px-3 py-2 text-center text-gray-400"> No new messages </li>`
 
-    console.log(result)
     if(result?.length) {
         // Set Notification
         messageNotificon.innerHTML = `
@@ -123,7 +122,7 @@ const checkNotifier = async () => {
                 ${months[notifyDate.getMonth()]} ${notifyDate.getDate()}, ${notifyDate.getFullYear()} ${notifyDate.getHours()}:${notifyDate.getMinutes()} ${+notifyDate.getHours() >= 12 ? "pm" : "am"}
             </span>
         </a>`
-            notifyContainer.append()
+            notifyContainer.append(notificationItem)
         })
     }
 }
