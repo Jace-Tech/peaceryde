@@ -426,8 +426,8 @@ $messagers = getUserMessagers($connect, $USER_ID);
         })
     </script>
     <script>
-        window.scrollTo({
-            top: window.innerHeight,
+        document.querySelector("#main").scrollTo({
+            top: document.querySelector("#scrollToView").offsetHeight,
             left: 0,
             behavior: "smooth"
         })
