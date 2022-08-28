@@ -38,7 +38,7 @@ const setConvo = async () => {
             messageItem.className = `flex items-start mb-4 last:mb-0`
             messageItem.style.flexDirection = `${ isAdmin ? "row-reverse" : "row" }`
             messageItem.innerHTML = `
-                ${ message?.attachment && `
+                ${ (message?.attachment && message?.attachment != "null") && `
                     ${ isAdmin ? 
                         `
                             <div class="flex shadow-sm ml-2 items-center justify-center bg-gray-200 rounded-full w-10 h-10 text-sm font-semibold uppercase text-gray-500">
