@@ -32,14 +32,16 @@ if(isset($_GET['convo'])) {
 
     foreach ($_messages as $msg) {
         if($msg['sender_id'] !== $id) {
+            $admin = getAdmin($connect, $msg['user_id']);
             $user = getUser($connect, $msg['sender_id']);
             $profilePic = getProfilePic($connect, $msg['sender_id'])['file'];
-            $item = array_merge($msg, ["_sender" => $user, "pic" => "https://peacerydeafrica.com/Dashboard/pic/$profilePic"]);
+            $item = array_merge($msg, ["_sender" => $user, "_admin" => $admin, "pic" => "https://peacerydeafrica.com/Dashboard/pic/$profilePic"]);
         }
         else {
             $admin = getAdmin($connect, $msg['sender_id']);
             $user = getUser($connect, $msg['user_id']);
-            $item = array_merge($msg, ["_sender" => $user, "_admin" => $admin]);
+            $profilePic = getProfilePic($connect, $msg['user_id'])['file'];
+            $item = array_merge($msg, ["_sender" => $user, "_admin" => $admin, "pic" => "https://peacerydeafrica.com/Dashboard/pic/$profilePic"]);
         }
         array_push($MASSAGES, $item);
     }
