@@ -31,13 +31,10 @@ if(isset($_GET['convo'])) {
     $MASSAGES = [];
 
     foreach ($_messages as $msg) {
-        $user = getUser($connect, $msg['sender_id']);
         if($msg['sender_id'] !== $id) {
+            $user = getUser($connect, $msg['sender_id']);
             $profilePic = getProfilePic($connect, $msg['sender_id'])['file'];
             $item = array_merge($msg, ["_sender" => $user, "pic" => "https://peacerydeafrica.com/Dashboard/pic/$profilePic"]);
-        }
-        else {
-            $item = array_merge($msg, ["_sender" => $user]);
         }
         array_push($MASSAGES, $item);
     }
