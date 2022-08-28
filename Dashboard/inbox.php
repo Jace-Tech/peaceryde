@@ -426,6 +426,13 @@ $messagers = getUserMessagers($connect, $USER_ID);
         })
     </script>
     <script>
+        window.scrollTo({
+            top: document.getElementById("scrollToView").offsetTop,
+            left: 0,
+            behavior: "smooth"
+        })
+    </script>
+    <script>
         function openForm() {
             document.getElementById("myForm").style.display = "block";
         }
