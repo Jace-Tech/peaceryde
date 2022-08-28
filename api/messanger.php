@@ -23,3 +23,17 @@ if(isset($_GET['messenger'])) {
     }
     echo json_encode($messages);
 }
+
+if(isset($_GET['convo'])) {
+    $id = $_GET['convo'];
+    $other = $_GET['other'];
+    $messages = $messages->get_conversation($id, $other);
+    $messages = [];
+
+    foreach ($unreadMessages as $msg) {
+        $user = getUser($connect, $msg['sender_id']);
+        $item = array_merge($msg, ["_sender" => $user]);
+        array_push($messages, $item);
+    }
+    echo json_encode($messages);
+}
