@@ -167,4 +167,4 @@ const checkNotifier = async () => {
 setInterval(() => {
     checkMessage()
     checkNotifier()
-}, 4000)
+}, 6000)

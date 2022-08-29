@@ -56,8 +56,7 @@ const setConvo = async () => {
 
     if(result?.length) {
         const days = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
-        result?.filter((msg) => msg.sender_id != USER_ID).forEach((message) => {
-            console.log(message)
+        result?.filter((msg) => msg.sender_id != USER_ID).forEach( async (message) => {
             const mainDate = new Date(Date.parse(message?.date))
             const isUser = USER_ID == message.sender_id
             const messageItem = document.createElement("div")
@@ -134,15 +133,11 @@ const setConvo = async () => {
                 if(!convoContainer.querySelector(`#msg-${message.id}`)) convoContainer.insertBefore(messageItem, scrollToView)
 
                 // mark as read
-                setTimeout( async () => {
-                    let {id} = await markAsRead(message.id, USER_ID)
-                    removeHighlight(id);
-                    console.log("ID => ", id)
-                }, 4000)
+                await markAsRead(message.id, USER_ID)
         })
     }
 }
 
 setInterval(() => {
     setConvo()
-}, 4000)
+}, 10000)
