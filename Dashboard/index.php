@@ -497,7 +497,8 @@ $isUnread = count($messages->get_user_unread_messages($USER_ID));
         <?php include("./inc/sidebar.php"); ?>
         <!-- Sidebar -->
 
-
+        <!-- USER_ID -->
+        <input type="hidden" data-id value="<?= $USER_ID ?>">
         <div class="page-wrapper" id="main">
             <span style="font-size:30px;cursor:pointer" onclick="openNav()"> <svg width="19" height="15" viewBox="0 0 19 15" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-bottom: 10px;
                 margin-top: 50px;">
@@ -523,7 +524,7 @@ $isUnread = count($messages->get_user_unread_messages($USER_ID));
                     </div>
                     <div class="align-self-center">
                         <div class="customize-input">
-                            <ol class="breadcrumb mb-2" id="ol">
+                            <ol class="breadcrumb mb-2" data-message id="ol">
                                 <?php if ($isUnread) : ?>
                                     <li class="breadcrumb-item" style="margin-top: 1px;">
                                         <a href="./inbox" style="color: #080C58;"><svg width="22" height="20" style="margin-top: -5px;" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -744,6 +745,7 @@ $isUnread = count($messages->get_user_unread_messages($USER_ID));
         </div>
 
     </div>
+    <script src="../js/realtime.js"></script>
     <script>
         function openNav() {
 

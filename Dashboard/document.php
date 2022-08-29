@@ -568,7 +568,7 @@ $isUnread = $messages->get_user_unread_messages($USER_ID) ?? [];
                     </div>
                     <div class="align-self-center">
                         <div class="customize-input">
-                            <ol class="breadcrumb mb-2" id="ol">
+                            <ol class="breadcrumb mb-2" data-message id="ol">
                                 <?php if (count($isUnread)) : ?>
                                     <li class="breadcrumb-item" style="margin-top: 1px;">
                                         <a href="./inbox" style="color: #080C58;"><svg width="22" height="20" style="margin-top: -5px;" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -670,6 +670,7 @@ $isUnread = $messages->get_user_unread_messages($USER_ID) ?? [];
         </div>
 
     </div>
+    <script src="../js/realtime.js"></script>
     <script>
         function openForm() {
             document.getElementById("myForm").style.display = "block";
