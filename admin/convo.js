@@ -4,7 +4,8 @@ const convoContainer = document.querySelector("#convo-container")
 const getConvo = async (user, other) => {
     try {
         const request = await fetch(`${BASE_URL}/messanger.php?convo=${user}&other=${other}`)
-        const response = await request.json()
+        const response = await request.text()
+        console.log(response)
         return response
     } catch (err) {
         console.log(err.message)
@@ -27,7 +28,7 @@ const setConvo = async () => {
     const ADMIN_ID = document.querySelector("[data-id]").value
     const OTHER_ID = document.querySelector("[name=OTHER_ID]").value
     const result = await getConvo(ADMIN_ID, OTHER_ID)
-    console.log(result)
+    // console.log(result)
 
 //     convoContainer.innerHTML = ""
 //     if(result?.length) {
