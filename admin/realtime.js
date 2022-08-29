@@ -100,7 +100,7 @@ const checkMessage = async () => {
                 <a class="block py-2 px-4 hover:bg-gray-50" href="./view_message.php?msg=${_sender?.user_id}" @click="open = false" @focus="open = true" @focusout="open = false">
                     <span class="block text-sm mb-2">📣
                         <span class="font-medium text-gray-800">New message from <span class="text-indigo-500"> 
-                            ${_sender.firstname} ${_sender.lastname}
+                            ${_sender?.firstname} ${_sender?.lastname}
                         </span> 
                     <br></span>
                         ${message.length <= 30 ? message : message.substring(0, 30) + ("...")}

@@ -140,4 +140,4 @@ const setConvo = async () => {
 
 setInterval(() => {
     setConvo()
-}, 10000)
+}, 7000)
