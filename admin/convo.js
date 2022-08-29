@@ -1,5 +1,5 @@
 const convoContainer = document.querySelector("#convo-container")
-const scrollToView = document.querySelector("#scrollToView")
+// const scrollToView = document.querySelector("#scrollToView")
 
 
 const getConvo = async (user, other) => {
