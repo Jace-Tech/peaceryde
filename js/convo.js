@@ -28,7 +28,6 @@ const markAsRead = async (id, user) => {
     try {
         const request = await fetch(`${BASE_URL}/messanger.php?read=${id}&user=${user}`)
         const response = await request.json()
-        console.log(response)
         if("status" in response) {
             return false
         }
