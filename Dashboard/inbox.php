@@ -355,11 +355,11 @@ $messagers = getUserMessagers($connect, $USER_ID);
                                                         </div>
                                                     <?php endif; ?>
                                                 <?php endforeach; ?>
-                                                <div id="scrollToView"></div>
-                                            <?php else : ?>
-                                                <div class="text-sm text-muted text-center">No messages yet</div>
-                                            <?php endif; ?>
-
+                                                <?php else : ?>
+                                                    <div class="text-sm text-muted text-center">No messages yet</div>
+                                                <?php endif; ?>
+                                                    
+                                            <div id="scrollToView"></div>
                                         </div>
                                     </div>
 
