@@ -42,6 +42,7 @@ const setConvo = async () => {
             if(("" + message.attachment).toUpperCase() !== "NULL") {
                 // Attachment
                 const attachmentItem = document.createElement("div")
+                attachmentItem.id = `attach-${message.id}`
                 attachmentItem.className = `flex items-start mb-4 last:mb-0`
                 attachmentItem.style.flexDirection = `${ isAdmin ? "row-reverse" : "row" }`
                 const files = JSON.parse(message.attachment)
@@ -80,13 +81,13 @@ const setConvo = async () => {
                         </div>
                     `
                     }
-
-                    convoContainer.insertBefore(attachmentItem, scrollToView)
+                    if(!convoContainer.querySelector(`#attach-${message.id}`)) convoContainer.insertBefore(attachmentItem, scrollToView)
                 }
 
             // Message
             messageItem.className = `flex items-start mb-4 last:mb-0`
             messageItem.style.flexDirection = `${ isAdmin ? "row-reverse" : "row" }`
+            messageItem.id = `msg-${message.id}`
             messageItem.innerHTML = `
             ${isAdmin ? 
                 `
@@ -116,7 +117,9 @@ const setConvo = async () => {
                         </div>
                     </div>
                 `
-                convoContainer.insertBefore(messageItem, scrollToView)
+                // Check if it's there before
+
+                if(!convoContainer.querySelector(`#msg-${message.id}`)) convoContainer.insertBefore(messageItem, scrollToView)
         })
     }
 }
