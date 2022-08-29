@@ -149,13 +149,10 @@ const setConvo = async () => {
                     // Scroll down again
                     scrollToView.scrollIntoView({ behavior: 'smooth'})
                 }
-                
+
                 // mark as read
-                setTimeout( async () => {
-                    let {id} = await markAsRead(message.id, OTHER_ID)
-                    removeHighlight(id);
-                    console.log("ID => ", id)
-                }, 4000)
+                let {id} = await markAsRead(message.id, ADMIN_ID)
+                removeHighlight(id);
         })
     }
 }
