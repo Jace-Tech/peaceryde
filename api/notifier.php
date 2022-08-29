@@ -10,6 +10,6 @@ require_once("../utils/store.php");
 
 if(isset($_GET['notify'])) {
     $id = $_GET['notify'];
-    $unreadNotifications = getNotications($connect, $id);
+    $unreadNotifications = getUnReadNotications($connect, $id);
     echo json_encode($unreadNotifications);
 }

@@ -28,7 +28,9 @@ if(isset($_GET['convo'])) {
     $id = $_GET['convo'];
     $other = $_GET['other'];
     $_messages = $messages->get_conversation($id, $other);
-    $messages->get;
+    $filtered = array_filter($_messages, function ($message){
+        return $message['is_read'] = 0;
+    });
     $MASSAGES = [];
 
     foreach ($_messages as $msg) {

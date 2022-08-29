@@ -23,10 +23,11 @@ const getSubName = (name) => {
 
 const returnDateUnit = (hour) => hour >= 12 ? "PM" : "AM"
 
-// const setConvo = async () => {
-//     const ADMIN_ID = document.querySelector("[data-id]").value
-//     const OTHER_ID = document.querySelector("[name=OTHER_ID]").value
-//     const result = await getConvo(ADMIN_ID, OTHER_ID)
+const setConvo = async () => {
+    const ADMIN_ID = document.querySelector("[data-id]").value
+    const OTHER_ID = document.querySelector("[name=OTHER_ID]").value
+    const result = await getConvo(ADMIN_ID, OTHER_ID)
+    console.table(result)
 
 //     convoContainer.innerHTML = ""
 //     if(result?.length) {
@@ -105,8 +106,8 @@ const returnDateUnit = (hour) => hour >= 12 ? "PM" : "AM"
 //         lastMessage.id = "scrollToView"
 //         convoContainer.appendChild(lastMessage)
 //     }
-// }
+}
 
-// setInterval(() => {
-//     // setConvo()
-// }, 4000)
+setInterval(() => {
+    setConvo()
+}, 4000)
