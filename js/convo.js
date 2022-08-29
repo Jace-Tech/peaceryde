@@ -56,7 +56,7 @@ const setConvo = async () => {
 
     if(result?.length) {
         const days = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
-        result.forEach((message) => {
+        result?.filter((msg) => msg.sender_id != USER_ID).forEach((message) => {
             console.log(message)
             const mainDate = new Date(Date.parse(message?.date))
             const isUser = USER_ID == message.sender_id
