@@ -1,5 +1,5 @@
 const convoContainer = document.querySelector("[data-msgcontainer]")
-console.log({ convoContainer })
+const BASE_URL = "https://peacerydeafrica.com/api"
 
 
 const getConvo = async (user, other) => {
