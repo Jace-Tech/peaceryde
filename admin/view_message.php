@@ -144,6 +144,7 @@ if($LOGGED_ADMIN['type'] != "HIGH") {
                                         <?php foreach ($user->get_all_users() as $_user) : extract($_user); ?>
                                             <?php $PROFILE_PIC = getProfilePic($connect, $user_id)['file']; ?>
                                             <li class="-mx-2 mb-2">
+                                                <input type="hidden" class="message-user-id" value="<?= $user_id ?>">
                                                 <a href="./view_message.php?msg=<?= $user_id; ?>" class="flex items-center justify-between w-full p-2 rounded <?= $_GET['msg'] ? (($user_id == $_GET['msg']) ? "bg-indigo-100" : "bg-gray-100") : ("bg-gray-100"); ?>" @click="msgSidebarOpen = false; $refs.contentarea.scrollTop = 99999999;">
                                                     <div class="flex items-center truncate">
                                                         <?php if($PROFILE_PIC != "" || $PROFILE_PIC != NULL || $PROFILE_PIC): ?>
@@ -160,7 +161,7 @@ if($LOGGED_ADMIN['type'] != "HIGH") {
                                                         </div>
                                                     </div>
 
-                                                    <div class="flex items-center ml-2">
+                                                    <div class="flex items-center ml-2" data-msgscreen>
                                                         <?php if (count($messages->get_unread_messages($user_id, $LOGGED_ADMIN['admin_id']))) : ?>
                                                             <div class="text-xs inline-flex font-medium bg-indigo-400 text-white rounded-full text-center leading-5 px-2">
                                                                 <?= count($messages->get_unread_messages($user_id, $LOGGED_ADMIN['admin_id'])) ?>
@@ -178,6 +179,7 @@ if($LOGGED_ADMIN['type'] != "HIGH") {
                                         <?php foreach ($SUBADMIN_USERS as $_user) : extract($_user); ?>
                                             <?php $PROFILE_PIC = getProfilePic($connect, $user_id)['file']; ?>
                                             <li class="-mx-2 mb-2">
+                                                <input type="hidden" class="message-user-id" value="<?= $user_id ?>">
                                                 <a href="./view_message.php?msg=<?= $user_id; ?>" class="flex items-center justify-between w-full p-2 rounded <?= $active = $user_id == $_GET['msg'] ? "bg-indigo-100" : "bg-gray-100"; ?>" @click="msgSidebarOpen = false; $refs.contentarea.scrollTop = 99999999;">
                                                     <div class="flex items-center truncate">
                                                         <?php if($PROFILE_PIC != "" || $PROFILE_PIC != NULL || $PROFILE_PIC): ?>
@@ -194,7 +196,7 @@ if($LOGGED_ADMIN['type'] != "HIGH") {
                                                         </div>
                                                     </div>
 
-                                                    <div class="flex items-center ml-2">
+                                                    <div class="flex items-center ml-2" data-msgscreen>
                                                         <?php if (count($messages->get_unread_messages($user_id, $LOGGED_ADMIN['admin_id']))) : ?>
                                                             <div class="text-xs inline-flex font-medium bg-indigo-400 text-white rounded-full text-center leading-5 px-2">
                                                                 <?= count($messages->get_unread_messages($user_id, $LOGGED_ADMIN['admin_id'])) ?>

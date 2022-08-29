@@ -3,6 +3,10 @@ const messageScreen = document.querySelector("#data-message")
 const messageNotificon = document.querySelector("#data-message-not")
 const messageContainer = document.querySelector("#data-message-container")
 
+// EACH USER'S MESSAGE  
+const usersTabScreen = document.querySelectorAll("[data-msgscreen]")
+const usersTabInput = document.querySelectorAll(".message-user-id")
+
 const notifyNotificon = document.querySelector("#data-notify-not")
 const notifyContainer = document.querySelector("#data-notify-container")
 
@@ -21,6 +25,18 @@ const getUnreadMessage = async (id) => {
     }
 }
 
+
+const getUnreadMessageFromUser = async (id, other) => {
+    try {
+        const request = await fetch(`${BASE_URL}/messanger.php?unread=${id}&other=${other}`)
+        const response = await request.json()
+        return response
+    } catch (err) {
+        console.log(err.message)
+        return []
+    }
+}
+
 const getNotifications = async (id) => {
     try{
         const request = await fetch(`${BASE_URL}/notifier.php?notify=${id}`)
@@ -31,6 +47,17 @@ const getNotifications = async (id) => {
         console.log(err.message)
         return false
     }
+}
+
+const checkEachUsersUnreadMessages = () => {
+    const ADMIN_ID = document.querySelector("[data-id]").value
+    usersTabInput.forEach( async (user, index) => {
+        const {count} = await getUnreadMessageFromUser(ADMIN_ID, user.value)
+        usersTabScreen[index].innerHTML = `
+        <div class="text-xs inline-flex font-medium bg-indigo-400 text-white rounded-full text-center leading-5 px-2">
+        ${count}
+        </div>`
+    })
 }
 
 const checkMessage = async () => {

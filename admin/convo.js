@@ -160,4 +160,5 @@ const setConvo = async () => {
 
 setInterval(() => {
     setConvo()
+    checkEachUsersUnreadMessages()
 }, 4000)

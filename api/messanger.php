@@ -51,6 +51,18 @@ if(isset($_GET['convo'])) {
     echo json_encode($MASSAGES);
 }
 
+if(isset($_GET['unread'])) {
+    $id = $_GET['unread'];
+    $other = $_GET['other'];
+    $_messages = $messages->get_conversation($id, $other);
+    $filtered = array_filter($_messages, function ($message){
+        return ($message['is_read'] == 0);
+    });
+    echo json_encode([
+        "count" => count($filtered)
+    ]);
+}
+
 if(isset($_GET['read'])) {
     $id = $_GET['read'];
     $user = $_GET['user'];
