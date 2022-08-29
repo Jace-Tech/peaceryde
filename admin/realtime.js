@@ -97,7 +97,7 @@ const checkMessage = async () => {
             const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
             messageInbox.className = "border-b border-gray-200 last:border-0"
             messageInbox.innerHTML = `
-                <a class="block py-2 px-4 hover:bg-gray-50" href="./view_message.php?msg=${message_id}" @click="open = false" @focus="open = true" @focusout="open = false">
+                <a class="block py-2 px-4 hover:bg-gray-50" href="./view_message.php?msg=${_sender?.user_id}" @click="open = false" @focus="open = true" @focusout="open = false">
                     <span class="block text-sm mb-2">📣
                         <span class="font-medium text-gray-800">New message from <span class="text-indigo-500"> 
                             ${_sender.firstname} ${_sender.lastname}
