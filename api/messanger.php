@@ -50,3 +50,17 @@ if(isset($_GET['convo'])) {
     }
     echo json_encode($MASSAGES);
 }
+
+if(isset($_GET['read'])) {
+    $id = $_GET['read'];
+    $user = $_GET['user'];
+
+    $result = $messages->mark_read($id, $user);
+    if($result) {
+        echo json_encode([
+            "id" => $id,
+        ]);
+    }else {
+        echo json_encode(["status" => false]);
+    }
+}

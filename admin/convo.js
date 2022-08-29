@@ -13,6 +13,33 @@ const getConvo = async (user, other) => {
     }
 }
 
+const removeHighlight = (id) => {
+    const elements = convoContainer.querySelectorAll(`#msg-${id}`) ?? []
+    const elementAttach = convoContainer.querySelectorAll(`#attach-${id}`) ?? []
+    const allElem = [...elements, ...elementAttach]
+    allElem.map((element) => {
+        if(element.classList.contains("not-read")) {
+            element.classList.remove("not-read")
+        }
+    })
+}
+
+const markAsRead = async (id, user) => {
+    try {
+        const request = await fetch(`${BASE_URL}/messanger.php?read=${id}&user=${user}`)
+        const response = await request.json()
+        console.log(response)
+        if("status" in response) {
+            return false
+        }
+        return response
+    } catch (err) {
+        console.log(err.message)
+        return []
+    }
+
+}
+
 const getSubName = (name) => {
     console.table({name})
     const nameSplit = name.split(" ")
@@ -29,8 +56,6 @@ const setConvo = async () => {
     const OTHER_ID = document.querySelector("[name=OTHER_ID]").value
     const result = await getConvo(ADMIN_ID, OTHER_ID)
 
-    console.log("CONVO RESULT =>>> ", result)
-
     if(result?.length) {
         const days = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
         result.forEach((message) => {
@@ -43,7 +68,7 @@ const setConvo = async () => {
                 // Attachment
                 const attachmentItem = document.createElement("div")
                 attachmentItem.id = `attach-${message.id}`
-                attachmentItem.className = `flex items-start mb-4 last:mb-0`
+                attachmentItem.className = `flex items-start mb-4 last:mb-0 not-read`
                 attachmentItem.style.flexDirection = `${ isAdmin ? "row-reverse" : "row" }`
                 const files = JSON.parse(message.attachment)
                 let fileHTML = ""
@@ -85,7 +110,7 @@ const setConvo = async () => {
                 }
 
             // Message
-            messageItem.className = `flex items-start mb-4 last:mb-0`
+            messageItem.className = `flex items-start mb-4 last:mb-0 not-read`
             messageItem.style.flexDirection = `${ isAdmin ? "row-reverse" : "row" }`
             messageItem.id = `msg-${message.id}`
             messageItem.innerHTML = `
@@ -118,8 +143,14 @@ const setConvo = async () => {
                     </div>
                 `
                 // Check if it's there before
-
                 if(!convoContainer.querySelector(`#msg-${message.id}`)) convoContainer.insertBefore(messageItem, scrollToView)
+
+                // mark as read
+                setTimeout( async () => {
+                    let id = await markAsRead(message.id, ADMIN_ID)
+                    removeHighlight(id);
+                    console.log("ID => ", id)
+                }, 4000)
         })
     }
 }
