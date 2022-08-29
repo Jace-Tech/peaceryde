@@ -144,7 +144,9 @@ const setConvo = async () => {
                 `
                 // Check if it's there before
                 if(!convoContainer.querySelector(`#msg-${message.id}`)) convoContainer.insertBefore(messageItem, scrollToView)
-
+                
+                // Scroll down again
+                scrollToView.scrollIntoView({ behavior: 'smooth'})
                 // mark as read
                 setTimeout( async () => {
                     let {id} = await markAsRead(message.id, OTHER_ID)
