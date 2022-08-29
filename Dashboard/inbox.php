@@ -209,6 +209,10 @@ $messagers = getUserMessagers($connect, $USER_ID);
                 </svg>
             </span>
 
+            <!-- USER -->
+            <input type="hidden" data-id value="<?= $USER_ID ?>">
+            <!-- OTHER -->
+            <input type="hidden" name="OTHER_ID" value="<?= $_GET['message'] ?? "__" ?>">
             <main class="content">
                 <div class="container-fluid p-0">
 
@@ -282,8 +286,9 @@ $messagers = getUserMessagers($connect, $USER_ID);
                                         </div>
                                     </div>
 
+
                                     <div class="position-relative">
-                                        <div class="chat-messages p-4">
+                                        <div class="chat-messages p-4" data-msgcontainer>
 
                                             <?php if (count($USER_MESSAGES)) : ?>
                                                 <?php foreach ($USER_MESSAGES as $__message) : ?>
