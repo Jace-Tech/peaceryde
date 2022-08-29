@@ -401,6 +401,7 @@ $messagers = getUserMessagers($connect, $USER_ID);
             behavior: "smooth"
         });
     </script>
+    <script src="../js/convo.js"></script>
     <script>
         const fileBtn = document.querySelector("#fileBtn")
         const fileInput = document.querySelector("#hiddenInput")
