@@ -51,6 +51,33 @@ if(isset($_GET['convo'])) {
     echo json_encode($MASSAGES);
 }
 
+if(isset($_GET['convo_user'])) {
+    $id = $_GET['convo_user'];
+    $other = $_GET['other'];
+    $_messages = $messages->get_conversation($id, $other);
+    $filtered = array_filter($_messages, function ($message){
+        return ($message['is_read'] == 0);
+    });
+    $MASSAGES = [];
+
+    foreach ($filtered as $msg) {
+        if($msg['sender_id'] == $id) {
+            $admin = getAdmin($connect, $msg['user_id']);
+            $user = getUser($connect, $msg['sender_id']);
+            $profilePic = getProfilePic($connect, $msg['sender_id'])['file'];
+            $item = array_merge($msg, ["_sender" => $user, "_admin" => $admin, "pic" => "https://peacerydeafrica.com/Dashboard/pic/$profilePic"]);
+        }
+        else {
+            $admin = getAdmin($connect, $msg['sender_id']);
+            $user = getUser($connect, $msg['user_id']);
+            $profilePic = getProfilePic($connect, $msg['user_id'])['file'];
+            $item = array_merge($msg, ["_sender" => $user, "_admin" => $admin, "pic" => "https://peacerydeafrica.com/Dashboard/pic/$profilePic"]);
+        }
+        array_push($MASSAGES, $item);
+    }
+    echo json_encode($MASSAGES);
+}
+
 if(isset($_GET['unread'])) {
     $id = $_GET['unread'];
     $other = $_GET['other'];
