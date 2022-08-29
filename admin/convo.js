@@ -58,7 +58,7 @@ const setConvo = async () => {
 
     if(result?.length) {
         const days = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
-        result.forEach((message) => {
+        result.forEach(async (message) => {
             console.log(message)
             const mainDate = new Date(Date.parse(message?.date))
             const isAdmin = ADMIN_ID == message.sender_id
