@@ -53,10 +53,13 @@ const checkEachUsersUnreadMessages = () => {
     const ADMIN_ID = document.querySelector("[data-id]").value
     usersTabInput.forEach( async (user, index) => {
         const {count} = await getUnreadMessageFromUser(ADMIN_ID, user.value)
-        usersTabScreen[index].innerHTML = `
-        <div class="text-xs inline-flex font-medium bg-indigo-400 text-white rounded-full text-center leading-5 px-2">
-        ${count}
-        </div>`
+        if(count) {
+            usersTabScreen[index].innerHTML = `
+                <div class="text-xs inline-flex font-medium bg-indigo-400 text-white rounded-full text-center leading-5 px-2">
+                    ${count}
+                </div>
+            `
+        }
     })
 }
 
