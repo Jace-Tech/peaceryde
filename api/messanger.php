@@ -33,7 +33,7 @@ if(isset($_GET['convo'])) {
     });
     $MASSAGES = [];
 
-    foreach ($_messages as $msg) {
+    foreach ($filtered as $msg) {
         if($msg['sender_id'] !== $id) {
             $admin = getAdmin($connect, $msg['user_id']);
             $user = getUser($connect, $msg['sender_id']);
