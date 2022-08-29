@@ -56,9 +56,11 @@ if(isset($_GET['read'])) {
     $user = $_GET['user'];
 
     $result = $messages->mark_read($id, $user);
+    $unreadMessages = $messages->get_user_unread_messages($id);
     if($result) {
         echo json_encode([
             "id" => $id,
+            "count" => count($unreadMessages)
         ]);
     }else {
         echo json_encode(["status" => false]);
