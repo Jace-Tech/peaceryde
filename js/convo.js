@@ -40,7 +40,6 @@ const markAsRead = async (id, user) => {
 }
 
 const getSubName = (name) => {
-    console.table({name})
     const nameSplit = name.split(" ")
     if(nameSplit.length > 1) {
         return nameSplit.map(_name => _name.substring(0, 1).toUpperCase()).join(" ")
