@@ -28,7 +28,6 @@ const setConvo = async () => {
     const ADMIN_ID = document.querySelector("[data-id]").value
     const OTHER_ID = document.querySelector("[name=OTHER_ID]").value
     const result = await getConvo(ADMIN_ID, OTHER_ID)
-    console.log(result)
 
     if(result?.length) {
         const days = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
