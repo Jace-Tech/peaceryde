@@ -77,10 +77,27 @@ $UNREAD_NOTIFICATIONS = getUnReadNotications($connect, $LOGGED_ADMIN['admin_id']
 		top: 0px !important;
 	}
 
-	.not-read {
-		background-color: rgba(235, 201, 47, .5);
+	
+	.msg-item {
+		position: relative;
+		transition: transform .5s ease-in-out;
 	}
-</style>
+	
+	.msg-item::after {
+		content: "";
+		display: block;
+		height: 2px;
+		width: 100%;
+		position: absolute;
+		left: 0;
+		top: 100%;
+		transform-origin: left;
+		transform: scaleX(0);
+	}
+	.msg-item.not-read::after {
+		transform: scaleX(1);
+	}
+	</style>
 <script defer src="./realtime.js"></script>
 <header class="sticky top-0 bg-white border-b border-gray-200 z-30" style="background-color:  #1161d9;">
 	<div class="px-4 sm:px-6 lg:px-8">

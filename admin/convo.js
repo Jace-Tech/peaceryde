@@ -68,7 +68,7 @@ const setConvo = async () => {
                 // Attachment
                 const attachmentItem = document.createElement("div")
                 attachmentItem.id = `attach-${message.id}`
-                attachmentItem.className = `flex items-start mb-4 last:mb-0 not-read`
+                attachmentItem.className = `flex items-start mb-4 last:mb-0 msg-item not-read`
                 attachmentItem.style.flexDirection = `${ isAdmin ? "row-reverse" : "row" }`
                 const files = JSON.parse(message.attachment)
                 let fileHTML = ""
@@ -110,7 +110,7 @@ const setConvo = async () => {
                 }
 
             // Message
-            messageItem.className = `flex items-start mb-4 last:mb-0 not-read`
+            messageItem.className = `flex items-start mb-4 last:mb-0 msg-item not-read`
             messageItem.style.flexDirection = `${ isAdmin ? "row-reverse" : "row" }`
             messageItem.id = `msg-${message.id}`
             messageItem.innerHTML = `
