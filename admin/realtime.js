@@ -1,7 +1,5 @@
 const messageScreen = document.querySelector("#data-message")
 
-console.log(messageScreen)
-
 const messageNotificon = document.querySelector("#data-message-not")
 const messageContainer = document.querySelector("#data-message-container")
 
@@ -50,8 +48,8 @@ const checkMessage = async () => {
 
     // Set message 
     messageContainer.innerHTML = `<li class="px-3 py-2 text-center text-gray-400"> No new messages </li>`
-    messageContainer.innerHTML = ""
     if(result?.length) {
+        messageContainer.innerHTML = ""
         // Set Notification
         messageNotificon.innerHTML = `
         <span class="sr-only">Message</span>

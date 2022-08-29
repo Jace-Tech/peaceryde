@@ -153,6 +153,7 @@ const setConvo = async () => {
                 // mark as read
                 let {id} = await markAsRead(message.id, ADMIN_ID)
                 removeHighlight(id);
+                checkMessage()
         })
     }
 }
