@@ -116,7 +116,7 @@ const setConvo = async () => {
                         </div>
                     </div>
                 `
-                convoContainer.insertBefore(attachmentItem, scrollToView)
+                convoContainer.insertBefore(messageItem, scrollToView)
         })
     }
 }
