@@ -17,7 +17,7 @@ if($LOGGED_ADMIN['type'] != "HIGH") {
 <?php include("./components/main_header.php"); ?>
 <script>
     window.addEventListener("load", () => {
-        console.clear()
+        // console.clear()
         if (location.search.includes("?msg")) {
             setTimeout(500, () => {
                 document.body.setAttribute('x-data', "{ page: 'messages', sidebarOpen: false, sidebarExpanded: localStorage.getItem('sidebar-expanded') == 'true', msgSidebarOpen: false }")
