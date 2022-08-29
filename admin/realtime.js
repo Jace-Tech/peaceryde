@@ -50,8 +50,6 @@ const checkMessage = async () => {
 
     // Set message 
     messageContainer.innerHTML = `<li class="px-3 py-2 text-center text-gray-400"> No new messages </li>`
-
-    console.log(result)
     messageContainer.innerHTML = ""
     if(result?.length) {
         // Set Notification

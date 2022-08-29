@@ -27,7 +27,7 @@ const setConvo = async () => {
     const ADMIN_ID = document.querySelector("[data-id]").value
     const OTHER_ID = document.querySelector("[name=OTHER_ID]").value
     const result = await getConvo(ADMIN_ID, OTHER_ID)
-    console.table(result)
+    console.log(result)
 
 //     convoContainer.innerHTML = ""
 //     if(result?.length) {
