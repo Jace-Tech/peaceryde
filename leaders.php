@@ -221,7 +221,7 @@
                   <br>
                   <div class="single-person">
                                             
-                      <span>Please feel free to write to our customer experience team using any of the below email addresses: </span>
+                      <span>Please feel free to write to our Customer Fulfilment Team using any of the below email addresses: </span>
                       <ul>
                         <li><a class="maillink" href="mailto:visas@peacerydeafrica.com">•	visas@peacerydeafrica.com</a></li>
                         <li><a class="maillink" href="mailto:info@peacerydeafrica.com">•	info@peacerydeafrica.com</a></li>
