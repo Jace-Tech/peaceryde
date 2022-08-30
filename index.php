@@ -98,7 +98,7 @@ $uploads = new Upload($connect);
         <div class="movement">
           <h4 class="new-section1__highlights5-box layout">
             <pre class="new-section1__highlights5 shop">
-          Your One-stop shop for </pre>
+          Your one-stop shop for </pre>
           </h4>
           <h1 class="bannertext new-section1__hero-title2 layout ">
             Nigeria Visa and <br>Business Incorporation
