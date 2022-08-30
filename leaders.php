@@ -185,7 +185,7 @@
                     <div class="col-xs-12 col-sm-7 col-lg-6 col-xl-8">
                       <div class="single-person mobileshow">
                         <div class="person-image">
-                          <img src="assets/imgg.jpeg" alt="">
+                          <img src="assets/dan.jpeg" alt="">
                           
                         </div>
                         
