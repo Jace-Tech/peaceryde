@@ -49,10 +49,10 @@
                       Immigration Expatriate Quota Processing</a></li>
                   <li class="new-section8__text-body5 layout fs-13"><a class="fs-13" href="SBForm" style=" text-decoration: none;">Nigeria
                       Business Visa
-                      Extension</a></li>
+                      Extension Processing</a></li>
                   <li class="new-section8__text-body5 layout fs-13"><a class="fs-13" href="SBForm" style=" text-decoration: none;">Nigeria
                       Temporary Work Permit Visa
-                      Extension</a></li>
+                      Extension Processing</a></li>
                       <li class="new-section8__text-body5 layout fs-13"><a class="fs-13" href="NTWPForm" style=" text-decoration: none;">Nigeria
                       Temporary Work Permit Visa on Arrival Processing</a></li>
                   <li class="new-section8__text-body5 layout fs-13"><a class="fs-13" href="SBForm" style=" text-decoration: none;">Nigeria Subject to Regularization (STR) Visa Processing</a></li>
