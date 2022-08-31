@@ -115,7 +115,7 @@
                           <span class="speciality">GROUP DIRECTOR, LEGAL, CORPORATE BUSINESS SERVICES & COMPANY SECRETARY</span>
                         </div>
                             
-                            <p class="leadtext">Joy Eshiofune Bobmanuel is the Director for Legal, Corporate Business Services and Company Secretary for PeaceRyde Africa LLC. Joy has several professional years of experience in business related services, active law practice; and corporate law, processing Nigeria business incorporation, annual returns filings, pre and post business incorporation services with the corporate affairs commission.
+                            <p class="leadtext">Joy Eshiofune Bobmanuel is the Director for Legal, Corporate Business Services and Company Secretary for PeaceRyde Africa LLC. Joy has several professional years of experience in business related services, active law practice; corporate law, processing Nigeria business incorporation, annual returns filings, pre and post business incorporation services with the corporate affairs commission.
                              
                             </p>
                             <br>
