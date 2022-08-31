@@ -237,7 +237,20 @@ $PRICE = json_decode($_SESSION["PRICE"], true);
                 <div class="row paymentdiv">
                     <div class="col-lg-8 col-md-8 col-sm-8">
                         <p class="paymentservices">
-                            <?= "Business incorporation processing fee" ?>
+                            <?= "Business incorporation" ?>
+                        </p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4">
+                        <p class="paymentprice">
+                            <?= "" ?>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row paymentdiv">
+                    <div class="col-lg-8 col-md-8 col-sm-8">
+                        <p class="paymentservices">
+                            <?= " Processing fee" ?>
                         </p>
                     </div>
                     <div class="col-lg-4 col-md-4 col-sm-4">
