@@ -35,12 +35,11 @@
                 </h3>
                 <ul>
                   <li class="new-section8__text-body5 layout fs-13"><a class="fs-13" href="NBVForm" style=" text-decoration: none;">Nigeria Business Visa on
-                      Arrival</a></li>
+                      Arrival Processing</a></li>
                       <!-- <li class="new-section8__text-body5 layout fs-13"><a class="fs-13" href="NTWPForm" style=" text-decoration: none;">Nigeria
                       Temporary Work Permit Approval</a></li> -->
                       
-                  <!-- <li class="new-section8__text-body5 layout fs-13"><a class="fs-13" href="NTWPForm" style=" text-decoration: none;">Nigeria
-                      Temporary Work Permit Visa on Arrival</a></li> -->
+                  
                       <li class="new-section8__text-body5 layout fs-13"><a class="fs-13" href="NTWPForm" style=" text-decoration: none;">Nigeria Temporary Work Permit Processing</a></li>
 
                       <!-- <li class="new-section8__text-body5 layout fs-13"><a class="fs-13" href="SBForm" style=" text-decoration: none;">Nigeria
@@ -50,10 +49,12 @@
                       Immigration Expatriate Quota Processing</a></li>
                   <li class="new-section8__text-body5 layout fs-13"><a class="fs-13" href="SBForm" style=" text-decoration: none;">Nigeria
                       Business Visa
-                      Extension</a></li>
+                      Extension Processing</a></li>
                   <li class="new-section8__text-body5 layout fs-13"><a class="fs-13" href="SBForm" style=" text-decoration: none;">Nigeria
                       Temporary Work Permit Visa
-                      Extension</a></li>
+                      Extension Processing</a></li>
+                      <li class="new-section8__text-body5 layout fs-13"><a class="fs-13" href="NTWPForm" style=" text-decoration: none;">Nigeria
+                      Temporary Work Permit Visa on Arrival Processing</a></li>
                   <li class="new-section8__text-body5 layout fs-13"><a class="fs-13" href="SBForm" style=" text-decoration: none;">Nigeria Subject to Regularization (STR) Visa Processing</a></li>
                   <li class="new-section8__text-body5 layout fs-13"><a class="fs-13" href="SBForm" style=" text-decoration: none;">Nigeria Immigration Permission to Land (PTL) Processing</a></li>
                     
@@ -81,15 +82,15 @@
                   <li class="new-section8__text-body5 layout fs-13"><a class="fs-13" href="SBForm" style=" text-decoration: none;">Nigeria
                       Immigration
                       Consultancy Services</a></li>
-                  <li class="new-section8__text-body5 layout fs-13"><a class="fs-13" href="SBForm" style=" text-decoration: none;">Nigeria Custom
+                  <li class="new-section8__text-body5 layout fs-13"><a class="fs-13" href="SBForm" style=" text-decoration: none;">Nigeria Customs
                       Brokerage Services</a>
                   </li>
-                  <li class="new-section8__text-body5 layout fs-13"><a class="fs-13" href="SBForm" style=" text-decoration: none;">Nigerian Upstream Petroleum Regulatory Commission (NUPRC)</a>
+                  <li class="new-section8__text-body5 layout fs-13"><a class="fs-13" href="SBForm" style=" text-decoration: none;">Nigerian Upstream Petroleum Regulatory Commission (NUPRC) Consultancy Services</a>
                   </li>
-                  <li class="new-section8__text-body5 layout fs-13"><a class="fs-13" href="SBForm" style=" text-decoration: none;">Nigeria Maritime Administration and Safety Agency Consultancy Services</a>
+                  <li class="new-section8__text-body5 layout fs-13"><a class="fs-13" href="SBForm" style=" text-decoration: none;">Nigerian Maritime Administration and Safety Agency Consultancy Services</a>
                   </li>
                   <li class="new-section8__text-body5 layout fs-13"><a class="fs-13" href="SBForm" style=" text-decoration: none;">Nigeria Ports Authority Consultancy Services</a></li>
-                  <li class="new-section8__text-body5 layout fs-13"><a class="fs-13" href="SBForm" style=" text-decoration: none;">Other Nigerian Government Agencies Consultancy Support Services</a></li>
+                  <li class="new-section8__text-body5 layout fs-13"><a class="fs-13" href="SBForm" style=" text-decoration: none;">Other Nigerian Government Agencies Consultancy Services</a></li>
                   <li class="new-section8__text-body5 layout fs-13"><a class="fs-13" href="SBForm" style=" text-decoration: none;">Airport
                       Immigration Meet and
                       Greet</a></li>

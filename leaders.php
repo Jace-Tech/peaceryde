@@ -115,7 +115,7 @@
                           <span class="speciality">GROUP DIRECTOR, LEGAL, CORPORATE BUSINESS SERVICES & COMPANY SECRETARY</span>
                         </div>
                             
-                            <p class="leadtext">Joy Eshiofune Bobmanuel is the Director for Legal, Corporate Business Services and Company Secretary for PeaceRyde Africa LLC. Joy has several professional years of experience in business related services, active law practice; and corporate law, processing Nigeria business incorporation, annual returns filings, pre and post business incorporation services with the corporate affairs commission.
+                            <p class="leadtext">Joy Eshiofune Bobmanuel is the Director for Legal, Corporate Business Services and Company Secretary for PeaceRyde Africa LLC. Joy has several professional years of experience in business related services, active law practice; corporate law, processing Nigeria business incorporation, annual returns filings, pre and post business incorporation services with the corporate affairs commission.
                              
                             </p>
                             <br>
@@ -185,7 +185,7 @@
                     <div class="col-xs-12 col-sm-7 col-lg-6 col-xl-8">
                       <div class="single-person mobileshow">
                         <div class="person-image">
-                          <img src="assets/imgg.jpeg" alt="">
+                          <img src="assets/dan.jpeg" alt="">
                           
                         </div>
                         
@@ -221,7 +221,7 @@
                   <br>
                   <div class="single-person">
                                             
-                      <span>Please feel free to write to our customer experience team using any of the below email addresses: </span>
+                      <span>Please feel free to write to our Customer Fulfilment Team using any of the below email addresses: </span>
                       <ul>
                         <li><a class="maillink" href="mailto:visas@peacerydeafrica.com">•	visas@peacerydeafrica.com</a></li>
                         <li><a class="maillink" href="mailto:info@peacerydeafrica.com">•	info@peacerydeafrica.com</a></li>
