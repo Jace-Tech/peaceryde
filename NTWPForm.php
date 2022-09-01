@@ -301,7 +301,7 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
                             <option data-countryCode="KZ" value="7">Kazakhstan (+7)</option>
                             <option data-countryCode="KE" value="254">Kenya (+254)</option>
                             <option data-countryCode="KI" value="686">Kiribati (+686)</option>
-                            <option data-countryCode="KP" value="850">Korea North (+850)</option>
+                            <option data-countryCode="KP" value="850">North korea (+850)</option>
                             <option data-countryCode="KR" value="82">Korea South (+82)</option>
                             <option data-countryCode="KW" value="965">Kuwait (+965)</option>
                             <option data-countryCode="KG" value="996">Kyrgyzstan (+996)</option>
