@@ -302,7 +302,6 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
                             <option data-countryCode="KE" value="254">Kenya (+254)</option>
                             <option data-countryCode="KI" value="686">Kiribati (+686)</option>
                             <option data-countryCode="KP" value="850">North Korea (+850)</option>
-                            <option data-countryCode="KR" value="82">South Korea (+82)</option>
                             <option data-countryCode="KW" value="965">Kuwait (+965)</option>
                             <option data-countryCode="KG" value="996">Kyrgyzstan (+996)</option>
                             <option data-countryCode="LA" value="856">Laos (+856)</option>
@@ -376,6 +375,7 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
                             <option data-countryCode="SB" value="677">Solomon Islands (+677)</option>
                             <option data-countryCode="SO" value="252">Somalia (+252)</option>
                             <option data-countryCode="ZA" value="27">South Africa (+27)</option>
+                            <option data-countryCode="KR" value="82">South Korea (+82)</option>
                             <option data-countryCode="ES" value="34">Spain (+34)</option>
                             <option data-countryCode="LK" value="94">Sri Lanka (+94)</option>
                             <option data-countryCode="SH" value="290">St. Helena (+290)</option>
