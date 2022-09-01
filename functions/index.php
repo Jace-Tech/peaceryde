@@ -31,7 +31,7 @@ function messageableUsers ($connect, $id) {
             $subAdminServices = json_decode(getSubAdminService($connect, $id)['services'], true);
 
             if(in_array("*", $subAdminServices)) {
-                $USERS = $users->get_all_users();
+                $USERS = getAllUsers($connect);
             }
             else {
                 // $usersId = getSubAdminUsers($connect, $id);
