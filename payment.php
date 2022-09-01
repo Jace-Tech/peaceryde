@@ -50,39 +50,39 @@ $PRICE = json_decode($_SESSION["PRICE"], true);
     <div class="row">
         <!-- NBV -->
         <?php if ($service['service_id'] === "srvs-002") : ?>
-            <div class="col-lg-5 col-md-12 col-sm-12">
+            <div class="col-lg-5 col-md-12 col-sm-12 col-12">
                 <img src="Dashboard/dist/image/logo.png" class="paymentlogoimg">
 
                 <h2 class="paymenth2">Payment</h2>
                 <div class="row paymentdiv">
 
-                    <div class="col-lg-8 col-md-8 col-sm-8">
+                    <div class="col-lg-8 col-md-8 col-sm-8 col-8">
                         <p class="paymentservices">Services</p>
                     </div>
-                    <div class="col-lg-4 col-md-4 col-sm-4">
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-4">
                         <p class="paymentprice">Price($)</p>
                     </div>
                 </div>
                 <div class="reviewline"></div>
 
                 <div class="row paymentdiv">
-                    <div class="col-lg-8 col-md-8 col-sm-8">
+                    <div class="col-lg-8 col-md-8 col-sm-8 col-8">
                         <p class="paymentservices">
                             <?= $service_name; ?>
                         </p>
                     </div>
-                    <div class="col-lg-4 col-md-4 col-sm-4">
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-4">
                         <p class="paymentprice"><?= " " ?></p>
                     </div>
                 </div>
 
                 <div class="row paymentdiv">
-                    <div class="col-lg-8 col-md-8 col-sm-8">
+                    <div class="col-lg-8 col-md-8 col-sm-8 col-8">
                         <p class="paymentservices">
                             <?= "Processing fee"; ?>
                         </p>
                     </div>
-                    <div class="col-lg-4 col-md-4 col-sm-4">
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-4">
                         <p class="paymentprice">
                             <?= round($PRICE['Immgration'], 2); ?>
                         </p>
@@ -90,56 +90,56 @@ $PRICE = json_decode($_SESSION["PRICE"], true);
                 </div>
 
                 <div class="row paymentdiv">
-                    <div class="col-lg-8 col-md-8 col-sm-8">
+                    <div class="col-lg-8 col-md-8 col-sm-8 col-8">
                         <p class="paymentservices">Visa fee</p>
                     </div>
-                    <div class="col-lg-4 col-md-4 col-sm-4">
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-4">
                         <p class="paymentprice"><?= round($PRICE['visa'], 2); ?></p>
                     </div>
                 </div>
 
                 <div class="row paymentdiv">
-                    <div class="col-lg-8 col-md-8 col-sm-8">
+                    <div class="col-lg-8 col-md-8 col-sm-8 col-8">
                         <p class="paymentservices">Admin/portal fee</p>
                     </div>
-                    <div class="col-lg-4 col-md-4 col-sm-4">
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-4">
                         <p class="paymentprice"><?= round($PRICE['admin'], 2); ?></p>
                     </div>
                 </div>
 
                 <div class="row paymentdiv">
-                    <div class="col-lg-8 col-md-8 col-sm-8">
+                    <div class="col-lg-8 col-md-8 col-sm-8 col-8">
                         <p class="paymentservices">Biometric</p>
                     </div>
-                    <div class="col-lg-4 col-md-4 col-sm-4">
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-4">
                         <p class="paymentprice"><?= round($PRICE['bio'], 2); ?></p>
                     </div>
                 </div>
 
                 <div class="row paymentdiv">
-                    <div class="col-lg-8 col-md-8 col-sm-8">
+                    <div class="col-lg-8 col-md-8 col-sm-8 col-8">
                         <p class="paymentservices">VAT [7.5%]</p>
                     </div>
-                    <div class="col-lg-4 col-md-4 col-sm-4">
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-4">
                         <p class="paymentprice"><?= round($PRICE['vat'], 2); ?></p>
                     </div>
                 </div>
 
                 <div class="row paymentdiv">
-                    <div class="col-lg-8 col-md-8 col-sm-8">
+                    <div class="col-lg-8 col-md-8 col-sm-8 col-8">
                         <p class="paymentservices">Gross Receipt Tax [1.9914%]</p>
                     </div>
-                    <div class="col-lg-4 col-md-4 col-sm-4">
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-4">
                         <p class="paymentprice"><?= round($PRICE['gross'], 2); ?></p>
                     </div>
                 </div>
 
                 <div class="reviewline"></div>
                 <div class="row paymentdiv">
-                    <div class="col-lg-8 col-md-8 col-sm-8">
+                    <div class="col-lg-8 col-md-8 col-sm-8 col-8">
                         <p class="paymentservices">Total</p>
                     </div>
-                    <div class="col-lg-4 col-md-4 col-sm-4">
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-4">
                         <p class="paymentprice"><?= round($PRICE['total_price'], 2); ?></p>
                     </div>
                 </div>
@@ -149,27 +149,27 @@ $PRICE = json_decode($_SESSION["PRICE"], true);
 
             <!-- TWP -->
         <?php elseif ($service['service_id'] === "srvs-001") : ?>
-            <div class="col-lg-5 col-md-12 col-sm-12">
+            <div class="col-lg-5 col-md-12 col-sm-12 col-12">
                 <img src="Dashboard/dist/image/logo.png" class="paymentlogoimg">
 
                 <h2 class="paymenth2">Payment</h2>
                 <div class="row paymentdiv">
 
-                    <div class="col-lg-8 col-md-8 col-sm-8">
+                    <div class="col-lg-8 col-md-8 col-sm-8 col-8">
                         <p class="paymentservices">Services</p>
                     </div>
-                    <div class="col-lg-4 col-md-4 col-sm-4">
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-4">
                         <p class="paymentprice">Price($)</p>
                     </div>
                 </div>
                 <div class="reviewline"></div>
                 <div class="row paymentdiv">
-                    <div class="col-lg-8 col-md-8 col-sm-8">
+                    <div class="col-lg-8 col-md-8 col-sm-8 col-8">
                         <p class="paymentservices">
                             <?= "Nigeria Temporary Work Permit (TWP)" ?>
                         </p>
                     </div>
-                    <div class="col-lg-4 col-md-4 col-sm-4">
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-4">
                         <p class="paymentprice">
                             <?= "" ?>
                         </p>
@@ -177,10 +177,10 @@ $PRICE = json_decode($_SESSION["PRICE"], true);
                 </div>
 
                 <div class="row paymentdiv">
-                    <div class="col-lg-8 col-md-8 col-sm-8">
+                    <div class="col-lg-8 col-md-8 col-sm-8 col-8">
                         <p class="paymentservices">Processing fee</p>
                     </div>
-                    <div class="col-lg-4 col-md-4 col-sm-4">
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-4">
                         <p class="paymentprice">
                             <?= round($PRICE['approval'], 2); ?>
                         </p>
@@ -188,29 +188,29 @@ $PRICE = json_decode($_SESSION["PRICE"], true);
                 </div>
                 
                 <div class="row paymentdiv">
-                    <div class="col-lg-8 col-md-8 col-sm-8">
+                    <div class="col-lg-8 col-md-8 col-sm-8 col-8">
                         <p class="paymentservices">VAT [7.5%]</p>
                     </div>
-                    <div class="col-lg-4 col-md-4 col-sm-4">
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-4">
                         <p class="paymentprice"><?= round($PRICE['vat'], 2); ?></p>
                     </div>
                 </div>
 
                 <div class="row paymentdiv">
-                    <div class="col-lg-8 col-md-8 col-sm-8">
+                    <div class="col-lg-8 col-md-8 col-sm-8 col-8">
                         <p class="paymentservices">Gross Receipt Tax [1.9914%]</p>
                     </div>
-                    <div class="col-lg-4 col-md-4 col-sm-4">
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-4">
                         <p class="paymentprice"><?= round($PRICE['gross'], 2); ?></p>
                     </div>
                 </div>
 
                 <div class="reviewline"></div>
                 <div class="row paymentdiv">
-                    <div class="col-lg-8 col-md-8 col-sm-8">
+                    <div class="col-lg-8 col-md-8 col-sm-8 col-8">
                         <p class="paymentservices">Total</p>
                     </div>
-                    <div class="col-lg-4 col-md-4 col-sm-4">
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-4">
                         <p class="paymentprice"><?= round($PRICE['total'], 2); ?></p>
                     </div>
                 </div>
@@ -220,27 +220,27 @@ $PRICE = json_decode($_SESSION["PRICE"], true);
 
             <!-- BI  -->
         <?php else : ?>
-            <div class="col-lg-5 col-md-12 col-sm-12">
+            <div class="col-lg-5 col-md-12 col-sm-12 col-12">
                 <img src="Dashboard/dist/image/logo.png" class="paymentlogoimg">
 
                 <h2 class="paymenth2">Payment</h2>
                 <div class="row paymentdiv">
 
-                    <div class="col-lg-8 col-md-8 col-sm-8">
+                    <div class="col-lg-8 col-md-8 col-sm-8 col-8">
                         <p class="paymentservices">Services</p>
                     </div>
-                    <div class="col-lg-4 col-md-4 col-sm-4">
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-4">
                         <p class="paymentprice">Price($)</p>
                     </div>
                 </div>
                 <div class="reviewline"></div>
                 <div class="row paymentdiv">
-                    <div class="col-lg-8 col-md-8 col-sm-8">
+                    <div class="col-lg-8 col-md-8 col-sm-8 col-8">
                         <p class="paymentservices">
                             <?= "Business incorporation" ?>
                         </p>
                     </div>
-                    <div class="col-lg-4 col-md-4 col-sm-4">
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-4">
                         <p class="paymentprice">
                             <?= "" ?>
                         </p>
@@ -248,12 +248,12 @@ $PRICE = json_decode($_SESSION["PRICE"], true);
                 </div>
 
                 <div class="row paymentdiv">
-                    <div class="col-lg-8 col-md-8 col-sm-8">
+                    <div class="col-lg-8 col-md-8 col-sm-8 col-8">
                         <p class="paymentservices">
                             <?= " Processing fee" ?>
                         </p>
                     </div>
-                    <div class="col-lg-4 col-md-4 col-sm-4">
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-4">
                         <p class="paymentprice">
                             <?= round($PRICE['price'], 2); ?>
                         </p>
@@ -261,10 +261,10 @@ $PRICE = json_decode($_SESSION["PRICE"], true);
                 </div>
 
                 <div class="row paymentdiv">
-                    <div class="col-lg-8 col-md-8 col-sm-8">
+                    <div class="col-lg-8 col-md-8 col-sm-8 col-8">
                         <p class="paymentservices"> VAT [7.5%]</p>
                     </div>
-                    <div class="col-lg-4 col-md-4 col-sm-4">
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-4">
                         <p class="paymentprice">
                             <?= round($PRICE['vat'], 2); ?>
                         </p>
@@ -272,19 +272,19 @@ $PRICE = json_decode($_SESSION["PRICE"], true);
                 </div>
 
                 <div class="row paymentdiv">
-                    <div class="col-lg-8 col-md-8 col-sm-8">
+                    <div class="col-lg-8 col-md-8 col-sm-8 col-8">
                         <p class="paymentservices">Gross Receipt Tax [1.9914%]</p>
                     </div>
-                    <div class="col-lg-4 col-md-4 col-sm-4">
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-4">
                         <p class="paymentprice"><?= round($PRICE['gross'], 2); ?></p>
                     </div>
                 </div>
                 <div class="reviewline"></div>
                 <div class="row paymentdiv">
-                    <div class="col-lg-8 col-md-8 col-sm-8">
+                    <div class="col-lg-8 col-md-8 col-sm-8 col-8">
                         <p class="paymentservices">Total</p>
                     </div>
-                    <div class="col-lg-4 col-md-4 col-sm-4">
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-4">
                         <p class="paymentprice"><?= round($PRICE['total'], 2); ?></p>
                     </div>
                 </div>
@@ -293,7 +293,7 @@ $PRICE = json_decode($_SESSION["PRICE"], true);
             </div>
         <?php endif; ?>
 
-        <div class="col-lg-6 col-md-12 col-sm-12">
+        <div class="col-lg-6 col-md-12 col-sm-12 col-12">
             <div class="card leftcard">
                 <form method="post" action="./handlers/payment.php" style="margin-top: 31px;">
                     <h2 class="leftcardh2">Payment Information</h2>
