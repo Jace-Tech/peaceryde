@@ -4,7 +4,7 @@
  *  NULL -> FREE
  */
 
-use function PHPSTORM_META\map;
+// use function PHPSTORM_META\map;
 
  define("ADMIN_PORTAL_FEE", 30);
  define("BIOMETRICS_FEE", 90);
