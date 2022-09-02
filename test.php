@@ -34,7 +34,11 @@ if(isset($_GET["admin"])) {
     $result = $connect->prepare($query);
     $result->execute([$countries[$i]]);
     $users = $result->fetchAll();
-    $matchedUsers[] = $users;
+    for($j =0; $j<count($users); $j++){
+      if(!in_array($users[$j],$matchedUsers)) {
+        array_push($matchedUsers, $users[$j]);
+      }
+    }
   }
 
   print_r($matchedUsers);
