@@ -32,7 +32,7 @@ if(isset($_GET["admin"])) {
     }
     $result = $connect->prepare($query);
     $result->execute([$countries[$i]]);
-    $users = $result->fetch();
+    $users = $result->fetchAll();
     print_r($users);
   }
   die();
