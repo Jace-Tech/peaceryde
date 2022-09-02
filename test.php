@@ -25,13 +25,13 @@ if(isset($_GET["admin"])) {
   for($i =0; $i<count($countries); $i++){
     print_r($countries[$i]);
     $query = "SELECT * FROM users";
-    $result = $connect->prepare($query);
-    $result->execute();
-    if($countries[$i] != "*") {
+    if($countries[$i] !== "*") {
       $query = "SELECT * FROM users WHERE country = ?";
-      $result = $connect->prepare($query);
-      $result->execute([$countries[$i]]);
+    }else{
+      $countries[$i]=null;
     }
+    $result = $connect->prepare($query);
+    $result->execute([$countries[$i]]);
     $users = $result->fetch();
     print_r($users);
   }
