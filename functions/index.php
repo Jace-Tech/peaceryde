@@ -27,33 +27,7 @@ function messageableUsers ($connect, $id) {
         $USERS = $users;
     }
     else {
-        if(getSubAdminService($connect, $id)['services']){
-            $subAdminServices = json_decode(getSubAdminService($connect, $id)['services'], true);
-
-            if(in_array("*", $subAdminServices)) {
-                $USERS = getAllUsers($connect);
-            }
-            else {
-                // $usersId = getSubAdminUsers($connect, $id);
-
-                // // Get admin assigned users
-                // $assignedUsers = array_map(function ($item){
-                //     global $connect;
-                //     $user = getUser($connect, $item['user']);
-                //     return $user;
-                // }, $usersId);
-
-                // Get users based of service
-                $usersByService = getUsersWithSameServiceAsSubAdmin($connect, $id);
-			
-                // get users by country
-                $usersByCountry = getUsersWithSameCountryAsSubAdmin($connect, $id);
-
-                // $SUBADMIN_USERS = array_unique(array_merge($assignedUsers, $usersByService, $usersByCountry));
-                $_USERS_ = array_merge($usersByService, $usersByCountry);
-                $USERS = array_unique($_USERS_, SORT_REGULAR);
-            }
-        }
+        $USERS = getUsersWithSameCountryAsSubAdmin($connect, $id);
     }
 
     return $USERS;

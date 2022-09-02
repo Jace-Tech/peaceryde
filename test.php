@@ -24,7 +24,6 @@ if(isset($_GET["admin"])) {
 
   // die();
   for($i =0; $i<count($countries); $i++){
-    print_r($countries[$i]);
     $query = "SELECT * FROM users";
     if($countries[$i] !== "*") {
       $query = "SELECT * FROM users WHERE country = ?";
@@ -41,17 +40,12 @@ if(isset($_GET["admin"])) {
     }
   }
 
-  print_r($matchedUsers);
+  return $matchedUsers;
 
-  // return $matchedUsers;
-
-  // $users = getUsersWithSameCountryAsSubAdmin($connect, $id);
-  // print_r($users);
 }
 
 if(isset($_GET["getAdmin"])) {
   $admins = getAllSubAdmins($connect);
-  print_r($admins);
 }
 
 ?>

@@ -301,34 +301,30 @@ function getAdminWithSameCountryAsUser ($connect, $userId) {
 }
 
 function getUsersWithSameCountryAsSubAdmin ($connect, $adminId) {
-    $countries = getSubAdminCountries($connect, $adminId);
+    
+  $countries = getSubAdminCountries($connect, $adminId); // ["*"] | ["niger", "nigeria"]
+  $matchedUsers = []; 
+
+  // die();
+  for($i =0; $i<count($countries); $i++){
     $query = "SELECT * FROM users";
-    $result = $connect->prepare($query);
-    $users = $result->fetchAll();
-
-    $matchedUsers = []; 
-
-    if(count($countries)) {
-        if($countries[0] == "*") {
-            $matchedUsers = $users;
-        }
-        else {
-            if(is_array($users)) {
-                if(count($users)) {
-                    foreach ($users as $user) {
-                        $usersCountry = $user['country'];
-                        if($usersCountry) {
-                            if(in_array($usersCountry, $countries))  {
-                                array_push($matchedUsers, $user);
-                            }
-                        }
-                    }
-                }
-            }
-        }
+    if($countries[$i] !== "*") {
+      $query = "SELECT * FROM users WHERE country = ?";
+    }else{
+      $countries[$i]=null;
     }
+    $result = $connect->prepare($query);
+    $result->execute([$countries[$i]]);
+    $users = $result->fetchAll();
+    for($j =0; $j<count($users); $j++){
+      if(!in_array($users[$j],$matchedUsers)) {
+        array_push($matchedUsers, $users[$j]);
+      }
+    }
+  }
 
-    return $matchedUsers;
+  return $matchedUsers;
+
 
 }
 
