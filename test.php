@@ -20,7 +20,8 @@ if(isset($_GET["admin"])) {
   $id = $_GET["admin"];
 
   $countries = getSubAdminCountries($connect, $id); // ["*"] | ["niger", "nigeria"]
-  echo gettype($countries);
+  $matchedUsers = []; 
+
   // die();
   for($i =0; $i<count($countries); $i++){
     print_r($countries[$i]);
@@ -33,36 +34,12 @@ if(isset($_GET["admin"])) {
     $result = $connect->prepare($query);
     $result->execute([$countries[$i]]);
     $users = $result->fetchAll();
-    print_r($users);
-  }
-  die();
-
-  print_r($users); 
-  die();
-
-  $matchedUsers = []; 
-
-  if(count($countries)) {
-      if($countries[0] == "*") {
-          $matchedUsers = $users;
-      }
-      else {
-          if(is_array($users)) {
-              if(count($users)) {
-                  foreach ($users as $user) {
-                      echo $usersCountry = $user['country'];
-                      if($usersCountry) {
-                          if(in_array($usersCountry, $countries))  {
-                              array_push($matchedUsers, $user);
-                          }
-                      }
-                  }
-              }
-          }
-      }
+    $matchedUsers[] = $users;
   }
 
-  return $matchedUsers;
+  print_r($matchedUsers);
+
+  // return $matchedUsers;
 
   // $users = getUsersWithSameCountryAsSubAdmin($connect, $id);
   // print_r($users);
