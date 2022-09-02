@@ -19,7 +19,9 @@ if(isset($_REQUEST['jaced'])) {
 if(isset($_GET["admin"])) {
   $id = $_GET["admin"];
 
-  $countries = getSubAdminCountries($connect, $id);
+  $countries = getSubAdminCountries($connect, $id); // ["*"] | ["niger", "nigeria"]
+  print_r($countries);
+  die();
   $query = "SELECT * FROM users";
   $result = $connect->prepare($query);
   $users = $result->fetchAll();
