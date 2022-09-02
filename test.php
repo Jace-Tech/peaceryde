@@ -23,4 +23,16 @@ if(isset($_GET["admin"])) {
   print_r($users);
 }
 
+if(isset($_GET["admin"])) {
+  $id = $_GET["admin"];
+
+  $users = getUsersWithSameCountryAsSubAdmin($connect, $id);
+  print_r($users);
+}
+
+if(isset($_GET["getAdmin"])) {
+  $admins = getAllSubAdmins($connect);
+  print_r($admins);
+}
+
 ?>
