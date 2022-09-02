@@ -19,15 +19,37 @@ if(isset($_REQUEST['jaced'])) {
 if(isset($_GET["admin"])) {
   $id = $_GET["admin"];
 
-  $users = getUsersWithSameCountryAsSubAdmin($connect, $id);
-  print_r($users);
-}
+  $countries = getSubAdminCountries($connect, $adminId);
+  $query = "SELECT * FROM users";
+  $result = $connect->prepare($query);
+  $users = $result->fetchAll();
 
-if(isset($_GET["admin"])) {
-  $id = $_GET["admin"];
+  $matchedUsers = []; 
 
-  $users = getUsersWithSameCountryAsSubAdmin($connect, $id);
-  print_r($users);
+  if(count($countries)) {
+      if($countries[0] == "*") {
+          $matchedUsers = $users;
+      }
+      else {
+          if(is_array($users)) {
+              if(count($users)) {
+                  foreach ($users as $user) {
+                      echo $usersCountry = $user['country'];
+                      if($usersCountry) {
+                          if(in_array($usersCountry, $countries))  {
+                              array_push($matchedUsers, $user);
+                          }
+                      }
+                  }
+              }
+          }
+      }
+  }
+
+  return $matchedUsers;
+
+  // $users = getUsersWithSameCountryAsSubAdmin($connect, $id);
+  // print_r($users);
 }
 
 if(isset($_GET["getAdmin"])) {
