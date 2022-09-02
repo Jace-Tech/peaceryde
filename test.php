@@ -27,7 +27,7 @@ if(isset($_GET["admin"])) {
     $query = "SELECT * FROM users";
     $result = $connect->prepare($query);
     $result->execute();
-    if($countries[$i] !== "*") {
+    if($countries[$i] != "*") {
       $query = "SELECT * FROM users WHERE country = ?";
       $result = $connect->prepare($query);
       $result->execute([$countries[$i]]);
