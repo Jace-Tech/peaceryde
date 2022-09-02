@@ -20,11 +20,18 @@ if(isset($_GET["admin"])) {
   $id = $_GET["admin"];
 
   $countries = getSubAdminCountries($connect, $id); // ["*"] | ["niger", "nigeria"]
-  print_r($countries);
+  // print_r($countries);
+  // die();
+  for($i =0; $i<count($countries); $i++){
+    $query = "SELECT * FROM users";
+    if($countries[$i] !== "*") {
+      $query = "SELECT * FROM users WHERE country=".$countries[$i];
+    }
+    $result = $connect->prepare($query);
+    $users = $result->fetch();
+    print_r($users);
+  }
   die();
-  $query = "SELECT * FROM users";
-  $result = $connect->prepare($query);
-  $users = $result->fetchAll();
 
   print_r($users); 
   die();
