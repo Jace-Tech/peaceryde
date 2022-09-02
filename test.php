@@ -20,7 +20,7 @@ if(isset($_GET["admin"])) {
   $id = $_GET["admin"];
 
   $countries = getSubAdminCountries($connect, $id); // ["*"] | ["niger", "nigeria"]
-  // print_r($countries);
+  echo gettype($countries);
   // die();
   for($i =0; $i<count($countries); $i++){
     print_r($countries[$i]);
