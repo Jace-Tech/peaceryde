@@ -130,7 +130,8 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
                     <div id="error-message" class="w-100 alert alert-dark text-sm">
                       All the fields are required!
                     </div>
-                    <div class="row">
+
+                    <!-- <div class="row">
                       <div class="col-md-5">
                         <div class="form-group">
                           <label class="form-label">First Name</label>
@@ -147,8 +148,73 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
                           </div>
                         </div>
                       </div>
+                    </div> -->
+                    <div class="row">
+                    <div class="col-md-3">
+                      <div class="form-group">
+                        <label class="form-label">First Name</label>
+                        <div class="input-group mb-3 biwidth">
+                          <input name="firstname" data-length required class="form-control firstname" value="<?= $FORM_APPY["firstname"] ?? "" ?>" placeholder="First Name (as on passport)">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <div class="form-group">
+                        <label class="form-label">Middle Name</label>
+                        <div class="input-group mb-3 biwidth">
+                          <input required name="middlename" data-length type="text" class="form-control middlename" placeholder="Middle Name (as on passport)">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <div class="form-group" style="margin-right: 0px;">
+                        <label class="form-label">Last Name</label>
+                        <div class="input-group mb-3 biwidth">
+                          <input class="form-control lastname" data-length name="lastname" type="text" value="<?= $FORM_APPY["lastname"] ?? "" ?>" required placeholder="Last Name (as on passport)">
+                        </div>
+                      </div>
                     </div>
                   </div>
+                  </div>
+                  <div class="formml">
+                  <div class="row">
+                    <div class="col-md-5">
+                    <select required id="country" data-length name="country" class="form-select formml select" aria-label="Default select example">
+                      <option value="">Country </option>
+                      <?php foreach ($country_fee as $key => $value) : ?>
+                        <option value="<?= $key ?>">
+                          <?php if ($key == "united states") : ?>
+                            United States of America
+                          <?php else : ?>
+                            <?= strtoupper(substr($key, 0, 1)) . substr($key, 1); ?>
+                          <?php endif; ?>
+                        </option>
+                      <?php endforeach; ?>
+                    </select>
+                    </div>
+                    <div class="col-md-5 genderwidth">
+                      <div class="row">
+                        <div class="col-md-12" style="margin-top: 35px;">
+                          <label class="gender">Gender</label>
+                          <br>
+                          <div class="form-check form-check-inline male">
+                            <div class="custom-control custom-radio">
+                              <label class="custom-control-label" for="customControlValidation2">Male</label>
+                              <input type="radio" class="custom-control-input" id="customControlValidation2" value="male" name="gender" required>
+                            </div>
+                          </div>
+                          <div class="form-check form-check-inline" style="margin-left: -20px;">
+                            <div class="custom-control custom-radio">
+                              <label class="custom-control-label" for="customControlValidation3">Female</label>
+                              <input type="radio" class="custom-control-input" id="customControlValidation3" value="female" name="gender">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-3"></div>
+                  </div>
+                </div>
                   <div class="form-row formml">
                     <div class="row">
                       <div class="col-md-5">

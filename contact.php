@@ -55,6 +55,11 @@
                     <p style="padding-top: 21px;">phone: <a href="" style="font-size: 18px; color: #080C58; ">+1 (302) 703-9867</a>
                     </p>
                     <br>
+                    <h2 style="font-size: 20px; color: #080C58; font-weight: 500;">Canada</h2>
+                    <p style="font-size: 18px; color: #080C58; padding-top: 21px;">6D - 7398 Yonge St Unit #310 Thornhill, ON L4J 8J2 Canada</p>
+                    <p style="padding-top: 21px;">phone: <a href="" style="font-size: 18px; color: #080C58; ">+1 (289) 913-6393</a>
+                    </p>
+                    <br>
                     <h2 style="font-size: 20px; color: #080C58; font-weight: 500;">United Kingdom</h2>
                     <p style="font-size: 18px; color: #080C58; padding-top: 21px;">Office 1651 182-184 High Street 
                       North, East Ham, London E6 2JA. United Kingdom.</p>

@@ -121,7 +121,7 @@
                             <br>
                             <p class="leadtext"> Joy has successfully registered and set up businesses for both local and foreign clients, and she currently acts as their legal representative in matters relating to Nigeria immigration laws, real estate investments, legal advice, litigation, mediation, arbitration, management of case files, legal drafting & contracts, legal representation in Superior courts etc. </p>
                             <br>
-                            <span>You may contact Joy for business incorporation via email <a class="maillink" href="mailto:incorporation@peacerydeafrica.com">(incorporation@peacerydeafrica.com)</a></span>
+                            <span>You may contact Joy for business incorporation via email <a class="maillink" href="mailto:joy@peacerydeafrica.com">(joy@peacerydeafrica.com)</a></span>
                          
                       </div>
                       
@@ -228,6 +228,9 @@
                         <li><a class="maillink" href="mailto:concierge@peacerydeafrica.com">•	concierge@peacerydeafrica.com</a></li>
                         <li><a class="maillink" href="mailto:support@peacerydeafrica.com">•	support@peacerydeafrica.com</a></li>
                         <li><a class="maillink" href="mailto:billing@peacerydeafrica.com">•	billing@peacerydeafrica.com </a></li>
+                        <li><a class="maillink" href="mailto:incorporation@peacerydeafrica.com">•	incorporation@peacerydeafrica.com </a></li>
+                        
+                        
                       </ul>
                       <!-- <span>You may contact Daniella <a class="maillink" href="mailto:billing@peacerydeafrica.com">billing@peacerydeafrica.com</a></span> -->
                        
