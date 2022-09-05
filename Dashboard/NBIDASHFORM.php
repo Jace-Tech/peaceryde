@@ -731,6 +731,9 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
                 email,
                 firstname,
                 lastname,
+                country,
+                middlename,
+                gender,
                 service,
                 mode
             } = JSON.parse(storedUser)
@@ -738,6 +741,9 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
             form.elements.email.value = email
             form.elements.firstname.value = firstname
             form.elements.lastname.value = lastname
+            form.elements?.middlename.value = middlename
+            form.elements?.gender.value = gender
+            form.elements?.country.value = country
             form.elements.shares.value = shares
             form.elements.coperateAddress.value = coperateAddress
         }

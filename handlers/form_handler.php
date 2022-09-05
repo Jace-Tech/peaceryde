@@ -146,6 +146,9 @@ if(isset($_POST['bi'])) {
         "lastname" => $lastname,
         "phone" => "+". $countryCode . $phone,
         "serviceId" => $service,
+        "gender" => $gender,
+        "country" => $country,
+        "middle_name" => $middlename,
     ];
 
 

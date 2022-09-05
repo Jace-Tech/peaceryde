@@ -136,7 +136,7 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
                         <div class="form-group">
                           <label class="form-label">First Name</label>
                           <div class="input-group mb-3 biwidth">
-                            <input type="text" required data-length name="firstname" value="<?= $FORM_APPY['firstname'] ?? "" ?>" class="form-control firstname2" placeholder="First Name">
+                            <input type="text" required data-length name="firstname" value="<?php // $FORM_APPY['firstname'] ?? "" ?>" class="form-control firstname2" placeholder="First Name">
                           </div>
                         </div>
                       </div>
@@ -144,7 +144,7 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
                         <div class="form-group">
                           <label class="form-label">Last Name</label>
                           <div class="input-group mb-3 biwidth">
-                            <input type="text" required data-length name="lastname" class="form-control firstname2" value="<?= $FORM_APPY['lastname'] ?? "" ?>" placeholder="Last Name">
+                            <input type="text" required data-length name="lastname" class="form-control firstname2" value="<?php // $FORM_APPY['lastname'] ?? "" ?>" placeholder="Last Name">
                           </div>
                         </div>
                       </div>
@@ -595,6 +595,9 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
         const lastname = form.lastname.value
         const countryCode = form.countryCode.value
         const email = form.email.value
+        const country = form.country.value
+        const gender = form.gender.value
+        const middlename = form.middlename.value
         const coperateAddress = form.coperateAddress.value
         const companyName = form.companyName.value
         const service = form.service.value
@@ -606,7 +609,9 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
           companyName,
           firstname,
           lastname,
-          coperateAddress,
+          country,
+          middlename,
+          gender,
           email,
           service,
           mode
