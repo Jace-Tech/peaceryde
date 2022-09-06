@@ -66,35 +66,35 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
     @media only screen and (max-width: 2560px) {
       .cardform {
         border: 1px solid #ffffff;
-        height: 900px;
+        height: 1100px;
       }
     }
 
     @media only screen and (max-width: 900px) {
       .cardform {
         border: 1px solid #ffffff;
-        height: 950px;
+        height: 1050px;
       }
     }
 
     @media only screen and (max-width: 720px) {
       .cardform {
         border: 1px solid #ffffff;
-        height: 1350px;
+        height: 1550px;
       }
     }
 
     @media only screen and (max-width: 600px) {
       .cardform {
         border: 1px solid #ffffff;
-        height: 1300px;
+        height: 1500px;
       }
     }
 
     @media only screen and (max-width: 540px) {
       .cardform {
         border: 1px solid #ffffff;
-        height: 1350px;
+        height: 1550px;
       }
     }
     .error {
@@ -179,7 +179,7 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
                   <div class="formml">
                   <div class="row">
                     <div class="col-md-5">
-                    <select required id="country" data-length name="country" class="form-select formml select" aria-label="Default select example">
+                    <select required id="country" data-length name="country" class="form-select select" aria-label="Default select example" style="width:100%">
                       <option value="">Country </option>
                       <?php foreach ($country_fee as $key => $value) : ?>
                         <option value="<?= $key ?>">
