@@ -150,7 +150,7 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
                       </div>
                     </div> -->
                     <div class="row">
-                    <div class="col-md-3">
+                    <div class="col-md-4">
                       <div class="form-group">
                         <label class="form-label">First Name</label>
                         <div class="input-group mb-3 biwidth">
@@ -158,6 +158,8 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
                         </div>
                       </div>
                     </div>
+                   </div>
+                   <div class="row">
                     <div class="col-md-3">
                       <div class="form-group">
                         <label class="form-label">Middle Name</label>
@@ -166,6 +168,8 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
                         </div>
                       </div>
                     </div>
+                  </div>
+                  <div class="row">
                     <div class="col-md-3">
                       <div class="form-group" style="margin-right: 0px;">
                         <label class="form-label">Last Name</label>
@@ -234,7 +238,7 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
                             <div class="input-group mb-3 biwidth">
                               <div class="input-group-prepend">
                                 <select required name="countryCode" id="" class="form-select code" aria-label="Default select example">
-                                  <option value="">Country code</option>
+                                  <option value="">+234</option>
                                   <optgroup label="Country Code">
                                     <option data-countryCode="DZ" value="213">Algeria (+213)</option>
                                     <option data-countryCode="AD" value="376">Andorra (+376)</option>
