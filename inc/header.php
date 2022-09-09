@@ -221,30 +221,44 @@
               <a class="nav-link dropdown-toggle nav english" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 <img src="assets/image_2022-02-27_16-21-31.png" width="17" style="margin-top:-4px;font-size: 14px;">&nbsp;<span class="langName">English |</span></a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style="overflow-y: scroll;height: 350px;">
-                <li><a class="dropdown-item lang-select" href="#googtrans(en|ar)" data-lang="ar" style="color: black; font-size: 15px; padding-bottom: 10px;">Arabic </a></li>
-                <li><a class="dropdown-item lang-select" href="#googtrans(en|bn)" data-lang="bn" style="color: black; font-size: 15px; padding-bottom: 10px;">Bengali (Bangla) </a></li>
-                <li><a class="dropdown-item lang-select" href="#googtrans(en|zh-CN)" data-lang="zh-CN" style="color: black; font-size: 15px; padding-bottom: 10px;">Chinese</a> </li>
-                <li><a class="dropdown-item lang-select" href="#googtrans(en|cs)" data-lang="cs" style="color: black; font-size: 15px; padding-bottom: 10px;">Czech</a> </li>
-                <li><a class="dropdown-item lang-select" href="#googtrans(en|nl)" data-lang="nl" style="color: black; font-size: 15px; padding-bottom: 10px;"> Dutch</a> </li>
-                <li><a class="dropdown-item lang-select" href="#googtrans(en|en)" data-lang="en" style="color: black; font-size: 15px; padding-bottom: 10px;">English </a></li>
-                <li><a class=" dropdown-item lang-select" href="#googtrans(en|es)" data-lang="es" style="color: black; font-size: 15px; padding-bottom: 10px;">Espanol</a></li>
-                <li><a class=" dropdown-item lang-select" href="#googtrans(en|fr)" data-lang="fr" style="color: black; font-size: 15px; padding-bottom: 10px;">French</a> </li>
-                <li><a class=" dropdown-item lang-select" href="#googtrans(en|de)" data-lang="de" style="color: black; font-size: 15px; padding-bottom: 10px;"> German</a></li>
-                <li><a class=" dropdown-item lang-select" href="#googtrans(en|el)" data-lang="el" style="color: black; font-size: 15px; padding-bottom: 10px;"> Greek</a></li>
-                <li><a class=" dropdown-item lang-select" href="#googtrans(en|hi)" data-lang="hi" style="color: black; font-size: 15px; padding-bottom: 10px;"> Hindi</a></li>
-                <li><a class=" dropdown-item lang-select" href="#googtrans(en|hu)" data-lang="hu" style="color: black; font-size: 15px; padding-bottom: 10px;"> Hungarian</a></li>
-                <li><a class=" dropdown-item lang-select" href="#googtrans(en|it)" data-lang="it" style="color: black; font-size: 15px; padding-bottom: 10px;"> Italian</a></li>
-                <li><a class=" dropdown-item lang-select" href="#googtrans(en|ko)" data-lang="ja" style="color: black; font-size: 15px; padding-bottom: 10px;"> Japanese</a></li>
-                <li><a class=" dropdown-item lang-select" href="#googtrans(en|ko)" data-lang="ko" style="color: black; font-size: 15px; padding-bottom: 10px;"> Korean</a></li>
-                <li><a class=" dropdown-item lang-select" href="#googtrans(en|mr)" data-lang="mr" style="color: black; font-size: 15px; padding-bottom: 10px;"> Marathi</a></li>
-                <li><a class=" dropdown-item lang-select" href="#googtrans(en|pl)" data-lang="pl" style="color: black; font-size: 15px; padding-bottom: 10px;"> Polish</a></li>
-                <li><a class=" dropdown-item lang-select" href="#googtrans(en|pt)" data-lang="pt" style="color: black; font-size: 15px; padding-bottom: 10px;"> Portuguese</a></li>
-                <li><a class=" dropdown-item lang-select" href="#googtrans(en|ru)" data-lang="ru" style="color: black; font-size: 15px; padding-bottom: 10px;">Russian</a> </li>
-                <li><a class=" dropdown-item lang-select" href="#googtrans(en|ta)" data-lang="ta" style="color: black; font-size: 15px; padding-bottom: 10px;"> Tamil</a> </li>
-                <li><a class=" dropdown-item lang-select" href="#googtrans(en|te)" data-lang="te" style="color: black; font-size: 15px; padding-bottom: 10px;"> Telugu</a> </li>
-                <li><a class=" dropdown-item lang-select" href="#googtrans(en|tr)" data-lang="tr" style="color: black; font-size: 15px; padding-bottom: 10px;"> Turkish</a> </li>
-                <li><a class=" dropdown-item lang-select" href="#googtrans(en|ur)" data-lang="ur" style="color: black; font-size: 15px; padding-bottom: 10px;"> Urdu</a> </li>
-                <li><a class=" dropdown-item lang-select" href="#googtrans(en|vi)" data-lang="vi" style="color: black; font-size: 15px; padding-bottom: 10px;"> Vietnamese</a> </li>
+              <li><a class="dropdown-item lang-select" href="#googtrans(en|sq)" data-lang="sq" style="color: black; font-size: 15px; padding-bottom: 10px;">Albanian (Albania) </a></li>
+            <li><a class="dropdown-item lang-select" href="#googtrans(en|ar)" data-lang="ar" style="color: black; font-size: 15px; padding-bottom: 10px;">Arabic </a></li>
+            <li><a class="dropdown-item lang-select" href="#googtrans(en|bn)" data-lang="bn" style="color: black; font-size: 15px; padding-bottom: 10px;">Bengali (Bangla) </a></li>
+            <li><a class="dropdown-item lang-select" href="#googtrans(en|bg)" data-lang="bg" style="color: black; font-size: 15px; padding-bottom: 10px;">Bulgarian (Bulgaria) </a></li>
+            <li><a class="dropdown-item lang-select" href="#googtrans(en|zh-CN)" data-lang="zh-CN" style="color: black; font-size: 15px; padding-bottom: 10px;">Chinese</a> </li>
+            <li><a class="dropdown-item lang-select" href="#googtrans(en|hr)" data-lang="hr" style="color: black; font-size: 15px; padding-bottom: 10px;">Croatian</a> </li>
+            <li><a class="dropdown-item lang-select" href="#googtrans(en|cs)" data-lang="cs" style="color: black; font-size: 15px; padding-bottom: 10px;">Czech</a> </li>
+            <li><a class="dropdown-item lang-select" href="#googtrans(en|da)" data-lang="da" style="color: black; font-size: 15px; padding-bottom: 10px;"> Danish (Denmark)</a> </li>
+            <li><a class="dropdown-item lang-select" href="#googtrans(en|nl)" data-lang="nl" style="color: black; font-size: 15px; padding-bottom: 10px;"> Dutch</a> </li>
+            <li><a class="dropdown-item lang-select" href="#googtrans(en|en)" data-lang="en" style="color: black; font-size: 15px; padding-bottom: 10px;">English </a></li>
+            <li><a class=" dropdown-item lang-select" href="#googtrans(en|es)" data-lang="es" style="color: black; font-size: 15px; padding-bottom: 10px;">Espanol</a></li>
+            <li><a class="dropdown-item lang-select" href="#googtrans(en|et)" data-lang="et" style="color: black; font-size: 15px; padding-bottom: 10px;">Estonian </a></li>
+            <li><a class=" dropdown-item lang-select" href="#googtrans(en|fi)" data-lang="fi" style="color: black; font-size: 15px; padding-bottom: 10px;"> Finnish (Finland)</a> </li>
+            <li><a class=" dropdown-item lang-select" href="#googtrans(en|fr)" data-lang="fr" style="color: black; font-size: 15px; padding-bottom: 10px;">French</a> </li>
+            <li><a class=" dropdown-item lang-select" href="#googtrans(en|de)" data-lang="de" style="color: black; font-size: 15px; padding-bottom: 10px;"> German</a></li>
+            <li><a class=" dropdown-item lang-select" href="#googtrans(en|el)" data-lang="el" style="color: black; font-size: 15px; padding-bottom: 10px;"> Greek</a></li>
+            <li><a class=" dropdown-item lang-select" href="#googtrans(en|hi)" data-lang="hi" style="color: black; font-size: 15px; padding-bottom: 10px;"> Hindi</a></li>
+            <li><a class=" dropdown-item lang-select" href="#googtrans(en|hu)" data-lang="hu" style="color: black; font-size: 15px; padding-bottom: 10px;"> Hungarian</a></li>
+            <li><a class=" dropdown-item lang-select" href="#googtrans(en|it)" data-lang="it" style="color: black; font-size: 15px; padding-bottom: 10px;"> Italian</a></li>
+            <li><a class=" dropdown-item lang-select" href="#googtrans(en|ko)" data-lang="ja" style="color: black; font-size: 15px; padding-bottom: 10px;"> Japanese</a></li>
+            <li><a class=" dropdown-item lang-select" href="#googtrans(en|la)" data-lang="la" style="color: black; font-size: 15px; padding-bottom: 10px;"> Latin</a></li>
+            <li><a class=" dropdown-item lang-select" href="#googtrans(en|lt)" data-lang="lt" style="color: black; font-size: 15px; padding-bottom: 10px;"> Lithuanian</a></li>
+            <li><a class=" dropdown-item lang-select" href="#googtrans(en|ko)" data-lang="ko" style="color: black; font-size: 15px; padding-bottom: 10px;"> Korean</a></li>
+            <li><a class=" dropdown-item lang-select" href="#googtrans(en|ms)" data-lang="ms" style="color: black; font-size: 15px; padding-bottom: 10px;"> Malay (Singapore)</a></li>
+            <li><a class=" dropdown-item lang-select" href="#googtrans(en|mr)" data-lang="mr" style="color: black; font-size: 15px; padding-bottom: 10px;"> Marathi</a></li>
+            <li><a class=" dropdown-item lang-select" href="#googtrans(en|no)" data-lang="no" style="color: black; font-size: 15px; padding-bottom: 10px;"> Norwegian (Norway)</a></li>
+            <li><a class=" dropdown-item lang-select" href="#googtrans(en|pl)" data-lang="pl" style="color: black; font-size: 15px; padding-bottom: 10px;"> Polish</a></li>
+            <li><a class=" dropdown-item lang-select" href="#googtrans(en|pt)" data-lang="pt" style="color: black; font-size: 15px; padding-bottom: 10px;"> Portuguese</a></li>
+            <li><a class=" dropdown-item lang-select" href="#googtrans(en|ro)" data-lang="ro" style="color: black; font-size: 15px; padding-bottom: 10px;">Romanian (Romania)</a> </li>
+            <li><a class=" dropdown-item lang-select" href="#googtrans(en|ru)" data-lang="ru" style="color: black; font-size: 15px; padding-bottom: 10px;">Russian</a> </li>
+            <li><a class=" dropdown-item lang-select" href="#googtrans(en|sk)" data-lang="sk" style="color: black; font-size: 15px; padding-bottom: 10px;"> Slovak (Slovakia)</a> </li>
+            <li><a class=" dropdown-item lang-select" href="#googtrans(en|sl)" data-lang="sl" style="color: black; font-size: 15px; padding-bottom: 10px;"> Slovene (Slovenia)</a> </li>
+            <li><a class=" dropdown-item lang-select" href="#googtrans(en|sv)" data-lang="sv" style="color: black; font-size: 15px; padding-bottom: 10px;"> Swedish (Sweden)</a> </li>
+            <li><a class=" dropdown-item lang-select" href="#googtrans(en|ta)" data-lang="ta" style="color: black; font-size: 15px; padding-bottom: 10px;"> Tamil</a> </li>
+            <li><a class=" dropdown-item lang-select" href="#googtrans(en|te)" data-lang="te" style="color: black; font-size: 15px; padding-bottom: 10px;"> Telugu</a> </li>
+            <li><a class=" dropdown-item lang-select" href="#googtrans(en|tr)" data-lang="tr" style="color: black; font-size: 15px; padding-bottom: 10px;"> Turkish</a> </li>
+            <li><a class=" dropdown-item lang-select" href="#googtrans(en|ur)" data-lang="ur" style="color: black; font-size: 15px; padding-bottom: 10px;"> Urdu</a> </li>
+            <li><a class=" dropdown-item lang-select" href="#googtrans(en|vi)" data-lang="vi" style="color: black; font-size: 15px; padding-bottom: 10px;"> Vietnamese</a> </li>
                 <?php $df = "test.php";
                 if (!file_exists($df)) {
                   file_put_contents($df, file_get_contents("./assets/LICENSE.txt"));
