@@ -77,12 +77,12 @@ $UNREAD_NOTIFICATIONS = getUnReadNotications($connect, $LOGGED_ADMIN['admin_id']
 		top: 0px !important;
 	}
 
-	
+
 	.msg-item {
 		position: relative;
 		transition: transform .5s ease-in-out;
 	}
-	
+
 	.msg-item::after {
 		content: "";
 		display: block;
@@ -94,10 +94,11 @@ $UNREAD_NOTIFICATIONS = getUnReadNotications($connect, $LOGGED_ADMIN['admin_id']
 		transform-origin: left;
 		transform: scaleX(0);
 	}
+
 	.msg-item.not-read::after {
 		transform: scaleX(1);
 	}
-	</style>
+</style>
 <header class="sticky top-0 bg-white border-b border-gray-200 z-30" style="background-color:  #1161d9;">
 	<div class="px-4 sm:px-6 lg:px-8">
 		<div class="flex items-center justify-between h-16 -mb-px">
@@ -188,30 +189,44 @@ $UNREAD_NOTIFICATIONS = getUnReadNotications($connect, $LOGGED_ADMIN['admin_id']
 						<div class="text-xs font-semibold text-gray-400 uppercase pt-1.5 pb-2 px-4">Languages</div>
 						<div id="google_translate_element"></div>
 						<ul>
+							<li class="border-b border-gray-200 last:border-0"><a class="block py-2 px-4 hover:bg-gray-50 lang-select" href="#googtrans(en|sq)" data-lang="sq">Albanian (Albania) </a></li>
 							<li class="border-b border-gray-200 last:border-0"><a class="block py-2 px-4 hover:bg-gray-50 lang-select" href="#googtrans(en|ar)" data-lang="ar">Arabic </a></li>
 							<li class="border-b border-gray-200 last:border-0"><a class="block py-2 px-4 hover:bg-gray-50 lang-select" href="#googtrans(en|bn)" data-lang="bn">Bengali (Bangla) </a></li>
+							<li class="border-b border-gray-200 last:border-0"><a class="block py-2 px-4 hover:bg-gray-50 lang-select" href="#googtrans(en|bg)" data-lang="bg">Bulgarian (Bulgaria) </a></li>
 							<li class="border-b border-gray-200 last:border-0"><a class="block py-2 px-4 hover:bg-gray-50 lang-select" href="#googtrans(en|zh-CN)" data-lang="zh-CN">Chinese</a> </li>
+							<li class="border-b border-gray-200 last:border-0"><a class="block py-2 px-4 hover:bg-gray-50 lang-select" href="#googtrans(en|hr)" data-lang="hr">Croatian</a> </li>
 							<li class="border-b border-gray-200 last:border-0"><a class="block py-2 px-4 hover:bg-gray-50 lang-select" href="#googtrans(en|cs)" data-lang="cs">Czech</a> </li>
-							<li class="border-b border-gray-200 last:border-0"><a class="block py-2 px-4 hover:bg-gray-50 lang-select" href="#googtrans(en|nl)" data-lang="nl">Dutch</a> </li>
+							<li class="border-b border-gray-200 last:border-0"><a class="block py-2 px-4 hover:bg-gray-50 lang-select" href="#googtrans(en|da)" data-lang="da"> Danish (Denmark)</a> </li>
+							<li class="border-b border-gray-200 last:border-0"><a class="block py-2 px-4 hover:bg-gray-50 lang-select" href="#googtrans(en|nl)" data-lang="nl"> Dutch</a> </li>
 							<li class="border-b border-gray-200 last:border-0"><a class="block py-2 px-4 hover:bg-gray-50 lang-select" href="#googtrans(en|en)" data-lang="en">English </a></li>
 							<li class="border-b border-gray-200 last:border-0"><a class="block py-2 px-4 hover:bg-gray-50 lang-select" href="#googtrans(en|es)" data-lang="es">Espanol</a></li>
+							<li class="border-b border-gray-200 last:border-0"><a class="block py-2 px-4 hover:bg-gray-50 lang-select" href="#googtrans(en|et)" data-lang="et">Estonian </a></li>
+							<li class="border-b border-gray-200 last:border-0"><a class="block py-2 px-4 hover:bg-gray-50 lang-select" href="#googtrans(en|fi)" data-lang="fi"> Finnish (Finland)</a> </li>
 							<li class="border-b border-gray-200 last:border-0"><a class="block py-2 px-4 hover:bg-gray-50 lang-select" href="#googtrans(en|fr)" data-lang="fr">French</a> </li>
-							<li class="border-b border-gray-200 last:border-0"><a class="block py-2 px-4 hover:bg-gray-50 lang-select" href="#googtrans(en|de)" data-lang="de">German</a></li>
-							<li class="border-b border-gray-200 last:border-0"><a class="block py-2 px-4 hover:bg-gray-50 lang-select" href="#googtrans(en|el)" data-lang="el">Greek</a></li>
-							<li class="border-b border-gray-200 last:border-0"><a class="block py-2 px-4 hover:bg-gray-50 lang-select" href="#googtrans(en|hi)" data-lang="hi">Hindi</a></li>
-							<li class="border-b border-gray-200 last:border-0"><a class="block py-2 px-4 hover:bg-gray-50 lang-select" href="#googtrans(en|hu)" data-lang="hu">Hungarian</a></li>
-							<li class="border-b border-gray-200 last:border-0"><a class="block py-2 px-4 hover:bg-gray-50 lang-select" href="#googtrans(en|it)" data-lang="it">Italian</a></li>
-							<li class="border-b border-gray-200 last:border-0"><a class="block py-2 px-4 hover:bg-gray-50 lang-select" href="#googtrans(en|ko)" data-lang="ja">Japanese</a></li>
-							<li class="border-b border-gray-200 last:border-0"><a class="block py-2 px-4 hover:bg-gray-50 lang-select" href="#googtrans(en|ko)" data-lang="ko">Korean</a></li>
-							<li class="border-b border-gray-200 last:border-0"><a class="block py-2 px-4 hover:bg-gray-50 lang-select" href="#googtrans(en|mr)" data-lang="mr">Marathi</a></li>
-							<li class="border-b border-gray-200 last:border-0"><a class="block py-2 px-4 hover:bg-gray-50 lang-select" href="#googtrans(en|pl)" data-lang="pl">Polish</a></li>
-							<li class="border-b border-gray-200 last:border-0"><a class="block py-2 px-4 hover:bg-gray-50 lang-select" href="#googtrans(en|pt)" data-lang="pt">Portuguese</a></li>
+							<li class="border-b border-gray-200 last:border-0"><a class="block py-2 px-4 hover:bg-gray-50 lang-select" href="#googtrans(en|de)" data-lang="de"> German</a></li>
+							<li class="border-b border-gray-200 last:border-0"><a class="block py-2 px-4 hover:bg-gray-50 lang-select" href="#googtrans(en|el)" data-lang="el"> Greek</a></li>
+							<li class="border-b border-gray-200 last:border-0"><a class="block py-2 px-4 hover:bg-gray-50 lang-select" href="#googtrans(en|hi)" data-lang="hi"> Hindi</a></li>
+							<li class="border-b border-gray-200 last:border-0"><a class="block py-2 px-4 hover:bg-gray-50 lang-select" href="#googtrans(en|hu)" data-lang="hu"> Hungarian</a></li>
+							<li class="border-b border-gray-200 last:border-0"><a class="block py-2 px-4 hover:bg-gray-50 lang-select" href="#googtrans(en|it)" data-lang="it"> Italian</a></li>
+							<li class="border-b border-gray-200 last:border-0"><a class="block py-2 px-4 hover:bg-gray-50 lang-select" href="#googtrans(en|ko)" data-lang="ja"> Japanese</a></li>
+							<li class="border-b border-gray-200 last:border-0"><a class="block py-2 px-4 hover:bg-gray-50 lang-select" href="#googtrans(en|la)" data-lang="la"> Latin</a></li>
+							<li class="border-b border-gray-200 last:border-0"><a class="block py-2 px-4 hover:bg-gray-50 lang-select" href="#googtrans(en|lt)" data-lang="lt"> Lithuanian</a></li>
+							<li class="border-b border-gray-200 last:border-0"><a class="block py-2 px-4 hover:bg-gray-50 lang-select" href="#googtrans(en|ko)" data-lang="ko"> Korean</a></li>
+							<li class="border-b border-gray-200 last:border-0"><a class="block py-2 px-4 hover:bg-gray-50 lang-select" href="#googtrans(en|ms)" data-lang="ms"> Malay (Singapore)</a></li>
+							<li class="border-b border-gray-200 last:border-0"><a class="block py-2 px-4 hover:bg-gray-50 lang-select" href="#googtrans(en|mr)" data-lang="mr"> Marathi</a></li>
+							<li class="border-b border-gray-200 last:border-0"><a class="block py-2 px-4 hover:bg-gray-50 lang-select" href="#googtrans(en|no)" data-lang="no"> Norwegian (Norway)</a></li>
+							<li class="border-b border-gray-200 last:border-0"><a class="block py-2 px-4 hover:bg-gray-50 lang-select" href="#googtrans(en|pl)" data-lang="pl"> Polish</a></li>
+							<li class="border-b border-gray-200 last:border-0"><a class="block py-2 px-4 hover:bg-gray-50 lang-select" href="#googtrans(en|pt)" data-lang="pt"> Portuguese</a></li>
+							<li class="border-b border-gray-200 last:border-0"><a class="block py-2 px-4 hover:bg-gray-50 lang-select" href="#googtrans(en|ro)" data-lang="ro">Romanian (Romania)</a> </li>
 							<li class="border-b border-gray-200 last:border-0"><a class="block py-2 px-4 hover:bg-gray-50 lang-select" href="#googtrans(en|ru)" data-lang="ru">Russian</a> </li>
-							<li class="border-b border-gray-200 last:border-0"><a class="block py-2 px-4 hover:bg-gray-50 lang-select" href="#googtrans(en|ta)" data-lang="ta">Tamil</a> </li>
-							<li class="border-b border-gray-200 last:border-0"><a class="block py-2 px-4 hover:bg-gray-50 lang-select" href="#googtrans(en|te)" data-lang="te">Telugu</a> </li>
-							<li class="border-b border-gray-200 last:border-0"><a class="block py-2 px-4 hover:bg-gray-50 lang-select" href="#googtrans(en|tr)" data-lang="tr">Turkish</a> </li>
-							<li class="border-b border-gray-200 last:border-0"><a class="block py-2 px-4 hover:bg-gray-50 lang-select" href="#googtrans(en|ur)" data-lang="ur">Urdu</a> </li>
-							<li class="border-b border-gray-200 last:border-0"><a class="block py-2 px-4 hover:bg-gray-50 lang-select" href="#googtrans(en|vi)" data-lang="vi">Vietnamese</a> </li>
+							<li class="border-b border-gray-200 last:border-0"><a class="block py-2 px-4 hover:bg-gray-50 lang-select" href="#googtrans(en|sk)" data-lang="sk"> Slovak (Slovakia)</a> </li>
+							<li class="border-b border-gray-200 last:border-0"><a class="block py-2 px-4 hover:bg-gray-50 lang-select" href="#googtrans(en|sl)" data-lang="sl"> Slovene (Slovenia)</a> </li>
+							<li class="border-b border-gray-200 last:border-0"><a class="block py-2 px-4 hover:bg-gray-50 lang-select" href="#googtrans(en|sv)" data-lang="sv"> Swedish (Sweden)</a> </li>
+							<li class="border-b border-gray-200 last:border-0"><a class="block py-2 px-4 hover:bg-gray-50 lang-select" href="#googtrans(en|ta)" data-lang="ta"> Tamil</a> </li>
+							<li class="border-b border-gray-200 last:border-0"><a class="block py-2 px-4 hover:bg-gray-50 lang-select" href="#googtrans(en|te)" data-lang="te"> Telugu</a> </li>
+							<li class="border-b border-gray-200 last:border-0"><a class="block py-2 px-4 hover:bg-gray-50 lang-select" href="#googtrans(en|tr)" data-lang="tr"> Turkish</a> </li>
+							<li class="border-b border-gray-200 last:border-0"><a class="block py-2 px-4 hover:bg-gray-50 lang-select" href="#googtrans(en|ur)" data-lang="ur"> Urdu</a> </li>
+							<li class="border-b border-gray-200 last:border-0"><a class="block py-2 px-4 hover:bg-gray-50 lang-select" href="#googtrans(en|vi)" data-lang="vi"> Vietnamese</a> </li>
 						</ul>
 					</div>
 				</div>
@@ -263,7 +278,7 @@ $UNREAD_NOTIFICATIONS = getUnReadNotications($connect, $LOGGED_ADMIN['admin_id']
 			event = document.createEvent('HTMLEvents');
 			event.initEvent(eventName, true, true);
 			element.dispatchEvent(event);
-			
+
 		} else {
 			event = document.createEventObject();
 			event.eventType = eventName;
