@@ -66,35 +66,39 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
     @media only screen and (max-width: 2560px) {
       .cardform {
         border: 1px solid #ffffff;
-        height: 1100px;
+        height: 1300px;
+      }
+      .nbvformheight {
+          position: relative;
+          height: 2000px;
       }
     }
 
     @media only screen and (max-width: 900px) {
       .cardform {
         border: 1px solid #ffffff;
-        height: 1050px;
+        height: 1350px;
       }
     }
 
     @media only screen and (max-width: 720px) {
       .cardform {
         border: 1px solid #ffffff;
-        height: 1550px;
+        height: 1650px;
       }
     }
 
     @media only screen and (max-width: 600px) {
       .cardform {
         border: 1px solid #ffffff;
-        height: 1500px;
+        height: 1600px;
       }
     }
 
     @media only screen and (max-width: 540px) {
       .cardform {
         border: 1px solid #ffffff;
-        height: 1550px;
+        height: 1650px;
       }
     }
     .error {
@@ -150,7 +154,7 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
                       </div>
                     </div> -->
                     <div class="row">
-                      <div class="col-md-5">
+                      <div class="col-md-12">
                         <div class="form-group">
                           <label class="form-label">First Name</label>
                           <div class="input-group mb-3 biwidth">
@@ -163,7 +167,7 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
                   </div>
                   <div class="form-row formml">
                   <div class="row">
-                        <div class="col-md-5">
+                        <div class="col-md-12">
                           <div class="form-group">
                             <label class="form-label">Middle Name</label>
                             <div class="input-group mb-3 biwidth">
@@ -176,7 +180,7 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
                   </div>
                   <div class="form-row formml">
                   <div class="row">
-                    <div class="col-md-5">
+                    <div class="col-md-12">
                       <div class="form-group" style="margin-right: 0px;">
                         <label class="form-label">Last Name</label>
                         <div class="input-group mb-3 biwidth">
