@@ -28,8 +28,7 @@ if(isset($_REQUEST['contact'])) {
     $template = str_replace("{{ email }}", $userEmail, $template);
     $template = str_replace("{{ phone }}", $phone, $template);
 
-
-    sendMail("Contact Form Message", $template, $from, $email, true);
+    sendMail("Contact Form Message", $template, $from, $toEmail, true);
     setUserAlert("Message sent", "success");  
 
     header("Location:" . $_SERVER['HTTP_REFERER']);
