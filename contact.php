@@ -80,7 +80,7 @@
                         <h2 style="padding-top:53px; font-size: 20px; text-align: center; color: #000000; font-weight: 500;">
                             Contact Us Form
                         </h2>
-                        <form class="contactform" action="./handlers/contact_handler.php">
+                        <form class="contactform" method="post" action="./handlers/contact_handler.php">
                             <label style="font-size: 18px;">Name</label>
                             <br>
                             <input required name="name" type="text" class="form-control" style="border-top:transparent;border-left: transparent;border-right: transparent; border-bottom:1px solid #000000;margin-top: -10px;">
