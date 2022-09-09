@@ -15,6 +15,9 @@ if(isset($_REQUEST['contact'])) {
     $phone = filter_var($_POST["phone"], FILTER_SANITIZE_STRING);
     $userEmail = filter_var($_POST["email"], FILTER_SANITIZE_EMAIL);
     $message = filter_var($_POST["message"], FILTER_SANITIZE_STRING);
+
+    print_r($_POST);
+    die();
     
     $from = "noreply@peacerydeafrica.com";
     // $toEmail = "info@peacerydeafrica.com";
