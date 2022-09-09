@@ -150,27 +150,33 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
                       </div>
                     </div> -->
                     <div class="row">
-                    <div class="col-md-4">
-                      <div class="form-group">
-                        <label class="form-label">First Name</label>
-                        <div class="input-group mb-3 biwidth">
-                          <input name="firstname" data-length required class="form-control firstname" value="<?= $FORM_APPY["firstname"] ?? "" ?>" placeholder="First Name (as on passport)">
+                      <div class="col-md-5">
+                        <div class="form-group">
+                          <label class="form-label">First Name</label>
+                          <div class="input-group mb-3 biwidth">
+                            <input name="firstname" data-length required class="form-control firstname" value="<?= $FORM_APPY["firstname"] ?? "" ?>" placeholder="First Name (as on passport)">
+                          </div>
                         </div>
                       </div>
                     </div>
-                   </div>
-                   <div class="row">
-                    <div class="col-md-3">
-                      <div class="form-group">
-                        <label class="form-label">Middle Name</label>
-                        <div class="input-group mb-3 biwidth">
-                          <input required name="middlename" data-length type="text" class="form-control middlename" placeholder="Middle Name (as on passport)">
-                        </div>
-                      </div>
-                    </div>
+                   
                   </div>
+                  <div class="form-row formml">
                   <div class="row">
-                    <div class="col-md-3">
+                        <div class="col-md-5">
+                          <div class="form-group">
+                            <label class="form-label">Middle Name</label>
+                            <div class="input-group mb-3 biwidth">
+                              <input required name="middlename" data-length type="text" class="form-control middlename" placeholder="Middle Name (as on passport)">
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                 
+                  </div>
+                  <div class="form-row formml">
+                  <div class="row">
+                    <div class="col-md-5">
                       <div class="form-group" style="margin-right: 0px;">
                         <label class="form-label">Last Name</label>
                         <div class="input-group mb-3 biwidth">
@@ -182,7 +188,7 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
                   </div>
                   <div class="formml">
                   <div class="row">
-                    <div class="col-md-5">
+                    <div class="col-md-5" style="margin-top: 35px;">
                     <select required id="country" data-length name="country" class="form-select select" aria-label="Default select example" style="width:100%">
                       <option value="">Country </option>
                       <?php foreach ($country_fee as $key => $value) : ?>
