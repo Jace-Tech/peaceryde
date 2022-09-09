@@ -12,10 +12,13 @@ require_once("../models/Message.php");
 if(isset($_REQUEST['contact'])) {
     $name = filter_var($_POST["name"], FILTER_SANITIZE_STRING);
     $phone = filter_var($_POST["phone"], FILTER_SANITIZE_STRING);
-    $email = filter_var($_POST["email"], FILTER_SANITIZE_EMAIL);
+    $from = filter_var($_POST["email"], FILTER_SANITIZE_EMAIL);
     $message = filter_var($_POST["message"], FILTER_SANITIZE_STRING);
 
-    sendMail("Contact Form Message", $message, $email, "info@peacerydeafrica.com");
+    // $from = "info@peacerydeafrica.com";
+    $email = "jacealex151@gmail.com";
+
+    sendMail("Contact Form Message", $message, $email, $from);
     setUserAlert("Message sent", "success");  
 
     header("Location:" . $_SERVER['HTTP_REFERER']);
