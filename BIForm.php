@@ -148,6 +148,29 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
                               <input class="form-control firstname" data-length name="lastname" type="text" value="<?= $FORM_APPY["lastname"] ?? "" ?>" required placeholder="Last Name (as on passport)">
                             </div>
                           </div>
+                          <div class="form-group">
+                            <label class="form-label">Middle Name</label>
+                            <div class="input-group mb-3">
+                              <input required name="middlename" data-length type="text" class="form-control firstname" placeholder="Middle Name (as on passport)">
+                            </div>
+                          </div>
+                          <div class="form-group" >
+                          
+                            <label>Gender</label>
+                            <br>
+                            <div class="form-check form-check-inline" style="margin-top:20px; padding-left:0px">
+                              <div class="custom-control custom-radio">
+                                <label class="custom-control-label" for="customControlValidation2">Male</label>
+                                <input type="radio" class="custom-control-input" id="customControlValidation2" value="male" name="gender" required>
+                              </div>
+                            </div>
+                            <div class="form-check form-check-inline" style="margin-left: -20px;">
+                              <div class="custom-control custom-radio">
+                                <label class="custom-control-label" for="customControlValidation3">Female</label>
+                                <input type="radio" class="custom-control-input" id="customControlValidation3" value="female" name="gender">
+                              </div>
+                            </div>
+                          </div>
                           <div class="form-group" style="">
                           <label class="form-label">Country</label>
                               <select required id="country" data-length name="country" class="form-select select" aria-label="Default select example" style="width:100%">
@@ -390,28 +413,18 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
                               <input type="tel" required name="phone" value="<?= $FORM_APPY['phone'] ?? "" ?>" class="form-control firstname" placeholder="070XXXXXXXX">
                             </div>
                           </div>
-                          <div class="form-group">
+                          
+                        
+                      </div>
+                      
+                      <div class="col-md-5">
+                          
+                      <div class="form-group">
                           <label class="form-label">Company Name</label>
                           <div class="input-group mb-3">
                             <input type="text" required name="companyName" data-length class="form-control firstname" placeholder="Company Name">
                           </div>
                         </div>
-                        <div class="form-group">
-                          <label class="form-label">No of Shares</label>
-                          <div class="input-group mb-3">
-                            <input type="number" required name="shares" class="form-control firstname" placeholder="No of Shares">
-                          </div>
-                        </div>
-                      </div>
-                      
-                      <div class="col-md-5">
-                          <div class="form-group">
-                            <label class="form-label">Middle Name</label>
-                            <div class="input-group mb-3">
-                              <input required name="middlename" data-length type="text" class="form-control firstname" placeholder="Middle Name (as on passport)">
-                            </div>
-                          </div>
-
                           <div class="form-group">
                             <label class="mb-2">Personal Email</label>
                             <input type="hidden" name="bi">
@@ -421,23 +434,7 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
                             </div>
                           </div>
                           
-                          <div class="form-group" >
                           
-                            <label>Gender</label>
-                            <br>
-                            <div class="form-check form-check-inline" style="margin-top:20px; padding-left:0px">
-                              <div class="custom-control custom-radio">
-                                <label class="custom-control-label" for="customControlValidation2">Male</label>
-                                <input type="radio" class="custom-control-input" id="customControlValidation2" value="male" name="gender" required>
-                              </div>
-                            </div>
-                            <div class="form-check form-check-inline" style="margin-left: -20px;">
-                              <div class="custom-control custom-radio">
-                                <label class="custom-control-label" for="customControlValidation3">Female</label>
-                                <input type="radio" class="custom-control-input" id="customControlValidation3" value="female" name="gender">
-                              </div>
-                            </div>
-                          </div>
                           <div class="form-group">
                           <label class="form-label">Corporate Address</label>
                           <div class="input-group mb-3">
@@ -451,7 +448,12 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
                           </div>
                           <p style="color: #C8730F; font-family: Ubuntu; font-size: 13px; font-style: normal; font-weight: 400;">You must be at least 18 years old to use this website.</p>
                         </div>
-                        
+                        <div class="form-group">
+                          <label class="form-label">No of Shares</label>
+                          <div class="input-group mb-3">
+                            <input type="number" required name="shares" class="form-control firstname" placeholder="No of Shares">
+                          </div>
+                        </div>
 
                       </div>
 
