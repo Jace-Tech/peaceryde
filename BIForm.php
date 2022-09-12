@@ -446,7 +446,7 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
                           
                             <label>Gender</label>
                             <br>
-                            <div class="form-check form-check-inline" style="margin-top:20px">
+                            <div class="form-check form-check-inline" style="margin-top:20px; padding-left:0px">
                               <div class="custom-control custom-radio">
                                 <label class="custom-control-label" for="customControlValidation2">Male</label>
                                 <input type="radio" class="custom-control-input" id="customControlValidation2" value="male" name="gender" required>
@@ -460,18 +460,19 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
                             </div>
                           </div>
                           <div class="form-group">
+                          <label class="form-label">Corporate Address</label>
+                          <div class="input-group mb-3 biwidth">
+                            <input type="text" required name="coperateAddress" class="form-control firstname" placeholder="Corporate Address">
+                          </div>
+                        </div>
+                          <div class="form-group">
                           <label class="form-label">Date of Birth</label>
                           <div class="input-group mb-3 biwidth">
                             <input type="text" data-date readonly required name="dob" class="form-control firstname" placeholder="dd-mm-yyyy" id="datepicker">
                           </div>
                           <p style="color: #C8730F; font-family: Ubuntu; font-size: 13px; font-style: normal; font-weight: 400;">You must be at least 18 years old to use this website.</p>
                         </div>
-                        <div class="form-group">
-                          <label class="form-label">Corporate Address</label>
-                          <div class="input-group mb-3 biwidth">
-                            <input type="text" required name="coperateAddress" class="form-control firstname" placeholder="Corporate Address">
-                          </div>
-                        </div>
+                        
 
                       </div>
                     </div>
