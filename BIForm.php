@@ -471,7 +471,7 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
                       </div>
                     </div>
                   </div>
-                  <div class="bibtn">
+                  <div class="bibtn" style="margin-left: 0px;">
                     <button type="submit" name="bi" class="btn proceed">Proceed to payment</button>
                   </div>
                     </div>
