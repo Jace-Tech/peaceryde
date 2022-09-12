@@ -154,23 +154,7 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
                               <input required name="middlename" data-length type="text" class="form-control firstname" placeholder="Middle Name (as on passport)">
                             </div>
                           </div>
-                          <div class="form-group" >
                           
-                            <label>Gender</label>
-                            <br>
-                            <div class="form-check form-check-inline" style="margin-top:20px; padding-left:0px">
-                              <div class="custom-control custom-radio">
-                                <label class="custom-control-label" for="customControlValidation2">Male</label>
-                                <input type="radio" class="custom-control-input" id="customControlValidation2" value="male" name="gender" required>
-                              </div>
-                            </div>
-                            <div class="form-check form-check-inline" style="margin-left: -20px;">
-                              <div class="custom-control custom-radio">
-                                <label class="custom-control-label" for="customControlValidation3">Female</label>
-                                <input type="radio" class="custom-control-input" id="customControlValidation3" value="female" name="gender">
-                              </div>
-                            </div>
-                          </div>
                           <div class="form-group" style="">
                           <label class="form-label">Country</label>
                               <select required id="country" data-length name="country" class="form-select select" aria-label="Default select example" style="width:100%">
@@ -411,6 +395,23 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
                                 </select>
                               </div>
                               <input type="tel" required name="phone" value="<?= $FORM_APPY['phone'] ?? "" ?>" class="form-control firstname" placeholder="070XXXXXXXX">
+                            </div>
+                          </div>
+                          <div class="form-group" >
+                          
+                            <label>Gender</label>
+                            <br>
+                            <div class="form-check form-check-inline" style="margin-top:20px; padding-left:0px">
+                              <div class="custom-control custom-radio">
+                                <label class="custom-control-label" for="customControlValidation2">Male</label>
+                                <input type="radio" class="custom-control-input" id="customControlValidation2" value="male" name="gender" required>
+                              </div>
+                            </div>
+                            <div class="form-check form-check-inline" style="margin-left: -20px;">
+                              <div class="custom-control custom-radio">
+                                <label class="custom-control-label" for="customControlValidation3">Female</label>
+                                <input type="radio" class="custom-control-input" id="customControlValidation3" value="female" name="gender">
+                              </div>
                             </div>
                           </div>
                           

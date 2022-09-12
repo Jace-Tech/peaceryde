@@ -90,6 +90,9 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
             </div>
             <div>
               <form data-form action="./handlers/form_handler.php" method="post">
+                
+
+                <div class="container mt-15">
                 <select required name="title" class="form-select title" aria-label="Default select example">
                   <option value="">Title</option>
                   <?php foreach ($titles as $title) : ?>
@@ -99,8 +102,6 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
                   <?php endforeach; ?>
                 </select>
                 <p class="yourname">Your name must be entered in English as it appears on your passport.</p>
-
-                <div class="container mt-15">
                   <div id="error-message" class="w-100 alert alert-dark text-sm">
                         All the fields are required!
                   </div>
@@ -125,7 +126,7 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
                         </div>
                       </div>
                       <div class="form-group">
-                        <label class="gender">Gender</label>
+                        <label>Gender</label>
                           <br>
                           <div class="form-check form-check-inline">
                             <div class="custom-control custom-radio">
@@ -141,8 +142,8 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
                           </div>
                       </div>
                       <div class="form-group">
-                        <p class="formml please">Please select below your Nationality (as on passport)</p>
-                        <select required id="country" data-length name="country" class="form-select formml select" aria-label="Default select example">
+                        <p class=" please">Please select below your Nationality (as on passport)</p>
+                        <select required id="country" data-length name="country" class="form-select select" aria-label="Default select example">
                           <option value="">Country </option>
                           <?php foreach ($country_fee as $key => $value) : ?>
                             <option value="<?= $key ?>">
@@ -171,6 +172,7 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
                       </div>
                       <div class="form-group">
                         <label style="padding-top:10px">Mobile Number</label>
+                        <br>
                         <div class="input-group mb-3">
                           <div class="input-group-prepend">
                             <select name="countryCode" id="" required name="country_code" aria-label="Default select example" class="form-select code" aria-label="Default select example">
