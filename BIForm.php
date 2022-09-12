@@ -441,6 +441,12 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
                             <input type="text" required name="coperateAddress" class="form-control firstname" placeholder="Corporate Address">
                           </div>
                         </div>
+                        <div class="form-group">
+                          <label class="form-label">No of Shares</label>
+                          <div class="input-group mb-3">
+                            <input type="number" required name="shares" class="form-control firstname" placeholder="No of Shares">
+                          </div>
+                        </div>
                           <div class="form-group">
                           <label class="form-label">Date of Birth</label>
                           <div class="input-group mb-3">
@@ -448,12 +454,7 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
                           </div>
                           <p style="color: #C8730F; font-family: Ubuntu; font-size: 13px; font-style: normal; font-weight: 400;">You must be at least 18 years old to use this website.</p>
                         </div>
-                        <div class="form-group">
-                          <label class="form-label">No of Shares</label>
-                          <div class="input-group mb-3">
-                            <input type="number" required name="shares" class="form-control firstname" placeholder="No of Shares">
-                          </div>
-                        </div>
+                        
 
                       </div>
 
