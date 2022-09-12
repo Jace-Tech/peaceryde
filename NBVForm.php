@@ -110,7 +110,7 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
                   <div id="error-message" class="w-100 alert alert-dark text-sm">
                         All the fields are required!
                   </div>
-                  <div class="row formml" style="margin-top:5%>
+                  <div class="row formml" style="margin-top:5%">
                     <div class="col-md-5">
                       <div class="form-group">
                         <label class="form-label">First Name</label>
