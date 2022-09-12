@@ -93,7 +93,9 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
                 
 
                 <div class="container mt-15">
-                <select required name="title" class="form-select title" aria-label="Default select example">
+                  <div class="row">
+                    <div class="col-md-7">
+                    <select required name="title" class="form-select title" aria-label="Default select example">
                   <option value="">Title</option>
                   <?php foreach ($titles as $title) : ?>
                     <option value="<?= $title ?>">
@@ -102,10 +104,13 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
                   <?php endforeach; ?>
                 </select>
                 <p class="yourname">Your name must be entered in English as it appears on your passport.</p>
+                    </div>
+                  </div>
+                
                   <div id="error-message" class="w-100 alert alert-dark text-sm">
                         All the fields are required!
                   </div>
-                  <div class="row formml">
+                  <div class="row formml" style="margin-top:5%>
                     <div class="col-md-5">
                       <div class="form-group">
                         <label class="form-label">First Name</label>
