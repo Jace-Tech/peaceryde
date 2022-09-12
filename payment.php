@@ -305,7 +305,7 @@ $PRICE = json_decode($_SESSION["PRICE"], true);
 
                         <input type="radio" name="payment_option" value="card" class="radioo">&nbsp; Credit/ Debit Card <span style="font-size: 12px; color: #C8730F;">(Mastercard, Visa card, American express card, etc)</span> <br> -->
                         <input type="radio" name="payment_option" value="paystack" checked="checked" class="radioo">&nbsp; Paystack <br>
-                        <input type="radio" name="payment_option" value="flutter" class="radioo"> &nbsp; Flutterwave <br>
+                        <!-- <input type="radio" name="payment_option" value="flutter" class="radioo"> &nbsp; Flutterwave <br> -->
                         <div class="hidden-box">
                         <p class="cardname">Name of card</p>
                         <input type="text" name="card_name" class="form-control cardinput" placeholder="John Doe">
