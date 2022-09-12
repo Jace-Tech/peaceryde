@@ -157,8 +157,8 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
                           
                           <div class="form-group" style="">
                           <label class="form-label">Country</label>
-                          <br><br>
-                              <select required id="country" data-length name="country" class="form-select select" aria-label="Default select example" style="width:100%">
+                          <br>
+                              <select required id="country" data-length name="country" class="form-select select" aria-label="Default select example" style="width:100%; margin-top:10px">
                                 <option value="">Country </option>
                                 <?php foreach ($country_fee as $key => $value) : ?>
                                   <option value="<?= $key ?>">
