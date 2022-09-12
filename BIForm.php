@@ -402,27 +402,6 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
                             <input type="number" required name="shares" class="form-control firstname" placeholder="No of Shares">
                           </div>
                         </div>
-                        <div  style="margin-top: 27px;">
-                    <label>Are you a returning customer ? (do you have an account with us on this website)</label>
-                    <br>
-                    <div class="form-check form-check-inline" style="padding-left: 0px; padding-top: 5px;">
-                      <div class="custom-control custom-radio">
-                        <label class="custom-control-label" for="customControlValidation2">No</label>
-                        <input class="custom-control-input" type="radio" id="customControlValidation2" name="radio-stacked" checked required>
-                      </div>
-                    </div>
-                    <div class="form-check form-check-inline" style="padding-left: 0px; padding-top: 5px;">
-                      <div class="custom-control custom-radio">
-                        <label class="custom-control-label" for="customControlValidation3">Yes</label>
-                        <input type="radio" class="custom-control-input" value="1" onclick="onYes()" id="modal-yes" name="radio-stacked">
-                      </div>
-                    </div>
-                  </div>
-                  <div class="bibtn">
-                    <button type="submit" name="bi" class="btn proceed">Proceed to payment</button>
-                  </div>
-
-
                       </div>
                       
                       <div class="col-md-5">
@@ -475,6 +454,26 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
                         
 
                       </div>
+
+                      <div  style="margin-top: 27px;">
+                    <label>Are you a returning customer ? (do you have an account with us on this website)</label>
+                    <br>
+                    <div class="form-check form-check-inline" style="padding-left: 0px; padding-top: 5px;">
+                      <div class="custom-control custom-radio">
+                        <label class="custom-control-label" for="customControlValidation2">No</label>
+                        <input class="custom-control-input" type="radio" id="customControlValidation2" name="radio-stacked" checked required>
+                      </div>
+                    </div>
+                    <div class="form-check form-check-inline" style="padding-left: 0px; padding-top: 5px;">
+                      <div class="custom-control custom-radio">
+                        <label class="custom-control-label" for="customControlValidation3">Yes</label>
+                        <input type="radio" class="custom-control-input" value="1" onclick="onYes()" id="modal-yes" name="radio-stacked">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="bibtn">
+                    <button type="submit" name="bi" class="btn proceed">Proceed to payment</button>
+                  </div>
                     </div>
                   </div>
                 </form>
