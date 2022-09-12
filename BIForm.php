@@ -135,7 +135,7 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
                         All the fields are required!
                     </div>
                     <div class="row formml">
-                      <div class="col-md-4">
+                      <div class="col-md-5">
                           <div class="form-group">
                             <label class="form-label">First Name</label>
                             <div class="input-group mb-3 biwidth">
@@ -149,6 +149,7 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
                             </div>
                           </div>
                           <div class="form-group" style="">
+                          <label class="form-label">Country</label>
                               <select required id="country" data-length name="country" class="form-select select" aria-label="Default select example" style="width:100%">
                                 <option value="">Country </option>
                                 <?php foreach ($country_fee as $key => $value) : ?>
@@ -392,13 +393,13 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
                           <div class="form-group">
                           <label class="form-label">Company Name</label>
                           <div class="input-group mb-3 biwidth">
-                            <input type="text" required name="companyName" data-length class="form-control firstname2" placeholder="Company Name">
+                            <input type="text" required name="companyName" data-length class="form-control firstname" placeholder="Company Name">
                           </div>
                         </div>
                         <div class="form-group">
                           <label class="form-label">No of Shares</label>
                           <div class="input-group mb-3 biwidth">
-                            <input type="number" required name="shares" class="form-control firstname2" placeholder="No of Shares">
+                            <input type="number" required name="shares" class="form-control firstname" placeholder="No of Shares">
                           </div>
                         </div>
                         <div  style="margin-top: 27px;">
@@ -423,8 +424,8 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
 
 
                       </div>
-                      <div class="col-md-2"></div>
-                      <div class="col-md-4">
+                      
+                      <div class="col-md-5">
                           <div class="form-group">
                             <label class="form-label">Middle Name</label>
                             <div class="input-group mb-3 biwidth">
@@ -433,7 +434,7 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
                           </div>
 
                           <div class="form-group">
-                            <label class="mb-2" style="margin-top:27px">Personal Email</label>
+                            <label class="mb-2">Personal Email</label>
                             <input type="hidden" name="bi">
                             <input type="hidden" name="service" value="srvs-003">
                             <div class="input-group mb-3 biwidth">
@@ -441,7 +442,7 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
                             </div>
                           </div>
                           
-                          <div class="form-group" style="margin-top: 35px;">
+                          <div class="form-group">
                           
                             <label class="gender">Gender</label>
                             <br>
