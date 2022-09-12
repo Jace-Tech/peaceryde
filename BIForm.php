@@ -157,7 +157,7 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
                           
                           <div class="form-group" style="">
                           <label class="form-label">Country</label>
-                          <br>
+                          <br><br>
                               <select required id="country" data-length name="country" class="form-select select" aria-label="Default select example" style="width:100%">
                                 <option value="">Country </option>
                                 <?php foreach ($country_fee as $key => $value) : ?>
@@ -172,8 +172,8 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
                               </select>
                           </div>
                           <div class="form-group">
-                            <label style="padding-top:10px">Mobile Number</label>
-                            <br>
+                            <label style="padding-top:40px">Mobile Number</label>
+                            <br><br>
                             <div class="input-group mb-3">
                               <div class="input-group-prepend">
                                 <select required name="countryCode" id="" class="form-select code" aria-label="Default select example">
