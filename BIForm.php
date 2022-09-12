@@ -138,13 +138,13 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
                       <div class="col-md-5">
                           <div class="form-group">
                             <label class="form-label">First Name</label>
-                            <div class="input-group mb-3 biwidth">
+                            <div class="input-group mb-3">
                               <input name="firstname" data-length required class="form-control firstname" value="<?= $FORM_APPY["firstname"] ?? "" ?>" placeholder="First Name (as on passport)">
                             </div>
                           </div>
                           <div class="form-group" style="margin-right: 0px;">
                             <label class="form-label">Last Name</label>
-                            <div class="input-group mb-3 biwidth">
+                            <div class="input-group mb-3">
                               <input class="form-control firstname" data-length name="lastname" type="text" value="<?= $FORM_APPY["lastname"] ?? "" ?>" required placeholder="Last Name (as on passport)">
                             </div>
                           </div>
@@ -165,7 +165,7 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
                           </div>
                           <div class="form-group">
                             <label style="padding-top:10px">Mobile Number</label>
-                            <div class="input-group mb-3 biwidth">
+                            <div class="input-group mb-3">
                               <div class="input-group-prepend">
                                 <select required name="countryCode" id="" class="form-select code" aria-label="Default select example">
                                   <option value="">+234</option>
@@ -392,13 +392,13 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
                           </div>
                           <div class="form-group">
                           <label class="form-label">Company Name</label>
-                          <div class="input-group mb-3 biwidth">
+                          <div class="input-group mb-3">
                             <input type="text" required name="companyName" data-length class="form-control firstname" placeholder="Company Name">
                           </div>
                         </div>
                         <div class="form-group">
                           <label class="form-label">No of Shares</label>
-                          <div class="input-group mb-3 biwidth">
+                          <div class="input-group mb-3">
                             <input type="number" required name="shares" class="form-control firstname" placeholder="No of Shares">
                           </div>
                         </div>
@@ -407,7 +407,7 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
                       <div class="col-md-5">
                           <div class="form-group">
                             <label class="form-label">Middle Name</label>
-                            <div class="input-group mb-3 biwidth">
+                            <div class="input-group mb-3">
                               <input required name="middlename" data-length type="text" class="form-control firstname" placeholder="Middle Name (as on passport)">
                             </div>
                           </div>
@@ -416,7 +416,7 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
                             <label class="mb-2">Personal Email</label>
                             <input type="hidden" name="bi">
                             <input type="hidden" name="service" value="srvs-003">
-                            <div class="input-group mb-3 biwidth">
+                            <div class="input-group mb-3">
                               <input required type="email" class="form-control firstname" name="email" value="<?= $FORM_APPY['email'] ?? "" ?>" placeholder="Email">
                             </div>
                           </div>
@@ -440,13 +440,13 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
                           </div>
                           <div class="form-group">
                           <label class="form-label">Corporate Address</label>
-                          <div class="input-group mb-3 biwidth">
+                          <div class="input-group mb-3">
                             <input type="text" required name="coperateAddress" class="form-control firstname" placeholder="Corporate Address">
                           </div>
                         </div>
                           <div class="form-group">
                           <label class="form-label">Date of Birth</label>
-                          <div class="input-group mb-3 biwidth">
+                          <div class="input-group mb-3">
                             <input type="text" data-date readonly required name="dob" class="form-control firstname" placeholder="dd-mm-yyyy" id="datepicker">
                           </div>
                           <p style="color: #C8730F; font-family: Ubuntu; font-size: 13px; font-style: normal; font-weight: 400;">You must be at least 18 years old to use this website.</p>
