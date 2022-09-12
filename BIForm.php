@@ -134,8 +134,8 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
                     <div id="error-message" class="w-100 alert alert-dark text-sm">
                         All the fields are required!
                     </div>
-                    <div class="row">
-                      <div class="col-md-6">
+                    <div class="row formml">
+                      <div class="col-md-4">
                           <div class="form-group">
                             <label class="form-label">First Name</label>
                             <div class="input-group mb-3 biwidth">
@@ -401,7 +401,7 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
                             <input type="number" required name="shares" class="form-control firstname2" placeholder="No of Shares">
                           </div>
                         </div>
-                        <div class=" formml" style="margin-top: 27px;">
+                        <div  style="margin-top: 27px;">
                     <label>Are you a returning customer ? (do you have an account with us on this website)</label>
                     <br>
                     <div class="form-check form-check-inline" style="padding-left: 0px; padding-top: 5px;">
@@ -423,7 +423,8 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
 
 
                       </div>
-                      <div class="col-md-6">
+                      <div class="col-md-2"></div>
+                      <div class="col-md-4">
                           <div class="form-group">
                             <label class="form-label">Middle Name</label>
                             <div class="input-group mb-3 biwidth">
