@@ -438,15 +438,15 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
                             <input type="hidden" name="bi">
                             <input type="hidden" name="service" value="srvs-003">
                             <div class="input-group mb-3 biwidth">
-                              <input required type="email" class="form-control firstname2" name="email" value="<?= $FORM_APPY['email'] ?? "" ?>" placeholder="Email">
+                              <input required type="email" class="form-control firstname" name="email" value="<?= $FORM_APPY['email'] ?? "" ?>" placeholder="Email">
                             </div>
                           </div>
                           
-                          <div class="form-group">
+                          <div class="form-group" style="margin-top:20px">
                           
-                            <label class="gender">Gender</label>
+                            <label>Gender</label>
                             <br>
-                            <div class="form-check form-check-inline male">
+                            <div class="form-check form-check-inline">
                               <div class="custom-control custom-radio">
                                 <label class="custom-control-label" for="customControlValidation2">Male</label>
                                 <input type="radio" class="custom-control-input" id="customControlValidation2" value="male" name="gender" required>
