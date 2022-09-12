@@ -458,7 +458,7 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
 
                       </div>
 
-                      <div  style="margin-top: 27px;">
+                      <div style="margin-top: 27px;">
                     <label>Are you a returning customer ? (do you have an account with us on this website)</label>
                     <br>
                     <div class="form-check form-check-inline" style="padding-left: 0px; padding-top: 5px;">
