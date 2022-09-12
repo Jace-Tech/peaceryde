@@ -131,7 +131,7 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
                         </div>
                       </div>
                       <div class="form-group">
-                        <p class=" please">Please select below your Nationality (as on passport)</p>
+                        <p>Please select below your Nationality (as on passport)</p>
                         <select required id="country" data-length name="country" class="form-select select" aria-label="Default select example">
                           <option value="">Country </option>
                           <?php foreach ($country_fee as $key => $value) : ?>
@@ -165,19 +165,19 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
                     </div>
                     <div class="col-md-5">
                       <div class="form-group">
-                        <label class="form-label">Email address</label>
+                        <label class="form-label" style="padding-bottom:5px;">Email address</label>
                         <div class="input-group mb-3">
-                          <input type="email" required name="email" class="form-control firstname2" placeholder="Email address" value="<?= $FORM_APPY["email"] ?? "" ?>">
+                          <input type="email" required name="email" class="form-control firstname" placeholder="Email address" value="<?= $FORM_APPY["email"] ?? "" ?>">
                         </div>
                       </div>
                       <div class="form-group">
-                        <label class="form-label">Passport No</label>
+                        <label class="form-label" style="padding-bottom:5px;">Passport No</label>
                         <div class="input-group mb-3">
-                          <input type="text" data-length name="passport" required class="form-control firstname2" placeholder="Passport No">
+                          <input type="text" data-length name="passport" required class="form-control firstname" placeholder="Passport No">
                         </div>
                       </div>
                       <div class="form-group">
-                        <label style="padding-top:10px">Mobile Number</label>
+                        <label style="padding-top:10px; padding-bottom:5px;">Mobile Number</label>
                         <br>
                         <div class="input-group mb-3">
                           <div class="input-group-prepend">
