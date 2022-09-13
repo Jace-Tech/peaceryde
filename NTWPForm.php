@@ -166,8 +166,8 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
                     <div class="col-md-5">
                       <div class="form-group">
                         <label class="form-label">Email Address</label>
-                        <div class="input-group mb-3 biwidth">
-                          <input type="email" required name="email" value="<?= $FORM_APPY['email'] ?? "" ?>" class="form-control firstname2" placeholder="Email address">
+                        <div class="input-group mb-3">
+                          <input type="email" required name="email" value="<?= $FORM_APPY['email'] ?? "" ?>" class="form-control firstname" placeholder="Email address">
                         </div>
                       </div>
                       <div class="form-group">
