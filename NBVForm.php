@@ -90,23 +90,20 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
             </div>
             <div>
               <form data-form action="./handlers/form_handler.php" method="post">
-                
-
                 <div class="container mt-15">
                   <div class="row">
                     <div class="col-md-7">
-                    <select required name="title" class="form-select title" aria-label="Default select example">
-                  <option value="">Title</option>
-                  <?php foreach ($titles as $title) : ?>
-                    <option value="<?= $title ?>">
-                      <?= $title ?>
-                    </option>
-                  <?php endforeach; ?>
-                </select>
-                <p class="yourname">Your name must be entered in English as it appears on your passport.</p>
+                      <select required name="title" class="form-select title" aria-label="Default select example">
+                        <option value="">Title</option>
+                        <?php foreach ($titles as $title) : ?>
+                          <option value="<?= $title ?>">
+                            <?= $title ?>
+                          </option>
+                        <?php endforeach; ?>
+                      </select>
+                      <p class="yourname">Your name must be entered in English as it appears on your passport.</p>
                     </div>
                   </div>
-                
                   <div id="error-message" class="w-100 alert alert-dark text-sm">
                         All the fields are required!
                   </div>
@@ -414,34 +411,27 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
                         <p style="color: #C8730F; font-family: Ubuntu; font-size: 13px; font-style: normal; font-weight: 400;">You must be at least 18 years old to use this website.</p>
                       </div>
                     </div>
-
                     <div style="margin-top: 27px;">
-                  <label>Are you a returning customer ? (do you have an account with us on this website)</label>
-                  <br>
-                  <div class="form-check form-check-inline" style="padding-left: 0px; padding-top: 3px;">
-                    <div class="custom-control custom-radio">
-                      <label class="custom-control-label" for="customControlValidation2">No</label>
-                      <input type="radio" class="custom-control-input" id="customControlValidation2" name="radio-stacked" checked required>
+                      <label>Are you a returning customer ? (do you have an account with us on this website)</label>
+                      <br>
+                      <div class="form-check form-check-inline" style="padding-left: 0px; padding-top: 3px;">
+                        <div class="custom-control custom-radio">
+                          <label class="custom-control-label" for="customControlValidation2">No</label>
+                          <input type="radio" class="custom-control-input" id="customControlValidation2" name="radio-stacked" checked required>
+                        </div>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <div class="custom-control custom-radio">
+                          <label class="custom-control-label" for="modal-yes">Yes</label>
+                          <input type="radio" class="custom-control-input" value="1" onclick="onYes()" id="modal-yes" name="radio-stacked">
+                        </div>
+                      </div>
+                    </div>
+                    <div style=" margin-top:52px">
+                      <button name="nbv" type="submit" class="btn proceed">Proceed to payment</button>
                     </div>
                   </div>
-                  <div class="form-check form-check-inline">
-                    <div class="custom-control custom-radio">
-                      <label class="custom-control-label" for="modal-yes">Yes</label>
-                      <input type="radio" class="custom-control-input" value="1" onclick="onYes()" id="modal-yes" name="radio-stacked">
-                    </div>
-                  </div>
                 </div>
-                <div style=" margin-top:52px">
-                  <button name="nbv" type="submit" class="btn proceed">Proceed to payment</button>
-                </div>
-                  </div>
-                </div>
-
-
-
-
-
-
 <!-- 
                 <div class="form-row mt-15 formml">
                   <div id="error-message" class="w-100 alert alert-dark text-sm">
