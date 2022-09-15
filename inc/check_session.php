@@ -22,5 +22,6 @@ include("./models/Upload.php");
 include("./models/Review.php");
 include("./models/Admin.php");
 include("./models/ResetUserPassword.php");
+include("./inc/lang.php");
 
 include("./payments/Paystack.php");

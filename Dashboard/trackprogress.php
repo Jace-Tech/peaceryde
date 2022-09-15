@@ -493,30 +493,9 @@ $isUnread = count($messages->get_user_unread_messages($USER_ID));
                                             </svg>
                                             &nbsp;<span class="langName">English |</span></a>
                                         <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style="overflow-y: scroll;height: 350px;">
-                                            <li><a class="dropdown-item lang-select" href="#googtrans(en|ar)" data-lang="ar" style="color: black; font-size: 15px; padding-bottom: 10px;">Arabic </a></li>
-                                            <li><a class="dropdown-item lang-select" href="#googtrans(en|bn)" data-lang="bn" style="color: black; font-size: 15px; padding-bottom: 10px;">Bengali (Bangla) </a></li>
-                                            <li><a class="dropdown-item lang-select" href="#googtrans(en|zh-CN)" data-lang="zh-CN" style="color: black; font-size: 15px; padding-bottom: 10px;">Chinese</a> </li>
-                                            <li><a class="dropdown-item lang-select" href="#googtrans(en|cs)" data-lang="cs" style="color: black; font-size: 15px; padding-bottom: 10px;">Czech</a> </li>
-                                            <li><a class="dropdown-item lang-select" href="#googtrans(en|nl)" data-lang="nl" style="color: black; font-size: 15px; padding-bottom: 10px;"> Dutch</a> </li>
-                                            <li><a class="dropdown-item lang-select" href="#googtrans(en|en)" data-lang="en" style="color: black; font-size: 15px; padding-bottom: 10px;">English </a></li>
-                                            <li><a class=" dropdown-item lang-select" href="#googtrans(en|es)" data-lang="es" style="color: black; font-size: 15px; padding-bottom: 10px;">Espanol</a></li>
-                                            <li><a class=" dropdown-item lang-select" href="#googtrans(en|fr)" data-lang="fr" style="color: black; font-size: 15px; padding-bottom: 10px;">French</a> </li>
-                                            <li><a class=" dropdown-item lang-select" href="#googtrans(en|de)" data-lang="de" style="color: black; font-size: 15px; padding-bottom: 10px;"> German</a></li>
-                                            <li><a class=" dropdown-item lang-select" href="#googtrans(en|el)" data-lang="el" style="color: black; font-size: 15px; padding-bottom: 10px;"> Greek</a></li>
-                                            <li><a class=" dropdown-item lang-select" href="#googtrans(en|hi)" data-lang="hi" style="color: black; font-size: 15px; padding-bottom: 10px;"> Hindi</a></li>
-                                            <li><a class=" dropdown-item lang-select" href="#googtrans(en|hu)" data-lang="hu" style="color: black; font-size: 15px; padding-bottom: 10px;"> Hungarian</a></li>
-                                            <li><a class=" dropdown-item lang-select" href="#googtrans(en|it)" data-lang="it" style="color: black; font-size: 15px; padding-bottom: 10px;"> Italian</a></li>
-                                            <li><a class=" dropdown-item lang-select" href="#googtrans(en|ko)" data-lang="ja" style="color: black; font-size: 15px; padding-bottom: 10px;"> Japanese</a></li>
-                                            <li><a class=" dropdown-item lang-select" href="#googtrans(en|ko)" data-lang="ko" style="color: black; font-size: 15px; padding-bottom: 10px;"> Korean</a></li>
-                                            <li><a class=" dropdown-item lang-select" href="#googtrans(en|mr)" data-lang="mr" style="color: black; font-size: 15px; padding-bottom: 10px;"> Marathi</a></li>
-                                            <li><a class=" dropdown-item lang-select" href="#googtrans(en|pl)" data-lang="pl" style="color: black; font-size: 15px; padding-bottom: 10px;"> Polish</a></li>
-                                            <li><a class=" dropdown-item lang-select" href="#googtrans(en|pt)" data-lang="pt" style="color: black; font-size: 15px; padding-bottom: 10px;"> Portuguese</a></li>
-                                            <li><a class=" dropdown-item lang-select" href="#googtrans(en|ru)" data-lang="ru" style="color: black; font-size: 15px; padding-bottom: 10px;">Russian</a> </li>
-                                            <li><a class=" dropdown-item lang-select" href="#googtrans(en|ta)" data-lang="ta" style="color: black; font-size: 15px; padding-bottom: 10px;"> Tamil</a> </li>
-                                            <li><a class=" dropdown-item lang-select" href="#googtrans(en|te)" data-lang="te" style="color: black; font-size: 15px; padding-bottom: 10px;"> Telugu</a> </li>
-                                            <li><a class=" dropdown-item lang-select" href="#googtrans(en|tr)" data-lang="tr" style="color: black; font-size: 15px; padding-bottom: 10px;"> Turkish</a> </li>
-                                            <li><a class=" dropdown-item lang-select" href="#googtrans(en|ur)" data-lang="ur" style="color: black; font-size: 15px; padding-bottom: 10px;"> Urdu</a> </li>
-                                            <li><a class=" dropdown-item lang-select" href="#googtrans(en|vi)" data-lang="vi" style="color: black; font-size: 15px; padding-bottom: 10px;"> Vietnamese</a> </li>
+                                            <?php foreach ($lang as $key => $value): ?>
+                                                <li><a class="dropdown-item lang-select" href="#googtrans(en|<?= $value ?>)" data-lang="<?= $value ?>" style="color: black; font-size: 15px; padding-bottom: 10px;"><?= $key ?> </a></li>
+                                            <?php endforeach; ?>
                                         </ul>
                                     </div>
                                 </li>
@@ -669,7 +648,7 @@ $isUnread = count($messages->get_user_unread_messages($USER_ID));
   function googleTranslateElementInit() {
   new google.translate.TranslateElement({
     pageLanguage: 'en',
-    includedLanguages: 'en,bn,de,ur,el,cs,vi,ta,nl,it,ja,es,hi,pl,pt,zh-CN,zh-TW,ar,so,ru,hy,ko,fr,hu',
+    includedLanguages: "<?= $LANG_VALUES  ?>",
     layout: google.translate.TranslateElement.InlineLayout.SIMPLE
   }, 'google_translate_element');
 }

@@ -7,6 +7,7 @@ require_once("../functions/index.php");
 require_once("../utils/store.php");
 require_once("../utils/country_fee.php");
 require_once("../setup.php");
+require_once("../inc/lang.php");
 
 require_once("../models/Admin.php");
 require_once("../models/BI.php");
