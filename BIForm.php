@@ -130,122 +130,51 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
               </div>
               <div>
                 <form data-form method="post" action="./handlers/form_handler.php">
-                  <div class="form-row mt-15 formml">
+                  <div class="container mt-15">
                     <div id="error-message" class="w-100 alert alert-dark text-sm">
-                      All the fields are required!
+                        All the fields are required!
                     </div>
-
-                    <!-- <div class="row">
+                    <div class="row formml">
                       <div class="col-md-5">
-                        <div class="form-group">
-                          <label class="form-label">First Name</label>
-                          <div class="input-group mb-3 biwidth">
-                            <input type="text" required data-length name="firstname" value="<?php // $FORM_APPY['firstname'] ?? "" ?>" class="form-control firstname2" placeholder="First Name">
+                          <div class="form-group">
+                            <label class="form-label">First Name</label>
+                            <div class="input-group mb-3">
+                              <input name="firstname" data-length required class="form-control firstname" value="<?= $FORM_APPY["firstname"] ?? "" ?>" placeholder="First Name (as on passport)">
+                            </div>
                           </div>
-                        </div>
-                      </div>
-                      <div class="col-md-5">
-                        <div class="form-group">
-                          <label class="form-label">Last Name</label>
-                          <div class="input-group mb-3 biwidth">
-                            <input type="text" required data-length name="lastname" class="form-control firstname2" value="<?php // $FORM_APPY['lastname'] ?? "" ?>" placeholder="Last Name">
+                          <div class="form-group" style="margin-right: 0px;">
+                            <label class="form-label">Last Name</label>
+                            <div class="input-group mb-3">
+                              <input class="form-control firstname" data-length name="lastname" type="text" value="<?= $FORM_APPY["lastname"] ?? "" ?>" required placeholder="Last Name (as on passport)">
+                            </div>
                           </div>
-                        </div>
-                      </div>
-                    </div> -->
-                    <div class="row">
-                      <div class="col-md-12">
-                        <div class="form-group">
-                          <label class="form-label">First Name</label>
-                          <div class="input-group mb-3 biwidth">
-                            <input name="firstname" data-length required class="form-control firstname" value="<?= $FORM_APPY["firstname"] ?? "" ?>" placeholder="First Name (as on passport)">
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                   
-                  </div>
-                  <div class="form-row formml">
-                  <div class="row">
-                        <div class="col-md-12">
                           <div class="form-group">
                             <label class="form-label">Middle Name</label>
-                            <div class="input-group mb-3 biwidth">
-                              <input required name="middlename" data-length type="text" class="form-control middlename" placeholder="Middle Name (as on passport)">
+                            <div class="input-group mb-3">
+                              <input required name="middlename" data-length type="text" class="form-control firstname" placeholder="Middle Name (as on passport)">
                             </div>
                           </div>
-                        </div>
-                    </div>
-                 
-                  </div>
-                  <div class="form-row formml">
-                  <div class="row">
-                    <div class="col-md-12">
-                      <div class="form-group" style="margin-right: 0px;">
-                        <label class="form-label">Last Name</label>
-                        <div class="input-group mb-3 biwidth">
-                          <input class="form-control lastname" data-length name="lastname" type="text" value="<?= $FORM_APPY["lastname"] ?? "" ?>" required placeholder="Last Name (as on passport)">
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  </div>
-                  <div class="formml">
-                  <div class="row">
-                    <div class="col-md-5" style="margin-top: 35px;">
-                    <select required id="country" data-length name="country" class="form-select select" aria-label="Default select example" style="width:100%">
-                      <option value="">Country </option>
-                      <?php foreach ($country_fee as $key => $value) : ?>
-                        <option value="<?= $key ?>">
-                          <?php if ($key == "united states") : ?>
-                            United States of America
-                          <?php else : ?>
-                            <?= strtoupper(substr($key, 0, 1)) . substr($key, 1); ?>
-                          <?php endif; ?>
-                        </option>
-                      <?php endforeach; ?>
-                    </select>
-                    </div>
-                    <div class="col-md-5 genderwidth">
-                      <div class="row">
-                        <div class="col-md-12" style="margin-top: 35px;">
-                          <label class="gender">Gender</label>
+                          
+                          <div class="form-group" style="">
+                          <label class="form-label">Country</label>
                           <br>
-                          <div class="form-check form-check-inline male">
-                            <div class="custom-control custom-radio">
-                              <label class="custom-control-label" for="customControlValidation2">Male</label>
-                              <input type="radio" class="custom-control-input" id="customControlValidation2" value="male" name="gender" required>
-                            </div>
+                              <select required id="country" data-length name="country" class="form-select select" aria-label="Default select example" style="width:100%; margin-top:10px">
+                                <option value="">Country </option>
+                                <?php foreach ($country_fee as $key => $value) : ?>
+                                  <option value="<?= $key ?>">
+                                    <?php if ($key == "united states") : ?>
+                                      United States of America
+                                    <?php else : ?>
+                                      <?= strtoupper(substr($key, 0, 1)) . substr($key, 1); ?>
+                                    <?php endif; ?>
+                                  </option>
+                                <?php endforeach; ?>
+                              </select>
                           </div>
-                          <div class="form-check form-check-inline" style="margin-left: -20px;">
-                            <div class="custom-control custom-radio">
-                              <label class="custom-control-label" for="customControlValidation3">Female</label>
-                              <input type="radio" class="custom-control-input" id="customControlValidation3" value="female" name="gender">
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-md-3"></div>
-                  </div>
-                </div>
-                  <div class="form-row formml">
-                    <div class="row">
-                      <div class="col-md-5">
-                        <label class="mb-2" style="margin-top:27px">Personal Email</label>
-                        <div class="form-group">
-                          <input type="hidden" name="bi">
-                          <input type="hidden" name="service" value="srvs-003">
-                          <div class="input-group mb-3 biwidth">
-                            <input required type="email" class="form-control firstname2" name="email" value="<?= $FORM_APPY['email'] ?? "" ?>" placeholder="Email">
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-md-5">
-                        <div class="form-row">
-                          <div class="row">
-                            <label style="margin-top:27px">Mobile Number</label>
-                            <div class="input-group mb-3 biwidth">
+                          <div class="form-group">
+                            <label style="padding-top:25px; padding-bottom:5px">Mobile Number</label>
+                            <br><br>
+                            <div class="input-group mb-3">
                               <div class="input-group-prepend">
                                 <select required name="countryCode" id="" class="form-select code" aria-label="Default select example">
                                   <option value="">+234</option>
@@ -470,56 +399,69 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
                               <input type="tel" required name="phone" value="<?= $FORM_APPY['phone'] ?? "" ?>" class="form-control firstname" placeholder="070XXXXXXXX">
                             </div>
                           </div>
-                        </div>
+                          <div class="form-group" >
+                          
+                            <label>Gender</label>
+                            <br>
+                            <div class="form-check form-check-inline" style="margin-top:20px; padding-left:0px">
+                              <div class="custom-control custom-radio">
+                                <label class="custom-control-label" for="customControlValidation2">Male</label>
+                                <input type="radio" class="custom-control-input" id="customControlValidation2" value="male" name="gender" required>
+                              </div>
+                            </div>
+                            <div class="form-check form-check-inline" style="margin-left: -20px;">
+                              <div class="custom-control custom-radio">
+                                <label class="custom-control-label" for="customControlValidation3">Female</label>
+                                <input type="radio" class="custom-control-input" id="customControlValidation3" value="female" name="gender">
+                              </div>
+                            </div>
+                          </div>
+                          
+                        
                       </div>
-                    </div>
-                  </div>
-                  <div class="form-row formml">
-                    <div class="row">
+                      
                       <div class="col-md-5">
-                        <div class="form-group">
+                          
+                      <div class="form-group">
                           <label class="form-label">Company Name</label>
-                          <div class="input-group mb-3 biwidth">
-                            <input type="text" required name="companyName" data-length class="form-control firstname2" placeholder="Company Name">
+                          <div class="input-group mb-3">
+                            <input type="text" required name="companyName" data-length class="form-control firstname" placeholder="Company Name">
                           </div>
                         </div>
-                      </div>
-                      <div class="col-md-5">
-                        <div class="form-group">
+                          <div class="form-group">
+                            <label class="mb-2">Personal Email</label>
+                            <input type="hidden" name="bi">
+                            <input type="hidden" name="service" value="srvs-003">
+                            <div class="input-group mb-3">
+                              <input required type="email" class="form-control firstname" name="email" value="<?= $FORM_APPY['email'] ?? "" ?>" placeholder="Email">
+                            </div>
+                          </div>
+                          
+                          
+                          <div class="form-group">
                           <label class="form-label">Corporate Address</label>
-                          <div class="input-group mb-3 biwidth">
-                            <input type="text" required name="coperateAddress" class="form-control firstname2" placeholder="Corporate Address">
+                          <div class="input-group mb-3">
+                            <input type="text" required name="coperateAddress" class="form-control firstname" placeholder="Corporate Address">
                           </div>
                         </div>
-                      </div>
-                    </div>
-                  </div>
-
-
-                  <div class="form-row formml">
-                    <div class="row">
-                      <div class="col-md-7">
                         <div class="form-group">
+                          <label class="form-label">No of Shares</label>
+                          <div class="input-group mb-3">
+                            <input type="number" required name="shares" class="form-control firstname" placeholder="No of Shares">
+                          </div>
+                        </div>
+                          <div class="form-group">
                           <label class="form-label">Date of Birth</label>
-                          <div class="input-group mb-3 biwidth">
-                            <input type="text" data-date readonly required name="dob" class="form-control firstname2" placeholder="dd-mm-yyyy" id="datepicker">
+                          <div class="input-group mb-3">
+                            <input type="text" data-date readonly required name="dob" class="form-control firstname" placeholder="dd-mm-yyyy" id="datepicker">
                           </div>
                           <p style="color: #C8730F; font-family: Ubuntu; font-size: 13px; font-style: normal; font-weight: 400;">You must be at least 18 years old to use this website.</p>
                         </div>
-                      </div>
-                      <div class="col-md-4">
-                        <div class="form-group">
-                          <label class="form-label">No of Shares</label>
-                          <div class="input-group mb-3 biwidth">
-                            <input type="number" required name="shares" class="form-control firstname2" placeholder="No of Shares">
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                        
 
+                      </div>
 
-                  <div class=" formml" style="margin-top: 27px;">
+                      <div style="margin-top: 27px;">
                     <label>Are you a returning customer ? (do you have an account with us on this website)</label>
                     <br>
                     <div class="form-check form-check-inline" style="padding-left: 0px; padding-top: 5px;">
@@ -535,8 +477,10 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
                       </div>
                     </div>
                   </div>
-                  <div class="bibtn">
+                  <div class="bibtn" style="margin-left: 0px;">
                     <button type="submit" name="bi" class="btn proceed">Proceed to payment</button>
+                  </div>
+                    </div>
                   </div>
                 </form>
               </div>

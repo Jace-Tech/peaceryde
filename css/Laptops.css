@@ -155,7 +155,7 @@
 }
 
 .bibtn {
-  margin-left: 116px;
+  margin-left: 0px;
   margin-top: 56px;
   margin-bottom: 85px;
 }
@@ -1789,7 +1789,7 @@ p,a,h1,h2,h3,h4 {
     border: 1px solid #555555;
     height: 44px;
     margin-top: 7px;
-    width: 502px;
+    width: 100%;
     font-family: ubuntu;
   }
 
@@ -3215,7 +3215,7 @@ p,a,h1,h2,h3,h4 {
     border: 1px solid #555555;
     height: 44px;
     margin-top: 7px;
-    width: 502px;
+    width: 100%;
     font-family: ubuntu;
   }
 
@@ -4585,7 +4585,7 @@ p,a,h1,h2,h3,h4 {
     border: 1px solid #555555;
     height: 44px;
     margin-top: 7px;
-    width: 502px;
+    width: 100%;
     font-family: ubuntu;
   }
 
@@ -5939,7 +5939,7 @@ p,a,h1,h2,h3,h4 {
     border: 1px solid #555555;
     height: 44px;
     margin-top: 7px;
-    width: 502px;
+    width: 100%;
     font-family: ubuntu;
   }
 
@@ -7289,7 +7289,7 @@ p,a,h1,h2,h3,h4 {
     border: 1px solid #555555;
     height: 44px;
     margin-top: 7px;
-    width: 502px;
+    width: 100%;
     font-family: ubuntu;
   }
 
@@ -8621,7 +8621,7 @@ p,a,h1,h2,h3,h4 {
     border: 1px solid #555555;
     height: 44px;
     margin-top: 7px;
-    width: 502px;
+    width: 100%;
     font-family: ubuntu;
   }
 
@@ -9993,7 +9993,7 @@ p,a,h1,h2,h3,h4 {
     border: 1px solid #555555;
     height: 44px;
     margin-top: 7px;
-    width: 502px;
+    width: 100%;
     font-family: ubuntu;
   }
 
@@ -11329,7 +11329,7 @@ p,a,h1,h2,h3,h4 {
     border: 1px solid #555555;
     height: 44px;
     margin-top: 7px;
-    width: 502px;
+    width: 100%;
     font-family: ubuntu;
   }
 
@@ -12286,7 +12286,7 @@ p,a,h1,h2,h3,h4 {
     border: 1px solid #555555;
     height: 44px;
     margin-top: 7px;
-    width: 502px;
+    width: 100%;
     font-family: ubuntu;
   }
 
@@ -13751,7 +13751,7 @@ p,a,h1,h2,h3,h4 {
     border: 1px solid #555555;
     height: 44px;
     margin-top: 7px;
-    width: 502px;
+    width: 100%;
     font-family: ubuntu;
   }
 
