@@ -229,7 +229,7 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
                               <input type="radio" class="custom-control-input" id="customControlValidation2" value="male" name="gender" required>
                             </div>
                           </div>
-                          <div class="form-check form-check-inline" style="margin-left: -20px;">
+                          <div class="form-check form-check-inline">
                             <div class="custom-control custom-radio">
                               <label class="custom-control-label" for="customControlValidation3">Female</label>
                               <input type="radio" class="custom-control-input" id="customControlValidation3" value="female" name="gender">
@@ -240,7 +240,7 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
                     </div>
                     <div class="col-md-5">
                       <div class="form-group">
-                        <label class="form-label" style="padding-bottom:5px;">Email address</label>
+                        <label class="form-label" style="">Email address</label>
                         <div class="input-group mb-3">
                           <input type="email" required name="email" class="form-control firstname" placeholder="Email address" value="<?= $FORM_APPY["email"] ?? "" ?>">
                         </div>
@@ -252,12 +252,12 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
                         </div>
                       </div>
                       <div class="form-group">
-                        <label style="padding-top:10px; padding-bottom:5px;">Mobile Number</label>
+                        <label>Mobile Number</label>
                        
                         <div class="form-group">
                             <div class="input-group mb-3">
                                 <div class="input-group-prepend">
-                                    <select class="custom-select" required name="countryCode" id="inputGroupSelect01" style="width: 100px;height:43px; background-color: #ADC92E; color: #F9FFFF; font-size:11px;">
+                                    <select class="custom-select" required name="countryCode" id="inputGroupSelect01" style="width: 100px;height:43px; background-color: #ADC92E; color: #F9FFFF; font-size:13px;">
                                         <option value="">+234</option>
                                         <optgroup label="Country Code">
                                             <option data-countryCode="DZ" value="213">Algeria (+213)</option>

@@ -229,7 +229,7 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
                 <input type="radio" class="custom-control-input" id="customControlValidation2" value="male" name="gender" required>
               </div>
             </div>
-            <div class="form-check form-check-inline" style="margin-left: -20px;">
+            <div class="form-check form-check-inline">
               <div class="custom-control custom-radio">
                 <label class="custom-control-label" for="customControlValidation3">Female</label>
                 <input type="radio" class="custom-control-input" id="customControlValidation3" value="female" name="gender">
@@ -490,9 +490,9 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
         </div>
       </div>
       
-      <div style=" margin-top:52px">
-      <button type="submit" name="twp" class="btn proceed">Proceed to payment</button>
-      </div>
+      <div class="divbtn">
+        <button data-btn type="submit" name="twp" class="btn btnproceed">Proceed to Payment</button>
+    </div>
     </div>
   </div>
 </form>
@@ -813,15 +813,7 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
                                     <label class="form-label">Country</label>
                                     <select required name="country" class="form-select nationality" aria-label="Default select example">
                                         <option value="">Select Country</option>
-                                        <?php foreach ($country_fee as $key => $value) : ?>
-                                            <?php if ($key == "united states") : ?>
-                                                <option value="<?= $key ?>">United States of America</option>
-                                            <?php else : ?>
-                                                <option value="<?= $key ?>">
-                                                    <?= strtoupper(substr($key, 0, 1)) . substr($key, 1); ?>
-                                                </option>
-                                            <?php endif; ?>
-                                        <?php endforeach; ?>
+                                       
                                     </select>
                                 </div>
                             </div>
