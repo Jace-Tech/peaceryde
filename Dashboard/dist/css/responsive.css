@@ -2461,9 +2461,9 @@
 }
 .formml
 {
-  padding-left: 5%;
-  padding-right: 5%;
-  width: 90%;
+  padding-left: 0%;
+  padding-right: 0%;
+  width: 100%;
 }
 .fmselect
 {
@@ -3046,7 +3046,7 @@
   padding: 5%;
   /* padding-left: 204px; */
   font-family: Ubuntu;
-  font-size: 30px;
+  font-size: 20px;
   font-style: normal;
   font-weight: 500;
   color: #0A0E69;
