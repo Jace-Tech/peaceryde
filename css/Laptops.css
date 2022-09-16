@@ -1667,7 +1667,7 @@ p,a,h1,h2,h3,h4 {
     font-size: 18px;
     font-weight: 300;
     width: 1600px;
-    text-align: justify;
+    text-align: left;
   }
 
   .topdiv {
@@ -3108,7 +3108,7 @@ p,a,h1,h2,h3,h4 {
     font-size: 18px;
     font-weight: 300;
     width: 1200px;
-    text-align: justify;
+    text-align: left;
   }
 
   .topdiv {
@@ -4478,7 +4478,7 @@ p,a,h1,h2,h3,h4 {
     font-size: 18px;
     font-weight: 300;
     width: 1250px;
-    text-align: justify;
+    text-align: left;
   }
 
   .topdiv {
@@ -13643,7 +13643,7 @@ p,a,h1,h2,h3,h4 {
     font-size: 18px;
     font-weight: 300;
     width: 800px;
-    text-align: justify;
+    text-align: left;
   }
 
   .topdiv {
