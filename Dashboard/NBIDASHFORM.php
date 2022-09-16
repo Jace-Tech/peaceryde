@@ -175,7 +175,7 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
                         All the fields are required!
                     </div>
                     <div class="row formml">
-                      <div class="col-md-5">
+                      <div class="col-md-5 col-12">
                       <div class="form-group">
                             <label class="form-label">First Name</label>
                             <div class="input-group mb-3 biwidth">
@@ -460,7 +460,7 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
                         
                       </div>
                       
-                      <div class="col-md-5">                          
+                      <div class="col-md-5 col-12">                          
                       <div class="form-group">
                             <label class="form-label">Company Name</label>
                             <input name="companyName" data-length required type="text" name="" class="form-control firstname" placeholder="Company Name">
