@@ -169,7 +169,7 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
                     </div>
                     <form data-form action="./handlers/form_handler.php" method="post">
                 <div class="container mt-15">
-                  <div class="row">
+                  <div class="row formml">
                     <div class="col-md-7">
                       <select required name="title" class="form-select fmselect" aria-label="Default select example" style="height:44px">
                         <option value="">Title</option>
