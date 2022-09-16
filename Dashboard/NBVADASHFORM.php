@@ -171,7 +171,7 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
                 <div class="container mt-15">
                   <div class="row">
                     <div class="col-md-7">
-                      <select required name="title" class="form-select title fmselect" aria-label="Default select example">
+                      <select required name="title" class="form-select title" aria-label="Default select example" style="height:44px">
                         <option value="">Title</option>
                         <?php foreach ($titles as $title) : ?>
                           <option value="<?= $title ?>">
@@ -253,12 +253,12 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
                       </div>
                       <div class="form-group">
                         <label style="padding-top:10px; padding-bottom:5px;">Mobile Number</label>
-                        <br>
+                       
                         <div class="form-group">
                             <div class="input-group mb-3">
                                 <div class="input-group-prepend">
                                     <select class="custom-select" required name="countryCode" id="inputGroupSelect01" style="width: 100px;height:43px; background-color: #ADC92E; color: #F9FFFF; font-size:11px;">
-                                        <option value="">Country code</option>
+                                        <option value="">+234</option>
                                         <optgroup label="Country Code">
                                             <option data-countryCode="DZ" value="213">Algeria (+213)</option>
                                             <option data-countryCode="AD" value="376">Andorra (+376)</option>
