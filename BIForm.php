@@ -70,7 +70,7 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
       }
       .nbvformheight {
           position: relative;
-          height: 2000px;
+          height: 2300px;
       }
     }
 
@@ -98,7 +98,7 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
     @media only screen and (max-width: 540px) {
       .cardform {
         border: 1px solid #ffffff;
-        height: 1650px;
+        height: 1750px;
       }
     }
     .error {

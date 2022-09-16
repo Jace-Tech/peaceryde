@@ -91,8 +91,8 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
             <div>
               <form data-form action="./handlers/form_handler.php" method="post">
                 <div class="container mt-15">
-                  <div class="row">
-                    <div class="col-md-7">
+                  <div class="row formml">
+                    <div class="col-md-5">
                       <select required name="title" class="form-select title" aria-label="Default select example">
                         <option value="">Title</option>
                         <?php foreach ($titles as $title) : ?>
@@ -115,16 +115,17 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
                           <input name="firstname" data-length required class="form-control firstname" value="<?= $FORM_APPY["firstname"] ?? "" ?>" placeholder="First Name (as on passport)">
                         </div>
                       </div>
-                      <div class="form-group">
-                        <label class="form-label">Middle Name</label>
-                        <div class="input-group mb-3">
-                          <input required name="middlename" data-length type="text" class="form-control middlename" placeholder="Middle Name (as on passport)">
-                        </div>
-                      </div>
+                      
                       <div class="form-group" style="margin-right: 0px;">
                         <label class="form-label">Last Name</label>
                         <div class="input-group mb-3">
                           <input class="form-control lastname" data-length name="lastname" type="text" value="<?= $FORM_APPY["lastname"] ?? "" ?>" required placeholder="Last Name (as on passport)">
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label class="form-label" style="padding-bottom:5px;">Email address</label>
+                        <div class="input-group mb-3">
+                          <input type="email" required name="email" class="form-control firstname" placeholder="Email address" value="<?= $FORM_APPY["email"] ?? "" ?>">
                         </div>
                       </div>
                       <div class="form-group">
@@ -143,6 +144,23 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
                         </select>
                       </div>
                       <div class="form-group">
+                        <label class="form-label">Date of Birth</label>
+                        <div class="input-group mb-3">
+                          <input type="text" readonly required data-date name="dob" value="<?= $FORM_APPY["dob"] ?? "" ?>" class="form-control firstname" placeholder="dd-mm-yyyy" id="datepicker">
+                        </div>
+                        <p style="color: #C8730F; font-family: Ubuntu; font-size: 13px; font-style: normal; font-weight: 400;">You must be at least 18 years old to use this website.</p>
+                      </div>
+                      
+                      
+                    </div>
+                    <div class="col-md-5">
+                    <div class="form-group">
+                        <label class="form-label">Middle Name</label>
+                        <div class="input-group mb-3">
+                          <input required name="middlename" data-length type="text" class="form-control middlename" placeholder="Middle Name (as on passport)">
+                        </div>
+                      </div>
+                      <div class="form-group">
                         <label>Gender</label>
                           <br>
                           <div class="form-check form-check-inline" style="padding-left:0px">
@@ -158,15 +176,7 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
                             </div>
                           </div>
                       </div>
-                      
-                    </div>
-                    <div class="col-md-5">
-                      <div class="form-group">
-                        <label class="form-label" style="padding-bottom:5px;">Email address</label>
-                        <div class="input-group mb-3">
-                          <input type="email" required name="email" class="form-control firstname" placeholder="Email address" value="<?= $FORM_APPY["email"] ?? "" ?>">
-                        </div>
-                      </div>
+                     
                       <div class="form-group">
                         <label class="form-label" style="padding-bottom:5px;">Passport No</label>
                         <div class="input-group mb-3">
@@ -403,13 +413,7 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
                           <input required type="hidden" name="nbv" value="">
                         </div>
                       </div>
-                      <div class="form-group">
-                        <label class="form-label">Date of Birth</label>
-                        <div class="input-group mb-3">
-                          <input type="text" readonly required data-date name="dob" value="<?= $FORM_APPY["dob"] ?? "" ?>" class="form-control firstname" placeholder="dd-mm-yyyy" id="datepicker">
-                        </div>
-                        <p style="color: #C8730F; font-family: Ubuntu; font-size: 13px; font-style: normal; font-weight: 400;">You must be at least 18 years old to use this website.</p>
-                      </div>
+                      
                     </div>
                     <div style="margin-top: 27px;">
                       <label>Are you a returning customer ? (do you have an account with us on this website)</label>
