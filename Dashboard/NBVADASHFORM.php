@@ -162,7 +162,7 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
             </span>
             <div class="container">
                 <div class="card" style="background-color: whitesmoke;">
-                    <div style="align-self: start">
+                    <div style="align-self: start" class="formml">
                         <h3 class="page-title title">Nigeria Business Visa on Arrival </h3>
                         <p class="fill">Fill the Form Below</p>
                         <p class="personal">Your personal details</p>
@@ -182,7 +182,7 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
                       <p class="yourname">Your name must be entered in English as it appears on your passport.</p>
                     </div>
                   </div>
-                  <div id="error-message" class="w-100 alert alert-dark text-sm">
+                  <div id="error-message" class="w-100 alert alert-dark text-sm formml">
                         All the fields are required!
                   </div>
                   <div class="row formml" style="margin-top:5%">

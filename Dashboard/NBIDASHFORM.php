@@ -161,7 +161,7 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
                 <div class="card" style="background-color: whitesmoke;">
                 <div class="row">
                     <div class="col-md-12">
-                    <div style="align-self: start">
+                    <div style="align-self: start" class="formml">
                         <h3 class="page-title title">Nigeria Business Incorporation </h3>
                         <p class="fill">Fill the Form Below</p>
                         <p class="personal">Your personal details</p>
@@ -171,7 +171,7 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
                   
                     <form data-form method="post" action="./handlers/form_handler.php">
                   <div class="container mt-15">
-                    <div id="error-message" class="w-100 alert alert-dark text-sm">
+                    <div id="error-message" class="w-100 alert alert-dark text-sm formml">
                         All the fields are required!
                     </div>
                     <div class="row formml">
