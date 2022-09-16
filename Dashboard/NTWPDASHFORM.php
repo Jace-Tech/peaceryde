@@ -246,7 +246,7 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
           </div>
         </div>
         <div class="form-group">
-          <label class="form-label" style="padding-bottom:5px;">Passport No</label>
+          <label class="form-label">Passport No</label>
           <div class="input-group mb-3">
             <input type="text" data-length name="passport" required class="form-control firstname" placeholder="Passport No">
           </div>
