@@ -179,7 +179,7 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
                           </option>
                         <?php endforeach; ?>
                       </select>
-                      <p class="yourname">Your name must be entered in English as it appears on your passport.</p>
+                      <label class="yourname">Your name must be entered in English as it appears on your passport.</label>
                     </div>
                   </div>
                   <div id="error-message" class="w-100 alert alert-dark text-sm formml">
@@ -206,7 +206,7 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
                         </div>
                       </div>
                       <div class="form-group">
-                        <p>Please select below your Nationality (as on passport)</p>
+                        <label>Please select below your Nationality (as on passport)</label>
                         <select required id="country" data-length name="country" class="form-select select fmselect" aria-label="Default select example">
                           <option value="">Country </option>
                           <?php foreach ($country_fee as $key => $value) : ?>
