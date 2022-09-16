@@ -93,7 +93,7 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
                 <div class="container mt-15">
                   <div class="row formml">
                     <div class="col-md-5">
-                      <select required name="title" class="form-select" aria-label="Default select example" style="border: 1px solid #555555;">
+                      <select required name="title" class="form-select" aria-label="Default select example" style="border: 1px solid #555555; margin-left:0px">
                         <option value="">Title</option>
                         <?php foreach ($titles as $title) : ?>
                           <option value="<?= $title ?>">
