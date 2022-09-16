@@ -94,8 +94,8 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
               <form data-form action="./handlers/form_handler.php" method="post">
 
               <div class="container mt-15">
-                  <div class="row">
-                    <div class="col-md-7">
+                  <div class="row formml">
+                    <div class="col-md-5">
                       <select required name="title" class="form-select title" aria-label="Default select example">
                         <option value="">Title</option>
                         <?php foreach ($titles as $title) : ?>
