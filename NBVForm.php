@@ -418,7 +418,7 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
                           </select>
                         </div>
                       </div>
-                      <div class="col-md-5" style="padding-top:17px">
+                      <div class="col-md-5" style="padding-top:17px; padding-bottom:15px">
                       <div class="form-group">
                           <label class="form-label">Date of Birth</label>
                           <div class="input-group mb-3">

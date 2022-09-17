@@ -244,7 +244,7 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
                       </div>
                       <div class="col-md-5">
                       <div class="form-group">
-                          <label>Mobile Number</label>
+                          <label style="padding-top:7px">Mobile Number</label>
                           
                           <div class="input-group mb-3">
                             <div class="input-group-prepend">
