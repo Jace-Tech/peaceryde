@@ -856,7 +856,7 @@
     font-size: 35px;
     font-style: normal;
     font-weight: 500;
-    padding-left: 350px;
+    padding-left: 0px;
     padding-top: 62px;
     color: #0A0E69;
   }
@@ -2271,7 +2271,7 @@
     font-size: 35px;
     font-style: normal;
     font-weight: 500;
-    padding-left: 330px;
+    padding-left: 0px;
     padding-top: 62px;
     color: #0A0E69;
   }
@@ -3694,7 +3694,7 @@
     font-size: 35px;
     font-style: normal;
     font-weight: 500;
-    padding-left: 310px;
+    padding-left: 0px;
     padding-top: 62px;
     color: #0A0E69;
   }
@@ -5080,7 +5080,7 @@
   .welcome {
 
     font-size: 35px;
-    padding-left: 320px;
+    padding-left: 0px;
 
   }
 
@@ -6413,7 +6413,7 @@
   .welcome {
 
     font-size: 35px;
-    padding-left: 280px;
+    padding-left: 0px;
 
   }
 
@@ -7811,7 +7811,7 @@
   }
 
   .welcome {
-    padding-left: 250px;
+    padding-left: 0px;
   }
 
   .formtext {
@@ -9259,7 +9259,7 @@
   }
 
   .welcome {
-    padding-left: 210px;
+    padding-left: 0px;
   }
 
   .formtext {

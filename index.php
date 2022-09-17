@@ -422,7 +422,7 @@ $uploads = new Upload($connect);
                       <?= getSubName(getUser($connect, $review["user_id"])['firstname'] . " " . getUser($connect, $review["user_id"])["lastname"]); ?>
                     </h2>
                   <?php endif; ?>
-                  <div class="new-section6__flex18-item">
+                  <div class="new-section6__flex18-item" style="align-items: center;">
 
                     <div class="new-section6__text-body layout">
                       <p class="review-name">
@@ -467,7 +467,7 @@ $uploads = new Upload($connect);
                       <div class="col-md-1"></div>
                     <?php endif;  ?>
                   
-                    <div class="col-md-2">
+                    <div class="col-md-2" style="margin-bottom:50px;">
                       <video src="./reviews/<?= $videoReview['file'] ?>" loop="" controls="" class="mobilevideo" style="width: 200px;height: 200px; "></video>
                     </div>
                     <?php $i++; ?>

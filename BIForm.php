@@ -202,16 +202,14 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
                             </div>
                         </div>
                       </div>
-                      </div>
-                     
-                   
-
+                    </div>
+                                       
                     <div class="row formml">
                       <div class="col-md-5">
                       <div class="form-group" style="">
                           <label class="form-label">Country</label>
                           <br>
-                              <select required id="country" data-length name="country" class="form-select select" aria-label="Default select example" style="width:100%; margin-top:10px">
+                              <select required id="country" data-length name="country" class="form-select select" aria-label="Default select example" style="width:100%; margin-top:15px">
                                 <option value="">Country </option>
                                 <?php foreach ($country_fee as $key => $value) : ?>
                                   <option value="<?= $key ?>">
@@ -246,11 +244,11 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
                       </div>
                       <div class="col-md-5">
                       <div class="form-group">
-                          <label style="padding-top:25px; padding-bottom:5px">Mobile Number</label>
-                          <br><br>
+                          <label style="padding-top:7px">Mobile Number</label>
+                          
                           <div class="input-group mb-3">
                             <div class="input-group-prepend">
-                              <select required name="countryCode" id="" class="form-select code" aria-label="Default select example">
+                              <select required name="countryCode" id="" class="form-select code" aria-label="Default select example" style="margin-top:7px">
                                 <option value="">+234</option>
                                 <optgroup label="Country Code">
                                   <option data-countryCode="DZ" value="213">Algeria (+213)</option>
@@ -492,7 +490,7 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
                     </div>
 
                     <div class="row formml">
-                    <div style="margin-top: 27px;">
+                      <div style="margin-top: 27px;">
                         <label>Are you a returning customer ? (do you have an account with us on this website)</label>
                         <br>
                         <div class="form-check form-check-inline" style="padding-left: 0px; padding-top: 5px;">
@@ -512,6 +510,7 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
                         <button type="submit" name="bi" class="btn proceed">Proceed to payment</button>
                       </div>
                     </div>
+                  </div>
                 </form>
               </div>
             </div>
