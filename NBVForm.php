@@ -105,7 +105,8 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
                             </option>
                           <?php endforeach; ?>
                         </select>
-                        <p class="yourname" style="padding-left:0px">Your name must be entered in English as it appears on your passport.</p>
+                        <p class="yourname" style="padding-left:10px;padding-top: 17px;
+    padding-bottom: 17px;">Your name must be entered in English as it appears on your passport.</p>
                       </div>
                     </div>
                     <div class="row formml">
@@ -400,7 +401,7 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
                     </div>
                                        
                     <div class="row formml">
-                      <div class="col-md-5">
+                      <div class="col-md-5" style="padding-top:17px">
                         <div class="form-group">
                           <p>Please select below your Nationality (as on passport)</p>
                           <select required id="country" data-length name="country" class="form-select select" aria-label="Default select example">
@@ -417,7 +418,7 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
                           </select>
                         </div>
                       </div>
-                      <div class="col-md-5">
+                      <div class="col-md-5" style="padding-top:17px">
                       <div class="form-group">
                           <label class="form-label">Date of Birth</label>
                           <div class="input-group mb-3">
