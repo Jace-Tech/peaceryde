@@ -91,7 +91,7 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
             <div>
               <form data-form action="./handlers/form_handler.php" method="post">
 
-              <div class="container mt-15">
+                <div class="container mt-15">
                     <div id="error-message" class="w-100 alert alert-dark text-sm">
                         All the fields are required!
                     </div>
@@ -105,8 +105,7 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
                             </option>
                           <?php endforeach; ?>
                         </select>
-                        <p class="yourname" style="padding-left:10px;padding-top: 17px;
-    padding-bottom: 17px;">Your name must be entered in English as it appears on your passport.</p>
+                        <p class="yourname" style="padding-left:10px;padding-top: 17px; padding-bottom: 17px;">Your name must be entered in English as it appears on your passport.</p>
                       </div>
                     </div>
                     <div class="row formml">
@@ -465,7 +464,7 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
                     </div>
 
                     
-                  </div>
+                </div>
 
 
 
