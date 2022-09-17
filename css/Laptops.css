@@ -382,7 +382,7 @@ button:focus:not(:focus-visible) {
   font-weight: 400;
   color: #000000;
   padding-top: 16px;
-  padding-left: 85px;
+  padding-left: 45px;
 }
 
 .paidby {
@@ -391,7 +391,7 @@ button:focus:not(:focus-visible) {
   font-weight: 400;
   color: #000000;
   padding-top: 14px;
-  padding-left: 85px;
+  padding-left: 45px;
 }
 
 .transdate {
@@ -400,7 +400,7 @@ button:focus:not(:focus-visible) {
   font-weight: 400;
   color: #000000;
   padding-top: 14px;
-  padding-left: 85px;
+  padding-left: 45px;
 }
 
 .money {
@@ -409,7 +409,7 @@ button:focus:not(:focus-visible) {
   font-weight: 400;
   color: #000000;
   padding-top: 16px;
-  padding-left: 85px;
+  padding-left: 45px;
 }
 
 .successname {
@@ -418,7 +418,7 @@ button:focus:not(:focus-visible) {
   font-weight: 400;
   color: #000000;
   padding-top: 14px;
-  padding-left: 85px;
+  padding-left: 45px;
 }
 
 .successdate {
@@ -427,13 +427,13 @@ button:focus:not(:focus-visible) {
   font-weight: 400;
   color: #000000;
   padding-top: 14px;
-  padding-left: 85px;
+  padding-left: 45px;
 }
 
 .successbutton {
   margin-left: 116px;
   margin-top: 26px;
-  margin-bottom: 85px;
+  margin-bottom: 45px;
 }
 
 .cfheight {
@@ -1667,7 +1667,7 @@ p,a,h1,h2,h3,h4 {
     font-size: 18px;
     font-weight: 300;
     width: 1600px;
-    text-align: justify;
+    text-align: left;
   }
 
   .topdiv {
@@ -3108,7 +3108,7 @@ p,a,h1,h2,h3,h4 {
     font-size: 18px;
     font-weight: 300;
     width: 1200px;
-    text-align: justify;
+    text-align: left;
   }
 
   .topdiv {
@@ -4478,7 +4478,7 @@ p,a,h1,h2,h3,h4 {
     font-size: 18px;
     font-weight: 300;
     width: 1250px;
-    text-align: justify;
+    text-align: left;
   }
 
   .topdiv {
@@ -13643,7 +13643,7 @@ p,a,h1,h2,h3,h4 {
     font-size: 18px;
     font-weight: 300;
     width: 800px;
-    text-align: justify;
+    text-align: left;
   }
 
   .topdiv {
