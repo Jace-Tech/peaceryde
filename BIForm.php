@@ -245,7 +245,7 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
                       <div class="col-md-5">
                       <div class="form-group">
                           <label>Mobile Number</label>
-                          <br><br>
+                         
                           <div class="input-group mb-3">
                             <div class="input-group-prepend">
                               <select required name="countryCode" id="" class="form-select code" aria-label="Default select example">
