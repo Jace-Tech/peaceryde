@@ -245,19 +245,7 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
                         </div>
                       </div>
                       <div class="col-md-5">
-                        <div class="form-group">
-                            <label class="form-label">Date of Birth</label>
-                            <div class="input-group mb-3">
-                              <input type="text" data-date readonly required name="dob" class="form-control firstname" placeholder="dd-mm-yyyy" id="datepicker">
-                            </div>
-                            <p style="color: #C8730F; font-family: Ubuntu; font-size: 13px; font-style: normal; font-weight: 400;">You must be at least 18 years old to use this website.</p>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="row formml">
-                      <div class="col-md-5">
-                        <div class="form-group">
+                      <div class="form-group">
                           <label style="padding-top:25px; padding-bottom:5px">Mobile Number</label>
                           <br><br>
                           <div class="input-group mb-3">
@@ -485,6 +473,19 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
                             <input type="tel" required name="phone" value="<?= $FORM_APPY['phone'] ?? "" ?>" class="form-control firstname" placeholder="070XXXXXXXX">
                           </div>
                         </div> 
+                        
+                      </div>
+                    </div>
+
+                    <div class="row formml">
+                      <div class="col-md-5">
+                      <div class="form-group">
+                            <label class="form-label">Date of Birth</label>
+                            <div class="input-group mb-3">
+                              <input type="text" data-date readonly required name="dob" class="form-control firstname" placeholder="dd-mm-yyyy" id="datepicker">
+                            </div>
+                            <p style="color: #C8730F; font-family: Ubuntu; font-size: 13px; font-style: normal; font-weight: 400;">You must be at least 18 years old to use this website.</p>
+                        </div>
                       </div>
                       <div class="col-md-5">
                       </div>
