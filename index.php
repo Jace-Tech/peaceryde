@@ -419,14 +419,14 @@ $uploads = new Upload($connect);
                     <img src="./Dashboard/pic/<?= getProfilePic($connect, $review["user_id"])["file"]; ?>"  class="rounded-circle" style="width: 75px; height: 75px; object-fit: cover; margin-bottom: 13px;">
                   <?php else : ?>
                     <h2 class="avater">
-                      <?= getSubName($users->get_user($review["user_id"])['firstname'] . " " . $users->get_user($review["user_id"])["lastname"]); ?>
+                      <?= getSubName(getUser($connect, $review["user_id"])['firstname'] . " " . getUser($connect, $review["user_id"])["lastname"]); ?>
                     </h2>
                   <?php endif; ?>
                   <div class="new-section6__flex18-item">
 
                     <div class="new-section6__text-body layout">
                       <p class="review-name">
-                        <?= $users->get_user($review["user_id"])['firstname'] . " " . $users->get_user($review["user_id"])["lastname"] ?>
+                        <?= getUser($connect, $review["user_id"])['firstname'] . " " . getUser($connect, $review["user_id"])["lastname"] ?>
                       </p>
                     </div>
                     <div class="star-rating">
@@ -474,14 +474,11 @@ $uploads = new Upload($connect);
                   <?php endforeach; ?>
                 
               </div>
-
-              
-            
-            <a href="./review" class="btn btn-review" style="border: 1px solid #a0bd1c;  background-color: transparent; color: #a0bd1c;">See More
-              Reviews
-            </a>
         </div>
       <?php endif; ?>
+          <a href="./review" class="btn btn-review" style="border: 1px solid #a0bd1c;  background-color: transparent; color: #a0bd1c;">See More
+            Reviews
+          </a>
       </div>
       </section>
     <?php endif; ?>
