@@ -401,37 +401,56 @@ $uploads = new Upload($connect);
      
 
     </section>
-    <comment content="======= End section5 =======" break="true"></comment><!-- ======= secti
-    on6 ======= -->
+    <comment content="======= End section5 =======" break="true"></comment><!-- ======= section6 ======= -->
     <?php if (count($reviews->getAllFeaturedReviews("text")) >= 3) : ?>
-
-
-      <section class="card-container">
-      <h1 class="new-section6__hero-title1 layout customers">
-          What customers say about us
-          </h1>
-          
-            <?php  ?>
-            <?php foreach ($reviews->getAllFeaturedReviews("text") as $review) : ?>
-            <div class="card">
-                <?php if (isset(getProfilePic($connect, $review["user_id"])["file"])) : ?>
-                  <img src="./Dashboard/pic/<?= getProfilePic($connect, $review["user_id"])["file"]; ?>"  class="rounded-circle" style="width: 75px; height: 75px; object-fit: cover; margin-bottom: 13px;">
-                <?php else : ?>
-                  <h2 class="avater">
-                    <?= getSubName($users->get_user($review["user_id"])['firstname'] . " " . $users->get_user($review["user_id"])["lastname"]); ?>
-                  </h2>
-                <?php endif; ?>
-              
-              <p><?= strlen($review['review']) > 300 ? substr(trim($review['review']), 0, 300) . "..." : substr(trim($review['review']), 0, 300);  ?></p>
-            </div>
-            <?php endforeach; ?>
-    </section>
       <section class="new-section6__section6 layout">
         <div class="new-section6__flex4 layout">
           <h1 class="new-section6__hero-title1 layout customers">
           What customers say about us
           </h1>
-        
+          <div class="row reviews mt-99">
+           
+            <div class="col-md-2 hide"></div>
+            <?php  ?>
+            <?php foreach ($reviews->getAllFeaturedReviews("text") as $review) : ?>
+              <div class="col-md-2 mag chee">
+                <div class="review-card">
+                  <?php if (isset(getProfilePic($connect, $review["user_id"])["file"])) : ?>
+                    <img src="./Dashboard/pic/<?= getProfilePic($connect, $review["user_id"])["file"]; ?>"  class="rounded-circle" style="width: 75px; height: 75px; object-fit: cover; margin-bottom: 13px;">
+                  <?php else : ?>
+                    <h2 class="avater">
+                      <?= getSubName($users->get_user($review["user_id"])['firstname'] . " " . $users->get_user($review["user_id"])["lastname"]); ?>
+                    </h2>
+                  <?php endif; ?>
+                  <div class="new-section6__flex18-item">
+
+                    <div class="new-section6__text-body layout">
+                      <p class="review-name">
+                        <?= $users->get_user($review["user_id"])['firstname'] . " " . $users->get_user($review["user_id"])["lastname"] ?>
+                      </p>
+                    </div>
+                    <div class="star-rating">
+                      <?php for ($i = 0; $i < intval($review['rating']); $i++) : ?>
+                        <span class="fa fa-star checked" data-rating="<?= $i + 1 ?>"></span>
+                      <?php endfor; ?>
+
+                      <?php for ($i = 0; $i < (5 - intval($review['rating'])); $i++) : ?>
+                        <span class="fa fa-star-o" data-rating="<?= intval($review['rating']) + ($i + 1) ?>"></span>
+                      <?php endfor; ?>
+
+                      <!-- <input type="hidden" name="whatever1" class="rating-value" value="2.56"> -->
+                    </div>
+                  </div>
+                </div>
+                <div class="new-section6__paragraph-body-box layout">
+                  <p class="new-section6__paragraph-body review-text">
+                      <?= strlen($review['review']) > 300 ? substr(trim($review['review']), 0, 300) . "..." : substr(trim($review['review']), 0, 300);  ?>
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-1"></div>
+            <?php endforeach; ?>
+          </div>
           <?php if (count($reviews->getAllFeaturedReviews("video")) >= 3) : ?>
             
               <h1 class="laptopvideo laptopvideoh1">
