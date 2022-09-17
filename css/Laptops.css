@@ -1662,19 +1662,19 @@ p,a,h1,h2,h3,h4 {
   .formtext {
     height: 113px;
     color: #0A0E69;
-    padding-left: 600px;
+    padding-left: 30%;
     padding-top: 52px;
     font-family: ubuntu;
     font-size: 18px;
     font-weight: 300;
-    width: 1600px;
+    width: 70%;
     text-align: left;
   }
 
   .topdiv {
-    margin: 114px 793px 166px 633px;
-    width: 938px;
-  }
+    margin: 114px 25% 166px 25%;
+    width: 50%;
+}
 
   .cardform {
     border: 1px solid #ffffff;
@@ -3104,19 +3104,19 @@ p,a,h1,h2,h3,h4 {
   .formtext {
     height: 113px;
     color: #0A0E69;
-    padding-left: 400px;
+    padding-left: 30%;
     padding-top: 52px;
     font-family: ubuntu;
     font-size: 18px;
     font-weight: 300;
-    width: 1200px;
+    width: 70%;
     text-align: left;
   }
 
   .topdiv {
-    margin: 74px 333px 166px 323px;
-    width: 938px;
-  }
+    margin: 74px 25% 166px 25%;
+    width: 50%;
+}
 
   .cardform {
     border: 1px solid #ffffff;
@@ -4475,19 +4475,19 @@ p,a,h1,h2,h3,h4 {
   .formtext {
     height: 113px;
     color: #0A0E69;
-    padding-left: 430px;
+    padding-left: 30%;
     padding-top: 52px;
     font-family: ubuntu;
     font-size: 18px;
     font-weight: 300;
-    width: 1250px;
+    width: 70%;
     text-align: left;
   }
 
   .topdiv {
-    margin: 74px 333px 166px 373px;
-    width: 938px;
-  }
+    margin: 74px 25% 166px 25%;
+    width: 50%;
+}
 
   .cardform {
     border: 1px solid #ffffff;
