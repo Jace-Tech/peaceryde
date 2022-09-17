@@ -204,7 +204,7 @@ button:focus:not(:focus-visible) {
 .star-rating {
   line-height: 32px;
   font-size: 1.25em;
-  margin-left: -15px;
+  /* margin-left: -15px; */
   margin-bottom: 15px;
 }
 

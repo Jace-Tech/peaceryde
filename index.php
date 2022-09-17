@@ -422,7 +422,7 @@ $uploads = new Upload($connect);
                       <?= getSubName($users->get_user($review["user_id"])['firstname'] . " " . $users->get_user($review["user_id"])["lastname"]); ?>
                     </h2>
                   <?php endif; ?>
-                  <div class="new-section6__flex18-item">
+                  <div class="new-section6__flex18-item" style="align-items: center;">
 
                     <div class="new-section6__text-body layout">
                       <p class="review-name">
