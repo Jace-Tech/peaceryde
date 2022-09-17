@@ -78,7 +78,7 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
     <section class=" new-section2__group layout2 nbvformheight" style="background-color: #f8f6f6;">
       <div class="new-section1__cover-block layout">
         <h2 class="welcome"> Welcome!</h2>
-        <p class="formtext">The first step in applying for a <span style="font-size: 20px; font-weight: 600;">Nigeria Business Visa on Arrival</span> is to fill the form below
+        <p class="formtext">The first step in applying for a <span style="font-size: 20px; font-weight: 500;">Nigeria Business Visa on Arrival</span> is to fill the form below
           <span>It takes less than 5 minutes to do this. After you submit your application, you can</span>
           <span> move on to the next step to make payment.</span>.
         </p>
@@ -417,9 +417,9 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
                           </select>
                         </div>
                       </div>
-                      <div class="col-md-5" style="padding-top:17px; padding-bottom:15px">
+                      <div class="col-md-5" style="padding-top:17px;">
                       <div class="form-group">
-                          <label class="form-label">Date of Birth</label>
+                          <label class="form-label" style="padding-bottom:15px">Date of Birth</label>
                           <div class="input-group mb-3">
                             <input type="text" readonly required data-date name="dob" value="<?= $FORM_APPY["dob"] ?? "" ?>" class="form-control firstname" placeholder="dd-mm-yyyy" id="datepicker">
                           </div>

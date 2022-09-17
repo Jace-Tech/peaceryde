@@ -118,7 +118,7 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
       <div class="new-section1__cover-block layout">
         <div class="movement">
           <h2 class="welcome"> Welcome!</h2>
-          <p class="formtext">The first step in applying for a <span style="font-size: 20px; font-weight: 600;">Nigeria Business Incorporation</span> is to fill the form below.
+          <p class="formtext">The first step in applying for a <span style="font-size: 20px; font-weight: 500;">Nigeria Business Incorporation</span> is to fill the form below.
             <span>It takes less than 5 minutes to do this. After you submit your application, you can</span>
             <span> move on to the next step to make payment</span>.
           </p>
