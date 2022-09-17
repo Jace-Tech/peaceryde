@@ -118,7 +118,7 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
       <div class="new-section1__cover-block layout">
         <div class="movement">
           <h2 class="welcome"> Welcome!</h2>
-          <p class="formtext">The first step in applying for a <span style="font-size: 20px; font-weight: 500;">Nigeria Business Incorporation</span> is to fill the form below.
+          <p class="formtext">The first step in applying for a <span style="font-size: 20px; font-weight: 600;">Nigeria Business Incorporation</span> is to fill the form below.
             <span>It takes less than 5 minutes to do this. After you submit your application, you can</span>
             <span> move on to the next step to make payment</span>.
           </p>
@@ -202,10 +202,8 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
                             </div>
                         </div>
                       </div>
-                      </div>
-                     
-                   
-
+                    </div>
+                                       
                     <div class="row formml">
                       <div class="col-md-5">
                       <div class="form-group" style="">
@@ -492,7 +490,7 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
                     </div>
 
                     <div class="row formml">
-                    <div style="margin-top: 27px;">
+                      <div style="margin-top: 27px;">
                         <label>Are you a returning customer ? (do you have an account with us on this website)</label>
                         <br>
                         <div class="form-check form-check-inline" style="padding-left: 0px; padding-top: 5px;">
@@ -512,6 +510,7 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
                         <button type="submit" name="bi" class="btn proceed">Proceed to payment</button>
                       </div>
                     </div>
+                  </div>
                 </form>
               </div>
             </div>
