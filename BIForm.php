@@ -245,10 +245,10 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
                       <div class="col-md-5">
                       <div class="form-group">
                           <label>Mobile Number</label>
-                         
+                          
                           <div class="input-group mb-3">
                             <div class="input-group-prepend">
-                              <select required name="countryCode" id="" class="form-select code" aria-label="Default select example">
+                              <select required name="countryCode" id="" class="form-select code" aria-label="Default select example" style="margin-top:7px">
                                 <option value="">+234</option>
                                 <optgroup label="Country Code">
                                   <option data-countryCode="DZ" value="213">Algeria (+213)</option>

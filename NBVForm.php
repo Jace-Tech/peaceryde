@@ -126,6 +126,7 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
                         </div>
                       </div>
                     </div>
+
                     <div class="row formml">
                       <div class="col-md-5">
                         <div class="form-group" style="margin-right: 0px;">
@@ -152,6 +153,7 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
                               </div>
                             </div>
                         </div>
+                      </div>
                     </div>
 
                     <div class="row formml">
