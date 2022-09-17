@@ -1653,7 +1653,8 @@ p,a,h1,h2,h3,h4 {
     font-size: 35px;
     font-style: normal;
     font-weight: 500;
-    padding-left: 1020px;
+    padding-left: 0px;
+    text-align: center;
     padding-top: 62px;
     color: #0A0E69;
   }
@@ -3094,7 +3095,8 @@ p,a,h1,h2,h3,h4 {
     font-size: 35px;
     font-style: normal;
     font-weight: 500;
-    padding-left: 720px;
+    padding-left: 0px;
+    text-align: center;
     padding-top: 62px;
     color: #0A0E69;
   }
@@ -4464,7 +4466,8 @@ p,a,h1,h2,h3,h4 {
     font-size: 35px;
     font-style: normal;
     font-weight: 500;
-    padding-left: 770px;
+    padding-left: 0px;
+    text-align: center;
     padding-top: 62px;
     color: #0A0E69;
   }
@@ -5819,7 +5822,8 @@ p,a,h1,h2,h3,h4 {
     font-size: 35px;
     font-style: normal;
     font-weight: 500;
-    padding-left: 730px;
+    padding-left: 0px;
+    text-align: center;
     padding-top: 62px;
     color: #0A0E69;
   }
