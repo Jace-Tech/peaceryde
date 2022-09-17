@@ -23,7 +23,6 @@ $lang = [
     "Latin" => "la",
     "Lithuanian" => "lt",
     "Korean" => "ko",
-    "Malay (Singapore)" => "ms",
     "Marathi" => "mr",
     "Norwegian (Norway)" => "no",
     "Polish" => "pl",
@@ -60,6 +59,8 @@ $lang = [
     "Awadhi" => "awa",
     "Thai" => "tha",
     "Sindhi" => "sd",
+    "Igbo" => "ig",
+    "Yoruba" => "yo",
 ];
 
 
