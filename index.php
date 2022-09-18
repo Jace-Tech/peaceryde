@@ -80,6 +80,7 @@ $uploads = new Upload($connect);
       letter-spacing: 0.0015em;
       color: #000080;
       text-align: left;
+      word-break:break-all;
     }
   </style>
 </head>

@@ -133,7 +133,7 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
                         <div class="form-group" style="margin-right: 0px;">
                           <label class="form-label">Last Name</label>
                           <div class="input-group mb-3">
-                            <input class="form-control lastname" data-length name="lastname" type="text" value="<?= $FORM_APPY["lastname"] ?? "" ?>" required placeholder="Last Name (as on passport)">
+                            <input class="form-control firstname" data-length name="lastname" type="text" value="<?= $FORM_APPY["lastname"] ?? "" ?>" required placeholder="Last Name (as on passport)">
                           </div>
                         </div>
                       </div>
