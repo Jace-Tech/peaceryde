@@ -168,7 +168,7 @@ $isUnread = count($messages->get_user_unread_messages($USER_ID));
         @media only screen and (max-width: 1024px){
             .breadcrumb {
                 margin-top: -130px;
-                margin-left: 338px;
+                margin-left: 238px;
             }
         }
         @media only screen and (max-width: 900px){
@@ -261,7 +261,7 @@ $isUnread = count($messages->get_user_unread_messages($USER_ID));
             }
             .breadcrumb {
                 margin-top: -170px;
-                margin-left: 154px;
+                margin-left: 14px;
             }
             .example {
                 margin-left: 7px;
@@ -384,7 +384,7 @@ $isUnread = count($messages->get_user_unread_messages($USER_ID));
         {
             .breadcrumb {
                 margin-top: -150px;
-                margin-left: 94px;
+                margin-left: 44px;
                 width: 300px;
             }
             .mobile
