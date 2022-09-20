@@ -1,5 +1,7 @@
 <?php 
 
+require_once("./models.php");
+
 if(isset($_POST['markall'])) {
     try {
         $query = "UPDATE `notification` SET `isRead` = ?";
