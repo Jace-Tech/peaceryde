@@ -123,7 +123,7 @@ $UNREAD_NOTIFICATIONS = getUnReadNotications($connect, $LOGGED_ADMIN['admin_id']
 					<div class="flex items-center justify-between">
 						<div class="text-xs font-semibold text-gray-400 uppercase pt-1.5 pb-2 px-4">Notifications</div>
 						<form method="post" action="./handler/notification_handler.php">
-							<button name="markall" type="submit" class="p-2 rounded bg-indigo-500">Mark all as read</button>
+							<button name="markall" type="submit" class="p-2 text-white text-sm rounded bg-indigo-500">Mark all as read</button>
 						</form>
 					</div>	
 						<ul id="data-notify-container">
