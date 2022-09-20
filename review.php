@@ -1,6 +1,7 @@
 <?php include("./inc/check_session.php") ?>
 <?php
 $REVIEW = new Review($connect);
+$users = new User($connect);
 ?>
 
 <!DOCTYPE html>
