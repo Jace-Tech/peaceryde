@@ -1682,7 +1682,8 @@ p,a,h1,h2,h3,h4 {
   }
 
   .formh1 {
-    padding-left: 364px;
+    padding-left: 0px;
+    text-align: center;
     font-family: 'Ubuntu';
     font-style: normal;
     font-weight: 500;
@@ -1691,7 +1692,7 @@ p,a,h1,h2,h3,h4 {
   }
 
   .formp {
-    padding: 28px 373px 0px 390px;
+    padding: 28px 473px 0px 560px;
     font-family: Ubuntu;
     font-size: 16px;
     font-style: normal;
@@ -3124,7 +3125,8 @@ p,a,h1,h2,h3,h4 {
   }
 
   .formh1 {
-    padding-left: 364px;
+    padding-left: 0px;
+    text-align: center;
     font-family: 'Ubuntu';
     font-style: normal;
     font-weight: 500;
@@ -4495,7 +4497,8 @@ p,a,h1,h2,h3,h4 {
   }
 
   .formh1 {
-    padding-left: 364px;
+    padding-left: 0px;
+    text-align: center;
     font-family: 'Ubuntu';
     font-style: normal;
     font-weight: 500;
@@ -5850,7 +5853,8 @@ p,a,h1,h2,h3,h4 {
   }
 
   .formh1 {
-    padding-left: 364px;
+    padding-left: 0px;
+    text-align: center;
     font-family: 'Ubuntu';
     font-style: normal;
     font-weight: 500;
@@ -7200,7 +7204,8 @@ p,a,h1,h2,h3,h4 {
   }
 
   .formh1 {
-    padding-left: 364px;
+    padding-left: 0px;
+    text-align: center;
     font-family: 'Ubuntu';
     font-style: normal;
     font-weight: 500;
@@ -8532,7 +8537,8 @@ p,a,h1,h2,h3,h4 {
   }
 
   .formh1 {
-    padding-left: 364px;
+    padding-left: 0px;
+    text-align: center;
     font-family: 'Ubuntu';
     font-style: normal;
     font-weight: 500;
@@ -9904,7 +9910,8 @@ p,a,h1,h2,h3,h4 {
   }
 
   .formh1 {
-    padding-left: 364px;
+    padding-left: 0px;
+    text-align: center;
     font-family: 'Ubuntu';
     font-style: normal;
     font-weight: 500;
@@ -11240,7 +11247,8 @@ p,a,h1,h2,h3,h4 {
   }
 
   .formh1 {
-    padding-left: 364px;
+    padding-left: 0px;
+    text-align: center;
     font-family: 'Ubuntu';
     font-style: normal;
     font-weight: 500;
@@ -12197,7 +12205,8 @@ p,a,h1,h2,h3,h4 {
   }
 
   .formh1 {
-    padding-left: 364px;
+    padding-left: 0px;
+    text-align: center;
     font-family: 'Ubuntu';
     font-style: normal;
     font-weight: 500;
@@ -13661,7 +13670,8 @@ p,a,h1,h2,h3,h4 {
   }
 
   .formh1 {
-    padding-left: 264px;
+    padding-left: 0px;
+    text-align: center;
     font-family: 'Ubuntu';
     font-style: normal;
     font-weight: 500;
