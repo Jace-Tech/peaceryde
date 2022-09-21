@@ -15,7 +15,8 @@ if (isset($_POST['subscribe'])) {
         $subscriber = $result->fetch();
 
         if ($subscriber) throw new Exception("You have already subscribed");
-    } catch (Exception $e) {
+    } 
+    catch (Exception $e) {
         //throw $th;
     }
 }
