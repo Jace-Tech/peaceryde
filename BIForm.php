@@ -104,6 +104,10 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
         border: 1px solid #ffffff;
         height: 1750px;
       }
+      .formtext
+      {
+        padding-top: 0px;
+      }
     }
     .error {
       border: 1px solid red;
@@ -126,9 +130,7 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
             <span>It takes less than 5 minutes to do this. After you submit your application, you can</span>
             <span> move on to the next step to make payment.</span>
           </p>
-          <p class="formtext" style="color: #0A0E69;
-    padding-top: 0px;
-">
+          <p class="formtext">
           Processing duration takes two(2) weeks.
         </p>
           <div class="topdiv">
