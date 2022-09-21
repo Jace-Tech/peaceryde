@@ -32,7 +32,7 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
   <link rel="stylesheet" type="text/css" href="css/smallscreen800.css">
   <link rel="stylesheet" type="text/css" href="css/responsive.css">
   <!-- <link rel="stylesheet" type="text/css" href="css/header.css"> -->
-
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&family=Ubuntu:ital,wght@0,300;0,500;1,300&display=swap" rel="stylesheet">
 
   <script type="text/javascript" src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script type="text/javascript" src="https://unpkg.com/headroom.js@0.12.0/dist/headroom.min.js"></script>
