@@ -75,53 +75,47 @@ $users = new User($connect);
             width: 90%;
         } 
     }
-    .rating {
-            border: none;
+    .star-rating {
+  border:solid 1px #ccc;
+  display:flex;
+  flex-direction: row-reverse;
+  font-size:1.5em;
+  justify-content:space-around;
+  padding:0 .2em;
+  text-align:center;
+  width:5em;
+}
 
-        }
+.star-rating input {
+  display:none;
+}
 
-        .rating>input {
-            display: none;
-        }
+.star-rating label {
+  color:#ccc;
+  cursor:pointer;
+}
 
-        .rating>label:before {
-            margin: 13px 5px 13px 13px;
-            font-size: 1.25em;
-            font-family: FontAwesome;
-            display: inline-block;
-            content: "\f005";
-        }
+.star-rating :checked ~ label {
+  color:#f90;
+}
 
-        .rating>.half:before {
-            content: "\f089";
-            position: absolute;
-        }
+.star-rating label:hover,
+.star-rating label:hover ~ label {
+  color:#fc0;
+}
 
-        .rating>label {
+/* explanation */
 
-            float: right;
-        }
-
-        /***** CSS Magic to Highlight Stars on Hover *****/
-
-        .rating>input:checked~label,
-        /* show gold star when clicked */
-        .rating:not(:checked)>label:hover,
-        /* hover current star */
-        .rating:not(:checked)>label:hover~label {
-            color: #FFD700;
-        }
-
-        /* hover previous stars in list */
-
-        .rating>input:checked+label:hover,
-        /* hover current star when changing rating */
-        .rating>input:checked~label:hover,
-        .rating>label:hover~input:checked~label,
-        /* lighten current selection */
-        .rating>input:checked~label:hover~label {
-            color: #FFED85;
-        }
+article {
+  background-color:#ffe;
+  box-shadow:0 0 1em 1px rgba(0,0,0,.25);
+  color:#006;
+  font-family:cursive;
+  font-style:italic;
+  margin:4em;
+  max-width:30em;
+  padding:2em;
+}
     </style>
 </head>
 
@@ -165,7 +159,7 @@ $users = new User($connect);
                                                                     </svg>
                                                                 </span> 1 review</p>
                                                         </div> -->
-                                                        <div class="col-md-2">
+                                                        <div class="col-md-5">
                                                             <p style="color: #0A0E69">
                                                                 <span><svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                                         <path d="M7.42285 3.03418C6.95312 3.03418 6.49394 3.13548 6.10337 3.32528C5.71281 3.51507 5.4084 3.78484 5.22864 4.10045C5.04888 4.41607 5.00185 4.76337 5.09349 5.09843C5.18513 5.43348 5.41132 5.74126 5.74347 5.98282C6.07562 6.22438 6.49881 6.38889 6.95951 6.45554C7.42022 6.52218 7.89775 6.48798 8.33173 6.35724C8.7657 6.22651 9.13662 6.00512 9.39759 5.72107C9.65856 5.43703 9.79785 5.10307 9.79785 4.76145C9.79714 4.30351 9.54668 3.86448 9.10144 3.54066C8.6562 3.21685 8.05252 3.0347 7.42285 3.03418ZM7.42285 5.62509C7.18799 5.62509 6.9584 5.57444 6.76311 5.47954C6.56783 5.38464 6.41562 5.24976 6.32575 5.09195C6.23587 4.93414 6.21235 4.76049 6.25817 4.59297C6.30399 4.42544 6.41709 4.27155 6.58316 4.15077C6.74924 4.02999 6.96083 3.94773 7.19118 3.91441C7.42154 3.88109 7.6603 3.89819 7.87729 3.96356C8.09428 4.02892 8.27974 4.13962 8.41022 4.28164C8.54071 4.42367 8.61035 4.59064 8.61035 4.76145C8.60999 4.99042 8.48476 5.20994 8.26214 5.37184C8.03952 5.53375 7.73769 5.62482 7.42285 5.62509Z" fill="#080C58" />
@@ -177,19 +171,18 @@ $users = new User($connect);
                                                         </div>
                                                     </div>
                                                     <div class="row">
-                                                    <div class="moverating">
-                                                        <fieldset class="rating">
-                                                            <input type="radio" id="star5" name="rating" value="5" /><label class="full" for="star5" title="Awesome - 5 stars" style="margin-right: 110px;"></label>
-                                                            <input type="radio" id="star4half" name="rating" value="4.5" /><label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
-                                                            <input type="radio" id="star4" name="rating" value="4" /><label class="full" for="star4" title="Pretty good - 4 stars"></label>
-                                                            <input type="radio" id="star3half" name="rating" value="3.5" /><label class="half" for="star3half" title="Meh - 3.5 stars"></label>
-                                                            <input type="radio" id="star3" name="rating" value="3" /><label class="full" for="star3" title="Meh - 3 stars"></label>
-                                                            <input type="radio" id="star2half" name="rating" value="2.5" /><label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
-                                                            <input type="radio" id="star2" name="rating" value="2" /><label class="full" for="star2" title="Kinda bad - 2 stars"></label>
-                                                            <input type="radio" id="star1half" name="rating" value="1.5" /><label class="half" for="star1half" title="Meh - 1.5 stars"></label>
-                                                            <input type="radio" id="star1" name="rating" value="1" /><label class="full" for="star1" title="Sucks big time - 1 star"></label>
-                                                            <input type="radio" id="starhalf" name="rating" value="0.5" /><label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
-                                                        </fieldset>
+                                                    <div class="col-md-6">
+                                                    <div class="star-rating">
+                                                        <input type="radio" id="5-stars" name="rating" value="5" />
+                                                        <label for="5-stars" class="star">&#9733;</label>
+                                                        <input type="radio" id="4-stars" name="rating" value="4" />
+                                                        <label for="4-stars" class="star">&#9733;</label>
+                                                        <input type="radio" id="3-stars" name="rating" value="3" />
+                                                        <label for="3-stars" class="star">&#9733;</label>
+                                                        <input type="radio" id="2-stars" name="rating" value="2" />
+                                                        <label for="2-stars" class="star">&#9733;</label>
+                                                        <input type="radio" id="1-star" name="rating" value="1" />
+                                                        <label for="1-star" class="star">&#9733;</label>
                                                         </div>
                                                     </div>
                                                 </div>
