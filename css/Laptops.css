@@ -1660,7 +1660,7 @@ p,a,h1,h2,h3,h4 {
   }
 
   .formtext {
-    height: 113px;
+    height: auto;
     color: #0A0E69;
     padding-left: 30%;
     padding-top: 52px;
@@ -3103,7 +3103,7 @@ p,a,h1,h2,h3,h4 {
   }
 
   .formtext {
-    height: 113px;
+    height: auto;
     color: #0A0E69;
     padding-left: 30%;
     padding-top: 52px;
@@ -4475,7 +4475,7 @@ p,a,h1,h2,h3,h4 {
   }
 
   .formtext {
-    height: 113px;
+    height: auto;
     color: #0A0E69;
     padding-left: 30%;
     padding-top: 52px;
@@ -5832,7 +5832,7 @@ p,a,h1,h2,h3,h4 {
   }
 
   .formtext {
-    height: 113px;
+    height: auto;
     color: #0A0E69;
     padding-left: 400px;
     padding-top: 52px;
@@ -7183,7 +7183,7 @@ p,a,h1,h2,h3,h4 {
   }
 
   .formtext {
-    height: 113px;
+    height: auto;
     color: #0A0E69;
     padding-left: 400px;
     padding-top: 52px;
@@ -8516,7 +8516,7 @@ p,a,h1,h2,h3,h4 {
   }
 
   .formtext {
-    height: 113px;
+    height: auto;
     color: #0A0E69;
     padding-left: 400px;
     padding-top: 52px;
@@ -9889,7 +9889,7 @@ p,a,h1,h2,h3,h4 {
   }
 
   .formtext {
-    height: 113px;
+    height: auto;
     color: #0A0E69;
     padding-left: 320px;
     padding-top: 52px;
@@ -11226,7 +11226,7 @@ p,a,h1,h2,h3,h4 {
   }
 
   .formtext {
-    height: 113px;
+    height: auto;
     color: #0A0E69;
     padding-left: 310px;
     padding-top: 52px;
@@ -12184,7 +12184,7 @@ p,a,h1,h2,h3,h4 {
   }
 
   .formtext {
-    height: 113px;
+    height: auto;
     color: #0A0E69;
     padding-left: 260px;
     padding-top: 52px;
@@ -13648,7 +13648,7 @@ p,a,h1,h2,h3,h4 {
   }
 
   .formtext {
-    height: 113px;
+    height: auto;
     color: #0A0E69;
     padding-left: 199px;
     padding-top: 52px;

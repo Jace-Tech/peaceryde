@@ -1210,7 +1210,7 @@ width: 100%;
   }
 
   .formtext {
-    height: 220px;
+    height: auto;
     color: #0A0E69;
     padding-left: 50px;
     padding-top: 52px;
@@ -2920,7 +2920,7 @@ width: 100%;
   }
 
   .formtext {
-    height: 240px;
+    height: auto;
     color: #0A0E69;
     padding-left: 49px;
     padding-top: 52px;
@@ -4666,7 +4666,7 @@ width: 100%;
   }
 
   .formtext {
-    height: 213px;
+    height: auto;
     color: #0A0E69;
     padding-left: 30px;
     padding-top: 32px;
@@ -6450,7 +6450,7 @@ width: 100%;
   }
 
   .formtext {
-    height: 213px;
+    height: auto;
     color: #0A0E69;
     padding-left: 30px;
     padding-top: 32px;
@@ -8189,7 +8189,7 @@ width: 100%;
   }
 
   .formtext {
-    height: 213px;
+    height: auto;
     color: #0A0E69;
     padding-left: 19px;
     padding-top: 32px;
@@ -9933,7 +9933,7 @@ width: 100%;
   }
 
   .formtext {
-    height: 213px;
+    height: auto;
     color: #0A0E69;
     padding-left: 19px;
     padding-top: 32px;
@@ -11589,7 +11589,7 @@ width: 100%;
   }
 
   .formtext {
-    height: 213px;
+    height: auto;
     color: #0A0E69;
     padding-top: 32px;
     padding-left:22px;
@@ -13319,7 +13319,7 @@ width: 100%;
   }
 
   .formtext {
-    height: 293px;
+    height: auto;
     color: #0A0E69;
     padding-left: 30px;
     padding-top: 52px;

@@ -863,7 +863,7 @@
 
   .formtext {
     width: 780px;
-    height: 113px;
+    height: auto;
     color: #0A0E69;
     padding-left: 120px;
     padding-top: 52px;
@@ -2277,7 +2277,7 @@
   }
 
   .formtext {
-    height: 113px;
+    height: auto;
     color: #0A0E69;
     padding-left: 109px;
     padding-top: 52px;
@@ -3700,7 +3700,7 @@
   }
 
   .formtext {
-    height: 113px;
+    height: auto;
     color: #0A0E69;
     padding-left: 119px;
     padding-top: 52px;
@@ -5085,7 +5085,7 @@
   }
 
   .formtext {
-    height: 213px;
+    height: auto;
     color: #0A0E69;
     padding-left: 109px;
     width: 650px;
@@ -6418,7 +6418,7 @@
   }
 
   .formtext {
-    height: 213px;
+    height: auto;
     color: #0A0E69;
     padding-left: 79px;
     width: 620px;
