@@ -76,6 +76,9 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
     margin: 60px auto 66px;
  
 }
+.formtext {
+    height: 133px;
+}
     }
 
     @media only screen and (max-width: 900px) {
