@@ -74,7 +74,7 @@
               <div class="input-group" style="padding-left: 0px; padding-right: 0px;">
                 <div class="input-group-prepend">
                   <select required name="countryCode" id="" class="form-select code" aria-label="Default select example">
-                    <option value="">Country Code</option>
+                    <option value="">+234</option>
                     <optgroup label="Country Code">
                       <option data-countryCode="DZ" value="213">Algeria (+213)</option>
                       <option data-countryCode="AD" value="376">Andorra (+376)</option>
