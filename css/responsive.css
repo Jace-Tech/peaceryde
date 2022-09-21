@@ -1235,7 +1235,8 @@ width: 100%;
   }
 
   .formh1 {
-    padding-left: 104px;
+    padding-left: 0px;
+    text-align: center;
     font-family: 'Ubuntu';
     font-style: normal;
     font-weight: 500;
@@ -2944,7 +2945,8 @@ width: 100%;
   }
 
   .formh1 {
-    padding-left: 74px;
+    padding-left: 0px;
+    text-align: center;
     font-family: 'Ubuntu';
     font-style: normal;
     font-weight: 500;

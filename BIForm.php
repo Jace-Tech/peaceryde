@@ -32,7 +32,7 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
   <link rel="stylesheet" type="text/css" href="css/smallscreen800.css">
   <link rel="stylesheet" type="text/css" href="css/responsive.css">
   <!-- <link rel="stylesheet" type="text/css" href="css/header.css"> -->
-
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&family=Ubuntu:ital,wght@0,300;0,500;1,300&display=swap" rel="stylesheet">
 
   <script type="text/javascript" src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script type="text/javascript" src="https://unpkg.com/headroom.js@0.12.0/dist/headroom.min.js"></script>
@@ -120,8 +120,11 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
           <h2 class="welcome"> Welcome!</h2>
           <p class="formtext">The first step in applying for a <span style="font-size: 20px; font-weight: 500;">Nigeria Business Incorporation</span> is to fill the form below.
             <span>It takes less than 5 minutes to do this. After you submit your application, you can</span>
-            <span> move on to the next step to make payment</span>.
+            <span> move on to the next step to make payment.</span>
           </p>
+          <p class="formtext">
+          Processing duration takes two(2) weeks.
+        </p>
           <div class="topdiv">
             <div class="card cardform">
               <div style="margin-top: 47px;">
