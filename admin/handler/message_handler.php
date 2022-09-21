@@ -102,3 +102,20 @@ if (isset($_POST['broadcast'])) {
 
     }
 }
+
+if (isset($_POST['markall'])) {
+    try {
+        $query = "UPDATE messages SET is_read = ?";
+        $result = $connect->prepare($query);
+        $result->execute([1]);
+
+        if(!$result) throw new Exception("Error updating messages");
+
+        setAdminAlert("Message updated successfully", "success");
+        header("Location:" . $_SERVER['HTTP_REFERER']);
+    }
+    catch(Exception $e) {
+        setAdminAlert($e->getMessage(), "error");
+        header("Location:" . $_SERVER['HTTP_REFERER']);
+    }
+}

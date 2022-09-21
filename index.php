@@ -477,9 +477,11 @@ $uploads = new Upload($connect);
               </div>
         </div>
       <?php endif; ?>
-          <a href="./review" class="btn btn-review" style="border: 1px solid #a0bd1c;  background-color: transparent; color: #a0bd1c;">See More
-            Reviews
-          </a>
+    </div>
+      <div class="py-4 w-100 d-flex justify-items-center align-items-center">
+        <a href="./review" class="btn btn-review" style="border: 1px solid #a0bd1c;  background-color: transparent; color: #a0bd1c;">See More
+          Reviews
+        </a>
       </div>
       </section>
     <?php endif; ?>

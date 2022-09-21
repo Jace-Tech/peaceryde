@@ -182,7 +182,7 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
                       <label class="yourname">Your name must be entered in English as it appears on your passport.</label>
                     </div>
                   </div>
-                  <div id="error-message" class="w-100 alert alert-dark text-sm formml">
+                  <div id="error-message" style="display: none;" class="w-100 alert alert-dark text-sm formml">
                         All the fields are required!
                   </div>
                   <div class="row formml" style="margin-top:5%">

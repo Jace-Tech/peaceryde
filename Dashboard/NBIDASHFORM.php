@@ -171,7 +171,7 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
                   
                     <form data-form method="post" action="./handlers/form_handler.php">
                   <div class="container mt-15">
-                    <div id="error-message" class="w-100 alert alert-dark text-sm formml">
+                    <div id="error-message" style="display: none;" class="w-100 alert alert-dark text-sm formml">
                         All the fields are required!
                     </div>
                     <div class="row formml">
