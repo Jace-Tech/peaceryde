@@ -171,9 +171,23 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
                   
                     <form data-form method="post" action="./handlers/form_handler.php">
                   <div class="container mt-15">
+
                     <div id="error-message" style="display: none;" class="w-100 alert alert-dark text-sm formml">
                         All the fields are required!
                     </div>
+                    <div class="row formml">
+                    <div class="col-md-7">
+                      <select required name="title" class="form-select fmselect" aria-label="Default select example" style="height:44px">
+                        <option value="">Title</option>
+                        <?php foreach ($titles as $title) : ?>
+                          <option value="<?= $title ?>">
+                            <?= $title ?>
+                          </option>
+                        <?php endforeach; ?>
+                      </select>
+                      <label class="yourname">Your name must be entered in English as it appears on your passport.</label>
+                    </div>
+                  </div>
                     <div class="row formml">
                       <div class="col-md-5 col-12">
                       <div class="form-group">

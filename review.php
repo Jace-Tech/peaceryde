@@ -160,7 +160,7 @@ $users = new User($connect);
                                                     </div>
                                                     <div class="row">
                                                         <div class="col-md-1"></div>
-                                                    <div class="col-md-6">
+                                                    <div class="col-md-6" style="margin-left: -35px;">
                                                         <div class="star-rating">
                                                             <input type="radio" id="5-stars" name="rating" value="5" />
                                                             <label for="5-stars" class="star">&#9733;</label>
