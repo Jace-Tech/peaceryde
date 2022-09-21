@@ -83,7 +83,7 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
           <span> move on to the next step to make payment.</span>
           
         </p>
-        <p class="formtext" style="padding-top:30px">
+        <p class="formtext" style="padding-top:50px">
           Processing duration takes three(3) business days.
         </p>
 
