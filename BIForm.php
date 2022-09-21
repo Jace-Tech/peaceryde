@@ -122,6 +122,9 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
             <span>It takes less than 5 minutes to do this. After you submit your application, you can</span>
             <span> move on to the next step to make payment.</span>.
           </p>
+          <p class="formtext">
+          Processing duration will take two(2) weeks.
+        </p>
           <div class="topdiv">
             <div class="card cardform">
               <div style="margin-top: 47px;">

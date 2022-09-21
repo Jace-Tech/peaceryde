@@ -84,7 +84,7 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
           
         </p>
         <p class="formtext">
-          After payment, processing duration will take three(3) business days.
+          Processing duration will take three(3) business days.
         </p>
 
         <div class="topdiv">
