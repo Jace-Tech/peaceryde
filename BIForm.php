@@ -127,7 +127,7 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
             <span> move on to the next step to make payment.</span>
           </p>
           <p class="formtext" style="color: #0A0E69;
-    padding-top: 52px;
+    padding-top: 0px;
 ">
           Processing duration takes two(2) weeks.
         </p>
