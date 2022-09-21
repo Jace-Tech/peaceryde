@@ -76,9 +76,6 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
     margin: 60px auto 66px;
  
 }
-.formtext {
-    height: 133px;
-}
     }
 
     @media only screen and (max-width: 900px) {
@@ -129,7 +126,14 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
             <span>It takes less than 5 minutes to do this. After you submit your application, you can</span>
             <span> move on to the next step to make payment.</span>
           </p>
-          <p class="formtext">
+          <p style="color: #0A0E69;
+    padding-top: 52px;
+    padding-left: 22px;
+    font-family: ubuntu;
+    font-size: 16px;
+    font-weight: 300;
+    width: 275px;
+    text-align: start;">
           Processing duration takes two(2) weeks.
         </p>
           <div class="topdiv">
