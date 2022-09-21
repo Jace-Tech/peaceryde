@@ -70,8 +70,12 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
       }
       .nbvformheight {
           position: relative;
-          height: 2300px;
+          height: 2600px;
       }
+      .topdiv {
+    margin: 60px auto 66px;
+ 
+}
     }
 
     @media only screen and (max-width: 900px) {
