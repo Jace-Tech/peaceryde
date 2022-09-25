@@ -58,7 +58,7 @@
           </div>
           <form method="post" data-form action="./handlers/apply_handler.php">
           
-            <select required name="title" class="form-select fmselect" aria-label="Default select example" style="height:44px">
+            <select required name="title" class="form-select form-control vsbform vsbmt" aria-label="Default select example" style="height:44px">
               <option value="">Title</option>
               <?php foreach ($titles as $title) : ?>
                 <option value="<?= $title ?>">
@@ -71,7 +71,7 @@
             <input type="text" data-length class="form-control vsbform vsbmt" placeholder="Email" required name="email">
             <div class="form-group">
               <p>Please select below your Nationality (as on passport)</p>
-              <select required id="country" data-length name="country" class="form-select select" aria-label="Default select example">
+              <select required id="country" data-length name="country" class="form-select form-control vsbform vsbmt" aria-label="Default select example">
                 <option value="">Country </option>
                 <?php foreach ($country_fee as $key => $value) : ?>
                   <option value="<?= $key ?>">

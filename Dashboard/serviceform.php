@@ -152,7 +152,7 @@
             <div class="form-body">
               <div class="row" style="margin-top: 25px;">
                 <div class="col-md-6 col-lg-5 col-xl-5">
-                  <select required name="title" class="form-select fmselect" aria-label="Default select example" style="height:44px">
+                  <select required name="title" class="form-select form-control dob" aria-label="Default select example" style="height:44px">
                     <option value="">Title</option>
                     <?php foreach ($titles as $title) : ?>
                       <option value="<?= $title ?>">
@@ -165,7 +165,7 @@
                 <div class="col-md-6 col-lg-5 col-xl-5">
                   <div class="form-group">
                     <p>Please select below your Nationality (as on passport)</p>
-                    <select required id="country" data-length name="country" class="form-select select" aria-label="Default select example">
+                    <select required id="country" data-length name="country" class="form-select form-control dob" aria-label="Default select example">
                       <option value="">Country </option>
                       <?php foreach ($country_fee as $key => $value) : ?>
                         <option value="<?= $key ?>">
