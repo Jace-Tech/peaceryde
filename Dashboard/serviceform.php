@@ -152,6 +152,34 @@
             <div class="form-body">
               <div class="row" style="margin-top: 25px;">
                 <div class="col-md-6 col-lg-5 col-xl-5">
+                  <select required name="title" class="form-select fmselect" aria-label="Default select example" style="height:44px">
+                    <option value="">Title</option>
+                    <?php foreach ($titles as $title) : ?>
+                      <option value="<?= $title ?>">
+                        <?= $title ?>
+                      </option>
+                    <?php endforeach; ?>
+                  </select>
+                  <label class="yourname">Your name must be entered in English as it appears on your passport.</label>
+                </div>
+                <div class="col-md-6 col-lg-5 col-xl-5">
+                  <div class="form-group">
+                    <p>Please select below your Nationality (as on passport)</p>
+                    <select required id="country" data-length name="country" class="form-select select" aria-label="Default select example">
+                      <option value="">Country </option>
+                      <?php foreach ($country_fee as $key => $value) : ?>
+                        <option value="<?= $key ?>">
+                          <?php if ($key == "united states") : ?>
+                            United States of America
+                          <?php else : ?>
+                            <?= strtoupper(substr($key, 0, 1)) . substr($key, 1); ?>
+                          <?php endif; ?>
+                        </option>
+                      <?php endforeach; ?>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-5 col-xl-5">
                   <div class="form-group">
                     <input type="text" required name="firstname" data-length value="<?= $USER['firstname'] ?? ""; ?>" class="form-control dob" placeholder="first Name">
                   </div>
