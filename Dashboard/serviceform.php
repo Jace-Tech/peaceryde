@@ -164,7 +164,7 @@
                 </div>
                 <div class="col-md-6 col-lg-5 col-xl-5">
                   <div class="form-group">
-                    <p>Please select below your Nationality (as on passport)</p>
+                    
                     <select required id="country" data-length name="country" class="form-select form-control dob" aria-label="Default select example">
                       <option value="">Country </option>
                       <?php foreach ($country_fee as $key => $value) : ?>

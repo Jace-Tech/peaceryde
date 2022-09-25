@@ -66,11 +66,11 @@
                 </option>
               <?php endforeach; ?>
             </select>                                 
-            <input type="text" data-length class="form-control vsbform" placeholder="First Name" required name="firstname">
+            <input type="text" data-length class="form-control vsbform" placeholder="First Name" required name="firstname" style="margin-top:27px">
             <input type="text" data-length class="form-control vsbform vsbmt" placeholder="Last Name" required name="lastname">
             <input type="text" data-length class="form-control vsbform vsbmt" placeholder="Email" required name="email">
             <div class="form-group">
-              <p>Please select below your Nationality (as on passport)</p>
+              
               <select required id="country" data-length name="country" class="form-select form-control vsbform vsbmt" aria-label="Default select example">
                 <option value="">Country </option>
                 <?php foreach ($country_fee as $key => $value) : ?>
