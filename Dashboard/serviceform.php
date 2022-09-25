@@ -160,7 +160,7 @@
                       </option>
                     <?php endforeach; ?>
                   </select>
-                  <label class="yourname">Your name must be entered in English as it appears on your passport.</label>
+                  
                 </div>
                 <div class="col-md-6 col-lg-5 col-xl-5">
                   <div class="form-group">
