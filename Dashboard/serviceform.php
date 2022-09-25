@@ -179,7 +179,10 @@
                     </select>
                   </div>
                 </div>
-                <div class="col-md-6 col-lg-5 col-xl-5">
+
+              </div>
+              <div class="row" style="margin-top: 25px;">
+              <div class="col-md-6 col-lg-5 col-xl-5">
                   <div class="form-group">
                     <input type="text" required name="firstname" data-length value="<?= $USER['firstname'] ?? ""; ?>" class="form-control dob" placeholder="first Name">
                   </div>
@@ -190,7 +193,6 @@
                     <input type="text" required name="lastname" data-length value="<?= $USER['lastname'] ?? ""; ?>" class="form-control dob" placeholder="Last Name">
                   </div>
                 </div>
-
               </div>
               <div class="row" style="margin-top: 25px;">
                 <div class="col-md-6 col-lg-5 col-xl-5">
