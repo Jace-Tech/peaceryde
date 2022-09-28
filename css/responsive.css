@@ -1384,12 +1384,12 @@ width: 100%;
     border: 1px solid #555555;
     font-family: ubuntu;
     margin: 26px auto 0px;
-    width: 303px;
+    width: 50%;
   }
   .vsbform2 {
  
     margin: 0px auto 26px;
-    width: 303px;
+    width: 50%;
   }
 
   .vsbmt {
@@ -1404,14 +1404,14 @@ width: 100%;
     line-height: 16px;
     letter-spacing: 0em;
     text-align: left;
-    padding-left: 70px;
+    padding-left: 0px;
     padding-top: 27px;
   }
 
   .vsbformselect {
     border: 1px solid #555555;
-    width: 303px;
-    margin-left: 70px;
+    width: 50%;
+    margin-left: 0px;
   }
   .leaderpageheight {
     height: 6100px;
@@ -1440,10 +1440,10 @@ width: 100%;
 }
 
   .vsbformtextarea {
-    width: 303px;
+    width: 50%;
     height: 116px;
     margin-bottom: 65px;
-    margin-left: 70px;
+    margin-left: 0px;
   }
 
   .servicebtn {
@@ -3080,13 +3080,13 @@ width: 100%;
     border: 1px solid #555555;
     font-family: ubuntu;
     margin-top: 86px;
-    width: 303px;
-    margin-left: 51px;
+    width: 50%;
+    margin-left: 0px;
   }
   .vsbform2 {
     
-    width: 303px;
-    margin-left: 51px;
+    width: 50%;
+    margin-left: 0px;
   }
   .vsbmt {
     margin-top: 27px;
@@ -3100,23 +3100,23 @@ width: 100%;
     line-height: 16px;
     letter-spacing: 0em;
     text-align: left;
-    padding-left: 51px;
+    padding-left: 0px;
     padding-top: 27px;
   }
 
   .vsbformselect {
     border: 1px solid #555555;
-    width: 303px;
-    margin-left: 51px;
+    width: 50%;
+    margin-left: 0px;
   }
   .leaderpageheight {
     height: 6300px;
 }
   .vsbformtextarea {
-    width: 303px;
+    width: 50%;
     height: 116px;
     margin-bottom: 65px;
-    margin-left: 51px;
+    margin-left: 01px;
   }
 
   /*RESET PASSWORD*/
@@ -4831,13 +4831,13 @@ width: 100%;
     border: 1px solid #555555;
     font-family: ubuntu;
     margin-top: 86px;
-    width: 300px;
-    margin-left: 15px;
+    width: 50%;
+    margin-left: 0px;
   }
   .vsbform2 {
     margin-top: 0px;
-    width: 300px;
-    margin-left: 15px;
+    width: 50%;
+    margin-left: 0px;
   }
 
   .forgotpage {
@@ -4856,21 +4856,21 @@ width: 100%;
     line-height: 16px;
     letter-spacing: 0em;
     text-align: left;
-    padding-left: 15px;
+    padding-left: 0px;
     padding-top: 17px;
   }
 
   .vsbformselect {
     border: 1px solid #555555;
-    width: 300px;
-    margin-left: 15px;
+    width: 50%;
+    margin-left: 0px;
   }
 
   .vsbformtextarea {
-    width: 300px;
+    width: 50%;
     height: 116px;
     margin-bottom: 65px;
-    margin-left: 15px;
+    margin-left: 0px;
   }
 
   /*RESET PASSWORD*/
@@ -6607,13 +6607,13 @@ width: 100%;
     border: 1px solid #555555;
     font-family: ubuntu;
     margin-top: 86px;
-    width: 300px;
-    margin-left: 15px;
+    width: 50%;
+    margin-left: 0px;
   }
   .vsbform2 {
     margin-top: 0px;
-    width: 300px;
-    margin-left: 15px;
+    width: 50%;
+    margin-left: 0px;
   }
   .forgotpage {
     margin-top: 250px;
@@ -6631,21 +6631,21 @@ width: 100%;
     line-height: 16px;
     letter-spacing: 0em;
     text-align: left;
-    padding-left: 15px;
+    padding-left: 0px;
     padding-top: 17px;
   }
 
   .vsbformselect {
     border: 1px solid #555555;
-    width: 300px;
-    margin-left: 15px;
+    width: 50%;
+    margin-left: 0px;
   }
 
   .vsbformtextarea {
-    width: 300px;
+    width: 50%;
     height: 116px;
     margin-bottom: 65px;
-    margin-left: 15px;
+    margin-left: 0px;
   }
 
   /*RESET PASSWORD*/
@@ -8345,13 +8345,13 @@ width: 100%;
     border: 1px solid #555555;
     font-family: ubuntu;
     margin-top: 86px;
-    width: 260px;
-    margin-left: 15px;
+    width: 50%;
+    margin-left: 0px;
   }
   .vsbform2 {
     margin-top: 0px;
-    width: 260px;
-    margin-left: 15px;
+    width: 50%;
+    margin-left: 0px;
   }
   .forgotpage {
     margin-top: 250px;
@@ -8369,14 +8369,14 @@ width: 100%;
     line-height: 16px;
     letter-spacing: 0em;
     text-align: left;
-    padding-left: 15px;
+    padding-left: 0px;
     padding-top: 17px;
   }
 
   .vsbformselect {
     border: 1px solid #555555;
-    width: 260px;
-    margin-left: 15px;
+    width: 50%;
+    margin-left: 0px;
   }
 
   .servicebtn {
@@ -8385,10 +8385,10 @@ width: 100%;
 }
 
   .vsbformtextarea {
-    width: 260px;
+    width: 50%;
     height: 116px;
     margin-bottom: 65px;
-    margin-left: 15px;
+    margin-left: 0px;
   }
 
   /*RESET PASSWORD*/
@@ -10103,13 +10103,13 @@ width: 100%;
     border: 1px solid #555555;
     font-family: ubuntu;
     margin-top: 86px;
-    width: 260px;
-    margin-left: 15px;
+    width: 50%;
+    margin-left: 0px;
   }
   .vsbform2 {
     margin-top: 0px;
-    width: 260px;
-    margin-left: 15px;
+    width: 50%;
+    margin-left: 0px;
   }
   .forgotpage {
     margin-top: 250px;
@@ -10127,21 +10127,21 @@ width: 100%;
     line-height: 16px;
     letter-spacing: 0em;
     text-align: left;
-    padding-left: 15px;
+    padding-left: 0px;
     padding-top: 17px;
   }
 
   .vsbformselect {
     border: 1px solid #555555;
-    width: 260px;
-    margin-left: 15px;
+    width: 50%;
+    margin-left: 0px;
   }
 
   .vsbformtextarea {
-    width: 260px;
+    width: 50%;
     height: 116px;
     margin-bottom: 65px;
-    margin-left: 15px;
+    margin-left: 0px;
   }
 
   /*RESET PASSWORD*/
@@ -11761,13 +11761,13 @@ width: 100%;
     border: 1px solid #555555;
     font-family: ubuntu;
     margin-top: 86px;
-    width: 245px;
-    margin-left: 15px;
+    width: 50%;
+    margin-left: 0px;
   }
   .vsbform2 {
     margin-top: 0px;
-    width: 245px;
-    margin-left: 15px;
+    width: 50%;
+    margin-left: 0px;
   }
   .vsbmt {
     margin-top: 17px;
@@ -11781,23 +11781,23 @@ width: 100%;
     line-height: 16px;
     letter-spacing: 0em;
     text-align: left;
-    padding-left: 15px;
+    padding-left: 0px;
     padding-top: 17px;
   }
 
   .vsbformselect {
     border: 1px solid #555555;
-    width: 245px;
-    margin-left: 15px;
+    width: 50%;
+    margin-left: 0px;
   }
   .divcover {
     margin-top: 250px;
 }
   .vsbformtextarea {
-    width: 245px;
+    width: 50%;
     height: 116px;
     margin-bottom: 65px;
-    margin-left: 15px;
+    margin-left: 0px;
   }
 
   .servicebtn {
@@ -13482,13 +13482,13 @@ width: 100%;
     border: 1px solid #555555;
     font-family: ubuntu;
     margin-top: 56px;
-    width: 230px;
-    margin-left: 11px;
+    width: 50%;
+    margin-left: 0px;
   }
   .vsbform2 {
     margin-top: 17px;
-    width: 230px;
-    margin-left: 11px; 
+    width: 50%;
+    margin-left: 0px; 
   }
 
   .vsbmt {
@@ -13507,23 +13507,23 @@ width: 100%;
     line-height: 16px;
     letter-spacing: 0em;
     text-align: left;
-    padding-left: 11px;
+    padding-left: 0px;
     padding-top: 17px;
   }
 
   .vsbformselect {
     border: 1px solid #555555;
-    width: 230px;
-    margin-left: 11px;
+    width: 50%;
+    margin-left: 0px;
   }
   .divcover {
     margin-top: 250px;
 }
   .vsbformtextarea {
-    width: 230px;
+    width: 50%;
     height: 116px;
     margin-bottom: 65px;
-    margin-left: 11px;
+    margin-left: 0px;
   }
 
   .servicebtn {
