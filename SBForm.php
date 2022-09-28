@@ -40,6 +40,27 @@
     .error {
       border-color: #f00;
     }
+    @media(max-width:2560px)
+    {
+      tt
+      {
+        margin-top:100px
+      }
+    }
+    @media(max-width:900px)
+    {
+      tt
+      {
+        margin-top:70px
+      }
+    }
+    @media(max-width:560px)
+    {
+      tt
+      {
+        margin-top:70px
+      }
+    }
   </style>
 </head>
 
@@ -58,7 +79,7 @@
           </div>
           <form method="post" data-form action="./handlers/apply_handler.php">
           <div class=""></div>
-            <select required name="title" class="form-select form-control vsbform vsbmt" aria-label="Default select example" style="height:44px; margin-top:30px;">
+            <select required name="title" class="form-select form-control vsbform vsbmt tt" aria-label="Default select example" style="height:44px;">
               <option value="">Title</option>
               <?php foreach ($titles as $title) : ?>
                 <option value="<?= $title ?>">
