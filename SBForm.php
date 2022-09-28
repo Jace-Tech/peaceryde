@@ -346,10 +346,13 @@
                 <?php endforeach; ?>
               <?php endif; ?>
             </select>
-
-            <p class="vsbformp">Message</p>
-            <input type="hidden" name="apply" value="">
-            <textarea class="vsbform vsbmt" name="message" style="height:116px"></textarea>
+          <p class="vsbformp">Message</p>
+           <div class="row vsbform2">
+           <input type="hidden" name="apply" value="">
+            <textarea class="" name="message" style="height:116px"></textarea>
+           </div>
+           
+            
             <button name="apply" class="btn servicebtn vsbform vsbmt" style="width:117px; border:none">Apply</button>
           </form>
         </div>
