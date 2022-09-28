@@ -58,7 +58,7 @@
           </div>
           <form method="post" data-form action="./handlers/apply_handler.php">
           <div class=""></div>
-            <select required name="title" class="form-select form-control vsbform vsbmt" aria-label="Default select example" style="height:44px">
+            <select required name="title" class="form-select form-control vsbform vsbmt" aria-label="Default select example" style="height:44px; margin-top:30px;">
               <option value="">Title</option>
               <?php foreach ($titles as $title) : ?>
                 <option value="<?= $title ?>">
@@ -87,7 +87,7 @@
             </div>
 
             <div class="row vsbform2">
-              <div class="input-group" style="padding-left: 0px; padding-right: 0px;">
+              <div class="input-group" style="padding-left: 0px; padding-right: 0px; margin-top:17px">
                 <div class="input-group-prepend">
                   <select required name="countryCode" id="" class="form-select code" aria-label="Default select example">
                     <option value="">+234</option>
