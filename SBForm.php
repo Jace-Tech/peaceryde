@@ -341,7 +341,7 @@
             <textarea class="" name="message" style="height:116px;border: 1px solid #555555;"></textarea>
            </div>
            
-           <div class="row vsbform">
+           <div class="row">
            <button name="apply" class="btn" style="width:117px; border:none;background: #a0bd1c;
     padding: 10px 25px;color:white;
     margin-top: 46px;">Apply</button>
