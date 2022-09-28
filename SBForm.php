@@ -66,16 +66,16 @@
                 </option>
               <?php endforeach; ?>
             </select>             
-            <div class="row vsbform2">
+            <div class="row">
             <input type="text" data-length class="form-control vsbform" placeholder="First Name" required name="firstname" style="margin-top:27px">
             </div>  
-            <div class="row vsbform2">
-            <input type="text" data-length class="form-control vsbform vsbmt" placeholder="Last Name" required name="lastname">
+            <div class="row">
+            <input type="text" data-length class="form-control vsbform" placeholder="Last Name" required name="lastname">
             </div>  
-            <div class="row vsbform2">
-            <input type="text" data-length class="form-control vsbform vsbmt" placeholder="Email" required name="email">
+            <div class="row">
+            <input type="text" data-length class="form-control vsbform" placeholder="Email" required name="email">
             </div>  
-            <div class="row vsbform2">
+            <div class="row">
             <select required id="country" data-length name="country" class="form-select form-control vsbform vsbmt" aria-label="Default select example">
                 <option value="">Country </option>
                 <?php foreach ($country_fee as $key => $value) : ?>
