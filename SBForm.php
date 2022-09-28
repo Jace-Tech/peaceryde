@@ -65,13 +65,18 @@
                   <?= $title ?>
                 </option>
               <?php endforeach; ?>
-            </select>                                 
+            </select>             
+            <div class="row vsbform2">
             <input type="text" data-length class="form-control vsbform" placeholder="First Name" required name="firstname" style="margin-top:27px">
+            </div>  
+            <div class="row vsbform2">
             <input type="text" data-length class="form-control vsbform vsbmt" placeholder="Last Name" required name="lastname">
+            </div>  
+            <div class="row vsbform2">
             <input type="text" data-length class="form-control vsbform vsbmt" placeholder="Email" required name="email">
-            <div class="form-group">
-              
-              <select required id="country" data-length name="country" class="form-select form-control vsbform vsbmt" aria-label="Default select example">
+            </div>  
+            <div class="row vsbform2">
+            <select required id="country" data-length name="country" class="form-select form-control vsbform vsbmt" aria-label="Default select example">
                 <option value="">Country </option>
                 <?php foreach ($country_fee as $key => $value) : ?>
                   <option value="<?= $key ?>">
@@ -83,7 +88,10 @@
                   </option>
                 <?php endforeach; ?>
               </select>
-            </div>
+            </div>                    
+            
+            
+
             <!-- <input type="text" readonly required name="dob" data-length class="form-control vsbform" placeholder="dd/mm/yyyy" id="datepicker"> -->
             <!-- <input type="text" readonly required name="dob" data-length class="form-control vsbform vsbmt" placeholder="dd/mm/yyyy" id="datepicker">
              
@@ -323,7 +331,7 @@
 
 
             <p class="vsbformp">Which of our services are you applying for?</p>
-            <select class="form-select vsbformselect vsbmt" required name="service" aria-label="Default select example">
+            <select class="form-select vsbform vsbmt" required name="service" aria-label="Default select example">
               <option value="">Choose service</option>
               <?php if (count($services)) : ?>
                 <?php foreach ($services as $service) : ?>
@@ -336,7 +344,7 @@
 
             <p class="vsbformp">Message</p>
             <input type="hidden" name="apply" value="">
-            <textarea class="vsbformtextarea" name="message"></textarea>
+            <textarea class="vsbformtextarea" style="width:416px" name="message"></textarea>
             <button name="apply" class="btn servicebtn">Apply</button>
           </form>
         </div>
