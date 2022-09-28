@@ -294,14 +294,14 @@ $PRICE = json_decode($_SESSION["PRICE"], true);
         <?php endif; ?>
 
         <div class="col-lg-6 col-md-12 col-sm-12 col-12">
-            <div class="card leftcard">
+            <div class="card leftcard" style="border-radius:20px">
                 <form method="post" action="./handlers/payment.php" style="margin-top: 31px;">
                     <h2 class="leftcardh2">Payment Information</h2>
                     <div style=" margin-top: 20px;">
                         <p class="paymentopt">Payment Options</p>
                     </div>
                     <div class="radiodiv">
-                        <input type="radio" name="payment_option" value="stripe" class="radioo"> Stripe <br>
+                        <input type="radio" name="payment_option" value="stripe" class="radioo">&nbsp; Stripe <br>
                         <input type="radio" name="payment_option" value="paystack" checked="checked" class="radioo">&nbsp; Paystack <br>
                         <input type="radio" name="payment_option" value="payoneer" class="radioo">&nbsp; Payoneer  <br>
                         
