@@ -78,7 +78,7 @@
             <p class="applyh2p">Please fill this form to indicate your interest in any of our services and we will contact you within 24hrs.</p>
           </div>
           <form method="post" data-form action="./handlers/apply_handler.php">
-          <div class=""></div>
+          <div style="margin-top:10%">
             <select required name="title" class="form-select form-control vsbform vsbmt tt" aria-label="Default select example" style="height:44px;">
               <option value="">Title</option>
               <?php foreach ($titles as $title) : ?>
@@ -87,11 +87,11 @@
                 </option>
               <?php endforeach; ?>
             </select>             
-                                
+            </div>                  
             <input type="text" data-length class="form-control vsbform" placeholder="First Name" required name="firstname" style="margin-top:27px">
             <input type="text" data-length class="form-control vsbform vsbmt" placeholder="Last Name" required name="lastname">
             <input type="text" data-length class="form-control vsbform vsbmt" placeholder="Email" required name="email">
-            <div style="margin-top:5%">
+            
               
               <select required id="country" data-length name="country" class="form-select vsbform vsbmt" aria-label="Default select example">
                 <option value="">Country </option>
@@ -105,7 +105,7 @@
                   </option>
                 <?php endforeach; ?>
               </select>
-            </div>
+            
 
             <div class="row vsbform2">
               <div class="input-group" style="padding-left: 0px; padding-right: 0px; margin-top:17px">
