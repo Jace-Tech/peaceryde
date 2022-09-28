@@ -57,7 +57,7 @@
             <p class="applyh2p">Please fill this form to indicate your interest in any of our services and we will contact you within 24hrs.</p>
           </div>
           <form method="post" data-form action="./handlers/apply_handler.php">
-          <div class="row">
+          <div class=""></div>
             <select required name="title" class="form-select form-control vsbform vsbmt" aria-label="Default select example" style="height:44px">
               <option value="">Title</option>
               <?php foreach ($titles as $title) : ?>
@@ -65,19 +65,14 @@
                   <?= $title ?>
                 </option>
               <?php endforeach; ?>
-            </select>
-          </div>             
-            <div class="row">
-            <input type="text" data-length class=" form-control vsbform vsbmt" placeholder="First Name" required name="firstname" style="margin-top:27px">
-            </div>  
-            <div class="row">
+            </select>             
+                                
+            <input type="text" data-length class="form-control vsbform" placeholder="First Name" required name="firstname" style="margin-top:27px">
             <input type="text" data-length class="form-control vsbform vsbmt" placeholder="Last Name" required name="lastname">
-            </div>  
-            <div class="row">
             <input type="text" data-length class="form-control vsbform vsbmt" placeholder="Email" required name="email">
-            </div>  
-            <div class="row">
-            <select required id="country" data-length name="country" class="form-select form-control vsbform vsbmt" aria-label="Default select example">
+            <div class="form-group">
+              
+              <select required id="country" data-length name="country" class="form-select form-control vsbform vsbmt" aria-label="Default select example">
                 <option value="">Country </option>
                 <?php foreach ($country_fee as $key => $value) : ?>
                   <option value="<?= $key ?>">
@@ -89,10 +84,7 @@
                   </option>
                 <?php endforeach; ?>
               </select>
-            </div>                    
-            
-            
-
+            </div>
             <!-- <input type="text" readonly required name="dob" data-length class="form-control vsbform" placeholder="dd/mm/yyyy" id="datepicker"> -->
             <!-- <input type="text" readonly required name="dob" data-length class="form-control vsbform vsbmt" placeholder="dd/mm/yyyy" id="datepicker">
              
@@ -103,7 +95,7 @@
      font-style: normal;
      font-weight: 400;">You must be at least 18 years old to use this website.</p> -->
      <br>
-            <div class="row vsbform vsbmt">
+            <div class="row vsbform2">
               <div class="input-group" style="padding-left: 0px; padding-right: 0px;">
                 <div class="input-group-prepend">
                   <select required name="countryCode" id="" class="form-select code" aria-label="Default select example">
