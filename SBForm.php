@@ -328,8 +328,8 @@
 
             <p class="vsbformp">Message</p>
             <input type="hidden" name="apply" value="">
-            <textarea class="vsbformtextarea" style="width:416px" name="message"></textarea>
-            <button name="apply" class="btn servicebtn vsbform vsbmt" style="width:117px">Apply</button>
+            <textarea class="vsbformtextarea vsbform vsbmt" name="message"></textarea>
+            <button name="apply" class="btn servicebtn" style="width:117px">Apply</button>
           </form>
         </div>
 
