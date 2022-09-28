@@ -72,7 +72,7 @@
             <input type="text" data-length class="form-control vsbform vsbmt" placeholder="Email" required name="email">
             <div class="form-group">
               
-              <select required id="country" name="country" class="form-select vsbform vsbmt" aria-label="Default select example">
+              <select required id="country" data-length name="country" class="form-select vsbform vsbmt" aria-label="Default select example">
                 <option value="">Country </option>
                 <?php foreach ($country_fee as $key => $value) : ?>
                   <option value="<?= $key ?>">
@@ -329,7 +329,7 @@
             <p class="vsbformp">Message</p>
             <input type="hidden" name="apply" value="">
             <textarea class="vsbformtextarea" style="width:416px" name="message"></textarea>
-            <button name="apply" class="btn servicebtn vsbform vsbmt">Apply</button>
+            <button name="apply" class="btn servicebtn vsbform vsbmt" style="width:117px">Apply</button>
           </form>
         </div>
 
