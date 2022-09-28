@@ -72,7 +72,7 @@
             <input type="text" data-length class="form-control vsbform vsbmt" placeholder="Email" required name="email">
             <div class="form-group">
               
-              <select required id="country" data-length name="country" class="form-select form-control vsbform vsbmt" aria-label="Default select example">
+              <select required id="country" data-length name="country" class="form-select vsbform vsbmt" aria-label="Default select example">
                 <option value="">Country </option>
                 <?php foreach ($country_fee as $key => $value) : ?>
                   <option value="<?= $key ?>">
@@ -85,16 +85,7 @@
                 <?php endforeach; ?>
               </select>
             </div>
-            <!-- <input type="text" readonly required name="dob" data-length class="form-control vsbform" placeholder="dd/mm/yyyy" id="datepicker"> -->
-            <!-- <input type="text" readonly required name="dob" data-length class="form-control vsbform vsbmt" placeholder="dd/mm/yyyy" id="datepicker">
-             
-             <p class="vsbform vsbmt" style="border:none;
-     color: #C8730F;
-     font-family: Ubuntu;
-     font-size: 13px;
-     font-style: normal;
-     font-weight: 400;">You must be at least 18 years old to use this website.</p> -->
-     <br>
+
             <div class="row vsbform2">
               <div class="input-group" style="padding-left: 0px; padding-right: 0px;">
                 <div class="input-group-prepend">
