@@ -97,7 +97,7 @@
             
 
             <div class="row vsbform2 phoneform">
-              <div class="input-group" style="padding-left: 0px; padding-right: 0px;">
+              <div class="input-group" style=" padding-right: 0px;">
                 <div class="input-group-prepend">
                   <select required name="countryCode" id="" class="form-select code" aria-label="Default select example">
                     <option value="">+234</option>
@@ -343,7 +343,7 @@
            
            <div class="row ">
            <button name="apply" class="btn vsbform" style="width:117px; border:none;background: #a0bd1c;
-    padding: 10px 25px;color:white;
+    padding: 10px 25px;color:white;margin-left:2%;
     margin-top: 46px;">Apply</button>
                 </div>
                 </div>
