@@ -40,25 +40,11 @@
     .error {
       border-color: #f00;
     }
-    @media only screen and(max-width:2560px)
+    @media(max-width:560px)
     {
-      tt
+      .phone
       {
-        margin-top:100px
-      }
-    }
-    @media only screen and(max-width:900px)
-    {
-      tt
-      {
-        margin-top:70px
-      }
-    }
-    @media only screen and(max-width:560px)
-    {
-      tt
-      {
-        margin-top:70px
+        margin-top:27px
       }
     }
   </style>
@@ -107,7 +93,7 @@
               </select>
             
 
-            <div class="row vsbform2">
+            <div class="row vsbform2 phone">
               <div class="input-group" style="padding-left: 0px; padding-right: 0px;">
                 <div class="input-group-prepend">
                   <select required name="countryCode" id="" class="form-select code" aria-label="Default select example">
@@ -349,11 +335,11 @@
           <p class="vsbformp">Message</p>
            <div class="row vsbform2">
            <input type="hidden" name="apply" value="">
-            <textarea class="" name="message" style="height:116px"></textarea>
+            <textarea class="" name="message" style="height:116px;border: 1px solid #555555;"></textarea>
            </div>
            
             
-            <button name="apply" class="btn servicebtn vsbform vsbmt" style="width:117px; border:none">Apply</button>
+            <button name="apply" class="btn servicebtn vsbform2 vsbmt" style="width:117px; border:none">Apply</button>
           </form>
         </div>
 
