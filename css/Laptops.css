@@ -1830,15 +1830,15 @@ p,a,h1,h2,h3,h4 {
     border: 1px solid #555555;
     font-family: ubuntu;
     margin-top: 86px;
-    width: 416px;
-    margin-left: 221px;
+    width: 60%;
+    
   }
   .vsbform2 {
 
     font-family: ubuntu;
     margin-top: 27px;
-    width: 416px;
-    margin-left: 221px;
+    width: 60%;
+   
   }
 
   .vsbmt {
@@ -1853,23 +1853,23 @@ p,a,h1,h2,h3,h4 {
     line-height: 16px;
     letter-spacing: 0em;
     text-align: left;
-    padding-left: 221px;
+   
     padding-top: 27px;
   }
 
   .vsbformselect {
     border: 1px solid #555555;
-    width: 502px;
-    margin-left: 221px;
+    width: 60%;
+   
   }
   .leaderpageheight {
     height: 3700px;
 }
   .vsbformtextarea {
-    width: 508px;
+    width: 60%;
     height: 116px;
     margin-bottom: 65px;
-    margin-left: 221px;
+    
     margin-top: 27px;
     border: 1px solid #555555;
   }
@@ -3255,13 +3255,15 @@ p,a,h1,h2,h3,h4 {
     border: 1px solid #555555;
     font-family: ubuntu;
     margin-top: 86px;
-    width: 416px;
-    margin-left: 221px;
+    width: 60%;
+    
   }
   .vsbform2 {
+
+    font-family: ubuntu;
     margin-top: 27px;
-    width: 416px;
-    margin-left: 221px;
+    width: 60%;
+   
   }
 
   .vsbmt {
@@ -3276,21 +3278,19 @@ p,a,h1,h2,h3,h4 {
     line-height: 16px;
     letter-spacing: 0em;
     text-align: left;
-    padding-left: 221px;
+   
     padding-top: 27px;
   }
 
   .vsbformselect {
     border: 1px solid #555555;
-    width: 502px;
-    margin-left: 221px;
+    width: 60%;
+   
   }
-
   .vsbformtextarea {
-    width: 508px;
+    width: 60%;
     height: 116px;
-    margin-bottom: 65px;
-    margin-left: 221px;
+    margin-bottom: 65px; 
     margin-top: 27px;
   }
 
@@ -4627,13 +4627,13 @@ p,a,h1,h2,h3,h4 {
     border: 1px solid #555555;
     font-family: ubuntu;
     margin-top: 86px;
-    width: 416px;
-    margin-left: 221px;
+    width: 60%;
+  
   }
   .vsbform2 {
     margin-top: 27px;
-    width: 416px;
-    margin-left: 221px;
+    width: 60%;
+    
   }
   .vsbmt {
     margin-top: 27px;
@@ -4647,21 +4647,21 @@ p,a,h1,h2,h3,h4 {
     line-height: 16px;
     letter-spacing: 0em;
     text-align: left;
-    padding-left: 221px;
+   
     padding-top: 27px;
   }
 
   .vsbformselect {
     border: 1px solid #555555;
-    width: 502px;
-    margin-left: 221px;
+    width: 60%;
+  
   }
 
   .vsbformtextarea {
-    width: 508px;
+    width: 60%;
     height: 116px;
     margin-bottom: 65px;
-    margin-left: 221px;
+    margin-left: 0px;
     margin-top: 27px;
     border: 1px solid #555555;
   }
@@ -5983,13 +5983,13 @@ p,a,h1,h2,h3,h4 {
     border: 1px solid #555555;
     font-family: ubuntu;
     margin-top: 86px;
-    width: 416px;
-    margin-left: 221px;
+    width: 60%;
+    margin-left: 0px;
   }
   .vsbform2 {
     margin-top: 27px;
-    width: 416px;
-    margin-left: 221px;
+    width: 60%;
+    margin-left: 0px;
   }
 
   .vsbmt {
@@ -6004,21 +6004,21 @@ p,a,h1,h2,h3,h4 {
     line-height: 16px;
     letter-spacing: 0em;
     text-align: left;
-    padding-left: 221px;
+   
     padding-top: 27px;
   }
 
   .vsbformselect {
     border: 1px solid #555555;
-    width: 502px;
-    margin-left: 221px;
+    width: 60%;
+    
   }
 
   .vsbformtextarea {
-    width: 508px;
+    width: 60%;
     height: 116px;
     margin-bottom: 65px;
-    margin-left: 221px;
+    margin-left:0px;
     margin-top: 27px;
   }
 
@@ -7334,13 +7334,13 @@ p,a,h1,h2,h3,h4 {
     border: 1px solid #555555;
     font-family: ubuntu;
     margin-top: 86px;
-    width: 416px;
-    margin-left: 221px;
+    width: 60%;
+    margin-left: 0px;
   }
   .vsbform2 {
     margin-top: 27px;
-    width: 416px;
-    margin-left: 221px;
+    width: 60%;
+    margin-left: 0px;
   }
 
   .vsbmt {
@@ -7355,21 +7355,21 @@ p,a,h1,h2,h3,h4 {
     line-height: 16px;
     letter-spacing: 0em;
     text-align: left;
-    padding-left: 221px;
+    padding-left: 0;
     padding-top: 27px;
   }
 
   .vsbformselect {
     border: 1px solid #555555;
-    width: 502px;
-    margin-left: 221px;
+    width: 60%;
+    margin-left: 0;
   }
 
   .vsbformtextarea {
-    width: 508px;
+    width: 60%;
     height: 116px;
     margin-bottom: 65px;
-    margin-left: 221px;
+    margin-left: 0;
     margin-top: 27px;
   }
 
