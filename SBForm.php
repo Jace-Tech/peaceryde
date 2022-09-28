@@ -40,21 +40,21 @@
     .error {
       border-color: #f00;
     }
-    @media(max-width:2560px)
+    @media only screen and(max-width:2560px)
     {
       tt
       {
         margin-top:100px
       }
     }
-    @media(max-width:900px)
+    @media only screen and(max-width:900px)
     {
       tt
       {
         margin-top:70px
       }
     }
-    @media(max-width:560px)
+    @media only screen and(max-width:560px)
     {
       tt
       {
@@ -349,7 +349,7 @@
 
             <p class="vsbformp">Message</p>
             <input type="hidden" name="apply" value="">
-            <textarea class="vsbformtextarea vsbform vsbmt" name="message"></textarea>
+            <textarea class="vsbform vsbmt" name="message" style="height:116px"></textarea>
             <button name="apply" class="btn servicebtn" style="width:117px">Apply</button>
           </form>
         </div>
