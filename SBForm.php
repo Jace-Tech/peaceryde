@@ -42,7 +42,7 @@
     }
     @media(max-width:560px)
     {
-      .phone
+      .phoneform
       {
         margin-top:27px
       }
@@ -93,7 +93,7 @@
               </select>
             
 
-            <div class="row vsbform2 phone">
+            <div class="row vsbform2 phoneform">
               <div class="input-group" style="padding-left: 0px; padding-right: 0px;">
                 <div class="input-group-prepend">
                   <select required name="countryCode" id="" class="form-select code" aria-label="Default select example">
