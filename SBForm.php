@@ -339,7 +339,9 @@
            </div>
            
            <div class="row vsbform2">
-           <button name="apply" class="btn servicebtn" style="width:117px; border:none">Apply</button>
+           <button name="apply" class="btn" style="width:117px; border:none;background: #a0bd1c;
+    padding: 10px 25px;
+    margin-top: 86px;">Apply</button>
                 </div>
             
           </form>
