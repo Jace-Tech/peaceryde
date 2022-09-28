@@ -336,13 +336,13 @@
               <?php endif; ?>
             </select>
           <p class="vsbformp">Message</p>
-           <div class="row vsbform vsbmt">
+           <div class="row vsbform vsbmt" style="margin-left: 5px; border:none">
            <input type="hidden" name="apply" value="">
             <textarea class="" name="message" style="height:116px;border: 1px solid #555555;"></textarea>
            </div>
            
-           <div class="row">
-           <button name="apply" class="btn" style="width:117px; border:none;background: #a0bd1c;
+           <div class="row ">
+           <button name="apply" class="btn vsbform" style="width:117px; border:none;background: #a0bd1c;
     padding: 10px 25px;color:white;
     margin-top: 46px;">Apply</button>
                 </div>
