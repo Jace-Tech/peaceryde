@@ -338,8 +338,10 @@
             <textarea class="" name="message" style="height:116px;border: 1px solid #555555;"></textarea>
            </div>
            
+           <div class="row vsbform2">
+           <button name="apply" class="btn servicebtn" style="width:117px; border:none">Apply</button>
+                </div>
             
-            <button name="apply" class="btn servicebtn vsbform2 vsbmt" style="width:117px; border:none">Apply</button>
           </form>
         </div>
 
