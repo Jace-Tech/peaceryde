@@ -301,11 +301,11 @@ $PRICE = json_decode($_SESSION["PRICE"], true);
                         <p class="paymentopt">Payment Options</p>
                     </div>
                     <div class="radiodiv">
-                        <input type="radio" name="payment_option" value="stripe" class="radioo">&nbsp; Stripe <br>
-                        <input type="radio" name="payment_option" value="paystack" checked="checked" class="radioo">&nbsp; Paystack <br>
-                        <input type="radio" name="payment_option" value="payoneer" class="radioo">&nbsp; Payoneer  <br>
+                        <input type="radio" name="payment_option" value="stripe" class="radioo">&nbsp; Stripe <br><br>
+                        <input type="radio" name="payment_option" value="paystack" checked="checked" class="radioo">&nbsp; Paystack <br><br>
+                        <input type="radio" name="payment_option" value="payoneer" class="radioo">&nbsp; Payoneer  <br><br>
                         
-                        <input type="radio" name="payment_option" value="wise" class="radioo"> &nbsp; Wise <br>
+                        <input type="radio" name="payment_option" value="wise" class="radioo"> &nbsp; Wise <br><br>
                         <div class="hidden-box">
                         <p class="cardname">Name of card</p>
                         <input type="text" name="card_name" class="form-control cardinput" placeholder="John Doe">
@@ -330,7 +330,7 @@ $PRICE = json_decode($_SESSION["PRICE"], true);
                         </div>
                     </div>
                     <div class="divbutton">
-                        <button type="submit" name="pay" class="btn proceed">Pay</button>
+                        <button type="submit" name="pay" class="btn proceed" style="width:150px">Pay</button>
                     </div>
                 </form>
             </div>
