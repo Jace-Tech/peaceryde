@@ -96,7 +96,7 @@
               </select>
             
 
-            <div class="row vsbform phoneform">
+            <div class="row vsbform2 phoneform">
               <div class="input-group" style="padding-left: 0px; padding-right: 0px;">
                 <div class="input-group-prepend">
                   <select required name="countryCode" id="" class="form-select code" aria-label="Default select example">
@@ -336,7 +336,7 @@
               <?php endif; ?>
             </select>
           <p class="vsbformp">Message</p>
-           <div class="row vsbform">
+           <div class="row vsbform vsbmt">
            <input type="hidden" name="apply" value="">
             <textarea class="" name="message" style="height:116px;border: 1px solid #555555;"></textarea>
            </div>
