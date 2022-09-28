@@ -350,7 +350,7 @@
             <p class="vsbformp">Message</p>
             <input type="hidden" name="apply" value="">
             <textarea class="vsbform vsbmt" name="message" style="height:116px"></textarea>
-            <button name="apply" class="btn servicebtn vsbform vsbmt" style="width:117px">Apply</button>
+            <button name="apply" class="btn servicebtn vsbform vsbmt" style="width:117px; border:none">Apply</button>
           </form>
         </div>
 
