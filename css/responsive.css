@@ -1384,12 +1384,12 @@ width: 100%;
     border: 1px solid #555555;
     font-family: ubuntu;
     margin: 26px 0 0px;
-    width: 50%;
+    width: 90%;
   }
   .vsbform2 {
  
     margin: 0px 0 26px;
-    width: 50%;
+    width: 90%;
   }
 
   .vsbmt {
@@ -1410,7 +1410,7 @@ width: 100%;
 
   .vsbformselect {
     border: 1px solid #555555;
-    width: 50%;
+    width: 90%;
     margin-left: 0px;
   }
   .leaderpageheight {
@@ -1440,7 +1440,7 @@ width: 100%;
 }
 
   .vsbformtextarea {
-    width: 50%;
+    width: 90%;
     height: 116px;
     margin-bottom: 65px;
     margin-left: 0px;
@@ -3080,12 +3080,12 @@ width: 100%;
     border: 1px solid #555555;
     font-family: ubuntu;
     margin-top: 86px;
-    width: 50%;
+    width: 90%;
     margin-left: 0px;
   }
   .vsbform2 {
     
-    width: 50%;
+    width: 90%;
     margin-left: 0px;
   }
   .vsbmt {
@@ -3106,14 +3106,14 @@ width: 100%;
 
   .vsbformselect {
     border: 1px solid #555555;
-    width: 50%;
+    width: 90%;
     margin-left: 0px;
   }
   .leaderpageheight {
     height: 6300px;
 }
   .vsbformtextarea {
-    width: 50%;
+    width: 90%;
     height: 116px;
     margin-bottom: 65px;
     margin-left: 01px;
@@ -4831,12 +4831,12 @@ width: 100%;
     border: 1px solid #555555;
     font-family: ubuntu;
     margin-top: 86px;
-    width: 50%;
+    width: 90%;
     margin-left: 0px;
   }
   .vsbform2 {
     margin-top: 0px;
-    width: 50%;
+    width: 90%;
     margin-left: 0px;
   }
 
@@ -4862,12 +4862,12 @@ width: 100%;
 
   .vsbformselect {
     border: 1px solid #555555;
-    width: 50%;
+    width: 90%;
     margin-left: 0px;
   }
 
   .vsbformtextarea {
-    width: 50%;
+    width: 90%;
     height: 116px;
     margin-bottom: 65px;
     margin-left: 0px;
@@ -6607,12 +6607,12 @@ width: 100%;
     border: 1px solid #555555;
     font-family: ubuntu;
     margin-top: 86px;
-    width: 50%;
+    width: 90%;
     margin-left: 0px;
   }
   .vsbform2 {
     margin-top: 0px;
-    width: 50%;
+    width: 90%;
     margin-left: 0px;
   }
   .forgotpage {
@@ -6637,12 +6637,12 @@ width: 100%;
 
   .vsbformselect {
     border: 1px solid #555555;
-    width: 50%;
+    width: 90%;
     margin-left: 0px;
   }
 
   .vsbformtextarea {
-    width: 50%;
+    width: 90%;
     height: 116px;
     margin-bottom: 65px;
     margin-left: 0px;
@@ -8345,12 +8345,12 @@ width: 100%;
     border: 1px solid #555555;
     font-family: ubuntu;
     margin-top: 86px;
-    width: 50%;
+    width: 90%;
     margin-left: 0px;
   }
   .vsbform2 {
     margin-top: 0px;
-    width: 50%;
+    width: 90%;
     margin-left: 0px;
   }
   .forgotpage {
@@ -8375,7 +8375,7 @@ width: 100%;
 
   .vsbformselect {
     border: 1px solid #555555;
-    width: 50%;
+    width: 90%;
     margin-left: 0px;
   }
 
@@ -8385,7 +8385,7 @@ width: 100%;
 }
 
   .vsbformtextarea {
-    width: 50%;
+    width: 90%;
     height: 116px;
     margin-bottom: 65px;
     margin-left: 0px;
@@ -10103,12 +10103,12 @@ width: 100%;
     border: 1px solid #555555;
     font-family: ubuntu;
     margin-top: 86px;
-    width: 50%;
+    width: 90%;
     margin-left: 0px;
   }
   .vsbform2 {
     margin-top: 0px;
-    width: 50%;
+    width: 90%;
     margin-left: 0px;
   }
   .forgotpage {
@@ -10133,12 +10133,12 @@ width: 100%;
 
   .vsbformselect {
     border: 1px solid #555555;
-    width: 50%;
+    width: 90%;
     margin-left: 0px;
   }
 
   .vsbformtextarea {
-    width: 50%;
+    width: 90%;
     height: 116px;
     margin-bottom: 65px;
     margin-left: 0px;
@@ -11761,12 +11761,12 @@ width: 100%;
     border: 1px solid #555555;
     font-family: ubuntu;
     margin-top: 86px;
-    width: 50%;
+    width: 90%;
     margin-left: 0px;
   }
   .vsbform2 {
     margin-top: 0px;
-    width: 50%;
+    width: 90%;
     margin-left: 0px;
   }
   .vsbmt {
@@ -11787,14 +11787,14 @@ width: 100%;
 
   .vsbformselect {
     border: 1px solid #555555;
-    width: 50%;
+    width: 90%;
     margin-left: 0px;
   }
   .divcover {
     margin-top: 250px;
 }
   .vsbformtextarea {
-    width: 50%;
+    width:90%;
     height: 116px;
     margin-bottom: 65px;
     margin-left: 0px;
@@ -13477,17 +13477,20 @@ width: 100%;
     text-align: left;
     color: #000000;
   }
-
+  .mt155
+  {
+    margin-left: 5%;
+  }
   .vsbform {
     border: 1px solid #555555;
     font-family: ubuntu;
     margin-top: 56px;
-    width: 50%;
+    width: 90%;
     margin-left: 0px;
   }
   .vsbform2 {
     margin-top: 17px;
-    width: 50%;
+    width: 90%;
     margin-left: 0px; 
   }
 
@@ -13513,14 +13516,14 @@ width: 100%;
 
   .vsbformselect {
     border: 1px solid #555555;
-    width: 50%;
+    width: 90%;
     margin-left: 0px;
   }
   .divcover {
     margin-top: 250px;
 }
   .vsbformtextarea {
-    width: 50%;
+    width: 90%;
     height: 116px;
     margin-bottom: 65px;
     margin-left: 0px;

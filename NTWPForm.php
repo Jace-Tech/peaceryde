@@ -440,7 +440,7 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
                           <div class="input-group mb-3">
                             <input type="text" data-length name="passport" required class="form-control firstname" placeholder="Passport No">
                           </div>
-                          <p style="color: #C8730F; font-family: Ubuntu; font-size: 13px; font-style: normal; font-weight: 400;">Passport needs to be at least within 6 months to expiry date</p>
+                          <p style="color: #C8730F; font-family: Ubuntu; font-size: 13px; font-style: normal; font-weight: 400;">Passport needs to be at least within 6 months to expiry date.</p>
                         </div>
                       </div>
                       <div class="col-md-5">
