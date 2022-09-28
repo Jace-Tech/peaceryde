@@ -1830,14 +1830,14 @@ p,a,h1,h2,h3,h4 {
     border: 1px solid #555555;
     font-family: ubuntu;
     margin-top: 86px;
-    width: 60%;
+    width: 50%;
     
   }
   .vsbform2 {
 
     font-family: ubuntu;
     margin-top: 27px;
-    width: 60%;
+    width: 50%;
    
   }
 
@@ -1859,14 +1859,14 @@ p,a,h1,h2,h3,h4 {
 
   .vsbformselect {
     border: 1px solid #555555;
-    width: 60%;
+    width: 50%;
    
   }
   .leaderpageheight {
     height: 3700px;
 }
   .vsbformtextarea {
-    width: 60%;
+    width: 50%;
     height: 116px;
     margin-bottom: 65px;
     
@@ -3255,14 +3255,14 @@ p,a,h1,h2,h3,h4 {
     border: 1px solid #555555;
     font-family: ubuntu;
     margin-top: 86px;
-    width: 60%;
+    width: 50%;
     
   }
   .vsbform2 {
 
     font-family: ubuntu;
     margin-top: 27px;
-    width: 60%;
+    width: 50%;
    
   }
 
@@ -3284,11 +3284,11 @@ p,a,h1,h2,h3,h4 {
 
   .vsbformselect {
     border: 1px solid #555555;
-    width: 60%;
+    width: 50%;
    
   }
   .vsbformtextarea {
-    width: 60%;
+    width: 50%;
     height: 116px;
     margin-bottom: 65px; 
     margin-top: 27px;
@@ -4627,12 +4627,12 @@ p,a,h1,h2,h3,h4 {
     border: 1px solid #555555;
     font-family: ubuntu;
     margin-top: 86px;
-    width: 60%;
+    width: 50%;
   
   }
   .vsbform2 {
     margin-top: 27px;
-    width: 60%;
+    width: 50%;
     
   }
   .vsbmt {
@@ -4653,12 +4653,12 @@ p,a,h1,h2,h3,h4 {
 
   .vsbformselect {
     border: 1px solid #555555;
-    width: 60%;
+    width: 50%;
   
   }
 
   .vsbformtextarea {
-    width: 60%;
+    width: 50%;
     height: 116px;
     margin-bottom: 65px;
     margin-left: 0px;
@@ -5983,12 +5983,12 @@ p,a,h1,h2,h3,h4 {
     border: 1px solid #555555;
     font-family: ubuntu;
     margin-top: 86px;
-    width: 60%;
+    width: 50%;
     margin-left: 0px;
   }
   .vsbform2 {
     margin-top: 27px;
-    width: 60%;
+    width: 50%;
     margin-left: 0px;
   }
 
@@ -6010,12 +6010,12 @@ p,a,h1,h2,h3,h4 {
 
   .vsbformselect {
     border: 1px solid #555555;
-    width: 60%;
+    width: 50%;
     
   }
 
   .vsbformtextarea {
-    width: 60%;
+    width: 50%;
     height: 116px;
     margin-bottom: 65px;
     margin-left:0px;
@@ -7334,12 +7334,12 @@ p,a,h1,h2,h3,h4 {
     border: 1px solid #555555;
     font-family: ubuntu;
     margin-top: 86px;
-    width: 60%;
+    width: 50%;
     margin-left: 0px;
   }
   .vsbform2 {
     margin-top: 27px;
-    width: 60%;
+    width: 50%;
     margin-left: 0px;
   }
 
@@ -7361,12 +7361,12 @@ p,a,h1,h2,h3,h4 {
 
   .vsbformselect {
     border: 1px solid #555555;
-    width: 60%;
+    width: 50%;
     margin-left: 0;
   }
 
   .vsbformtextarea {
-    width: 60%;
+    width: 50%;
     height: 116px;
     margin-bottom: 65px;
     margin-left: 0;
@@ -8667,13 +8667,13 @@ p,a,h1,h2,h3,h4 {
     border: 1px solid #555555;
     font-family: ubuntu;
     margin-top: 86px;
-    width: 416px;
-    margin-left: 221px;
+    width: 50%;
+    margin-left: 0px;
   }
   .vsbform2 {
     margin-top: 27px;
-    width: 416px;
-    margin-left: 221px;
+    width: 50%;
+    margin-left: 0px;
   }
   .vsbmt {
     margin-top: 27px;
@@ -8687,21 +8687,21 @@ p,a,h1,h2,h3,h4 {
     line-height: 16px;
     letter-spacing: 0em;
     text-align: left;
-    padding-left: 221px;
+    padding-left: 0px;
     padding-top: 27px;
   }
 
   .vsbformselect {
     border: 1px solid #555555;
-    width: 502px;
-    margin-left: 221px;
+    width: 50%;
+    margin-left: 0px;
   }
 
   .vsbformtextarea {
-    width: 508px;
+    width: 50%;
     height: 116px;
     margin-bottom: 65px;
-    margin-left: 221px;
+    margin-left: 0px;
     margin-top: 27px;
   }
 
@@ -10040,13 +10040,13 @@ p,a,h1,h2,h3,h4 {
     border: 1px solid #555555;
     font-family: ubuntu;
     margin-top: 86px;
-    width: 416px;
-    margin-left: 221px;
+    width: 50%;
+    margin-left: 0px;
   }
   .vsbform2 {
     margin-top: 27px;
-    width: 416px;
-    margin-left: 221px;
+    width: 50%;
+    margin-left: 0px;
   }
 
   .vsbmt {
@@ -10061,21 +10061,21 @@ p,a,h1,h2,h3,h4 {
     line-height: 16px;
     letter-spacing: 0em;
     text-align: left;
-    padding-left: 221px;
+    padding-left: 0px;
     padding-top: 27px;
   }
 
   .vsbformselect {
     border: 1px solid #555555;
-    width: 502px;
-    margin-left: 221px;
+    width: 50%;
+    margin-left: 0px;
   }
 
   .vsbformtextarea {
-    width: 508px;
+    width: 50%;
     height: 116px;
     margin-bottom: 65px;
-    margin-left: 221px;
+    margin-left: 0px;
     margin-top: 27px;
   }
 
@@ -11377,13 +11377,13 @@ p,a,h1,h2,h3,h4 {
     border: 1px solid #555555;
     font-family: ubuntu;
     margin-top: 86px;
-    width: 416px;
-    margin-left: 221px;
+    width: 50%;
+    margin-left: 0px;
   }
   .vsbform2 {
     margin-top: 27px;
-    width: 416px;
-    margin-left: 221px;
+    width: 50%;
+    margin-left: 0px;
   }
   .vsbmt {
     margin-top: 27px;
@@ -11397,14 +11397,14 @@ p,a,h1,h2,h3,h4 {
     line-height: 16px;
     letter-spacing: 0em;
     text-align: left;
-    padding-left: 221px;
+    padding-left: 0px;
     padding-top: 27px;
   }
 
   .vsbformselect {
     border: 1px solid #555555;
-    width: 502px;
-    margin-left: 221px;
+    width: 50%;
+    margin-left: 0px;
   }
   .section-team {
     font-family: "Poppins", sans-serif;
@@ -12335,14 +12335,14 @@ p,a,h1,h2,h3,h4 {
     border: 1px solid #555555;
     font-family: ubuntu;
     margin-top: 86px;
-    width: 416px;
-    margin-left: 150px;
+    width: 50%;
+    margin-left: 0px;
   }
   .vsbform2 {
     
     margin-top: 27px;
-    width: 416px;
-    margin-left: 150px;
+    width: 50%;
+    margin-left: 0px;
   }
 
   .vsbmt {
@@ -12357,21 +12357,21 @@ p,a,h1,h2,h3,h4 {
     line-height: 16px;
     letter-spacing: 0em;
     text-align: left;
-    padding-left: 150px;
+    padding-left: 0px;
     padding-top: 27px;
   }
 
   .vsbformselect {
     border: 1px solid #555555;
-    width: 502px;
-    margin-left: 150px;
+    width: 50%;
+    margin-left: 0px;
   }
 
   .vsbformtextarea {
-    width: 508px;
+    width: 50%;
     height: 116px;
     margin-bottom: 65px;
-    margin-left: 150px;
+    margin-left: 0px;
     margin-top: 27px;
   }
 
@@ -13801,14 +13801,14 @@ p,a,h1,h2,h3,h4 {
     border: 1px solid #555555;
     font-family: ubuntu;
     margin-top: 86px;
-    width: 416px;
-    margin-left: 121px;
+    width: 50%;
+    margin-left: 0px;
   }
   .vsbform2 {
     
     margin-top: 27px;
-    width: 416px;
-    margin-left: 121px;
+    width: 50%;
+    margin-left: 0px;
   }
 
   .vsbmt {
@@ -13823,21 +13823,21 @@ p,a,h1,h2,h3,h4 {
     line-height: 16px;
     letter-spacing: 0em;
     text-align: left;
-    padding-left: 121px;
+    padding-left: 0px;
     padding-top: 27px;
   }
 
   .vsbformselect {
     border: 1px solid #555555;
-    width: 502px;
-    margin-left: 121px;
+    width: 50%;
+    margin-left: 0px;
   }
 
   .vsbformtextarea {
-    width: 508px;
+    width: 50%;
     height: 116px;
     margin-bottom: 65px;
-    margin-left: 121px;
+    margin-left: 0px;
     border: 1px solid #555555;
     margin-top: 27px;
   }

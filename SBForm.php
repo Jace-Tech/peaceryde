@@ -64,7 +64,7 @@
             <p class="applyh2p">Please fill this form to indicate your interest in any of our services and we will contact you within 24hrs.</p>
           </div>
           <form method="post" data-form action="./handlers/apply_handler.php">
-            <div style="margin-left:20%; width:100%;">
+            <div style="margin-left:25%; width:100%;">
           
             
             <div style="margin-top:10%">
