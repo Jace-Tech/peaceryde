@@ -103,7 +103,7 @@
      font-style: normal;
      font-weight: 400;">You must be at least 18 years old to use this website.</p> -->
      <br>
-            <div class="row vsbform">
+            <div class="row vsbform2">
               <div class="input-group" style="padding-left: 0px; padding-right: 0px;">
                 <div class="input-group-prepend">
                   <select required name="countryCode" id="" class="form-select code" aria-label="Default select example">
