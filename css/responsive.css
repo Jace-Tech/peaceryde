@@ -1383,12 +1383,12 @@ width: 100%;
   .vsbform {
     border: 1px solid #555555;
     font-family: ubuntu;
-    margin: 26px auto 0px;
+    margin: 26px 0 0px;
     width: 50%;
   }
   .vsbform2 {
  
-    margin: 0px auto 26px;
+    margin: 0px 0 26px;
     width: 50%;
   }
 
