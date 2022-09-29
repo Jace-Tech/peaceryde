@@ -343,7 +343,7 @@
            
            <div class="row vsbform vsbmt" style="margin-top:0px;border:none; ">
            <button name="apply" class="btn vsbform" style="width:117px; border:none;background: #a0bd1c;
-    padding: 10px 25px;color:white;margin-left:4%;
+    padding: 10px 25px;color:white;
     margin-top: 46px;">Apply</button>
                 </div>
                 </div>
