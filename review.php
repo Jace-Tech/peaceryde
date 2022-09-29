@@ -209,7 +209,7 @@ $users = new User($connect);
                                                 <div class="row">
                                                     <div class="col-md-1"></div>
                                                     <div class="col-md-6" style="margin-left: -35px;">
-                                                        <div class="rate">
+                                                        <div class="rate text-2xl">
                                                             <?php for ($i = 0; $i < intval($review['rating']); $i++) : ?>
                                                                 <span class="fa fa-star checked" data-rating="<?= $i + 1 ?>"></span>
                                                             <?php endfor; ?>
