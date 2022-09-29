@@ -105,7 +105,7 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
                         <select required name="title" class="form-select" aria-label="Default select example" style="border: 1px solid #555555; margin-left:0px">
                           <option value="">Title</option>
                           <?php foreach ($titles as $title) : ?>
-                            <option value="<?= $title ?>">
+                            <option <?= $FORM_APPY["title"] ? (($FORM_APPY["title"] == $title) ? "selected" : "") : "" ?> value="<?= $title ?>">
                               <?= $title ?>
                             </option>
                           <?php endforeach; ?>

@@ -141,6 +141,7 @@ if(isset($_POST['bi'])) {
     // Generate users option
     $user = [
         "firstname" => $firstname,
+        "title" => $title,
         "email" => $email,
         "dob" => $dob,
         "lastname" => $lastname,
