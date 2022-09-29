@@ -39,8 +39,8 @@ $users = new User($connect);
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <style>
         .avater {
-      width: 50px;
-      height: 50px;
+      width: 75px;
+      height: 75px;
       border-radius: 50%;
       background-color: #eee;
       display: flex;
