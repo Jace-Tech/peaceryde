@@ -303,9 +303,9 @@ $PRICE = json_decode($_SESSION["PRICE"], true);
                     <div class="radiodiv">
                         <input type="radio" name="payment_option" value="stripe" class="radioo">&nbsp; Stripe <br><br>
                         <input type="radio" name="payment_option" value="paystack" checked="checked" class="radioo">&nbsp; Paystack <br><br>
-                        <input type="radio" name="payment_option" value="payoneer" class="radioo">&nbsp; Payoneer  <br><br>
+                        <!-- <input type="radio" name="payment_option" value="payoneer" class="radioo">&nbsp; Payoneer  <br><br>
                         
-                        <input type="radio" name="payment_option" value="wise" class="radioo"> &nbsp; Wise <br><br>
+                        <input type="radio" name="payment_option" value="wise" class="radioo"> &nbsp; Wise <br><br> -->
                         <div class="hidden-box">
                         <p class="cardname">Name of card</p>
                         <input type="text" name="card_name" class="form-control cardinput" placeholder="John Doe">

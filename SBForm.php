@@ -319,7 +319,7 @@
                     </optgroup>
                   </select>
                 </div>
-                <input type="text" class="form-control firstname" required name="phone" placeholder="Mobile Number">
+                <input type="text" class="form-control vsbform" required name="phone" placeholder="Mobile Number">
               </div>
             </div>
 
@@ -338,7 +338,7 @@
           <p class="vsbformp">Message</p>
            <div class="row vsbform vsbmt" style="margin-left: 5px; border:none">
            <input type="hidden" name="apply" value="">
-            <textarea class="" name="message" style="height:116px;border: 1px solid #555555;"></textarea>
+            <textarea class="" name="message" style="height:116px;border: 1px solid #555555; margin-left:-5px"></textarea>
            </div>
            
            <div class="row ">
