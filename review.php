@@ -161,7 +161,7 @@ $users = new User($connect);
                     <div class="">
                         <?php if (count($REVIEW->getAllReviews())) : ?>
                             <?php foreach ($REVIEW->getAllReviews() as $review) : ?>
-                                <?php print_r($review); ?>
+                                <?php //print_r($review); ?>
                                 <?php $REVIEW_USER = getUser($connect, $review['user_id']); ?>
                                 <div class="card reviewcard">
                                     <div class="reviewml">
@@ -201,18 +201,18 @@ $users = new User($connect);
                                                     <div class="row">
                                                         <div class="col-md-1"></div>
                                                     <div class="col-md-6" style="margin-left: -35px;">
-                                                        <div class="rate">
-                                                            <input type="radio" id="star5" name="rate" value="5" />
-                                                            <label for="star5" title="text">5 stars</label>
-                                                            <input type="radio" id="star4" name="rate" value="4" />
-                                                            <label for="star4" title="text">4 stars</label>
-                                                            <input type="radio" id="star3" name="rate" value="3" />
-                                                            <label for="star3" title="text">3 stars</label>
-                                                            <input type="radio" id="star2" name="rate" value="2" />
-                                                            <label for="star2" title="text">2 stars</label>
-                                                            <input type="radio" id="star1" name="rate" value="1" />
-                                                            <label for="star1" title="text">1 star</label>
-                                                        </div>
+                                                       
+                                                    <div class="star-rating">
+                                                        <?php for ($i = 0; $i < intval($review['rating']); $i++) : ?>
+                                                            <span class="fa fa-star checked" data-rating="<?= $i + 1 ?>"></span>
+                                                        <?php endfor; ?>
+
+                                                        <?php for ($i = 0; $i < (5 - intval($review['rating'])); $i++) : ?>
+                                                            <span class="fa fa-star-o" data-rating="<?= intval($review['rating']) + ($i + 1) ?>"></span>
+                                                        <?php endfor; ?>
+
+                                                        <!-- <input type="hidden" name="whatever1" class="rating-value" value="2.56"> -->
+                                                    </div>
                                                         <!-- <div class="star-rating">
                                                             <input type="radio" id="5-stars" name="rating" value="5" />
                                                             <label for="5-stars" class="star">&#9733;</label>
