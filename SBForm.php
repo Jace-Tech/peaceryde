@@ -319,7 +319,7 @@
                     </optgroup>
                   </select>
                 </div>
-                <input type="text" class="form-control vsbform" style="margin-top:6px" required name="phone" placeholder="Mobile Number">
+                <input type="text" class="form-control vsbform" style="margin-top:7px;border: 1px solid #555555;" required name="phone" placeholder="Mobile Number">
               </div>
             </div>
 
