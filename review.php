@@ -211,11 +211,11 @@ $users = new User($connect);
                                                     <div class="col-md-6" style="margin-left: -35px;">
                                                         <div class="rate">
                                                             <?php for ($i = 0; $i < intval($review['rating']); $i++) : ?>
-                                                                <span class="text-2xl fa fa-star checked" data-rating="<?= $i + 1 ?>"></span>
+                                                                <span style="font-size: 22px;" class="fa fa-star checked" data-rating="<?= $i + 1 ?>"></span>
                                                             <?php endfor; ?>
 
                                                             <?php for ($i = 0; $i < (5 - intval($review['rating'])); $i++) : ?>
-                                                                <span class="text-2xl fa fa-star-o" data-rating="<?= intval($review['rating']) + ($i + 1) ?>"></span>
+                                                                <span style="font-size: 22px;" class="fa fa-star-o" data-rating="<?= intval($review['rating']) + ($i + 1) ?>"></span>
                                                             <?php endfor; ?>
                                                         </div>
                                                         <!-- <div class="star-rating">
