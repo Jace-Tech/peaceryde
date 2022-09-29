@@ -110,7 +110,7 @@ $users = new User($connect);
 .rate {
     float: left;
     height: 46px;
-    padding: 0 10px;
+    padding: 0 25px;
 }
 .rate:not(:checked) > input {
     position:absolute;
