@@ -161,6 +161,7 @@ $users = new User($connect);
                     <div class="">
                         <?php if (count($REVIEW->getAllReviews())) : ?>
                             <?php foreach ($REVIEW->getAllReviews() as $review) : ?>
+                                <?php print_r($review); ?>
                                 <?php $REVIEW_USER = getUser($connect, $review['user_id']); ?>
                                 <div class="card reviewcard">
                                     <div class="reviewml">
