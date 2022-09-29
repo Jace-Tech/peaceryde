@@ -199,7 +199,7 @@ $users = new User($connect);
                                                         </div>
                                                     </div>
                                                     <div class="row">
-                                                        <div class="col-md-1"></div>
+                                                        
                                                     <div class="col-md-6" style="margin-left: -35px;">
                                                         <div class="rate">
                                                             <input type="radio" id="star5" name="rate" value="5" />
