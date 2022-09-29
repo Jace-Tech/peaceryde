@@ -39,8 +39,8 @@ $users = new User($connect);
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <style>
         .avater {
-      width: 50px;
-      height: 50px;
+      width: 75px;
+      height: 75px;
       border-radius: 50%;
       background-color: #eee;
       display: flex;
@@ -110,7 +110,7 @@ $users = new User($connect);
 .rate {
     float: left;
     height: 46px;
-    padding: 0 10px;
+    padding: 0 25px;
 }
 .rate:not(:checked) > input {
     position:absolute;
@@ -199,7 +199,7 @@ $users = new User($connect);
                                                         </div>
                                                     </div>
                                                     <div class="row">
-                                                        <div class="col-md-1"></div>
+                                                        
                                                     <div class="col-md-6" style="margin-left: -35px;">
                                                        
                                                     <div class="star-rating">

@@ -303,9 +303,12 @@ $PRICE = json_decode($_SESSION["PRICE"], true);
                     <div class="radiodiv">
                         <input type="radio" name="payment_option" value="stripe" class="radioo">&nbsp; Stripe <br><br>
                         <input type="radio" name="payment_option" value="paystack" checked="checked" class="radioo">&nbsp; Paystack <br><br>
-                        <input type="radio" name="payment_option" value="payoneer" class="radioo">&nbsp; Payoneer  <br><br>
+                        <p style="color: #C8730F; font-family: Ubuntu; font-size: 13px; font-style: normal; font-weight: 400;">We also accept payments from Payoneer and WISE.</p><br>
+                        <p style="color: #C8730F; font-family: Ubuntu; font-size: 13px; font-style: normal; font-weight: 400; padding-right:50px;">ACH and Wire transfers are allowed from all parts of the world, and in all different currencies.</p><br>
+                        <p style="color: #C8730F; font-family: Ubuntu; font-size: 13px; font-style: normal; font-weight: 400; padding-right:50px;">For more payment options please contact. <a href="mailto:support@peacerydeafrica.com">support@peacerydeafrica.com</a> </p><br>
+                        <!-- <input type="radio" name="payment_option" value="payoneer" class="radioo">&nbsp; Payoneer  <br><br>
                         
-                        <input type="radio" name="payment_option" value="wise" class="radioo"> &nbsp; Wise <br><br>
+                        <input type="radio" name="payment_option" value="wise" class="radioo"> &nbsp; Wise <br><br> -->
                         <div class="hidden-box">
                         <p class="cardname">Name of card</p>
                         <input type="text" name="card_name" class="form-control cardinput" placeholder="John Doe">
