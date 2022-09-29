@@ -39,8 +39,8 @@ $users = new User($connect);
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <style>
         .avater {
-      width: 75px;
-      height: 75px;
+      width: 50px;
+      height: 50px;
       border-radius: 50%;
       background-color: #eee;
       display: flex;
@@ -110,7 +110,7 @@ $users = new User($connect);
 .rate {
     float: left;
     height: 46px;
-    padding: 0 25px;
+    padding: 0 10px;
 }
 .rate:not(:checked) > input {
     position:absolute;
@@ -199,20 +199,14 @@ $users = new User($connect);
                                                         </div>
                                                     </div>
                                                     <div class="row">
-                                                        
+                                                        <div class="col-md-1"></div>
                                                     <div class="col-md-6" style="margin-left: -35px;">
-                                                       
-                                                    <div class="star">
-                                                        <?php for ($i = 0; $i < intval($review['rating']); $i++) : ?>
-                                                            <span class="fa fa-star checked" data-rating="<?= $i + 1 ?>"></span>
-                                                        <?php endfor; ?>
-
-                                                        <?php for ($i = 0; $i < (5 - intval($review['rating'])); $i++) : ?>
-                                                            <span class="fa fa-star-o" data-rating="<?= intval($review['rating']) + ($i + 1) ?>"></span>
-                                                        <?php endfor; ?>
-
-                                                        <!-- <input type="hidden" name="whatever1" class="rating-value" value="2.56"> -->
-                                                    </div>
+                                                        <div class="rate">
+                                                            <?php for($i = 5; $i >= 1; $i--): ?>
+                                                                <input type="radio" id="star<?= $i; ?>" <?= ($i == $review['rating']) ? "checked" : "" ?> name="rate" value="<?= $i; ?>" />
+                                                                <label for="star<?= $i; ?>" title="text"><?= $i ?> stars</label>
+                                                            <?php endfor; ?>
+                                                        </div>
                                                         <!-- <div class="star-rating">
                                                             <input type="radio" id="5-stars" name="rating" value="5" />
                                                             <label for="5-stars" class="star">&#9733;</label>
