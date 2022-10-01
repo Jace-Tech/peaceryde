@@ -1841,6 +1841,7 @@ p,a,h1,h2,h3,h4 {
 
     font-family: ubuntu;
     margin-top: 27px;
+    margin-left: 0px;
     width: 50%;
    
   }
@@ -3267,6 +3268,7 @@ p,a,h1,h2,h3,h4 {
     font-family: ubuntu;
     margin-top: 27px;
     width: 50%;
+    margin-left: 0px;
    
   }
 
@@ -4636,6 +4638,7 @@ p,a,h1,h2,h3,h4 {
   }
   .vsbform2 {
     margin-top: 27px;
+    margin-left: 0px;
     width: 50%;
     
   }
@@ -5993,7 +5996,7 @@ p,a,h1,h2,h3,h4 {
   .vsbform2 {
     margin-top: 27px;
     width: 50%;
-    margin-left: 0px;
+    margin-left:-10px
   }
 
   .vsbmt {
@@ -7344,7 +7347,7 @@ p,a,h1,h2,h3,h4 {
   .vsbform2 {
     margin-top: 27px;
     width: 50%;
-    margin-left: 0px;
+    margin-left:-10px
   }
 
   .vsbmt {
@@ -8677,7 +8680,7 @@ p,a,h1,h2,h3,h4 {
   .vsbform2 {
     margin-top: 27px;
     width: 50%;
-    margin-left: 0px;
+    margin-left:-10px
   }
   .vsbmt {
     margin-top: 27px;
@@ -10050,7 +10053,7 @@ p,a,h1,h2,h3,h4 {
   .vsbform2 {
     margin-top: 27px;
     width: 50%;
-    margin-left: 0px;
+    margin-left:-10px
   }
 
   .vsbmt {
@@ -11387,7 +11390,7 @@ p,a,h1,h2,h3,h4 {
   .vsbform2 {
     margin-top: 27px;
     width: 50%;
-    margin-left: 0px;
+    margin-left:-10px
   }
   .vsbmt {
     margin-top: 27px;
@@ -12346,7 +12349,7 @@ p,a,h1,h2,h3,h4 {
     
     margin-top: 27px;
     width: 50%;
-    margin-left: 0px;
+    margin-left:-10px
   }
 
   .vsbmt {
@@ -13812,7 +13815,7 @@ p,a,h1,h2,h3,h4 {
     
     margin-top: 27px;
     width: 50%;
-    margin-left: 0px;
+    margin-left:-10px
   }
 
   .vsbmt {
