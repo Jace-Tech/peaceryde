@@ -15,6 +15,15 @@
 .body {
   overflow-x: hidden;
 }
+.sbapply
+{
+  width:117px; 
+  border:none;
+  background: #a0bd1c;
+  padding: 10px 25px;
+  color:white;
+  margin-top: 46px;
+}
 
 .paybtn
 {
@@ -1841,9 +1850,11 @@ p,a,h1,h2,h3,h4 {
 
     font-family: ubuntu;
     margin-top: 27px;
-    margin-left: 0px;
+    margin-left:-10px;
     width: 50%;
-   
+  }
+  .sbapply{
+    margin-left: 10px;
   }
 
   .vsbmt {
@@ -3268,8 +3279,10 @@ p,a,h1,h2,h3,h4 {
     font-family: ubuntu;
     margin-top: 27px;
     width: 50%;
-    margin-left: 0px;
-   
+    margin-left:-10px
+  }
+  .sbapply{
+    margin-left: 10px;
   }
 
   .vsbmt {
@@ -4638,9 +4651,12 @@ p,a,h1,h2,h3,h4 {
   }
   .vsbform2 {
     margin-top: 27px;
-    margin-left: 0px;
+    margin-left:-10px;
     width: 50%;
     
+  }
+  .sbapply{
+    margin-left: 10px;
   }
   .vsbmt {
     margin-top: 27px;
@@ -5996,7 +6012,10 @@ p,a,h1,h2,h3,h4 {
   .vsbform2 {
     margin-top: 27px;
     width: 50%;
-    margin-left:-10px
+    margin-left:0px
+  }
+  .sbapply{
+    margin-left: 0px;
   }
 
   .vsbmt {
@@ -7347,8 +7366,12 @@ p,a,h1,h2,h3,h4 {
   .vsbform2 {
     margin-top: 27px;
     width: 50%;
-    margin-left:-10px
+    margin-left:0px
   }
+  .sbapply{
+    margin-left: 0px;
+  }
+  
 
   .vsbmt {
     margin-top: 27px;
@@ -8680,7 +8703,10 @@ p,a,h1,h2,h3,h4 {
   .vsbform2 {
     margin-top: 27px;
     width: 50%;
-    margin-left:-10px
+    margin-left:0px
+  }
+  .sbapply{
+    margin-left: 0px;
   }
   .vsbmt {
     margin-top: 27px;
@@ -10053,7 +10079,10 @@ p,a,h1,h2,h3,h4 {
   .vsbform2 {
     margin-top: 27px;
     width: 50%;
-    margin-left:-10px
+    margin-left:0px
+  }
+  .sbapply{
+    margin-left: 0px;
   }
 
   .vsbmt {
@@ -11390,7 +11419,10 @@ p,a,h1,h2,h3,h4 {
   .vsbform2 {
     margin-top: 27px;
     width: 50%;
-    margin-left:-10px
+    margin-left:0px
+  }
+  .sbapply{
+    margin-left: 0px;
   }
   .vsbmt {
     margin-top: 27px;
@@ -12349,7 +12381,10 @@ p,a,h1,h2,h3,h4 {
     
     margin-top: 27px;
     width: 50%;
-    margin-left:-10px
+    margin-left:0px
+  }
+  .sbapply{
+    margin-left: 0px;
   }
 
   .vsbmt {
@@ -13815,7 +13850,10 @@ p,a,h1,h2,h3,h4 {
     
     margin-top: 27px;
     width: 50%;
-    margin-left:-10px
+    margin-left:0px
+  }
+  .sbapply{
+    margin-left: 0px;
   }
 
   .vsbmt {
