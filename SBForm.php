@@ -342,7 +342,7 @@
            </div>
            
            <div class="row vsbform vsbmt" style="margin-top:0px;border:none; ">
-           <button name="apply" class="btn vsbform sbapply" >Apply</button>
+           <button name="apply" class="btn sbapply" >Apply</button>
                 </div>
                 </div>
           </form>
