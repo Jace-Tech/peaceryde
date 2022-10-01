@@ -7980,11 +7980,14 @@
     border: 1px solid #555555;
     font-family: ubuntu;
     margin: 26px 0;
-    width: 49%;
+    width: 69%;
   }
+  .mt155 {
+    margin-left: 15%;
+}
 .vsbform2 {
   margin-top: 20px;
-  width: 50%;
+  width: 71%;
   margin-left:-10px
   }
   .vsbmt {
@@ -9427,11 +9430,11 @@
     border: 1px solid #555555;
     font-family: ubuntu;
     margin: 26px 0;
-    width: 49%;
+    width: 69%;
   }
   .vsbform2 {
     margin-top: 20px;
-    width: 50%;
+    width: 71%;
     margin-left:-10px
   }
   .vsbmt {
