@@ -325,7 +325,7 @@
 
 
             <p class="vsbformp">Which of our services are you applying for?</p>
-            <select class="form-select vsbform vsbmt" required name="service" aria-label="Default select example">
+            <select class="form-select vsbform2 vsbmt" required name="service" aria-label="Default select example">
               <option value="">Choose service</option>
               <?php if (count($services)) : ?>
                 <?php foreach ($services as $service) : ?>
