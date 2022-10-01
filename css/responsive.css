@@ -1391,7 +1391,7 @@ width: 100%;
   }
   .vsbform2 {
  
-    margin: 0px 0 26px;
+    margin: 0px 0px 0px -10px;
     width: 90%;
   }
 
@@ -3089,7 +3089,7 @@ width: 100%;
   .vsbform2 {
     
     width: 90%;
-    margin-left: 0px;
+    margin: 0px 0px 0px -10px;
   }
   .vsbmt {
     margin-top: 27px;
@@ -4838,9 +4838,9 @@ width: 100%;
     margin-left: 0px;
   }
   .vsbform2 {
-    margin-top: 0px;
+    margin: 0px 0px 0px -10px;
     width: 90%;
-    margin-left: 0px;
+    
   }
 
   .forgotpage {
@@ -6614,9 +6614,9 @@ width: 100%;
     margin-left: 0px;
   }
   .vsbform2 {
-    margin-top: 0px;
+    margin: 0px 0px 0px -10px;
     width: 90%;
-    margin-left: 0px;
+    
   }
   .forgotpage {
     margin-top: 250px;
@@ -8352,9 +8352,9 @@ width: 100%;
     margin-left: 0px;
   }
   .vsbform2 {
-    margin-top: 0px;
+    
     width: 90%;
-    margin-left: 0px;
+    margin: 0px 0px 0px -10px;
   }
   .forgotpage {
     margin-top: 250px;
@@ -10110,9 +10110,9 @@ width: 100%;
     margin-left: 0px;
   }
   .vsbform2 {
-    margin-top: 0px;
+    
     width: 90%;
-    margin-left: 0px;
+    margin: 0px 0px 0px -10px;
   }
   .forgotpage {
     margin-top: 250px;
@@ -11768,9 +11768,9 @@ width: 100%;
     margin-left: 0px;
   }
   .vsbform2 {
-    margin-top: 0px;
+    margin: 0px 0px 0px -10px;
     width: 90%;
-    margin-left: 0px;
+   
   }
   .vsbmt {
     margin-top: 17px;
@@ -13492,9 +13492,9 @@ width: 100%;
     margin-left: 0px;
   }
   .vsbform2 {
-    margin-top: 17px;
+    margin: 0px 0px 0px -10px;
     width: 90%;
-    margin-left: 0px; 
+    
   }
 
   .vsbmt {
