@@ -332,7 +332,7 @@ $PRICE = json_decode($_SESSION["PRICE"], true);
                         </div>
                         </div>
                     </div>
-                    <div class="divbutton" style="margin-bottom:10%">
+                    <div class="divbutton radiodiv" style="margin-bottom:10%; margin-left:0px">
                         <button type="submit" name="pay" class="btn proceed" style="width:150px">Pay</button>
                     </div>
                     <div class="radiodiv" style=" margin-top: 20px;">
