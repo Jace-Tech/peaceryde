@@ -337,7 +337,7 @@ $PRICE = json_decode($_SESSION["PRICE"], true);
                     </div>
                     <div style=" margin-top: 20px;">
                         <p class="paymentopt">Payment Options</p>
-                        <img src="assets/card.png" class="img-fluid" alt="" srcset="">
+                        <img src="assets/card.png" class="img-fluid" alt="" srcset="" style="width:70%">
                     </div>
                 </form>
             </div>
