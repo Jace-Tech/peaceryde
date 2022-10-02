@@ -335,9 +335,9 @@ $PRICE = json_decode($_SESSION["PRICE"], true);
                     <div class="divbutton">
                         <button type="submit" name="pay" class="btn proceed" style="width:150px">Pay</button>
                     </div>
-                    <div style=" margin-top: 20px;">
-                        <p class="paymentopt">Payment Options</p>
-                        <img src="assets/card.png" class="img-fluid" alt="" srcset="" style="width:70%">
+                    <div class="radiodiv" style=" margin-top: 20px;">
+                        <p class="paymentopt">We accept card payments</p>
+                        <img src="assets/card.png" class="img-fluid" alt="" srcset="" style="width:40%">
                     </div>
                 </form>
             </div>
