@@ -155,6 +155,15 @@
                     <li class="corp layout fs-13 ">
                       info@peacerydeafrica.com</li>
                   </ul>
+                 
+                </div>
+                <br>
+                <br>
+                <div class="row">
+                  <h3 class="new-section8__highlights8 layout footh3" style="text-transform:uppercase">
+                  We accept card payments
+                  </h3>
+                  <img src="assets/card.png" class="img-fluid" alt="" srcset="">
                   <br>
                   <br>
                   <i class="fs-13 mt10"> ...Peace begins with a smile <img src="assets/smiley.png" style="width: 20px; height: 20px;"> </i>
