@@ -15,6 +15,15 @@
 .body {
   overflow-x: hidden;
 }
+.sbapply
+{
+  width:117px; 
+  border:none;
+  background: #a0bd1c;
+  padding: 10px 25px;
+  color:white;
+  margin-top: 46px;
+}
 
 .paybtn
 {
@@ -1834,15 +1843,18 @@ p,a,h1,h2,h3,h4 {
     border: 1px solid #555555;
     font-family: ubuntu;
     margin-top: 86px;
-    width: 50%;
+    width: 49%;
     
   }
   .vsbform2 {
 
     font-family: ubuntu;
     margin-top: 27px;
+    margin-left:-10px;
     width: 50%;
-   
+  }
+  .sbapply{
+    margin-left: 10px;
   }
 
   .vsbmt {
@@ -3259,7 +3271,7 @@ p,a,h1,h2,h3,h4 {
     border: 1px solid #555555;
     font-family: ubuntu;
     margin-top: 86px;
-    width: 50%;
+    width: 49%;
     
   }
   .vsbform2 {
@@ -3267,7 +3279,10 @@ p,a,h1,h2,h3,h4 {
     font-family: ubuntu;
     margin-top: 27px;
     width: 50%;
-   
+    margin-left:-10px
+  }
+  .sbapply{
+    margin-left: 10px;
   }
 
   .vsbmt {
@@ -4631,13 +4646,17 @@ p,a,h1,h2,h3,h4 {
     border: 1px solid #555555;
     font-family: ubuntu;
     margin-top: 86px;
-    width: 50%;
+    width: 49%;
   
   }
   .vsbform2 {
     margin-top: 27px;
+    margin-left:-10px;
     width: 50%;
     
+  }
+  .sbapply{
+    margin-left: 10px;
   }
   .vsbmt {
     margin-top: 27px;
@@ -5987,12 +6006,15 @@ p,a,h1,h2,h3,h4 {
     border: 1px solid #555555;
     font-family: ubuntu;
     margin-top: 86px;
-    width: 50%;
+    width: 49%;
     margin-left: 0px;
   }
   .vsbform2 {
     margin-top: 27px;
     width: 50%;
+    margin-left:-10px
+  }
+  .sbapply{
     margin-left: 0px;
   }
 
@@ -7338,14 +7360,18 @@ p,a,h1,h2,h3,h4 {
     border: 1px solid #555555;
     font-family: ubuntu;
     margin-top: 86px;
-    width: 50%;
+    width: 49%;
     margin-left: 0px;
   }
   .vsbform2 {
     margin-top: 27px;
     width: 50%;
+    margin-left:-10px
+  }
+  .sbapply{
     margin-left: 0px;
   }
+  
 
   .vsbmt {
     margin-top: 27px;
@@ -8671,12 +8697,15 @@ p,a,h1,h2,h3,h4 {
     border: 1px solid #555555;
     font-family: ubuntu;
     margin-top: 86px;
-    width: 50%;
+    width: 49%;
     margin-left: 0px;
   }
   .vsbform2 {
     margin-top: 27px;
     width: 50%;
+    margin-left:-10px
+  }
+  .sbapply{
     margin-left: 0px;
   }
   .vsbmt {
@@ -10044,12 +10073,15 @@ p,a,h1,h2,h3,h4 {
     border: 1px solid #555555;
     font-family: ubuntu;
     margin-top: 86px;
-    width: 50%;
+    width: 49%;
     margin-left: 0px;
   }
   .vsbform2 {
     margin-top: 27px;
     width: 50%;
+    margin-left:-10px
+  }
+  .sbapply{
     margin-left: 0px;
   }
 
@@ -11381,12 +11413,15 @@ p,a,h1,h2,h3,h4 {
     border: 1px solid #555555;
     font-family: ubuntu;
     margin-top: 86px;
-    width: 50%;
+    width: 49%;
     margin-left: 0px;
   }
   .vsbform2 {
     margin-top: 27px;
     width: 50%;
+    margin-left:-10px
+  }
+  .sbapply{
     margin-left: 0px;
   }
   .vsbmt {
@@ -12339,13 +12374,16 @@ p,a,h1,h2,h3,h4 {
     border: 1px solid #555555;
     font-family: ubuntu;
     margin-top: 86px;
-    width: 50%;
+    width: 49%;
     margin-left: 0px;
   }
   .vsbform2 {
     
     margin-top: 27px;
     width: 50%;
+    margin-left:-10px
+  }
+  .sbapply{
     margin-left: 0px;
   }
 
@@ -13805,13 +13843,16 @@ p,a,h1,h2,h3,h4 {
     border: 1px solid #555555;
     font-family: ubuntu;
     margin-top: 86px;
-    width: 50%;
+    width: 49%;
     margin-left: 0px;
   }
   .vsbform2 {
     
     margin-top: 27px;
     width: 50%;
+    margin-left:-10px
+  }
+  .sbapply{
     margin-left: 0px;
   }
 

@@ -1387,12 +1387,12 @@ width: 100%;
     border: 1px solid #555555;
     font-family: ubuntu;
     margin: 26px 0 0px;
-    width: 90%;
+    width: 89%;
   }
   .vsbform2 {
  
-    margin: 0px 0 26px;
-    width: 90%;
+    margin: 0px 0px 0px -10px;
+    width: 92%;
   }
 
   .vsbmt {
@@ -2812,7 +2812,7 @@ width: 100%;
     color: #080c58;
     letter-spacing: 0px;
     margin-top: 8px;
-    margin-bottom: 100px;
+    margin-bottom: 10px;
   }
 
   .lastfooter {
@@ -3083,13 +3083,13 @@ width: 100%;
     border: 1px solid #555555;
     font-family: ubuntu;
     margin-top: 86px;
-    width: 90%;
+    width: 89%;
     margin-left: 0px;
   }
   .vsbform2 {
     
-    width: 90%;
-    margin-left: 0px;
+    width: 92%;
+    margin: 0px 0px 0px -10px;
   }
   .vsbmt {
     margin-top: 27px;
@@ -4550,7 +4550,7 @@ width: 100%;
     color: #080c58;
     letter-spacing: 0px;
     margin-top: 8px;
-    margin-bottom: 100px;
+    margin-bottom: 10px;
   }
 
   .lastfooter {
@@ -4834,13 +4834,13 @@ width: 100%;
     border: 1px solid #555555;
     font-family: ubuntu;
     margin-top: 86px;
-    width: 90%;
+    width: 89%;
     margin-left: 0px;
   }
   .vsbform2 {
-    margin-top: 0px;
-    width: 90%;
-    margin-left: 0px;
+    margin: 0px 0px 0px -10px;
+    width: 92%;
+    
   }
 
   .forgotpage {
@@ -6333,7 +6333,7 @@ width: 100%;
     color: #080c58;
     letter-spacing: 0px;
     margin-top: 8px;
-    margin-bottom: 100px;
+    margin-bottom: 10px;
   }
 
   .lastfooter {
@@ -6610,13 +6610,13 @@ width: 100%;
     border: 1px solid #555555;
     font-family: ubuntu;
     margin-top: 86px;
-    width: 90%;
+    width: 89%;
     margin-left: 0px;
   }
   .vsbform2 {
-    margin-top: 0px;
-    width: 90%;
-    margin-left: 0px;
+    margin: 0px 0px 0px -10px;
+    width: 92%;
+    
   }
   .forgotpage {
     margin-top: 250px;
@@ -8072,7 +8072,7 @@ width: 100%;
     color: #080c58;
     letter-spacing: 0px;
     margin-top: 8px;
-    margin-bottom: 100px;
+    margin-bottom: 10px;
   }
 
   .lastfooter {
@@ -8348,13 +8348,13 @@ width: 100%;
     border: 1px solid #555555;
     font-family: ubuntu;
     margin-top: 86px;
-    width: 90%;
+    width: 89%;
     margin-left: 0px;
   }
   .vsbform2 {
-    margin-top: 0px;
-    width: 90%;
-    margin-left: 0px;
+    
+    width: 92%;
+    margin: 0px 0px 0px -10px;
   }
   .forgotpage {
     margin-top: 250px;
@@ -9811,7 +9811,7 @@ width: 100%;
     color: #080c58;
     letter-spacing: 0px;
     margin-top: 8px;
-    margin-bottom: 100px;
+    margin-bottom: 10px;
   }
 
   .lastfooter {
@@ -10106,13 +10106,13 @@ width: 100%;
     border: 1px solid #555555;
     font-family: ubuntu;
     margin-top: 86px;
-    width: 90%;
+    width: 89%;
     margin-left: 0px;
   }
   .vsbform2 {
-    margin-top: 0px;
-    width: 90%;
-    margin-left: 0px;
+    
+    width: 92%;
+    margin: 0px 0px 0px -10px;
   }
   .forgotpage {
     margin-top: 250px;
@@ -11475,7 +11475,7 @@ width: 100%;
     color: #080c58;
     letter-spacing: 0px;
     margin-top: 8px;
-    margin-bottom: 100px;
+    margin-bottom: 10px;
   }
 
   .lastfooter {
@@ -11764,13 +11764,13 @@ width: 100%;
     border: 1px solid #555555;
     font-family: ubuntu;
     margin-top: 86px;
-    width: 90%;
+    width: 89%;
     margin-left: 0px;
   }
   .vsbform2 {
-    margin-top: 0px;
+    margin: 0px 0px 0px -10px;
     width: 90%;
-    margin-left: 0px;
+   
   }
   .vsbmt {
     margin-top: 17px;
@@ -11784,7 +11784,7 @@ width: 100%;
     line-height: 16px;
     letter-spacing: 0em;
     text-align: left;
-    padding-left: 0px;
+    padding-left: 10px;
     padding-top: 17px;
   }
 
@@ -13203,7 +13203,7 @@ width: 100%;
     color: #080c58;
     letter-spacing: 0px;
     margin-top: 8px;
-    margin-bottom: 100px;
+    margin-bottom: 10px;
   }
 
   .lastfooter {
@@ -13488,13 +13488,13 @@ width: 100%;
     border: 1px solid #555555;
     font-family: ubuntu;
     margin-top: 56px;
-    width: 90%;
+    width: 89%;
     margin-left: 0px;
   }
   .vsbform2 {
-    margin-top: 17px;
+    margin: 0px 0px 0px -10px;
     width: 90%;
-    margin-left: 0px; 
+    
   }
 
   .vsbmt {

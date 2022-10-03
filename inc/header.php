@@ -108,7 +108,7 @@
         </div>
         <div class="new-section1__flex1-spacer2"></div>
 
-        <a href="+1 (302) 703-9867" class="phone">+1 (302) 703-9867</a>
+        <p class="phone">+1 (302) 703-9867</p>
       </div>
       <div class="mobile">
         <div class="">
