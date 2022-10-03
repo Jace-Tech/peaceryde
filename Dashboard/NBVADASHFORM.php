@@ -240,7 +240,7 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
                     </div>
                     <div class="col-md-5">
                       <div class="form-group">
-                        <label class="form-label" style="">Email address</label>
+                        <label class="form-label"  >Email address</label>
                         <div class="input-group mb-3">
                           <input type="email" required name="email" class="form-control firstname" placeholder="Email address" value="<?= $FORM_APPY["email"] ?? "" ?>">
                         </div>

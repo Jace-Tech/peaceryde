@@ -147,9 +147,15 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
                         <select required name="title" class="form-select" aria-label="Default select example" style="border: 1px solid #555555; margin-left:0px">
                           <option value="">Title</option>
                           <?php foreach ($titles as $title) : ?>
-                            <option <?= $FORM_APPY["title"] ? (($FORM_APPY["title"] == $title) ? "selected" : "") : "" ?> value="<?= $title ?>">
-                              <?= $title ?>
-                            </option>
+                            <?php if(isset($FORM_APPY["title"])): ?>
+                              <option <?= ($FORM_APPY["title"] == $title) ? "selected" : "" ?> value="<?= $title ?>">
+                                <?= $title ?>
+                              </option>
+                            <?php else: ?>
+                              <option value="<?= $title ?>">
+                                <?= $title ?>
+                              </option>
+                            <?php endif; ?>
                           <?php endforeach; ?>
                         </select>
                         <p class="yourname" style="padding-left:10px;padding-top: 17px; padding-bottom: 17px;">Your name must be entered in English as it appears on your passport.</p>
@@ -227,7 +233,7 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
                                        
                     <div class="row formml">
                       <div class="col-md-5">
-                      <div class="form-group" style="">
+                      <div class="form-group"  >
                           <label class="form-label">Country</label>
                           <br>
                               <select required id="country" data-length name="country" class="form-select select" aria-label="Default select example" style="width:100%; margin-top:15px">

@@ -208,7 +208,7 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
                             </div>
                           </div>
                           
-                          <div class="form-group" style="">
+                          <div class="form-group"  >
                           <label class="form-label">Country</label>
                           
                               <select required id="country" data-length name="country" class="form-select select fmselect" aria-label="Default select example" style="width:100%; margin-top:10px; height:44px;">
