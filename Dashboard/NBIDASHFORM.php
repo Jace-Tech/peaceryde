@@ -169,7 +169,7 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
                     </div>
                 </div>
                   
-                    <form data-form method="post" action="./handlers/form_handler.php">
+                    <form data-form method="post" action="../handlers/form_handler.php">
                   <div class="container mt-15">
 
                     <div id="error-message" style="display: none;" class="w-100 alert alert-dark text-sm formml">
@@ -449,26 +449,23 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
                                     </select>
                                     <input required name="phone" data-length type="tel" class="form-control mobileno2" placeholder="Mobile Number">
                                 </div>
-
                             </div>
-
                         </div>
                           <div class="form-group" >
-                          
                             <label>Gender</label>
                             <br>
                             <div class="form-check form-check-inline">
-                                        <div class="custom-control custom-radio">
-                                            <input type="radio" value="male" class="custom-control-input" id="customControlValidation2" name="gender" required>
-                                            <label class="custom-control-label" for="customControlValidation2">Male</label>
-                                        </div>
-                                    </div>
-                                    <div class="form-check form-check-inline">
-                                        <div class="custom-control custom-radio">
-                                            <input type="radio" value="female" class="custom-control-input" id="customControlValidation3" name="gender">
-                                            <label class="custom-control-label" for="customControlValidation3">Female</label>
-                                        </div>
-                                    </div>
+                                <div class="custom-control custom-radio">
+                                    <input type="radio" value="male" class="custom-control-input" id="customControlValidation2" name="gender" required>
+                                    <label class="custom-control-label" for="customControlValidation2">Male</label>
+                                </div>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <div class="custom-control custom-radio">
+                                    <input type="radio" value="female" class="custom-control-input" id="customControlValidation3" name="gender">
+                                    <label class="custom-control-label" for="customControlValidation3">Female</label>
+                                </div>
+                            </div>
                           </div>
                           
                         
