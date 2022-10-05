@@ -225,14 +225,14 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
                           <br>
                           <div class="form-check form-check-inline" style="padding-left:0px">
                             <div class="custom-control custom-radio">
-                              <label class="custom-control-label" for="customControlValidation2">Male</label>
-                              <input type="radio" class="custom-control-input" id="customControlValidation2" value="male" name="gender" required>
+                              <label class="" for="customControlValidation2">Male</label>
+                              <input type="radio" class="" id="customControlValidation2" value="male" name="gender" required>
                             </div>
                           </div>
                           <div class="form-check form-check-inline">
                             <div class="custom-control custom-radio">
-                              <label class="custom-control-label" for="customControlValidation3">Female</label>
-                              <input type="radio" class="custom-control-input" id="customControlValidation3" value="female" name="gender">
+                              <label class="" for="customControlValidation3">Female</label>
+                              <input type="radio" class="" id="customControlValidation3" value="female" name="gender">
                             </div>
                           </div>
                       </div>

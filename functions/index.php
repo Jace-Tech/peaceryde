@@ -33,7 +33,6 @@ function messageableUsers ($connect, $id) {
     return $USERS;
 }
 
-
 function generateTransactionId (int $length = 11) {
     $id = "trx-ref_";
 

@@ -456,14 +456,14 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
                             <br>
                             <div class="form-check form-check-inline">
                                 <div class="custom-control custom-radio">
-                                    <input type="radio" value="male" class="custom-control-input" id="customControlValidation2" name="gender" required>
-                                    <label class="custom-control-label" for="customControlValidation2">Male</label>
+                                    <input type="radio" value="male" class="" id="customControlValidation2" name="gender" required>
+                                    <label class="" for="customControlValidation2">Male</label>
                                 </div>
                             </div>
                             <div class="form-check form-check-inline">
                                 <div class="custom-control custom-radio">
-                                    <input type="radio" value="female" class="custom-control-input" id="customControlValidation3" name="gender">
-                                    <label class="custom-control-label" for="customControlValidation3">Female</label>
+                                    <input type="radio" value="female" class="" id="customControlValidation3" name="gender">
+                                    <label class="" for="customControlValidation3">Female</label>
                                 </div>
                             </div>
                           </div>
@@ -1081,14 +1081,14 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
                 mode
             } = JSON.parse(storedUser)
 
-            form.elements.email.value = email
-            form.elements.firstname.value = firstname
-            form.elements.lastname.value = lastname
-            form.elements?.middlename.value = middlename
-            form.elements?.gender.value = gender
-            form.elements?.country.value = country
-            form.elements.shares.value = shares
-            form.elements.coperateAddress.value = coperateAddress
+            form.elements?.email?.value = email
+            form.elements?.firstname?.value = firstname
+            form.elements?.lastname?.value = lastname
+            form.elements?.middlename?.value = middlename
+            form.elements?.gender?.value = gender
+            form.elements?.country?.value = country
+            form.elements?.shares?.value = shares
+            form.elements?.coperateAddress?.value = coperateAddress
         }
 
         document.querySelector("[data-btn]")

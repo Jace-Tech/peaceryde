@@ -225,14 +225,14 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
             <br>
             <div class="form-check form-check-inline" style="padding-left:0px">
               <div class="custom-control custom-radio">
-                <label class="custom-control-label" for="customControlValidation2">Male</label>
-                <input type="radio" class="custom-control-input" id="customControlValidation2" value="male" name="gender" required>
+                <label class="" for="customControlValidation2">Male</label>
+                <input type="radio" class="" id="customControlValidation2" value="male" name="gender" required>
               </div>
             </div>
             <div class="form-check form-check-inline">
               <div class="custom-control custom-radio">
-                <label class="custom-control-label" for="customControlValidation3">Female</label>
-                <input type="radio" class="custom-control-input" id="customControlValidation3" value="female" name="gender">
+                <label class="" for="customControlValidation3">Female</label>
+                <input type="radio" class="" id="customControlValidation3" value="female" name="gender">
               </div>
             </div>
         </div>
@@ -1056,10 +1056,10 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
             form.elements.service.value = service
             form.elements.phone.value = phone
             form.elements.passport.value = passport
-            Array.from(form.elements.title.children).filter(item => item.value == title)[0].selected = true
-            Array.from(form.elements.country.children).filter(item => item.value == country)[0].selected = true
-            Array.from(form.elements.countryCode.children).filter(item => item.value == countryCode)[0].selected = true
-            Array.from(genders).filter(item => item.value == gender)[0].checked = true
+            Array.from(form.elements.title.children)?.filter(item => item.value == title)?.[0]?.selected = true
+            Array.from(form.elements.country.children)?.filter(item => item.value == country)?.[0].selected = true
+            Array.from(form.elements.countryCode.children)?.filter(item => item.value == countryCode)?.[0].selected = true
+            Array.from(genders).filter(item => item.value == gender)?.[0]?.checked = true
         }
 
         document.querySelector("[data-btn]")
