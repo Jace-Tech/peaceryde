@@ -67,7 +67,7 @@
                     </p>
                     <br>
                     <h2 style="font-size: 20px; color: #080C58; font-weight: 500;">Nigeria </h2>
-                    <p style="font-size: 18px; color: #080C58; padding-top: 21px;">30 Bishop Oluwole Street, Victoria Island Lagos State. Nigeria</p>
+                    <p style="font-size: 18px; color: #080C58; padding-top: 21px;">30 Bishop Oluwole Street, Victoria Island Lagos State, Nigeria</p>
                     <p style="padding-top: 21px;">phone: <a href="" style="font-size: 18px; color: #080C58; ">+234 (903) 795 5511</a>
                     </p>
                     <br>
