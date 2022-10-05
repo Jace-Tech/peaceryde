@@ -455,7 +455,7 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
                             <label>Gender</label>
                             <br>
                             <div class="form-check form-check-inline">
-                                <div class="custom-control custom-radio">
+                                <div class="">
                                     <input type="radio" value="male" class="" id="customControlValidation2" name="gender" required>
                                     <label class="" for="customControlValidation2">Male</label>
                                 </div>

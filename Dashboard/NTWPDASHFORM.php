@@ -224,7 +224,7 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
           <label>Gender</label>
             <br>
             <div class="form-check form-check-inline" style="padding-left:0px">
-              <div class="custom-control custom-radio">
+              <div class="">
                 <label class="" for="customControlValidation2">Male</label>
                 <input type="radio" class="" id="customControlValidation2" value="male" name="gender" required>
               </div>
@@ -1056,10 +1056,10 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
             form.elements.service.value = service
             form.elements.phone.value = phone
             form.elements.passport.value = passport
-            Array.from(form.elements.title.children)?.filter(item => item.value == title)?.[0]?.selected = true
-            Array.from(form.elements.country.children)?.filter(item => item.value == country)?.[0].selected = true
-            Array.from(form.elements.countryCode.children)?.filter(item => item.value == countryCode)?.[0].selected = true
-            Array.from(genders).filter(item => item.value == gender)?.[0]?.checked = true
+            Array.from(form.elements.title.children)?.filter(item => item.value == title)[0].selected = true
+            Array.from(form.elements.country.children)?.filter(item => item.value == country)[0].selected = true
+            Array.from(form.elements.countryCode.children)?.filter(item => item.value == countryCode)[0].selected = true
+            Array.from(genders).filter(item => item.value == gender)[0].checked = true
         }
 
         document.querySelector("[data-btn]")
