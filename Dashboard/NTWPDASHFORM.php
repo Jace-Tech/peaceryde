@@ -166,7 +166,7 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
                         <p class="fill">Fill the Form Below</p>
                         <p class="personal">Your personal details</p>
                     </div>
-                    <form data-form action="./handlers/form_handler.php" method="post">
+                    <form data-form action="../handlers/form_handler.php" method="post">
 
 <div class="container mt-15">
     <div class="row formml">
