@@ -775,6 +775,7 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
                 companyName,
                 dob,
                 coperateAddress,
+                phone,
                 email,
                 firstname,
                 lastname,
@@ -793,6 +794,7 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
             form.elements.middlename.value = middlename
             form.elements.gender.value = gender
             form.elements.dob.value = dob
+            form.elements.phone.value = phone
             form.elements.country.value = country
             form.elements.shares.value = shares
             form.elements.coperateAddress.value = coperateAddress

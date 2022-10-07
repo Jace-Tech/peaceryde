@@ -614,6 +614,7 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
         const middlename = form.middlename.value
         const coperateAddress = form.coperateAddress.value
         const companyName = form.companyName.value
+        const phone = form.phone.value
         const service = form.service.value
         const title = form.title.value
         const gender = Array.from(genders).filter(item => item.checked == true)[0].value
@@ -624,6 +625,7 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
           shares,
           companyName,
           firstname,
+          phone,
           coperateAddress,
           dob,
           lastname,
