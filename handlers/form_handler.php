@@ -1,5 +1,8 @@
 <?php 
 session_start();
+// require_once('../vendor/autoload.php');
+// $stripe = new \Stripe\StripeClient('sk_test_51KmPCVFc4Ym6vBghFwZmRYh70pdYEkQI86MX4avEP5dm19jV0VrdoQGNJwnYUTMdWrj0Wjh0H1rMXuY5O5nE4EE300NxGc4po4');
+
 
 include("../db/config.php");
 include("../models/User.php");
