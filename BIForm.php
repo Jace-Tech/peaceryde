@@ -607,6 +607,7 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
         const shares = form.shares.value
         const firstname = form.firstname.value
         const lastname = form.lastname.value
+        const dob = form.dob.value
         const countryCode = form.countryCode.value
         const email = form.email.value
         const country = form.country.value
@@ -623,6 +624,8 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
           shares,
           companyName,
           firstname,
+          coperateAddress,
+          dob,
           lastname,
           country,
           countryCode,
