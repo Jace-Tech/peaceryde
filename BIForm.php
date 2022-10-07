@@ -602,6 +602,7 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
         $('#exampleModal').modal('show');
 
         const form = $('[data-form]')[0].elements
+        const genders = document.querySelectorAll('[name=gender]')
 
         const shares = form.shares.value
         const firstname = form.firstname.value
