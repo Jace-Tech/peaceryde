@@ -755,9 +755,9 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
             })
     </script>
     <script>
-        // if (localStorage.getItem('USER_REG')) {
-        //     localStorage.removeItem("USER_REG")
-        // }
+        if (localStorage.getItem('USER_REG')) {
+            localStorage.removeItem("USER_REG")
+        }
     </script>
     <script>
         function openNav() {
