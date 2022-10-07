@@ -736,12 +736,12 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
                 Array.from(form.elements.title.children).filter(item => item.value == title)[0].selected = true
             }
 
-            if(Array.from(form.elements.country.children)?.filter(item => item.value == country)[0]) {
-                Array.from(form.elements.country.children)?.filter(item => item.value == country)[0].selected = true
+            if(Array.from(form.elements.country.children).filter(item => item.value == country)[0]) {
+                Array.from(form.elements.country.children).filter(item => item.value == country)[0].selected = true
             }
 
-            if(Array.from(form.elements.countryCode.children)?.filter(item => item.value == countryCode)[0]) {
-                Array.from(form.elements.countryCode.children)?.filter(item => item.value == countryCode)[0].selected = true
+            if(Array.from(form.elements.countryCode.children).filter(item => item.value == countryCode)[0]) {
+                Array.from(form.elements.countryCode.children).filter(item => item.value == countryCode)[0].selected = true
             }
 
             if(Array.from(genders).filter(item => item.value == gender)[0]) {
