@@ -694,8 +694,6 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
 
             formElement.submit()
         })
-
-        document.querySelector("")
     </script>
     <script>
         console.clear();
