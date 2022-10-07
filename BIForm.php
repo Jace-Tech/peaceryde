@@ -271,8 +271,7 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
                       </div>
                       <div class="col-md-5">
                       <div class="form-group">
-                          <label style="padding-top:7px">Mobile Number</label>
-                          
+                          <label style="padding-top:7px">Mobile Number</label>                   
                           <div class="input-group mb-3">
                             <div class="input-group-prepend">
                               <select required name="countryCode" id="" class="form-select code" aria-label="Default select example" style="margin-top:7px">
@@ -610,11 +609,12 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
         const countryCode = form.countryCode.value
         const email = form.email.value
         const country = form.country.value
-        const gender = form.gender.value
         const middlename = form.middlename.value
         const coperateAddress = form.coperateAddress.value
         const companyName = form.companyName.value
         const service = form.service.value
+        const title = form.title.value
+        const gender = Array.from(genders).filter(item => item.checked == true)[0].value
 
         const mode = "BI"
 
@@ -624,8 +624,10 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
           firstname,
           lastname,
           country,
-          middlename,
+          countryCode,
           gender,
+          title,
+          middlename,
           email,
           service,
           mode
@@ -879,7 +881,6 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
         }
       })
     </script>
-
   </main>
   <script type="text/javascript">
     AOS.init();

@@ -780,6 +780,8 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
                 country,
                 middlename,
                 gender,
+                title,
+                countryCode,
                 service,
                 mode
             } = JSON.parse(storedUser)
