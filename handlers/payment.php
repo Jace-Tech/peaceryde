@@ -132,8 +132,7 @@ if(isset($_POST['pay'])){
                 'mode' => 'payment',
             ]);
 
-            print_r($data);
-
+            echo $data['url'];
             break;
         default:
             break;
