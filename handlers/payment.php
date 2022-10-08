@@ -115,6 +115,18 @@ if(isset($_POST['pay'])){
                 'success_url' => "$url?success=true",
                 'cancel_url' => "$url?cancel=true",
                 'customer_email' => $user['email'],
+                'line_items' => [
+                        [
+                            'price_data' => [
+                                'product_data' => [
+                                    'name' => getService($connect, $service)['service'],
+                                ],
+                                'currency' => 'usd',
+                                'unit_amount' => round($total_price * 100),
+                            ],
+                            'quantity' => 1,
+                        ]
+                    ],
                 'client_reference_id' => "$trx_id",
                 'currency' => 'USD',
                 'mode' => 'payment',
