@@ -115,8 +115,7 @@ if(isset($_POST['pay'])){
                 'client_reference_id' => "$trx_id",
                 'line_items' => [
                     [
-                        'price' => strval($total_price) * 100,
-                        'quantity' => 1,
+                        "amount" => $total_price * 100
                     ],
                 ],
                 'currency' => 'USD',
