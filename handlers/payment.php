@@ -118,12 +118,8 @@ if(isset($_POST['pay'])){
                 'client_reference_id' => "$trx_id",
                 'line_items' => [
                     [
-                        "price" => [
-                            "id" => "price_$service",
-                            "type" => "one_time",
-                            "unit_amount" => round($total_price * 100),
-                            "unit_amount_decimal" => round($total_price * 100, 2),
-                        ]
+                        "price" => "price_$service",
+                        "quantity" => 1
                     ],
                 ],
                 'currency' => 'USD',
