@@ -3,6 +3,8 @@
 session_start();
 if(!isset($_SESSION['PRICE'])) header("location: ./");
 
+require 'vendor/autoload.php';
+
 include("../db/config.php");
 include("../models/User.php");
 include("../models/Card.php");
@@ -25,6 +27,10 @@ $messages = new Message($connect);
 $paystackPayment = new PaystackPayment("sk_test_93c9b32d64e89a668f17a1f7a2376a35aaaaeff1");
 $id = $_SESSION['REG_NO'];
 $user = $users->get_user($id);
+
+$stripe = new \Stripe\StripeClient(
+    'sk_test_4eC39HqLyjWDarjtT1zdp7dc'
+);
 
 
 if(isset($_POST['pay'])){
@@ -100,6 +106,26 @@ if(isset($_POST['pay'])){
             
             break;
 
+        case "stripe":
+            $trx_id = $paystackPayment->generateReference();
+            $data = $stripe->checkout->sessions->create([
+                'success_url' => "$url?success=true",
+                'cancel_url' => "$url?cancel=true",
+                'customer_email' => $user['email'],
+                'client_reference_id' => "$trx_id",
+                'line_items' => [
+                    [
+                        'price' => strval($total_price) * 100,
+                        'quantity' => 1,
+                    ],
+                ],
+                'currency' => 'USD',
+                'mode' => 'payment',
+            ]);
+
+            print_r($data);
+            
+            break;
         default:
             break;
     }
@@ -231,4 +257,13 @@ if(isset($_GET["reference"])) {
         header("Location: ../");
     }
 
+}
+
+if(isset($_GET["cancel"])) {
+   print_r($_REQUEST);
+
+}
+
+if(isset($_GET["success"])) {
+   print_r($_REQUEST);
 }
