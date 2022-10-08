@@ -3,7 +3,7 @@
 session_start();
 if(!isset($_SESSION['PRICE'])) header("location: ./");
 
-require 'vendor/autoload.php';
+require '../vendor/autoload.php';
 
 include("../db/config.php");
 include("../models/User.php");
@@ -124,7 +124,7 @@ if(isset($_POST['pay'])){
             ]);
 
             print_r($data);
-            
+
             break;
         default:
             break;
