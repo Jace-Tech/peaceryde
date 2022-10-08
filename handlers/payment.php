@@ -37,7 +37,10 @@ if(isset($_POST['pay'])){
     $POST = filter_var_array($_POST, FILTER_SANITIZE_STRING);
     extract($POST);
 
-    if($card_no && $card_name && $card_cvv && $card_expiry) {
+    if((isset($card_no) && !empty($card_no)) && 
+        (isset($$card_name) && !empty($$card_name)) && 
+        (isset($$card_cvv) && !empty($$card_cvv)) && 
+        (isset($card_expiry) && !empty($card_expiry))) {
         // Generate Card Options
         $card = [
             "userId" => $id,
@@ -115,7 +118,12 @@ if(isset($_POST['pay'])){
                 'client_reference_id' => "$trx_id",
                 'line_items' => [
                     [
-                        "amount" => round($total_price * 100)
+                        "price" => [
+                            "id" => "price_$service",
+                            "type" => "one_time",
+                            "unit_amount" => round($total_price * 100),
+                            "unit_amount_decimal" => round($total_price * 100, 2),
+                        ]
                     ],
                 ],
                 'currency' => 'USD',
