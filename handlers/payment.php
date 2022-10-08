@@ -116,12 +116,7 @@ if(isset($_POST['pay'])){
                 'cancel_url' => "$url?cancel=true",
                 'customer_email' => $user['email'],
                 'client_reference_id' => "$trx_id",
-                'line_items' => [
-                    [
-                        "price" => "price_$service",
-                        "quantity" => 1
-                    ],
-                ],
+                'amount' => round($total_price * 100),
                 'currency' => 'USD',
                 'mode' => 'payment',
             ]);
