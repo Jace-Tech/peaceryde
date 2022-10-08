@@ -132,7 +132,7 @@ if(isset($_POST['pay'])){
                 'mode' => 'payment',
             ]);
 
-            echo $data['url'];
+            header("Location: {$data['url']}");
             break;
         default:
             break;
