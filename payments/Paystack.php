@@ -1,99 +1,129 @@
-<?php 
+<?php
 
-    class PaystackPayment {
-        
-        private $secretKey;
+class PaystackPayment
+{
 
-        function __construct($secretKey){
-            $this->secretKey = $secretKey;
+    private $secretKey;
+
+    function __construct($secretKey)
+    {
+        $this->secretKey = $secretKey;
+    }
+
+    function generateReference(int $length = 11)
+    {
+        $id = "trx-ref_";
+
+        for ($i = 0; $i < $length; $i++) {
+            $id .= rand(0, 9);
         }
 
-        function generateReference (int $length = 11) {
-            $id = "trx-ref_";
+        return $id;
+    }
 
-            for ($i = 0; $i < $length; $i++) { 
-                $id .= rand(0, 9);
-            }
+    function getRate($amount)
+    {
+        $curl = curl_init();
 
-            return $id;
-        }
+        curl_setopt_array($curl, array(
+            CURLOPT_URL => "https://api.apilayer.com/currency_data/convert?to=NGN&from=USD&amount=$amount",
+            CURLOPT_HTTPHEADER => array(
+                "Content-Type: text/plain",
+                "apikey: yeEzN1WXMwEjTdjDTgCGTaLf4CJIVpFG"
+            ),
+            CURLOPT_RETURNTRANSFER => true,
+            CURLOPT_ENCODING => "",
+            CURLOPT_MAXREDIRS => 10,
+            CURLOPT_TIMEOUT => 0,
+            CURLOPT_FOLLOWLOCATION => true,
+            CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+            CURLOPT_CUSTOMREQUEST => "GET"
+        ));
 
-        function convertToNaira ($amount) {
-            $DOLLAR_RATE = 415.65;
-            $amount_in_naira = $amount * $DOLLAR_RATE;
+        $response = curl_exec($curl);
 
-            return $amount_in_naira;
-        }
+        curl_close($curl);
+        return json_decode($response, true);
+    }
 
-        function initialize_payment ($email, $amount, $callback_url = "") {
-            $url = "https://api.paystack.co/transaction/initialize";
-            $ref = $this->generateReference();
+    function convertToNaira($amount)
+    {
+        $DOLLAR_RATE = $this->getRate($amount)["result"];
+        $amount_in_naira = $amount * $DOLLAR_RATE;
 
-            $fields = [
-                'email' => filter_var($email, FILTER_SANITIZE_EMAIL),
-                'amount' => round($amount, 2) * 100,
-                'currency' => "USD",
-                'callback_url' => $callback_url,
-                'reference' => $ref
-            ];
-            $fields_string = http_build_query($fields);
+        return $amount_in_naira;
+    }
 
-            //open connection
-            $ch = curl_init();
+    function initialize_payment($email, $amount, $callback_url = "", $isSet = false)
+    {
+        $url = "https://api.paystack.co/transaction/initialize";
+        $ref = $this->generateReference();
 
-            //set the url, number of POST vars, POST data
-            curl_setopt($ch,CURLOPT_URL, $url);
-            curl_setopt($ch,CURLOPT_POST, true);
-            curl_setopt($ch,CURLOPT_POSTFIELDS, $fields_string);
-            curl_setopt($ch, CURLOPT_HTTPHEADER, array(
+        $fields = [
+            'email' => filter_var($email, FILTER_SANITIZE_EMAIL),
+            'amount' => $isSet ? round($amount, 2) * 100 : round($this->convertToNaira($amount), 2) * 100,
+            'currency' => $isSet ? "USD" : "NGN",
+            'callback_url' => $callback_url,
+            'reference' => $ref
+        ];
+        $fields_string = http_build_query($fields);
+
+        //open connection
+        $ch = curl_init();
+
+        //set the url, number of POST vars, POST data
+        curl_setopt($ch, CURLOPT_URL, $url);
+        curl_setopt($ch, CURLOPT_POST, true);
+        curl_setopt($ch, CURLOPT_POSTFIELDS, $fields_string);
+        curl_setopt($ch, CURLOPT_HTTPHEADER, array(
+            "Authorization: Bearer {$this->secretKey}",
+            "Cache-Control: no-cache",
+        ));
+
+        //So that curl_exec returns the contents of the cURL; rather than echoing it
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+
+
+        //execute post
+        $result = curl_exec($ch);
+        $result = json_decode($result, true);
+
+        $data = [
+            "pay" => $result,
+            "ref" => $ref
+        ];
+        return $data;
+    }
+
+    function verify_transaction($ref)
+    {
+        $curl = curl_init();
+
+        curl_setopt_array($curl, array(
+            CURLOPT_URL => "https://api.paystack.co/transaction/verify/$ref",
+            CURLOPT_RETURNTRANSFER => true,
+            CURLOPT_ENCODING => "",
+            CURLOPT_MAXREDIRS => 10,
+            CURLOPT_TIMEOUT => 30,
+            CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+            CURLOPT_CUSTOMREQUEST => "GET",
+            CURLOPT_HTTPHEADER => array(
                 "Authorization: Bearer {$this->secretKey}",
                 "Cache-Control: no-cache",
-            ));
+            ),
+        ));
 
-            //So that curl_exec returns the contents of the cURL; rather than echoing it
-            curl_setopt($ch,CURLOPT_RETURNTRANSFER, true); 
+        $response = json_decode(curl_exec($curl), true);
+        $err = curl_error($curl);
+        curl_close($curl);
 
-            
-            //execute post
-            $result = curl_exec($ch);
-            $result = json_decode($result, true);
 
-            $data = [
-                "pay" => $result, 
-                "ref" => $ref
+        if ($err) {
+            return [
+                'error' => $err
             ];
-            return $data;
-        }
-
-        function verify_transaction($ref)
-        {
-            $curl = curl_init();
-
-            curl_setopt_array($curl, array(
-                CURLOPT_URL => "https://api.paystack.co/transaction/verify/$ref",
-                CURLOPT_RETURNTRANSFER => true,
-                CURLOPT_ENCODING => "",
-                CURLOPT_MAXREDIRS => 10,
-                CURLOPT_TIMEOUT => 30,
-                CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
-                CURLOPT_CUSTOMREQUEST => "GET",
-                CURLOPT_HTTPHEADER => array(
-                    "Authorization: Bearer {$this->secretKey}",
-                    "Cache-Control: no-cache",
-                ),
-            ));
-            
-            $response = json_decode(curl_exec($curl), true);
-            $err = curl_error($curl);
-            curl_close($curl);
-
-            
-            if ($err) {
-                return [
-                    'error' => $err
-                ];
-            } else {
-                return $response;
-            }
+        } else {
+            return $response;
         }
     }
+}
