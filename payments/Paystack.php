@@ -58,14 +58,18 @@ class PaystackPayment
     {
         $url = "https://api.paystack.co/transaction/initialize";
         $ref = $this->generateReference();
+        $total = $isSet ? intval(round($amount, 2) * 100) : intval(round($this->convertToNaira($amount), 2) * 100);
 
+        echo "<p>Total: $total</p>";
         $fields = [
             'email' => filter_var($email, FILTER_SANITIZE_EMAIL),
-            'amount' => $isSet ? intval(round($amount, 2) * 100) : intval(round($this->convertToNaira($amount), 2) * 100),
-            'currency' => $isSet ? 'USD' : 'NGN',
+            'amount' => $total,
             'callback_url' => $callback_url,
             'reference' => $ref
         ];
+        if(isset($isSet)) {
+            $fields['currency'] = "USD";
+        }
         $fields_string = http_build_query($fields);
 
         //open connection
