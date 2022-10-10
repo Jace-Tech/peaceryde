@@ -401,8 +401,8 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
                             </select>
                           </div>
                           <input required type="tel" name="phone" data-length class="form-control firstname" value="" placeholder="070XXXXXXXX">
-                          <input required type="hidden" name="service" value="srvs-002">
-                          <input required type="hidden" name="nbv" value="">
+                          <input required type="hidden" name="service" value="srvs-001">
+                          <input required type="hidden" name="twp" value="">
                         </div>
                       </div>
                     </div>

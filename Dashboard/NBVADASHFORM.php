@@ -498,12 +498,6 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
                                 </div>
                             </div>
                         </div>
-
-
-
-
-
-
                     </form>
                 </div>
             </div>

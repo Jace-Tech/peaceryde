@@ -31,7 +31,8 @@
 
             $fields = [
                 'email' => filter_var($email, FILTER_SANITIZE_EMAIL),
-                'amount' => round($this->convertToNaira($amount), 2) * 100,
+                'amount' => round($amount, 2) * 100,
+                'currency' => "USD",
                 'callback_url' => $callback_url,
                 'reference' => $ref
             ];
