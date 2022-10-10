@@ -52,7 +52,7 @@ class PaystackPayment
         $ref = $this->generateReference();
         $total = $isSet ? intval(round($amount, 2) * 100) : intval(round($this->getRate($amount)["result"]) * 100);
 
-        echo "<p>Total: $total</p>";
+        // echo "<p>Total: $total</p>";
         $fields = [
             'email' => filter_var($email, FILTER_SANITIZE_EMAIL),
             'amount' => $total,
