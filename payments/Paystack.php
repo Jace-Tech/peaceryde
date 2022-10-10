@@ -50,7 +50,7 @@ class PaystackPayment
     {
         $url = "https://api.paystack.co/transaction/initialize";
         $ref = $this->generateReference();
-        $total = $isSet ? intval(round($amount, 2) * 100) : intval(round($this->getRate($amount)["result"]) * 100);
+        $total = $isSet ? intval(round($amount, 2) * 100) : intval(round($this->getRate($amount)["result"], 2) * 100);
 
         // echo "<p>Total: $total</p>";
         $fields = [
