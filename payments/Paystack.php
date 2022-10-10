@@ -46,19 +46,11 @@ class PaystackPayment
         return json_decode($response, true);
     }
 
-    function convertToNaira($amount)
-    {
-        $DOLLAR_RATE = $this->getRate($amount)["result"];
-        $amount_in_naira = $amount * $DOLLAR_RATE;
-
-        return $amount_in_naira;
-    }
-
     function initialize_payment($email, $amount, $callback_url = "", $isSet = false)
     {
         $url = "https://api.paystack.co/transaction/initialize";
         $ref = $this->generateReference();
-        $total = $isSet ? intval(round($amount, 2) * 100) : intval(round($this->convertToNaira($amount), 2) * 100);
+        $total = $isSet ? intval(round($amount, 2) * 100) : intval(round($this->getRate($amount)["result"], 2) * 100);
 
         echo "<p>Total: $total</p>";
         $fields = [
