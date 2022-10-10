@@ -59,7 +59,7 @@ class PaystackPayment
             'callback_url' => $callback_url,
             'reference' => $ref
         ];
-        if(isset($isSet)) {
+        if($isSet) {
             $fields['currency'] = "USD";
         }
         $fields_string = http_build_query($fields);
