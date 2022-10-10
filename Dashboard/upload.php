@@ -146,7 +146,7 @@
       <form action="./handler/upload_handler.php" method="post" enctype="multipart/form-data">
         <div>
           <p class="uploadtext">Upload your necessary documents</p>
-          <p class="pleaseupload">Please name your documents, upload all relevant documents (example; passport photograph, international passport data page, proof of employment, flight itinerary etc), by browsing the "drop file here" link and then click the upload file button.</p>
+          <p class="pleaseupload">Please name your documents, upload all relevant documents (example: passport photograph, international passport data page, proof of employment, flight itinerary etc), by browsing the "drop file here" link and then click the upload file button.</p>
         </div>
         <div class="form-group">
           <input type="hidden" name="id" value="<?= $USER_ID ?>">
