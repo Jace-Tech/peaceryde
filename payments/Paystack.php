@@ -61,8 +61,8 @@ class PaystackPayment
 
         $fields = [
             'email' => filter_var($email, FILTER_SANITIZE_EMAIL),
-            'amount' => $isSet ? round($amount, 2) * 100 : round($this->convertToNaira($amount), 2) * 100,
-            'currency' => $isSet ? "USD" : "NGN",
+            'amount' => $isSet ? intval(round($amount, 2) * 100) : intval(round($this->convertToNaira($amount), 2) * 100),
+            'currency' => $isSet ? 'USD' : 'NGN',
             'callback_url' => $callback_url,
             'reference' => $ref
         ];
