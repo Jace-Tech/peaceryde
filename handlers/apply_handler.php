@@ -28,10 +28,14 @@ if(isset($_POST['apply'])) {
         $message .= "<p>Firstname: " . $POST['firstname'] . " </p>";
         $message .= "<p>Lastname: " . $POST['lastname'] . " </p>";
         $message .= "<p>Country: " . $POST['country'] . " </p>";
-        $message .= "<p>Phone No: <a href='tel:+{$POST['countryCode']}{$POST['phone']}'>+{$POST['countryCode']}{$POST['phone']}</a> </p>";
+        $message .= "<p>Phone No: 
+                        <a href='tel:+{$POST['countryCode']}{$POST['phone']}'>
+                            +{$POST['countryCode']}{$POST['phone']}
+                        </a> 
+                    </p>";
 
         $to = getSubAdmin($connect, "MAIN_ADMIN")['email'] ?? "theonlyfreddie@gmail.com";
-        sendMail($subject, $message, "noreply@peacerydeafrica.com", $to);
+        sendMail($subject, $message, "noreply@peacerydeafrica.com", $to, true);
 
         $alert = [
             "message" => "Request sent",
