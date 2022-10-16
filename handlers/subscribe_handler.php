@@ -37,8 +37,8 @@ if (isset($_POST['subscribe'])) {
 
         // Add to SENDX
         $api_instance = new Swagger\Client\Api\ContactApi();
-        $api_key = "api_key_example"; // string | 
-        $team_id = "team_id_example"; // string | 
+        $api_key = "64fVw56JJ0pCf5Fo9HbY"; // string | 
+        $team_id = "4V4k1IK5JswqwiiB9B9GIt"; // string | 
         $body = new \Swagger\Client\Model\Contact($_body);
 
         $result = $api_instance->contactIdentifyPost($api_key, $team_id, $body);
