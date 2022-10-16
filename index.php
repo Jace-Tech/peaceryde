@@ -523,10 +523,9 @@ $uploads = new Upload($connect);
                   </div>
                 </div>
                 <div class="new-section7__block14 layout">
-                  <button class="btn subscribe">subscribe</button>
-
+                  <button name="subscribe" class="btn subscribe">subscribe</button>
                 </div>
-              </div>
+              </form>
 
             </div>
           </div>
