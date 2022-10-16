@@ -10,6 +10,7 @@ require_once("../db/config.php");
 if (isset($_POST['subscribe'])) {
     $email = filter_var(trim($_POST['subscribe']));
     $name = filter_var(trim($_POST['name']));
+    
     $_body = [
         "tags" => ['Newsletter']
     ];
@@ -41,7 +42,7 @@ if (isset($_POST['subscribe'])) {
         $team_id = "4V4k1IK5JswqwiiB9B9GIt"; // string | 
         $body = new \Swagger\Client\Model\Contact($_body);
 
-        // $result = $api_instance->contactTrackPost($api_key, $team_id, $body);
+        $result = $api_instance->contactIdentifyPost($api_key, $team_id, $body);
         print_r($result);
     } 
     catch (Exception $e) {
