@@ -4,6 +4,8 @@
 session_start();
 require_once("../db/config.php");
 require_once('../sendx-api-php-master/autoload.php');
+require_once("../functions/index.php");
+require_once("../db/config.php");
 
 if (isset($_POST['subscribe'])) {
     $email = filter_var(trim($_POST['subscribe']));
@@ -44,6 +46,7 @@ if (isset($_POST['subscribe'])) {
     } 
     catch (Exception $e) {
         //throw $th;
-        setUserAlert("You've already subscribed", "error");
+        print_r($e->getMessage());
+        // setUserAlert("You've already subscribed", "error");
     }
 }
