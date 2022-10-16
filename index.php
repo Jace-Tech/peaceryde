@@ -503,7 +503,7 @@ $uploads = new Upload($connect);
             </div>
             <div class="col-md-6 col-sm-6 col-xs-6">
 
-              <div class="new-section7__flex21 layout">
+              <form action="./handlers/subscribe_handler.php" method="post" class="new-section7__flex21 layout">
                 <h3 class="new-section7__subtitle1 layout offer">
                   Never miss an offer
                 </h3>
@@ -513,12 +513,12 @@ $uploads = new Upload($connect);
                 <div class="new-section7__flex22 layout">
                   <div class="new-section7__flex22-item">
                     <div class="new-section7__block15 layout">
-                      <input type="email" class="form-control" placeholder="Name" style="font-family: ubuntu;">
+                      <input type="text" class="form-control" name="name" placeholder="Name" style="font-family: ubuntu;">
                     </div>
                   </div>
                   <div class="new-section7__flex22-item">
                     <div class="new-section7__block16 layout">
-                      <input type="text" class="form-control" placeholder="Email" style="font-family: ubuntu;">
+                      <input type="email" class="form-control" name="email" placeholder="Email" style="font-family: ubuntu;">
                     </div>
                   </div>
                 </div>
