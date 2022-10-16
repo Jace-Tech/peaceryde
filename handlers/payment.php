@@ -24,14 +24,11 @@ $userLogins = new UserLogin($connect);
 $payments = new Payment($connect);
 $messages = new Message($connect);
 
-$paystackPayment = new PaystackPayment("sk_test_93c9b32d64e89a668f17a1f7a2376a35aaaaeff1");
+$paystackPayment = new PaystackPayment("sk_live_67639b010ff3b1cb137d79632813db9a2ce0e789");
 $id = $_SESSION['REG_NO'];
 $user = $users->get_user($id);
 
-$stripe = new \Stripe\StripeClient(
-    'sk_test_4eC39HqLyjWDarjtT1zdp7dc'
-);
-
+$stripe = new \Stripe\StripeClient('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');
 
 if (isset($_POST['pay'])) {
     $POST = filter_var_array($_POST, FILTER_SANITIZE_STRING);
@@ -80,7 +77,7 @@ if (isset($_POST['pay'])) {
         case "paystack":
             // Initialize payment with paystack
             try {
-                $details = $paystackPayment->initialize_payment($user['email'], $total_price, $url);
+                $details = $paystackPayment->initialize_payment($user['email'], $total_price, $url, true);
 
                 // print_r($details);
                 // exit;

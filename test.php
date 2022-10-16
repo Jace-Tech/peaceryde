@@ -48,4 +48,13 @@ if(isset($_GET["getAdmin"])) {
   $admins = getAllSubAdmins($connect);
 }
 
+/*
+  {
+    "require": {
+        "stripe/stripe-php": "^9.6"
+    }
+}
+*/
+
 ?>
+
