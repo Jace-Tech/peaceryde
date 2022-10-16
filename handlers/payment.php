@@ -79,8 +79,8 @@ if (isset($_POST['pay'])) {
             try {
                 $details = $paystackPayment->initialize_payment($user['email'], $total_price, $url, true);
 
-                // print_r($details);
-                // exit;
+                print_r($details);
+                exit;
                 // Generate Payment Options
                 $payment = [
                     "amount" => $total_price,
