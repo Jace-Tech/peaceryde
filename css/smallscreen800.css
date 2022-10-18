@@ -114,7 +114,7 @@
 @media (max-width: 900px){
   
   .leaderpageheight {
-    height: 6400px;
+    height: 6900px;
 }
   .laptopflag
   {
@@ -5740,6 +5740,9 @@
 }
 
 @media (max-width: 720px){
+  .leaderpageheight {
+    height: 9500px;
+  }
   .bannertext {
     font-size: 30px;
   }
@@ -8566,6 +8569,9 @@
     height: 753px;
     margin: 50px auto;
   }
+  .leaderpageheight {
+    height: 9500px;
+  }
 }
 
 @media (max-width: 603px) {
@@ -8575,7 +8581,7 @@
     border-radius: 5px;
 }
 .leaderpageheight {
-  height: 6500px;
+  height: 8000px;
 }
   .collapsebtn {
     margin-top: -5px;
