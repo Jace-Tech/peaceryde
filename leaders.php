@@ -218,6 +218,41 @@
                     </div>
                   </div>
                   <br>
+                  <div class="row lmt">
+                    <div class="col-xs-12 col-sm-5 col-lg-6 col-xl-4">
+                      <div class="single-person edit">
+                        <div class="person-image">
+                          <img src="assets/kile_ronn.jpeg" alt="">
+                          
+                        </div>
+                        
+                      </div>
+                      
+                    </div>
+                    <div class="col-xs-12 col-sm-7 col-lg-6 col-xl-8">
+                      <div class="single-person">
+                        <div class="person-info">
+                          <h3 class="full-name">Kile Ronn </h3>
+                          <span class="speciality">BUSINESS PARTNER – NORTH & SOUTH AMERICA</span>
+                        </div>
+                            
+                            <p class="leadtext">Kile Ronn is Business Partner for PeaceRyde Africa LLC. He is a Licensed tax professional, and notary public. He is the Owner of the US-based tax firm Rebel Tax Solutions, with over 12 years of professional experience. He specializes in  IRS representation and small business incorporation. Additionally, he assists business owners with multiple ownerships in the most advantageous entity structuring and tax planning. Kile comes from an extensive background in Income Tax Debt resolution at both the IRS and state levels, and for both businesses and individuals. </p>
+                            
+                            <br>
+                            <p class="leadtext">He helps new clients obtain tax ID numbers for non-resident business owners with U.S based businesses. 
+
+                              
+                              </p>
+                              <br>
+                              <p class="leadtext">Kile is our lead partner for North & South American operations. </p>
+                             
+                              <br>
+                            
+                      </div>
+                      
+                    </div>
+                  </div>
+                  <br>
                   <br>
                   <div class="single-person">
                                             
