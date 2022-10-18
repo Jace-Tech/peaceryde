@@ -165,6 +165,7 @@
                   </h3>
                   <img src="assets/card.png" class="img-fluid" alt="" srcset="" style="width:70%; margin-left:-4px;">
                   <br>
+                  <img src="assets/stripe.jpeg" class="img-fluid" alt="" srcset="" style="width:70%; margin-left:-4px;">
                   <br>
                   <i class="fs-13 mt10"> ...Peace begins with a smile <img src="assets/smiley.png" style="width: 20px; height: 20px;"> </i>
                 </div>
