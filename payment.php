@@ -302,7 +302,7 @@ $PRICE = json_decode($_SESSION["PRICE"], true);
                     </div>
                     <div class="radiodiv">
                         <input type="radio" name="payment_option" value="stripe" class="radioo">&nbsp; Stripe <br><br>
-                        <input type="radio" name="payment_option" value="paystack" checked="checked" class="radioo">&nbsp; Paystack <br><br>
+                        <!-- <input type="radio" name="payment_option" value="paystack" checked="checked" class="radioo">&nbsp; Paystack <br><br> -->
 
                         <p style="color: #C8730F; font-family: Ubuntu; font-size: 13px; font-style: normal; font-weight: 400;">We also accept payments from Payoneer and WISE.</p><br>
                         <p style="color: #C8730F; font-family: Ubuntu; font-size: 13px; font-style: normal; font-weight: 400; padding-right:50px;">ACH and Wire transfers are allowed from all parts of the world, and in all different currencies.</p><br>
@@ -338,7 +338,12 @@ $PRICE = json_decode($_SESSION["PRICE"], true);
                     <div class="radiodiv" style=" margin-top: 15px;">
                         <p class="paymentopt" style="margin-left: 0px;">We accept card payments</p>
                         <img src="assets/card.png" class="img-fluid" alt="" srcset="" style="width:60%">
+                    </div>       
+                    <div class="radiodiv" style=" margin-top: 15px;">
+                        
+                        <img src="assets/stripe.jpeg" class="img-fluid" alt="" srcset="" style="width:60%">
                     </div>
+
                 </form>
             </div>
         </div>
