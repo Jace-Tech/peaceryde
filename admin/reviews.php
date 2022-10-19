@@ -94,14 +94,17 @@
                                                 </div>
                                             </div>
                                         </header>
-                                        <div class="relative inline-flex shrink-0" x-data="{ open: false }"><button class="text-white hover:text-white rounded-full" :class="{ 'bg-gray-100 text-gray-500': open }" aria-haspopup="true" @click.prevent="open = !open" :aria-expanded="open"><span class="sr-only">Menu</span> <svg class="w-8 h-8 fill-current" viewBox="0 0 32 32">
+                                        <div class="relative inline-flex shrink-0" x-data="{ open: false }">
+                                            <button class="text-gray hover:text-gray rounded-full" :class="{ 'bg-gray-100 text-gray-500': open }" aria-haspopup="true" @click.prevent="open = !open" :aria-expanded="open"><span class="sr-only">Menu</span> 
+                                                <svg class="w-8 h-8 fill-current" viewBox="0 0 32 32">
                                                     <circle cx="16" cy="16" r="2" />
                                                     <circle cx="10" cy="16" r="2" />
                                                     <circle cx="22" cy="16" r="2" />
-                                                </svg></button>
+                                                </svg>
+                                            </button>
                                             <div class="origin-top-right z-10 absolute top-full right-0 min-w-36 bg-white border border-gray-200 py-1.5 rounded shadow-lg overflow-hidden mt-1" @click.outside="open = false" @keydown.escape.window="open = false" x-show="open" x-transition:enter="transition ease-out duration-200 transform" x-transition:enter-start="opacity-0 -translate-y-2" x-transition:enter-end="opacity-100 translate-y-0" x-transition:leave="transition ease-out duration-200" x-transition:leave-start="opacity-100" x-transition:leave-end="opacity-0" x-cloak>
                                                 <ul>
-                                                    <li><a class="font-medium text-sm text-red-500 hover:text-red-600 flex py-1 px-3" href="" @click="open = false" @focus="open = true" @focusout="open = false">Remove</a></li>
+                                                    <li><a class="font-medium text-sm text-red-500 hover:text-red-600 flex py-1 px-3" href="./handler/review_handler.php?del=<?= $review['review_id']; ?>" @click="open = false" @focus="open = true" @focusout="open = false">Remove</a></li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -148,6 +151,15 @@
                                                 </button>
                                             </form>
                                         <?php endif; ?>
+
+                                        <a class="block flex-1 text-center text-sm text-indigo-500 hover:text-indigo-600 font-medium px-3 py-4" href="message.php?msg=<?= $review['user_id']; ?>">
+                                            <div class="flex items-center justify-center">
+                                                <svg class="w-4 h-4 fill-current shrink-0 mr-2" viewBox="0 0 16 16">
+                                                    <path d="M8 0C3.6 0 0 3.1 0 7s3.6 7 8 7h.6l5.4 2v-4.4c1.2-1.2 2-2.8 2-4.6 0-3.9-3.6-7-8-7zm4 10.8v2.3L8.9 12H8c-3.3 0-6-2.2-6-5s2.7-5 6-5 6 2.2 6 5c0 2.2-2 3.8-2 3.8z" />
+                                                </svg>
+                                                <span>Delete</span>
+                                            </div>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
