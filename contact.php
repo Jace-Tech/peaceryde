@@ -61,7 +61,7 @@
                     </p>
                     <br>
                     <h2 style="font-size: 20px; color: #080C58; font-weight: 500;">United Kingdom</h2>
-                    <p style="font-size: 18px; color: #080C58; padding-top: 21px;">Office 1651 182-184 High Street 
+                    <p style="font-size: 18px; color: #080C58; padding-top: 21px;">Office 1651 182 184 High Street 
                       North, East Ham, London E6 2JA, United Kingdom</p>
                     <p style="padding-top: 21px;">phone: <a href="" style="font-size: 18px; color: #080C58; ">+44 7418371490</a>
                     </p>

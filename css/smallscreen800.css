@@ -114,7 +114,7 @@
 @media (max-width: 900px){
   
   .leaderpageheight {
-    height: 5700px;
+    height: 6900px;
 }
   .laptopflag
   {
@@ -1275,10 +1275,11 @@
 
   .leftcard {
     width: 702px;
-    height: 653px;
+    height: 890px;
     margin-top: 52px;
     background-color: #ffffff;
     margin-left: 100px;
+    margin-bottom: 50px;
   }
 
   .leftcardh2 {
@@ -2687,7 +2688,7 @@
 
   .leftcard {
     width: 653px;
-    height: 653px;
+    height: 850px;
     margin-top: 52px;
     background-color: #ffffff;
     margin-left: 100px;
@@ -4113,7 +4114,7 @@
 
   .leftcard {
     width: 600px;
-    height: 653px;
+    height: 850px;
     margin-top: 52px;
     background-color: #ffffff;
     margin-left: 100px;
@@ -5473,7 +5474,7 @@
 
   .leftcard {
     width: 568px;
-    height: 653px;
+    height: 850px;
     margin-top: 52px;
     background-color: #ffffff;
     margin-left: 100px;
@@ -5740,6 +5741,9 @@
 }
 
 @media (max-width: 720px){
+  .leaderpageheight {
+    height: 9500px;
+  }
   .bannertext {
     font-size: 30px;
   }
@@ -6820,7 +6824,7 @@
 
   .leftcard {
     width: 520px;
-    height: 690px;
+    height: 800px;
     margin-top: 52px;
     background-color: #ffffff;
     margin-left: 100px;
@@ -8206,7 +8210,7 @@
 
   .leftcard {
     width: 440px;
-    height: 693px;
+    height: 800px;
     margin-top: 52px;
     background-color: #ffffff;
     margin-left: 100px;
@@ -8566,6 +8570,9 @@
     height: 753px;
     margin: 50px auto;
   }
+  .leaderpageheight {
+    height: 9500px;
+  }
 }
 
 @media (max-width: 603px) {
@@ -8575,7 +8582,7 @@
     border-radius: 5px;
 }
 .leaderpageheight {
-  height: 6500px;
+  height: 8000px;
 }
   .collapsebtn {
     margin-top: -5px;
@@ -9660,7 +9667,7 @@
 
   .leftcard {
     width: 502px;
-    height: 693px;
+    height: 800px;
     margin-top: 52px;
     background-color: #ffffff;
     margin-left: 50px;
