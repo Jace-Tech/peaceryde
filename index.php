@@ -523,7 +523,7 @@ $uploads = new Upload($connect);
                   </div>
                 </div>
                 <div class="new-section7__block14 layout">
-                  <button name="subscribe" class="btn subscribe">subscribe</button>
+                  <button data-toggler name="subscribe" class="btn subscribe">subscribe</button>
                 </div>
               </form>
 
@@ -541,6 +541,21 @@ $uploads = new Upload($connect);
     <!-- ======= End section8 ======= -->
 
   </main>
+
+  <script type="text/javascript">
+    var _scq = _scq || [];
+    var _scs = _scs || {};
+    _scs.teamId = "4V4k1IK5JswqwiiB9B9GIt";
+  
+    (function() {
+      var dc = document.createElement('script');
+      dc.type = 'text/javascript';
+      dc.async = true;
+      dc.src = '//cdn.sendx.io/prod/4V4k1IK5JswqwiiB9B9GIt.js';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(dc, s);
+    })();
+    </script>
   <script>
     function inVisible(element) {
       //Checking if the element is
@@ -592,6 +607,12 @@ $uploads = new Upload($connect);
         });
       })
     });
+  </script>
+  <script>
+    const btn = document.querySelector("[data-toggler]")
+    btn.addEventListener("click", () => {
+      document.getElementById("sendx-modal-2oZvLk7I60tyBAcfn7dJXP").style.display = "block"
+    })
   </script>
   <script type="text/javascript">
     AOS.init();
