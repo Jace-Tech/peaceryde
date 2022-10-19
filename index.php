@@ -522,7 +522,7 @@ $uploads = new Upload($connect);
                   </div> -->
                 </div>
                 <div class="new-section7__block14 layout">
-                  <button data-toggler name="subscribe" class="btn subscribe">subscribe</button>
+                  <button data-toggler type="button" name="subscribe" class="btn subscribe">subscribe</button>
                 </div>
               </div>
             </div>
