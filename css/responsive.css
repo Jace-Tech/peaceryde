@@ -1675,10 +1675,11 @@ width: 100%;
 
   .leftcard {
     width: 440px;
-    height: 693px;
+    height: 800px;
     margin-top: 52px;
     background-color: #ffffff;
     margin-left: 50px;
+    margin-bottom: 50px;
   }
 
   .leftcardh2 {
@@ -3338,10 +3339,11 @@ width: 100%;
 
   .leftcard {
     width: 400px;
-    height: 693px;
+    height: 800px;
     margin-top: 52px;
     background-color: #ffffff;
     margin-left: 40px;
+    margin-bottom: 50px;
   }
 
   .leftcardh2 {
@@ -5147,6 +5149,7 @@ width: 100%;
     margin-top: 52px;
     background-color: #ffffff;
     margin-left: 20px;
+    margin-bottom: 50px;
   }
 
   .leftcardh2 {
@@ -6924,6 +6927,7 @@ width: 100%;
     margin-top: 52px;
     background-color: #ffffff;
     margin-left: 36px;
+    margin-bottom: 50px;
   }
 
   .leftcardh2 {
