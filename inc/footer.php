@@ -9,7 +9,18 @@
                 <div class="new-section8__block20 layout">
                   <img src="assets/logo.png" width="164" class="footerlogo">
                   <ul>
-                    <li class="lg-li"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <li class="lg-li">
+                      
+                      <a href="https://www.instagram.com/peaceryde/?igshid=YmMyMTA2M2Y%3D" target="_blank" rel="noopener noreferrer" style="text-decoration: none;font-size: 13px;color: #0A0E69;"><img src="assets/ln.jpeg" alt=""> &nbsp; LinkedLn</a>
+                    <!-- <a href="https://www.instagram.com/peaceryde/?igshid=YmMyMTA2M2Y%3D">    
+                    
+                     
+                    </a>
+                    <a href="https://www.instagram.com/peaceryde/?igshid=YmMyMTA2M2Y%3D" target="_blank" rel="noopener noreferrer" style="text-decoration: none;font-size: 13px;color: #0A0E69;">&nbsp;Instagram </a> -->
+                    </li>
+                    <li class="lg-li">
+
+                      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <a href="https://www.instagram.com/peaceryde/?igshid=YmMyMTA2M2Y%3D">    
                     <path d="M10.7 8C10.7 6.5 9.5 5.3 8 5.3C6.5 5.3 5.3 6.5 5.3 8C5.3 9.5 6.5 10.7 8 10.7C9.5 10.7 10.7 9.5 10.7 8ZM12.1 8C12.1 10.3 10.3 12.1 8 12.1C5.7 12.1 3.9 10.3 3.9 8C3.9 5.7 5.7 3.9 8 3.9C10.3 3.9 12.1 5.7 12.1 8ZM13.2 3.7C13.2 4.3 12.8 4.7 12.2 4.7C11.6 4.7 11.2 4.3 11.2 3.7C11.2 3.1 11.6 2.7 12.2 2.7C12.8 2.7 13.2 3.2 13.2 3.7ZM8 1.4C6.8 1.4 4.3 1.3 3.3 1.7C2.6 2 2 2.6 1.8 3.3C1.4 4.3 1.5 6.8 1.5 8C1.5 9.2 1.4 11.7 1.8 12.7C2 13.4 2.6 14 3.3 14.2C4.3 14.6 6.9 14.5 8 14.5C9.1 14.5 11.7 14.6 12.7 14.2C13.4 13.9 13.9 13.4 14.2 12.7C14.6 11.6 14.5 9.1 14.5 8C14.5 6.9 14.6 4.3 14.2 3.3C14 2.6 13.4 2 12.7 1.8C11.7 1.3 9.2 1.4 8 1.4ZM16 8V11.3C16 12.5 15.6 13.7 14.7 14.7C13.8 15.6 12.6 16 11.3 16H4.7C3.5 16 2.3 15.6 1.3 14.7C0.5 13.8 0 12.6 0 11.3V8V4.7C0 3.4 0.5 2.2 1.3 1.3C2.3 0.5 3.5 0 4.7 0H11.3C12.5 0 13.7 0.4 14.7 1.3C15.5 2.2 16 3.4 16 4.7V8Z" fill="#080C58" />
                       </svg>
