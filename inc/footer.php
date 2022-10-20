@@ -11,7 +11,7 @@
                   <ul>
                   <li class="lg-li">
                       
-                      <a href="https://www.instagram.com/peaceryde/?igshid=YmMyMTA2M2Y%3D" target="_blank" rel="noopener noreferrer" style="text-decoration: none;font-size: 13px;color: #0A0E69;"><img src="assets/ln.jpeg" alt=""> &nbsp; LinkedLn</a>
+                      <a href="http://www.linkedin.com/in/peacerydeafricallc" target="_blank" rel="noopener noreferrer" style="text-decoration: none;font-size: 13px;color: #0A0E69;"><img src="assets/ln.jpeg" alt=""> &nbsp; LinkedLn</a>
                     <!-- <a href="https://www.instagram.com/peaceryde/?igshid=YmMyMTA2M2Y%3D">    
                     
                      
@@ -20,7 +20,7 @@
                     </li>
                     <li class="lg-li">
                       
-                      <a href="https://www.instagram.com/peaceryde/?igshid=YmMyMTA2M2Y%3D" target="_blank" rel="noopener noreferrer" style="text-decoration: none;font-size: 13px;color: #0A0E69;"><img src="assets/fb.jpeg" alt=""> &nbsp; Facebook</a>
+                      <a href="http://web.facebook.com/PeaceRydeAfrica/" target="_blank" rel="noopener noreferrer" style="text-decoration: none;font-size: 13px;color: #0A0E69;"><img src="assets/fb.jpeg" alt=""> &nbsp; Facebook</a>
                     
                     </li>
                     <li class="lg-li">
@@ -30,10 +30,10 @@
                     </li>
                     <li class="lg-li">
                       
-                      <a href="https://www.instagram.com/peaceryde/?igshid=YmMyMTA2M2Y%3D" target="_blank" rel="noopener noreferrer" style="text-decoration: none;font-size: 13px;color: #0A0E69;"><img src="assets/twit.jpeg" alt=""> &nbsp; Twitter</a>
+                      <a href="https://twitter.com/PeaceRydeLogis1" target="_blank" rel="noopener noreferrer" style="text-decoration: none;font-size: 13px;color: #0A0E69;"><img src="assets/twit.jpeg" alt=""> &nbsp; Twitter</a>
                     
                     </li>
-                    <li class="lg-li">
+                    <!-- <li class="lg-li">
 
                       <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <a href="https://www.instagram.com/peaceryde/?igshid=YmMyMTA2M2Y%3D">    
@@ -60,7 +60,7 @@
                     </a>
                     <a href="https://twitter.com/PeaceRydeLogis1" target="_blank" rel="noopener noreferrer" style="text-decoration: none;font-size: 13px;color: #0A0E69;">&nbsp;Twitter</a>
                     
-                    </li>
+                    </li> -->
                   </ul>
                 </div>
               </div>
@@ -185,6 +185,12 @@
                 </div>
                 <br>
                 <br>
+                <div class="row">
+                <h3 class="new-section8__highlights8 layout footh3" style="text-transform:uppercase">
+                  Cookie Policy
+                  </h3>
+                  <p class="fs-13">Our Website uses cokkies to make your browsing experience better. By using our site you agree to our use of cookies <a href="../pp.php">Learn more</a> </p>
+                </div>
                 <div class="row">
                   <h3 class="new-section8__highlights8 layout footh3" style="text-transform:uppercase">
                   We accept card payments
