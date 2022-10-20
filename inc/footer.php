@@ -19,6 +19,21 @@
                     <a href="https://www.instagram.com/peaceryde/?igshid=YmMyMTA2M2Y%3D" target="_blank" rel="noopener noreferrer" style="text-decoration: none;font-size: 13px;color: #0A0E69;">&nbsp;Instagram </a> -->
                     </li>
                     <li class="lg-li">
+                      
+                      <a href="https://www.instagram.com/peaceryde/?igshid=YmMyMTA2M2Y%3D" target="_blank" rel="noopener noreferrer" style="text-decoration: none;font-size: 13px;color: #0A0E69;"><img src="assets/fb.jpeg" alt=""> &nbsp; Facebook</a>
+                    
+                    </li>
+                    <li class="lg-li">
+                      
+                      <a href="https://www.instagram.com/peaceryde/?igshid=YmMyMTA2M2Y%3D" target="_blank" rel="noopener noreferrer" style="text-decoration: none;font-size: 13px;color: #0A0E69;"><img src="assets/ins.jpeg" alt=""> &nbsp; Instagram</a>
+                    
+                    </li>
+                    <li class="lg-li">
+                      
+                      <a href="https://www.instagram.com/peaceryde/?igshid=YmMyMTA2M2Y%3D" target="_blank" rel="noopener noreferrer" style="text-decoration: none;font-size: 13px;color: #0A0E69;"><img src="assets/twit.jpeg" alt=""> &nbsp; Twitter</a>
+                    
+                    </li>
+                    <li class="lg-li">
 
                       <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <a href="https://www.instagram.com/peaceryde/?igshid=YmMyMTA2M2Y%3D">    
