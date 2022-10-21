@@ -9968,22 +9968,27 @@
     margin: 30px 2.33% 0px 0%;
   }
 }
+@media (max-width: 900px) {
+  .new-section7__block14.layout {
+    margin: 30px 2.33% 0px 15%;
+  }
+}
 
 @media (max-width: 768px) {
   .new-section7__block14.layout {
-    margin: 25px 2.33% 0px 0%;
+    margin: 25px 2.33% 0px 16%;
   }
 }
 
 @media (max-width: 575px) {
   .new-section7__block14.layout {
-    margin: 22px 2.33% 0px 0%;
+    margin: 22px 2.33% 0px 10%;
   }
 }
 
 @media (max-width: 479px) {
   .new-section7__block14.layout {
-    margin: 19px 2.33% 0px 0%;
+    margin: 19px 2.33% 0px 11%;
   }
 }
 
