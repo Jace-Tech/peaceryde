@@ -11,7 +11,7 @@
                   <ul>
                   <li class="lg-li">
                       
-                      <a href="http://www.linkedin.com/in/peacerydeafricallc" target="_blank" rel="noopener noreferrer" style="text-decoration: none;font-size: 13px;color: #0A0E69;"><img src="assets/ln.jpeg" alt=""> &nbsp; LinkedLn</a>
+                      <a href="http://www.linkedin.com/in/peacerydeafricallc" target="_blank" rel="noopener noreferrer"><img src="assets/ln.jpeg" alt=""> <span class="logtext">&nbsp; LinkedIn</span>  </a>
                     <!-- <a href="https://www.instagram.com/peaceryde/?igshid=YmMyMTA2M2Y%3D">    
                     
                      
@@ -20,17 +20,17 @@
                     </li>
                     <li class="lg-li">
                       
-                      <a href="http://web.facebook.com/PeaceRydeAfrica/" target="_blank" rel="noopener noreferrer" style="text-decoration: none;font-size: 13px;color: #0A0E69;"><img src="assets/fb.jpeg" alt=""> &nbsp; Facebook</a>
+                      <a href="http://web.facebook.com/PeaceRydeAfrica/" target="_blank" rel="noopener noreferrer"><img src="assets/fb.jpeg"  alt=""> <span class="logtext"> &nbsp; Facebook</span> </a>
                     
                     </li>
                     <li class="lg-li">
                       
-                      <a href="https://www.instagram.com/peaceryde/?igshid=YmMyMTA2M2Y%3D" target="_blank" rel="noopener noreferrer" style="text-decoration: none;font-size: 13px;color: #0A0E69;"><img src="assets/ins.jpeg" alt=""> &nbsp; Instagram</a>
+                      <a href="https://www.instagram.com/peaceryde/?igshid=YmMyMTA2M2Y%3D" target="_blank" rel="noopener noreferrer"><img src="assets/ins.jpeg" alt=""> <span class="logtext">&nbsp; Instagram</span> </a>
                     
                     </li>
                     <li class="lg-li">
                       
-                      <a href="https://twitter.com/PeaceRydeLogis1" target="_blank" rel="noopener noreferrer" style="text-decoration: none;font-size: 13px;color: #0A0E69;"><img src="assets/twit.jpeg" alt=""> &nbsp; Twitter</a>
+                      <a href="https://twitter.com/PeaceRydeLogis1" target="_blank" rel="noopener noreferrer" ><img src="assets/twit.jpeg" alt=""> <span class="logtext"> &nbsp; Twitter</span> </a>
                     
                     </li>
                     <!-- <li class="lg-li">
@@ -189,7 +189,7 @@
                 <h3 class="new-section8__highlights8 layout footh3" style="text-transform:uppercase">
                   Cookie Policy
                   </h3>
-                  <p class="fs-13" style="padding-right:50px">Our Website uses cokkies to make your browsing experience better. By using our site you agree to our use of cookies <a href="../pp.php">Learn more</a> </p>
+                  <p class="fs-13" style="padding-right:50px; padding-top:50px;">Our website uses cookies to make your browsing experience better. By using our site you agree to our use of cookies <a href="../pp.php">Learn more</a> </p>
                 </div>
                 <br>
                 <br>
