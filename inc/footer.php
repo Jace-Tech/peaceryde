@@ -11,7 +11,7 @@
                   <ul>
                   <li class="lg-li">
                       
-                      <a href="http://www.linkedin.com/in/peacerydeafricallc" target="_blank" rel="noopener noreferrer"><img src="assets/ln.jpeg" alt=""> <span class="logtext">&nbsp; LinkedIn</span>  </a>
+                      <a href="http://www.linkedin.com/in/peacerydeafricallc" target="_blank" rel="noopener noreferrer" style="text-decoration:none;"><img src="assets/ln.jpeg" alt=""> <span class="logtext">&nbsp; LinkedIn</span>  </a>
                     <!-- <a href="https://www.instagram.com/peaceryde/?igshid=YmMyMTA2M2Y%3D">    
                     
                      
@@ -20,17 +20,17 @@
                     </li>
                     <li class="lg-li">
                       
-                      <a href="http://web.facebook.com/PeaceRydeAfrica/" target="_blank" rel="noopener noreferrer"><img src="assets/fb.jpeg"  alt=""> <span class="logtext"> &nbsp; Facebook</span> </a>
+                      <a href="http://web.facebook.com/PeaceRydeAfrica/" target="_blank" rel="noopener noreferrer" style="text-decoration:none;"><img src="assets/fb.jpeg"  alt=""> <span class="logtext"> &nbsp; Facebook</span> </a>
                     
                     </li>
                     <li class="lg-li">
                       
-                      <a href="https://www.instagram.com/peaceryde/?igshid=YmMyMTA2M2Y%3D" target="_blank" rel="noopener noreferrer"><img src="assets/ins.jpeg" alt=""> <span class="logtext">&nbsp; Instagram</span> </a>
+                      <a href="https://www.instagram.com/peaceryde/?igshid=YmMyMTA2M2Y%3D" target="_blank" rel="noopener noreferrer" style="text-decoration:none;"><img src="assets/ins.jpeg" alt=""> <span class="logtext">&nbsp; Instagram</span> </a>
                     
                     </li>
                     <li class="lg-li">
                       
-                      <a href="https://twitter.com/PeaceRydeLogis1" target="_blank" rel="noopener noreferrer" ><img src="assets/twit.jpeg" alt=""> <span class="logtext"> &nbsp; Twitter</span> </a>
+                      <a href="https://twitter.com/PeaceRydeLogis1" target="_blank" rel="noopener noreferrer" style="text-decoration:none;" ><img src="assets/twit.jpeg" alt=""> <span class="logtext"> &nbsp; Twitter</span> </a>
                     
                     </li>
                     <!-- <li class="lg-li">
