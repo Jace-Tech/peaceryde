@@ -189,7 +189,7 @@
                 <h3 class="new-section8__highlights8 layout footh3" style="text-transform:uppercase">
                   Cookie Policy
                   </h3>
-                  <p class="fs-13" style="padding-right:50px; padding-top:50px;">Our website uses cookies to make your browsing experience better. By using our site you agree to our use of cookies <a href="../pp.php">Learn more</a> </p>
+                  <p class="fs-13" style="padding-right:50px; padding-top:50px;">Our website uses cookies to make your browsing experience better. <br> By using our site you agree to our use of cookies <a href="../pp.php">Learn more</a> </p>
                 </div>
                 <br>
                 <br>
