@@ -15,6 +15,9 @@ $userServices = new UserService($connect);
 $services = new Service($connect);
 $trackings = new Tracking($connect);
 
+// GET BI-FORM
+$BI_DETAILS = getBiDetails($connect, $_GET["user"]);
+
 $USER = $users->get_user($_GET['user']);
 $USER_SERVICES = $userServices->getAllUserServices($_GET['user']);
 $USERS_DOCS = getUsersUploads($connect, $_GET['user']);
@@ -51,6 +54,13 @@ $USERS_ADMIN = fetchUsersSubAdmins($connect, $_GET['user']);
             </div>
             <div class="mt-4">
                 <?php if (!isset($_GET['edit'])) : ?>
+                    <div class="px-2 py-2 border-b flex">
+                        <p class="text-gray-600 text-sm font-bold mr-2">Title: </p>
+                        <p class="text-gray-600 flex-1 text-sm">
+                            <?= $USER['title'] ?? "<i>NILL</i>"; ?>
+                        </p>
+                    </div>
+
                     <div class="px-2 py-2 border-b flex">
                         <p class="text-gray-600 text-sm font-bold mr-2">Firstname: </p>
                         <p class="text-gray-600 flex-1 text-sm">
@@ -94,11 +104,48 @@ $USERS_ADMIN = fetchUsersSubAdmins($connect, $_GET['user']);
                     </div>
 
                     <div class="px-2 py-2 border-b flex">
+                        <p class="text-gray-600 text-sm font-bold mr-2">Passport: </p>
+                        <p class="text-gray-600 flex-1 text-sm">
+                            <?= $USER['passport'] ?? "<i>NILL</i>"; ?>
+                        </p>
+                    </div>
+
+                    <div class="px-2 py-2 border-b flex">
+                        <p class="text-gray-600 text-sm font-bold mr-2">Phone No: </p>
+                        <p class="text-gray-600 flex-1 text-sm">
+                            <?= $USER['phone'] ?? "<i>NILL</i>"; ?>
+                        </p>
+                    </div>
+
+                    <div class="px-2 py-2 border-b flex">
                         <p class="text-gray-600 text-sm font-bold mr-2">Date of Birth: </p>
                         <p class="text-gray-600 flex-1 text-sm">
                             <?= strtoupper($USER['date_of_birth']) !== "NULL" ? date("d, M Y", strtotime($USER['date_of_birth'])) : "<i>NILL</i>"; ?>
                         </p>
                     </div>
+
+                    <?php  if(count($BI_DETAILS)): ?>
+                        <div class="px-2 py-2 border-b flex">
+                            <p class="text-gray-600 text-sm font-bold mr-2">Shares: </p>
+                            <p class="text-gray-600 flex-1 text-sm">
+                                <?= $BI_DETAILS['share'] ?? "<i>NILL</i>"; ?>
+                            </p>
+                        </div>
+
+                        <div class="px-2 py-2 border-b flex">
+                            <p class="text-gray-600 text-sm font-bold mr-2">Company Name: </p>
+                            <p class="text-gray-600 flex-1 text-sm">
+                                <?= $BI_DETAILS['company_name'] ?? "<i>NILL</i>"; ?>
+                            </p>
+                        </div>
+
+                        <div class="px-2 py-2 border-b flex">
+                            <p class="text-gray-600 text-sm font-bold mr-2">Coperate Address: </p>
+                            <p class="text-gray-600 flex-1 text-sm">
+                                <?= $BI_DETAILS['coperate_address'] ?? "<i>NILL</i>"; ?>
+                            </p>
+                        </div>
+                    <?php endif; ?>
                 <?php else : ?>
                     <form class="form" method="post" action="./handler/user_handler.php">
                         <div class="grid grid-cols-12 gap-6 py-3">
@@ -112,6 +159,7 @@ $USERS_ADMIN = fetchUsersSubAdmins($connect, $_GET['user']);
                                 <input class="w-full p-2 border-gray-300 form-input" type="text" name="lastname" value="<?= $USER['lastname'] ?? "" ?>">
                             </div>
                         </div>
+
                         <div class="grid grid-cols-12 gap-6 py-3">
                             <div class="col-span-full md:col-span-6">
                                 <label for="" class="block text-sm font-medium">Middle name</label>
@@ -124,6 +172,40 @@ $USERS_ADMIN = fetchUsersSubAdmins($connect, $_GET['user']);
                                 <input class="w-full p-2 border-gray-300 form-input" type="email" name="email" value="<?= $USER['email'] ?? "" ?>">
                             </div>
                         </div>
+
+                        <div class="grid grid-cols-12 gap-6 py-3">
+                            <div class="col-span-full md:col-span-6">
+                                <label for="" class="block text-sm font-medium">Phone No</label>
+                                <input class="w-full p-2 border-gray-300 form-input" type="text" name="phone" value="<?= $USER['phone'] ?? "" ?>">
+                            </div>
+
+                            <div class="col-span-full md:col-span-6">
+                                <label for="" class="block text-sm font-medium">Passport No</label>
+                                <input class="w-full p-2 border-gray-300 form-input" type="text" name="passport" value="<?= $USER['passport'] ?? "" ?>">
+                            </div>
+                        </div>
+
+                        <?php if(count($BI_DETAILS)): ?>
+                            <div class="grid grid-cols-12 gap-6 py-3">
+                                <div class="col-span-full md:col-span-6">
+                                    <label for="" class="block text-sm font-medium">Shares</label>
+                                    <input class="w-full p-2 border-gray-300 form-input" type="number" name="share" value="<?= $BI_DETAILS['share'] ?? "" ?>">
+                                </div>
+
+                                <div class="col-span-full md:col-span-6">
+                                    <label for="" class="block text-sm font-medium"> Company Name</label>
+                                    <input class="w-full p-2 border-gray-300 form-input" type="text" name="company_name" value="<?= $BI_DETAILS['company_name'] ?? "" ?>">
+                                </div>
+                            </div>
+
+                            <div class="grid grid-cols-12 gap-6 py-3">
+                                <div class="col-span-full">
+                                    <label for="" class="block text-sm font-medium">Coperate Address</label>
+                                    <input class="w-full p-2 border-gray-300 form-input" type="text" name="coperate_address" value="<?= $BI_DETAILS['coperate_address'] ?? "" ?>">
+                                </div>
+                            </div>
+                        <?php endif; ?>
+
                         <div class="grid grid-cols-12 gap-6 py-3">
                             <div class="col-span-full md:col-span-6">
                                 <label for="" class="block text-sm font-medium">Gender </label>

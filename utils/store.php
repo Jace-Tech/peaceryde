@@ -351,3 +351,11 @@ function getPassword($connect, $id) {
 
     return $result->fetch();
 }
+
+function getBiDetails ($connect, $id)  {
+    $query = "SELECT * FROM bi_table WHERE user_id = ?";
+    $result = $connect->prepare($query);
+    $result->execute([$id]);
+
+    return $result->fetch();
+}

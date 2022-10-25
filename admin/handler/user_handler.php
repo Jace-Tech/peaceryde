@@ -437,8 +437,15 @@ if(isset($_POST['update-user'])) {
     $email = $_POST['email'];
     $firstname = $_POST['firstname'];
     $lastname = $_POST['lastname'];
+    $phone = $_POST['phone'];
+    $passport = $_POST['passport'];
     $gender = $_POST['gender'];
     $dob = $_POST['dob'];
+
+    $share = $_POST['share'];
+    $company_name = $_POST['company_name'];
+    $coperate_address = $_POST['coperate_address'];
+
     $middlename = $_POST['middlename'];
     $id = $_POST['user'];
 
@@ -456,8 +463,32 @@ if(isset($_POST['update-user'])) {
         ]);
 
         if ($result) {
-            setAdminAlert("User profile updated successfully", "success");
-            header("Location: ../user-details.php?user=$id");
+
+            if(($share && !empty($share)) && 
+                ($company_name && !empty($company_name)) &&
+                ($coperate_address && !empty($coperate_address))) {
+                    $query = "UPDATE bi_table SET shares = :share, companyName = :companyName, coperateAddress = :coperateAddress WHERE user_id = :id";
+                    $result = $connect->prepare($query);
+                    $result->execute([
+                        "share" => $share,
+                        "companyName" => $company_name,
+                        "coperateAddress" => $coperate_address,
+                        "id" => $id,
+                    ]);
+
+                if($result) {
+                    setAdminAlert("User profile updated successfully", "success");
+                    header("Location: ../user-details.php?user=$id");
+                }
+                else {
+                    setAdminAlert("Failed to update user profile", "error");
+                    header("Location: ../user-details.php?user=$id");
+                }
+            }
+            else {
+                setAdminAlert("User profile updated successfully", "success");
+                header("Location: ../user-details.php?user=$id");
+            }
         }
         else {
             setAdminAlert("Failed to update user profile", "error");
