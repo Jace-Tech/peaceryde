@@ -82,8 +82,10 @@ $uploads = new Upload($connect);
       text-align: left;
       word-break: break-all;
     }
-
-    .sendx-field-2oZvLk7I60tyBAcfn7dJXP {
+  </style>
+</head>
+<style style="margin: 0; width: 0; height: 0;">
+   .sendx-field-2oZvLk7I60tyBAcfn7dJXP {
       text-align: left !important;
       border: 1px solid #aaa !important;
       padding: .8rem 1rem !important;
@@ -100,8 +102,7 @@ $uploads = new Upload($connect);
       height: 41px !important;
       font-size: 1.5rem !important;
     }
-  </style>
-</head>
+</style>
 
 
 <body class="body">
