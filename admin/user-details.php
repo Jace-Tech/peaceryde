@@ -128,7 +128,7 @@ $USERS_ADMIN = fetchUsersSubAdmins($connect, $_GET['user']);
                         <div class="px-2 py-2 border-b flex">
                             <p class="text-gray-600 text-sm font-bold mr-2">Shares: </p>
                             <p class="text-gray-600 flex-1 text-sm">
-                                <?= $BI_DETAILS['share'] ?? "<i>NILL</i>"; ?>
+                                <?= $BI_DETAILS['shares'] ?? "<i>NILL</i>"; ?>
                             </p>
                         </div>
 
@@ -189,7 +189,7 @@ $USERS_ADMIN = fetchUsersSubAdmins($connect, $_GET['user']);
                             <div class="grid grid-cols-12 gap-6 py-3">
                                 <div class="col-span-full md:col-span-6">
                                     <label for="" class="block text-sm font-medium">Shares</label>
-                                    <input class="w-full p-2 border-gray-300 form-input" type="number" name="share" value="<?= $BI_DETAILS['share'] ?? "" ?>">
+                                    <input class="w-full p-2 border-gray-300 form-input" type="number" name="share" value="<?= $BI_DETAILS['shares'] ?? "" ?>">
                                 </div>
 
                                 <div class="col-span-full md:col-span-6">
