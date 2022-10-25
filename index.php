@@ -88,10 +88,13 @@ $uploads = new Upload($connect);
 
 <body class="body">
   <style style="margin: 0; width: 0; height: 0;">
+    #sendx-underlay-2oZvLk7I60tyBAcfn7dJXP {
+      background-color: rgba(255, 255, 255, 0.3);
+    }
     #powered-by-sendx-content-2oZvLk7I60tyBAcfn7dJXP {
       display: none !important;
     }
-    
+
     .sendx-modal-body-2oZvLk7I60tyBAcfn7dJXP > p {
       font-size: 1rem !important;
     }
