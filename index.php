@@ -103,6 +103,10 @@ $uploads = new Upload($connect);
       font-family: 'Ubuntu' !important;
       font-size: 1.2rem !important;
     }
+
+    form#sendx-submit-form-2oZvLk7I60tyBAcfn7dJXP > .sendx-button-2oZvLk7I60tyBAcfn7dJXP:hover {
+      transform: scale3d(1.02, 1.02, 1.02);
+    }
   </style>
   <main class="new new-main layout" style="overflow-x: hidden;">
     <!-- ======= section1 ======= -->
