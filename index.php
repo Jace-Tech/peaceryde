@@ -88,7 +88,8 @@ $uploads = new Upload($connect);
 
 <body class="body">
   <style style="margin: 0; width: 0; height: 0;">
-    form#sendx-submit-form-2oZvLk7I60tyBAcfn7dJXP>.sendx-field-2oZvLk7I60tyBAcfn7dJXP {
+    form#sendx-submit-form-2oZvLk7I60tyBAcfn7dJXP>.sendx-field-2oZvLk7I60tyBAcfn7dJXP,  
+    form#sendx-submit-form-2oZvLk7I60tyBAcfn7dJXP>.sendx-field-2oZvLk7I60tyBAcfn7dJXP:focus {
       text-align: left !important;
       border: 1px solid #aaa !important;
       padding: .8rem 1rem !important;
@@ -105,7 +106,7 @@ $uploads = new Upload($connect);
     }
 
     form#sendx-submit-form-2oZvLk7I60tyBAcfn7dJXP > .sendx-button-2oZvLk7I60tyBAcfn7dJXP:hover {
-      transform: scale3d(1.02, 1.02, 1.02);
+      transform: scale3d(1.02, 1.02, 1.02) !important;
     }
   </style>
   <main class="new new-main layout" style="overflow-x: hidden;">
