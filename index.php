@@ -88,10 +88,15 @@ $uploads = new Upload($connect);
 
 <body class="body">
   <style style="margin: 0; width: 0; height: 0;">
+    .sendx-modal-body-2oZvLk7I60tyBAcfn7dJXP > p {
+      font-size: 1rem !important;
+    }
+    
     form#sendx-submit-form-2oZvLk7I60tyBAcfn7dJXP>.sendx-field-2oZvLk7I60tyBAcfn7dJXP,  
     form#sendx-submit-form-2oZvLk7I60tyBAcfn7dJXP>.sendx-field-2oZvLk7I60tyBAcfn7dJXP:focus {
       text-align: left !important;
       border: 1px solid #aaa !important;
+      font-size: 1rem !important;
       padding: .8rem 1rem !important;
       box-sizing: border-box !important;
     }
@@ -99,7 +104,8 @@ $uploads = new Upload($connect);
     form#sendx-submit-form-2oZvLk7I60tyBAcfn7dJXP > .sendx-button-2oZvLk7I60tyBAcfn7dJXP { 
       background: #0C65EB !important;
       color: white !important;
-      padding: 1rem;
+      padding: .8rem 0 !important;
+      font-size: 1rem !important;
       text-align: center !important;
       font-family: 'Ubuntu' !important;
       font-size: 1.2rem !important;
