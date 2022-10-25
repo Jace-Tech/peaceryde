@@ -101,7 +101,7 @@ $uploads = new Upload($connect);
       padding: 1rem;
       text-align: center !important;
       font-family: 'Ubuntu' !important;
-      font-size: 1.5rem !important;
+      font-size: 1.2rem !important;
     }
   </style>
   <main class="new new-main layout" style="overflow-x: hidden;">
