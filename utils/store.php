@@ -357,5 +357,8 @@ function getBiDetails ($connect, $id)  {
     $result = $connect->prepare($query);
     $result->execute([$id]);
 
-    return $result->fetch();
+    $output = [];
+    if($result->rowCount()) $output = $result->fetch();
+
+    return $output;
 }
