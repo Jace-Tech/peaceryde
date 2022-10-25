@@ -84,15 +84,18 @@ $uploads = new Upload($connect);
     }
   </style>
 </head>
-<style style="margin: 0; width: 0; height: 0;">
-   .sendx-field-2oZvLk7I60tyBAcfn7dJXP {
+
+
+<body class="body">
+  <style style="margin: 0; width: 0; height: 0;">
+    form#sendx-submit-form-2oZvLk7I60tyBAcfn7dJXP>.sendx-field-2oZvLk7I60tyBAcfn7dJXP {
       text-align: left !important;
       border: 1px solid #aaa !important;
       padding: .8rem 1rem !important;
       box-sizing: border-box !important;
     }
 
-    .sendx-submit-2oZvLk7I60tyBAcfn7dJXP {
+    form#sendx-submit-form-2oZvLk7I60tyBAcfn7dJXP>.sendx-submit-2oZvLk7I60tyBAcfn7dJXP {
       background: #0C65EB !important;
       color: white !important;
       text-align: center !important;
@@ -102,10 +105,7 @@ $uploads = new Upload($connect);
       height: 41px !important;
       font-size: 1.5rem !important;
     }
-</style>
-
-
-<body class="body">
+  </style>
   <main class="new new-main layout" style="overflow-x: hidden;">
     <!-- ======= section1 ======= -->
     <!-- Header Here -->
@@ -541,7 +541,7 @@ $uploads = new Upload($connect);
                   </div> -->
                 </div>
                 <div class="new-section7__block14 layout">
-                  <button data-toggler type="button" name="subscribe" class="btn subscribe sendx-content-upgrade" data-href="#2oZvLk7I60tyBAcfn7dJXP" >subscribe</button>
+                  <button data-toggler type="button" name="subscribe" class="btn subscribe sendx-content-upgrade" data-href="#2oZvLk7I60tyBAcfn7dJXP">subscribe</button>
                 </div>
               </div>
             </div>
