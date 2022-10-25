@@ -82,6 +82,24 @@ $uploads = new Upload($connect);
       text-align: left;
       word-break: break-all;
     }
+
+    .sendx-field-2oZvLk7I60tyBAcfn7dJXP {
+      text-align: left !important;
+      border: 1px solid #aaa !important;
+      padding: .8rem 1rem !important;
+      box-sizing: border-box !important;
+    }
+
+    .sendx-submit-2oZvLk7I60tyBAcfn7dJXP {
+      background: #0C65EB !important;
+      color: white !important;
+      text-align: center !important;
+      font-family: 'Ubuntu' !important;
+      border: 1px solid transparent !important;
+      padding: 5px !important;
+      height: 41px !important;
+      font-size: 1.5rem !important;
+    }
   </style>
 </head>
 
