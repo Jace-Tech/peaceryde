@@ -95,14 +95,12 @@ $uploads = new Upload($connect);
       box-sizing: border-box !important;
     }
 
-    form#sendx-submit-form-2oZvLk7I60tyBAcfn7dJXP>.sendx-submit-2oZvLk7I60tyBAcfn7dJXP {
+    form#sendx-submit-form-2oZvLk7I60tyBAcfn7dJXP > .sendx-button-2oZvLk7I60tyBAcfn7dJXP { 
       background: #0C65EB !important;
       color: white !important;
+      padding: 1rem;
       text-align: center !important;
       font-family: 'Ubuntu' !important;
-      border: 1px solid transparent !important;
-      padding: 5px !important;
-      height: 41px !important;
       font-size: 1.5rem !important;
     }
   </style>
