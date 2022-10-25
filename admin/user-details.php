@@ -106,7 +106,7 @@ $USERS_ADMIN = fetchUsersSubAdmins($connect, $_GET['user']);
                     <div class="px-2 py-2 border-b flex">
                         <p class="text-gray-600 text-sm font-bold mr-2">Passport: </p>
                         <p class="text-gray-600 flex-1 text-sm">
-                            <?= $USER['passport'] ?? "<i>NILL</i>"; ?>
+                            <?= $USER['passport'] && !empty($USER['passport']) ?? "<i>NILL</i>"; ?>
                         </p>
                     </div>
 
