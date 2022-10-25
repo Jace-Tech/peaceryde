@@ -185,6 +185,8 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
                               <select name="countryCode" id="" required name="country_code" aria-label="Default select example" class="form-select code" aria-label="Default select example">
                                 <option value="">+234</option>
                                 <optgroup label="Country Code">
+                                  <option data-countryCode="DZ" value="93">Afghanistan (+93)</option>
+                                  <option data-countryCode="DZ" value="335">Albania (+355)</option>
                                   <option data-countryCode="DZ" value="213">Algeria (+213)</option>
                                   <option data-countryCode="AD" value="376">Andorra (+376)</option>
                                   <option data-countryCode="AO" value="244">Angola (+244)</option>
@@ -220,6 +222,7 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
                                   <option data-countryCode="CV" value="238">Cape Verde Islands (+238)</option>
                                   <option data-countryCode="KY" value="1345">Cayman Islands (+1345)</option>
                                   <option data-countryCode="CF" value="236">Central African Republic (+236)</option>
+                                  <option data-countryCode="CD" value="235">Chad (+235)</option>
                                   <option data-countryCode="CL" value="56">Chile (+56)</option>
                                   <option data-countryCode="CN" value="86">China (+86)</option>
                                   <option data-countryCode="CO" value="57">Colombia (+57)</option>
@@ -283,6 +286,7 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
                                   <option data-countryCode="KZ" value="7">Kazakhstan (+7)</option>
                                   <option data-countryCode="KE" value="254">Kenya (+254)</option>
                                   <option data-countryCode="KI" value="686">Kiribati (+686)</option>
+                                  <option data-countryCode="KW" value="383">Kosovo (+383)</option>
                                   <option data-countryCode="KW" value="965">Kuwait (+965)</option>
                                   <option data-countryCode="KG" value="996">Kyrgyzstan (+996)</option>
                                   <option data-countryCode="LA" value="856">Laos (+856)</option>
@@ -305,6 +309,7 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
                                   <option data-countryCode="MH" value="692">Marshall Islands (+692)</option>
                                   <option data-countryCode="MQ" value="596">Martinique (+596)</option>
                                   <option data-countryCode="MR" value="222">Mauritania (+222)</option>
+                                  <option data-countryCode="MR" value="230">Mauritius (+230)</option>
                                   <option data-countryCode="YT" value="269">Mayotte (+269)</option>
                                   <option data-countryCode="MX" value="52">Mexico (+52)</option>
                                   <option data-countryCode="FM" value="691">Micronesia (+691)</option>
@@ -330,6 +335,7 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
                                   <option data-countryCode="NP" value="670">Northern Marianas (+670)</option>
                                   <option data-countryCode="NO" value="47">Norway (+47)</option>
                                   <option data-countryCode="OM" value="968">Oman (+968)</option>
+                                  <option data-countryCode="PW" value="92">Pakistan (+92)</option>
                                   <option data-countryCode="PW" value="680">Palau (+680)</option>
                                   <option data-countryCode="PA" value="507">Panama (+507)</option>
                                   <option data-countryCode="PG" value="675">Papua New Guinea (+675)</option>
@@ -344,6 +350,10 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
                                   <option data-countryCode="RO" value="40">Romania (+40)</option>
                                   <option data-countryCode="RU" value="7">Russia (+7)</option>
                                   <option data-countryCode="RW" value="250">Rwanda (+250)</option>
+                                  <option data-countryCode="SM" value="1">Saint kitts and Nevis (+1)</option>
+                                  <option data-countryCode="SM" value="1">Saint Lucia (+1)</option>
+                                  <option data-countryCode="SM" value="1">Saint Vincent and the Grenadines (+1)</option>
+                                  <option data-countryCode="SM" value="685">Samoa (+685)</option>
                                   <option data-countryCode="SM" value="378">San Marino (+378)</option>
                                   <option data-countryCode="ST" value="239">Sao Tome &amp; Principe (+239)</option>
                                   <option data-countryCode="SA" value="966">Saudi Arabia (+966)</option>
@@ -370,7 +380,9 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
                                   <option data-countryCode="CH" value="41">Switzerland (+41)</option>
                                   <option data-countryCode="SI" value="963">Syria (+963)</option>
                                   <option data-countryCode="TW" value="886">Taiwan (+886)</option>
+                                  
                                   <option data-countryCode="TJ" value="7">Tajikstan (+7)</option>
+                                  <option data-countryCode="TH" value="255">Thazania (+255)</option>
                                   <option data-countryCode="TH" value="66">Thailand (+66)</option>
                                   <option data-countryCode="TG" value="228">Togo (+228)</option>
                                   <option data-countryCode="TO" value="676">Tonga (+676)</option>
@@ -395,6 +407,7 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
                                   <option data-countryCode="VG" value="84">Virgin Islands - British (+1284)</option>
                                   <option data-countryCode="VI" value="84">Virgin Islands - US (+1340)</option>
                                   <option data-countryCode="WF" value="681">Wallis &amp; Futuna (+681)</option>
+                                  <option data-countryCode="WF" value="212">Western Sahara (+212)</option>
                                   <option data-countryCode="YE" value="969">Yemen (North)(+969)</option>
                                   <option data-countryCode="YE" value="967">Yemen (South)(+967)</option>
                                   <option data-countryCode="ZM" value="260">Zambia (+260)</option>
