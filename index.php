@@ -97,6 +97,7 @@ $uploads = new Upload($connect);
       text-align: left !important;
       border: 1px solid #aaa !important;
       font-size: 1rem !important;
+      font-family: 'Ubuntu' !important;
       padding: .8rem 1rem !important;
       box-sizing: border-box !important;
     }
