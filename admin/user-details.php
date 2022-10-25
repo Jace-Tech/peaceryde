@@ -120,7 +120,7 @@ $USERS_ADMIN = fetchUsersSubAdmins($connect, $_GET['user']);
                     <div class="px-2 py-2 border-b flex">
                         <p class="text-gray-600 text-sm font-bold mr-2">Date of Birth: </p>
                         <p class="text-gray-600 flex-1 text-sm">
-                            <?= strtoupper($USER['date_of_birth']) !== "NULL" ? date("d, M Y", strtotime($USER['date_of_birth'])) : "<i>NILL</i>"; ?>
+                            <?= $USER['date_of_birth'] ?? strtoupper($USER['date_of_birth']) !== "NULL" ? date("d, M Y", strtotime($USER['date_of_birth'])) : "<i>NILL</i>"; ?>
                         </p>
                     </div>
 
