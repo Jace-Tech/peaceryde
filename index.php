@@ -80,7 +80,7 @@ $uploads = new Upload($connect);
       letter-spacing: 0.0015em;
       color: #000080;
       text-align: left;
-      word-break:break-all;
+      word-break: break-all;
     }
   </style>
 </head>
@@ -121,95 +121,95 @@ $uploads = new Upload($connect);
     </section>
     <comment content="======= End section1 =======" break="true"></comment><!-- ======= section2 ======= -->
     <section class="new-section2__section2 layout">
-    
-        <div class="new-section2__flex layout row">
 
-          <div class="new-section2__flex-item col-md-4 col-sm-4 col-lg-4">
-            <div class="new-section2__block12 layout">
-              <div class="new-section2__flex6 layout">
-                <h5 class="new-section2__highlights6 layout">
-                  Nigeria Business Visa On Arrival
-                </h5>
-                <div style=" border-top: 1px solid #000080; height: 1px; margin-top: 10px; margin-bottom: 25px;"></div>
-                <!-- <hr style="border: 1px solid #060a5c; "> -->
-                <div style="display: flex;
+      <div class="new-section2__flex layout row">
+
+        <div class="new-section2__flex-item col-md-4 col-sm-4 col-lg-4">
+          <div class="new-section2__block12 layout">
+            <div class="new-section2__flex6 layout">
+              <h5 class="new-section2__highlights6 layout">
+                Nigeria Business Visa On Arrival
+              </h5>
+              <div style=" border-top: 1px solid #000080; height: 1px; margin-top: 10px; margin-bottom: 25px;"></div>
+              <!-- <hr style="border: 1px solid #060a5c; "> -->
+              <div style="display: flex;
                 justify-content: center;">
-                  <img src="assets/Passport.png" width="139">
-                </div>
+                <img src="assets/Passport.png" width="139">
+              </div>
 
-                <div class="new-section2__paragraph-body1-box layout">
-                  <pre class="new-section2__paragraph-body1">Business VOA is required for persons of legal age intending to travel to Nigeria for business, meeting, conference etc. The Business VOA immigration approval is needed for visa issuance in Nigeria.</pre>
-                </div>
-                <div class="new-section2__block13a layout">
-                  <a href="./NBVForm" class="btn" style="font-family: Ubuntu;
+              <div class="new-section2__paragraph-body1-box layout">
+                <pre class="new-section2__paragraph-body1">Business VOA is required for persons of legal age intending to travel to Nigeria for business, meeting, conference etc. The Business VOA immigration approval is needed for visa issuance in Nigeria.</pre>
+              </div>
+              <div class="new-section2__block13a layout">
+                <a href="./NBVForm" class="btn" style="font-family: Ubuntu;
                   font-style: normal;
                   font-weight: normal;
                   font-size: 14px;
                   line-height: 16px;
                   color: #FBFCFB;">Apply</a>
-                </div>
               </div>
-            </div>
-          </div>
-
-          <div class="new-section2__flex-item col-md-4 col-sm-4 col-lg-4">
-            <div class="new-section2__block12 layout">
-              <div class="new-section2__flex6 layout">
-                <h5 class="new-section2__highlights6 layout">
-                  Nigeria Temporary Work Permit (TWP)
-                </h5>
-                <div style=" border-top: 1px solid #060a5c; height: 1px; margin-top: 10px; margin-bottom: 25px;"></div>
-                <!-- <hr style="border: 1px solid #060a5c; "> -->
-                <div style="display: flex;
-                justify-content: center;">
-                  <img src="assets/twp.png" width="139">
-                </div>
-
-                <div class="new-section2__paragraph-body1-box layout">
-                  <pre class="new-section2__paragraph-body1">TWP is required for persons of legal age intending to work in Nigeria. The TWP immigration approval is a prerequisite for issuance of a TWP visa in a Nigerian embassy abroad.</pre>
-                </div>
-                <div class="new-section2__block13 layout">
-                  <a href="./NTWPForm" class="btn" style="font-family: Ubuntu;
-                  font-style: normal;
-                  font-weight: normal;
-                  font-size: 14px;
-                  line-height: 16px;
-                  color: #FBFCFB;">Apply</a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="new-section2__flex-item col-md-4 col-sm-4 col-lg-4">
-            <div class="new-section2__block12 layout">
-              <div class="new-section2__flex6 layout">
-                <h5 class="new-section2__highlights6 layout">
-                  Nigeria Business Incorporation
-                </h5>
-                <div style=" border-top: 1px solid #060a5c; height: 1px; margin-top: 10px; margin-bottom: 25px;"></div>
-                <!-- <hr style="border: 1px solid #060a5c; "> -->
-                <div style="display: flex;
-                justify-content: center;">
-                  <img src="assets/nbi.png" width="139" height="112">
-                </div>
-
-                <div class="new-section2__paragraph-body1-box layout">
-                  <pre class="new-section2__paragraph-body1">This is applicable to anyone of legal age intending to register a business in Nigeria.</pre>
-                </div>
-                <div class="new-section2__block13b layout">
-                  <a href="./BIForm" class="btn" style="font-family: Ubuntu;
-                  font-style: normal;
-                  font-weight: normal;
-                  font-size: 14px;
-                  line-height: 16px;
-                  color: #FBFCFB;">Apply</a>
-                </div>
-              </div>
-
             </div>
           </div>
         </div>
-      
+
+        <div class="new-section2__flex-item col-md-4 col-sm-4 col-lg-4">
+          <div class="new-section2__block12 layout">
+            <div class="new-section2__flex6 layout">
+              <h5 class="new-section2__highlights6 layout">
+                Nigeria Temporary Work Permit (TWP)
+              </h5>
+              <div style=" border-top: 1px solid #060a5c; height: 1px; margin-top: 10px; margin-bottom: 25px;"></div>
+              <!-- <hr style="border: 1px solid #060a5c; "> -->
+              <div style="display: flex;
+                justify-content: center;">
+                <img src="assets/twp.png" width="139">
+              </div>
+
+              <div class="new-section2__paragraph-body1-box layout">
+                <pre class="new-section2__paragraph-body1">TWP is required for persons of legal age intending to work in Nigeria. The TWP immigration approval is a prerequisite for issuance of a TWP visa in a Nigerian embassy abroad.</pre>
+              </div>
+              <div class="new-section2__block13 layout">
+                <a href="./NTWPForm" class="btn" style="font-family: Ubuntu;
+                  font-style: normal;
+                  font-weight: normal;
+                  font-size: 14px;
+                  line-height: 16px;
+                  color: #FBFCFB;">Apply</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="new-section2__flex-item col-md-4 col-sm-4 col-lg-4">
+          <div class="new-section2__block12 layout">
+            <div class="new-section2__flex6 layout">
+              <h5 class="new-section2__highlights6 layout">
+                Nigeria Business Incorporation
+              </h5>
+              <div style=" border-top: 1px solid #060a5c; height: 1px; margin-top: 10px; margin-bottom: 25px;"></div>
+              <!-- <hr style="border: 1px solid #060a5c; "> -->
+              <div style="display: flex;
+                justify-content: center;">
+                <img src="assets/nbi.png" width="139" height="112">
+              </div>
+
+              <div class="new-section2__paragraph-body1-box layout">
+                <pre class="new-section2__paragraph-body1">This is applicable to anyone of legal age intending to register a business in Nigeria.</pre>
+              </div>
+              <div class="new-section2__block13b layout">
+                <a href="./BIForm" class="btn" style="font-family: Ubuntu;
+                  font-style: normal;
+                  font-weight: normal;
+                  font-size: 14px;
+                  line-height: 16px;
+                  color: #FBFCFB;">Apply</a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
 
     </section>
     <comment content="======= End section2 =======" break="true"></comment><!-- ======= section3 ======= -->
@@ -326,80 +326,80 @@ $uploads = new Upload($connect);
       <h1 class="new-section5__hero-title1 layout hands">
         You are in the right hands
       </h1>
-      
-        <div class="new-section5__flex3 layout flexd">
 
-          <div class="get">
-            <div class="new-section5__flex3-item">
-              <div class="new-section5__content-box1 layout cardwidth">
-                <!-- <img src="assets/800.png" width="84" class="cardimg"> -->
-                <svg width="89" height="89" class="cardimg" viewBox="0 0 89 89" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M89 44.5C89 69.0767 69.0767 89 44.5 89C19.9233 89 0 69.0767 0 44.5C0 19.9233 19.9233 0 44.5 0C69.0767 0 89 19.9233 89 44.5Z" fill="#F1F5F6" />
-                  <g clip-path="url(#clip0_0_1)">
-                    <rect width="41.86" height="36.6229" transform="translate(24 26)" fill="#0A0E69" />
-                    <path d="M63.2402 62.6229H26.6173C25.9088 62.6229 25.2957 62.364 24.778 61.8463C24.2603 61.3286 24.0014 60.7155 24.0014 60.007V33.8478C24.0014 33.112 24.2535 32.4921 24.7576 31.988C25.2617 31.4839 25.8816 31.2318 26.6173 31.2318H29.2332V33.8478C29.2332 35.619 29.7169 36.9337 30.6843 37.7921C31.6516 38.6504 32.9119 39.0796 34.4651 39.0796C35.991 39.0796 37.2445 38.63 38.2255 37.7308C39.2064 36.8315 39.6969 35.5372 39.6969 33.8478V31.2318H50.1606V33.8478C50.1606 35.619 50.6443 36.9337 51.6116 37.7921C52.579 38.6504 53.8393 39.0796 55.3925 39.0796C56.9457 39.0796 58.2059 38.6504 59.1733 37.7921C60.1406 36.9337 60.6243 35.619 60.6243 33.8478V31.2318H63.2402C63.976 31.2318 64.5959 31.4839 65.1 31.988C65.6041 32.4921 65.8561 33.112 65.8561 33.8478V60.007C65.8561 60.7427 65.6041 61.3626 65.1 61.8667C64.5959 62.3708 63.976 62.6229 63.2402 62.6229ZM39.6969 55.0204V52.8541C41.4409 51.8458 42.3129 49.5569 42.3129 45.9873C42.3129 44.5703 41.8224 43.5008 40.8414 42.7787C39.8604 42.0566 38.607 41.6955 37.081 41.6955C35.5551 41.6955 34.3016 42.0566 33.3206 42.7787C32.3397 43.5008 31.8492 44.5703 31.8492 45.9873C31.8492 49.3934 32.7211 51.6551 34.4651 52.7723V55.0204C32.9391 55.3201 31.6925 55.8242 30.7251 56.5327C29.7578 57.2412 29.2605 58.0314 29.2332 58.9034C29.2332 59.6391 31.8492 60.007 37.081 60.007C42.3129 60.007 44.9288 59.6391 44.9288 58.9034C44.9015 58.0314 44.4042 57.2412 43.4369 56.5327C42.4695 55.8242 41.2229 55.3201 39.6969 55.0204ZM61.9323 44.3114H51.4686C51.1143 44.3114 50.8078 44.4409 50.5489 44.6997C50.2901 44.9586 50.1606 45.2652 50.1606 45.6194C50.1606 45.9736 50.2901 46.2802 50.5489 46.5391C50.8078 46.7979 51.1143 46.9274 51.4686 46.9274H61.9323C62.2865 46.9274 62.5931 46.7979 62.8519 46.5391C63.1108 46.2802 63.2402 45.9736 63.2402 45.6194C63.2402 45.2652 63.1108 44.9586 62.8519 44.6997C62.5931 44.4409 62.2865 44.3114 61.9323 44.3114ZM50.1606 50.8513C50.1606 51.2055 50.2901 51.512 50.5489 51.7709C50.8078 52.0298 51.1143 52.1592 51.4686 52.1592H56.7004C57.0547 52.1592 57.3612 52.0298 57.6201 51.7709C57.8789 51.512 58.0084 51.2055 58.0084 50.8513C58.0084 50.497 57.8789 50.1905 57.6201 49.9316C57.3612 49.6727 57.0547 49.5433 56.7004 49.5433H51.4686C51.1143 49.5433 50.8078 49.6727 50.5489 49.9316C50.2901 50.1905 50.1606 50.497 50.1606 50.8513ZM61.9323 54.7751H51.4686C51.1143 54.7751 50.8078 54.9046 50.5489 55.1634C50.2901 55.4223 50.1606 55.7289 50.1606 56.0831C50.1606 56.4373 50.2901 56.7439 50.5489 57.0028C50.8078 57.2616 51.1143 57.3911 51.4686 57.3911H61.9323C62.2865 57.3911 62.5931 57.2616 62.8519 57.0028C63.1108 56.7439 63.2402 56.4373 63.2402 56.0831C63.2402 55.7289 63.1108 55.4223 62.8519 55.1634C62.5931 54.9046 62.2865 54.7751 61.9323 54.7751ZM55.3925 36.4637C54.684 36.4637 54.0709 36.2048 53.5531 35.6871C53.0354 35.1693 52.7765 34.5562 52.7765 33.8478V28.6159C52.7765 27.8802 53.0286 27.2603 53.5327 26.7562C54.0368 26.2521 54.6567 26 55.3925 26C56.1282 26 56.7481 26.2521 57.2522 26.7562C57.7563 27.2603 58.0084 27.8802 58.0084 28.6159V33.8478C58.0084 34.5835 57.7563 35.2034 57.2522 35.7075C56.7481 36.2116 56.1282 36.4637 55.3925 36.4637ZM34.4651 36.4637C33.7566 36.4637 33.1435 36.2048 32.6258 35.6871C32.108 35.1693 31.8492 34.5562 31.8492 33.8478V28.6159C31.8492 27.8802 32.1012 27.2603 32.6053 26.7562C33.1094 26.2521 33.7294 26 34.4651 26C35.2008 26 35.8207 26.2521 36.3248 26.7562C36.829 27.2603 37.081 27.8802 37.081 28.6159V33.8478C37.081 34.5835 36.829 35.2034 36.3248 35.7075C35.8207 36.2116 35.2008 36.4637 34.4651 36.4637Z" fill="#F1F5F6" />
-                  </g>
-                  <defs>
-                    <clipPath id="clip0_0_1">
-                      <rect width="41.86" height="36.6229" fill="white" transform="translate(24 26)" />
-                    </clipPath>
-                  </defs>
-                </svg>
+      <div class="new-section5__flex3 layout flexd">
 
-                <h1 class="new-section5__hero-title4 layout cardh1" data-max="800">+</h1>
-                <h5 class="new-section5__highlights1 layout cardh5">
-                  We have processed over 800 Nigeria Business Visas
-                </h5>
-              </div>
-            </div>
-          </div>
+        <div class="get">
+          <div class="new-section5__flex3-item">
+            <div class="new-section5__content-box1 layout cardwidth">
+              <!-- <img src="assets/800.png" width="84" class="cardimg"> -->
+              <svg width="89" height="89" class="cardimg" viewBox="0 0 89 89" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M89 44.5C89 69.0767 69.0767 89 44.5 89C19.9233 89 0 69.0767 0 44.5C0 19.9233 19.9233 0 44.5 0C69.0767 0 89 19.9233 89 44.5Z" fill="#F1F5F6" />
+                <g clip-path="url(#clip0_0_1)">
+                  <rect width="41.86" height="36.6229" transform="translate(24 26)" fill="#0A0E69" />
+                  <path d="M63.2402 62.6229H26.6173C25.9088 62.6229 25.2957 62.364 24.778 61.8463C24.2603 61.3286 24.0014 60.7155 24.0014 60.007V33.8478C24.0014 33.112 24.2535 32.4921 24.7576 31.988C25.2617 31.4839 25.8816 31.2318 26.6173 31.2318H29.2332V33.8478C29.2332 35.619 29.7169 36.9337 30.6843 37.7921C31.6516 38.6504 32.9119 39.0796 34.4651 39.0796C35.991 39.0796 37.2445 38.63 38.2255 37.7308C39.2064 36.8315 39.6969 35.5372 39.6969 33.8478V31.2318H50.1606V33.8478C50.1606 35.619 50.6443 36.9337 51.6116 37.7921C52.579 38.6504 53.8393 39.0796 55.3925 39.0796C56.9457 39.0796 58.2059 38.6504 59.1733 37.7921C60.1406 36.9337 60.6243 35.619 60.6243 33.8478V31.2318H63.2402C63.976 31.2318 64.5959 31.4839 65.1 31.988C65.6041 32.4921 65.8561 33.112 65.8561 33.8478V60.007C65.8561 60.7427 65.6041 61.3626 65.1 61.8667C64.5959 62.3708 63.976 62.6229 63.2402 62.6229ZM39.6969 55.0204V52.8541C41.4409 51.8458 42.3129 49.5569 42.3129 45.9873C42.3129 44.5703 41.8224 43.5008 40.8414 42.7787C39.8604 42.0566 38.607 41.6955 37.081 41.6955C35.5551 41.6955 34.3016 42.0566 33.3206 42.7787C32.3397 43.5008 31.8492 44.5703 31.8492 45.9873C31.8492 49.3934 32.7211 51.6551 34.4651 52.7723V55.0204C32.9391 55.3201 31.6925 55.8242 30.7251 56.5327C29.7578 57.2412 29.2605 58.0314 29.2332 58.9034C29.2332 59.6391 31.8492 60.007 37.081 60.007C42.3129 60.007 44.9288 59.6391 44.9288 58.9034C44.9015 58.0314 44.4042 57.2412 43.4369 56.5327C42.4695 55.8242 41.2229 55.3201 39.6969 55.0204ZM61.9323 44.3114H51.4686C51.1143 44.3114 50.8078 44.4409 50.5489 44.6997C50.2901 44.9586 50.1606 45.2652 50.1606 45.6194C50.1606 45.9736 50.2901 46.2802 50.5489 46.5391C50.8078 46.7979 51.1143 46.9274 51.4686 46.9274H61.9323C62.2865 46.9274 62.5931 46.7979 62.8519 46.5391C63.1108 46.2802 63.2402 45.9736 63.2402 45.6194C63.2402 45.2652 63.1108 44.9586 62.8519 44.6997C62.5931 44.4409 62.2865 44.3114 61.9323 44.3114ZM50.1606 50.8513C50.1606 51.2055 50.2901 51.512 50.5489 51.7709C50.8078 52.0298 51.1143 52.1592 51.4686 52.1592H56.7004C57.0547 52.1592 57.3612 52.0298 57.6201 51.7709C57.8789 51.512 58.0084 51.2055 58.0084 50.8513C58.0084 50.497 57.8789 50.1905 57.6201 49.9316C57.3612 49.6727 57.0547 49.5433 56.7004 49.5433H51.4686C51.1143 49.5433 50.8078 49.6727 50.5489 49.9316C50.2901 50.1905 50.1606 50.497 50.1606 50.8513ZM61.9323 54.7751H51.4686C51.1143 54.7751 50.8078 54.9046 50.5489 55.1634C50.2901 55.4223 50.1606 55.7289 50.1606 56.0831C50.1606 56.4373 50.2901 56.7439 50.5489 57.0028C50.8078 57.2616 51.1143 57.3911 51.4686 57.3911H61.9323C62.2865 57.3911 62.5931 57.2616 62.8519 57.0028C63.1108 56.7439 63.2402 56.4373 63.2402 56.0831C63.2402 55.7289 63.1108 55.4223 62.8519 55.1634C62.5931 54.9046 62.2865 54.7751 61.9323 54.7751ZM55.3925 36.4637C54.684 36.4637 54.0709 36.2048 53.5531 35.6871C53.0354 35.1693 52.7765 34.5562 52.7765 33.8478V28.6159C52.7765 27.8802 53.0286 27.2603 53.5327 26.7562C54.0368 26.2521 54.6567 26 55.3925 26C56.1282 26 56.7481 26.2521 57.2522 26.7562C57.7563 27.2603 58.0084 27.8802 58.0084 28.6159V33.8478C58.0084 34.5835 57.7563 35.2034 57.2522 35.7075C56.7481 36.2116 56.1282 36.4637 55.3925 36.4637ZM34.4651 36.4637C33.7566 36.4637 33.1435 36.2048 32.6258 35.6871C32.108 35.1693 31.8492 34.5562 31.8492 33.8478V28.6159C31.8492 27.8802 32.1012 27.2603 32.6053 26.7562C33.1094 26.2521 33.7294 26 34.4651 26C35.2008 26 35.8207 26.2521 36.3248 26.7562C36.829 27.2603 37.081 27.8802 37.081 28.6159V33.8478C37.081 34.5835 36.829 35.2034 36.3248 35.7075C35.8207 36.2116 35.2008 36.4637 34.4651 36.4637Z" fill="#F1F5F6" />
+                </g>
+                <defs>
+                  <clipPath id="clip0_0_1">
+                    <rect width="41.86" height="36.6229" fill="white" transform="translate(24 26)" />
+                  </clipPath>
+                </defs>
+              </svg>
 
-          <div class="get">
-            <div class="new-section5__flex3-item">
-              <div class="new-section5__content-box1 layout cardwidth">
-                <!-- <img src="assets/1000.png" width="84" class="cardimg"> -->
-                <svg width="89" height="89" class="cardimg" viewBox="0 0 89 89" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M89 44.5C89 69.0767 69.0767 89 44.5 89C19.9233 89 0 69.0767 0 44.5C0 19.9233 19.9233 0 44.5 0C69.0767 0 89 19.9233 89 44.5Z" fill="#F1F5F6" />
-                  <g clip-path="url(#clip0_0_1)">
-                    <path d="M43.3137 27.9243C42.6335 27.9243 41.9271 28.1598 41.43 28.6569C40.9329 29.154 40.6974 29.8603 40.6974 30.5406V31.8487H28.9243V58.0112H43.5753C43.4053 57.174 43.3137 56.2975 43.3137 55.3949H31.5406V46.8136C32.3124 47.2584 33.2019 47.5462 34.1568 47.5462H45.943C46.6756 46.552 47.5651 45.6625 48.5593 44.9299H34.1568C32.6001 44.9299 31.5406 43.8704 31.5406 42.3137V34.4649H60.3193V42.3137C60.3193 42.523 60.3062 42.7192 60.267 42.9023C61.2088 43.1901 62.0984 43.5826 62.9356 44.0666V31.8487H51.1624V30.5406C51.1624 29.8603 50.927 29.154 50.4299 28.6569C49.9328 28.1598 49.2264 27.9243 48.5462 27.9243H43.3137ZM43.3137 30.5406H48.5462V31.8487H43.3137V30.5406ZM36.7731 39.6974V43.6218H39.3893V39.6974H36.7731ZM52.4706 39.6974V42.9154C53.3224 42.6492 54.1989 42.4695 55.0868 42.3791V39.6974H52.4706ZM56.3949 44.9299C50.6261 44.9299 45.9299 49.6261 45.9299 55.3949C45.9299 61.1638 50.6261 65.8599 56.3949 65.8599C62.1638 65.8599 66.8599 61.1638 66.8599 55.3949C66.8599 49.6261 62.1638 44.9299 56.3949 44.9299ZM56.3949 47.5462C60.7379 47.5462 64.2437 51.052 64.2437 55.3949C64.2437 59.7379 60.7379 63.2437 56.3949 63.2437C52.052 63.2437 48.5462 59.7379 48.5462 55.3949C48.5462 51.052 52.052 47.5462 56.3949 47.5462ZM55.0868 48.8543V56.7031H61.6274V54.0868H57.7031V48.8543H55.0868Z" fill="#0A0E69" />
-                  </g>
-                  <defs>
-                    <clipPath id="clip0_0_1">
-                      <rect width="41.86" height="41.86" fill="white" transform="translate(25 24)" />
-                    </clipPath>
-                  </defs>
-                </svg>
-
-                <h1 class="new-section5__hero-title4 layoutb cardh1" data-max="1000">+</h1>
-                <h5 class="new-section5__highlights1 layout cardh5">
-                  We have processed over 1000 Temporary Work Permits
-                </h5>
-              </div>
-            </div>
-          </div>
-
-          <div class="get">
-            <div class="new-section5__flex3-item">
-              <div class="new-section5__content-box1 layout cardwidth">
-                <!-- <img src="assets/200.png" width="84" class="cardimg"> -->
-                <svg width="90" height="89" class="cardimg" viewBox="0 0 90 89" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M89.4344 44.5C89.4344 69.0767 69.4138 89 44.7172 89C20.0206 89 0 69.0767 0 44.5C0 19.9233 20.0206 0 44.7172 0C69.4138 0 89.4344 19.9233 89.4344 44.5Z" fill="#F1F5F6" />
-                  <path d="M52.6508 50.1626H56.1392V53.6509H52.6508V50.1626ZM52.6508 43.1859H56.1392V46.6742H52.6508V43.1859ZM52.6508 36.2092H56.1392V39.6976H52.6508V36.2092ZM46.9648 36.2092L49.1625 37.6743V36.2092H46.9648Z" fill="#0A0E69" />
-                  <path d="M40.4417 29.2324V31.8661L43.93 34.1859V32.7208H59.6275V57.1391H52.6508V60.6274H63.1158V29.2324H40.4417Z" fill="#0A0E69" />
-                  <path d="M37.2498 33.9417L49.1625 41.8776V60.6274H24.7441V42.2788L37.2498 33.9417ZM40.4416 57.1391H45.6741V43.4648L37.2498 38.1102L28.2325 43.8485V57.1391H33.465V46.6741H40.4416V57.1391Z" fill="#0A0E69" />
-                  <path opacity="0.3" d="M40.4417 57.1392H45.6742V43.4649L37.2499 38.1104L28.2325 43.8487V57.1392H33.465V46.6742H40.4417V57.1392Z" fill="#0A0E69" />
-                </svg>
-
-
-                <h1 class="new-section5__hero-title4 layout cardh1" data-max="200">+</h1>
-                <h5 class="new-section5__highlights1 layout cardh5">
-                  We have incorporated over 200 Nigeria Businesses
-                </h5>
-              </div>
+              <h1 class="new-section5__hero-title4 layout cardh1" data-max="800">+</h1>
+              <h5 class="new-section5__highlights1 layout cardh5">
+                We have processed over 800 Nigeria Business Visas
+              </h5>
             </div>
           </div>
         </div>
-     
+
+        <div class="get">
+          <div class="new-section5__flex3-item">
+            <div class="new-section5__content-box1 layout cardwidth">
+              <!-- <img src="assets/1000.png" width="84" class="cardimg"> -->
+              <svg width="89" height="89" class="cardimg" viewBox="0 0 89 89" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M89 44.5C89 69.0767 69.0767 89 44.5 89C19.9233 89 0 69.0767 0 44.5C0 19.9233 19.9233 0 44.5 0C69.0767 0 89 19.9233 89 44.5Z" fill="#F1F5F6" />
+                <g clip-path="url(#clip0_0_1)">
+                  <path d="M43.3137 27.9243C42.6335 27.9243 41.9271 28.1598 41.43 28.6569C40.9329 29.154 40.6974 29.8603 40.6974 30.5406V31.8487H28.9243V58.0112H43.5753C43.4053 57.174 43.3137 56.2975 43.3137 55.3949H31.5406V46.8136C32.3124 47.2584 33.2019 47.5462 34.1568 47.5462H45.943C46.6756 46.552 47.5651 45.6625 48.5593 44.9299H34.1568C32.6001 44.9299 31.5406 43.8704 31.5406 42.3137V34.4649H60.3193V42.3137C60.3193 42.523 60.3062 42.7192 60.267 42.9023C61.2088 43.1901 62.0984 43.5826 62.9356 44.0666V31.8487H51.1624V30.5406C51.1624 29.8603 50.927 29.154 50.4299 28.6569C49.9328 28.1598 49.2264 27.9243 48.5462 27.9243H43.3137ZM43.3137 30.5406H48.5462V31.8487H43.3137V30.5406ZM36.7731 39.6974V43.6218H39.3893V39.6974H36.7731ZM52.4706 39.6974V42.9154C53.3224 42.6492 54.1989 42.4695 55.0868 42.3791V39.6974H52.4706ZM56.3949 44.9299C50.6261 44.9299 45.9299 49.6261 45.9299 55.3949C45.9299 61.1638 50.6261 65.8599 56.3949 65.8599C62.1638 65.8599 66.8599 61.1638 66.8599 55.3949C66.8599 49.6261 62.1638 44.9299 56.3949 44.9299ZM56.3949 47.5462C60.7379 47.5462 64.2437 51.052 64.2437 55.3949C64.2437 59.7379 60.7379 63.2437 56.3949 63.2437C52.052 63.2437 48.5462 59.7379 48.5462 55.3949C48.5462 51.052 52.052 47.5462 56.3949 47.5462ZM55.0868 48.8543V56.7031H61.6274V54.0868H57.7031V48.8543H55.0868Z" fill="#0A0E69" />
+                </g>
+                <defs>
+                  <clipPath id="clip0_0_1">
+                    <rect width="41.86" height="41.86" fill="white" transform="translate(25 24)" />
+                  </clipPath>
+                </defs>
+              </svg>
+
+              <h1 class="new-section5__hero-title4 layoutb cardh1" data-max="1000">+</h1>
+              <h5 class="new-section5__highlights1 layout cardh5">
+                We have processed over 1000 Temporary Work Permits
+              </h5>
+            </div>
+          </div>
+        </div>
+
+        <div class="get">
+          <div class="new-section5__flex3-item">
+            <div class="new-section5__content-box1 layout cardwidth">
+              <!-- <img src="assets/200.png" width="84" class="cardimg"> -->
+              <svg width="90" height="89" class="cardimg" viewBox="0 0 90 89" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M89.4344 44.5C89.4344 69.0767 69.4138 89 44.7172 89C20.0206 89 0 69.0767 0 44.5C0 19.9233 20.0206 0 44.7172 0C69.4138 0 89.4344 19.9233 89.4344 44.5Z" fill="#F1F5F6" />
+                <path d="M52.6508 50.1626H56.1392V53.6509H52.6508V50.1626ZM52.6508 43.1859H56.1392V46.6742H52.6508V43.1859ZM52.6508 36.2092H56.1392V39.6976H52.6508V36.2092ZM46.9648 36.2092L49.1625 37.6743V36.2092H46.9648Z" fill="#0A0E69" />
+                <path d="M40.4417 29.2324V31.8661L43.93 34.1859V32.7208H59.6275V57.1391H52.6508V60.6274H63.1158V29.2324H40.4417Z" fill="#0A0E69" />
+                <path d="M37.2498 33.9417L49.1625 41.8776V60.6274H24.7441V42.2788L37.2498 33.9417ZM40.4416 57.1391H45.6741V43.4648L37.2498 38.1102L28.2325 43.8485V57.1391H33.465V46.6741H40.4416V57.1391Z" fill="#0A0E69" />
+                <path opacity="0.3" d="M40.4417 57.1392H45.6742V43.4649L37.2499 38.1104L28.2325 43.8487V57.1392H33.465V46.6742H40.4417V57.1392Z" fill="#0A0E69" />
+              </svg>
+
+
+              <h1 class="new-section5__hero-title4 layout cardh1" data-max="200">+</h1>
+              <h5 class="new-section5__highlights1 layout cardh5">
+                We have incorporated over 200 Nigeria Businesses
+              </h5>
+            </div>
+          </div>
+        </div>
+      </div>
+
 
     </section>
     <comment content="======= End section5 =======" break="true"></comment><!-- ======= section6 ======= -->
@@ -407,17 +407,17 @@ $uploads = new Upload($connect);
       <section class="new-section6__section6 layout">
         <div class="new-section6__flex4 layout">
           <h1 class="new-section6__hero-title1 layout customers">
-          What customers say about us
+            What customers say about us
           </h1>
           <div class="row reviews mt-99">
-           
+
             <div class="col-md-2 hide"></div>
             <?php  ?>
             <?php foreach ($reviews->getAllFeaturedReviews("text") as $review) : ?>
               <div class="col-md-2 mag chee">
                 <div class="review-card">
                   <?php if (isset(getProfilePic($connect, $review["user_id"])["file"])) : ?>
-                    <img src="./Dashboard/pic/<?= getProfilePic($connect, $review["user_id"])["file"]; ?>"  class="rounded-circle" style="width: 75px; height: 75px; object-fit: cover; margin-bottom: 13px;">
+                    <img src="./Dashboard/pic/<?= getProfilePic($connect, $review["user_id"])["file"]; ?>" class="rounded-circle" style="width: 75px; height: 75px; object-fit: cover; margin-bottom: 13px;">
                   <?php else : ?>
                     <h2 class="avater">
                       <?= getSubName(getUser($connect, $review["user_id"])['firstname'] . " " . getUser($connect, $review["user_id"])["lastname"]); ?>
@@ -445,7 +445,7 @@ $uploads = new Upload($connect);
                 </div>
                 <div class="new-section6__paragraph-body-box layout">
                   <p class="new-section6__paragraph-body review-text">
-                      <?= strlen($review['review']) > 300 ? substr(trim($review['review']), 0, 300) . "..." : substr(trim($review['review']), 0, 300);  ?>
+                    <?= strlen($review['review']) > 300 ? substr(trim($review['review']), 0, 300) . "..." : substr(trim($review['review']), 0, 300);  ?>
                   </p>
                 </div>
               </div>
@@ -453,31 +453,31 @@ $uploads = new Upload($connect);
             <?php endforeach; ?>
           </div>
           <?php if (count($reviews->getAllFeaturedReviews("video")) >= 3) : ?>
-            
-              <h1 class="laptopvideo laptopvideoh1">
-                Customer's video reviews
-              </h1>
-              <div class="row reviews mt-99 laptopvideo" >
-               
-                  <?php $i = 0; ?>
-                  <?php foreach ($reviews->getAllFeaturedReviews("video") as $videoReview) : ?>
 
-                    <?php if ($i == 0) :  ?>
-                      <div class="col-md-2 hide"></div>
-                    <?php else : ?>
-                      <div class="col-md-1"></div>
-                    <?php endif;  ?>
-                  
-                    <div class="col-md-2" style="margin-bottom:50px;">
-                      <video src="./reviews/<?= $videoReview['file'] ?>" loop="" controls="" class="mobilevideo" style="width: 200px;height: 200px; "></video>
-                    </div>
-                    <?php $i++; ?>
-                  <?php endforeach; ?>
-                
-              </div>
+            <h1 class="laptopvideo laptopvideoh1">
+              Customer's video reviews
+            </h1>
+            <div class="row reviews mt-99 laptopvideo">
+
+              <?php $i = 0; ?>
+              <?php foreach ($reviews->getAllFeaturedReviews("video") as $videoReview) : ?>
+
+                <?php if ($i == 0) :  ?>
+                  <div class="col-md-2 hide"></div>
+                <?php else : ?>
+                  <div class="col-md-1"></div>
+                <?php endif;  ?>
+
+                <div class="col-md-2" style="margin-bottom:50px;">
+                  <video src="./reviews/<?= $videoReview['file'] ?>" loop="" controls="" class="mobilevideo" style="width: 200px;height: 200px; "></video>
+                </div>
+                <?php $i++; ?>
+              <?php endforeach; ?>
+
+            </div>
         </div>
       <?php endif; ?>
-    </div>
+      </div>
       <div style="margin-top: 90px;" class="py-4 w-100 d-flex justify-items-center align-items-center">
         <a href="./review" class="btn btn-review" style="border: 1px solid #a0bd1c;  background-color: transparent; color: #a0bd1c;">See&nbsp;More&nbsp;Reviews
         </a>
@@ -535,16 +535,15 @@ $uploads = new Upload($connect);
       </div>
     </section>
     <comment content="======= End section7 =======" break="true"></comment><!-- ======= section8 ======= -->
-           <?php include("./inc/footer.php"); ?><?php include("./inc/langChange.php") ?>
+    <?php include("./inc/footer.php"); ?><?php include("./inc/langChange.php") ?>
     <!-- ======= End section8 ======= -->
 
   </main>
-
   <script type="text/javascript">
     var _scq = _scq || [];
     var _scs = _scs || {};
     _scs.teamId = "4V4k1IK5JswqwiiB9B9GIt";
-  
+
     (function() {
       var dc = document.createElement('script');
       dc.type = 'text/javascript';
@@ -553,7 +552,7 @@ $uploads = new Upload($connect);
       var s = document.getElementsByTagName('script')[0];
       s.parentNode.insertBefore(dc, s);
     })();
-    </script>
+  </script>
   <script>
     function inVisible(element) {
       //Checking if the element is
