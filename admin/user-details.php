@@ -140,7 +140,7 @@ $USERS_ADMIN = fetchUsersSubAdmins($connect, $_GET['user']);
                         </div>
 
                         <div class="px-2 py-2 border-b flex">
-                            <p class="text-gray-600 text-sm font-bold mr-2">Coperate Address: </p>
+                            <p class="text-gray-600 text-sm font-bold mr-2">Corporate Address: </p>
                             <p class="text-gray-600 flex-1 text-sm">
                                 <?= $BI_DETAILS['coperate_address'] ?? "<i>NILL</i>"; ?>
                             </p>
@@ -148,6 +148,7 @@ $USERS_ADMIN = fetchUsersSubAdmins($connect, $_GET['user']);
                     <?php endif; ?>
                 <?php else : ?>
                     <form class="form" method="post" action="./handler/user_handler.php">
+                        <!-- Firstname | Lastname -->
                         <div class="grid grid-cols-12 gap-6 py-3">
                             <div class="col-span-full md:col-span-6">
                                 <label for="" class="block text-sm font-medium">Firstname</label>
@@ -160,6 +161,7 @@ $USERS_ADMIN = fetchUsersSubAdmins($connect, $_GET['user']);
                             </div>
                         </div>
 
+                        <!-- Middlename | Email -->
                         <div class="grid grid-cols-12 gap-6 py-3">
                             <div class="col-span-full md:col-span-6">
                                 <label for="" class="block text-sm font-medium">Middle name</label>
@@ -173,6 +175,32 @@ $USERS_ADMIN = fetchUsersSubAdmins($connect, $_GET['user']);
                             </div>
                         </div>
 
+                        <!-- Country | Title -->
+                        <div class="grid grid-cols-12 gap-6 py-3">
+                            <div class="col-span-full md:col-span-6">
+                                <label for="" class="block text-sm font-medium">Country</label>
+                                <select class="w-full p-2 border-gray-300" name="country" id="">
+                                    <?php foreach($country_fee as $country): ?>
+                                        <option value="<?= $country ?>" <?= strtolower($USER['country']) == strtolower($country) ? "selected" : "" ?>>
+                                            <?= strtoupper($country[0]) . strtolower(substr($country, 1)) ?>
+                                        </option>
+                                    <?php endforeach; ?>
+                                </select>
+                            </div>
+
+                            <div class="col-span-full md:col-span-6">
+                                <label for="" class="block text-sm font-medium">Title</label>
+                                <select class="w-full p-2 border-gray-300" name="title" id="">
+                                    <?php foreach($titles as $title): ?>
+                                        <option value="<?= $title ?>" <?= strtolower($USER['title']) == strtolower($title) ? "selected" : "" ?>>
+                                            <?= strtoupper($title[0]) . strtolower(substr($title, 1)) ?>
+                                        </option>
+                                    <?php endforeach; ?>
+                                </select>
+                            </div>
+                        </div>
+
+                        <!-- Phone | Passport -->
                         <div class="grid grid-cols-12 gap-6 py-3">
                             <div class="col-span-full md:col-span-6">
                                 <label for="" class="block text-sm font-medium">Phone No</label>
@@ -200,12 +228,13 @@ $USERS_ADMIN = fetchUsersSubAdmins($connect, $_GET['user']);
 
                             <div class="grid grid-cols-12 gap-6 py-3">
                                 <div class="col-span-full">
-                                    <label for="" class="block text-sm font-medium">Coperate Address</label>
+                                    <label for="" class="block text-sm font-medium">Corporate Address</label>
                                     <input class="w-full p-2 border-gray-300 form-input" type="text" name="coperate_address" value="<?= $BI_DETAILS['coperate_address'] ?? "" ?>">
                                 </div>
                             </div>
                         <?php endif; ?>
 
+                        <!-- Gender | DOB -->
                         <div class="grid grid-cols-12 gap-6 py-3">
                             <div class="col-span-full md:col-span-6">
                                 <label for="" class="block text-sm font-medium">Gender </label>

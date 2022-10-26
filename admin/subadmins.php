@@ -69,37 +69,6 @@ $active = $title = "Manage";
                                             </button>
                                         </div>
                                     </div>
-                                    <div id="services">
-                                        <div class="flex items-center">
-                                            <label class="block text-sm font-medium mb-1" for="service">Services <span class="text-red-500">*</span></label>
-                                            <div class="relative ml-4" x-data="{ open: false }" @mouseenter="open = true" @mouseleave="open = false">
-                                                <button class="block" aria-haspopup="true" :aria-expanded="open" @focus="open = true" @focusout="open = false" @click.prevent="" aria-expanded="false">
-                                                    <svg class="w-4 h-4 fill-current text-gray-400" viewBox="0 0 16 16">
-                                                        <path d="M8 0C3.6 0 0 3.6 0 8s3.6 8 8 8 8-3.6 8-8-3.6-8-8-8zm0 12c-.6 0-1-.4-1-1s.4-1 1-1 1 .4 1 1-.4 1-1 1zm1-3H7V4h2v5z"></path>
-                                                    </svg>
-                                                </button>
-                                                <div class="z-10 absolute bottom-full left-1/2 transform -translate-x-1/2">
-                                                    <div class="min-w-56 bg-gray-800 p-2 rounded overflow-hidden mb-2" x-show="open" x-transition:enter="transition ease-out duration-200 transform" x-transition:enter-start="opacity-0 translate-y-2" x-transition:enter-end="opacity-100 translate-y-0" x-transition:leave="transition ease-out duration-200" x-transition:leave-start="opacity-100" x-transition:leave-end="opacity-0" style="display: none;">
-                                                        <div class="text-xs text-gray-200">Hold Ctrl [or Command on Mac] then select the services</div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="relative flex flex-col mt-1">
-                                            <?php if (count($service->getAllServices())) : ?>
-                                                <select name="service[]" multiple id="service">
-                                                    <option value="" selected disabled>Choose services</option>
-                                                    <option value="*">All services</option>
-                                                    <?php foreach ($service->getAllServices() as $service_item) : ?>
-                                                        <option value="<?= $service_item['service_id']; ?>">
-                                                            <?= $service_item['service']; ?>
-                                                        </option>
-                                                    <?php endforeach  ?>
-                                                </select>
-                                            <?php endif; ?>
-                                        </div>
-                                    </div>
-
                                     <div>
                                         <div class="flex align-center">
                                             <label class="block text-sm font-medium mb-1" for="feedback">Countries <span class="text-red-500">*</span></label>

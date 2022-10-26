@@ -314,7 +314,7 @@ if (isset($_GET["success"])) {
     $to = $user['email'];
 
     // USERS ADMINS
-    $USERS_ADMINS = fetchUsersSubAdmins($connect, $_SESSION['REG_NO']);
+    $USERS_ADMINS = getAdminWithSameCountryAsUser($connect, $_SESSION['REG_NO']);
     $SENDERS = ["MAIN_ADMIN"];
 
     foreach ($USERS_ADMINS as $_admin) {

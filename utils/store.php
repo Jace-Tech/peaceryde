@@ -94,12 +94,6 @@ function fetchUsersSubAdmins ($connect, $user) {
         }
     }
 
-    // Users subadmin based on service
-    $subAdminWithService = getSubAdminWithSameService($connect, $user);
-    if ($subAdminWithService) {
-        array_push($USERS_ADMIN, $subAdminWithService);
-    }
-
     // Users subadmin based on assignment
     $USER_SUB_ADMIN = getUsersSubAdmin($connect, $user);
     if ($USER_SUB_ADMIN) {

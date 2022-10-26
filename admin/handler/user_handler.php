@@ -438,6 +438,8 @@ if(isset($_POST['update-user'])) {
     $firstname = $_POST['firstname'];
     $lastname = $_POST['lastname'];
     $phone = $_POST['phone'];
+    $country = $_POST['country'];
+    $title = $_POST['title'];
     $passport = $_POST['passport'];
     $gender = $_POST['gender'];
     $dob = $_POST['dob'];
@@ -450,15 +452,19 @@ if(isset($_POST['update-user'])) {
     $id = $_POST['user'];
 
     try {
-        $query = "UPDATE `users` SET `firstname` = :firstname, `lastname` = :lastname, `middle_name` = :middlename, `email` = :email, `gender` = :gender, `dob` = :dob WHERE `user_id` = :user";
+        $query = "UPDATE `users` SET `firstname` = :firstname, `title` = :title, `country` = :country, `lastname` = :lastname, `middle_name` = :middlename, `email` = :email, `gender` = :gender, `dob` = :dob, `passport` = :passport, `phone` = :phone WHERE `user_id` = :user";
         $result = $connect->prepare($query);
         $result->execute([
             "firstname" => $firstname,
+            "title" => $title,
+            "country" => $country,
             "lastname" => $lastname,
             "middlename" => $middlename,
             "email" => $email,
             "gender" => $gender,
             "dob" => $dob,
+            "passport" => $passport,
+            "phone" => $phone,
             "user" => $id
         ]);
 
