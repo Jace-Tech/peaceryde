@@ -106,7 +106,11 @@ $USERS_ADMIN = fetchUsersSubAdmins($connect, $_GET['user']);
                     <div class="px-2 py-2 border-b flex">
                         <p class="text-gray-600 text-sm font-bold mr-2">Passport: </p>
                         <p class="text-gray-600 flex-1 text-sm">
-                            <?= $USER['passport'] && !empty($USER['passport']) ?? "<i>NILL</i>"; ?>
+                            <?php if($USER['passport'] && !empty($USER['passport'])): ?>
+                                <?= $USER['passport']; ?>
+                            <?php else: ?>
+                                <?= "<i>NILL</i>" ?>
+                            <?php endif; ?>
                         </p>
                     </div>
 
@@ -180,7 +184,7 @@ $USERS_ADMIN = fetchUsersSubAdmins($connect, $_GET['user']);
                             <div class="col-span-full md:col-span-6">
                                 <label for="" class="block text-sm font-medium">Country</label>
                                 <select class="w-full p-2 border-gray-300" name="country" id="">
-                                    <?php foreach($country_fee as $country): ?>
+                                    <?php foreach($country_fee as $country => $value): ?>
                                         <option value="<?= $country ?>" <?= strtolower($USER['country']) == strtolower($country) ? "selected" : "" ?>>
                                             <?= strtoupper($country[0]) . strtolower(substr($country, 1)) ?>
                                         </option>
