@@ -48,6 +48,11 @@ if(isset($_GET["getAdmin"])) {
   $admins = getAllSubAdmins($connect);
 }
 
+if(isset($_GET["get_user_admin"])) {
+  $admins = getAdminWithSameCountryAsUser($connect,  $_GET["get_user_admin"]);
+  print_r($admins);
+}
+
 /*
   {
     "require": {
