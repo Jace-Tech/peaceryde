@@ -322,6 +322,9 @@ if (isset($_GET["success"])) {
         array_push($SENDERS, $_admin['admin_id']);
     }
 
+    print_r([$_SESSION, $SENDERS]);
+    die;
+
     if (!isset($_SESSION['LOGGED_USER'])) {
         // Generate Login Credientials
         $password = $userLogins->generatePassword();
