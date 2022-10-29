@@ -24,12 +24,12 @@ $userLogins = new UserLogin($connect);
 $payments = new Payment($connect);
 $messages = new Message($connect);
 
-// $paystackPayment = new PaystackPayment("sk_live_67639b010ff3b1cb137d79632813db9a2ce0e789");
-$paystackPayment = new PaystackPayment("sk_test_51KmPCVFc4Ym6vBghFwZmRYh70pdYEkQI86MX4avEP5dm19jV0VrdoQGNJwnYUTMdWrj0Wjh0H1rMXuY5O5nE4EE300NxGc4po4");
+$paystackPayment = new PaystackPayment("sk_live_67639b010ff3b1cb137d79632813db9a2ce0e789");
 $id = $_SESSION['REG_NO'];
 $user = $users->get_user($id);
 
-$stripe = new \Stripe\StripeClient('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');
+// $stripe = new \Stripe\StripeClient('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');
+$stripe = new \Stripe\StripeClient('sk_test_51KmPCVFc4Ym6vBghFwZmRYh70pdYEkQI86MX4avEP5dm19jV0VrdoQGNJwnYUTMdWrj0Wjh0H1rMXuY5O5nE4EE300NxGc4po4');
 
 if (isset($_POST['pay'])) {
     $POST = filter_var_array($_POST, FILTER_SANITIZE_STRING);
