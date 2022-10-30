@@ -271,7 +271,7 @@ function getAdminWithSameCountryAsUser ($connect, $userId) {
         $adminCountry = getSubAdminCountries($connect, $admin['admin_id']);
         // Loop through users
         foreach ($users as $user) {
-            $userCountry = $user['country'];
+            $userCountry = $user;
 
             echo "<br><br>";
             print_r($userCountry);
