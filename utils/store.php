@@ -264,20 +264,16 @@ function getSubAdminWithSameService ($connect, $userId) {
 
 function getAdminWithSameCountryAsUser ($connect, $userId) {
     $allSubAdmins = getAllSubAdmins($connect);
-    $users = getUser($connect, $userId);
+    $userCountry = getUser($connect, $userId)['country'];
 
+    $admins = [];
     foreach ($allSubAdmins as $admin) {
         // Get their countries
         $adminCountry = getSubAdminCountries($connect, $admin['admin_id']);
-        // Loop through users
-        foreach ($users as $user) {
-            $userCountry = $user;
-
-            echo "<br><br>";
-            print_r($userCountry);
-            echo "<br><br>";
-        }
+        if(in_array($userCountry, $adminCountry) || in_array("*", $adminCountry)) array_push($admins, $admin);
     }
+
+    return $admins;
 }
 
 function getUsersWithSameCountryAsSubAdmin ($connect, $adminId) {
