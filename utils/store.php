@@ -273,6 +273,7 @@ function getAdminWithSameCountryAsUser ($connect, $userId) {
         if(in_array($userCountry, $adminCountry) || in_array("*", $adminCountry)) array_push($admins, $admin);
     }
 
+    print_r($admins);
     return $admins;
 }
 
