@@ -269,14 +269,15 @@ function getAdminWithSameCountryAsUser ($connect, $userId) {
     foreach ($allSubAdmins as $admin) {
         // Get their countries
         $adminCountry = getSubAdminCountries($connect, $admin['admin_id']);
-        echo "<br><br>";
-        print_r($adminCountry);
-        echo "<br><br>";
+        // Loop through users
+        foreach ($users as $user) {
+            $userCountry = $user['country'];
+
+            echo "<br><br>";
+            print_r($userCountry);
+            echo "<br><br>";
+        }
     }
-    
-    print_r($users);
-    echo "<br />";
-    print_r($allSubAdmins);
 }
 
 function getUsersWithSameCountryAsSubAdmin ($connect, $adminId) {
