@@ -301,7 +301,7 @@ $PRICE = json_decode($_SESSION["PRICE"], true);
                         <p class="paymentopt">Payment Options</p>
                     </div>
                     <div class="radiodiv">
-                        <input type="radio" name="payment_option" value="stripe" class="radioo">&nbsp; Stripe <br><br>
+                        <input type="radio" name="payment_option" value="stripe" checked class="radioo">&nbsp; Stripe <br><br>
                         <!-- <input type="radio" name="payment_option" value="paystack" checked="checked" class="radioo">&nbsp; Paystack <br><br> -->
 
                         <p style="color: #C8730F; font-family: Ubuntu; font-size: 13px; font-style: normal; font-weight: 400;">We also accept payments from Payoneer and WISE.</p><br>
