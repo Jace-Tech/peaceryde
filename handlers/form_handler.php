@@ -61,7 +61,7 @@ if(isset($_POST['twp'])) {
         $_SESSION["SERVICE_ID"] = $result['id']; 
 
         // Set Notification
-        $USERS_ADMINS = getAdminWithSameCountryAsUser($connect, $_SESSION['REG_NO']);
+        $USERS_ADMINS = getAdminWithSameCountryAsUser($connect, $result['userId']); 
         $SENDERS = ["MAIN_ADMIN"];
 
         foreach ($USERS_ADMINS as $_admin) {
