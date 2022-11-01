@@ -92,8 +92,15 @@
                       Temporary Work Permit Visa on Arrival Processing</a></li>
                   <li class="new-section8__text-body5 layout fs-13"><a class="fs-13" href="SBForm" style=" text-decoration: none;">Nigeria Subject to Regularization (STR) Visa Processing</a></li>
                   <li class="new-section8__text-body5 layout fs-13"><a class="fs-13" href="SBForm" style=" text-decoration: none;">Nigeria Immigration Permission to Land (PTL) Processing</a></li>
-                    
-                      
+                    <br>
+                    <br> 
+                    <h3>AS SEEN ON</h3>
+                    <br>
+                    <br>
+                  <img src="assets/watch.jpeg" class="img-fluid" alt="" srcset="" style="width:70%; margin-left:-4px;">
+                  <br>
+                  <br>
+                  <p class="fs-13" style="padding-right:50px; padding-top:10px;">AND OVER 200 NEW SITES</p>
 
                 </ul>
               </div>
