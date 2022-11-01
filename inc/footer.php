@@ -95,12 +95,12 @@
                   <div class="lapfooter">
                 <br>
                   <br> 
-                    <h3>AS SEEN ON</h3>
+                    <h3 class="new-section8__highlights8 layout footh3">AS SEEN ON</h3>
                     <br>
-                    <br>
+                    
                   <img src="assets/watch.jpeg" class="img-fluid" alt="" srcset="" style="width:70%; margin-left:-4px;">
                   <br>
-                  <br>
+                  
                   <p class="fs-13" style="padding-right:50px; padding-top:10px;">AND OVER 200 NEW SITES</p>
                 </div>
                 </ul>
@@ -201,8 +201,8 @@
                 </div>
                 <div class="mobilefooter">
                 <br>
-                  <br> 
-                    <h3>AS SEEN ON</h3>
+                
+                    <h3 class="new-section8__highlights8 layout footh3">AS SEEN ON</h3>
                     <br>
                     <br>
                   <img src="assets/watch.jpeg" class="img-fluid" alt="" srcset="" style="width:70%; margin-left:-4px;">
