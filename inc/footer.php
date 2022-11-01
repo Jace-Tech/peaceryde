@@ -92,8 +92,9 @@
                       Temporary Work Permit Visa on Arrival Processing</a></li>
                   <li class="new-section8__text-body5 layout fs-13"><a class="fs-13" href="SBForm" style=" text-decoration: none;">Nigeria Subject to Regularization (STR) Visa Processing</a></li>
                   <li class="new-section8__text-body5 layout fs-13"><a class="fs-13" href="SBForm" style=" text-decoration: none;">Nigeria Immigration Permission to Land (PTL) Processing</a></li>
-                    <br>
-                    <br> 
+                  <div class="lapfooter">
+                <br>
+                  <br> 
                     <h3>AS SEEN ON</h3>
                     <br>
                     <br>
@@ -101,7 +102,7 @@
                   <br>
                   <br>
                   <p class="fs-13" style="padding-right:50px; padding-top:10px;">AND OVER 200 NEW SITES</p>
-
+                </div>
                 </ul>
               </div>
               <div class="col-md-3 col-sm-6 col-xs-6 div3">
@@ -198,6 +199,18 @@
                   </h3>
                   <p class="fs-13" style="padding-right:50px; padding-top:10px;">Our website uses cookies to make your browsing experience better. <br> <br> By using our site you agree to our use of cookies. <a href="../pp.php">Learn more</a> </p>
                 </div>
+                <div class="mobilefooter">
+                <br>
+                  <br> 
+                    <h3>AS SEEN ON</h3>
+                    <br>
+                    <br>
+                  <img src="assets/watch.jpeg" class="img-fluid" alt="" srcset="" style="width:70%; margin-left:-4px;">
+                  <br>
+                  <br>
+                  <p class="fs-13" style="padding-right:50px; padding-top:10px;">AND OVER 200 NEW SITES</p>
+                </div>
+                
                 <br>
                 <br>
                 <div class="row">
