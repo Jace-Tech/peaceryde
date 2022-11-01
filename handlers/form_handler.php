@@ -67,9 +67,11 @@ if(isset($_POST['twp'])) {
         foreach ($USERS_ADMINS as $_admin) {
             array_push($SENDERS, $_admin['admin_id']);
         }
+
         foreach ($SENDERS as $sender) {
             sendMail("New User", "<p>A new user <strong>$firstname</strong> was added</p>", "noreply@peacerydeafrica.com", $sender['email'], true);
         }
+
         setAdminNotification($connect, "./user-details?user=" . $result['userId'], json_encode($SENDERS), "A new user was added, click to view"); 
     }
 
@@ -128,10 +130,19 @@ if(isset($_POST['nbv'])) {
         $_SESSION['REG_NO'] = $result['userId'];
         $_SESSION["SERVICE_ID"] = $result['id']; 
 
-        $admin = getSubAdmin($connect, "MAIN_ADMIN");
-
-        setAdminNotification($connect, "./user-details.php?user=" . $result['userId'], json_encode(["MAIN_ADMIN"]), "A new user was added, click to view"); 
-        sendMail("New User", "<p>A new user <strong>$firstname</strong> was added</p>", "noreply@peacerydeafrica.com", $admin['email'], true);
+         // Set Notification
+         $USERS_ADMINS = getAdminWithSameCountryAsUser($connect, $result['userId']); 
+         $SENDERS = ["MAIN_ADMIN"];
+ 
+         foreach ($USERS_ADMINS as $_admin) {
+             array_push($SENDERS, $_admin['admin_id']);
+         }
+         
+         foreach ($SENDERS as $sender) {
+             sendMail("New User", "<p>A new user <strong>$firstname</strong> was added</p>", "noreply@peacerydeafrica.com", $sender['email'], true);
+         }
+ 
+         setAdminNotification($connect, "./user-details?user=" . $result['userId'], json_encode($SENDERS), "A new user was added, click to view"); 
     }
     
     // Get TWP Calculations
@@ -208,12 +219,19 @@ if(isset($_POST['bi'])) {
         ];
 
 
-        $admin = getSubAdmin($connect, "MAIN_ADMIN");
+        // Set Notification
+        $USERS_ADMINS = getAdminWithSameCountryAsUser($connect, $result['userId']); 
+        $SENDERS = ["MAIN_ADMIN"];
 
-        setAdminNotification($connect, "./user-details.php?user=" . $result['userId'], json_encode(["MAIN_ADMIN"]), "A new user was added, click to view"); 
-        sendMail("New User", "<p>A new user <strong>$firstname</strong> was added</p>", "noreply@peacerydeafrica.com", $admin['email'], true);
+        foreach ($USERS_ADMINS as $_admin) {
+            array_push($SENDERS, $_admin['admin_id']);
+        }
+        
+        foreach ($SENDERS as $sender) {
+            sendMail("New User", "<p>A new user <strong>$firstname</strong> was added</p>", "noreply@peacerydeafrica.com", $sender['email'], true);
+        }
 
-        $bis->addBI($bi_options);
+        setAdminNotification($connect, "./user-details?user=" . $result['userId'], json_encode($SENDERS), "A new user was added, click to view"); 
     }
 
     // Get BI Calculations
