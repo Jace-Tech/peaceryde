@@ -100,7 +100,7 @@
                     
                   <img src="assets/watch.jpeg" class="img-fluid" alt="" srcset="" style="width:90%; margin-left:-14px;">
                 
-                  <p class="new-section8__text-body5 layout fs-13" style="padding-right:50px; padding-top:0px;text-align:center;">AND OVER 200 NEWS SITES</p>
+                  <p class="new-section8__text-body5 layout fs-13" style="padding-right:50px; padding-top:0px;text-align:center; margin-top:0px">AND OVER 200 NEWS SITES</p>
                 </div>
                 </ul>
               </div>
@@ -198,6 +198,8 @@
                   </h3>
                   <p class="fs-13" style="padding-right:50px; padding-top:10px;">Our website uses cookies to make your browsing experience better. <br> <br> By using our site you agree to our use of cookies. <a href="../pp.php">Learn more</a> </p>
                 </div>
+                <br>
+                <br>
                 <div class="mobilefooter">
                              
                     <h3 class="new-section8__highlights8 layout footh3">AS SEEN ON</h3>
@@ -206,7 +208,7 @@
                   <p class="fs-13" style="padding-right:50px; padding-top:0px;text-align:center;">AND OVER 200 NEWS SITES</p>
                 </div>                
                 <br>
-                
+                <br>
                 <div class="row">
                   <h3 class="new-section8__highlights8 layout footh3" style="text-transform:uppercase">
                   We accept card payments
