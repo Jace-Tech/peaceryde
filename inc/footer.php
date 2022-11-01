@@ -98,10 +98,10 @@
                     <h3 class="new-section8__highlights8 layout footh3">AS SEEN ON</h3>
                     
                     
-                  <img src="assets/watch.jpeg" class="img-fluid" alt="" srcset="" style="width:70%; margin-left:-4px;">
+                  <img src="assets/watch.jpeg" class="img-fluid" alt="" srcset="" style="width:90%; margin-left:-14px;">
                   <br>
                   
-                  <p class="fs-13" style="padding-right:50px; padding-top:10px;">AND OVER 200 NEW SITES</p>
+                  <p class="fs-13" style="padding-right:50px; padding-top:10px;">And over 200 new sites</p>
                 </div>
                 </ul>
               </div>
@@ -203,10 +203,10 @@
                 <br>                
                     <h3 class="new-section8__highlights8 layout footh3">AS SEEN ON</h3>
                    
-                  <img src="assets/watch.jpeg" class="img-fluid" alt="" srcset="" style="width:70%; margin-left:-4px;">
+                  <img src="assets/watch.jpeg" class="img-fluid" alt="" srcset="" style="width:70%; margin-left:-14px;">
                   <br>
                   
-                  <p class="fs-13" style="padding-right:50px; padding-top:10px;">AND OVER 200 NEW SITES</p>
+                  <p class="fs-13" style="padding-right:50px; padding-top:10px;">And over 200 new sites</p>
                 </div>                
                 <br>
                 <br>
