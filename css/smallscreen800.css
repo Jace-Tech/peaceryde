@@ -112,7 +112,14 @@
 }
 
 @media (max-width: 900px){
-  
+  .mobilefooter
+  {
+    display: block;
+  }
+  .lapfooter
+  {
+    display: none;
+  }
   .leaderpageheight {
     height: 6900px;
 }
