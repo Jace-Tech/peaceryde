@@ -112,10 +112,10 @@
 }
 
 @media (max-width: 900px){
-  .sites
+  /* .sites
   {
     padding-right:50px; padding-top:0px;text-align:center
-  }
+  } */
   .mobilefooter
   {
     display: block;
