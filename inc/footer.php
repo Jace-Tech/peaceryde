@@ -92,9 +92,16 @@
                       Temporary Work Permit Visa on Arrival Processing</a></li>
                   <li class="new-section8__text-body5 layout fs-13"><a class="fs-13" href="SBForm" style=" text-decoration: none;">Nigeria Subject to Regularization (STR) Visa Processing</a></li>
                   <li class="new-section8__text-body5 layout fs-13"><a class="fs-13" href="SBForm" style=" text-decoration: none;">Nigeria Immigration Permission to Land (PTL) Processing</a></li>
+                  <div class="lapfooter">
+                <br>
+                  <br> 
+                    <h3 class="new-section8__highlights8 layout footh3">AS SEEN ON</h3>
                     
-                      
-
+                    
+                  <img src="assets/watch.jpeg" class="img-fluid" alt="" srcset="" style="width:90%; margin-left:-14px;">
+                
+                  <p class="new-section8__text-body5 layout fs-13" style="padding-right:50px; padding-top:0px;text-align:center; margin-top:0px">AND OVER 200 NEWS SITES</p>
+                </div>
                 </ul>
               </div>
               <div class="col-md-3 col-sm-6 col-xs-6 div3">
@@ -193,6 +200,16 @@
                 </div>
                 <br>
                 <br>
+                <div class="mobilefooter">
+                             
+                    <h3 class="new-section8__highlights8 layout footh3">AS SEEN ON</h3>
+                   
+                  <img src="assets/watch.jpeg" class="img-fluid" alt="" srcset="" style="width:70%; margin-left:-14px;">
+                  <p class="fs-13 sites">AND OVER 200 NEWS SITES</p>
+                  <br>
+                  <br>
+                </div>                
+              
                 <div class="row">
                   <h3 class="new-section8__highlights8 layout footh3" style="text-transform:uppercase">
                   We accept card payments
