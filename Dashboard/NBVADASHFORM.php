@@ -136,6 +136,8 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
         }
     </style>
 </head>
+<?php include("../google_analytics.php"); ?>
+
 
 <body>
     <div class="preloader">

@@ -45,6 +45,7 @@ $PRICE = json_decode($_SESSION["PRICE"], true);
         }
     </style>
 </head>
+<?php include("./google_analytics.php"); ?>
 
 <body style="background-color: #1161D9; overflow-x: hidden;">
     <div class="row">
