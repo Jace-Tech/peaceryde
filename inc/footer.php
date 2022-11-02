@@ -12,8 +12,7 @@
                   <li class="lg-li">                      
                       <a href="https://www.linkedin.com/company/peaceryde-africa/" target="_blank" rel="noopener noreferrer" style="text-decoration:none;"><img src="assets/ln.jpeg" alt=""> <span class="logtext">&nbsp; LinkedIn</span>  </a>
                     <!-- <a href="https://www.instagram.com/peaceryde/?igshid=YmMyMTA2M2Y%3D">    
-                    
-                     
+          
                     </a>
                     <a href="https://www.instagram.com/peaceryde/?igshid=YmMyMTA2M2Y%3D" target="_blank" rel="noopener noreferrer" style="text-decoration: none;font-size: 13px;color: #0A0E69;">&nbsp;Instagram </a> -->
                     </li>
