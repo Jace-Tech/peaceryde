@@ -1083,6 +1083,10 @@
     font-weight: 500;
   }
 
+  .sites
+  {
+    padding-left: 15%;
+  }
   .company {
     margin-top: 50px;
     padding-left: 30px;
@@ -2796,6 +2800,10 @@ width: 100%;
     font-size: 13px;
     color: #080C58;
     font-weight: 500;
+  }
+  .sites
+  {
+    padding-left: 13%;
   }
 
   .applybtndiv {
@@ -4541,6 +4549,10 @@ width: 100%;
     font-size: 14px;
     color: #080C58;
     font-weight: 500;
+  }
+  .sites
+  {
+    padding-left: 40px;
   }
 
   .company {
@@ -6326,6 +6338,10 @@ width: 100%;
     color: #080C58;
     font-weight: 400;
   }
+  .sites
+  {
+    padding-left: 35px;
+  }
 
   .company {
     margin-top: 50px;
@@ -8066,6 +8082,10 @@ width: 100%;
     color: #080C58;
     font-weight: 400;
   }
+  .sites
+  {
+    padding-left: 20px;
+  }
 
   .company {
     margin-top: 50px;
@@ -9805,6 +9825,10 @@ width: 100%;
     font-size: 14px;
     color: #080C58;
     font-weight: 400;
+  }
+  .sites
+  {
+    padding-left: 20px;
   }
 
   .company {

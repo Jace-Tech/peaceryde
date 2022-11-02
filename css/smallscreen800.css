@@ -745,6 +745,10 @@
     font-size: 13px;
     color: #0A0E69;
   }
+  .sites
+  {
+    padding-left: 0px;
+  }
 
   .lg-li {
 
@@ -2162,10 +2166,13 @@
     font-size: 12px;
     color: #0A0E69;
   }
-
+  .sites
+  {
+    padding-left: 0px;
+  }
   .lg-li {
 
-    margin-left: 10px;
+    margin-left: 0px;
     margin-top: 21px;
   }
 
@@ -3588,10 +3595,13 @@
     font-size: 12px;
     color: #0A0E69;
   }
-
+  .sites
+  {
+    padding-left: 0px;
+  }
   .lg-li {
 
-    margin-left: 10px;
+    margin-left: 0px;
     margin-top: 21px;
   }
 
@@ -4980,6 +4990,10 @@
     font-size: 12px;
     color: #0A0E69;
   }
+  .sites
+  {
+    padding-left: 0px;
+  }
 
   .mt-99 {
     margin-top: 61px;
@@ -4987,7 +5001,7 @@
 
   .lg-li {
 
-    margin-left: 10px;
+    margin-left: 0px;
     margin-top: 21px;
   }
 
@@ -6326,6 +6340,10 @@
   .fs-13 {
     font-size: 13px;
     color: #0A0E69;
+  }
+  .sites
+  {
+    padding-left: 8%;
   }
 
   .lg-li {
@@ -7712,6 +7730,10 @@
   .fs-13 {
     font-size: 11px;
     color: #0A0E69;
+  }
+  .sites
+  {
+    padding-left: 8%;
   }
 
   .lg-li {
@@ -9178,7 +9200,10 @@
     font-size: 12px;
     color: #0A0E69;
   }
-
+  .sites
+  {
+    padding-left: 5%;
+  }
   .lg-li {
     font-size: 13px;
     color: #0A0E69;
