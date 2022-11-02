@@ -9,9 +9,8 @@
                 <div class="new-section8__block20 layout">
                   <img src="assets/logo.png" width="164" class="footerlogo">
                   <ul>
-                  <li class="lg-li">
-                      
-                      <a href="#" target="_blank" rel="noopener noreferrer" style="text-decoration:none;"><img src="assets/ln.jpeg" alt=""> <span class="logtext">&nbsp; LinkedIn</span>  </a>
+                  <li class="lg-li">                      
+                      <a href="https://www.linkedin.com/company/peaceryde-africa/" target="_blank" rel="noopener noreferrer" style="text-decoration:none;"><img src="assets/ln.jpeg" alt=""> <span class="logtext">&nbsp; LinkedIn</span>  </a>
                     <!-- <a href="https://www.instagram.com/peaceryde/?igshid=YmMyMTA2M2Y%3D">    
                     
                      
