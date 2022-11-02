@@ -24,6 +24,8 @@
 
   </style>
 </head>
+<?php include("./google_analytics.php"); ?>
+
 <body style="background-color: #1161D9; overflow-x: hidden;">
     <div class="row">
         <div class="col-md-2">

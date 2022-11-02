@@ -37,6 +37,7 @@
 
 
 </head>
+<?php include("./google_analytics.php"); ?>
 
 <body class="body" style="overflow-x: hidden;">
     <main class="new new-main layout">

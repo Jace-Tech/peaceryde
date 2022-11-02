@@ -66,6 +66,7 @@ if (isset($_POST["apply"])) {
     }
   </style>
 </head>
+<?php include("./google_analytics.php"); ?>
 
 
 <body class="body">

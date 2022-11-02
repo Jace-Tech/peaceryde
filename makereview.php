@@ -97,6 +97,7 @@
         }
     </style>
 </head>
+<?php include("./google_analytics.php"); ?>
 
 
 <body>

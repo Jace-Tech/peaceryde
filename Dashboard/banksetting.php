@@ -175,6 +175,8 @@
 	}
 </style>
 </head>
+<?php include("./google_analytics.php"); ?>
+
 
 <body>
     <div class="preloader">
