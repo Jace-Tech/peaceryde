@@ -198,10 +198,10 @@
                 </div>
                 <br>
                 <br>
-                <br>
-                <br>
+              
                 <div class="mobilefooter">
-                             
+                <br>
+                <br>         
                     <h3 class="new-section8__highlights8 layout footh3 seen">AS SEEN ON</h3>
                    
                   <img src="assets/watch.jpeg" class="img-fluid" alt="" srcset="" style="width:90%; margin-left:-14px;">
