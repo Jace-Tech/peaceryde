@@ -1,4 +1,7 @@
 @media (max-width: 540px){
+  .seen{
+    text-align: center;
+  }
   .sibutton {
     width: 73px;
     margin-top: 0px;

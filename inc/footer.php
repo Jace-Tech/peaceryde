@@ -98,7 +98,7 @@
                     
                   <img src="assets/watch.jpeg" class="img-fluid" alt="" srcset="" style="width:90%; margin-left:-14px;">
                 
-                  <p class="new-section8__text-body5 layout fs-13" style="padding-right:50px; padding-top:0px;text-align:center; margin-top:0px">AND OVER 200 NEWS SITES</p>
+                  <p class="new-section8__text-body5 layout fs-13" style="padding-right:50px; padding-top:0px;text-align:center; margin-top:0px">AND OVER 400 NEWS SITES</p>
                 </div>
                 </ul>
               </div>
@@ -198,12 +198,16 @@
                 </div>
                 <br>
                 <br>
+                <br>
+                <br>
                 <div class="mobilefooter">
                              
-                    <h3 class="new-section8__highlights8 layout footh3">AS SEEN ON</h3>
+                    <h3 class="new-section8__highlights8 layout footh3 seen">AS SEEN ON</h3>
                    
-                  <img src="assets/watch.jpeg" class="img-fluid" alt="" srcset="" style="width:70%; margin-left:-14px;">
-                  <p class="fs-13 sites">AND OVER 200 NEWS SITES</p>
+                  <img src="assets/watch.jpeg" class="img-fluid" alt="" srcset="" style="width:90%; margin-left:-14px;">
+                  <p class="fs-13 sites">AND OVER 400 NEWS SITES</p>
+                  <br>
+                  <br>
                   <br>
                   <br>
                 </div>                
