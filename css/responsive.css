@@ -1,4 +1,13 @@
 @media (max-width: 540px){
+  .mobilefooter
+  {
+    margin-top:20px;
+    margin-bottom: 20px;
+  }
+  .mobilefooter img
+  {
+    width: 90%;
+  }
   .seen{
     text-align: center;
   }
