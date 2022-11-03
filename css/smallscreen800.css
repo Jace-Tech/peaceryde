@@ -120,6 +120,10 @@
   {
     display: block;
   }
+  .mobilefooter img
+  {
+    width: 70%;
+  }
   .lapfooter
   {
     display: none;
@@ -747,7 +751,7 @@
   }
   .sites
   {
-    padding-left: 10px;
+    padding-left: 0px;
   }
 
   .lg-li {
@@ -6343,7 +6347,7 @@
   }
   .sites
   {
-    padding-left: 8%;
+    padding-left: 7%;
   }
 
   .lg-li {

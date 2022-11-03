@@ -9,12 +9,10 @@
                 <div class="new-section8__block20 layout">
                   <img src="assets/logo.png" width="164" class="footerlogo">
                   <ul>
-                  <li class="lg-li">
-                      
-                      <a href="#" target="_blank" rel="noopener noreferrer" style="text-decoration:none;"><img src="assets/ln.jpeg" alt=""> <span class="logtext">&nbsp; LinkedIn</span>  </a>
+                  <li class="lg-li">                      
+                      <a href="https://www.linkedin.com/company/peaceryde-africa/" target="_blank" rel="noopener noreferrer" style="text-decoration:none;"><img src="assets/ln.jpeg" alt=""> <span class="logtext">&nbsp; LinkedIn</span>  </a>
                     <!-- <a href="https://www.instagram.com/peaceryde/?igshid=YmMyMTA2M2Y%3D">    
-                    
-                     
+          
                     </a>
                     <a href="https://www.instagram.com/peaceryde/?igshid=YmMyMTA2M2Y%3D" target="_blank" rel="noopener noreferrer" style="text-decoration: none;font-size: 13px;color: #0A0E69;">&nbsp;Instagram </a> -->
                     </li>
@@ -100,7 +98,7 @@
                     
                   <img src="assets/watch.jpeg" class="img-fluid" alt="" srcset="" style="width:90%; margin-left:-14px;">
                 
-                  <p class="new-section8__text-body5 layout fs-13" style="padding-right:50px; padding-top:0px;text-align:center; margin-top:0px">AND OVER 200 NEWS SITES</p>
+                  <p class="new-section8__text-body5 layout fs-13" style="padding-right:50px; padding-top:0px;text-align:center; margin-top:0px">AND OVER 400 NEWS SITES</p>
                 </div>
                 </ul>
               </div>
@@ -200,14 +198,16 @@
                 </div>
                 <br>
                 <br>
+              
                 <div class="mobilefooter">
-                             
-                    <h3 class="new-section8__highlights8 layout footh3">AS SEEN ON</h3>
+                       
+                    <h3 class="new-section8__highlights8 layout footh3 seen">AS SEEN ON</h3>
                    
-                  <img src="assets/watch.jpeg" class="img-fluid" alt="" srcset="" style="width:70%; margin-left:-14px;">
-                  <p class="fs-13 sites">AND OVER 200 NEWS SITES</p>
+                  <img src="assets/watch.jpeg" class="img-fluid" alt="" srcset="" style=" margin-left:-14px;">
+                  <p class="fs-13 sites">AND OVER 400 NEWS SITES</p>
                   <br>
                   <br>
+                  
                 </div>                
               
                 <div class="row">
