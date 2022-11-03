@@ -37,6 +37,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <?php include("./google_analytics.php"); ?>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -60,7 +61,6 @@
 
   </style>
 </head>
-<?php include("./google_analytics.php"); ?>
 
 <body style="background-color: #1161D9; overflow-x: hidden;">
     <div class="row">

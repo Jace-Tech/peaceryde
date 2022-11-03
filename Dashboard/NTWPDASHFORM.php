@@ -12,6 +12,7 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
 <html dir="ltr" lang="en">
 
 <head>
+    <?php include("../google_analytics.php"); ?>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <!-- Tell the browser to be responsive to screen width -->
@@ -135,7 +136,7 @@ if (isset($_SESSION['APPLY_FORM_DATA'])) {
         }
     </style>
 </head>
-<?php include("../google_analytics.php"); ?>
+
 
 
 <body>

@@ -5,6 +5,7 @@
 <html dir="ltr" lang="en">
 
 <head>
+  <?php include("../google_analytics.php"); ?>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <!-- Tell the browser to be responsive to screen width -->
@@ -120,7 +121,7 @@
     }
   </style>
 </head>
-<?php include("../google_analytics.php"); ?>
+
 
 
 <body>

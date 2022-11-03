@@ -6,6 +6,7 @@
 <!--  This source code is exported from pxCode, you can get more document from https://www.pxcode.io  -->
 
 <head>
+    <?php include("./google_analytics.php"); ?>
   <meta charset="utf-8" />
   <title>PeaceRyde Africa LLC - Contact Us</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
@@ -37,7 +38,6 @@
 
 
 </head>
-<?php include("./google_analytics.php"); ?>
 
 <body class="body" style="overflow-x: hidden;">
     <main class="new new-main layout">
