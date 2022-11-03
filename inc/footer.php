@@ -203,7 +203,7 @@
                        
                     <h3 class="new-section8__highlights8 layout footh3 seen">AS SEEN ON</h3>
                    
-                  <img src="assets/watch.jpeg" class="img-fluid" alt="" srcset="" style="width:70%; margin-left:-14px;">
+                  <img src="assets/watch.jpeg" class="img-fluid" alt="" srcset="" style=" margin-left:-14px;">
                   <p class="fs-13 sites">AND OVER 400 NEWS SITES</p>
                   <br>
                   <br>

@@ -120,6 +120,10 @@
   {
     display: block;
   }
+  .mobilefooter img
+  {
+    width: 70%;
+  }
   .lapfooter
   {
     display: none;
