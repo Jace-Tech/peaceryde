@@ -47,17 +47,17 @@
                 margin-bottom: .5rem;
             }
             
-            .list {
-                padding-left: 1rem;
+            table {
+                border-collapse: collapse;
             }
 
-            .list-item {
-                margin-bottom: .2rem;
-                display: block;
-                width: 100%;
+
+            td, th {
+                padding: .6rem 1rem;
+                text-align: center;
             }
 
-            .list-item a{
+            a{
                 font-size: .9rem;
                 font-weight: 400;
                 color: #555;
@@ -75,24 +75,36 @@
             <p class="text-paragraph"> {{ message }} </p>
     
             <h3 class="text-subhead">You can reach me with</h3>
-            <table border="1" cellspacing="2">
+            <table border="1" cellspacing="2" style="width: 100%">
                 <tr>
-                    <th>Email</th>
-                    <th>Phone</th>
+                    <th>Contact</th>
+                    <th>Value</th>
                 </tr>
                 <tr>
-                    <td class="list-item">
-                        <a href="mailto:{{ email }}">
-                            Email: <span>{{ email }}</span>
-                        </a>
+                    <td>
+                       Email:
                     </td>
-                    <td class="list-item">
-                        <a href="tel:{{ phone }}">
-                            Phone: <span>{{ phone }}</span>
-                        </a>
+                    <td>
+                        <a href="mailto:{{ email }}">{{ email }}</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Phone:
+                    </td>
+                    <td>
+                        <a href="tel:{{ phone }}">{{ phone }}</a>
                     </td>
                 </tr>
             </table>
         </div>
+
+        <script>
+            window.addEventListener("hashchange", e => {
+                e.preventDefault();
+
+                alert("Are you sure!!")
+            })
+        </script>
     </body>
 </html>
