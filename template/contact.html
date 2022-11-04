@@ -49,9 +49,6 @@
             
             .list {
                 padding-left: 1rem;
-                display: flex;
-                list-style: none;
-                flex-direction: column;
             }
 
             .list-item {
@@ -78,18 +75,24 @@
             <p class="text-paragraph"> {{ message }} </p>
     
             <h3 class="text-subhead">You can reach me with</h3>
-            <ul class="list">
-                <li class="list-item">
-                    <a href="mailto:{{ email }}">
-                        Email: <span>{{ email }}</span>
-                    </a>
-                </li>
-                <li class="list-item">
-                    <a href="tel:{{ phone }}">
-                        Phone: <span>{{ phone }}</span>
-                    </a>
-                </li>
-            </ul>
+            <table border="1" cellspacing="2">
+                <tr>
+                    <th>Email</th>
+                    <th>Phone</th>
+                </tr>
+                <tr>
+                    <td class="list-item">
+                        <a href="mailto:{{ email }}">
+                            Email: <span>{{ email }}</span>
+                        </a>
+                    </td>
+                    <td class="list-item">
+                        <a href="tel:{{ phone }}">
+                            Phone: <span>{{ phone }}</span>
+                        </a>
+                    </td>
+                </tr>
+            </table>
         </div>
     </body>
 </html>
