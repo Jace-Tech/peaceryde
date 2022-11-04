@@ -17,8 +17,8 @@ if(isset($_REQUEST['contact'])) {
     $message = filter_var($_POST["message"], FILTER_SANITIZE_STRING);
 
     $from = "noreply@peacerydeafrica.com";
-    $toEmail = "info@peacerydeafrica.com";
-    // $toEmail = "theonlyfreddie@gmail.com";
+    // $toEmail = "info@peacerydeafrica.com";
+    $toEmail = "jacealex151@gmail.com";
     $admin = "PeaceRydeAfrica LLC";
     $template = file_get_contents("../template/contact.html");
 
