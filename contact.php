@@ -95,12 +95,13 @@
                             <br>
                             <label style="font-size: 18px;">Please Enter Your Message</label>
                             <br>
-                            <input required name="message" type="text" class="form-control" style=" border-top: 1px solid #000000;
+                            <!-- <input required name="message" type="text" class="form-control" style=" border-top: 1px solid #000000;
     border-left: 1px solid #000000;
     border-right: 1px solid #000000;
     height: 150px;
     border-bottom: 1px solid #000000;
-    margin-top: 20px;">
+    margin-top: 20px;"> -->
+    <textarea required name="message" class="form-control" id="exampleFormControlTextarea5" rows="5" style="border:1px solid #000000;margin-top: 20px;"></textarea>
                             <br>
                             <br>
                             <button name="contact" class="btn btn-primary" style="width: 100%; border-radius: 10px; margin-top: 30px; height: 50px;font-size: 18px;">
