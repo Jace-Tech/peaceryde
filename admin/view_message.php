@@ -366,17 +366,21 @@ if($LOGGED_ADMIN['type'] != "HIGH") {
 
 <?php if(isset($_GET['msg'])): ?>
     <script>
+        console.log("<<<TESTING>>>")
         if(window.innerWidth < 768) {
             document.querySelector('#"message-sidebar').className = "absolute z-20 top-0 bottom-0 w-full md:w-auto md:static md:top-auto md:bottom-auto -mr-px md:translate-x-0 transform transition-transform duration-200 ease-in-out -translate-x-full"
             document.querySelector('#"message-main').className = "grow flex flex-col md:translate-x-0 transform transition-transform duration-300 ease-in-out translate-x-0"
         }
         else {
+            console.log("<<<TESTING>>>")
             document.querySelector('#"message-sidebar').className = "absolute z-20 top-0 bottom-0 w-full md:w-auto md:static md:top-auto md:bottom-auto -mr-px md:translate-x-0 transform transition-transform duration-200 ease-in-out translate-x-0"
             document.querySelector('#"message-main').className = "grow flex flex-col md:translate-x-0 transform transition-transform duration-300 ease-in-out translate-x-1/3"
         }
     </script>
 <?php else: ?>
     <script>
+        console.log("<<<TESTING>>>")
+
         document.querySelector('#"message-sidebar').className = "absolute z-20 top-0 bottom-0 w-full md:w-auto md:static md:top-auto md:bottom-auto -mr-px md:translate-x-0 transform transition-transform duration-200 ease-in-out translate-x-0"
         document.querySelector('#"message-main').className = "grow flex flex-col md:translate-x-0 transform transition-transform duration-300 ease-in-out translate-x-1/3"
     </script>
