@@ -368,13 +368,12 @@ if($LOGGED_ADMIN['type'] != "HIGH") {
                     const messageMain = document.querySelector('#message-main')
                     if(window.innerWidth < 768) {
                         const interval = setInterval(() => {
-                            console.log("<<<TESTING>>>")
                             if(!messageSidebar.classList.contains('-translate-x-full')) {
                                 messageSidebar.className = "absolute z-20 top-0 bottom-0 w-full md:w-auto md:static md:top-auto md:bottom-auto -mr-px md:translate-x-0 transform transition-transform duration-200 ease-in-out -translate-x-full"
                                 messageMain.className = "grow flex flex-col md:translate-x-0 transform transition-transform duration-300 ease-in-out translate-x-0"
                                 clearInterval(interval);
                             }
-                        }, 2000)
+                        }, 500)
                     }
                     else {
                         messageSidebar.className = "absolute z-20 top-0 bottom-0 w-full md:w-auto md:static md:top-auto md:bottom-auto -mr-px md:translate-x-0 transform transition-transform duration-200 ease-in-out translate-x-0"
