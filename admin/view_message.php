@@ -222,12 +222,12 @@ if($LOGGED_ADMIN['type'] != "HIGH") {
                 <div class="sticky top-16">
                     <div class="flex items-center justify-between bg-white border-b border-gray-200 px-4 sm:px-6 md:px-5 h-16">
                         <div class="flex items-center">
-                            <button class="md:hidden text-gray-400 hover:text-gray-500 mr-4" @click.stop="msgSidebarOpen = !msgSidebarOpen" aria-controls="messages-sidebar" :aria-expanded="msgSidebarOpen">
+                            <!-- <button class="md:hidden text-gray-400 hover:text-gray-500 mr-4" @click.stop="msgSidebarOpen = !msgSidebarOpen" aria-controls="messages-sidebar" :aria-expanded="msgSidebarOpen">
                                 <span class="sr-only">Close sidebar</span>
                                 <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M10.7 18.7l1.4-1.4L7.8 13H20v-2H7.8l4.3-4.3-1.4-1.4L4 12z" />
                                 </svg>
-                            </button>
+                            </button> -->
                             <div class="flex -space-x-3 -ml-px">
                                 <a class="btn btn-sm border-indigo-200 text-indigo-600" href="./view_message">&lt;- </a>
                             </div>
@@ -364,25 +364,28 @@ if($LOGGED_ADMIN['type'] != "HIGH") {
         <?php if(isset($_GET['msg'])): ?>
             <script>
                 setTimeout(() => {
-                    console.log("<<<TESTING>>>")
+                    const messageSidebar = document.querySelector('#message-sidebar')
+                    const messageMain = document.querySelector('#message-main')
                     if(window.innerWidth < 768) {
-                        document.querySelector('#message-sidebar').className = "absolute z-20 top-0 bottom-0 w-full md:w-auto md:static md:top-auto md:bottom-auto -mr-px md:translate-x-0 transform transition-transform duration-200 ease-in-out -translate-x-full"
-                        document.querySelector('#message-main').className = "grow flex flex-col md:translate-x-0 transform transition-transform duration-300 ease-in-out translate-x-0"
+                        const interval = setInterval(() => {
+                            console.log("<<<TESTING>>>")
+                            if(!messageSidebar.classList.contains('-translate-x-full')) {
+                                messageSidebar.className = "absolute z-20 top-0 bottom-0 w-full md:w-auto md:static md:top-auto md:bottom-auto -mr-px md:translate-x-0 transform transition-transform duration-200 ease-in-out -translate-x-full"
+                                messageMain.className = "grow flex flex-col md:translate-x-0 transform transition-transform duration-300 ease-in-out translate-x-0"
+                                clearInterval(interval);
+                            }
+                        }, 2000)
                     }
                     else {
-                        console.log("<<<TESTING>>>")
-                        document.querySelector('#message-sidebar').className = "absolute z-20 top-0 bottom-0 w-full md:w-auto md:static md:top-auto md:bottom-auto -mr-px md:translate-x-0 transform transition-transform duration-200 ease-in-out translate-x-0"
-                        document.querySelector('#message-main').className = "grow flex flex-col md:translate-x-0 transform transition-transform duration-300 ease-in-out translate-x-1/3"
+                        messageSidebar.className = "absolute z-20 top-0 bottom-0 w-full md:w-auto md:static md:top-auto md:bottom-auto -mr-px md:translate-x-0 transform transition-transform duration-200 ease-in-out translate-x-0"
+                        messageMain.className = "grow flex flex-col md:translate-x-0 transform transition-transform duration-300 ease-in-out translate-x-1/3"
                     }
                 }, 2000)
             </script>
         <?php else: ?>
             <script>
-                setTimeout(() => {
-                    console.log("<<<TESTING>>>")
-                    document.querySelector('#message-sidebar').className = "absolute z-20 top-0 bottom-0 w-full md:w-auto md:static md:top-auto md:bottom-auto -mr-px md:translate-x-0 transform transition-transform duration-200 ease-in-out translate-x-0"
-                    document.querySelector('#message-main').className = "grow flex flex-col md:translate-x-0 transform transition-transform duration-300 ease-in-out translate-x-1/3"
-                }, 2000)
+                document.querySelector('#message-sidebar').className = "absolute z-20 top-0 bottom-0 w-full md:w-auto md:static md:top-auto md:bottom-auto -mr-px md:translate-x-0 transform transition-transform duration-200 ease-in-out translate-x-0"
+                document.querySelector('#message-main').className = "grow flex flex-col md:translate-x-0 transform transition-transform duration-300 ease-in-out translate-x-1/3"
             </script>
         <?php endif; ?>
     </div>
