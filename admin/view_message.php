@@ -364,7 +364,7 @@ if($LOGGED_ADMIN['type'] != "HIGH") {
         <?php if(isset($_GET['msg'])): ?>
             <script>
                 setTimeout(() => {
-                    const messageSidebar = document.querySelector('#message-sidebar')
+                    const messageSidebar = document.querySelector('#messages-sidebar')
                     const messageMain = document.querySelector('#message-main')
                     if(window.innerWidth < 768) {
                         const interval = setInterval(() => {
@@ -384,7 +384,7 @@ if($LOGGED_ADMIN['type'] != "HIGH") {
             </script>
         <?php else: ?>
             <script>
-                document.querySelector('#message-sidebar').className = "absolute z-20 top-0 bottom-0 w-full md:w-auto md:static md:top-auto md:bottom-auto -mr-px md:translate-x-0 transform transition-transform duration-200 ease-in-out translate-x-0"
+                document.querySelector('#messages-sidebar').className = "absolute z-20 top-0 bottom-0 w-full md:w-auto md:static md:top-auto md:bottom-auto -mr-px md:translate-x-0 transform transition-transform duration-200 ease-in-out translate-x-0"
                 document.querySelector('#message-main').className = "grow flex flex-col md:translate-x-0 transform transition-transform duration-300 ease-in-out translate-x-1/3"
             </script>
         <?php endif; ?>
