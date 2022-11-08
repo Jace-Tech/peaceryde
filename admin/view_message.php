@@ -216,7 +216,7 @@ if($LOGGED_ADMIN['type'] != "HIGH") {
                 </div>
             </div>
         </div>
-        <div class="grow flex flex-col md:translate-x-0 transform transition-transform duration-300 ease-in-out" :class="msgSidebarOpen ? 'translate-x-1/3' : 'translate-x-0'">
+        <div id="message-main" class="grow flex flex-col md:translate-x-0 transform transition-transform duration-300 ease-in-out" :class="msgSidebarOpen ? 'translate-x-1/3' : 'translate-x-0'">
             <?php if (isset($_GET['msg'])) : ?>
                 <?php $PROFILE_PIC = getProfilePic($connect, $_GET['msg'])['file']; ?>
                 <div class="sticky top-16">
@@ -360,9 +360,27 @@ if($LOGGED_ADMIN['type'] != "HIGH") {
         </div>
     </div>
 </main>
+
 </div>
 </div>
 
+<?php if(isset($_GET['msg'])): ?>
+    <script>
+        if(window.innerWidth < 768) {
+            document.querySelector('#"message-sidebar').className = "absolute z-20 top-0 bottom-0 w-full md:w-auto md:static md:top-auto md:bottom-auto -mr-px md:translate-x-0 transform transition-transform duration-200 ease-in-out -translate-x-full"
+            document.querySelector('#"message-main').className = "grow flex flex-col md:translate-x-0 transform transition-transform duration-300 ease-in-out translate-x-0"
+        }
+        else {
+            document.querySelector('#"message-sidebar').className = "absolute z-20 top-0 bottom-0 w-full md:w-auto md:static md:top-auto md:bottom-auto -mr-px md:translate-x-0 transform transition-transform duration-200 ease-in-out translate-x-0"
+            document.querySelector('#"message-main').className = "grow flex flex-col md:translate-x-0 transform transition-transform duration-300 ease-in-out translate-x-1/3"
+        }
+    </script>
+<?php else: ?>
+    <script>
+        document.querySelector('#"message-sidebar').className = "absolute z-20 top-0 bottom-0 w-full md:w-auto md:static md:top-auto md:bottom-auto -mr-px md:translate-x-0 transform transition-transform duration-200 ease-in-out translate-x-0"
+        document.querySelector('#"message-main').className = "grow flex flex-col md:translate-x-0 transform transition-transform duration-300 ease-in-out translate-x-1/3"
+    </script>
+<?php endif; ?>
 <script>
     const scrollToView = document.querySelector("#scrollToView");
     scrollToView.scrollIntoView({ behavior: "smooth" });
